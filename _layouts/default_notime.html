@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--
+  - File              : default.html
+  - Author            : John Gentile <johncgentile17@gmail.com>
+  - Date              : 06.12.2017
+  - Last Modified Date: 10.01.2018
+  - Last Modified By  : John Gentile <johncgentile17@gmail.com>
+-->
+<html lang="en">
+  <head>
+    {% seo %}
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/png" href="/assets/images/Gent-systems_icon_black.png">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Knowledge">
+    <meta name="keywords" content="code, engineering, design, docs">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="John Gentile">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="0FT1voMEMVvT0cVF9-DjTO5JQGvxymNpCYCT21fP22w" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/github-markdown.css">
+    <link rel="stylesheet" href="/assets/syntax/monokai_syntax.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-99256429-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <style>
+      body {
+        position: relative;
+      }
+
+      .back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: #dd9933;
+        border-color: #777777;
+      }
+
+      .back-to-top:active,
+      .back-to-top:focus,
+      .back-to-top:hover {
+        color: #dd9933;
+        background-color: #333;
+        border-color: #cccccc;
+      }
+
+      div.col-sm-9 div {
+        height: 250px;
+        font-size: 28px;
+      }
+
+      #toc.affix {
+        top: 20px;
+      }
+      /* sidebar */
+
+      .bs-docs-sidebar {
+        padding-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      /* all links */
+
+      .bs-docs-sidebar .nav>li>a {
+        color: #999;
+        border-left: 2px solid transparent;
+        padding: 4px 10px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      /* nested links */
+
+      .bs-docs-sidebar .nav .nav>li>a {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 20px;
+        font-size: 12px;
+      }
+      /* active & hover links */
+
+      .bs-docs-sidebar .nav>.active>a,
+      .bs-docs-sidebar .nav>li>a:hover,
+      .bs-docs-sidebar .nav>li>a:focus {
+        color: #000;
+        text-decoration: none;
+        background-color: transparent;
+        border-left-color: #dd9933;
+      }
+      /* all active links */
+
+      .bs-docs-sidebar .nav>.active>a,
+      .bs-docs-sidebar .nav>.active:hover>a,
+      .bs-docs-sidebar .nav>.active:focus>a {
+        font-weight: 700;
+      }
+      /* nested active links */
+
+      .bs-docs-sidebar .nav .nav>.active>a,
+      .bs-docs-sidebar .nav .nav>.active:hover>a,
+      .bs-docs-sidebar .nav .nav>.active:focus>a {
+        font-weight: 500;
+      }
+      /* hide inactive nested list */
+
+      .bs-docs-sidebar .nav ul.nav {
+        display: none;
+      }
+      /* show active nested list */
+
+      .bs-docs-sidebar .nav>.active>ul.nav {
+        display: block;
+      }
+
+      .navbar-brand:hover {
+        color: #dd9933 !important;
+      }
+
+      .navbar-nav li a {
+        border-bottom: 2px solid transparent;
+      }
+
+      .navbar-nav li a:hover {
+        color: #dd9933 !important;
+        border-bottom-color: #dd9933;
+      }
+
+      .navbar-nav li.active a,
+      .navbar-nav li.active a:hover {
+        color: #ff9966 !important;
+        font-weight: bold;
+        border-bottom-color: #ff9966;
+        background-color: #eee;
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+      }
+
+      .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-submenu>a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+      }
+
+      .dropdown-submenu:hover>a:after {
+        border-left-color: #fff;
+      }
+
+      .dropdown-submenu.pull-left {
+        float: none;
+      }
+
+      .dropdown-submenu.pull-left>.dropdown-menu {
+        left: -100%;
+        margin-left: 10px;
+        -webkit-border-radius: 6px 0 6px 6px;
+        -moz-border-radius: 6px 0 6px 6px;
+        border-radius: 6px 0 6px 6px;
+      }
+
+      .markdown-body {
+        margin-left: 300px;
+        max-width: 980px;
+        padding: 45px;
+      }
+      /* hide sidebar for non-large screens */
+
+      @media screen and (max-width: 1280px) {
+        .bs-docs-sidebar {
+          display: none;
+        }
+        .markdown-body {
+          box-sizing: border-box;
+          min-width: 200px;
+          max-width: 980px;
+          margin: 0 auto;
+          padding: 45px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse container-fluid" role="navigation">
+      <a class="navbar-brand" href="{{ site.url }}">
+        <span><img src="/assets/images/Gent-systems_icon_white_512.png" alt="Gent-Systems" style="width:30px;height:30px;"></span> 
+      </a>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" container-fluid>
+          <li>
+            <a href="/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Knowledge Base <span class="caret"></span></a>
+            <ul class="dropdown-menu multi-level" role="menu">
+              <li><a href="/kb/overview.html">Overview</a></li>
+              {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %}
+              {% for cat in mypages %}
+              {% if forloop.first != true %}
+              <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ cat.name }}</a>
+                <ul class="dropdown-menu">
+                  {% assign items = cat.items %}
+                  {% for item in items %}
+                  {% if item.kb == true %}
+                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form pull-right" method="get" action="/search-results.html">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search..." name="q">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit" onclick="sendToSearch()">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2">
+          <nav class="bs-docs-sidebar">
+            <ul id="toc"></ul>
+          </nav>
+        </div>
+
+        <article class="col-xl-10 markdown-body">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </article>
+      </div>
+    </div>
+    <br>
+  </body>
+
+  {% if page.comments %}
+  <div id="disqus_thread" style="width: 70%; margin: auto; padding: 10px;"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "{{ site.url }}{{ page.url }}";
+      this.page.identifier = "{{ page.id }}";
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//gent-systems.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% endif %}
+
+  <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+  <footer style="color:#fff;text-align:center;clear:left">
+    <div style="background-color: rgb(46, 46, 46);padding:2em;">
+      <a href="{{ site.url }}">
+        <img src="/assets/images/Gent-systems_icon_white_512.png" alt="Gent-Systems" style="width:40px;height:40px;"></a>
+      <br />
+    </div>
+    <div style="background-color: rgb(50, 50, 50);padding:1em;">
+      <p>Maintained by <a href="{{ site.url }}">Gent-Systems</a></p>
+    </div>
+  </footer>
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/dcea14ca87.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="/scripts/toc.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- scrollspy for sidebar TOC -->
+  <script>
+    $('body').scrollspy({
+      target: '.bs-docs-sidebar',
+      offset: 40
+    });
+  </script>
+
+  <!-- Table of Contents -->
+  <script>
+    $("#toc").affix({
+      offset: {
+        top: 60
+      }
+    });
+  </script>
+
+  <!-- Back-to-top script -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#toc').toc({
+        classes: {
+          list: 'nav nav-stacked'
+        }
+      });
+      $('body').each(function () {
+        $(this).scrollspy('refresh');
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+      $('#back-to-top').tooltip('show');
+    });
+  </script>
+
+  <!-- Assign `active` class to navbar item for current page -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var pathname = window.location.pathname;
+      $('.dropdown-menu > li > a[href="'+pathname+'"]').parent().addClass('active');
+      $('.dropdown-menu > li > a[href="'+pathname+'"]').removeAttr("href");
+    });
+  </script>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "gent-systems-website",
+  "version": "1.0.0",
+  "description": "Jekyll-based website for Gent-Systems.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gent-Systems/gent-systems-website.git"
+  },
+  "author": "John Gentile",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gent-Systems/gent-systems-website/issues"
+  },
+  "homepage": "https://github.com/Gent-Systems/gent-systems-website#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.3.0"
+  }
+}

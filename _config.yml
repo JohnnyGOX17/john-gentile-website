@@ -1,0 +1,32 @@
+# Site settings
+collections:
+  kb:
+    output: true
+    permalink: /:path/:title/
+
+# Build settings & gem packages
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+highlighter: rouge
+plugins: 
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+  - jekyll-youtube
+  - liquid_pluralize
+  - liquid_reading_time
+  - rouge
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Makefile
+
+# SEO: from github.com/jekyll/jekyll-seo-tag
+title: Gent-Systems
+description: Engineering creatively. Learning and development through open-source.
+url: http://gent-systems.com
+author: John Gentile
+logo: /assets/images/Gent-systems_icon_black.png
