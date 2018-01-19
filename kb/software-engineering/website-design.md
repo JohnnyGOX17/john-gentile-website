@@ -57,6 +57,10 @@ Note that a custom/unique syntax stylesheet might need to be used to color the a
 
 * [Frappé Charts](https://frappe.github.io/charts/) simple and modern charting, integrates with `npm`
 
+### Fonts
+
+* [Google Fonts](https://fonts.google.com/)
+
 ## Code & Tools
 
 * [Google Developer Tools](https://developers.google.com/web/tools/setup/setup-buildtools#dont-trip-up-with-vendor-prefixes)
