@@ -10,9 +10,10 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 plugins: 
+  - jekyll-feed
+  - jekyll-last-modified-at
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-last-modified-at
   - jekyll-youtube
   - liquid_pluralize
   - liquid_reading_time
@@ -23,10 +24,13 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - Makefile
+  - package.json
+  - node_modules/
+  - gulpfile.js
 
-# SEO: from github.com/jekyll/jekyll-seo-tag
-title: Gent-Systems
+# Metadata for plugins like seo-tag and feed
+title: John-Gentile
 description: Engineering creatively. Learning and development through open-source.
-url: http://gent-systems.com
+url: http://john-gentile.com
 author: John Gentile
 logo: /assets/images/Gent-systems_icon_black.png

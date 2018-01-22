@@ -1,6 +1,8 @@
 ---
 title: Knowledge Base Overview
-layout: default_notime
+layout: default
+comments: false
+kb_overview: true
 ---
 
 {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %}

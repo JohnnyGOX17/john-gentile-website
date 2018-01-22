@@ -1,8 +1,10 @@
-build:
+
+build: gulp
 	# Building...
-	sed '/class="tagline"/d' ./_layouts/default.html > \
-	  ./_layouts/default_notime.html
 	bundle exec jekyll build
+
+gulp:
+	# gulp modules
 
 clean:
 	rm Gemfile.lock
@@ -14,7 +16,7 @@ clean:
 push:
 	aws s3 blah blah push
 
-serve: build
+serve: gulp
 	# Funky workaround to get web browser to launch page after we build and
 	# start the server since `jekyll serve` blocks till Ctrl+C. If building
 	# takes longer than 5 seconds, adjust accordingly
