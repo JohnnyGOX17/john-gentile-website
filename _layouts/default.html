@@ -3,7 +3,7 @@
  - File              : _layouts/default.html
  - Author            : John Gentile <johncgentile17@gmail.com>
  - Date              : 16.01.2018
- - Last Modified Date: 22.01.2018
+ - Last Modified Date: 23.01.2018
  - Last Modified By  : John Gentile <johncgentile17@gmail.com>
 -->
 <html ⚡ lang="en">
@@ -63,8 +63,6 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/Gent-systems_icon_black_152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/Gent-systems_icon_black_167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/Gent-systems_icon_black_180.png">
-
-
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -3220,60 +3218,8 @@
 
     </style>
 
-    <style amp-boilerplate>
-        body {
-            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-moz-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-ms-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @-o-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-            to {
-                visibility: visible
-            }
-        }
-
-    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!-- Required for AMP verification -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 </head>
 
@@ -3303,7 +3249,7 @@
                                   {% assign items = cat.items %}
                                   {% for item in items %}
                                   {% if item.kb == true %}
-                                  <a class="menu-item item-layer-3" href="{{ item.url }}">{{ item.title }}</a>    
+                                  <a class="menu-item item-layer-3 {% if page.url == item.url %} active {% endif %}" {% if page.url != item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}</a>    
                                   {% endif %}
                                   {% endfor %}
                                 </div>
@@ -3315,8 +3261,8 @@
             </div>
         </form>
     </amp-sidebar>
-    <header class="header fixed">
 
+    <header class="header fixed">
         <div class="container">
             <div class="nav-container">
                 <div class="left-nav alt">
@@ -3338,7 +3284,8 @@
                                         <a href="#">{{ cat.name }}</a>
                                         <ul class="sublist">
                                             {% assign items = cat.items %} {% for item in items %} {% if item.kb == true %}
-                                            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                                            <li {% if page.url == item.url %} class="active" {% endif %} >
+                                              <a {% if page.url != item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}</a></li>
                                             {% endif %} {% endfor %}
                                         </ul>
                                     </li>
@@ -3388,7 +3335,7 @@
                     <h1 class="post-title">{{ page.title }}</h1>
                     
                     {% if page.search %}
-                    <!-- #TODO: add Google custom search engine here -->
+                    <!-- #TODO: add Google custom search engine here using AMP analytics -->
                     <script>
                         (function() {
                             var cx = '017079845013171989968:cufsmesvvly';
@@ -3432,7 +3379,7 @@
                         {% endif %}
 
                         <p class="footer-privacy" style="color: #727272; font-size: 14px; text-align: center;">
-                        Maintained by John Gentile &bull; Found a problem on this site? File an <a href="https://github.com/JohnnyGOX17/john-gentile-website/issues">Issue</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                        Maintained by John Gentile &bull; Found a problem on this site? File an <a href="https://github.com/JohnnyGOX17/john-gentile-website/issues">Issue</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><amp-img src="/assets/images/cc_license.png" width="80" height="15"></amp-img></a>
                         </p>
                         <p style="text-align: center">
                             <a href="https://github.com/JohnnyGOX17/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
@@ -3499,38 +3446,5 @@
   }
 </script>
 {% endif %}
-
-<!-- Script for `back-to-top` button, if used
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        $('#back-to-top').click(function() {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 500);
-            return false;
-        });
-        $('#back-to-top').tooltip('show');
-    });
-</script> -->
-
-<!-- Assign `active` class to navbar item for current page -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pathname = window.location.pathname;
-        $('.sublist > li > a[href="' + pathname + '"]').parent().addClass('active');
-        $('.sublist > li > a[href="' + pathname + '"]').removeAttr("href");
-        $('.items > a[href="' + pathname + '"]').addClass('active');
-        $('.items > a[href="' + pathname + '"]').removeAttr("href");
-    });
-
-</script>
 
 </html>
