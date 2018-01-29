@@ -12,6 +12,7 @@ highlighter: rouge
 plugins: 
   - jekyll-feed
   - jekyll-last-modified-at
+  #- jekyll-picture-tag
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-youtube
