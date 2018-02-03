@@ -1,3 +1,7 @@
+# Makefile for john-gentile.com
+# To build, run `$ make` and to deploy to S3 run `$ make deploy`
+# Author: John Gentile
+# Date:   1/30/18
 
 build:
 	# Building...
@@ -13,7 +17,9 @@ clean:
 	rm .sass-cache
 	rm .jekyll-metadata
 
-deploy:
+# Jekyll should build before deploying to ensure site.url variables are used
+# correctly (jekyll serve replaces site.url w/local host settings)
+deploy: build
 	# Deploying to Amazon S3...
 	aws s3 sync ./_site s3://john-gentile.com --delete
 

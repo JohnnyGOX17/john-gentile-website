@@ -3,12 +3,22 @@
  - File              : _layouts/default.html
  - Author            : John Gentile <johncgentile17@gmail.com>
  - Date              : 16.01.2018
- - Last Modified Date: 24.01.2018
+ - Last Modified Date: 31.01.2018
  - Last Modified By  : John Gentile <johncgentile17@gmail.com>
 -->
 <html ⚡ lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113288970-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113288970-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="generator" content="Jekyll v3.6.2" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
@@ -16,12 +26,11 @@
     <meta name="description" content="Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
     <meta name="keywords" content="code, engineering, design, docs" />
     <meta name="robots" content="index,follow" />
-    <!-- #TODO: add Google site verification -->
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:description" content="Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
+    <meta property="og:description" content="{{ page.title }}: Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:site_name" content="John Gentile" />
+    <meta property="og:site_name" content="John-Gentile.com" />
     <meta property="og:image" content="/assets/images/Gent-systems_icon_black.png" />
     <meta name="amp-experiments-opt-in" content="" />
     <meta name="twitter:card" content="summary" />
@@ -54,7 +63,7 @@
         }
     </script>
 
-    <title>{{ page.title }} | John Gentile</title>
+    <title>{{ page.title }} | John-Gentile.com</title>
     <link rel="shortcut icon" type="image/png" href="/assets/images/Gent-systems_icon_black.png">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
@@ -3219,12 +3228,18 @@
     <!-- Required for AMP verification -->
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+    <!-- Google AdSense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3335309853112455",
+            enable_page_level_ads: true
+        });
+    </script>
+
 </head>
 
 <body class="">
-
-    <!-- #TODO: add custom google analytics and AdSense here -->
-
     <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
         <form class="menu-layer primary" action="/" target="_top">
             <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
@@ -3294,7 +3309,6 @@
                     </div>
                 </div>
                 <div class="right alt">
-                    <!-- #TODO: confirm Google custom search engine here -->
                     <form title="Search all of John-Gentile.com" action="/search-results.html" method="get" class="searchbar" target="_top">
                         <input class="query" name="q" type="text" placeholder="Search...">
                         <button name="search" type="submit" onclick="sendToSearch()"></button>
@@ -3327,10 +3341,9 @@
                     <h1 class="post-title">{{ page.title }}</h1>
                    
                     {% if page.search %}
-                    <!-- #TODO: add Google custom search engine here -->
                     <script>
                         (function() {
-                            var cx = '017079845013171989968:cufsmesvvly';
+                            var cx = '017079845013171989968:irbwjhmeqpk';
                             var gcse = document.createElement('script');
                             gcse.type = 'text/javascript';
                             gcse.async = true;
