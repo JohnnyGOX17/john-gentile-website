@@ -1,4 +1,13 @@
-// https://github.com/ghiculescu/jekyll-table-of-contents
+/**
+ * @file             : toc.js
+ * @author           : John Gentile <johncgentile17@gmail.com>
+ * Date              : 11.02.2018
+ * Last Modified Date: 11.02.2018
+ * Last Modified By  : John Gentile <johncgentile17@gmail.com>
+ *
+ * Generates Table of Contents in sidebar from <hx> headers in page contents
+ * From: https://github.com/ghiculescu/jekyll-table-of-contents
+ */
 (function ($) {
     $.fn.toc = function (options) {
         var defaults = {
@@ -7,7 +16,7 @@
                 minimumHeaders: 3,
                 headers: 'h2, h3, h4, h5, h6',
                 listType: 'ul', // values: [ol|ul]
-                showEffect: 'show', // values: [show|slideDown|fadeIn|none]
+                showEffect: 'slideDown', // values: [show|slideDown|fadeIn|none]
                 showSpeed: 'slow', // set to 0 to deactivate effect
                 classes: {
                     list: '',

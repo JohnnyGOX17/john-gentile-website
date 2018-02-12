@@ -3,7 +3,7 @@
  - File              : _layouts/default.html
  - Author            : John Gentile <johncgentile17@gmail.com>
  - Date              : 16.01.2018
- - Last Modified Date: 03.02.2018
+ - Last Modified Date: 12.02.2018
  - Last Modified By  : John Gentile <johncgentile17@gmail.com>
 -->
 <html lang="en">
@@ -3356,7 +3356,7 @@
 
                     <div class="post-content">
                         {% if page.kb %}
-                        <p class="tagline" style="font-size:12px;color:#666"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/about-us.html#john-gentile"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a> | <i class="fa fa-comment-o" aria-hidden="true"></i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}"></span></p>
+                        <p class="tagline" style="font-size:12px;color:#666"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a> | <i class="fa fa-comment-o" aria-hidden="true"></i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}"></span></p>
                         {% endif %}
                         <hr>
                         {{ content }}

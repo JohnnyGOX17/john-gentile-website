@@ -21,14 +21,14 @@ C++ has language facilities similar to the C language such as being a procedural
 
 The proverbial "Hello, World!" implementation in C++ introduces a few basic parts of the language:
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 
 int main()
 {
   std::cout << "Hello, World!\n";
 }
-{% endhighlight %}
+```
 
 ## Building C++ Programs
 
