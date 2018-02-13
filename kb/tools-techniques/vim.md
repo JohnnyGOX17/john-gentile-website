@@ -25,6 +25,9 @@ Typing a number before a motion repeats the motion that many times (i.e typing <
 
 ### Navigation
 
+![vim-movement](vim-shortcuts.png)
+_Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movement-shortcuts-wallpaper.html)_
+
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
 | Left/Down/Up/Right | <kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> | Move cursor left, down, up or right respectively |
@@ -140,6 +143,8 @@ Once in visual mode, navigation causes text to be highlighted. Most normal mode 
 ### Vim Config File
 
 The _.vimrc_ file (usually found in the home folder, but can be placed in other directories for per project custom features) is useful for enabling extended features of Vim and for personalization/customization of Vim. To see an example _.vimrc_ with comments on what-does-what, see [this GitHub link](https://github.com/JohnnyGOX17/configs/blob/master/configs/.vimrc).
+
+Also tools like [EditorConfig](http://editorconfig.org/) can be used to keep consistent configurations on a project-to-project basis for things like tab vs. spaces, line endings, etc.
 
 #### Vimscript and Plugins
 

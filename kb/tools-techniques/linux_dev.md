@@ -15,7 +15,7 @@ comments: true
   - [ranger Official User Guide](https://github.com/ranger/ranger/wiki/Official-user-guide)
 * [The Tao of tmux](https://leanpub.com/the-tao-of-tmux/read)
 * [Facebook PathPicker](https://github.com/facebook/pathpicker/) is a useful Python/shell parser that, when piped in some input (i.e. output of git commands, grep results, searches, etc.), provides a simple UI that allows you to choose certain files to open in your preferred editor.
-* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher): very, very fast code searching tool similar to `ack`
+* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher): very, very fast code searching tool similar to `ack` and `grep`. Used like `$ ag my_code ./my_dir`
 * [xclip](https://linux.die.net/man/1/xclip) reads from stdin, or from one or more files, and makes data selection available for use in X applications. Also allows current X clipboard to be used in terminal for pasting.
 
 ### pushd/popd for faster Terminal Navigation
@@ -38,3 +38,7 @@ A valuable cheatsheet for this mode can be found [here](http://www.catonmat.net/
 
 * `rm -r dir/` removes the directory (and all files and subdirectories within) `dir`
 * `rm -r dir/*` removes all files and subdirectories in `dir`
+
+## Command Line Text Processing
+
+* [learnbyexample\Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)

@@ -24,6 +24,10 @@ comments: true
 
 -Walt Disney
 
+> The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can't achieve it.
+
+-Jordan Belfort
+
 > A goal is a dream with a deadline.
 
 -Napoleon Hill
@@ -49,6 +53,10 @@ comments: true
 > Quality is not an act, it is a habit.
 
 -Aristotle
+
+> The way you think determines the way you feel, and the way you feel determines the way you act.
+
+-Rick Warren
 
 > Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.
 
@@ -157,3 +165,7 @@ comments: true
 > In the business world, the rearview mirror is always clearer than the windshield.
 
 -Warren Buffett
+
+> The more things are forbidden, the more popular they become.
+
+-Mark Twain
