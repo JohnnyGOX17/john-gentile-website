@@ -134,6 +134,19 @@ It's also important to note that switching branches changes the files in your wo
     * If there is conflicts in a merge (i.e. same file with different changes in branches to be merged) Git will stop merging until you fix the issue. `git status` will show the problem files and you can either manually fix the conflict, add the file back and commit or use a tool like `git mergetool`
     * `git rebase` is also a very powerful tool and explained in better detail [here](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 
+### Git Commit Messages
+
+After adding the necessary files/modifications (`$ git add`), we run `$ git commit` to open up an editor to make a commit message- note if all relevant files are already being tracked, we can skip `$ git add` and run `$ git commit -a` to add all modified files to the commit.
+
+To have well formed Git commit messages you should follow some basic guidelines:
+* A brief, but descriptive as possible and in [imperative form](https://en.wikipedia.org/wiki/Imperative_mood), subject line that summarizes the change and the subsystem. Limit to around 50-70 characters max. This also helps when checking the terse history of commits in a repo such as `$ git log --pretty=oneline`.
+* Blank line between subject and body message.
+* Body paragraph(s) that completely explains the current behavior, why that's undesirable, how this change commit fixes/addresses the issue and why the solution is desirable. If the commit needs to address another past commit, include that commit's [short SHA-1 identifier](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection).
+* Use `$ git commit -s` to sign-off the commit message with your name and email you setup when configuring Git on your system.
+* Set your text width of all lines to be at 72 characters at maximum (e.x. in Vim `:set tw=72` though this should automatically happen in recent versions of Vim). There are [reasons to do this](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) but mainly to be a good citizen when writing commits that can be easily read on a variety of systems.
+
+See more about detailed patches and messaging in the Linux Kernel documentation on [submitting-patches](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst?id=bc7938deaca7f474918c41a0372a410049bd4e13#n664).
+
 ### Useful Tools
 
 * `git diff`: is a basic diff tool for showing changes on tracked files you haven't staged yet. Use the `--staged` option to compare your staged changes to your last commit.
@@ -150,7 +163,7 @@ Similar to other Unix programs, Git uses config files to store preferences and o
 
 Aliases can be used to use shorthand commands to represent longer or more complex commands (i.e. the below config file would map `git last` as the same command as `git log -l HEAD`). As well, certain variables can be changed and set; a more complete listing and background can be found [here](https://git-scm.com/docs/git-config.html). Here is an example `.gitconfig` for a user:
 
-{% highlight terminal %}
+```ini
 [user]
     name = Your Name
     email = your_email@domain.com
@@ -163,7 +176,7 @@ Aliases can be used to use shorthand commands to represent longer or more comple
     st = status
     unstage = reset HEAD --
     last = log -l HEAD
-{% endhighlight %}
+```
 
 ### .gitignore
 
@@ -180,3 +193,8 @@ There is also added scripts in `contrib/completion/` in the Git source code to e
 
 ### Git Hooks
 https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+
+## References & Tutorials
+
+* [Pro Git, 2nd Edition- Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2): indispensable, free reference book on everything Git.
+* [try.github.io](https://try.github.io/levels/1/challenges/1): 15 minute interactive web tutorial to learn & practice Git.

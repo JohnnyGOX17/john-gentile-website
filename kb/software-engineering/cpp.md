@@ -30,13 +30,19 @@ int main()
 }
 ```
 
-## Building C++ Programs
+## Tools
+
+### Building C++ Programs
 
 C++ must be compiled from source files into object files and then linked into an executable file.
 
 ![cpp_linking](cpp_linking.png)
 
 C++ is a statically typed language in that every entity (i.e. object, name, value, etc.) must be known to the compiler at compile-time.
+
+### Other Tools
+
+* [cdecl](https://cdecl.org/): C gibberish ↔ English translator
 
 ## C++ Libraries
 
