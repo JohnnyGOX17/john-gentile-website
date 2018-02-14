@@ -198,3 +198,5 @@ https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
 * [Pro Git, 2nd Edition- Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2): indispensable, free reference book on everything Git.
 * [try.github.io](https://try.github.io/levels/1/challenges/1): 15 minute interactive web tutorial to learn & practice Git.
+* [Learn Git Branching](https://learngitbranching.js.org/): game/tutorial on learning both beginner, and more challenging, Git procedures.
+* [Oh shit, git!](http://ohshitgit.com/): examples on how to fix common Git mistakes and problems in plain English.
