@@ -1,12 +1,15 @@
 # .gitignore for Jekyll + Node.js Development
 # Author: John Gentile
-# Date:   1/29/18
+# Date:   2/15/18
 
 # Jekyll files
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Gulp final generation
+dist/
 
 # Logs
 logs
