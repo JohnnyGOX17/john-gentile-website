@@ -1,5 +1,6 @@
 # Makefile for john-gentile.com
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
+#
 # Author: John Gentile
 # Date:   2/15/18
 
@@ -11,6 +12,8 @@ build:
 	gulp todo
 	# Generate intermediate files from Jekyll
 	bundle exec jekyll build
+	# Run PostCSS to optimize and minimize CSS
+	gulp css
 	# Minify final image, JavaScript & HTML files
 	gulp minify-img
 	gulp minify-js

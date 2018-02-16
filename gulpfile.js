@@ -2,7 +2,7 @@
  * @file             : gulpfile.js
  * @author           : John Gentile <johncgentile17@gmail.com>
  * Date              : 20.01.2018
- * Last Modified Date: 15.02.2018
+ * Last Modified Date: 16.02.2018
  * Last Modified By  : John Gentile <johncgentile17@gmail.com>
  */
 
@@ -12,20 +12,19 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   pump = require('pump'),
   todo = require('gulp-todo'),
-  htmlmin = require('gulp-htmlmin');
-//  postcss = require('gulp-postcss'),
-//  uncss = require('postcss-uncss');
+  htmlmin = require('gulp-htmlmin'),
+  nano = require('gulp-cssnano'),
+  uncss = require('gulp-uncss');
 
-//gulp.task('postcss', function() {
-//  var plugins = [
-//    uncss({
-//      html: ['_site/**/*.html']
-//    }),
-//  ];
-//  return gulp.src('./src/*.css')
-//    .pipe(postcss(plugins))
-//    .pipe(gulp.dest('./dest'));
-//});
+// Minimize and optimize CSS
+gulp.task('css', function() {
+  return gulp.src('./_site/**/*.css')
+    //.pipe(uncss({
+    //  html: ['./_site/**/*.html']
+    //}))
+    .pipe(nano())
+    .pipe(gulp.dest('dist'));
+});
 
 // Generate TODO.md from source files
 gulp.task('todo', function() {
