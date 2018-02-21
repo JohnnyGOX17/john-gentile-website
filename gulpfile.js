@@ -2,7 +2,7 @@
  * @file             : gulpfile.js
  * @author           : John Gentile <johncgentile17@gmail.com>
  * Date              : 20.01.2018
- * Last Modified Date: 16.02.2018
+ * Last Modified Date: 21.02.2018
  * Last Modified By  : John Gentile <johncgentile17@gmail.com>
  */
 
@@ -19,9 +19,11 @@ var gulp = require('gulp'),
 // Minimize and optimize CSS
 gulp.task('css', function() {
   return gulp.src('./_site/**/*.css')
-    //.pipe(uncss({
-    //  html: ['./_site/**/*.html']
-    //}))
+    .pipe(uncss({
+      // Use running website as other HTML input so as generated styles from
+      // TOC sidebar can be seen by uncss: https://github.com/uncss/uncss
+      html: ['./_site/**/*.html', 'https://john-gentile.com/kb/tools-techniques/Git.html']
+    }))
     .pipe(nano())
     .pipe(gulp.dest('dist'));
 });
