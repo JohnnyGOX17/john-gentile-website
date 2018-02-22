@@ -1,7 +1,7 @@
 {
-  "name": "gent-systems-website",
-  "version": "0.1.0",
-  "description": "Jekyll-based website for Gent-Systems.com",
+  "name": "john-gentile-website",
+  "version": "0.2.0",
+  "description": "Jekyll-based website for John-Gentile.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,10 +14,15 @@
   "bugs": {
     "url": "https://github.com/JohnnyGOX17/john-gentile-website/issues"
   },
-  "homepage": "http://john-gentile.com",
+  "homepage": "https://john-gentile.com",
   "devDependencies": {
-    "browser-sync": "^2.23.5",
-    "fancy-log": "^1.3.2",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-todo": "^5.4.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "pump": "^3.0.0"
   }
 }

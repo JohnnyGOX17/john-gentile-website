@@ -21,6 +21,7 @@ plugins:
   - rouge
 exclude:
   - README.md
+  - TODO.md
   - Gemfile
   - Gemfile.lock
   - LICENSE
