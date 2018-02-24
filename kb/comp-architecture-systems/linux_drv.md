@@ -6,8 +6,6 @@ top-category: Computer Architecture and Systems
 comments: true
 ---
 
-{% include header.html %}
-
 ## References
 
 * [Linux Device Drivers, Third Edition](https://lwn.net/Kernel/LDD3/)

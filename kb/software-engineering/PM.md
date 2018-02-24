@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 > "Failing to plan is planning to fail"- Alan Lakein
 
 > "No battle plan survives contact with the enemy"- Helmuth von Moltke

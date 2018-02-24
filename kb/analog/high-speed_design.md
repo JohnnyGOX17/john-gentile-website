@@ -6,8 +6,6 @@ top-category: Analog
 comments: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 The goal: to build devices that go faster, are more precise and further push the boundaries of what's been done before. High-speed designs are those where we care about very fast rise ($$ T_{rise} $$) and fall ($$ T_{fall} $$) times (edge rates) and signal propagation lengths ($$ l_{line} $$) due to reduced setup and hold times. There have been a couple rules of thumb as to when we consider a signal "high-speed" such as if: $$ T_{rise} < \frac{1}{10*f_{clock}} $$ or $$ T_{rise} < 3*T_{delay} $$ ($$ T_{delay} $$ - line delay - can be generalized to 150ps/in for microstrip and 180ps/in for stripline paths) or when $$ l_{line} < \frac{1}{10}*\lambda $$ (note that with conductors, wave speed is always less than _c_).

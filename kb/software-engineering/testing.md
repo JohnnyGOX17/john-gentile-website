@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 ## Testing
 
 * [Google Test Framework](https://github.com/google/googletest)

@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Compilers
 
 * [GNU Make](https://www.gnu.org/software/make/)

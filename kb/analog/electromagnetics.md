@@ -6,8 +6,6 @@ top-category: Analog
 comments: true
 ---
 
-{% include header.html %}
-
 ## Transmission Lines
 
 * When an ideal driver transmits a voltage into a high-impedance (open) receiver

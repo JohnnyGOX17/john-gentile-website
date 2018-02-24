@@ -2,14 +2,15 @@
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
 #
 # Author: John Gentile
-# Date:   2/15/18
+# Date:   2/23/18
 
 build:
 	# Clean stale data
 	rm -rf ./_site
 	rm -rf ./dist
-	# First generate pending TODO.md list
+	# First generate pending TODO.md list then display to stdout
 	gulp todo
+	cat ./TODO.md
 	# Generate intermediate files from Jekyll
 	bundle exec jekyll build
 	# Run PostCSS to optimize and minimize CSS

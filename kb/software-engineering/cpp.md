@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 ## The C++ Language
 
 C++ has language facilities similar to the C language such as being a procedural programming language but is vastly different in many ways.

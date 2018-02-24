@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Getting Started
 
 Git is a very popular, lightweight and powerful tool for source control. Git is most likely installed already on your Linux system, however if you need information on how to install Git, why Git works the way it does or would like to read up on the background of Git, see [Getting Started - About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and other chapters in the Pro Git online book. If you are already familiar with Git or other source control systems though, you can keep reading to get up and running as fast as possible.

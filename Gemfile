@@ -1,7 +1,7 @@
 # File              : Gemfile
 # Author            : John Gentile <johncgentile17@gmail.com>
 # Date              : 26.12.2017
-# Last Modified Date: 24.01.2018
+# Last Modified Date: 23.02.2018
 # Last Modified By  : John Gentile <johncgentile17@gmail.com>
 source "https://rubygems.org/"
 
@@ -16,7 +16,8 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-last-modified-at"
   gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
+  #gem "jekyll-seo-tag"
+  gem "jekyll-toc"
   gem "jekyll-youtube"
   gem "liquid_reading_time"
   gem "liquid_pluralize"

@@ -6,8 +6,6 @@ top-category: Computer Architecture and Systems
 comments: true
 ---
 
-{% include header.html %}
-
 ## Containers
 
 * [Docker](https://www.docker.com/)

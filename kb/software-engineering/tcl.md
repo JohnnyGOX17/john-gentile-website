@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 ## Environment
 
 Tcl can be easy installed with most package managers and may already be on a given system. The command line interpreter can be run in the shell as `$ tclsh [script]` to run a Tcl script or, when no arguments are passed, can run as an interactive shell to run Tcl commands.

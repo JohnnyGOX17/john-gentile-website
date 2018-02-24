@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 ## Frameworks
 
 * [Qt](https://www.qt.io/): cross-platform, ubiquitous framework

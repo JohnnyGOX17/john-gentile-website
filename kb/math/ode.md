@@ -7,8 +7,6 @@ comments: true
 wip: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 Differential equations are important as many fields such as engineering, physics, science and others have phenomena that can best be described, modeled and solved via differential equations. Ordinary differential equations are differential equations that depend on a single variable. Complex differential equations dependent on multiple variables are [partial differential equations](pde).

@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Navigation & Searching
 
 * [sed](https://www.gnu.org/software/sed/manual/sed.html): a stream editor

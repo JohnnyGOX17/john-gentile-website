@@ -6,8 +6,6 @@ top-category: Software Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 A good starting point might be to check out the tutorials and reference over at [w3schools.com](https://www.w3schools.com/) or the [Grab Front End Guide](https://github.com/grab/front-end-guide) or [Google Web Fundamentals](https://developers.google.com/web/fundamentals/).
@@ -108,7 +106,7 @@ The goal for many websites is to attract the most amount of viewers (and the rig
   + [WebPageTest](http://www.webpagetest.org/)
   + [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * _Encryption:_ As more and more users expect some level of encryption when interacting with websites they visit, search engines give an indexing boost to websites that provide HTTPS encryption.
-* _Mobile Friendly:_ Similar to having a fast, easy to use website, as mobile device use increases across the world, search engines are purposefully ranking "mobile friendly" sites higher than sites that do not have responsive designs or are heavy on ads and external content. Projects like Google's [AMP](https://www.ampproject.org/) and [Progressive Web App Checklist](https://developers.google.com/web/progressive-web-apps/checklist) provide guidelines for creating websites that are well suited for mobile users.
+* _Mobile Friendly:_ Similar to having a fast, easy to use website, as mobile device use increases across the world, search engines are purposefully ranking "mobile friendly" sites higher than sites that do not have responsive designs or are heavy on ads and external content. Projects like Google's [AMP](https://www.ampproject.org/) (see [examples here of AMP](https://ampbyexample.com/)) and [Progressive Web App Checklist](https://developers.google.com/web/progressive-web-apps/checklist) provide guidelines for creating websites that are well suited for mobile users.
 
 ### Hosting
 

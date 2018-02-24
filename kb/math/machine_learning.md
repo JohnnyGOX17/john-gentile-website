@@ -7,8 +7,6 @@ comments: true
 wip: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 ## Software

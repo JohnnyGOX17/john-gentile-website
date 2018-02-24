@@ -6,8 +6,6 @@ top-category: Business
 comments: true
 ---
 
-{% include header.html %}
-
 you don't have to create something completely new but you should be the best and most differentiated company in that space
 
 ## Business Types

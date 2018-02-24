@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 The goal is to find out what's wrong, and how to resolve the problem, as quickly and effortlessly as possible. With this, there are some fundamental tips and processes one can undergo to greatly aid in debugging:

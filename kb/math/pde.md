@@ -6,8 +6,6 @@ top-category: Math
 comments: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 ## References

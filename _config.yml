@@ -14,7 +14,8 @@ plugins:
   - jekyll-last-modified-at
   #- jekyll-picture-tag
   - jekyll-sitemap
-  - jekyll-seo-tag
+  #- jekyll-seo-tag
+  - jekyll-toc
   - jekyll-youtube
   - liquid_pluralize
   - liquid_reading_time

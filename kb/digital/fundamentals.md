@@ -6,6 +6,4 @@ top-category: Digital Engineering
 comments: true
 ---
 
-{% include header.html %}
-
 Setup & Hold Times

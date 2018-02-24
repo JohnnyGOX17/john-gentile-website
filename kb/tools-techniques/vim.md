@@ -6,7 +6,7 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
+## Overview
 
 A good way to learn Vim is by using `vimtutor` in your shell. Some commands, like working with multiple files/windows in Vim, are not listed as our workflow mainly uses tiling windows managers in a Linux environment.
 

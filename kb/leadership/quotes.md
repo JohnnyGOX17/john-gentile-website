@@ -6,8 +6,6 @@ top-category: Leadership and Management
 comments: true
 ---
 
-{% include header.html %}
-
 ## Motivational
 
 ### Get Going

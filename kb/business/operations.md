@@ -6,8 +6,6 @@ top-category: Business
 comments: true
 ---
 
-{% include header.html %}
-
 - continuos improvement is improvement done on all processes, every day; weekly projects does not constitute 
   for continuous improvement
   - there is no finish line and since the future is unclear, once should strive for many small, continuous steps

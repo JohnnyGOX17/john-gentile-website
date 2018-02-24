@@ -6,6 +6,4 @@ top-category: Signals, Systems and Communications
 comments: true
 ---
 
-{% include header.html %}
-
 ## References

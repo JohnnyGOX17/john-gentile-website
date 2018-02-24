@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Setting Up Windows for Use With *NIX Tools
 
 ### Cygwin

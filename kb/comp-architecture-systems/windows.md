@@ -6,8 +6,6 @@ top-category: Computer Architecture and Systems
 comments: true
 ---
 
-{% include header.html %}
-
 ## Tools
 
 * [Dependency Walker](http://www.dependencywalker.com/)

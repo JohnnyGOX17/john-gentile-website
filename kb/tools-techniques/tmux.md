@@ -6,8 +6,6 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-{% include header.html %}
-
 ## Overview
 
 `tmux` is a useful terminal program to multiplex and organize multiple applications or workflows while maintating speed and efficiency of "mouse-free" environment. `tmux` can be installed with most package managers or built from source. To see if `tmux` is already installed, and if so what version, run 
