@@ -15,7 +15,7 @@ plugins:
   #- jekyll-picture-tag
   - jekyll-sitemap
   #- jekyll-seo-tag
-  - jekyll-toc
+  #- jekyll-toc
   - jekyll-youtube
   - liquid_pluralize
   - liquid_reading_time
