@@ -2,7 +2,7 @@
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
 #
 # Author: John Gentile
-# Date:   2/26/18
+# Date:   2/28/18
 
 build:
 	# Clean stale data
@@ -24,6 +24,9 @@ build:
 	gulp minify-html
 	# Move over all other files
 	gulp move-files
+	# Write current git revision to file for tracking
+	git rev-parse --short HEAD > revision
+	mv revision ./dist/revision
 
 clean:
 	# Deleting generated files...

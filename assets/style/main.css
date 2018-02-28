@@ -1,8 +1,8 @@
 /**
- * File              : main.css
+ * File              : assets/style/main.css
  * Author            : John Gentile <johncgentile17@gmail.com>
  * Date              : 15.02.2018
- * Last Modified Date: 15.02.2018
+ * Last Modified Date: 28.02.2018
  * Last Modified By  : John Gentile <johncgentile17@gmail.com>
  */
 /* Fix for IE10 `viewport` bug */
@@ -243,6 +243,23 @@ a code,
   white-space: normal;
   word-break: break-word;
   word-wrap: break-word
+}
+
+#ShowHideButton {
+  opacity: 0;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #666
+}
+
+#toc-sidebar:hover #ShowHideButton {
+  opacity: 1;
 }
 
 .light,

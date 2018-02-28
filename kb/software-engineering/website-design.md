@@ -48,7 +48,7 @@ Note that a custom/unique syntax stylesheet might need to be used to color the a
 
 * To embed LaTeX or other [MathJax](https://www.mathjax.org/) capable equations and symbols, use `$` symbols like `$ \some \math \commands $` to put rendered equations inline
     - Use double `$$` symbols to have a formula appear on it's own new line
-    - For kramdown, double dollarsigns actually represent math that will go inline with text. To have math statements appear on a newline (i.e. not inline), use escaped dollar signs such as `\$\$ 5 + 5 $$`
+    - For kramdown, double dollarsigns actually represent math that will go inline with text. To have math statements appear on a newline (i.e. not inline), use escaped dollar signs such as `\$\$ 5 + 5 \$\$`
     - It's also useful to use online LaTeX editors like [CodeCogs](https://www.codecogs.com/latex/eqneditor.php)
 * [kramdown Syntax](https://kramdown.gettalong.org/syntax.html): kramdown is used in [Jekyll](#Jekyll)
 * [LaTeX](https://en.wikibooks.org/wiki/LaTeX)

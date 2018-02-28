@@ -3,7 +3,7 @@
  - File              : _layouts/default.html
  - Author            : John Gentile <johncgentile17@gmail.com>
  - Date              : 16.01.2018
- - Last Modified Date: 23.02.2018
+ - Last Modified Date: 28.02.2018
  - Last Modified By  : John Gentile <johncgentile17@gmail.com>
 -->
 <html lang="en">
@@ -168,10 +168,12 @@
 
     </header>
 
-    <nav class="doc-sidebar">
+    <nav id="toc-sidebar" class="doc-sidebar">
         {% if page.kb %}
         <ul id="toc"></ul>
-        <button id="ShowHideButton" title="Show/Hide Contents Sidebar" style="cursor: pointer; background-color: rgba(0, 0, 0, 0); border: none; color: #666;" onclick="hideTOC()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+        <button id="ShowHideButton" title="Show/Hide Contents Sidebar" onclick="hideTOC()" class="showHideBtn">
+          <i class="fa fa-window-close" aria-hidden="true" style="color: #f44242;"></i><em> Close</em>
+        </button>
         {% endif %}
     </nav>
 
@@ -298,7 +300,7 @@
     if (elemToc.style.display === "none") {
       elemToc.style.display = "block";
       elemCont.style.marginLeft = "300px";
-      elemBtn.innerHTML = '<i class="fa fa-window-close" aria-hidden="true"></i>'
+      elemBtn.innerHTML = '<i class="fa fa-window-close" aria-hidden="true"></i><em> Close</em>'
     } else {
       elemToc.style.display = "none";
       elemCont.style.marginLeft = "0px";
