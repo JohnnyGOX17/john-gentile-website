@@ -84,6 +84,10 @@ comments: true
 
 -Archilochus
 
+> The man who does not value himself, cannot value anything or anyone.
+
+-Ayn Rand
+
 ## Business & Leadership
 
 ### Leadership
