@@ -11,9 +11,6 @@ build:
 	# First generate pending TODO.md list then display to stdout
 	gulp todo
 	cat ./TODO.md
-	# Generate resume PDF from docx (launched from another process in case libreoffice GUI is already open)
-	# Edit path to libreoffice as necessary
-	libreoffice5.4 --headless --convert-to pdf:writer_pdf_Export John_Gentile_Resume.docx "-env:UserInstallation=file:///tmp/LibreOffice_Conversion_${USER}" --outdir ./
 	# Generate intermediate files from Jekyll
 	bundle exec jekyll build
 	# Run PostCSS to optimize and minimize CSS
@@ -24,9 +21,11 @@ build:
 	gulp minify-html
 	# Move over all other files
 	gulp move-files
+	# Generate resume PDF from docx (launched from another process in case libreoffice GUI is already open)
+	# Edit path to libreoffice as necessary
+	libreoffice5.4 --headless --convert-to pdf:writer_pdf_Export John_Gentile_Resume.docx "-env:UserInstallation=file:///tmp/LibreOffice_Conversion_${USER}" --outdir ./dist/
 	# Write current git revision to file for tracking
-	git rev-parse --short HEAD > revision
-	mv revision ./dist/revision
+	git rev-parse --short HEAD > ./dist/revision
 
 clean:
 	# Deleting generated files...
