@@ -1,8 +1,8 @@
 /**
- * File              : assets/style/main.css
+ * File              : main.css
  * Author            : John Gentile <johncgentile17@gmail.com>
  * Date              : 15.02.2018
- * Last Modified Date: 28.02.2018
+ * Last Modified Date: 07.03.2018
  * Last Modified By  : John Gentile <johncgentile17@gmail.com>
  */
 /* Fix for IE10 `viewport` bug */
@@ -1290,7 +1290,7 @@ amp-vimeo {
   text-transform: none
 }
 
-.post-content a[href*="//"]:not([href*="github.com/"]):not([href*="facebook.com/"]):not([href*="twitter.com/"]):not([href*="linkedin.com/"]):not([href*="creativecommons.org/"])::after {
+.post-content a[href*="//"]:not([href*="ni.com/"]):not([href*="github.com/"]):not([href*="facebook.com/"]):not([href*="twitter.com/"]):not([href*="linkedin.com/"]):not([href*="creativecommons.org/"])::after {
   content: "";
   display: inline-block;
   background-image: url("/assets/images/ic_open_in_new_blue.svg");
@@ -3163,4 +3163,47 @@ footer .footer-privacy {
 .doc-sidebar,
 .toc {
   top: 140px
+}
+
+.project-box {
+  display: block;
+  padding: 0.01em 16px;
+  transition: transform .2s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  height: 150px;
+  width: 90%
+}
+
+.project-box:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #f8f8f8
+}
+
+.project-box > img {
+  height: auto;
+  width: 30%;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.project-box > h2 {
+  font-size: 20px;
+  margin-left: 33%;
+  margin-top: 0px;
+  color: #1c79c0
+}
+
+.project-box > p {
+  font-size: 12px;
+  margin-left: 33%;
+  margin-top: 0px
+}
+
+.project-href {
+  color: #333;
+  text-decoration: none
 }

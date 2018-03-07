@@ -2,7 +2,7 @@
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
 #
 # Author: John Gentile
-# Date:   2/28/18
+# Date:   3/06/18
 
 build:
 	# Clean stale data
