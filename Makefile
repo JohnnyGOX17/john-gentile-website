@@ -25,7 +25,7 @@ build:
 	# Edit path to libreoffice as necessary
 	libreoffice5.4 --headless --convert-to pdf:writer_pdf_Export John_Gentile_Resume.docx "-env:UserInstallation=file:///tmp/LibreOffice_Conversion_${USER}" --outdir ./dist/
 	# Write current git revision to file for tracking
-	git rev-parse --short HEAD > ./dist/revision
+	git rev-parse HEAD > ./dist/revision
 
 clean:
 	# Deleting generated files...
@@ -38,11 +38,9 @@ clean:
 	rm .sass-cache
 	rm .jekyll-metadata
 
-# Jekyll should build before deploying to ensure site.url variables are used
-# correctly (jekyll serve replaces site.url w/local host settings)
-deploy: build
+deploy:
 	# Deploying distribution to Amazon S3...
-	aws s3 sync ./dist s3://john-gentile.com --delete
+	./deploy.sh
 
 install:
 	# Run before building on new system to install dependent packages or to
