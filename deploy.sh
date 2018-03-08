@@ -23,7 +23,7 @@ if [ "${currGitRev}" == "${distGitRev}" ]; then
 else
   currTime="$(git log -1 --format="%ar" ${currGitRev})"
   distTime="$(git log -1 --format="%ar" ${distGitRev})"
-  echo "Distribution's Git revision [${distGitRev}] is from ${currTime} and doesn't match the current Git revision [${currGitRev}] committed ${currTime}."
+  echo "Distribution's Git revision [${distGitRev}] is from ${distTime} and doesn't match the current Git revision [${currGitRev}] committed ${currTime}."
   read -p "Do you want to rebuild and then deploy to AWS? [y/n]: " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]; then
