@@ -146,6 +146,10 @@ comments: true
 
 -Steve Jobs
 
+> You need three things to create a successful startup: 1. Hire exceptionally great people. 2. Make something customers actually want. 3. Spend only on the priorities and maximize profitability.
+
+-Paul Graham
+
 ### Strategy
 
 > A satisfied customer is the best business strategy of all.
@@ -171,3 +175,7 @@ comments: true
 > The more things are forbidden, the more popular they become.
 
 -Mark Twain
+
+> Make everything as simple as possible, but not simpler.
+
+-Albert Einstein
