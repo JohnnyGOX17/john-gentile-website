@@ -8,7 +8,7 @@ comments: true
 
 ## Overview
 
-A good way to learn Vim is by using `vimtutor` in your shell. Some commands, like working with multiple files/windows in Vim, are not listed as our workflow mainly uses tiling windows managers in a Linux environment.
+Vim is a modal text editor, meaning keystrokes and operations have different actions depending on the mode.
 
 | Mode | Key(s) | Description |
 |------|--------|-------------|
@@ -18,6 +18,8 @@ A good way to learn Vim is by using `vimtutor` in your shell. Some commands, lik
 | Visual | <kbd>v</kbd> | Enter visual mode |
 
 _Note: You must be in Normal mode before going into other modes_
+
+A good way to learn Vim is by using `vimtutor` in your shell. Some commands, like working with multiple files/windows in Vim, are not listed as our workflow mainly uses tiling windows managers in a Linux environment.
 
 ## Normal Mode
 
@@ -39,6 +41,7 @@ _Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movemen
 | Move to End of Line | <kbd>$</kbd> or <kbd>End</kbd> | Move to End of Line |
 | Append After Cursor | <kbd>a</kbd> | Moves into Insert mode _after_ the cursor (whereas <kbd>i</kbd> inputs text before the cursor) |
 | Append End of Line | <kbd>Shift</kbd>+<kbd>a</kbd> | Moves cursor to end of line and puts Vim in Insert mode |
+| Insert at Start of Line | <kbd>Shift</kbd>+<kbd>i</kbd> | Moves cursor to beginning of line and puts Vim in Insert mode |
 | Insert New Line Above/Below | <kbd>Shift</kbd>+<kbd>o</kbd>/<kbd>o</kbd> | Inserts a new line above/below the cursor and puts Vim in Insert mode |
 | Display location in File and Status | <kbd>Ctrl</kbd>+<kbd>g</kbd> | Display location in file|
 | Move to bottom of file | <kbd>Shift</kbd>+<kbd>g</kbd> | |
@@ -98,12 +101,16 @@ All commands are assumed to start with <kbd>:</kbd> while in Normal mode
 | Quit | `q` | Quit if no modifications since last write |
 | Quit & Save Changes | `wq` | Write changes to file and quit Vim |
 | Quit & Discard Changes | `q!` | Override warnings and quit without writing to file |
-| **Substitution** | `s/old/new` | Replace first occurence of old with new |
-| | `s/old/new/g` | Replace all occurences of old with new in the current line |
-| | `#1,#2s/old/new/g` | Same as above but change occurences in range between line numbers #1 & #2 |
-| | `%s/old/new/g` or `%s/old/new/gc` | Change every occurence of old with new in entire file. Add `c` to end to prompt to replace at each occurence |
+| **Substitution / Search & Replace** | `s/old/new` | Replace first occurrence of old with new |
+| | `s/old/new/g` | Replace all occurrences of old with new in the current line |
+| | `1,4s/old/new/g` | Same as above but change occurrences in range between line numbers 1 and 4 (inclusive) |
+| | `%s/old/new/g` or `%s/old/new/gcI` | Change every occurrence of old with new in entire file. Add `c` to prompt to replace at each occurrence and `I` to match case sensitive |
+| | `%s/\<old\>/new/g` | Change only _whole_ words exactly matching `old` to `new` |
+| | `%s//new/g` | Replace each match of the last search pattern with `new` |
+| | `%s/old/<c-r><c-w>/g` | Replace each occurrence of `old` with the word under the cursor. Replace `<c-w>` with `<c-a>` to use the white space delimited word under the cursor |
+| | `%s/old/<c-r>0/g` | Replace each match of `old` with contents of register `0` which contains the text from the most recent yank command |
 | Execute External Command | `!`_command_ | Type `!` at the command line to execute any operation that can be run in your shell |
-| Pipe/Retrieve Input to Vim | `r` | This allows for operations such as piping `|` in Unix so that an operation such as `r FILE` places the contents of FILE after the cursor and `r !ls` reads ouput of the `ls` shell command and puts it below the cursor; similar to `!!` command in Normal mode |
+| Pipe/Retrieve Input to Vim | `r` | This allows for operations such as piping `|` in Unix so that an operation such as `r FILE` places the contents of FILE after the cursor and `r !ls` reads output of the `ls` shell command and puts it below the cursor; similar to `!!` command in Normal mode |
 | Edit another File | `e FILE` | Close current file and opens `FILE` for edit |
 | Open Help | `help` | Opens help menu in Vim |
 
