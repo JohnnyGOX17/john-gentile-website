@@ -2,7 +2,7 @@
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
 #
 # Author: John Gentile
-# Date:   3/06/18
+# Date:   4/18/18
 
 build:
 	# Clean stale data
@@ -34,7 +34,6 @@ clean:
 	rm -rf ./dist
 	rm -rf ./node_modules
 	rm TODO.md
-	rm John_Gentile_Resume.pdf
 	rm .sass-cache
 	rm .jekyll-metadata
 
