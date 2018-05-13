@@ -36,6 +36,11 @@ Electromagnetic (EM) waves behave like all other waves:
 
 ## Components
 
+Resistors can be used for:
+* Voltage dividing
+* Current limiting
+* Energy absorption
+
 ## Designing Circuits
 
 ### Reference Designs

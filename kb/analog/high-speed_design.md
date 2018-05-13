@@ -25,33 +25,36 @@ Conversely, in a high-speed/high-frequency situation (i.e. signal rise/fall time
 
 As devices get smaller and faster, and with edge speeds in the nanosecond to picosecond range becoming the norm, high-speed design is becoming even more critical to even basic devices nowadays. Thus, with these higher speeds, designers need to focus on signal integrity on lines as issues like reflections, overshoot, crosstalk/coupled signals and greater electromagnetic radiation will appear.
 
-### Critical Trace Length
-
-To recall from [electromagnetic wave equations](electromagnetics), the wave velocity can be calculated by \$\$ v_{p}=\frac{c}{\sqrt{\mu * \varepsilon_{r} }} \$\$ Since most PCBs don't directly deal with magnetic material, $$ \mu=1 $$ and the speed becomes directly related to the dielectric constant of the PCB material used. Thus, to represent the critical length of a propagation path where high-speed affects start to manifest we find \$\$ l_{r}=\frac{v_{p} * t_{rise}}{2} \$\$ When a signal trace's length is equal to or greater than this critical length, high-speed circuit effects are at their maximum. Conversely as trace length gets shorter than the critical length, high-speed effects are minimized and traditional RLC circuit properties are maximized.
-
 ### Factors Affecting High-Speed Design
 
-* Driver edge rates
-* Signal propagation length
-* Trace impedance over entire length
+The majority of high-speed circuit effects are directly related to the high-frequency content of signals passing through it. As detailed previously, when a circuit is considered high-speed, a designer needs to pay more attention to board factors such as:
+* [Driver edge rates](#effective-frequencies-of-digital-signals)
+* [Signal propagation length](#critical-trace-length)
+* Variations over Process, Voltage or Temperature (PVT)
+* Trace impedance and reflections over entire length
 * Trace, via and component placement on the PCB
 * Power distribution and decoupling
-* Ground plane integrity
-* Immunity, neighboring devices and crosstalk
+* Ground plane integrity and self-inductance
+* Immunity, neighboring devices and coupled offending signals
 * PCB stack-up and materials
 
-#### Signal Integrity
-
-Due to faster and faster edge rates, signal integrity is crucially important across component variation, temperature and power supply voltages. Signal integrity issues can be caused by:
-* _Reflected Signals_: non-ideal drivers and receivers (mismatched impedances, output resistance, input capacitance, and other transmission line effects, etc.) causes overshoot and ringing
-* _Coupled Signals_: causes crosstalk
-* _Rapid Changes in Power Draw_: causes power plane and ground bounce
+Ignorance of these effects in high-speed designs can cause signal integrity issues (SI). These SI issues can result in problems such as:
+* _False Switching:_ caused by reduced noise margins and level thresholds which can lead to data errors or even device failure.
+* _High EMI Radiation:_ caused by high-frequency energy escaping and causing failures in compliance or other emission standards.
 
 ![Signal Integrity](SI_capture.png)
 
-Signal integrity issues can result in problems such as:
-* _False Switching_: caused by reduced noise margins and level thresholds
-* _High EMI Radiation_
+#### Effective Frequencies of Digital Signals
+
+Since a signal is considered high-speed when the edge rates contain high-frequency energy- irregardless of clock or switching frequencies- approximations can be made to estimate the majority of frequency content in the signal and to aid in guiding designs of circuits those signals are intended to work in.
+
+One method of bandwidth estimation is to equate the rise time (10%-90%) of an input step through an arbitrary RC low-pass filter; a rule of thumb given an RC time constant of $$ \tau = RC $$ is that the 10%-90% rise time will be about $$ T_{rise}=2.2\tau $$. Also given the 3dB bandwidth (cutoff frequency) of an RC filter as $$ f_{C}=\frac{1}{2\pi\tau} $$ we can substitute in the 10%-90% rise time to get the approximate bandwidth of a square wave to be: \$\$ f_{3dB_{RC Step}}=\frac{0.35}{T_{rise}} \$\$
+
+#### Critical Trace Length
+
+To recall from [electromagnetic wave equations](electromagnetics), the wave velocity can be calculated by \$\$ v_{p}=\frac{c}{\sqrt{\mu * \varepsilon_{r} }} \$\$ Since most PCBs don't directly deal with magnetic material, $$ \mu=1 $$ and the speed becomes directly related to the dielectric constant of the PCB material used. Thus, to represent the critical length of a propagation path where high-speed affects start to manifest we find \$\$ l_{r}=\frac{v_{p} * t_{rise}}{2} \$\$ When a signal trace's length is equal to or greater than this critical length, high-speed circuit effects are at their maximum. Conversely as trace length gets shorter than the critical length, high-speed effects are minimized and traditional RLC circuit properties are maximized.
+
+
 
 ## References
 
