@@ -1,30 +1,17 @@
 <!DOCTYPE html>
-<!--
- - File              : default.html
- - Author            : John Gentile <johncgentile17@gmail.com>
- - Date              : 16.01.2018
- - Last Modified Date: 07.03.2018
- - Last Modified By  : John Gentile <johncgentile17@gmail.com>
--->
 <html lang="en">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113288970-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-113288970-1');
-    </script>
-
+  <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="generator" content="Jekyll v3.6.2" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <meta name="author" content="John Gentile" />
     <meta name="description" content="Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
-    <meta name="keywords" content="code, engineering, design, docs" />
+    <meta name="keywords" content="john, gentile, code, engineering, design, docs" />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:locale" content="en_US" />
@@ -38,7 +25,7 @@
 
     <!-- TODO verify JSON -->
     <script type="application/ld+json">
-        {
+      {
             "@context": "http://schema.org",
             "@type": "Webpage",
             "url": "{{ site.url }}{{ page.url }}",
@@ -67,259 +54,239 @@
     <link rel="shortcut icon" type="image/png" href="/assets/images/Gent-systems_icon_black.png">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-
     <link rel="stylesheet" type="text/css" href="/assets/style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  </head>
 
-    <!-- Required for AMP verification -->
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <nav id="menu">
+    <h2 class="slideout-menu-section-title">Main</h2>
+    <ul>
+      <li class="slideout-menu-li">
+        <a href="/" {% if page.about %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>About</a>
+      </li>
+      <li class="slideout-menu-li">
+        <a href="/portfolio.html" {% if page.projects %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Portfolio</a>
+      </li>
+      <li class="slideout-menu-li">
+        <a href="/kb/overview.html" {% if page.kb_overview %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Docs Overview</a>
+      </li>
+    </ul>
+    {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %} {% for cat in mypages %} {% if forloop.first != true %}
+    <h2 class="slideout-menu-section-title">{{ cat.name }}</h2>
+    <ul>
+      {% assign items = cat.items %} {% for item in items %} {% if item.kb == true %}
+      <li class="slideout-menu-li">
+        <a {% if page.url != item.url %} href="{{ item.url }}" {% endif %} {% if page.url == item.url %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>{{ item.title }}</a>
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+    {% endif %} {% endfor %}
+  </nav>
 
-    <!-- Google AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-3335309853112455",
-            enable_page_level_ads: true
-        });
-    </script>
+  <body class="" id="containerMain" >
 
-</head>
-
-<body class="">
-    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-        <form class="menu-layer primary" action="/" target="_top">
-            <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
-            <div class="items">
-                <a class="menu-item item-layer-1 {% if page.about %} active {% endif %}" href="/">About</a>
-                <a class="menu-item item-layer-1 {% if page.projects %} active {% endif %}" href="/portfolio.html">Portfolio</a>
-                <label class="menu-item item-layer-1 has-sub-level {% if page.kb_overview %} active {% endif %}"><input type="checkbox">Docs
-                    <div class="submenu menu-layer secondary">
-                        <div class="return-button">Back</div>
-                        <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
-                        <div class="items">
-                            {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %}
-                            {% for cat in mypages %}
-                            {% if forloop.first != true %}
-                            <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">{{ cat.name }}
-                              <div class="submenu menu-layer tertiary">
-                                <div class="return-button">Back</div>
-                                <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
-                                <div class="items">
-                                  {% assign items = cat.items %}
-                                  {% for item in items %}
-                                  {% if item.kb == true %}
-                                  <a class="menu-item item-layer-3 {% if page.url == item.url %} active {% endif %}" {% if page.url != item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}</a>    
-                                  {% endif %}
-                                  {% endfor %}
-                                </div>
-                              </div>
-                            </label> {% endif %} {% endfor %}
-                        </div>
-                    </div>
-                </label>
-            </div>
-        </form>
-    </amp-sidebar>
-
-    <header class="header fixed" id="header">
-        <div class="container">
-            <div class="nav-container">
-                <div class="left-nav alt">
-                    <a title="Go back home" href="/" class="tab header-title"><span></span></a>
-                    <div class="tabs">
-                        <div class="tab {% if page.about %} active {% endif %}">
-                            <a href="/">About</a>
-                        </div>
-                        <div class="tab {% if page.projects %} active {% endif %}">
-                            <a href="/portfolio.html">Portfolio</a>
-                        </div>
-                        <div class="tab {% if page.kb or page.kb_overview %} active {% endif %}">
-                            <a href="/kb/overview.html">Docs</a>
-                            <div class="list-container">
-                                <div class="list-shadow"></div>
-                                <ul>
-                                    {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %} {% for cat in mypages %} {% if forloop.first != true %}
-                                    <li class="has-sublist">
-                                        <a href="#">{{ cat.name }}</a>
-                                        <ul class="sublist">
-                                            {% assign items = cat.items %} {% for item in items %} {% if item.kb == true %}
-                                            <li {% if page.url == item.url %} class="active" {% endif %} >
-                                              <a {% if page.url != item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}</a></li>
-                                            {% endif %} {% endfor %}
-                                        </ul>
-                                    </li>
-                                    {% endif %} {% endfor %}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="right alt">
-                    <form title="Search all of John-Gentile.com" action="/search-results.html" method="get" class="searchbar" target="_top">
-                        <input class="query" name="q" type="text" placeholder="Search...">
-                        <button name="search" type="submit" onclick="sendToSearch()"></button>
-                    </form>
-                    <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-    <nav id="toc-sidebar" class="doc-sidebar">
-        {% if page.kb %}
-        <ul id="toc"></ul>
-        <button id="ShowHideButton" title="Show/Hide Contents Sidebar" onclick="hideTOC()" class="showHideBtn">
-          <i class="fa fa-window-close" aria-hidden="true" style="color: #f44242;"></i><em> Close</em>
-        </button>
-        {% endif %}
+    <nav id="toc-sidebar" class="doc-sidebar fixed">
+      {% if page.kb %}
+      <ul id="toc"></ul>
+      <button id="ShowHideButton" title="Show/Hide Contents Sidebar" onclick="hideTOC()" class="showHideBtn">
+        <i class="fa fa-window-close" aria-hidden="true" style="color: #f44242;"></i><em> Close</em>
+      </button>
+      {% endif %}
     </nav>
 
-    <div class="wrap">
-        <div class="container main" id="containerMain">
-            <div class="content">
-                <article class="post">
-                    {% if page.wip %}
-                    <div style="padding: 20px; background-color: darksalmon; color: white; border-radius: 15px; box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.1);">
-                        <span style="margin-left: 15px; font-weight: bold; float: right; font-size: 22px; line-height: 0px; cursor: pointer; transition: 0.3s;" onclick="this.parentElement.style.display='none';">&times;</span>
-                        <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i><strong> Please Note!</strong> This page is still a work in progress.
-                    </div>
-                    {% endif %}
-                   
-                    <h1 class="post-title">{{ page.title }}</h1>
-                   
-                    {% if page.search %}
-                    <script>
-                        (function() {
-                            var cx = '017079845013171989968:irbwjhmeqpk';
-                            var gcse = document.createElement('script');
-                            gcse.type = 'text/javascript';
-                            gcse.async = true;
-                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                            var s = document.getElementsByTagName('script')[0];
-                            s.parentNode.insertBefore(gcse, s);
-                        })();
-                    </script>
-                    <gcse:searchresults-only></gcse:searchresults-only>
-                    {% endif %}
-
-                    <div class="post-content">
-                        {% if page.kb %}
-                        <p class="tagline" style="font-size:12px;color:#666"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a> | <i class="fa fa-comment-o" aria-hidden="true"></i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}"></span></p>
-                        {% endif %}
-                        <hr>
-
-                        {% if page.kb %}
-                        <p><em>Contents</em></p>
-                        <!-- from https://github.com/allejo/jekyll-toc -->
-                        {% include toc.html html=content %}
-                        {% endif %}
-
-                        {{ content }}
-
-                        <br />
-                        <br /> 
-
-                        {% if page.comments %}
-                        <div id="disqus_thread" style="width: 85%; margin: auto; padding: 10px;"></div>
-                        <script>
-                          var disqus_config = function () {
-                            this.page.url = "{{ site.url }}{{ page.url }}";
-                            this.page.identifier = "{{ page.title }}";
-                          };
-                          (function() { // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://john-gentile-com.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                          })();
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        <br />
-                        <br />
-                        {% endif %}
-
-                        <p class="footer-privacy" style="color: #727272; font-size: 14px; text-align: center;">
-                        Maintained by <a href="/">John Gentile</a> &bull; Found a problem on this site? File an <a href="https://github.com/JohnnyGOX17/john-gentile-website/issues">Issue</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><amp-img src="/assets/images/cc_license.png" width="80" height="15"></amp-img></a>
-                        </p>
-                        <p style="text-align: center">
-                            <a href="https://github.com/JohnnyGOX17/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="https://twitter.com/JohnnyGOX"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.linkedin.com/in/john-gentile-6485b947/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.facebook.com/john.gentile.3958"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="/feed.xml"><i class="fa fa-rss" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="mailto:johncgentile17@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
-                            <a href="tel:1-512-537-3050"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
-                        </p>
-                        <br />
-                    </div>
-                </article>
+    <div id="slide_panel">
+      <header class="header fixed" id="header">
+        <div class="container">
+          <div class="nav-container">
+            <div class="left-nav alt">
+              <button class="tab hamburger toggle-button" id="menu-button"></button>
+              <div class="tabs">
+                <div class="tab {% if page.about %} active {% endif %}">
+                  <a href="/">About</a>
+                </div>
+                <div class="tab {% if page.projects %} active {% endif %}">
+                  <a href="/portfolio.html">Portfolio</a>
+                </div>
+                <div class="tab {% if page.kb or page.kb_overview %} active {% endif %}">
+                  <a href="/kb/overview.html">Docs</a>
+                  <div class="list-container">
+                    <div class="list-shadow"></div>
+                    <ul>
+                      {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %} {% for cat in mypages %} {% if forloop.first != true %}
+                      <li class="has-sublist">
+                        <a href="#">{{ cat.name }}</a>
+                        <ul class="sublist">
+                          {% assign items = cat.items %} {% for item in items %} {% if item.kb == true %}
+                          <li {% if page.url == item.url %} class="active" {% endif %} >
+                            <a {% if page.url != item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}</a></li>
+                          {% endif %} {% endfor %}
+                        </ul>
+                      </li>
+                      {% endif %} {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="right alt">
+              <form title="Search all of John-Gentile.com" action="/search-results.html" method="get" class="searchbar" target="_top">
+                <input class="query" name="q" type="text" placeholder="Search...">
+                <button name="search" type="submit" onclick="sendToSearch()"></button>
+              </form>
+              <!--button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button-->
+              <a title="Go back home" href="/" class="header-title"><span></span></a>
+            </div>
+          </div>
         </div>
+      </header>
+
+      <main>
+        <div class="wrap">
+          <div class="container main">
+            <div class="content">
+              <article class="post">
+                {% if page.wip %}
+                <div style="padding: 20px; background-color: darksalmon; color: white; border-radius: 15px; box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.1);">
+                  <span style="margin-left: 15px; font-weight: bold; float: right; font-size: 22px; line-height: 0px; cursor: pointer; transition: 0.3s;" onclick="this.parentElement.style.display='none';">&times;</span>
+                  <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i><strong> Please Note!</strong> This page is still a work in progress.
+                </div>
+                {% endif %}
+
+                <h1 class="post-title">{{ page.title }}</h1>
+
+                {% if page.search %}
+                <script>
+                  (function() {
+                    var cx     = '017079845013171989968:irbwjhmeqpk';
+                    var gcse   = document.createElement('script');
+                    gcse.type  = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src   = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s      = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:searchresults-only></gcse:searchresults-only>
+                {% endif %}
+
+                <div class="post-content">
+                  {% if page.kb %}
+                  <p class="tagline" style="font-size:12px;color:#666"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
+                  {% endif %}
+                  <hr>
+
+                  {% if page.kb %}
+                  <p><em>Contents</em></p>
+                  <!-- from https://github.com/allejo/jekyll-toc -->
+                  {% include toc.html html=content %}
+                  {% endif %}
+
+                  {{ content }}
+
+                  <br />
+                  <br />
+
+                  {% if page.comments %}
+                  {% endif %}
+                  <hr>
+
+                  <p class="footer-privacy" style="color: #727272; font-size: 14px; text-align: center;">
+                  Maintained by <a href="/">John Gentile</a> &bull; Found a problem on this site? File an <a href="https://github.com/JohnnyGOX17/john-gentile-website/issues">Issue</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img src="/assets/images/cc_license.png" width="80" height="15"></img></a>
+                  </p>
+                  <p style="text-align: center">
+                  <a href="https://github.com/JohnnyGOX17/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="https://twitter.com/JohnnyGOX"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="https://www.linkedin.com/in/john-gentile-6485b947/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="https://www.facebook.com/john.gentile.3958"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="/feed.xml"><i class="fa fa-rss" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="mailto:johncgentile17@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  <a href="tel:1-512-537-3050"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
+                  </p>
+                  <br />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
 
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/dcea14ca87.js"></script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script id="dsq-count-scr" src="https://john-gentile-com.disqus.com/count.js" async></script>
+  </body>
 
-<!-- scrollspy for sidebar TOC -->
-{% if page.kb %}
-<script src="/assets/scripts/toc.js"></script>
-<script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/dcea14ca87.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- scrollspy for sidebar TOC -->
+  {% if page.kb %}
+  <script src="/assets/scripts/toc.js"></script>
+  <script>
     $('body').scrollspy({
-        target: '.doc-sidebar',
-        offset: 200
-        // Pixels to offset from top when calculating position of scroll.
+      target: '.doc-sidebar',
+      offset: 80
+      // Pixels to offset from top when calculating position of scroll.
     });
-</script>
-<!-- Script for Sidebar TOC -->
-<script type="text/javascript">
+  </script>
+  <!-- Script for Sidebar TOC -->
+  <script type="text/javascript">
     $(document).ready(function() {
-        $('#toc').toc({
-            classes: {
-                list: 'nav nav-stacked'
-            }
-        });
-        $('body').each(function() {
-            $(this).scrollspy('refresh');
-        });
+      $('#toc').toc({
+        classes: {
+          list: 'nav nav-stacked'
+        }
+      });
+      $('body').each(function() {
+        $(this).scrollspy('refresh');
+      });
     });
-</script>
-<!-- Script to hide/show TOC on button click -->
-<script>
-  function hideTOC() {
-    var elemToc = document.getElementById("toc");
-    var elemCont = document.getElementById("containerMain");
-    var elemBtn = document.getElementById("ShowHideButton");
-    if (elemToc.style.display === "none") {
-      elemToc.style.display = "block";
-      elemCont.style.marginLeft = "300px";
-      elemBtn.innerHTML = '<i class="fa fa-window-close" aria-hidden="true"></i><em> Close</em>'
-    } else {
-      elemToc.style.display = "none";
-      elemCont.style.marginLeft = "0px";
-      elemBtn.innerHTML = '<i class="fa fa-window-restore" aria-hidden="true"></i>'
+  </script>
+  <!-- Script to hide/show TOC on button click -->
+  <script>
+    function hideTOC() {
+      var elemToc  = document.getElementById("toc");
+      var elemCont = document.getElementById("containerMain");
+      var elemBtn  = document.getElementById("ShowHideButton");
+      if (elemToc.style.display === "none") {
+        elemToc.style.display     = "block";
+        elemCont.style.marginLeft = "0px";
+        elemBtn.innerHTML         = '<i class="fa fa-window-close" aria-hidden="true"></i><em> Close</em>'
+      } else {
+        elemToc.style.display     = "none";
+        elemCont.style.marginLeft = "0px";
+        elemBtn.innerHTML         = '<i class="fa fa-window-restore" aria-hidden="true"></i>'
+      }
     }
-  }
-</script>
-{% endif %}
+  </script>
+  {% endif %}
 
-<script>
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-      $("#header").addClass("active");
-    }
-    else {
-      $("#header").removeClass("active");
-    }
-  });
-</script>
+  <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > 0) {
+        $("#header").addClass("active");
+      }
+      else {
+        $("#header").removeClass("active");
+      }
+    });
+  </script>
+
+  <script>
+    var slideout = new Slideout({
+      'panel': document.getElementById('slide_panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      slideout.toggle();
+    });
+  </script>
 
 </html>

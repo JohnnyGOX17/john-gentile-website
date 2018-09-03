@@ -6,6 +6,8 @@ top-category: Tools and Techniques
 comments: true
 ---
 
+<br /><br />
+
 ## Overview
 
 Vim is a modal text editor, meaning keystrokes and operations have different actions depending on the mode.
@@ -21,6 +23,8 @@ _Note: You must be in Normal mode before going into other modes_
 
 A good way to learn Vim is by using `vimtutor` in your shell. Some commands, like working with multiple files/windows in Vim, are not listed as our workflow mainly uses tiling windows managers in a Linux environment.
 
+<br /><br />
+
 ## Normal Mode
 
 Typing a number before a motion repeats the motion that many times (i.e typing <kbd>3</kbd><kbd>w</kbd> moves the cursor 3 words forward and <kbd>d</kbd><kbd>2</kbd><kbd>w</kbd> deletes next 2 words).
@@ -29,6 +33,7 @@ Typing a number before a motion repeats the motion that many times (i.e typing <
 
 ![vim-movement](vim-shortcuts.png)
 _Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movement-shortcuts-wallpaper.html)_
+
 
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
@@ -91,6 +96,8 @@ _For find & replace, see **Substitution** under the Command section_
 | Play command held in register | <kbd>@</kbd>,<kbd>character</kbd> | Repeats recorded command(s) held in that registers `character` |
 | Pipe Command to Shell and Pipe Output into Current File | <kbd>!</kbd>,<kbd>!</kbd> | i.e. `!!ls` pipes the listing of files in your current directory into your current file |
 
+<br /><br />
+
 ## Command Mode
 
 All commands are assumed to start with <kbd>:</kbd> while in Normal mode
@@ -129,6 +136,8 @@ All commands are assumed to start with <kbd>:</kbd> while in Normal mode
 | Quit a Window | <kbd>Ctrl</kbd>+<kbd>wq</kbd> | |
 
 
+<br /><br />
+
 ## Visual Mode
 
 Once in visual mode, navigation causes text to be highlighted. Most normal mode operations, like yank and delete, carry over to visual mode as well and operate on the visually selected text.
@@ -144,6 +153,8 @@ Once in visual mode, navigation causes text to be highlighted. Most normal mode 
 | Delete selected text and insert across a block | <kbd>c</kbd> | Deletes selected text and then goes into multiple insert mode, similar to above command |
 | Indent Selected Lines | <kbd>></kbd>/<kbd><</kbd> | Indents/De-indents selected lines by amount specified by `shiftwidth`. `=` indents the text by what Vim thinks is appropriate |
 | Jump to definition | <kbd>Ctrl</kbd>+<kbd>j</kbd> | Jump to definition of function highlighted | 
+
+<br /><br />
 
 ## Advanced Vim Techniques & Customization
 

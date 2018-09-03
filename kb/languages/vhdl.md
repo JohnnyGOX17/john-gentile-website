@@ -2,7 +2,7 @@
 title: VHDL
 layout: default
 kb: true
-top-category: Digital Engineering
+top-category: Languages
 comments: true
 ---
 

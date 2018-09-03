@@ -2,7 +2,7 @@
 title: Perl
 layout: default
 kb: true
-top-category: Software Engineering
+top-category: Languages
 comments: true
 ---
 
