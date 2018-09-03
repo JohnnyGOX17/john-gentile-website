@@ -21,7 +21,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-todo": "^5.4.0",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
     "gulp-uncss": "^1.0.6",
     "pump": "^3.0.0"
   }
