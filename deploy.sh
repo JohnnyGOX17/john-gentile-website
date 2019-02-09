@@ -1,9 +1,5 @@
 #!/bin/bash
 # File              : deploy.sh
-# Author            : John Gentile <johncgentile17@gmail.com>
-# Date              : 07.03.2018
-# Last Modified Date: 07.03.2018
-# Last Modified By  : John Gentile <johncgentile17@gmail.com>
 #
 # Jekyll and other make processes should build before deploying to ensure
 # site.url variables are used correctly (jekyll serve replaces site.url w/local

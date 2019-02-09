@@ -16,13 +16,15 @@
   },
   "homepage": "https://john-gentile.com",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-todo": "^5.4.0",
     "gulp-uglify": "^3.0.1",
     "gulp-uncss": "^1.0.6",
-    "pump": "^3.0.0"
+    "prettier": "1.16.1",
+    "pump": "^3.0.0",
+    "write-good": "1.0.1"
   }
 }
