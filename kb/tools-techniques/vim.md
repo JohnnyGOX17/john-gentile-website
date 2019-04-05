@@ -104,7 +104,8 @@ All commands are assumed to start with <kbd>:</kbd> while in Normal mode
 
 | Operation | Command | Description |
 |-----------|---------|-------------|
-| Save Changes | `w` _(filename)_ | Write any modifications to existing file or if given a _filename_ write to that file|
+| Save Current Buffer | `w` _(filename)_ | Write any modifications to existing file or if given a _filename_ write to that file|
+| Save All Open Buffers | `wa` | Write any modifications to existing files in all open buffers |
 | Quit | `q` | Quit if no modifications since last write |
 | Quit & Save Changes | `wq` | Write changes to file and quit Vim |
 | Quit & Discard Changes | `q!` | Override warnings and quit without writing to file |
@@ -145,6 +146,7 @@ Once in visual mode, navigation causes text to be highlighted. Most normal mode 
 | Operation | Command | Description |
 |-----------|---------|-------------|
 | Select by line | <kbd>Shift</kbd>+<kbd>V</kbd> | Select line by line |
+| Block Select | <kbd>Ctrl</kbd>+<kbd>v</kbd> | Select text by block |
 | Select Text and Do Stuff | <kbd>:</kbd> | After selecting/highlighting some text, this will enter command mode so you can do things like write selection to another file |
 | Delete Selection | <kbd>x</kbd> or <kbd>d</kbd> | Deletes selection |
 | Join Text | <kbd>Shift</kbd>+<kbd>J</kbd> | If selecting text that spans multiple lines, join puts the lines into a single line seperated by spaces |
@@ -167,6 +169,8 @@ Also tools like [EditorConfig](http://editorconfig.org/) can be used to keep con
 #### Vimscript and Plugins
 
 Vim can also be further extended with plugins and plugin managers such as [vim-plug](https://github.com/junegunn/vim-plug) that execute Vimscript (scripting language within Vim) to execute unique features. [Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com/) is a useful site for learning more about customizing Vim as well as developing custom Vim plugins.
+
+Browse for Vim plugins using GitHub or [Vim Awesome](https://vimawesome.com/).
 
 ### Techniques for Development
 
