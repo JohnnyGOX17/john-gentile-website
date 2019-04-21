@@ -208,6 +208,10 @@ Here are some useful tips when working with Vim for code development:
 * You can easily remove trailing whitespace with `:%s/\s\+$//` (or macro to a keyboard shortcut for easier use)
 * `vim -d [file1] [file2]` is an easy way to diff two files
 * `:sort` is a powerful sort feature within Vim, use often
+* Open the last edited file with <kbd>Ctrl</kbd>+<kbd>o</kbd>+<kbd>o</kbd>
+* Interactive command history window `q:`
+* Open, edit and save compressed files with vim such as `$ vim archive.tar.gz`
+* Launch the man page for a command under the cursor when hitting <kbd>K</kbd>
 
 ### Techniques for Writing
 
