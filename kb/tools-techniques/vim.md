@@ -6,9 +6,9 @@ top-category: Tools and Techniques
 comments: true
 ---
 
-<br /><br />
-
 ## Overview
+
+> "Your problem with Vim is that you don't grok vi."- [StackOverflow](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
 
 Vim is a modal text editor, meaning keystrokes and operations have different actions depending on the mode.
 
