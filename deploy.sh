@@ -1,9 +1,11 @@
 #!/bin/bash
-# File              : deploy.sh
 #
 # Jekyll and other make processes should build before deploying to ensure
 # site.url variables are used correctly (jekyll serve replaces site.url w/local
 # host settings)
+#
+# If not done yet, setup AWS CLI using keys:
+# https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
 currGitRev="$(git rev-parse HEAD)"
 distGitRev="$(cat ./dist/revision)"
