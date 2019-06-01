@@ -1,8 +1,5 @@
 # Makefile for john-gentile.com
 # To build, run `$ make` and to deploy to S3 run `$ make deploy`
-#
-# Author: John Gentile
-# Date:   4/18/18
 
 UNAME_S := $(shell uname -s)
 
@@ -57,7 +54,7 @@ endif
 ifeq ($(UNAME_S),Darwin)
 	sleep 5 && open "http://localhost:4000/" &
 endif
-	bundle exec jekyll serve
+	bundle exec jekyll serve --livereload
 
 test:
 	# Running simple HTTP Webserver to manually verify distribution
@@ -70,3 +67,8 @@ endif
 	# If Python ver >3.x use `python -m http.server`
 	# Change port from 8080 to other if necessary. Use Ctrl+C to stop...
 	cd ./dist && python -m SimpleHTTPServer 8080
+
+update:
+	bundle update --all
+	# use '# npm update -g' to update system wide packages
+	npm update

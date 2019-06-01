@@ -17,7 +17,7 @@ var gulp = require('gulp'),
   uncss = require('gulp-uncss');
 
 // Minimize and optimize CSS
-gulp.task('css', function() {
+gulp.task('css', done => {
   return gulp.src('./_site/**/*.css')
     // uncss still too finicky with our CSS for some reason...
     //.pipe(uncss({
@@ -27,17 +27,19 @@ gulp.task('css', function() {
     //}))
     .pipe(nano())
     .pipe(gulp.dest('dist'));
+  done();
 });
 
 // Generate TODO.md from source files
-gulp.task('todo', function() {
+gulp.task('todo', done => {
   gulp.src(['./**/*.{css,html,js}', '!node_modules/', '!node_modules/**'])
     .pipe(todo())
     .pipe(gulp.dest('./'));
+  done();
 });
 
 // Minimize images
-gulp.task('minify-img', function() {
+gulp.task('minify-img', done => {
   gulp.src('./_site/**/*.{gif,jpeg,jpg,png,svg}')
     .pipe(imagemin([
       // https://github.com/imagemin/imagemin-gifsicle
@@ -50,6 +52,7 @@ gulp.task('minify-img', function() {
     ], { verbose: true }
     ))
     .pipe(gulp.dest('dist'))
+  done();
 });
 
 // Minimize final JavaScript: see options https://github.com/mishoo/UglifyJS2#minify-options
@@ -64,15 +67,17 @@ gulp.task('minify-js', function (cb) {
 });
 
 // Minimize final HTML: see options https://github.com/kangax/html-minifier
-gulp.task('minify-html', function() {
+gulp.task('minify-html', done => {
   return gulp.src('./_site/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true, minifyCSS: true, minifyJS: true, removeComments: true}))
     .pipe(gulp.dest('dist'));
+  done();
 });
 
 // Move over all other files
-gulp.task('move-files', function() {
+gulp.task('move-files', done => {
   console.log("Moving PDF, txt and XML intermediate files to distribution.");
   gulp.src('./_site/*.{pdf,txt,xml}')
     .pipe(gulp.dest('./dist'));
+  done();
 });
