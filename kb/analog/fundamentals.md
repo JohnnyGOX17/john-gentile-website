@@ -8,7 +8,7 @@ comments: true
 
 ## Physics of Electrical Circuits
 
-Fundamentally, there is the property of matter _Charge_ which measured in Coulombs (C). Charge is directly related to one of the fundamental building blocks of matter, the electron; the charge of an electron (e) is negative and has a magnitude of ~1.602x10<sup>-19</sup>.
+Fundamentally, there is the property of matter _Charge_ which measured in Coulombs (C). Charge is directly related to one of the fundamental building blocks of matter, the electron; the charge of an electron (e) is negative and has a magnitude of $$~1.602 \times 10^{-19}$$.
 
 ![Electron Flow](electron_flow.png)
 
@@ -29,17 +29,36 @@ _From [Resistors 101- Vishay](https://www.digikey.com/en/pdf/v/vishay/resistors-
 
 ## Alternating Current Circuit Analysis (AC)
 
+### Impedance
+
+For impedances connected in series, the current through each is the same so the total impedance is the sum of each:
+<center><img src="Impedances_in_series.png"></center>
+\$\$ Z_{eq} = Z_{1} + Z_{2} + \cdots + Z_{n} \$\$
+\$\$ R_{eq} + jX_{eq} = (R_{1} + R_{2} + \cdots + R_{n}) + j(X_{1} + X_{2} + \cdots + X_{n}) \$\$
+
+For impedances connected in parallel, the voltage across each is the same, thus the inverse equivalent impedance is the sum of the inverses of each impedance:
+<center><img src="Impedances_in_parallel.png"></center>
+\$\$ \frac{1}{Z_{eq}} = \frac{1}{Z_{1}} + \frac{1}{Z_{2}} + \cdots + \frac{1}{Z_{n}} \$\$
+A simplified version for the two element case is:
+\$\$ Z_{eq} = \frac{Z_{1}Z_{2}}{Z_{1}+Z_{2}} \$\$
+
 ### RLC Resonant Circuits
 
 Quality factor $$Q$$ is the ratio of energy stored to energy dissipated in a component or circuit:
 \$\$ Q = \frac{E_{stored}}{E_{dissipated}} \$\$
 
 The less loss in a device the higher it's quality factor. $$Q$$ can also be determined by measuring the frequency response such that $$ Q = \frac{f_{center}}{\Delta f} $$ where $$ \Delta f $$ is the 3dB bandwidth of the response:
-![3db_response](3db_response.png)
+<center><img src="3db_response.png"></center>
 
 ### Bode Plots
 
-Bode plots are logarithmic graphs used to show magnitude (in dB) and phase response (degrees or radians) plotted over frequency ($$f$$ or $$\omega$$). They can be measured or mathematically derived given a transfer function.
+Bode plots are logarithmic graphs used to show magnitude (in dB) and phase response (degrees or radians) plotted over frequency ($$f$$ or $$\omega$$). They can be measured in a real circuit, mathematically derived given a transfer function, or analyzed using CAD/SPICE software for a given circuit.
+
+#### Drawing Bode Plot Manually
+
+For quick response analysis of a given circuit it's useful to be able to quickly draw the bode plot and transfer function. For example, given the following RC filter:
+
+![RC_HPF](rc_hpf.png)
 
 ## EM
 Electromagnetic (EM) waves behave like all other waves:
@@ -66,14 +85,13 @@ Electromagnetic (EM) waves behave like all other waves:
 - **Absolute Maximums:** maximum DC or AC (rms) voltage or current that can be tolerated by the component, usually for a very short period of time. **Never design to absolute maximums, always reference the working specifications and leave margin**.
 -- **Dielectric Withstanding Voltage:** max voltage that can be applied to component before dielectric breakdown occurs (meaning the insulator is no longer effective and becomes electrically conductive, which can be a safety issue or general failure)
 - **Component Derating:** most parts will show one or more curves expressing the relationship between some indpendent variable (e.g. temperature, voltage, current, etc.) and the dependent variable as some suggested derating of an otherwise nominal specification (e.g. rated power handling, maximum input current, etc.). These are critical to pay attention to when designing a system that may be in an environment where these bounds change the specifications significantly; for example derating a certain capacitor could mean limiting the maximum input voltage to the part given an application need to operate in a hot ambient temperature:
-
-![cap_derating](T525-derate-kocap.png)
+<center><img src="T525-derate-kocap.png"></center>
 - **Reliability:** the probability that the component will fail, or not meet specifications, can be shown as the Mean Time Between Failures (MTBF), failure rate per hours of operation or other statistical measurements. Reliable electronics design is a deep subject and thus [has its own page](reliable_design.html).
 - **Temp Coefficient:** the "tempco" of a device is a measure of the variation of a given specification for a given change in temperature from where the specification was recorded. For example, a resistor with a temperature coefficient of resistance (sometimes shown as TCR) of 100 ppm/°C with a specified resistance of 10kΩ at +25°C will change 0.1% with a 10°C change in temperature. Generally, components with low tempco's are beneficial as a design varies less over temperature.
 - **Tolerance:** usually shown as a percentage of max deviation of a component from the nominal specification under nominal circumstances (e.g. same temperature and voltage as specification). For example a capacitor with 1% tolerance usually means that any capacitor used- when measured under nominal conditions- should fall within ±1% of the nominal capacitance. Component manufacturers can achieve a certain tolerance by careful material selection or by "binning" where components are tested and then bucketed into groups that meet a certain threshold. Generally, the tighter the tolerance of a component, the more expensive it will be (holding all other factors the same).
 - **Standard Values:** for commonality between vendors and component manufacturers, standard values have been adopted for resistors, inductors and capacitors, given a certain tolerance bin. The values follow a logarithmic progression determined by the EIA E Series:
 \$\$ value = D * 10^{\frac{i}{N}} \$\$
-where _D_ is the decade multiplier (10, 100, 1k, etc.) _N_ is the tolerance series (e.x. 1%=96, 5%=24, 10%=12) and _i_ ranges from 1 to _N_-1. Thus for 10% resistor parts in the 1k decade, the standard values are: 1kΩ, 1.2kΩ, 1.5kΩ, 1.8kΩ, 2.2kΩ, 2.7kΩ, 3.3kΩ, 3.9kΩ, 4.7kΩ, 5.6kΩ, 6.8kΩ, and 8.2kΩ. It can also show that the higher the tolerance bin, the more value options available. Standard values are another factor in design decisions or part value selection since arbitrary values generally cannot be used; for instance, my calculation of a voltage divider calls for a 1.8725kΩ resistor but given standard values (and other factors like stock on hand, supplier/vendor availability, BOM cost, etc.) it's most likely OK to use the standard 1.8kΩ part.
+where $$D$$ is the decade multiplier (10, 100, 1k, etc.), $$N$$ is the tolerance series (e.x. 1%=96, 5%=24, 10%=12) and $$\{ i \mid 1..N-1\}$$. Thus for 10% resistor parts in the 1k decade, the standard values are: 1kΩ, 1.2kΩ, 1.5kΩ, 1.8kΩ, 2.2kΩ, 2.7kΩ, 3.3kΩ, 3.9kΩ, 4.7kΩ, 5.6kΩ, 6.8kΩ, and 8.2kΩ. It can also show that the higher the tolerance bin, the more value options available. Standard values are another factor in design decisions or part value selection since arbitrary values generally cannot be used; for instance, my calculation of a voltage divider calls for a 1.8725kΩ resistor but given standard values (and other factors like stock on hand, supplier/vendor availability, BOM cost, etc.) it's most likely OK to use the standard 1.8kΩ part.
 
 #### Resistors ![resistor_symbol](Resistor_symbol_America.png)
 
@@ -90,9 +108,11 @@ Resistor come in three main types:
 - **Non-Linear Resistors:** where the resistance value changes significantly with applied voltage (varistors), temperature (thermistors) or light (photoresistors)
 
 Resistors come in a variety of composition types:
-- **Carbon:** older, low cost, terrible tempcos but can handle high peak power ![carbon](carbon_resistor.png)
+- **Carbon:** older, low cost, terrible tempcos but can handle high peak power
+<center><img src="carbon_resistor.png"></center>
 - **Thin/Thick/Metal Film:** modern, tighter tolerances, generally good noise and high-frequency performance, smaller package sizes
-- **Wire Wound:** made for very high power applications though drawback is in size and inductance (since wire wounds act like an inductor) ![wire wound](wire_wound.png)
+- **Wire Wound:** made for very high power applications though drawback is in size and inductance (since wire wounds act like an inductor)
+<center><img src="wire_wound.png"></center>
 
 Resistors also can come in surface mount (SMT) or through-hole (TH) form factors with these different compositions:
 ![vishay_smt](vishay_smt_types.png)
@@ -102,13 +122,24 @@ _From [Resistors 101- Vishay](https://www.digikey.com/en/pdf/v/vishay/resistors-
 ##### Non-Idealities
 
 Ideally a resistor has a constant impedance from DC to daylight (frequency independent) however, due to package type and how the signal propagates through the internals of the resistor, a resistor will look capacitive at high-frequency (lowering effective impedance), and then at even higher frequencies, start to look inductive (higher effective impedance):
-![resistor_f_response](resistor_f_response.png)
+<center><img src="resistor_f_response.png"></center>
 
 These non-idealities need to be considered for high-frequency or precision designs.
 
 ##### Noise
 
-Resistors exhibit noise
+Resistors exhibit **[Johnson-Nyquist Noise](https://en.wikipedia.org/wiki/Johnson%E2%80%93Nyquist_noise)** which is caused by thermal agitation of charge carriers within the resistor. This noise is independent of applied voltage but rather dependent on temperature and bandwidth. Johnson-Nyquist Noise is present, and has constant power spectral density, across frequencies (approximately white noise) and is defined by:
+\$\$ v_{noise} = \sqrt{4 k T R B} \xrightarrow[noise]{current} i_{noise} = \sqrt{\frac{4 k T B}{R}} \$\$
+
+Where $$k$$ is **[Boltzmann Constant](https://en.wikipedia.org/wiki/Boltzmann_constant)** (about $$1.380649 \times 10^{-23} J/K$$), $$T$$ is absolute temperature in Kelvin, $$R$$ is resistance Ohms and $$B$$ is bandwidth in Hz. Given nominal characteristics (e.g. room temperature and Boltzmann Constant), the rule of thumb noise voltage is:
+\$\$ V_{rms} = 1.3 \times 10^{-10} \sqrt{RB} \$\$
+
+Bandwidth is not a single frequency but rather a range of frequencies (hence Band- _width_) that is relevant to the application of noise analysis. This also means that the frequency of operation, or center frequency for instance, does not matter since the noise is constant throughout the frequency spectrum; again, what matters is the bandwidth of operation. For example the Johnson-Nyquist noise power spectral density (and resulting noise voltage) with a bandwidth of 1 MHz is equivalent whether the band is centered at 10 MHz or 1 GHz.
+
+Ideal inductors and capacitors do not exhibit noise, but their non-ideal/real-life models do exhibit resistance in some fashion; however, one can generally ignore these noise sources since the equivalent resistances present are typically negligible.
+
+Since noise from different sources (e.g. two discrete resistors in series) are uncorrelated and independent (it's statistically unlikely that the random fluctuations of both resistors will be exactly the same- in power and in phase at any given time- even at the same temperature or process), the noise must be added in [RMS](https://en.wikipedia.org/wiki/Root_mean_square):
+\$\$ v_{noise total} = \sqrt{(v_{noise 1})^{2} + (v_{noise 2})^{2}} \$\$
 
 ##### Tempco
 
@@ -152,8 +183,7 @@ Capacitors can be bi-directional (placed in either direction) or polarized (wher
 
 ##### Construction
 
-![cap_plate](cap_plate.png)
-
+<center><img src="cap_plate.png"></center>
 Capacitors are still based on the parallel-plate model above where:
 \$\$ C = \frac{k \epsilon_{0} A}{d} \$\$ 
 so to reduce package size but increase capacitance, manufacturers have played with each variable:
@@ -164,7 +194,18 @@ so to reduce package size but increase capacitance, manufacturers have played wi
 ##### Non-Idealities
 
 Ideally a capacitor acts as a purely reactive device and follows the well-known capacitor equeation for it's impedance as $$ Z = \frac{1}{j \omega C} $$. However, mainly due to package inductance and resistance, at some higher-frequency of resonance, a capacitor will start having higher impedance as frequency increases as it becomes more inductive. A real capacitor acts like a notch filter.
-![cap_model](cap_model.png)
+<center><img src="cap_model.png"></center>
+
+#### Diodes ![diode_symbol](diode_symbol.png)
+
+The basic operation of a diode is to conduct current in one direction while blocking current in the opposite direction (asymmetric conductance); the ideal diode has zero resistance in one direction and infinite resistance in the other. Semiconductor diodes are made with a p-n junction.
+
+There are many different types and constructions of diodes for many applications:
+
+##### Zener
+##### Schottky
+##### TVS
+##### LED
 
 ## Designing Circuits
 
@@ -176,4 +217,10 @@ Ideally a capacitor acts as a purely reactive device and follows the well-known 
 
 ### Modeling & SPICE
 
-* [Multisim](https://www.multisim.com/)
+SPICE is an acronym for Simulation Program with Integrated Circuit Emphasis which was originally made to model ICs and their behaviors. A popular tool is [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html) (developed by Linear Tech which is now owned by Analog Devices) which has a simple interface and lots of capabilities such as [Monte Carlo analysis](https://en.wikipedia.org/wiki/Monte_Carlo_method) (useful for modeling impact of component tolerances), parametric analysis and noise analysis. Note the Windows version is the most full featured so if installing on MacOS or Linux use [Wine](https://www.winehq.org/) Windows emulator. [Multisim](https://www.multisim.com/) is another tool from NI.
+
+Some main analysis types that are commonly used are:
+- **DC:** computes the DC operating point of a circuit given system conditions (e.g. input voltages and DC characteristics) and is required for other analysis types.
+- **AC/Small Signal:** performs frequency sweeps across the circuit to do frequency domain analysis, however care should be taken since results are linearized about given DC operating point. Valid for small signal analysis.
+- **Transient/Time Domain:** simulation done over a time period to see effects of given events, for example power supply transient response to load step. Valid for large signal analysis.
+- **Noise Analysis:** simulation of system effect of various noise sources in schematic.
