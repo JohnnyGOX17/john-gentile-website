@@ -174,6 +174,8 @@ Browse for Vim plugins using GitHub or [Vim Awesome](https://vimawesome.com/).
 
 ### Techniques for Development
 
+#### C/C++ Development
+
 Here are some useful tips when working with Vim for code development:
 
 * `:set filetype=c` when you are working with a file with a non-standard file extension, you cna use this to set the syntax highlighting for the "C" filetype
@@ -184,14 +186,6 @@ Here are some useful tips when working with Vim for code development:
     * <kbd>[</kbd>,<kbd>Ctrl</kbd>+<kbd>d</kbd> to search for first definition of macro under cursor and <kbd>]</kbd>,<kbd>Ctrl</kbd>+<kbd>d</kbd> to search for next definition of macro under cursor
         - Use <kbd>[</kbd>/<kbd>]</kbd>,<kbd>d</kbd> to display the same thing
         - Use <kbd>[</kbd>/<kbd>]</kbd>,<kbd>Shift</kbd>+<kbd>d</kbd> to display all definitions of macro
-* To use tags in Vim, you can generate tags for your source (i.e. `$ ctags *.c`) and then use either `:tag FUNCTION` or <kbd>Ctrl</kbd>+<kbd>j</kbd> (if the function you are looking for is under your cursor) to search across multiple files to find the function's definition. 
-    - To go back one tag, use <kbd>Ctrl</kbd>+<kbd>t</kbd> or `:tp`
-        + `:tn` goes to next tag
-        + `tr` goes to first tag
-        + `tl` goes to last tag
-    - You can similarly use `:stag FUNCTION` and <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>j</kbd> to split the current screen with your original screen and with where the tag function is defined
-    - Tags can also use regular expressions to search and find definitions; any tag command starting with a `/` is assumed to use regular expressions (i.e `:tag /regex_function`)
-    - When there is multiple matches to a tag/search, you can use `:ts function_name` to get a listing of found matches and select a tag, or use `:tj` to jump to a matched tag if only one match exists
 * For compiling and checking for errors right from Vim, you can call `:make [args]` to call the Make program with the local Makefile. This has benefits as any generated errors can be immediately stepped through and changed via:
     - `:cnext`/`:cprevious` moves to the next/previous error (`:clast`/`:crewind` go to last/first errors)
     - `:cnfile` goes to the first error message in the next file
@@ -212,6 +206,37 @@ Here are some useful tips when working with Vim for code development:
 * Interactive command history window `q:`
 * Open, edit and save compressed files with vim such as `$ vim archive.tar.gz`
 * Launch the man page for a command under the cursor when hitting <kbd>K</kbd>
+
+#### Tags
+
+To use tags in Vim, you can generate tags for your source (i.e. using [exuberant ctags](http://ctags.sourceforge.net/) `$ ctags *.c`) which acts as a lookup for important parts/definitions of code in a project (function definitions, constants, classes, etc.). Then use either `:tag FUNCTION` or a keyboard shortcut- if the function you are looking for is under your cursor- to search across multiple files to find the tag's definition and jump to it:
+- <kbd>Ctrl</kbd>+<kbd>]</kbd>: Jump to definition
+- <kbd>Ctrl</kbd>+<kbd>t</kbd>: Jump back from definition
+- <kbd>Ctrl</kbd>+<kbd>W</kbd>+<kbd>}</kbd>: Preview definition
+- <kbd>g</kbd>+<kbd>]</kbd>: List all definitions
+
+Ctag options can be defined globably (to ignore common directories for instance) by making a config file in your home directory `~/.ctags` like:
+```
+--recurse=yes
+--exclude=.git
+--exclude=vendor/*
+--exclude=node_modules/*
+--exclude=db/*
+--exclude=log/*
+```
+If there's multiple definitions of a tag, you can:
+- `:tn` move to next definition
+- `:tp` move to previous definition
+- `:tr` goes to first definition
+- `:tl` goes to last definition
+- `:ts` list all definitions for a tag
+- `:tj` jump to tag if only one exists
+
+Tags can also use regular expressions to search and find definitions; any tag command starting with a `/` is assumed to use regular expressions (i.e `:tag /regex_function`). You can similarly use `:stag FUNCTION` and <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>j</kbd> to split the current screen with your original screen and with where the tag function is defined.
+
+Since tags are generally large and a byproduct of the development process, it's often a good idea to ignore the generated `tags` file in repos under source control.
+
+Plugins like [tagbar](https://github.com/majutsushi/tagbar) and [gutentags](https://bolt80.com/gutentags/) are great for making Vim feel more like an IDE with tags integration.
 
 ### Techniques for Writing
 
