@@ -310,6 +310,19 @@ The output impedance for a common collector is a little less apparent though; si
 
 This effective scaling of the base-emitter impedances through the BJT is known as the **base-emitter reflection rule** and means that impedances at the emitter appear $$\beta + 1$$ times _larger_ when looking in through the base and, inversely, base impedances appear $$\beta + 1$$ times _smaller_ when looking through the emitter.
 
+#### BJT Biasing
+
+Since the AC performance or application of BJT circuits is highly dependent on collector current $$I_{C}$$ and other DC operating points- as well as fundamentally keeping a BJT in its active region, for instance- the need for proper biasing circuitry around a BJT circuit is critical to the overall design. A DC bias circuit may also contend with circuit/environment variables such as:
+- Ambient temperature changes
+- Part/process variation (resulting in changes to $$\beta$$ for instance)
+- Resistor tolerances
+- Power dissipation
+
+For example, DC bias of an NPN BJT should generally achieve:
+- $$V_{CE}$$ high enough that the BJT is operating in its Active region (out of saturation)
+- Base-emitter voltage $$V_{BE} > 0V$$
+- Base-collector voltage $$V_{BC} < 0V$$
+
 #### BJT Component Characteristics
 
 There are a couple things to note when dealing with real (non-ideal) BJTs, for example for a `2N3904` device:
@@ -317,6 +330,7 @@ There are a couple things to note when dealing with real (non-ideal) BJTs, for e
 <center><img src="2n3904_base_voltage.png"></center>
 - **Beta:** the gain of the BJT is very variable (almost 3x between minimum and maximum values!) and depends on a lot of factors. Thus don't rely too much on a single beta value without giving much room for margin:
 <center><img src="2n3904_beta.png"></center>
+- **Thermal Runaway:** besides the usual derating curves and operating points for given system temperatures, BJTs also can suffer from a phenomenon known as thermal runaway; when BJTs start to heat up, temperature dependent characteristics cause even more power to be dissipated, which in turn, cause even more heat. For instance with increased temperature, base-emitter voltage decreases ($$\Delta V_{be} \approx -2.2mV/^{\circ}C$$), $$\beta$$ increases, and emitter current increases (in aforementioned Shockley diode equation, saturation current $$I_{S}$$- though small- nearly doubles ever +10°C). **Thermal junction resistance $$R_{\theta J}$$** is usually given to show the increase in temperature of the device for a given power dissipation through the device; for instance, the `2N3904` has a $$R_{\theta JA}$$ (junction-to-Ambient, means no heatsink, just nominal air flow) of $$200^{\circ}C/W$$, which means for every Watt of power dissipated, the part will increase temperature by roughly 200°C.
 
 ## Designing Circuits
 
