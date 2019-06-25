@@ -42,6 +42,7 @@ install:
 	# update local packages
 	bundle install
 	npm install
+	pip3 install awscli --upgrade --user
 
 serve:
 	rm -rf ./_site
