@@ -219,6 +219,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/dcea14ca87.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <!-- MathJax can support auto equation numbering when equations are straddled by:
+  \$\$
+  \begin{equation}
+    E = mc^{2}
+    \label{eq:einstein}
+  \end{equation}
+  LaTex statements not within the '\begin' and '\end' statements will not be numbered
+  Labels are also supported so the equation can then be referenced in the markdown
+  text like "the equation $$\eqref{eq:einstein}$$ is cool"
+  -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+  </script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <!-- scrollspy for sidebar TOC -->

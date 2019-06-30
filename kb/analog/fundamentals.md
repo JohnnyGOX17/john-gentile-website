@@ -229,6 +229,15 @@ Transistors can operate in three main modes:
 - Saturation
 - Active
 
+#### BJT Component Characteristics
+
+There are a couple things to note when dealing with real (non-ideal) BJTs, for example for a `2N3904` device:
+- **Breakdown Voltages:** While BJTs can usually handle a fairly high potential at the collector terminal, the base terminal should not be reverse biased too far; for instance, in the `2N3904`, if the emitter is grounded, the voltage at the base should not go below $$-6 V$$ or one risks breaking the device:
+<center><img src="2n3904_base_voltage.png"></center>
+- **Beta:** the gain of the BJT is very variable (almost 3x between minimum and maximum values!) and depends on a lot of factors, one mainly being the collector current $$I_{C}$$ present (a higher collector current will often lead to a larger $$\beta$$), so don't rely too much on a single beta value without giving much room for margin:
+<center><img src="2n3904_beta.png"></center>
+- **Thermal Performance:** besides the usual derating curves and operating points for given system temperatures, BJTs also can suffer from a phenomenon known as thermal runaway; when BJTs start to heat up, temperature dependent characteristics cause even more power to be dissipated, which in turn, cause even more heat. For instance with increased temperature, base-emitter voltage decreases ($$\Delta V_{be} \approx -2.2mV/^{\circ}C$$), $$\beta$$ increases, and emitter current increases (in aforementioned Shockley diode equation, saturation current $$I_{S}$$- though small- nearly doubles ever +10°C). **Thermal junction resistance $$R_{\theta J}$$** is usually given to show the increase in temperature of the device for a given power dissipation through the device; for instance, the `2N3904` has a $$R_{\theta JA}$$ (junction-to-Ambient, means no heatsink, just nominal air flow) of $$200^{\circ}C/W$$, which means for every Watt of power dissipated, the part will increase temperature by roughly 200°C.
+
 #### $$r_{e}$$ / 'T' Model
 
 <center><img src="bjt_re_model.png"></center>
@@ -252,28 +261,26 @@ Where $$ V_{T} = \frac{nKT}{q} $$ and $$n$$ is device parameter (~1), $$K$$ is B
 <center><img src="shockley_derivative.png"></center>
 With this equation, quick estimates of emitter impedance can be made; for instance, at room temperature and with a design specification of $$i_{e}=1mA$$, the emitter resistance is $$ \frac{26 mV}{1 mA} = 26 \Omega $$.
 
-##### Input Impedance
+#### Input Impedance
 
 To get the input impedance of the BJT model looking into the base terminal, we can express as $$Z_{in} = \frac{v_{in}}{i_{in}} = \frac{v_{be}}{i_{b}}$$. The base-emitter voltage $$v_{be}$$ can be expressed as the voltage created by the emitter current $$i_{e}$$ through the previously calculated emitter impedance $$r_{e}$$ (using a specified collector current), and simplified to be a function of base current $$i_{b}$$:
 \$\$ v_{b} = i_{e}r_{e} \Rightarrow (i_{b}+i_{c})r_{e} \Rightarrow (i_{b}+ \beta i_{b})r_{e} \Rightarrow i_{b} (\beta + 1)r_{e} \$\$
-\$\$ \therefore Z_{in} = \frac{v_{b}}{i_{b}} = \frac{i_{b}(\beta + 1)r_{e}}{i_{b}} \Rightarrow \boxed{ Z_{in} = (\beta + 1)r_{e} } \$\$
+\$\$ \therefore Z_{in} = \frac{v_{b}}{i_{b}} = \frac{i_{b}(\beta + 1)r_{e}}{i_{b}} \Rightarrow \boxed{ Z_{in_{BJT}} = (\beta + 1)r_{e} } \$\$
 
 Plugging the value of $$\beta$$ in for the same specified collector current- usually given in a datasheet- gives the resultant input impedance; this also means the variations in $$\beta$$ (over process, temperature and collector current) have a direct impact on input impedance as well.
 
-_Common Emitter_
-
 This same calculation follows for input impedance when resistance is added to the emitter (e.g. emitter resistor $$R_{E}$$) in a common emitter design such that the base voltage is still dependent on the current flow through the total resistance at the emitter. Thus, this can also be expressed as:
-\$\$ Z_{in_{BJT}} = (\beta + 1)(r_{e} + R_{E}) \$\$
+\$\$ Z_{in} = (\beta + 1)(r_{e} + R_{E}) \$\$
 
-Furthermore, the bias resistors $$R1$$ and $$R2$$ in a CE amplifier can be factored into the input impedance as being in parallel with this adjusted BJT impedance:
+Furthermore, the bias resistors $$R1$$ and $$R2$$ in an amplifier stage (explained more below) can be factored into the input impedance as being in parallel with this adjusted BJT impedance:
 <center><img src="CE_Zin.png" width="500"></center>
-\$\$ Z_{in_{CE}} = R1 \parallel R2 \parallel Z_{in_{BJT}} \$\$
+\$\$ Z_{in_{amp}} = R1 \parallel R2 \parallel Z_{in_{BJT}} \$\$
 
 Again, input impedance of the BJT is directly related to $$\beta$$ but overall input impedance, due to the parallel nature of the bias resistors, is dominated by the least resistance, commonly the $$R2$$ bottom leg resistor.
 
-##### Voltage Gain & Output Impedance
+#### Voltage Gain & Output Impedance
 
-_Common Emitter_
+##### Common Emitter
 
 For a simple common emitter configuration where the output voltage comes from the collector node- note, the DC bias circuit is not present but for instructional sake, ignore for now- the voltage gain can be found using similar parameters above (given specified $$i_{c}$$, $$\beta$$ and $$r_{e}$$) using small-signal analysis (note also setting DC voltage sources like $$V_{CC} \rightarrow 0V$$):
 <center><img src="bjt_common_emitter.png"></center>
@@ -301,14 +308,14 @@ When looking at the output impedance of the $$r_{e}$$ model of a common emitter 
 However, since in this model we are using an ideal current source, the impedance $$Z_{c} = \infty$$. Thus, the added resistances $$r_{e}$$ and $$R_{e}$$ are insignificant and the series impedance is $$\infty$$, and since this looks like an open circuit in parallel with $$R_{c}$$, the output resistance is simply $$R_{c}$$:
 \$\$ Z_{out} = R_{c} \parallel \infty \Rightarrow \boxed { Z_{out} = R_{c} } \$\$
 
-Technically though, the current source in our model doesn't have infinite inpedance and actually can be specified by the BJT's datasheet as output admittance $$h_{oe}$$, the inverse of which gives the output impedance of the BJT as $$r_{o}$$.
+Technically though, the current source in our model doesn't have infinite inpedance and actually can be specified by the BJT's datasheet as output admittance $$h_{oe}$$ in $$\mho$$, the inverse of which gives the output impedance of the BJT as $$r_{o}$$.
 <center><img src="CE_Zout.png" height="500"></center>
 This value is highly dependent on base current (see varying $$I_{C}$$ vs $$V_{CE}$$ slopes [discussed previously](#r_e--t-model)) but is sometimes large enough to be a factor in computing output impedance such that:
 \$\$ \boxed{ Z_{out} \approx r_{o} \parallel R_{C} } \$\$
 
 When the series combination of $$r_{e} + R_{E}$$ is negligible compared to $$r_{o}$$, which is often the case.
 
-_Common Collector_
+##### Common Collector
 
 For a common collector configuration, the output voltage comes from the emitter node.
 <center><img src="bjt_common_collector.png"></center>
@@ -329,16 +336,29 @@ The output impedance for a common collector is a little less apparent though; si
 
 This effective scaling of the base-emitter impedances through the BJT is known as the **base-emitter reflection rule** and means that impedances at the emitter appear $$\beta + 1$$ times _larger_ when looking in through the base and, inversely, base impedances appear $$\beta + 1$$ times _smaller_ when looking through the emitter.
 
-##### Current Gain
+#### Current Gain
 
-_Common Emitter_
-
-Current gain, $$A_{i}$$, of a particular CE circuit can be used to determine how many "stages" of CE amplifiers are required to meet a system level gain specification. Current gain is simply output current / input current, so simplifying further, we can see current gain is the voltage gain multiplied by the ration of input impedance to output impedance:
+Current gain, $$A_{i}$$, of a particular BJT circuit can be used to determine how many "stages" of BJT amplifiers are required to meet a system level gain specification. Current gain is simply output current divided by input current, so simplifying further, we can see current gain is the voltage gain multiplied by the ration of input impedance to output impedance:
 \$\$ A_{i} = \frac{i_{o}}{i_{i}} = \frac{v_{o}/Z_{o}}{v_{i}/Z_{i}} = \frac{v_{o}}{v_{i}}*\frac{Z_{i}}{Z_{o}} \$\$
 
-\$\$ \boxed{ \therefore A_{i} = A_{v}\frac{Z_{i}}{Z_{o}} } \$\$
+\$\$ \boxed{ \therefore A_{i} = A_{v}\frac{Z_{in}}{Z_{out}} } \$\$
 
-With commone CE circuits, this current gain is similar to the $$\beta$$ of the BJT used. So if a system needs a current gain that is $$ \gg \beta$$, than one knows multiple stages will be required to meet that spec.
+##### Common Emitter
+
+With common CE circuits, this current gain is similar to the $$\beta$$ of the BJT used. So if a system needs a current gain that is $$ \gg \beta$$, than one knows multiple stages will be required to meet that spec.
+
+##### Common Collector
+
+Since the voltage gain for a CC stage is about unity, the current gain is $$A_{i} \approx \frac{Z_{in}}{Z_{out}}$$. From previous, we know the output impedance is (when DC bias resistors are used and $$R_{b}=R_{1}\parallel R_{2}$$):
+\$\$ Z_{out} = R_{e} \parallel (r_{e} + \frac{R_{1}\parallel R_{2}}{\beta + 1}) \$\$
+
+And we know the input impedance to be:
+\$\$ Z_{in} = R1 \parallel R2 \parallel (\beta + 1)(r_{e} + R_{E}) \$\$
+
+\$\$ \therefore \boxed {A_{i} = \frac{R1 \parallel R2 \parallel (\beta + 1)(r_{e} + R_{E})}{R_{e} \parallel (r_{e} + \frac{R_{1}\parallel R_{2}}{\beta + 1})} } \$\$
+
+This current gain is nominally $$A_{i} \approx \beta^{2}$$ which makes the CC amplifier a great buffer.
+
 
 #### BJT Biasing for AC Circuits
 
@@ -368,7 +388,7 @@ Since for NPN transistors to function, $$V_{CE}$$ must be positive, so any drop 
 5. **Set Collector Resistor $$R_{C}$$:** given the intended DC operating point of $$I_{C}$$ and $$V_{C}$$, the resistor can simply be calculated by:
 \$\$ R_{C} = \frac{V_{cc} - V_{C}}{I_{C}} \$\$
 6. **Specify $$V_{B} = V_{E intended} + V_{be}$$:** with an intended emitter potential of 1V and $$V_{be} \approx 0.7V$$, the base voltage should be set to 1.7V. This will be achieved by the voltage divider of $$V_{cc}$$ with $$R1$$ & $$R2$$. The simple resistive voltage divider does not provide tightly controlled line regulation (e.g. doesn't compensate for changes in $$V_{cc}$$) nor load regulation (e.g. doesn't compensate for changes in load current) but is adequate for most designs. However, the selection of these resistors cannot be arbitrary as they also control the base current $$I_{B}$$.
-7. **Target $$I_{B}$$ for minimum current gain:** the most robust bias design (over temp and process variation) should calculate intended base current using the _minimum_ expected $$\beta$$ of the BJT:
+7. **Target $$I_{B}$$ given expected BJT current gain:** use the typical current gain $$\beta$$ of the BJT used to calculate the target base current given the collector current specified. The most robust DC bias design (over temp and process variation) should calculate intended base current using the _minimum_ expected $$\beta$$ of the BJT, though remember $$\beta$$ is also dependent on collector current $$I_{C}$$ and temperature:
 \$\$ I_{B} = \frac{I_{C}}{\beta_{min}} \$\$
 8. **Set Voltage Divider Resistors:** A rule of thumb in this design is to have the current through the voltage divider be about 10x that which flows into the base of the BJT; this is a compromise between a low impedance circuit with high base current (which provides more stable bias but also causes a lot of current to divert from the transistor leading to more static power consumption) and a higher impedance circuit with low base current (which is more susceptible to fluctuations in collector voltage due to changes in $$\beta$$). Thus, the bottom leg of the divider can be found by:
 \$\$ R_{2} = \frac{V_{B} - V_{ee}}{10 * I_{B}} \$\$
@@ -386,7 +406,7 @@ Deviations from these design parameters due to process (min/max device $$\beta$$
 5. Calculate output voltage at the collector knowing the positive rail voltage and current through $$R_{C}$$:
 \$\$ V_{C} = V_{cc} - I_{C}R_{C} \$\$
 
-In general this bias design uses a fair amount of components but can maintain $$\approx 10%$$ of output across a range of temperature and $$\beta$$ fluctuations.
+In general this bias design uses a fair amount of components but can maintain $$\approx 10\%$$ of output across a range of temperature and $$\beta$$ fluctuations.
 
 #### Common Emitter Amplifier Design
 
@@ -394,11 +414,16 @@ In general this bias design uses a fair amount of components but can maintain $$
 
 As noted earlier in [standard bias circuit design](#standard-voltage-divider-bias-circuit), the existence of the emitter capacitor $$C_{E}$$ is used to help bypass the emitter resistor $$R_{E}$$ at operating frequencies. This is because we don't want to mess with the DC bias resistors we setup for stability but we usually want improved voltage gain over the [standard CE voltage gain](#voltage-gain--output-impedance) given by $$A_{v} = -\frac{R_{C}}{r_{e} + R_{E}}$$; for instance with $$R_{C} = 1.4k\Omega$$ and $$R_{E} = 100\Omega$$, the gain is only 14.
 
+_Full Bypass_
+
 With a capacitor $$C_{E}$$ directly in parallel with $$R_{E}$$, the external emitter resistance is completely shorted at high frequencies (or large enough for a given range of frequency operation) which leads to maximum gain due to being only limited by the BJT's internal emitter resistance:
+<center><img src="CE_cap_full_bypass.png" height="500"></center>
 \$\$ A_{v} = -\frac{R_{C}}{r_{e} + R_{E}} \overset{R_{E}=0}{\rightarrow} A_{v} = -\frac{R_{C}}{r_{e}} \$\$
 
+_Partial Bypass_
+
 However, in most systems we want to control the actual amount of gain in a given CE amplifier which means we only want to short _some_ of the emitter resistance, but not all. This leads to a common configuration where the DC emitter resistance found from standard bias calculations is split into two resistors, with the bottom leg being shorted at high-frequencies (there is another configuration where the second resistor follows the capacitor but involves heavier math- parallel resistance with $$R_{E}$$- with little benefit):
-<center><img src="CE_cap.png" height="500"></center>
+<center><img src="CE_cap_partial_bypass.png" height="500"></center>
 Where the top resistor $$\hat{R_{E}}$$ that is always present is simply the calculated DC Bias emitter resistor $$R_{E}$$ subtracted by the series resistor $$R_{es}$$ which is shorted at high frequencies:
 \$\$ \hat{R_{E}} = R_{E} - R_{es} \$\$
 
@@ -429,14 +454,159 @@ This leads to the collector voltage being $$v_{c} = -i_{c}(r_{o} \parallel R_{C}
 
 This means that to preserve a target voltage gain, ideally the load impedance $$Z_{L} \gg (r_{o} \parallel R_{C})$$ (and since $$r_{o}$$ is usually much greater than $$R_{C}$$, we can usually simplify that we want load impedance to be much more greater than $$R_{C}$$). Thus, with light loads relative to the collector resistance, the voltage gain drops below specification.
 
-#### BJT Component Characteristics
+##### Frequency Response & Capacitor Selection
 
-There are a couple things to note when dealing with real (non-ideal) BJTs, for example for a `2N3904` device:
-- **Breakdown Voltages:** While BJTs can usually handle a fairly high potential at the collector terminal, the base terminal should not be reverse biased too far; for instance, in the `2N3904`, if the emitter is grounded, the voltage at the base should not go below $$-6 V$$ or one risks breaking the device:
-<center><img src="2n3904_base_voltage.png"></center>
-- **Beta:** the gain of the BJT is very variable (almost 3x between minimum and maximum values!) and depends on a lot of factors. Thus don't rely too much on a single beta value without giving much room for margin:
-<center><img src="2n3904_beta.png"></center>
-- **Thermal Performance:** besides the usual derating curves and operating points for given system temperatures, BJTs also can suffer from a phenomenon known as thermal runaway; when BJTs start to heat up, temperature dependent characteristics cause even more power to be dissipated, which in turn, cause even more heat. For instance with increased temperature, base-emitter voltage decreases ($$\Delta V_{be} \approx -2.2mV/^{\circ}C$$), $$\beta$$ increases, and emitter current increases (in aforementioned Shockley diode equation, saturation current $$I_{S}$$- though small- nearly doubles ever +10°C). **Thermal junction resistance $$R_{\theta J}$$** is usually given to show the increase in temperature of the device for a given power dissipation through the device; for instance, the `2N3904` has a $$R_{\theta JA}$$ (junction-to-Ambient, means no heatsink, just nominal air flow) of $$200^{\circ}C/W$$, which means for every Watt of power dissipated, the part will increase temperature by roughly 200°C.
+Nominally, a BJT CE amplifier circuit will not operate from DC to Daylight but instead in a certain band of frequencies. The 3dB bandwidth has many factors. The low frequency cutoff is mainly a function of the input & output DC coupling capacitors and the emitter capacitor (if used for higher gain). The high frequency cutoff is dependent upon the BJT's specifications- a BJT only has a certain bandwidth itself- and the capacitance of the connected load. To acheive a certain low & high frequency cutoff, we must choose the emitter, input and output capacitors.
+
+_Emitter Capacitor Selection- Full Bypass_
+
+In a full-bypass emitter configuration for a CE amplifier, the capacitor is in parallel with $$R_{E}$$ and we already know the gain is given by $$ A_{v} = - \frac{R_{C}}{r_{e} + Z_{E}} $$. To expand this, the emitter impedance is $$Z_{E} = R_{E} \parallel X_{C_{E}} = \frac{R_{E}}{1 + j\omega R_{E}C_{E}} $$. Thus the full derivation of gain is:
+\$\$ A_{v} = -\frac{R_{C}}{r_{e} + \frac{R_{E}}{1 + j\omega R_{E}C_{E}}} \$\$
+
+As before, when the input frequency is well above the lower cutoff frequency $$\omega_{c}$$, the gain can be simplified to:
+\$\$ A_{v} \mid_{ \omega \gg \omega_{c}} \approx -\frac{R_{C}}{r_{e}} \$\$
+
+So if we desire to find the lower frequency cutoff point, the gain will be 3dB lower than the midband gain leading or $$A_{v}\times\frac{1}{\sqrt{2}}$$. So setting the two gain equations equal to each other can solve for the desired emitter capacitor using the magnitude of the reactive impedance:
+\$\$ -\frac{R_{C}}{\sqrt{2}r_{e}} = -\frac{R_{C}}{r_{e} + \frac{R_{E}}{1 + j\omega_{c} R_{E}C_{E}}} \$\$
+\$\$ \frac{1}{\sqrt{2}r_{e}} = \left | \frac{1 + j\omega_{c} R_{E}C_{E}}{r_{e}(1 + j\omega_{c} R_{E}C_{E}) + R_{E}} \right | \rightarrow \frac{1}{\sqrt{2}r_{e}} = \frac{\sqrt{1^{2} + (\omega_{c} R_{E}C_{E})^{2}}}{\sqrt{(r_{e}+R_{E})^{2}+(\omega_{c} R_{E}C_{E})^{2}}} \$\$
+\$\$ \frac{1}{2r_{e}^{2}} = \frac{1 + (\omega_{c} R_{E}C_{E})^{2}}{(r_{e}+R_{E})^{2}+(\omega_{c} R_{E}C_{E})^{2}} \$\$
+\$\$ \dots \$\$
+\$\$ C_{E}^{2} = \frac{(R_{E} + r_{e})^{2} - 2 r_{e}^{2}}{r_{e}^{2}\omega_{c}^{2}R_{E}^{2}} \$\$
+
+When BJT internal emitter resistance $$r_{e}$$ is $$\ll R_{E}$$- which is often the case- the numerator of the equation above can reduce yeilding a much simpler, and logical, representation of required capacitance as essentially a time constant $$\tau$$ related to $$r_{e}$$:
+\$\$ R_{E} \gg r_{e} \implies C_{E}^{2} = \frac{R_{E}^{2}}{r_{e}^{2}\omega_{c}^{2}R_{E}^{2}} \rightarrow \boxed{ C_{E}=\frac{1}{r_{e}\omega_{c}} } \$\$
+
+_Emitter Capacitor Selection- Partial Bypass_
+
+A similar derivation as above can be performed (equating mid-band gain equation at -3dB with the full voltage gain equation with emitter capacitor reactance to solve for emitter capacitance at a certain frequency) and is very lengthy and leads to:
+
+$$ C_{E} = \frac{ \sqrt{ R_{es}^{2} - (r_{e} + \hat{R}_{E})^{2} + 2(r_{e} + \hat{R}_{E})R_{es} }}{\omega_{c}(r_{e} + \hat{R}_{E})R_{es}} $$
+
+But this is not intuitive and can be approximated into a time constant like equation above based on the nearly equivalent resistance of $$R_{es} \parallel (r_{e} + \hat{R}_{E})$$:
+
+$$ \boxed{ C_{E} \approx \frac{1}{[R_{es} \parallel (r_{e} + \hat{R}_{E})]\omega_{c}} } $$
+
+_Input Capacitor Selection_
+
+Given we know the [total input impedance of a CE circuit](#input-impedance) to be $$ R_{1} \parallel R_{2} \parallel Z_{in_{BJT}} $$, we can assume that any emitter capacitor has impedance $$X_{C_{E}}=0$$ such that the input capacitor is chosen for a given low frequency cutoff $$\omega_{c}$$ as:
+\$\$ \boxed{ C_{in} = \frac{1}{\omega_{c}(R_{1} \parallel R_{2} \parallel Z_{in_{BJT}})} } \$\$
+
+_Output Capacitor Selection_
+
+Similarly to the input capacitor selection, the output capacitor forms a time constant $$\tau$$ with the output impedance- which we [know previously to be](#voltage-gain--output-impedance) $$Z_{out} = r_{o} \parallel R_{C}$$- and the load impedance (which could be a nominal/specified load or the input impedance of the following amplifier stage):
+\$\$ \boxed{ C_{out} = \frac{1}{\omega_{c}[(r_{o} \parallel R_{C}) + Z_{Load}]} } \$\$
+
+In general, the computed capacitor values can be rounded up to the next largest standard value to ensure the lower frequency cutoff specification is met or exceeded given the other system variables and component tolerances.
+
+#### Common Collector Amplifier Design
+
+Common Collector (CC) amplifiers are useful circuit building blocks in that they provide high input impedance (which presents less of a load to a previous stage/input) and low output impedance (less voltage divider error to following stage, assuming it has high input impedance) while having a voltage gain $$A_{v} \approx 1$$; this unity gain is useful in seperating stages and using a CC amplifier as a buffer (or impedance transformer) as well as the fact that they [have very large current gain](#common-collector-1) usually with $$A_{i} \approx \beta^{2}$$.
+
+The biasing design [is similar to a CE stage](#standard-voltage-divider-bias-circuit) however:
+* The Collector is tied directly to $$V_{cc}$$ (no collector resistor needed).
+* Output is taken from the emitter node so set the DC bias halfway between the rail voltages $$V_{E}=\frac{V_{cc}-V_{ee}}{2}$$ to maximize output voltage swing.
+
+#### Common Base Amplifier Design
+
+<center><img src="CB_Amp.png"></center>
+In a common base (CB) BJT amplifier, the output is taken at the collector and the input is applied to the emitter through an AC coupling capacitor $$C_{in}$$ to protect the DC bias. The DC bias is similar to the CE circuit, however the emitter resistor can be replaced with a generic current source and $$V_{E}$$ is highly application dependent.
+
+The input impedance (ignoring the source impedance connected in the diagram) looking into the emitter is simply the parallel combination of $$r_{e}$$ and $$Z_{E}$$, where $$Z_{E}$$ can be either a standard emitter resistor $$R_{E}$$ or the impedance of a current source (e.g. $$r_{o}$$):
+\$\$ Z_{in} = r_{e} \parallel Z_{E} \$\$
+
+Output impedance looking into the collector is similarly the parallel resistance of the collector resistor and the inverse of the BJT admittance $$h_{OE}$$:
+\$\$ Z_{out} = R_{C} \parallel r_{o} \rightarrow Z_{out} \approx R_{C}, when \frac{1}{h_{OE}} \gg R_{C} \$\$
+
+The voltage gain can be given by finding the ratio of collector voltage to emitter voltage:
+\$\$ v_{out} = -i_{c}(r_{o} \parallel R_{C}) = -i_{b}\beta (r_{o} \parallel R_{C}) \$\$
+\$\$ v_{in} = -i_{b}(\beta + 1)(R_{s} + r_{e}) \$\$
+\$\$ A_{v} \triangleq \frac{v_{i}}{v_{o}} = \frac{-i_{b}\beta (r_{o} \parallel R_{C})}{-i_{b}(\beta + 1)(R_{s} + r_{e})} \approx \boxed{ \frac{r_{o} \parallel R_{C}}{R_{s} + r_{e}} } \$\$
+
+The current gain defined as $$A_{i} \triangleq A_{v}\frac{Z_{in}}{Z_{out}}$$ can be found as:
+\$\$ A_{i} = (\frac{r_{o} \parallel R_{C}}{R_{s} + r_{e}})(\frac{r_{e} \parallel Z_{E}}{R_{C} \parallel r_{o}}) \rightarrow \frac{r_{e} \parallel Z_{E}}{R_{S} + r_{e}} \$\$
+This can be further reduced if $$Z_{E} \gg r_{e}$$ and no source connected so $$R_{S} = 0$$:
+\$\$ A_{i} \approx \frac{r_{e}}{r_{e}} \rightarrow \boxed{ A_{i} \approx 1 } \$\$
+
+This makes sense that current gain is about unity since $$I_{C} \approx I_{E}$$. Thus the CB amplifier can be used as a current gain buffer.
+
+#### BJT High-Frequency Response
+
+##### Gain-Bandwidth Product
+
+The main figure of merit for high-frequency response of a BJT is it's current [gain-bandwidth product](https://en.wikipedia.org/wiki/Gain%E2%80%93bandwidth_product) (GBW) which is usually given in datasheets as $$f_{T}$$ or it's transition frequency.
+<center><img src="BJT_FT.gif"></center>
+This transition frequency is the extrapolated product of the low frequency current gain and the high cutoff frequency (-3dB point) as it is representative of the frequency at which the current gain would drop to unity (gain of 1, or 0dB). This also means that there is a direct tradeoff between gain and bandwith; the higher the magnitude of the gain $$|A_{v}|$$, the lower the high-frequency 3dB cutoff point $$f_{B}$$ occurs:
+\$\$ f_{B} = \frac{f_{T}}{|A_{v}|} \$\$
+<center><img src="BJT_GBW.png" height="300"></center>
+$$f_{T}$$ also increases with collector current $$I_{C}$$ so running a BJT hotter can increase its effective BW (up to a certain point).
+
+##### Miller Effect
+
+Another primary factor in the high-frequency BW limit of BJTs in large, inverting gain configurations (e.g. CE amplifiers) is due to the [Miller effect](https://en.wikipedia.org/wiki/Miller_effect) which effectively multiplies the stray input capacitance of the BJT by the voltage gain. The miller capacitance can be shown with an ideal inverting voltage amplifier with gain $$A_{v}$$ ($$\therefore V_{o}=-A_{v}V_{i}$$) and reactive impedance $$Z=X_{Cm}$$:
+<center><img src="miller_effect.png" height="150"></center>
+Given an ideal amplifier, the amplifier input draws no current ($$\infty$$ input impedance) so all the current goes through $$Z$$ leading to an input impedance inversely related to gain:
+\$\$ I_{i}=\frac{V_{i}-V_{o}}{Z}=\frac{V_{i}(1+A_{v})}{Z} \rightarrow Z_{in}=\frac{V_{i}}{I_{i}}=\frac{Z}{1+A_{v}} \$\$
+With $$Z=X_{C}=\frac{1}{j\omega C_{in}}$$, we can see where the multiplicative effect of gain on input capacitance $$C_{in}$$ comes from and the effective miller capacitance $$C_{m}$$ is derived by $$\eqref{eq:c_miller}$$:
+\$\$
+\begin{equation}
+  Z_{in} = \frac{1}{j\omega C_{in}(1+A_{v})} \rightarrow \boxed { \therefore C_{m}=(1+A_{v})C_{in} }
+  \label{eq:c_miller}
+\end{equation}
+\$\$
+
+For a BJT there exists two main stray capacitances: input capacitance (between base and emitter) and output capacitance (between collector and base). The miller capacitance $$C_{m}$$ (which is a product of voltage gain $$A_{v}$$ and $$C_{cb}$$) is added to the input stray capacitance
+<center><img src="BJT_miller.png" height="500"></center>
+Thus, given an input impedance of the BJT circuit and the source impedance of an input voltage source, there exists a pole from the time constant $$\tau = RC$$ formed which gives the dominant high-frequency cutoff point $$f_{H,1} \eqref{eq:bjt_fh1}$$:
+\$\$
+\begin{equation}
+  f_{H,1} = \frac{1}{2\pi(Z_{source} \parallel Z_{in})(C_{be} + (1-A_{v})C_{cb})}
+  \label{eq:bjt_fh1}
+\end{equation}
+\$\$
+There also exists another HF pole $$f_{H,2}$$ given from the output capacitance & output impedance, however it's usually much higher frequency than the input capacitance (assuming no external load capacitance):
+\$\$ f_{H,2} = \frac{1}{2\pi Z_{out}C_{out}} \$\$
+Note, $$C_{out} \approx \frac{A_{v}+1}{A_{v}}C_{cb}$$.
+
+#### Cascaded CE Amplifiers
+
+Since we know that there's a tradeoff between gain and bandwidth in a BJT amplifier, what if we wanted the best of both worlds? That's where cascading one or more CE amplifiers to the output of a CE stage may help. For instance, if we need to hit system gain $$A$$, but need higher BW, we could use two CE stages, each with a gain of $$\sqrt{A}$$ to achieve more BW in each stage (due to constant gain-bandwidth product). For voltage stages, we ideally want high input impedance and low output impedance to minimize voltage divider losses to each stage.
+
+There are two main methods to calculate system gain of a cascaded CE that produce similar results:
+1. Compute unloaded gain $$G$$, $$Z_{in}$$ and $$Z_{out}$$ for each stage and cascade the transfer functions. Then correct for voltage divider loss between stages.
+2. Compute the loaded gain of each stage by including the load resistance in the gain calculation. Then cascade transfer functions.
+
+For example, with the following cascaded CE circuit, method #1 can be used to find the system gain:
+<center><img src="Cascade_CE.png"></center>
+- **Stage 1 Properties**
+  + Base voltage: $$V_{B}=V_{cc}(\frac{R_{12}}{R_{11}+R_{12}}) \approx 1.7V$$
+  + Emitter voltage: $$V_{E}=V_{B}-v_{be} \approx 1.0V$$
+  + Device Current: $$I_{E}=\frac{V_{E}}{R_{e1}} = 1.0mA \rightarrow \approx I_{C}$$
+  + BJT internal resistance: $$r_{e}=\frac{V_{T}}{I_{E}} = 26\Omega$$
+  + Device $$\beta$$ @ $$I_{C}=1.0mA \rightarrow \beta = 120$$
+  + Inverse output admittance @ $$ I_{C}=1mA \rightarrow r_{o} = 120k\Omega$$
+  + Input Impedance: $$Z_{in1} = R_{11} \parallel R_{12} \parallel (\beta + 1)r_{e} = 2.7k\Omega$$
+  + Voltage Gain: $$A_{v}=-\frac{R_{c1}}{r_{e}} = -230$$
+  + Output Impedance: $$Z_{out1} = r_{o} \parallel R_{c1} \approx 6k\Omega$$
+- **Stage 2 Properties**
+  + Base voltage: $$V_{B}=V_{cc}(\frac{R_{22}}{R_{21}+R_{22}}) \approx 1.8V$$
+  + Emitter voltage: $$V_{E}=V_{B}-v_{be} \approx 1.1V$$
+  + Device Current: $$I_{E}=\frac{V_{E}}{R_{e2}} \approx 5.0mA \rightarrow \approx I_{C}$$
+  + BJT internal resistance: $$r_{e}=\frac{V_{T}}{I_{E}} \approx 5\Omega$$
+  + Device $$\beta$$ @ $$I_{C}=5.0mA \rightarrow \beta = 150$$
+  + Inverse output admittance @ $$ I_{C}=5mA \rightarrow r_{o} = 42k\Omega$$
+  + Input Impedance: $$Z_{in2} = R_{21} \parallel R_{22} \parallel (\beta + 1)r_{e} = 680\Omega$$
+  + Voltage Gain: $$A_{v}=-\frac{R_{c2}}{r_{e}} = -230$$
+  + Output Impedance: $$Z_{out2} = r_{o} \parallel R_{c2} \approx 1k\Omega$$
+
+Given these properties of each stage, we can build a representative circuit of voltage dependent voltage sources (voltage gain of each stage) to compute the effects of the input voltage dividers and output load on the effective system gain:
+<center><img src="Cascade_Vdiv.png"></center>
+\$\$ v_{in1}=v_{i}\frac{2.7k\Omega}{50\Omega + 2.7k\Omega} = 0.98v_{i} \$\$
+
+\$\$ v_{in2}=-230*v_{in1}\frac{680\Omega}{680\Omega + 6k\Omega} = -23v_{i} \$\$
+
+\$\$ v_{out}=-230*v_{in2}\frac{1k\Omega}{1k\Omega + 1k\Omega} = 2645v_{i} \$\$
+
+\$\$ \boxed{ A_{v_{total}} = 2645 (68.4dB)} \$\$
 
 ## Designing Circuits
 
