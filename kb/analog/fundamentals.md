@@ -505,6 +505,8 @@ In general, the computed capacitor values can be rounded up to the next largest 
 
 Common Collector (CC) amplifiers are useful circuit building blocks in that they provide high input impedance (which presents less of a load to a previous stage/input) and low output impedance (less voltage divider error to following stage, assuming it has high input impedance) while having a voltage gain $$A_{v} \approx 1$$; this unity gain is useful in seperating stages and using a CC amplifier as a buffer (or impedance transformer) as well as the fact that they [have very large current gain](#common-collector-1) usually with $$A_{i} \approx \beta^{2}$$.
 
+<center><img src="CC_amp.png" height="500"></center>
+
 The biasing design [is similar to a CE stage](#standard-voltage-divider-bias-circuit) however:
 * The Collector is tied directly to $$V_{cc}$$ (no collector resistor needed).
 * Output is taken from the emitter node so set the DC bias halfway between the rail voltages $$V_{E}=\frac{V_{cc}-V_{ee}}{2}$$ to maximize output voltage swing.
