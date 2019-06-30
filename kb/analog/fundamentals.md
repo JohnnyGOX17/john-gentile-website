@@ -315,6 +315,9 @@ This value is highly dependent on base current (see varying $$I_{C}$$ vs $$V_{CE
 
 When the series combination of $$r_{e} + R_{E}$$ is negligible compared to $$r_{o}$$, which is often the case.
 
+This inclusion of $$r_{o}$$ can affect voltage gain as well if it's in the same order of magnitude as $$R_{C}$$; both are in parallel with each other so a more precise output voltage at the collector would be the potential across both. Thus CE voltage gain can be given as:
+\$\$ A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e} + R_{E}} \$\$
+
 ##### Common Collector
 
 For a common collector configuration, the output voltage comes from the emitter node.
@@ -412,13 +415,13 @@ In general this bias design uses a fair amount of components but can maintain $$
 
 ##### Improving Voltage Gain
 
-As noted earlier in [standard bias circuit design](#standard-voltage-divider-bias-circuit), the existence of the emitter capacitor $$C_{E}$$ is used to help bypass the emitter resistor $$R_{E}$$ at operating frequencies. This is because we don't want to mess with the DC bias resistors we setup for stability but we usually want improved voltage gain over the [standard CE voltage gain](#voltage-gain--output-impedance) given by $$A_{v} = -\frac{R_{C}}{r_{e} + R_{E}}$$; for instance with $$R_{C} = 1.4k\Omega$$ and $$R_{E} = 100\Omega$$, the gain is only 14.
+As noted earlier in [standard bias circuit design](#standard-voltage-divider-bias-circuit), the existence of the emitter capacitor $$C_{E}$$ is used to help bypass the emitter resistor $$R_{E}$$ at operating frequencies. This is because we don't want to mess with the DC bias resistors we setup for stability but we usually want improved voltage gain over the [standard CE voltage gain](#voltage-gain--output-impedance) given by $$A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e} + R_{E}}$$; for instance with $$R_{C} = 1.4k\Omega$$, $$R_{E} + r_{e} = 100\Omega$$ and $$r_{o} \gg R_{C}$$, the gain is only 14.
 
 _Full Bypass_
 
 With a capacitor $$C_{E}$$ directly in parallel with $$R_{E}$$, the external emitter resistance is completely shorted at high frequencies (or large enough for a given range of frequency operation) which leads to maximum gain due to being only limited by the BJT's internal emitter resistance:
 <center><img src="CE_cap_full_bypass.png" height="500"></center>
-\$\$ A_{v} = -\frac{R_{C}}{r_{e} + R_{E}} \overset{R_{E}=0}{\rightarrow} A_{v} = -\frac{R_{C}}{r_{e}} \$\$
+\$\$ A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e} + R_{E}} \overset{R_{E}=0}{\rightarrow} A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e}} \approx \boxed{ -\frac{R_{C}}{r_{e}}, (r_{o} \gg R_{C}) } \$\$
 
 _Partial Bypass_
 
@@ -428,10 +431,10 @@ Where the top resistor $$\hat{R_{E}}$$ that is always present is simply the calc
 \$\$ \hat{R_{E}} = R_{E} - R_{es} \$\$
 
 So at high frequencies, the voltage gain is given by:
-\$\$ \boxed{ A_{v} = -\frac{R_{C}}{r_{e} + \hat{R_{E}}} } \$\$
+\$\$\ A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e} + \hat{R_{E}}} \approx \boxed{ -\frac{R_{C}}{r_{e} + \hat{R_{E}}}, (r_{o} \gg R_{C}) } \$\$
 
 And, given an already calculated $$R_{C}$$ from the bias circuit, and a calculated $$r_{e}$$, one can find $$\hat{R_{E}}$$ and $$R_{es}$$ from:
-\$\$ \hat{R_{E}} = \frac{R_{C}}{A_{v_{target}}} - r_{e} \$\$
+\$\$ \hat{R_{E}} = \frac{R_{C} \parallel r_{o}}{A_{v_{target}}} - r_{e} \$\$
 \$\$ R_{es} = R_{E_{DC Bias}} - \hat{ R_{E} } \$\$
 
 This addition of the emitter capacitor means that the [BJT input impedance we calculated earlier](#input-impedance) needs to be adjusted for:
