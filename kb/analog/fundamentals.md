@@ -613,6 +613,81 @@ Given these properties of each stage, we can build a representative circuit of v
 
 \$\$ \boxed{ A_{v_{total}} = 2645 (68.4dB)} \$\$
 
+#### BJT Noise Model
+
+BJTs inherent noise can be modeled by both current and voltage noise sources coinciding as separate sources.
+<center><img src="BJT_noise.png" height="300"></center>
+From both noise sources, there exists a resistive noise parameter $$R_{N}$$ that is developed from device theory (not a lumped component) equivalent to the square root of $$\beta$$ and internal emitter resistance:
+\$\$ R_{N} = \frac{v_{n}}{i_{n}} = \boxed{ \sqrt{\beta}*r_{e} } \$\$
+
+The use of $$R_{N}$$ in noise analysis results in a conservative, or pessimistic, evaluation of noise levels of a given circuit (roughly 4-5 times greater than theoretical low-noise BJT levels) that are good enough for initial analysis. The noise voltage and current sources- in RMS since random, uncorrelated sources- can be defined as:
+\$\$ v_{n_{(RMS)}} = \sqrt{4kTR_{N}B} \$\$
+\$\$ i_{n_{(RMS)}} = \sqrt{\frac{4kTB}{R_{N}}} \$\$
+
+Since $$R_{N} = \sqrt{\beta}*r_{e} $$, we can control noise levels with choice of circuit emitter/collector current since $$r_{e}=\frac{V_{T}}{I_{E}}$$ (e.g. higher emitter current leads to lower noise).
+
+Noise is often referred to the input of a device as Referenced To Input, or **RTI**. Noise Referenced To Output, or **RTO**, can be found by multiplying the RTI noise by the voltage gain $$A_{v}$$.
+
+##### BJT Circuit Noise Analysis
+
+The total noise of a BJT circuit can be found by analyzing the individual noise sources and combining them into a total noise contribution. Importantly, the analysis should be done for a given operational bandwidth (either theoretical or dictated by band-limiting filtering or other system effects) and a given operational temperature (assume room temp if not specified) as both directly contribute to the magnitude of noise seen (e.g. higher system bandwidth, higher noise voltage).
+<center><img src="BJT_noise_circuit.png" height="500"></center>
+
+1. First, the transistor noise resistance $$R_{N} = \sqrt{\beta}*r_{e}$$ should be found.
+2. The transistor voltage noise ($$v_{n,Q}$$) and current noise ($$i_{n,Q}$$) can be found by:
+\$\$ v_{n,Q} = \sqrt{4kTR_{N}B} \$\$
+\$\$ i_{n,Q} = \sqrt{\frac{4kTB}{R_{N}}} \$\$
+3. Find the [Johnson noise](#noise) of the resistors $$R1$$ & $$R2$$ as they form parallel current noise sources with the BJT current noise source $$i_{n,Q}$$, where the current noise can be found with a resistance $$Rx$$ as:
+\$\$ i_{n,Rx} = \sqrt{\frac{4kTB}{Rx}} \$\$
+4. The total parallel current noise can then be found by combining the RMS current noise sources as:
+\$\$ i_{n,Q total} = \sqrt{i_{n,R1}^{2} + i_{n,R2}^{2} + i_{n,Q}^{2} } \$\$
+5. The equivalent input resistance can be used to express the combined current noise as a voltage noise across the equivalent resistance at the base, and in the above circuit, the BJT input resistance $$R_{in,Q}$$ is equivalent to $$(\beta + 1)r_{e}$$ since the emitter is fully bypassed by the emitter capacitor $$C_{E}$$ at operating frequency:
+\$\$ R_{eq} = R_{s} \parallel R_{1} \parallel R_{2} \parallel R_{in,Q} \$\$
+\$\$ \therefore v_{n,Q total} = i_{n,total} * R_{eq} \$\$
+6. The source voltage noise $$v_{n,s}$$ can be found by the Johnson equation:
+\$\$ v_{n,R_{s}} = \sqrt{4kTR_{s}B} \$\$
+7. The Johnson noise contribution from the collector resistor $$R_{C}$$ is applied to the output (assuming CE amplifier) so, as mentioned above, we can hace noise referred to the input by dividing by voltage gain $$A_{v}$$. In a CE configuration like above with a fully bypassed emitter, $$A_{v} \approx -\frac{R_{C}}{r_{e}} $$ when $$r_{o} \gg R_{C}$$.
+\$\$ v_{n,R_{C}(RTI)} = \frac{v_{n,R_{C}(RTO)}}{| A_{v} |} \$\$
+8. Similarly, the Johnson noise from the emitter resistance $$R_{E}$$ has to change from RTO to RTI noise (if even a contributing source at all and not fully bypassed like above!). However, the [voltage gain at the emitter is about unity](#common-collector) so dividing by 1 means the RTI noise voltage can be considered equivalent to the RTO Johnson noise:
+\$\$ v_{n,R_{E}(RTI)} \approx v_{n,R_{E}(RTO)} \$\$
+9. Finally the total noise voltage seen at the input can be found by the RMS combination of all RTI noise sources:
+\$\$ v_{n,total} = \sqrt{v_{n,Q}^{2} + (i_{n,Q total}*R_{eq})^{2} + v_{n,R_{E}}^{2} + v_{n,R_{C}}^{2} + v_{n,R_{s}}^{2} } \$\$
+
+Note, a calculation simplification for systems at room temperature is $$\sqrt{4kT}=1.3 \times 10^{-10}$$ so this can be pulled out of the sqaure root in voltage and current noise equations.
+
+As well, an interesting outcome in some CE designs is that the input noise voltage is dominated by the source impedance, so the lower that can become, the lower the input noise voltage!
+
+##### Noise Matching
+
+One way to minimize total system noise is to set BJT noise equal to source noise. To do this, set $$R_{N} = \sqrt{\beta}*r_{e} = R_{s}$$ such that- given $$r_{e} = \frac{V_{T}}{I_{E}}$$- you try to find the best value of emitter current to match:
+\$\$ r_{e} = \frac{R_{s}}{\sqrt{\beta}} \rightarrow \frac{V_{T}}{I_{E}}=\frac{R_{s}}{\sqrt{\beta}} \rightarrow \frac{V_{T}\sqrt{\beta}}{R_{s}} = I_{E} \$\$
+
+Since device $$\beta$$ is highly dependent on collector current (and $$I_{C} \approx I_{E}$$), you may have to make a couple interations (using a typical $$\beta$$ value, then seeing what $$I_{E}$$ results, and then checking what value of $$\beta$$ corresponds to that emitter current) until the values converge. After convergence, follow [standard bias design](#standard-voltage-divider-bias-circuit) to match the calculated $$I_{E}$$.
+
+##### Cascaded Noise
+
+For multi-stage noise analysis, each stage's noise is computed seperately and then combined in an RMS fashion to find total system noise:
+<center><img src="Cascade_Noise_1.png"></center>
+However, like we saw above, the output noise RTO is related back to the input (RTI) by dividing by the voltage gain $$A_{v}$$, thus in this two stage amplifier above, the total system noise would be:
+\$\$ v_{n,total} = \sqrt{ v_{n1}^{2} + (\frac{v_{n2}}{A_{v1}})^{2} } \$\$
+
+This same effect can be applied across multiple stages where:
+<center><img src="Cascade_Noise_2.png"></center>
+\$\$ v_{n3,stage} = \sqrt{ v_{n3}^{2} + (\frac{v_{n4}}{A_{v3}})^{2} } \$\$
+\$\$ v_{n2,stage} = \sqrt{ v_{n2}^{2} + (\frac{v_{n3}}{A_{v2}})^{2} } \$\$
+\$\$ v_{n1,total} = \sqrt{ v_{n1}^{2} + (\frac{v_{n2}}{A_{v1}})^{2} } \$\$
+
+This divide-by-gain effect means that for low noise design, one really need only care about creating a high-gain & low-noise first stage; each stage after has less and less contribution to overall noise in the system compared to the first input stage.
+
+To help quanitify a system and the contribution of each of it's stages to overall noise, there is the figure-of-merit specifications of **Noise Figure** ($$NF$$) and **Noise Factor** ($$F$$); NF is the logarithmic noise power (dB) that is added to a system with respect to source impedance. Thus $$NF=0 dB$$ means a completely noiseless system or stage. Noise Factor $$F$$ is the linear equivalent of $$NF$$ and is thus the ratio of added noise to source noise. Noise Factor can then be used to describe cascaded noise within a system given each stage's Noise Factor $$F_{i}$$ and each stage's gain $$G_{i}$$ such that:
+<center><img src="Noise_Factor.png"></center>
+\$\$ F_{system} = F_{1} + \frac{F_{2}-1}{G_{1}} + \frac{F_{3}-1}{G_{1}G_{2}} + \dotsb + \frac{F_{N}-1}{\displaystyle\prod_{i=1}^{n-1} G_{i}} \$\$
+
+Noise Figure $$NF$$ can be found from the system by:
+\$\$ NF = 10*\log_{10}\left(\frac{v_{n,source}^{2} + v_{n,total}^{2}}{v_{n,source}^{2}} \right) \$\$
+
+BJT datasheet NF can also be used to verify calculations or use in system analysis.
+
 ## Designing Circuits
 
 ### Reference Designs
