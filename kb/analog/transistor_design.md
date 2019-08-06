@@ -553,9 +553,13 @@ The use of this second BJT is the motivation behind the final topology of the LT
 <center><img src="LTP_top.png" height="500"></center>
 The output can be taken from either collector, or the difference of both, and the inputs can be single-ended or differential. This is a fundamental building block for linear integrated circuits like opamps. Most all voltage feedback designs use an LTP topology at the input stage.
 
-##### LTP Small Signal Analysis
+**NOTE:** for designs which take output voltage at only one output, one need not have a collector resistor on the other leg; small signal current is still present but an output voltage across a collector resistor does not need to be developed.
 
-For explanation, we'll considered the single-ended case when the first input has applied signal voltage and the second input is grounded. When $$v_{in}$$ is positive, the current flows through the emitter of the input transistor and into the emitter of the secondary transistor, through its base to ground.
+##### LTP Small Signal Analysis: Single-Ended Input
+
+<center><img src="LTP_SE.png" height="300"></center>
+
+For explanation, we'll first consider the single-ended (SE) configuration when the first input has applied signal voltage and the second input is grounded. When $$v_{in}$$ is positive, the current flows through the emitter of the input transistor and into the emitter of the secondary transistor, through its base to ground.
 <center><img src="LTP_small_sig_pos.png" height="300"></center>
 \$\$ v_{ r_{ e1 } } = -v_{ r_{ e2 } } \$\$
 \$\$ i_{ r_{ e1 } } = -i_{ r_{ e2 } } \$\$
@@ -565,5 +569,90 @@ Almost no current flows through the tail resistor as usually $$R_{T} \gg r_{e}$$
 When $$v_{in}$$ is negative, the same effects can be seen:
 <center><img src="LTP_small_sig_neg.png" height="300"></center>
 
-Due to the small signal current through each transistor being equal and opposite, this results in the total collector currents in each to slightly increase or decrease, depending on input voltage polarity; this causes the small signal voltages across the collector resistors, and thus the output voltages, to move in equal opposition such that they are also in equal magnitude but opposite polarity (note, this is for the small signal voltages, the DC bias voltages of each should keep the total collector voltage positive enough to keep the transistors active and out of saturation).
+Similar to the [proof above](#background), the voltage gain seen at the output (collector) on the same side of the input voltage is:
+\$\$ A_{v1} = \frac{ v_{c1} }{ v_{b1} } = \frac{ -i_{b1} \beta_{1} R_{C1} }{ i_{b1} (\beta_{1} + 1)(r_{e1} + r_{e2}) } \approx \boxed { -\frac{ R_{C1} }{ 2r_{e} } } \$\$
 
+Due to the small signal current through each transistor being equal and opposite, this results in the total collector currents in each to slightly increase or decrease, depending on input voltage polarity; this causes the small signal voltages across the collector resistors, and thus the output voltages, to move in equal opposition such that they are also in equal magnitude but opposite polarity (note, this is for the small signal voltages, the DC bias voltages of each should keep the total collector voltage positive enough to keep the transistors active and out of saturation). Thus, the voltage gain at the output of the opposite side of the input voltage is:
+\$\$ A_{v2} = -A_{v1} = \boxed{ +\frac{R_{C2}}{2r_{e}} } \$\$
+
+This equal and opposite output voltage at each leg means the differential voltage gain is twice the voltage gain of each leg since:
+\$\$ A_{ v_{diff} } = A_{v1} \pm A_{v2} \approx \pm \frac{ R_{C} } { r_{e} } \$\$
+Note the polarity of the output voltage/gain depends on how the differential output is defined.
+
+##### LTP Small Signal Analysis: Differential Mode Input
+
+<center><img src="LTP_Diff.png" height="300"></center>
+
+When the inverting/negative terminal of the input voltage is connected directly to the opposite transistor (opposed to the transistor directly connected to the non-inverted/positive terminal of the input voltage), the configuration is defined as a Differential Mode (DM) Input. The voltage gain can be seen to be similar to the SE; if the input voltage has a peak-to-peak amplitude of $$1 V_{pk-pk}$$, then one transistor would, for instance, see an input rise $$1/2 V$$ while the opposite transistor would see a fall of an equal $$ 1/2 V$$. Thus the voltage gain at the output of the non-inverting side can be seen as:
+\$\$ v_{c1} = v_{ i_{Q1} } * A_{v1} + v_{ i_{Q2} } * A_{v1} = (+1/2)(-\frac{ R_{C} }{ 2 r_{e} }) + (-1/2)(-\frac{ R_{C} }{ 2 r_{e} }) = -\frac{ R_{C}} { 2 r_{e} } \$\$
+And the ouput of the inverting side can be seen similarly as:
+\$\$ v_{c2} = v_{ i_{Q2} } * A_{v2} + v_{ i_{Q1} } * A_{v2} = (-1/2)(-\frac{ R_{C} }{ 2 r_{e} }) + (+1/2)(-\frac{ R_{C} }{ 2 r_{e} }) = +\frac{ R_{C}} { 2 r_{e} } \$\$
+Thus the differential output gain can be seen as (again depending on polarity defined):
+\$\$ \boxed{ A_{ v_{diff} } = \pm \frac{ R_{C} }{ r_{e} } } \$\$
+
+The input impedance can be seen as:
+\$\$ Z_{in} = \frac{ v_{i} }{ i_{i} } = \frac{ v_{b} }{ i_{b} } \$\$
+\$\$ v_{b} = i_{e} ( r_{e1} + r_{e2} \parallel R_{T} ) \approx i_{b} (\beta + 1)( r_{e1} + r_{e2} ) \$\$
+\$\$ \therefore Z_{in} \approx (\beta + 1)( 2r_{e} ) \$\$
+
+##### LTP Small Signal Analysis: Common Mode Input
+
+<center><img src="LTP_CM.png" height="300"></center>
+
+Common Mode (CM) is defined as when both inputs (e.g. positive & negative, or inverting and non-inverting terminals) see the same signal/voltage simultaneously. In the case of an LTP configuration, this means that the input base voltages to the transistors increase/decrease by the same amount. Therefore, in a matched/ideal design, the emitter voltages of both transistors are always at equal potential, thus no small signal current flows between them like in previous configurations. This means, for analysis purposes, each side can be treated separately, but with $$1/2$$ the bias current (or equally twice the tail resistance seen) for each leg in a **Half-Pair Model**:
+<center><img src="LTP_half-pair.png" height="300"></center>
+Thus, similar to a standard CE configuration, the voltage gain of each leg can be seen as:
+\$\$ A_{ v_{CM} } = -\frac{ R_{C} }{ r_{e} + 2R_{T} } \$\$
+
+Since most designs do not want to have large CM gain (usually CM voltages are seen as coupled noise or other unintended voltage sources) but rather reject common mode voltages, it's desired for CM gain to be as low as possible relative to differential mode gain. This figure of merit if called **Common Mode Rejection Ratio (CMRR)** and is the ratio of DM to CM gain in dB:
+\$\$ CMRR = 20 * log_{10} \left( \frac{ A_{ v_{DM} } }{ A_{ v_{CM} } } \right) \$\$
+CMRR in LTP designs can often be improved by replacing the discrete tail resistor $$R_{T}$$ with a current source.
+
+The input impedance of each leg can be seen similarly to a CE configuration as:
+\$\$ Z_{in1} \approx (\beta + 1)( r_{e} + 2R_{T} ) \$\$ 
+And since the same input voltage is seen simultaneously to each leg, the total input impedance is the parallel impedance of each leg:
+\$\$ Z_{in} = Z_{in1} \parallel Z_{in2} \$\$
+
+#### Current Mirrors
+
+In linear circuit design, a common circuit used is the **Current Mirror** and as the name implies the output current is a "mirror" of the input current. It can be used to make an exact copy of sensed current or a scaled version at the output. Current mirrors can also be used to replace collector load resistors, or other resistors, in transistor circuit designs, and in integrated circuit design, transistors can be more advantageous than discrete resistors as they take up less real estate and can be more accurate.
+
+The basic design is to take two matched transistors (nearly identical $$V_{be}$$) and make the first transistor as a "diode-connected transistor" and the reference current can be set with a programming resistor $$R_{prog}$$:
+
+<center><img src="current_mirror_basic.png" height="300"></center>
+\$\$ I_{ref} = \frac{ V_{cc} - V_{be1} }{ R_{prog} } \$\$
+
+$$Q_{2}$$ must be matched (matched-pair design on same piece of silicon where the base-emitter voltages track over temperature and have the same characteristics) so it senses $$V_{be1}$$ and generates an equal current in $$Q_{2}$$ since the device characteristics are near identical. If devices are not matched, the difference in base-emitter voltages $$\Delta V_{be}$$ can cause large base currents in $$Q_{2}$$ which can lead to even larger collector currents in $$Q_{2}$$. **Compliance** of a current source is the min/max range of voltages over which it will operate.
+
+For example, to replace the tail resistor in a LTP configuration, a current mirror can be placed in the emitter:
+<center><img src="LTP_current_mirror.png" height="500"></center>
+
+Current mirrors can also be used to replace the collector resistors in CE & LTP configurations, which allows for large gain without the need for emitter bypass capacitors:
+<center><img src="LTP_active_load.png" height="500"></center>
+For instance, total gain can be seen as:
+\$\$ A_{v} = -\frac{ R_{C} }{ 2r_{e} } = -\frac{ r_{o2} \parallel r_{o6} }{ 2r_{e} } \$\$
+
+##### LTP Current Mirror Output Impedance
+
+The choice of which transistor to short base-to-emitter (e.g. to create a diode-connected transistor) depends on which output voltage one wants to take (which also depends on wanting inverting or non-inverting polarity output). When the output voltage is taken at the same side as the diode-connected transistor tying- for instance the output at $$Q_{5}$$ above- the impedance is looking into the base terminal of both transistors in parallel:
+
+\$\$ Z_{out} = Z_{ 5 base } \parallel Z_{ 6 base } = ( \beta_{5} + 1) r_{e5} \parallel ( \beta_{6} + 1) r_{e6} \approx \frac{ (\beta + 1) r_{e} }{2} \$\$
+
+This usually means a much higher input impedance than desired so most designs take the output voltage on the opposite leg of the diode-connected transistor:
+<center><img src="LTP_CM_output.png" height="300"></center>
+
+##### CMRR Improvement
+
+Given CMRR is the ratio of differential to common-mode gain, we can make a rough approximation that CMRR is directly related to $$R_{T}$$:
+\$\$ \frac{ A_{ v_{DM} } }{ A_{ v_{CM} } } = \frac{ -\frac{ R_{C} }{ 2r_{e} } }{ \frac{ R_{C} }{ r_{e} + 2R_{T} } } \approx \frac{ R_{T} }{ r_{e} } \$\$
+Thus the implication is that to increase CMRR, a designer has two options:
+1. Decrease $$r_{e}$$
+2. Increase $$R_{T}$$
+
+It's often difficult to decrease $$r_{e}$$ as it requires an increase in bias current- which directly relates to increased power consumption- and there is often an upper limit to how low this resistance can go. Thus the second option is often more effective as the tail resistance can be increased much more by replacing the discrete tail resistor with a current mirror source; in the figure above, the output impedance of the transistor $$Q3$$, $$r_{o3} \gg R_{T}$$ for the same bias current setup. For example, for a bias setup of $$I_{bias}= 1 mA$$ , a tail resistor is calculated as:
+\$\$ R_{T} = \frac{ ( V_{b1} - V_{be1} ) - V_{ee} }{ 2 * I_{bias} } \approx 7.2 k\Omega \$\$
+
+Compare that value to the equivalent output resistance of $$Q_{3}$$ (e.g. a 2N3904 BJT) when programming the current mirror to 2 mA (1 mA bias current for each leg):
+\$\$ Z_{mirror} = r_{o3} = \frac{1}{ h_{OE @ 2mA} } \approx 83 k\Omega \$\$
+
+Compared to the tail resistor, this results in around a 21 dB increase in CMRR.
