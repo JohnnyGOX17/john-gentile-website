@@ -19,6 +19,16 @@ The collector terminal in the model is an ideal current source since a BJT opera
 This also follows the ideal current source characteristic of having nearly infinite output impedance:
 \$\$ \frac{v}{i}=r \rightarrow  \frac{\Delta v_{ce} \to \infty}{\Delta i_{c} \to 0} \approx \boxed{ r_{o} = \infty \Omega } \$\$
 
+#### BJT Output Impedance: Early Effect
+
+As shown above though, a real transistor does not exhibit perfectly constant (zero slope) output impedance in the curve above. Instead, there is a property called the **Early Effect** which describes the increase of depletion regions within the transistor with a correlation to increased bias voltage across the collector-emitter junction:
+<center><img src="Early_effect.png"></center>
+This Early Voltage is denoted by the device parameter $$V_{A}$$ which is an imaginary intercept along the negative voltage axis which is shown to follow the slopes of resulting active region plots. The Early voltage of a device is usually around 100V, with higher values indicating higher output impedance numbers. The Early Effect and subsequent changes in depletion regions can more accurately model the collector current and output impedances knowing the Early Voltage of the device and the collector-emitter bias voltage:
+\$\$ I_{C} = I_{B} \beta (1 + \frac{ V_{CE} }{ V_{A} } ) \$\$
+\$\$ r_{o} = \frac{ V_{A} + V_{CE} }{ I_{C} } \$\$
+
+Output impedance of a BJT can also be specified by the BJT's datasheet as output admittance $$h_{oe}$$ in $$\mho$$ (Mhos), the inverse of which gives the output impedance of the BJT as $$r_{o}$$.
+
 #### Emitter Impedance $$r_{e}$$
 
 The base emitter junction has a dynamic impedance $$r_{e}$$ that is given from the relationship of $$ \frac{v_{be}}{i_{e}} $$. Given the BJT can be seen as a forward biased diode from base to emitter, the Shockley diode equation can show the relationship between $$v_{be}$$ and $$i_{e}$$.
@@ -78,7 +88,7 @@ When looking at the output impedance of the $$r_{e}$$ model of a common emitter 
 However, since in this model we are using an ideal current source, the impedance $$Z_{c} = \infty$$. Thus, the added resistances $$r_{e}$$ and $$R_{e}$$ are insignificant and the series impedance is $$\infty$$, and since this looks like an open circuit in parallel with $$R_{c}$$, the output resistance is simply $$R_{c}$$:
 \$\$ Z_{out} = R_{c} \parallel \infty \Rightarrow \boxed { Z_{out} = R_{c} } \$\$
 
-Technically though, the current source in our model doesn't have infinite inpedance and actually can be specified by the BJT's datasheet as output admittance $$h_{oe}$$ in $$\mho$$, the inverse of which gives the output impedance of the BJT as $$r_{o}$$.
+However, the current source in our model may not _always_ be able to be treated as having infinite output impedance due to the contribution of $$r_{o}$$ depending on collector current (or more accurately the [Early Effect](#bjt-output-impedance-early-effect)):
 <center><img src="CE_Zout.png" height="500"></center>
 This value is highly dependent on base current (see varying $$I_{C}$$ vs $$V_{CE}$$ slopes [discussed previously](#r_e--t-model)) but is sometimes large enough to be a factor in computing output impedance such that:
 \$\$ \boxed{ Z_{out} \approx r_{o} \parallel R_{C} } \$\$
@@ -491,7 +501,7 @@ Where $$ R_{Q2} = (\beta_{2} + 1)(r_{e2} + R_{E2}) $$. The [voltage gain of a CC
 #### Cascode (CE-CB) Amplifier
 
 <center><img src="cascode.png" height="500"></center>
-Since CE amplifiers suffer from bandwidth limitations due to [the Miller Effect](#miller-effect), the cascode amplifier increases the bandwidth of a stage by inserting a CB circuit into the collector of a CE circuit. The main reason this happens is the CB amplifier has [a very low input impedance of $$ \approx r_{e} $$](#common-base-amplifier-design) which reduces the gain seen at the collector of the CE stage (since the gain is directly related what would be the collector resistor $$R_{C}$$ but is now the CB $$Z_{in}$$), thereby negating the Miller Effect (which increases input capacitance linearly with inverting voltage gain).
+Since CE amplifiers suffer from bandwidth limitations due to [the Miller Effect](#miller-effect), the cascode amplifier increases the bandwidth of a stage by inserting a CB circuit into the collector of a CE circuit. The main reason this happens is the CB amplifier has [a very low input impedance of $$ \approx r_{e} $$](#common-base-amplifier-design) which reduces the gain seen at the collector of the CE stage (since the gain is directly related what would be the collector resistor $$R_{C}$$ but is now the CB $$Z_{in}$$), thereby negating the Miller Effect (which increases input capacitance linearly with inverting voltage gain). Like a standard CB circuit, the base of the upper stage is grounded at frequency via a coupling capacitor $$C_{b}$$.
 
 Even though this may seem like this negatively affects overall voltage gain, the small signal model of the Cascode configuration can show how the system voltage gain, though, is preserved since the current through the CB stage is about equal through the lower CE stage, thus producing a similar output voltage through the collector resistor in the CB stage. So given equivalent transistors ($$\beta$$ roughly equivalent in both) and similar base currents, we can see:
 <center><img src="cascode_small-signal.png" height="500"></center>
@@ -613,6 +623,13 @@ The input impedance of each leg can be seen similarly to a CE configuration as:
 And since the same input voltage is seen simultaneously to each leg, the total input impedance is the parallel impedance of each leg:
 \$\$ Z_{in} = Z_{in1} \parallel Z_{in2} \$\$
 
+##### LTP Increases Bandwidth
+
+A single-ended mode LTP is an effective means of cancelling out the [Miller Effect](#miller-effect) as it negates the two necessary contributors to the effect:
+* _Inverting Gain:_ we saw above we can achieve a non-inverting gain by taking the output voltage on the opposite side of the input voltage.
+* _Large Voltage Gain:_ Since we only need to have a collector resistor (or current mirror) on the opposite collector side to develop an output voltage, the collector of the input transistor can be tied directly to the positive supply rail, effectively creating a voltage gain of 0 at that collector, further negating the Miller Effect.
+<center><img src="LTP_High_BW.png" height="300"></center>
+
 #### Current Mirrors
 
 In linear circuit design, a common circuit used is the **Current Mirror** and as the name implies the output current is a "mirror" of the input current. It can be used to make an exact copy of sensed current or a scaled version at the output. Current mirrors can also be used to replace collector load resistors, or other resistors, in transistor circuit designs, and in integrated circuit design, transistors can be more advantageous than discrete resistors as they take up less real estate and can be more accurate.
@@ -632,16 +649,21 @@ Current mirrors can also be used to replace the collector resistors in CE & LTP 
 For instance, total gain can be seen as:
 \$\$ A_{v} = -\frac{ R_{C} }{ 2r_{e} } = -\frac{ r_{o2} \parallel r_{o6} }{ 2r_{e} } \$\$
 
-##### LTP Current Mirror Output Impedance
+##### Current Mirror: High Output Impedance
 
-The choice of which transistor to short base-to-emitter (e.g. to create a diode-connected transistor) depends on which output voltage one wants to take (which also depends on wanting inverting or non-inverting polarity output). When the output voltage is taken at the same side as the diode-connected transistor tying- for instance the output at $$Q_{5}$$ above- the impedance is looking into the base terminal of both transistors in parallel:
+The choice of which transistor to short base-to-emitter (e.g. to create a diode-connected transistor) depends on which output voltage one wants to take (which also depends on wanting inverting or non-inverting polarity output). When the output voltage is taken at the same side as the diode-connected transistor tying- for instance the output of a LTP using a Current Mirror in place of Collector Resistors at $$Q_{5}$$ above- the impedance is looking into the base terminal of both transistors in parallel:
 
 \$\$ Z_{out} = Z_{ 5 base } \parallel Z_{ 6 base } = ( \beta_{5} + 1) r_{e5} \parallel ( \beta_{6} + 1) r_{e6} \approx \frac{ (\beta + 1) r_{e} }{2} \$\$
 
 This usually means a much higher input impedance than desired so most designs take the output voltage on the opposite leg of the diode-connected transistor:
 <center><img src="LTP_CM_output.png" height="300"></center>
 
-##### CMRR Improvement
+Even higher output impedance (e.g. $$> 100 M\Omega$$) can be found using matched transistors such as the [MAT-14](https://www.analog.com/en/products/mat14.html#product-overview) (which also provide much more accurate operation) in a configuration such as:
+<center><img src="MAT-14_CM.png" height="300"></center>
+
+Again, as shown above, the replacement of collector resistors with a super high output impedance current mirros can lead to much larger voltage gain in a LTP design.
+
+##### CMRR Improvement in LTP
 
 Given CMRR is the ratio of differential to common-mode gain, we can make a rough approximation that CMRR is directly related to $$R_{T}$$:
 \$\$ \frac{ A_{ v_{DM} } }{ A_{ v_{CM} } } = \frac{ -\frac{ R_{C} }{ 2r_{e} } }{ \frac{ R_{C} }{ r_{e} + 2R_{T} } } \approx \frac{ R_{T} }{ r_{e} } \$\$
@@ -652,7 +674,54 @@ Thus the implication is that to increase CMRR, a designer has two options:
 It's often difficult to decrease $$r_{e}$$ as it requires an increase in bias current- which directly relates to increased power consumption- and there is often an upper limit to how low this resistance can go. Thus the second option is often more effective as the tail resistance can be increased much more by replacing the discrete tail resistor with a current mirror source; in the figure above, the output impedance of the transistor $$Q3$$, $$r_{o3} \gg R_{T}$$ for the same bias current setup. For example, for a bias setup of $$I_{bias}= 1 mA$$ , a tail resistor is calculated as:
 \$\$ R_{T} = \frac{ ( V_{b1} - V_{be1} ) - V_{ee} }{ 2 * I_{bias} } \approx 7.2 k\Omega \$\$
 
+<center><img src="LTP_active_load.png" height="500"></center>
+
 Compare that value to the equivalent output resistance of $$Q_{3}$$ (e.g. a 2N3904 BJT) when programming the current mirror to 2 mA (1 mA bias current for each leg):
 \$\$ Z_{mirror} = r_{o3} = \frac{1}{ h_{OE @ 2mA} } \approx 83 k\Omega \$\$
 
 Compared to the tail resistor, this results in around a 21 dB increase in CMRR.
+
+##### Common Collector Distortion Improvement
+
+The [Common Collector](#common-collector-amplifier-design) can be improved by replacing the emitter degredation resistor with a current mirror. Since the goal of a CC amplifier stage is to provide unity gain and isolate a stage from a load (or other lower input impedance stage), we ideally want a CC's input impedance to be as high as possible. For example, for a 1 mA bias with a 6V emitter voltage, $$R_{E} = 6 k\Omega$$. Since $$Z_{in} = (\beta + 1)(r_{e} + R_{E})$$, $$Z_{in} \approx 720 k\Omega$$ for a typical Beta of around 120. Compare to the input impedance when replacing $$R_{E}$$ with a CM:
+<center><img src="CC_CM_RE.png"></center>
+The output impedance of the current mirror is $$ \approx 120k\Omega$$ for 1 mA bias, so multiplied by $$\beta = 120$$, the input impedance has increased 20x to $$\approx 14M\Omega$$!
+
+The other great improvement of using a CM instead of a discrete resistor in the emitter of a CC is a much improved distortion performance; since CC voltage gain is $$ A_{v} \triangleq \frac{ R_{E} }{ r_{e} + R_{E}} $$, and $$ r_{e} \triangleq \frac{V_{T}}{I_{C}} $$, it can be seen that changes in collector current- caused by changes in emitter/output voltage in large signal operation over the constant emitter resistor- can change the values of $$r_{e}$$ which can distort the output voltages in a non-linear fashion. For instance, over a 1V to 10V large signal output voltage range, the output voltage gain can vary by ~2%:
+
+| $$V_{E}$$ | $$I_{E}$$ | $$r_{e}$$ | $$A_{v}$$ |
+| -- | -- | -- | -- |
+| 1V | 0.17 mA | 156 Ω | **0.975** |
+| 6V | 1 mA | 26 Ω | **0.996** |
+| 10V | 1.7 mA | 16 Ω | **0.997** |
+
+Compare this to the constant current source a current mirror provides; irregardless of emitter/output voltage, the emitter current doesn't change, leading to a constant $$r_{e}$$. Furthermore, the output impedance of the current mirror is much larger than the discrete resistor so, even if $$r_{e}$$ did vary, it contributes much less to the voltage gain equation. Thus output distortion for a CC is much improved.
+
+#### DC Level Shifting
+
+Since the basic principle of base voltage being a diode drop away from the emitter ($$V_{be} \approx 0.7 V$$), this property can be exploited to do a variety of things, for instance chaining diode-connected transistors together to create a larger voltage drop from some input voltage:
+<center><img src="diode_connected_chain.png" height="500"></center>
+\$\$ V_{out} = V_{in} - [ (n + 1)V_{be} ] \$\$
+
+
+### Output Stages & Classes
+
+The Output Stage is designated as the final stage in an amplifier circuit or chain. Whereas previous stages handled input coupling and amplification, the main function of an output stage is to drive an load (e.g. speaker, antenna, other device, etc.). One of the main figures of merit for amplifier designs is it's efficiency, where a more efficient amplifier, which wastes less power, is usually more desirable. Efficiency $$\eta$$ is simply the ratio of output power (for AC circuits, the RMS power delivered to a load) to input power (the DC power required to operate the amplifier design):
+\$\$ \eta = \frac{ P_{out} }{ P_{in} } \$\$
+
+#### Class A
+
+The basic configuration that has mainly been shown is classified as **Class A**; in these circuits, the transistor is always biased to be on (in its active region, conducting and dissipating DC power) which means power is being dissipated whether an input signal is present or not. Because of this, Class A is the least power efficient. For instance, for a basic design below, the input power can be seen to be dominated by the magnitude of supply voltage:
+<center><img src="CE_Cap_out.png" height="500"></center>
+\$\$ P_{in} = V_{cc} I_{C} = V_{cc} \frac{ V_{cc} - V_{C} }{ R_{C} } \$\$
+Assuming $$ V_{C} = V_{CC} / 2$$:
+\$\$ P_{in} = \frac{ V_{cc}^{2} }{ 2 R_{C} } \$\$
+
+In an ideal case in this configuration, an output transistor can swing from the positive supply rail all the way to ground, meaning the peak-to-peak voltage out is approximately $$V_{cc} / 2$$. Converting to RMS by dividing by the square root of 2, $$V_{out_{RMS}} = \frac{ V_{cc} }{ 2 \sqrt{2} } $$. Thus the output power can be defined as:
+\$\$ P_{out} = V_{ out_{ RMS } } I_{ out_{ RMS } } = \frac{ V_{cc} }{ 2 \sqrt{2} } \frac{ V_{cc} }{ 2 \sqrt{2} R_{L} } = \frac{ V_{cc}^{2} }{ 8 R_{L} } \$\$
+
+Thus the ideal efficiency can be seen as:
+\$\$ \eta_{ideal} = \frac{ P_{out} }{ P_{in} } = \frac{ V_{cc}^{2} }{ 8 R_{L} } \frac{ 2 R_{C} }{ V_{cc}^{2} } = \frac{ R_{C} }{ 4 R_{L} } \$\$
+Since the load current is less than the DC supply current, we can assume $$R_{C} < R_{L}$$, meaning in general for class A, $$\eta_{ideal} \leq 25\% $$
+
+#### Class B

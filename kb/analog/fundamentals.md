@@ -258,3 +258,15 @@ Some main analysis types that are commonly used are:
 - **AC/Small Signal:** performs frequency sweeps across the circuit to do frequency domain analysis, however care should be taken since results are linearized about given DC operating point. Valid for small signal analysis.
 - **Transient/Time Domain:** simulation done over a time period to see effects of given events, for example power supply transient response to load step. Valid for large signal analysis.
 - **Noise Analysis:** simulation of system effect of various noise sources in schematic.
+
+#### LTSpice Tricks
+
+* _Change device model parameters:_ One way to quickly change a device's model parameters is the **AKO** method; for instance, to change the forward Beta of a `2N3904` BJT to 120, the below SPICE directive can be made, and then for the transistor to be changed, "Pick" a new part and enter the name used (e.g. `my_2N3904`):
+```
+.model my_2N3904 AKO: 2N3904 (Bf=120)
+```
+Further, if you want to step through a list of parameters to change, one could do:
+```
+.step param beta_step LIST 70 120 210
+.model my_step_2N3904 AKO: 2N3904 (Bf={beta_step})
+```
