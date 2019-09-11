@@ -13,6 +13,12 @@ Device drivers play an important role in computer systems as a software layer be
 
 Linux device drivers are also modular (referred to commonly as kernel modules) in that they can be built separately from the OS kernel itself and plugged in (and out) at a later time when needed.
 
+## Compilation & Tools
+
+### Vim YCM Completion
+
+Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other tools rely on the clang `compile_commands.json` that usually is fed by CMake, and we don't care about protablility or CMake since this is for the Linux kernel, we can generate the JSON file to aid in development of kernel code (e.g. parse kernel headers and have proper flags) by using [Bear](https://github.com/rizsotto/Bear): install `bear` and then run `$ bear make` to generate a `compile_commands.json` from the make process.
+
 ## References
 
 * [Linux Device Drivers, Third Edition](https://lwn.net/Kernel/LDD3/)
