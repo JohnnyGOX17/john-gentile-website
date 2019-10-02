@@ -152,6 +152,10 @@ comments: true
 
 ### Strategy
 
+> The best way to predict the future is to invent it.
+
+- Alan Kay
+
 > A satisfied customer is the best business strategy of all.
 
 -Michael LeBoeuf

@@ -8,7 +8,7 @@ comments: true
 
 ## Overview
 
-> "Your problem with Vim is that you don't grok vi."- [StackOverflow](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+> "Your problem with Vim is that you don't grok vi."- [StackOverflow (User Jim Dennis)](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
 
 Vim is a modal text editor, meaning keystrokes and operations have different actions depending on the mode.
 
@@ -21,9 +21,15 @@ Vim is a modal text editor, meaning keystrokes and operations have different act
 
 _Note: You must be in Normal mode before going into other modes_
 
-A good way to learn Vim is by using `vimtutor` in your shell. Some commands, like working with multiple files/windows in Vim, are not listed as our workflow mainly uses tiling windows managers in a Linux environment.
+### Launching Vim
 
-<br /><br />
+From the command line, one can open a set of files in a vertical (`-O`) or a horizontal (`-o`) split, and specify how many panes to split across by appending that to the command parameter; for instance, if a directory has 5 text files and we want to open them in 3 vertical panes, we can do so with:
+`$ vim -O3 *.txt`
+
+### Learning Vim
+
+A good way to learn Vim is by launching the built-in `vimtutor` in your shell. Another is to play [VimGolf](http://www.vimgolf.com/) to try and optimize how few keystrokes are made to accomplish a given text processing task.
+
 
 ## Normal Mode
 
@@ -38,7 +44,12 @@ _Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movemen
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
 | Left/Down/Up/Right | <kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> | Move cursor left, down, up or right respectively |
-| Scroll Half-Screen Up/Down | <kbd>Ctrl</kbd>+<kbd>u</kbd>/<kbd>Ctrl</kbd>+<kbd>d</kbd> | Scroll Half-Screen Up/Down |
+| Scroll Screen Up/Down | <kbd>Ctrl</kbd>+<kbd>b</kbd>/<kbd>Ctrl</kbd>+<kbd>f</kbd> |  |
+| Scroll Half-Screen Up/Down | <kbd>Ctrl</kbd>+<kbd>u</kbd>/<kbd>Ctrl</kbd>+<kbd>d</kbd> |  |
+| Move Screen Up/Down | <kbd>Ctrl</kbd>+<kbd>y</kbd>/<kbd>Ctrl</kbd>+<kbd>e</kbd> | Screen moves 1 line at a time w/o moving cursor |
+| Current Line to Middle of Screen | <kbd>z</kbd><kbd>z</kbd> |  |
+| Current Line to Top of Screen | <kbd>z</kbd><kbd>t</kbd> |  |
+| Current Line to Bottom of Screen | <kbd>z</kbd><kbd>b</kbd> |  |
 | Next Word Beginning/End | <kbd>w</kbd>/<kbd>e</kbd> | Move cursor to beginning/end of next word |
 | Back a Word | <kbd>b</kbd> | Moves cursor back to start of last word |
 | Move to Start of Line | <kbd>0</kbd> or <kbd>Home</kbd> | Move to Start of Line |
@@ -96,7 +107,6 @@ _For find & replace, see **Substitution** under the Command section_
 | Play command held in register | <kbd>@</kbd>,<kbd>character</kbd> | Repeats recorded command(s) held in that registers `character` |
 | Pipe Command to Shell and Pipe Output into Current File | <kbd>!</kbd>,<kbd>!</kbd> | i.e. `!!ls` pipes the listing of files in your current directory into your current file |
 
-<br /><br />
 
 ## Command Mode
 
@@ -137,8 +147,6 @@ All commands are assumed to start with <kbd>:</kbd> while in Normal mode
 | Quit a Window | <kbd>Ctrl</kbd>+<kbd>wq</kbd> | |
 
 
-<br /><br />
-
 ## Visual Mode
 
 Once in visual mode, navigation causes text to be highlighted. Most normal mode operations, like yank and delete, carry over to visual mode as well and operate on the visually selected text.
@@ -156,7 +164,11 @@ Once in visual mode, navigation causes text to be highlighted. Most normal mode 
 | Indent Selected Lines | <kbd>></kbd>/<kbd><</kbd> | Indents/De-indents selected lines by amount specified by `shiftwidth`. `=` indents the text by what Vim thinks is appropriate |
 | Jump to definition | <kbd>Ctrl</kbd>+<kbd>j</kbd> | Jump to definition of function highlighted | 
 
-<br /><br />
+
+## Regular Expressions
+
+Regular expressions (aka regex) are not a Vim-specific feature, they are a sequence of characters that define a search (or even search and replace) pattern and can be found in languages like Perl and other Unix tools like `sed` and `awk`. Vim does have regex features that make it very powerful though, and a great overview and tutorial of using regex in Vi(m) can be found at [vimregex.com](http://vimregex.com/).
+
 
 ## Advanced Vim Techniques & Customization
 
