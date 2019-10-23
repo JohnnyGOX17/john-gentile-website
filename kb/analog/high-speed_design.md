@@ -14,7 +14,7 @@ As time progresses, designers look to build devices that go faster, are more pre
 
 _Fourier series showing summed, odd harmonics to build up a progressively faster edged square wave- by [Thenub314](https://commons.wikimedia.org/w/index.php?title=User:Thenub314&action=edit&redlink=1)_
 
-High-speed designs are those where we care about very fast rise ($$ t_{rise} $$) and fall ($$ t_{fall} $$) times (edge rates) and signal propagation lengths ($$ l_{line} $$) due to reduced setup and hold times. There have been a couple rules of thumb as to when we consider a signal "high-speed" such as if: $$ \; t_{rise} < \frac{1}{10*f_{clock}}\; $$ or $$ \; t_{rise} < 3*t_{delay} \; $$ ($$ t_{delay} $$ - line delay - can be generalized to 150ps/in for microstrip and 180ps/in for stripline paths) or when $$ \; l_{line} < \frac{1}{10}*\lambda \; $$ (note that with conductors, wave speed is always less than _c_).
+High-speed designs are those where we care about very fast rise ($$ t_{rise} $$) and fall ($$ t_{fall} $$) times (e.g. edge rates). There have been a couple rules of thumb as to when we consider a signal "high-speed" such as if: $$ \; t_{rise} < \frac{1}{10*f_{clock}}\; $$ or $$ \; t_{rise} < 3*t_{delay} \; $$ ($$ t_{delay} $$ - line delay - can be generalized to 150ps/in for microstrip and 180ps/in for stripline paths) or when $$ \; l_{line} < \frac{1}{10}*\lambda \; $$ (note that with real conductors, wave speed is always less than _c_).
 
 However, we can generalize the classification of a high-speed signal to:
 > If the total round trip time of the signal (starting from transmission through signal path and back through return path or ground) is equal to or greater than the rise/fall time, then the signal is considered high-speed.
@@ -28,8 +28,8 @@ As devices get smaller and faster, and with edge speeds in the nanosecond to pic
 ### Factors Affecting High-Speed Design
 
 The majority of high-speed circuit effects are directly related to the high-frequency content of signals passing through it. As detailed previously, when a circuit is considered high-speed, a designer needs to pay more attention to board factors such as:
-* [Driver edge rates](#effective-frequencies-of-digital-signals)
-* [Signal propagation length](#critical-trace-length)
+* Driver edge rates
+* Signal propagation length
 * Variations over Process, Voltage or Temperature (PVT)
 * Trace impedance and reflections over entire length
 * Trace, via and component placement on the PCB
@@ -44,18 +44,22 @@ Ignorance of these effects in high-speed designs can cause signal integrity issu
 
 ![Signal Integrity](SI_capture.png)
 
-#### Effective Frequencies of Digital Signals
+### High-Speed Digital Design vs RF Design
 
-Since a signal is considered high-speed when the edge rates contain high-frequency energy- irregardless of clock or switching frequencies- approximations can be made to estimate the majority of frequency content in the signal and to aid in guiding designs of circuits those signals are intended to work in.
+Given that High-Speed Digital Design deals with very fast signals (sometimes with signals having a fundamental frequency in the "RF" range, for instance 10GbE) there begs the question "what's the difference between RF design and high-speed digital design?" While they have some similarities there are some notable differences in what each design space cares about:
 
-One method of bandwidth estimation is to equate the rise time (10%-90%) of an input step through an arbitrary RC low-pass filter; a rule of thumb given an RC time constant of $$ \tau = RC $$ is that the 10%-90% rise time will be about $$ T_{rise}=2.2\tau $$. Also given the 3dB bandwidth (cutoff frequency) of an RC filter as $$ f_{C}=\frac{1}{2\pi\tau} $$ we can substitute in the 10%-90% rise time to get the approximate bandwidth of a square wave to be: \$\$ f_{3dB_{RC Step}}=\frac{0.35}{T_{rise}} \$\$
+| Factor | RF Design | High-Speed Digital Design |
+| ------ | --------- | ------------------------- |
+| Nominal Signal Types | Sinusoidal, narrowband/modulated | square/trapezoidal waves, pulses |
+| Frequency of Interests | Band of frequency usually atop some carrier frequency | Broadband ("DC to daylight") |
+| Typical Coupling | AC (+ filtering) | DC |
+| Information Encoding | Modulation of carrier (AM, FM, PSK, etc.) | Voltage level transitions |
+| Figures of Merit for Designs | Power transfer and small-signal behavior | Voltage transfer and large-signal behavior |
 
-#### Critical Trace Length
+## SI Budgeting
 
-To recall from [electromagnetic wave equations](electromagnetics), the wave velocity can be calculated by \$\$ v_{p}=\frac{c}{\sqrt{\mu * \varepsilon_{r} }} \$\$ Since most PCBs don't directly deal with magnetic material, $$ \mu=1 $$ and the speed becomes directly related to the dielectric constant of the PCB material used. Thus, to represent the critical length of a propagation path where high-speed affects start to manifest we find \$\$ l_{r}=\frac{v_{p} * t_{rise}}{2} \$\$ When a signal trace's length is equal to or greater than this critical length, high-speed circuit effects are at their maximum. Conversely as trace length gets shorter than the critical length, high-speed effects are minimized and traditional RLC circuit properties are maximized.
 
 
 
 ## References
 
-* [Analog Dialogue- Technical Papers from ADI](http://www.analog.com/en/analog-dialogue.html)
