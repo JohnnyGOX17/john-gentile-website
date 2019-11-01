@@ -579,7 +579,6 @@ amp-vimeo {
 
 #header {
   backface-visibility: hidden;
-  background-color: #fff;
   font-size: 14px;
   font-weight: 300;
   transform: translateZ(0)
@@ -898,13 +897,11 @@ amp-vimeo {
 }
 
 .container .content {
-  background-color: #FFF;
   margin: 0 auto;
   min-width: 0;
   padding: 100px 0;
   transition: all .25s ease;
   width: 100%;
-  /*word-break: break-word;*/
   overflow-wrap: break-word;
   word-wrap: break-word
 }
@@ -2550,4 +2547,90 @@ footer .footer-privacy {
 .project-href {
   color: #333;
   text-decoration: none
+}
+
+.tagline {
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-privacy {
+  color: #727272;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* implement dark mode color scheme when host prefers */
+@media (prefers-color-scheme: dark) {
+  body,
+  input,
+  html th,
+  body th,
+  .main {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+
+  tr:nth-child(even) {
+    background-color: #666;
+  }
+
+  .header div.tab .list-container>ul .sublist,
+  .header div.tab .list-container>ul {
+    background: #222;
+  }
+
+  .project-box:hover,
+  .header div.tab .list-container>ul .sublist li:hover,
+  .header div.tab .list-container>ul li:hover {
+    background: #666
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  kbd,
+  .post-title,
+  .project-href,
+  .header .tab,
+  .doc-sidebar .nav>.active>a,
+  .doc-sidebar .nav>li>a:hover,
+  .doc-sidebar .nav>li>a:focus {
+    color: #eee;
+  }
+
+  .small,
+  .doc-sidebar li.sub-level>.section-name,
+  .header div.tab .list-container>ul li a,
+  .post-content,
+  .doc-sidebar .section-name,
+  .searchbar input {
+    color: #e4e4e4;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp,
+  tt {
+    background: #222;
+  }
+
+  img {
+    filter: grayscale(30%);
+  }
+
+  .tagline,
+  .footer-privacy,
+  .project-box > h2,
+  blockquote {
+    color: #bbb;
+  }
+
+  blockquote {
+    border-left: 4px solid #aaa;
+  }
 }

@@ -172,7 +172,7 @@
 
                 <div class="post-content">
                   {% if page.kb %}
-                  <p class="tagline" style="font-size:12px;color:#666"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
+                  <p class="tagline"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
                   {% endif %}
                   <hr>
 
@@ -191,7 +191,7 @@
                   {% endif %}
                   <hr>
 
-                  <p class="footer-privacy" style="color: #727272; font-size: 14px; text-align: center;">
+                  <p class="footer-privacy">
                   Maintained by <a href="/">John Gentile</a> &bull; Found a problem on this site? File an <a href="https://github.com/JohnnyGOX17/john-gentile-website/issues">Issue</a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img src="/assets/images/cc_license.png" width="80" height="15"></img></a>
                   </p>
                   <p style="text-align: center">
