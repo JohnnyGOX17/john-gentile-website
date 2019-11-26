@@ -21,3 +21,13 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 ## Timing
 
 Setup & Hold Times
+
+## Tools
+
+### Simulation
+
+- [EDA Playground](https://www.edaplayground.com/home) online simulator (similar to online compiler/assemblers) that can simulate designs & testbenches in Verilog, VHDL, SystemVerilog and others.
+
+### Documentation/Modeling
+
+- [WaveDrom](https://wavedrom.com/editor.html) online digital waveform diagraming tool with an easy to use syntax.
