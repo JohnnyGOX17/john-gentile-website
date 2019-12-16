@@ -95,6 +95,8 @@ Again note that the below key shortcuts are controlled by a <kbd>Prefix</kbd> ke
 
 `tmux`, like `Vim` and other useful tools, can be configured with custom preferences with a config file; the file `.tmux.conf` can be placed in the user's home directory to configure things like keybindings, status bar and other aesthetic features. An example dotfile for `tmux` can be [found here](https://github.com/JohnnyGOX17/configs/blob/master/configs/.tmux.conf).
 
+There are also projects like [tmux plugin manager](https://github.com/tmux-plugins/tpm) that can install and maintain tmux plugins & extra features.
+
 ### Scripting
 
 `tmux` operations can also be scripted to create a standard environment with easy launching.
