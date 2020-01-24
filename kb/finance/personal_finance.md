@@ -50,13 +50,18 @@ Not only do fees take money away from your current savings, but more importantly
 
 ### Diversify Your Investment Portfolio
 
-Don't put your eggs all in one basket. If you had all money in one stock and that stock tanks, that's it. So an easy way to diversify is to invest in index funds that diversify across companies in a certain sector. As well, combining assets that are negatively correlated (as in they move in opposite directions during market nominal market conditions) is a wise move; for instance, owning both stocks and bonds are good as typically when stocks go down, bonds go up, and vice versa.
+Don't put your eggs all in one basket. If you had all money in one stock and that stock tanks, that's it, game over. An easy way to diversify is to invest in index funds that diversify across companies in a certain sector. As well, combining assets that are negatively correlated (as in they move in opposite directions during market nominal market conditions) is a wise move; for instance, owning both stocks and bonds are good as typically when stocks go down, bonds go up, and vice versa.
+
 
 ### Manage Risk
 
+In general, risk is directly related to return; the higher the risk, the higher the possible return on an investment. However, risk is also directly related to potential loss. Strategies like portfolio diversification and statistical analysis are some tools to balance risk and return.
+
+
+### Go Long
+
 > “By periodically investing in an index fund…the know-nothing investor can actually outperform most investment professionals.”- Warren Buffett
 
-Long term investments with moderate/low risk (and thus moderate/low returns) are much more likely to yield positive results after a long term rather than high risk investments.
-
+Besides minimizing fees- as discussed above- holding onto investments for a long time (>1 year) is generally advisable as, statistically speaking, there is [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean) with investment vehicles; this is the phenomenon where over time, the rate of return will come closer to the expected average, rather than an extreme high or low.
 
 ## References
