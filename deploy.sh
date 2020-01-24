@@ -8,31 +8,37 @@
 # https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
 currGitRev="$(git rev-parse HEAD)"
-distGitRev="$(cat ./dist/revision)"
+pubGitRev="$(curl -s https://john-gentile.com/revision)"
 
 syncAWS() {
   aws s3 sync ./dist s3://john-gentile.com --delete
-  echo "DONE!"
+  echo "AWS Sync Successful!"
 }
 
-if [ "${currGitRev}" == "${distGitRev}" ]; then
-  echo "Current & Distribution Git revisions match. Syncing files with AWS server..."
-  syncAWS
+if [ "${currGitRev}" == "${pubGitRev}" ]; then
+  echo "Local & Published website Git revisions match."
+  read -p "Do you want to rebuild and then deploy to AWS anyways? [y/n]: " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    make && syncAWS
+  else
+    echo ""
+    exit 1
+  fi
 else
   currTime="$(git log -1 --format="%ar" ${currGitRev})"
-  distTime="$(git log -1 --format="%ar" ${distGitRev})"
-  echo "Distribution's Git revision [${distGitRev}] is from ${distTime} and doesn't match the current Git revision [${currGitRev}] committed ${currTime}."
-  read -p "Do you want to rebuild and then deploy to AWS? [y/n]: " -n 1 -r
+  pubTime="$(git log -1 --format="%ar" ${pubGitRev})"
+  echo "Published website's Git revision [${pubGitRev}] is from ${pubTime} and doesn't match the current Git revision [${currGitRev}] committed ${currTime}."
+  read -p "Do you want to build and then deploy to AWS? [y/n]: " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]; then
-    make
-    syncAWS
+    make && syncAWS
   else
-    read -p "Do you want to deploy to AWS anyways? [y/n]: " -n 1 -r
+    read -p "Do you want to deploy current dist/ build to AWS anyways? [y/n]: " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
       syncAWS
     else
+      echo ""
       exit 1
     fi
   fi
