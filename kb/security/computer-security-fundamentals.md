@@ -2,7 +2,7 @@
 layout: default
 title: Computer Security Fundamentals
 kb: true
-top-category: Cyber and Offensive Security
+top-category: Cyber and Security
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 title: Reliable Electronic Design
 layout: default
 kb: true
-top-category: Analog
+top-category: Analog Electronics
 comments: true
 ---
 

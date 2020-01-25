@@ -2,7 +2,7 @@
 title: Verilog
 layout: default
 kb: true
-top-category: Languages
+top-category: Programming Languages
 comments: true
 ---
 

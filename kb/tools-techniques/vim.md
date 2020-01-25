@@ -256,6 +256,16 @@ Plugins like [tagbar](https://github.com/majutsushi/tagbar) and [gutentags](http
    + To spell check only the local buffer use `:setlocal spell spelllang=en_us`
    + To turn off spell checking, use `:set nospell`
 
+### Other Tricks
+
+#### Search & Replace Across Buffers
+
+Using the `bufdo` command applies a command across all open buffers. For example to search & replace across multiple buffers:
+```
+:bufdo %s/pattern/replace
+```
+
+
 ## References
 
 * [Learning the vi and Vim Editors, 7th Edition by Arnold Robbins, Elbert Hannah, Linda Lamb](http://shop.oreilly.com/product/9780596529833.do)

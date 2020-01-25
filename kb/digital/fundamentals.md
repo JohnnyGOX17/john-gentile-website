@@ -2,7 +2,7 @@
 title: Digital Engineering Fundamentals
 layout: default
 kb: true
-top-category: Digital Engineering
+top-category: Digital Electronics
 comments: true
 ---
 

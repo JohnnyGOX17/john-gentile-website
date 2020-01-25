@@ -2,7 +2,7 @@
 title: Quotes
 layout: default
 kb: true
-top-category: Leadership and Management
+top-category: Random
 comments: true
 ---
 

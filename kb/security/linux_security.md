@@ -2,7 +2,7 @@
 title: Linux Security
 layout: default
 kb: true
-top-category: Cyber and Offensive Security
+top-category: Cyber and Security
 comments: true
 ---
 

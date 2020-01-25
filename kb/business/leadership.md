@@ -2,7 +2,7 @@
 title: Foundations of Leadership
 layout: default
 kb: true
-top-category: Leadership and Management
+top-category: Business
 comments: true
 ---
 
