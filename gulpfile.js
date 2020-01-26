@@ -77,7 +77,7 @@ gulp.task('minify-html', done => {
 // Move over all other files
 gulp.task('move-files', done => {
   console.log("Moving PDF, txt and XML intermediate files to distribution.");
-  gulp.src('./_site/*.{pdf,txt,xml}')
+  gulp.src('./_site/*.{pdf,txt,webmanifest,xml}')
     .pipe(gulp.dest('./dist'));
   done();
 });

@@ -18,20 +18,21 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="generator" content="Jekyll v3.6.2" />
-    <meta name="author" content="John Gentile" />
-    <meta name="description" content="Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
-    <meta name="keywords" content="john, gentile, code, engineering, design, docs" />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:description" content="{{ page.title }}: Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source." />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:site_name" content="John-Gentile.com" />
-    <meta property="og:image" content="/assets/images/Gent-systems_icon_black.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@JohnnyGOX" />
-    <meta name="twitter:creator" content="@JohnnyGOX" />
+    <meta name="generator" content="Jekyll v3.6.2">
+    <meta name="author" content="John Gentile">
+    <meta name="description" content="Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source.">
+    <meta name="keywords" content="john, gentile, code, engineering, design, docs">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="{{ page.title }}: Personal website and knowledge base for John Gentile. Engineering creatively. Learning and development through open-source.">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="John-Gentile.com">
+    <meta property="og:image" content="/assets/images/Gent-systems_icon_black.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@JohnnyGOX">
+    <meta name="twitter:creator" content="@JohnnyGOX">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- TODO verify JSON -->
     <script type="application/ld+json">
@@ -62,7 +63,9 @@
 
     <title>{{ page.title }} | John-Gentile.com</title>
     <link rel="shortcut icon" type="image/png" href="/assets/images/Gent-systems_icon_black.png">
+    <link rel="apple-touch-icon" href="/assets/images/Gent-systems_icon_black.png">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="manifest" href="site.webmanifest">
 
     <link rel="stylesheet" type="text/css" href="/assets/style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
@@ -94,6 +97,9 @@
   </nav>
 
   <body class="" id="containerMain" >
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
     <nav id="toc-sidebar" class="doc-sidebar fixed">
       {% if page.kb %}
