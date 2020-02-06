@@ -1,5 +1,5 @@
 ---
-title: Operating Systems
+title: Computer Architecture
 layout: default
 kb: true
 top-category: Computer Architecture and Systems

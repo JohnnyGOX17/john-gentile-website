@@ -13,6 +13,10 @@ Device drivers play an important role in computer systems as a software layer be
 
 Linux device drivers are also modular (referred to commonly as kernel modules) in that they can be built separately from the OS kernel itself and plugged in (and out) at a later time when needed.
 
+## Filesystem
+
+* [Filesystem Hierarchy Standard](http://www.pathname.com/fhs/) is a currently updated standard for Unix distributions on certain file/directories and their meanings.
+
 ## Compilation & Tools
 
 ### Vim YCM Completion
@@ -22,3 +26,10 @@ Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other 
 ## References
 
 * [Linux Device Drivers, Third Edition](https://lwn.net/Kernel/LDD3/)
+* [Getting Kernel Sources- CentOS 7](https://wiki.centos.org/HowTos/I_need_the_Kernel_Source)
+* [Building Kernel Module- CentOS 7](https://wiki.centos.org/HowTos/BuildingKernelModules)
+* [The Linux Kernel's Documentation](https://www.kernel.org/doc/html/latest/)
+* [The (unofficial) Linux Kernel Mailing List (LKML)](https://lkml.org/)
+* [The Linux Documentation Project](http://www.tldp.org/guides.html)
+* [Linux Kernel Newbies](https://kernelnewbies.org/)
+* [Red Hat Developer Program](https://developers.redhat.com/)
