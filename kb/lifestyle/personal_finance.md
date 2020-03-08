@@ -19,6 +19,7 @@ comments: true
 * [Diversify Your Investment Portfolio](#diversify-your-investment-portfolio)
 * [Manage Risk](#manage-risk)
 * [Go Long](#go-long)
+* [Remove Emotions From Investing](#remove-emotions-from-investing)
 
 ### Set a Goal and Measure It Continuously
 
@@ -81,7 +82,11 @@ In general, risk is directly related to return; the higher the risk, the higher 
 
 Besides minimizing fees- as discussed above- holding onto investments for a long time (>1 year) is generally advisable as, statistically speaking, there is [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean) with investment vehicles; this is the phenomenon where over time, the rate of return will come closer to the expected average, rather than an extreme high or low.
 
-It's also important to keep a clear head in this investment strategy; it's pretty much guaranteed that, at some point, some stocks- or even your entire portfolio- will see a decline. In those scenarios do not let emotions or fears take precedence over sound financial decisions. The folly of many investors is in [prematurely reacting to market dips and leaving markets/investments in a lower state than if they just waited out whatever event was happening](https://www.fool.com/investing/2018/03/28/this-is-precisely-why-timing-the-market-isnt-worth.aspx). Again, don't try and time the market but [just give your investments time to grow](https://www.putnam.com/literature/pdf/II508-ac37f7ad02b2d8889f7e5361f0e8ac86.pdf)! There will always seem like there's some doomsday recession coming around the corner, yet [time and again the market shows returns that counteract](https://books.google.com/books?id=wAblMinB3UMC&pg=PA77&lpg=PA77&dq=stock+market+performance+watergate+cuban+missile&source=bl&ots=lXZmz3h8HB&sig=ACfU3U3VBwAdXbACZVpE23FKsbV58xBNyg&hl=en&sa=X&ved=2ahUKEwiNrY3lxP7jAhWKLHwKHbhAD2U4ChDoATAAegQICRAB#v=onepage&q&f=false) so don't react to market volatility.
+### Remove Emotions From Investing
+
+> “(Be) fearful when others are greedy and greedy when others are fearful”- Warren Buffett
+
+It's important to keep a clear head in this investment strategy; it's pretty much guaranteed that, at some point, some stocks- or even your entire portfolio- will see a large decline. In those scenarios do not let emotions or fears take precedence over sound financial decisions. The folly of many investors is in [prematurely reacting to market dips and leaving markets/investments in a lower state than if they just waited out whatever event was happening](https://www.fool.com/investing/2018/03/28/this-is-precisely-why-timing-the-market-isnt-worth.aspx). Again, don't try and time the market but [just give your investments time to grow](https://www.putnam.com/literature/pdf/II508-ac37f7ad02b2d8889f7e5361f0e8ac86.pdf)! There will always seem like there's some doomsday recession coming around the corner, yet [time and again the market shows returns that counteract](https://books.google.com/books?id=wAblMinB3UMC&pg=PA77&lpg=PA77&dq=stock+market+performance+watergate+cuban+missile&source=bl&ots=lXZmz3h8HB&sig=ACfU3U3VBwAdXbACZVpE23FKsbV58xBNyg&hl=en&sa=X&ved=2ahUKEwiNrY3lxP7jAhWKLHwKHbhAD2U4ChDoATAAegQICRAB#v=onepage&q&f=false) so don't react to market volatility.
 
 
 ## References
