@@ -16,7 +16,3 @@ permalink: /index.html
 </div>
 
 <br />
-<br />
-<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/JohnnyGOX?ref_src=twsrc%5Etfw" data-tweet-limit="4">Tweets by John Gentile</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<br />
