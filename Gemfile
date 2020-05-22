@@ -4,10 +4,11 @@ source "https://rubygems.org/"
 # plugins listed here. To upgrade:
 #   `$ bundle exec jekyll serve`
 #
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 4.0.1"
 
 # Jekyll plugins
 group :jekyll_plugins do
+  gem "json"
   gem "jekyll-feed"
   gem "jekyll-last-modified-at"
   gem "jekyll-sitemap"
