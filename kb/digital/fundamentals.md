@@ -22,6 +22,12 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 
 Setup & Hold Times
 
+
+## Design Tips
+
++ **Pipeline early & often:** in modern FPGAs, flip-flops are likely the cheapest resource in the programmable fabric, so airing on the side of more inferred registers, the better as you are more likely to meet static timing the first time. Worst case, further optimization can remove unnecessary FFs.
+
+
 ## Tools
 
 ### Simulation

@@ -14,6 +14,10 @@ comments: true
 
 -Mark Twain
 
+> There may be people who have more talent than you, but there's no excuse for anyone to work harder than you do - and I believe that.
+
+-Derek Jeter
+
 > Whether you think you can or think you can't, you're right.
 
 -Henry Ford
@@ -39,6 +43,10 @@ comments: true
 -George S. Patton
 
 ### Perseverance
+
+> I don't count my sit-ups; I only start counting when it starts hurting because they’re the only ones that count.
+
+-Muhammad Ali
 
 > Adversity introduces a man to himself.
 

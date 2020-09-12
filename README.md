@@ -1,6 +1,15 @@
 # john-gentile-website
 
-Repo for website john-gentile.com
+Repo for website [john-gentile.com](https://john-gentile.com/)
+
+## Todo
+
+* [ ] implement Travis CI to automate building process and checking of status. Integrate hooks to auto-build when merging into `master`?
+
+## Branching
+
+* `wip`: used for pages/designs that are still under development, not be pushed to public page
+* `master`: should reflect current state of public website. Merging into `master` should build static site and push to CDN
 
 ## To Build
 
