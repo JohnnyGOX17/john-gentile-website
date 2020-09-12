@@ -6,11 +6,6 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 
 * [ ] implement Travis CI to automate building process and checking of status. Integrate hooks to auto-build when merging into `master`?
 
-## Branching
-
-* `wip`: used for pages/designs that are still under development, not be pushed to public page
-* `master`: should reflect current state of public website. Merging into `master` should build static site and push to CDN
-
 ## To Build
 
 ### Dependencies
@@ -26,3 +21,7 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 ## To Deploy
 
 _Note:_ AWS CLI is used to sync local built files to the Amazon S3 bucket used for hosting the static website. If not already configured, configure the CLI following the [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+
+## References
+
+* [Jekyll Docs](https://jekyllrb.com/docs/)
