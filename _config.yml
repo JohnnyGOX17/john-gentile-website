@@ -9,7 +9,7 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-last-modified-at
   #- jekyll-picture-tag

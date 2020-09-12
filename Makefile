@@ -40,6 +40,12 @@ deploy:
 install:
 	# Run before building on new system to install dependent packages or to
 	# update local packages
+ifeq ($(UNAME_S),Linux)
+	gem install jekyll bundler
+endif
+ifeq ($(UNAME_S),Darwin)
+	gem install --user-install bundler jekyll
+endif
 	bundle install
 	npm install
 	pip3 install awscli --upgrade --user
@@ -71,5 +77,11 @@ endif
 
 update:
 	bundle update --all
+ifeq ($(UNAME_S),Linux)
+	gem install jekyll bundler
+endif
+ifeq ($(UNAME_S),Darwin)
+	gem install --user-install bundler jekyll
+endif
 	# use '# npm update -g' to update system wide packages
-	npm update
+	npm update -g
