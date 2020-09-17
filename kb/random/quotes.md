@@ -188,6 +188,10 @@ comments: true
 
 -Mark Twain
 
+> The society that separates its scholars from its warriors will have its thinking done by cowards and its fighting by fools.
+
+-Thucydides
+
 > Make everything as simple as possible, but not simpler.
 
 -Albert Einstein
