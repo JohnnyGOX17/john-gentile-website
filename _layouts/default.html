@@ -71,7 +71,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
   </head>
 
-  <nav id="menu">
+  <nav id="menu" class="{% if page.about %} homepage-fade-in {% endif %}">
     <h2 class="slideout-menu-section-title">Main</h2>
     <ul>
       <li class="slideout-menu-li">
@@ -96,7 +96,7 @@
     {% endif %} {% endfor %}
   </nav>
 
-  <body class="" id="containerMain" >
+  <body class="{% if page.about %} homepage-fade-in {% endif %}" id="containerMain" >
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
