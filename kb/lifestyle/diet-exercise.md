@@ -72,6 +72,40 @@ Also note that insoluble fiber is great for digestion, but soluble fiber can act
 _Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
 * **Vegetables:** Asparagus, bok choy, cabbage and broccoli
 
+#### Mediterranean Keto
+
+[Mediterranean Keto Study Oveview](https://www.youtube.com/watch?v=L9XHTy1JnPA&feature=emb_logo)
+[Mediterranean Keto Example Diet Plan](https://www.youtube.com/watch?v=Q-3STVL9dDo&feature=emb_logo)
+
+* `30 mL` of Olive Oil (no trans fats)
+* High Omega-3's from fish (non-predatory fish like swordfish)
+  + On non-fish days, supplement w/9G of salmon oil, 3x per day
+* Unlimited calorie diet as long as carbs `< 30g` to simulate "free-living condition"
+
+
+### Recipes
+
+#### Tuna Salad
+
+**Ingredients**
+Makes 4 servings:
+* [ ] 4 (5 oz) Tuna cans in water, drained
+* [ ] 1 cup avocado mayo (regular mayo can be substituted)
+* [ ] 1 rib of chopped celery
+* [ ] 2 tbs red onion, minced
+* [ ] 2 tbs diced pickles
+* [ ] 4 tbs fresh lemon juice
+* [ ] 4 tbs olive oil
+* [ ] 1 garlic clove, minced
+* [ ] Salt, pepper and oregano to taste
+
+**Nutrition**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 693      | 2.6g  | 36.4g   | 58.7g |
+
+
 
 ## Intermittent Fasting
 
