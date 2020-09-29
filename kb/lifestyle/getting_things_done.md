@@ -6,7 +6,27 @@ top-category: Lifestyle
 comments: true
 ---
 
-## Waking Up Early
+## General Advice
+
+* Control your controllables, and don't worry about things out of your control.
+* [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace, and laugh, at the suck. Those who dare, win.
+* The best way to complete a marathon is to take the first step. Activity defeats doubt.
+* Happiness is a mindset, not an achievement or place.
+* Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
+* Your tribe is your vibe. Growing a tribe is never bad but don't neglect your inner circle.
+* Work on what you love and the money will come. Actually, if you really love it, the money won't matter as much anyways.
+* Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
+* Nothing's guaranteed in life and no one deserves anything, no matter how unfair things seem.
+* Create your own luck; take lots of thoughtful shots over time, and keep working to improve.
+* You can't do everything yourself; 10x'ers can be multipliers when they inspire and mentor others.
+* What others see as impossible is possible with the right folks who believe in the mission.
+* If it doesn't make you better, happier or richer, don't make time for it.
+* Money can be used to buy back time, as time is often more valuable than money.
+* Things that get measured get improved
+* Praise in public, correct in private
+* You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
+
+### Waking Up Early
 
 Before everyone else is up with distractions, set your day up for success and give yourself time to dedicate to things that are important to you:
 * Set a time to wake up and consistently wake up at that time to set a habit
