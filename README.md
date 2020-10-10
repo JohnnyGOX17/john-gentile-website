@@ -5,6 +5,7 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 ## Todo
 
 * [ ] implement Travis CI to automate building process and checking of status. Integrate hooks to auto-build when merging into `master`?
+* [ ] add `recipes/` to separate section of site
 
 ## To Build
 

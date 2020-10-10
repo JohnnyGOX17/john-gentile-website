@@ -83,30 +83,6 @@ _Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
 * Unlimited calorie diet as long as carbs `< 30g` to simulate "free-living condition"
 
 
-### Recipes
-
-#### Tuna Salad
-
-**Ingredients**
-Makes 4 servings:
-* [ ] 4 (5 oz) Tuna cans in water, drained
-* [ ] 1 cup avocado mayo (regular mayo can be substituted)
-* [ ] 1 rib of chopped celery
-* [ ] 2 tbs red onion, minced
-* [ ] 2 tbs diced pickles
-* [ ] 4 tbs fresh lemon juice
-* [ ] 4 tbs olive oil
-* [ ] 1 garlic clove, minced
-* [ ] Salt, pepper and oregano to taste
-
-**Nutrition**
-
-| Calories | Carbs | Protein | Fat   |
-|----------|-------|---------|-------|
-| 693      | 2.6g  | 36.4g   | 58.7g |
-
-
-
 ## Intermittent Fasting
 
 Intermittent Fasting (IF) is when you have a set, extended period of time when you are not eating (fasting) and a consolidated period of consuming all of your calories. It can be used with any diet- like Keto, paleo, vegan, etc.- as IF is not a diet but a time frame for calorie consumption and restriction.
