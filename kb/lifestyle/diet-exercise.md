@@ -74,8 +74,10 @@ _Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
 
 #### Mediterranean Keto
 
-[Mediterranean Keto Study Oveview](https://www.youtube.com/watch?v=L9XHTy1JnPA&feature=emb_logo)
-[Mediterranean Keto Example Diet Plan](https://www.youtube.com/watch?v=Q-3STVL9dDo&feature=emb_logo)
+{% youtube "https://www.youtube.com/watch?v=L9XHTy1JnPA&feature=emb_logo" %}
+<br />
+{% youtube "https://www.youtube.com/watch?v=Q-3STVL9dDo&feature=emb_logo" %}
+<br />
 
 * `30 mL` of Olive Oil (no trans fats)
 * High Omega-3's from fish (non-predatory fish like swordfish)
@@ -88,6 +90,9 @@ _Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
 Intermittent Fasting (IF) is when you have a set, extended period of time when you are not eating (fasting) and a consolidated period of consuming all of your calories. It can be used with any diet- like Keto, paleo, vegan, etc.- as IF is not a diet but a time frame for calorie consumption and restriction.
 
 ### Benefits
+
+{% youtube "https://www.youtube.com/watch?v=0ushMKdbb4k&feature=youtu.be" %}
+<br />
 
 * Weight loss while not losing muscle
 * [Less appetite](https://www.sciencedaily.com/releases/2019/07/190724103702.htm)
@@ -114,6 +119,11 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
   + Doing the hard way can yield the best benefits like [Why magician Penn Jillette fasts 23 hours a day to maintain his 100-pound weight loss](https://www.latimes.com/health/la-he-penn-jillette-weight-loss-20190615-story.html)
 * Drinking alcohol while fasting can be bad as your body prioritizes metabolizing the alcohol before anything else, so you will at least see reduced results as your liver will not burn fat as effectively. Drink alcohol after you've already broken your fast.
 
+### Long Term Fasting
+
+{% youtube "https://www.youtube.com/watch?v=S5W1XBf8d-I&feature=youtu.be" %}
+<br />
+
 ### Things You Can Eat/Drink While Fasting
 
 * Lots of water, of course
@@ -136,6 +146,4 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 {% youtube "https://youtu.be/LLVf3d0rqqY" %}
 <br />
 {% youtube "https://www.youtube.com/watch?v=h6P4JeTipYo&authuser=0" %}
-<br />
-{% youtube "https://www.youtube.com/watch?v=sBw2rdwBfZE&authuser=0" %}
 <br />

@@ -6,7 +6,7 @@ layout: default
 **Ingredients**
 Makes 4 servings:
 * [ ] 4 (5 oz) Tuna cans in water, drained
-* [ ] 1 cup avocado mayo (regular mayo can be substituted)
+* [ ] 1 cup [avocado mayo](https://www.youtube.com/watch?v=r8Kixk74bwo) (regular mayo can be substituted)
 * [ ] 1 rib of chopped celery
 * [ ] 2 tbs red onion, minced
 * [ ] 2 tbs diced pickles
