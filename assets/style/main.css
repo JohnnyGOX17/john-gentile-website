@@ -12,6 +12,7 @@
   width: device-width;
 }
 
+ol.bibliography { list-style-type: none; }
 
 .homepage-fade-in {
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */

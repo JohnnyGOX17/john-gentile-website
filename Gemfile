@@ -11,6 +11,7 @@ group :jekyll_plugins do
   gem "json"
   gem "jekyll-feed"
   gem "jekyll-last-modified-at"
+  gem "jekyll-scholar"
   gem "jekyll-sitemap"
   #gem "jekyll-seo-tag"
   #gem "jekyll-toc"

@@ -13,6 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-last-modified-at
   #- jekyll-picture-tag
+  - jekyll-scholar
   - jekyll-sitemap
   #- jekyll-seo-tag
   #- jekyll-toc
@@ -31,6 +32,10 @@ exclude:
   - node_modules/
   - gulpfile.js
   - John_Gentile_Resume.docx
+# config for https://github.com/inukshuk/jekyll-scholar
+scholar:
+  bibliography_template: bib
+  style: ieee-with-url
 
 # Metadata for plugins like seo-tag and feed
 title: John-Gentile

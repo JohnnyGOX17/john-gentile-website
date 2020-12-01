@@ -9,12 +9,14 @@ wip: true
 
 ## Overview
 
+It is useful to review [linear algebra concepts](linear_algebra.html) before continuing.
+
+blah blah blah {% cite Goodfellow --file machine_learning %}
+
 ## Software
 
 * [Caffe 2](https://caffe2.ai/)
 * [TensorFlow](https://www.tensorflow.org/)
 
 ## References
-
-* [Deep Learning Course- Udacity](https://www.udacity.com/course/deep-learning--ud730)
-* [Deep Learning/AI Course- NVIDIA](https://www.nvidia.com/en-us/deep-learning-ai/education/)
+{% bibliography --cited_in_order --file machine_learning %}
