@@ -50,6 +50,8 @@ $$ \boldsymbol{C} = \boldsymbol{A} + \boldsymbol{B} \text{ where } C_{i,j} = A_{
 
 - **Vector Broadcasting:** a simplification found in some deep learning writings shows the simple addition of a matrix and a vector, yielding another matrix, for instance $$ \boldsymbol{C} = \boldsymbol{A} + \boldsymbol{b} \text{, where } C_{i,j} = A_{i,j} + b_{j}$$. This denotes the vector $$\boldsymbol{b}$$ is added to each row of the matrix $$\boldsymbol{A}$$, which is shorthand for an implicit step of defining another intermediate matrix with vector $$\boldsymbol{b}$$ copied in each row before performing the addition.
 - **Matrix Multiplication:** 
+<center><img src="mat_mul.png" width="400"></center>
+<center><i><a href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:multiplying-matrices-by-matrices/a/multiplying-matrices">Source: Multiplying matrices- Khan Academy</a></i></center>
 
 
 ## References
