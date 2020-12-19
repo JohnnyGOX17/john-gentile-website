@@ -39,6 +39,8 @@ Example of integration of Jupyter notebook in Jekyll:
 * **[Matplotlib](http://matplotlib.org/):** a plotting & graphing library.
 * **[IPython](http://ipython.org/):** an interactive console approach to Python development, which also coincides with the [Jupyter](https://jupyter.org/) Project, which provides interactive computing notebooks.
   - Jupyter is a very powerful resource for data analysis, engineering, math and other disciplines. A wide variety of tools and plugins exist to make Jupyter notebooks similar to a full IDE (or similar to other full-fledged processing and graphing tools like MATLAB), and tools like [nbconvert](https://nbconvert.readthedocs.io/en/latest/) can be used to export Jupyter notebooks to other formats, such as LaTeX and PDF.
+  - [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/index.html) is the next-generation web-based UI for Jupyter notebooks.
+    + Vim keybindings are currently best supported with plugins like [axelfahy/jupyterlab-vim](https://github.com/axelfahy/jupyterlab-vim) & [ianhi/jupyterlab-vimrc](https://github.com/ianhi/jupyterlab-vimrc), but also seems to [soon be in the mainline](https://github.com/jupyterlab/jupyterlab/pull/9068).
 * **[SymPy](http://sympy.org/):** for symbolic math.
 * **[pandas](http://pandas.pydata.org/):** a library for data structures & analysis.
 
