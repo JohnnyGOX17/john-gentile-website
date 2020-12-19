@@ -11,6 +11,7 @@ kramdown:
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-jupyter-notebook
   - jekyll-last-modified-at
   #- jekyll-picture-tag
   - jekyll-scholar

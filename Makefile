@@ -77,11 +77,6 @@ endif
 
 update:
 	bundle update --all
-ifeq ($(UNAME_S),Linux)
-	gem install jekyll bundler
-endif
-ifeq ($(UNAME_S),Darwin)
-	gem install --user-install bundler jekyll
-endif
-	# use '# npm update -g' to update system wide packages
-	npm update -g
+	# updates locally used pkgs, use '# npm update -g' to update system wide pkgs
+	npm update
+	npm outdated

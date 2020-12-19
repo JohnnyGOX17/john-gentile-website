@@ -44,8 +44,8 @@ gulp.task('minify-img', done => {
     .pipe(imagemin([
       // https://github.com/imagemin/imagemin-gifsicle
       imagemin.gifsicle({optimizationLevel: 3}),
-      // https://github.com/imagemin/imagemin-jpegtran
-      imagemin.jpegtran({progressive: true}),
+      // v7.0.0 replaced https://github.com/imagemin/imagemin-jpegtran
+      imagemin.mozjpeg({progressive: true}),
       // https://github.com/imagemin/imagemin-optipng
       imagemin.optipng({optimizationLevel: 5})
       // https://github.com/svg/svgo#what-it-can-do
