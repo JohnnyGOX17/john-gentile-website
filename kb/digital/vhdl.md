@@ -15,7 +15,24 @@ VHDL is a hardware description language (HDL) used to model and describe digital
     * E.x. Transistor, gate, ALU, etc.
 + 
 
-## Constructs
+## Types
+
+### Common Types
+
+| Type | Value | [Package](#packages)/Origin |
+| ---- | ----- | -------------- |
+| `std_ulogic` | `U`,`X`,`0`,`1`,`Z`,`W`,`L`,`H`,`-` | `std_logic_1164` |
+| `std_ulogic_vector` | Array of `std_ulogic` | `std_logic_1164` |
+| `std_logic` | Resolved `std_ulogic` | `std_logic_1164` |
+| `std_logic_vector` | Array of `std_logic` | `std_logic_1164` |
+| `unsigned` | Array of `std_logic` | `numeric_std` |
+| `signed` | Array of `std_logic` | `numeric_std` |
+| `boolean` | `true`,`false` | Standard VHDL |
+| `character` | ASCII 256 characters | Standard VHDL |
+| `string` | Array of `character` | Standard VHDL |
+| `integer` | $$-2^{31}$$ to $$(2^{31} - 1)$$ | Standard VHDL |
+| `real` | -1.0E38 to 1.0E38 | Standard VHDL |
+| `time` | `1 fs` to `1 hr` | Standard VHDL |
 
 ### Attributes
 
@@ -69,3 +86,89 @@ E'simple_name       -- is a string containing the name of entity E.
 E'instance_name     -- is a string containing the design hierarchy including E.
 E'path_name         -- is a string containing the design hierarchy of E to design root.
 ```
+
+
+## VHDL Structure
+
+### Packages
+
+Packages can contain type definitions, functions, constants, etc. that are useful for reuse between components (similar to header files in other programming languages). Common headers can be grouped by _library_ in the VHDL synthesis tool; standard VHDL packages are under the `ieee` library, and the default library for user made packages is often under the `work` library.
+
+Package usage declarations are declared at the head of VHDL files, before the entity declaration:
+
+```vhdl
+library ieee;
+  use ieee.std_logic_1164.all; -- base package for `std_logic` types
+  use ieee.numeric_std.all;    -- used for signed & unsigned representations
+library work;
+  use work.my_package.all;     -- example of user-made package in codebase
+```
+
+
+### Concurrent Statements
+
+#### Generate Statement
+
+The `generate` statement is useful for creating more compact/readable code, or creating more parameterized components. For instance, for concurrent statements, the `for..generate` statement can be used to directly index arrays in a for-loop-like fashion:
+
+```vhdl
+-- ...
+  signal a, b, c   : std_logic_vector(7 downto 0);
+begin
+  UG_my_gen_lbl: for i in 0 to 7 generate
+    c(i) <= a(i) xor b(7 - i);
+  end generate UG_my_gen_lbl;
+-- ...
+```
+
+The `if..generate` statement is useful for instantiating components and/or logic based on constant expressions or generics:
+
+```vhdl
+architecture rtl of ripple_adder is
+
+  component fulladd
+    port (
+      a, b, cin  : in  std_logic;
+      sum, carry : out std_logic
+    );
+  end component;
+
+  component halfadd 
+    port (
+      a, b       : in  std_logic;
+      sum, carry : out std_logic
+    );
+  end component;
+
+  signal c : std_logic_vector(0 to 7);
+
+begin
+
+  UG_gen_add: for i in 0 to 7 generate
+    UG_lower: if i = 0 generate
+      U0: halfadd
+        port map (
+          a(i),
+          b(i),
+          s(i),
+          c(i)
+        );
+    end generate UG_lower;
+
+    UG_upper_bits: if i > 0 generate
+      Ux: fulladd
+        port map (
+          a(i),
+          b(i),
+          c(i-1),
+          s(i),
+          c(i)
+        );
+    end generate upper_bits;
+  end generate UG_gen_add;
+
+  cout <= c(7);
+
+end rtl;
+```
+
