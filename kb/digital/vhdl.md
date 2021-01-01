@@ -94,6 +94,34 @@ E'path_name         -- is a string containing the design hierarchy of E to desig
 
 Packages can contain type definitions, functions, constants, etc. that are useful for reuse between components (similar to header files in other programming languages). Common headers can be grouped by _library_ in the VHDL synthesis tool; standard VHDL packages are under the `ieee` library, and the default library for user made packages is often under the `work` library.
 
+#### Package Definition
+
+Packages are defined in a `package` definition, which can include constants, type/record definitions, and procedure/function prototypes; definitions of declared items in the `package` definition (such as setting constant values or the actual procedure/function code) are made in the `package body` (and a `package` can only have **one** `package body`).
+
+```vhdl
+package my_pkg is
+  constant K_val : integer;
+  -- Only function/procedure prototypes in `package` section
+  function F_parity( X : std_logic_vector ) return std_logic;
+end my_pkg;
+
+package body my_pkg is
+  constant K_val : integer := 4; -- constant can be set here or in `package` declaration
+  -- Functions/Procedures defined in `package` can now be elaborated
+  function F_parity( X : std_logic_vector ) return std_logic is
+    variable V_tmp : std_logic := '0';
+  begin
+    for i in X'range loop
+      V_tmp := V_tmp xor X(i);
+    end loop;
+    return V_tmp;
+  end F_parity;
+end my_pkg;
+```
+
+
+#### Package Usage
+
 Package usage declarations are declared at the head of VHDL files, before the entity declaration:
 
 ```vhdl
