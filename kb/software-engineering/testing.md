@@ -12,6 +12,7 @@ comments: true
 
 ## Continuous Integration (CI)
 
+* [GitHub Actions](https://github.com/actions)
 * [Travis CI](https://travis-ci.org/)
 * [AppVeyor CI](https://www.appveyor.com/)
 * [CodeCov](https://codecov.io/)
