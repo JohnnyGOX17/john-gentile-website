@@ -49,7 +49,17 @@ $$ a \cdot D_{i,j} + c $$
 $$ \boldsymbol{C} = \boldsymbol{A} + \boldsymbol{B} \text{ where } C_{i,j} = A_{i,j} + B_{i,j}$$
 
 - **Vector Broadcasting:** a simplification found in some deep learning writings shows the simple addition of a matrix and a vector, yielding another matrix, for instance $$ \boldsymbol{C} = \boldsymbol{A} + \boldsymbol{b} \text{, where } C_{i,j} = A_{i,j} + b_{j}$$. This denotes the vector $$\boldsymbol{b}$$ is added to each row of the matrix $$\boldsymbol{A}$$, which is shorthand for an implicit step of defining another intermediate matrix with vector $$\boldsymbol{b}$$ copied in each row before performing the addition.
-- **Matrix Multiplication:** 
+
+- **Dot Product:**
+
+- **Vector & Matrix Multiplication:**
+  + In matrix multiplication, the order of operations matter, as well as the matrix sizes; given two matrices, $$\boldsymbol{A} \in \mathbb{R}^{m\times n}$$ and $$\boldsymbol{B} \in \mathbb{R}^{n\times p}$$, the matrix multiplication $$\boldsymbol{C} = \boldsymbol{A} \times \boldsymbol{B}$$ results in output matrix $$\boldsymbol{C} \in \mathbb{R}^{m\times p}$$. This shows two important properties of matrix multiplication:
+    1. The inner dimensions of both matrices (number of columns in first matrix operand, and number of rows in second matrix operand) must be equal.
+    2. The output matrix size matches the dimensions of the outer sizes of both matrix arguments (the number of rows in first matrix operand by the number of columns in the second matrix operand).
+  + As another example, when multiplying a 1x3 row vector with a 3x1 column vector, a scalar (1x1) is the result, but when the operands are reversed, a 3x3 matrix is the result:
+
+$$\begin{bmatrix} 2 & 3 & 4 \end{bmatrix} \times \begin{bmatrix} 6 \\ 4 \\ 3 \\ \end{bmatrix} = 36, \quad \begin{bmatrix} 2 \\ 3 \\ 4 \end{bmatrix} \times \begin{bmatrix} 6 & 4 & 3 \end{bmatrix} = \begin{bmatrix} 12 & 8 & 6 \\ 18 & 12 & 9 \\ 24 & 16 & 12 \end{bmatrix}$$
+
 <center><img src="mat_mul.png" width="400"></center>
 <center><i><a href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:multiplying-matrices-by-matrices/a/multiplying-matrices">Source: Multiplying matrices- Khan Academy</a></i></center>
 
