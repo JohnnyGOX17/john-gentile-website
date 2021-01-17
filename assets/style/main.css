@@ -485,7 +485,7 @@ a code.cta:hover::before,
 }
 
 .button:hover {
-  background-color: transparent
+  background-color: #6c757d
 }
 
 .button:hover .arrow {

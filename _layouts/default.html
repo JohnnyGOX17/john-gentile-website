@@ -73,11 +73,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
   </head>
 
-  <nav id="menu" class="{% if page.about %} homepage-fade-in {% endif %}">
+  <nav id="menu" class="{% if page.home_page %} homepage-fade-in {% endif %}">
     <h2 class="slideout-menu-section-title">Main</h2>
     <ul>
       <li class="slideout-menu-li">
-        <a href="/" {% if page.about %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>About</a>
+        <a href="/" {% if page.home_page %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Home</a>
+      </li>
+      <li class="slideout-menu-li">
+        <a href="/posts.html" {% if page.posts_page %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Posts</a>
       </li>
       <li class="slideout-menu-li">
         <a href="/portfolio.html" {% if page.projects %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Portfolio</a>
@@ -98,7 +101,7 @@
     {% endif %} {% endfor %}
   </nav>
 
-  <body class="{% if page.about %} homepage-fade-in {% endif %}" id="containerMain" >
+  <body class="{% if page.home_page %} homepage-fade-in {% endif %}" id="containerMain" >
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -119,8 +122,11 @@
             <div class="left-nav alt">
               <button class="tab hamburger toggle-button" id="menu-button"></button>
               <div class="tabs">
-                <div class="tab {% if page.about %} active {% endif %}">
-                  <a href="/">About</a>
+                <div class="tab {% if page.home_page %} active {% endif %}">
+                  <a href="/">Home</a>
+                </div>
+                <div class="tab {% if page.posts_page %} active {% endif %}">
+                  <a href="/posts.html">Posts</a>
                 </div>
                 <div class="tab {% if page.projects %} active {% endif %}">
                   <a href="/portfolio.html">Portfolio</a>
@@ -194,7 +200,7 @@
                   {% endif %}
                   <!-- use different header for blog posts vs notes articles -->
                   {% if page.blog_post %}
-                  <p class="tagline"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Posted: {{ page.date | date_to_string }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
+                  <p class="tagline"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Posted: {{ page.date | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
                   {% endif %}
                   <hr>
 

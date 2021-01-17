@@ -2,7 +2,7 @@
 title: Home // About Me
 layout: default
 comments: false
-about: true
+home_page: true
 permalink: /index.html
 ---
 
@@ -18,15 +18,22 @@ permalink: /index.html
 <br />
 <br />
 
-<!-- Generate list of blog posts, similar to portfolio box style -->
-<!-- NOTE: with formatting, make sure 1st paragraph (which gets output here in {{ post.excerpt }} liquid tag) does not contain any <a href> hyperlink -->
-{% for post in site.posts %}
-<a href="{{ post.url }}" class="project-href">
-<div class="project-box">
-  <img src="/assets/images/4ch_RF_FE_KiCad.png" alt="P2P-GPU">
-  <h2>{{ post.title }}</h2>
-  {{ post.excerpt }}</div>
-</a>
-<br />
-<br />
+<!-- Show only 4 latest posts -->
+{% for post in site.posts limit:4 %}
+  <a href="{{ post.url }}" class="project-href">
+    <div>
+      <h2 style="font-weight: bolder">{{ post.title }}</h2>
+      {{ post.excerpt }}
+      <p style="color:#6c757d; font-weight: light"><em>Posted by {{ post.author }} on {{ post.date | date: "%B %d, %Y" }}</em></p>
+    </div>
+  </a>
+  <br />
+  <hr >
 {% endfor %}
+
+<br />
+<br />
+<div style="clear: both; overflow: hidden">
+  <a href="/posts.html" class="button" style="float: right">See All Posts &rarr;</a>
+</div>
+
