@@ -16,3 +16,17 @@ permalink: /index.html
 </div>
 
 <br />
+<br />
+
+<!-- Generate list of blog posts, similar to portfolio box style -->
+<!-- NOTE: with formatting, make sure 1st paragraph (which gets output here in {{ post.excerpt }} liquid tag) does not contain any <a href> hyperlink -->
+{% for post in site.posts %}
+<a href="{{ post.url }}" class="project-href">
+<div class="project-box">
+  <img src="/assets/images/4ch_RF_FE_KiCad.png" alt="P2P-GPU">
+  <h2>{{ post.title }}</h2>
+  {{ post.excerpt }}</div>
+</a>
+<br />
+<br />
+{% endfor %}

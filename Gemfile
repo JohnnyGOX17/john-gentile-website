@@ -21,3 +21,6 @@ group :jekyll_plugins do
   gem "liquid_pluralize"
   gem "rouge"
 end
+
+# needed for Ruby 3.0+
+gem "webrick", "~> 1.7"

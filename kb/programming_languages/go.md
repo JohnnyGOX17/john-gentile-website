@@ -16,3 +16,4 @@ For system and low-level programming, C has been the defacto standard, however i
 
 ## References
 
+* [Uber Go Style Guide](https://github.com/uber-go/guide/blob/master/style.md)

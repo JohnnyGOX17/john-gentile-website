@@ -83,7 +83,7 @@
         <a href="/portfolio.html" {% if page.projects %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Portfolio</a>
       </li>
       <li class="slideout-menu-li">
-        <a href="/kb/overview.html" {% if page.kb_overview %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Docs Overview</a>
+        <a href="/kb/overview.html" {% if page.kb_overview %} style="color: #1C79C0; background-color: rgba(255, 255, 255, 0.1); outline: 0" {% endif %}>Notes Overview</a>
       </li>
     </ul>
     {% assign mypages = site.pages | sort: 'top-category' | group_by: 'top-category' %} {% for cat in mypages %} {% if forloop.first != true %}
@@ -126,7 +126,7 @@
                   <a href="/portfolio.html">Portfolio</a>
                 </div>
                 <div class="tab {% if page.kb or page.kb_overview %} active {% endif %}">
-                  <a href="/kb/overview.html">Docs</a>
+                  <a href="/kb/overview.html">Notes</a>
                   <div class="list-container">
                     <div class="list-shadow"></div>
                     <ul>
@@ -191,6 +191,10 @@
                 <div class="post-content">
                   {% if page.kb %}
                   <p class="tagline"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
+                  {% endif %}
+                  <!-- use different header for blog posts vs notes articles -->
+                  {% if page.blog_post %}
+                  <p class="tagline"><i class="fa fa-clock-o" aria-hidden="true"></i> Est. read time: {{ content | reading_time | pluralize: "minute" }} | <i class="fa fa-calendar-o" aria-hidden="true"></i> Posted: {{ page.date | date_to_string }} by <a href="/"><i class="fa fa-user" aria-hidden="true"></i> John Gentile</a></p>
                   {% endif %}
                   <hr>
 

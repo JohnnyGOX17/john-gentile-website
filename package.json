@@ -17,12 +17,12 @@
   "homepage": "https://john-gentile.com",
   "devDependencies": {
     "gulp": ">=4.0.2",
-    "gulp-cssnano": ">=2.1.2",
+    "gulp-cssnano": "^1.1.0",
     "gulp-htmlmin": ">=4.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-todo": "^7.1.1",
     "gulp-uglify": ">=3.0.2",
-    "gulp-uncss": ">=1.0.6",
+    "gulp-uncss": "^0.5.2",
     "prettier": "^2.2.1",
     "pump": ">=3.0.0",
     "write-good": "^1.0.4"
