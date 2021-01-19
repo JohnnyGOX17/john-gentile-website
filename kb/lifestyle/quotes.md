@@ -2,7 +2,7 @@
 title: Quotes
 layout: default
 kb: true
-top-category: Random
+top-category: Lifestyle
 comments: true
 ---
 

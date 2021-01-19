@@ -16,6 +16,7 @@ comments: true
 * [Travis CI](https://travis-ci.org/)
 * [AppVeyor CI](https://www.appveyor.com/)
 * [CodeCov](https://codecov.io/)
+* [Jenkins](https://www.jenkins.io/)
 
 ## References
 
