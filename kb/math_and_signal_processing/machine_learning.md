@@ -2,7 +2,7 @@
 title: Machine Learning
 layout: default
 kb: true
-top-category: Math
+top-category: Math & Signal Processing
 comments: true
 wip: true
 ---
@@ -26,7 +26,7 @@ Follow instructions at [python-lib/tensorflow](https://github.com/JohnnyGOX17/py
 #### TensorFlow Development
 
 {::nomarkdown}
-{% jupyter_notebook "/kb/math/notebooks/tf_basics.ipynb" %}
+{% jupyter_notebook "/kb/math_and_signal_processing/notebooks/tf_basics.ipynb" %}
 {:/nomarkdown}
 
 ### Caffe

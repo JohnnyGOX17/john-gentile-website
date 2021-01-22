@@ -2,7 +2,7 @@
 title: Digital Signal Processing
 layout: default
 kb: true
-top-category: Signals, Systems and Communications
+top-category: Math & Signal Processing
 comments: true
 ---
 
@@ -11,6 +11,10 @@ comments: true
 **Digital Signal Processing (DSP)** provides a means for analyzing & constructing signals in the digital domain, often done in digital hardware or in software; as opposed to the analog domain, the continual progression of smaller and faster digital hardware allows for signal processing systems that are often cheaper, more reliable and even more adaptable than their hard-wired analog counterpart. Albeit practical, these benefits can sometimes come at the cost of precision due to the nature of converting between analog and digital domains. In practice though, intelligent application of DSP concepts can reduce these distortion effects, and in some cases, actually improve & condition the signal for an intended purpose.
 
 ### Signals
+
+A **signal** is a pretty general term; it can describe a set of data pertaining to almost any sort of application or industry- from the electrical signal passing internet bits around to stock ticker prices driving world markets. **Systems** process signals by modifying, passing and/or extracting information from them.
+
+$$ E_{x} = \int_{-\infty}^{\infty} \left | x(t) \right | ^{2} dt $$
 
 Fundamentally a **signal** is any quantity that varies with one or more independent variables- like voltage changing over time. A signal may or may not be able to be mathematically or functionally defined; for example, the natural waveform from recorded music. In the rest of the discussion time is used for discussion of common signals but can be replaced with any other independent variable. **Frequency** is inversely related to the period of a signal ($$f=1/T$$). Common periodic signals that vary with time ($$t$$) can be described with three time-varying attributes: amplitude ($$A$$), frequency ($$f$$) and phase ($$\theta$$). For example a basic sinusoid: \$\$x(t)=A\cos(\Omega t + \theta ),  -\infty < t < \infty $$
 
@@ -102,3 +106,4 @@ The time domain function $$s(x)$$ is shown here as a sum of six sinusoids at dif
 * [Linear Systems and Signals, Second Edition- B.P. Lathi](https://www.amazon.com/Linear-Systems-Signals-2nd-Lathi/dp/0195158334/ref=sr_1_3?ie=UTF8&qid=1541558585&sr=8-3&keywords=linear+signals+and+systems+lathi)
 * [Digital Signal Processing Principles, Algorithms, and Applications, Fourth Edition- John G. Proakis, Dimitris G. Manolakis](https://www.amazon.com/Digital-Signal-Processing-John-Proakis-dp-0131873741/dp/0131873741/ref=mt_hardcover?_encoding=UTF8&me=&qid=1541468761)
 * [Digital Signal Processing- MIT OCW](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011/)
+* [Linear Systems and Signals, 2nd Edition - B.P. Lathi](https://www.amazon.com/Linear-Systems-Signals-2nd-Lathi/dp/0195158334/ref=sr_1_3?ie=UTF8&qid=1541558585&sr=8-3&keywords=linear+signals+and+systems+lathi)

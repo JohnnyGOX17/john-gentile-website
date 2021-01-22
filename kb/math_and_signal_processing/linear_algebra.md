@@ -2,7 +2,7 @@
 title: Linear Algebra
 layout: default
 kb: true
-top-category: Math
+top-category: Math & Signal Processing
 comments: true
 wip: true
 ---
