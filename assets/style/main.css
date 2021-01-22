@@ -449,6 +449,36 @@ a code.cta:hover::before,
   }
 }
 
+#back_to_top_btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0389ff;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#back_to_top_btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#back_to_top_btn:hover {
+  background-color: #6c757d;
+}
+
 .button {
   background-color: #0389ff;
   display: inline-block;

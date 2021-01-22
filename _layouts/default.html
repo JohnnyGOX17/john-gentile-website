@@ -237,6 +237,8 @@
       </main>
     </div>
 
+    <button onclick="backToTop()" id="back_to_top_btn"><i class="fa fa-angle-double-up fa-2x"></i></button>
+
   </body>
 
   <!-- Placed at the end of the document so the pages load faster -->
@@ -271,6 +273,7 @@
       // Pixels to offset from top when calculating position of scroll.
     });
   </script>
+
   <!-- Script for Sidebar TOC -->
   <script type="text/javascript">
     $(document).ready(function() {
@@ -284,6 +287,7 @@
       });
     });
   </script>
+
   <!-- Script to hide/show TOC on button click -->
   <script>
     function hideTOC() {
@@ -303,6 +307,7 @@
   </script>
   {% endif %}
 
+  <!-- changes top header bar after scrolling
   <script>
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
@@ -314,6 +319,30 @@
       }
     });
   </script>
+  -->
+
+  <!-- back to top button after user scolls down (for notes pages) -->
+  {% if page.kb %}
+  <script>
+    // Get button id
+    var btnID = document.getElementById("back_to_top_btn");
+    // Show button when user scolls down 20px from top
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnID.style.display = "block";
+      } else {
+        btnID.style.display = "none";
+      }
+    }
+
+    // When user clicks button, scroll back to top
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  {% endif %}
 
   <script>
     var slideout = new Slideout({

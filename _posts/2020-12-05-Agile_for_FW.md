@@ -1,10 +1,13 @@
 ---
-title: Agile for Firmware
+title: Agile for FW & FPGA Development
+author: John Gentile
 layout: default
-kb: true
-top-category: Digital Electronics
+kb: false
+blog_post: true
 comments: true
 ---
+
+Agile development processes have been the popular trend in Software Development for quite awhile now. However Agile is now bleeding into other engineering areas, especially hardware, firmware and FPGA development. While there are general "best practices" in Agile methodology that can apply to virtually any development or decision process, the tooling and day-to-day project management with Agile has several caveats that need to be addressed when applied to hardware and firmware design.
 
 - Works great when teams have buy-in, falls apart when people don’t believe in it:
   + Use only the minimum amount of tooling/overhead needed to complete the planning/development of agile. Sometimes certain tools (like Jira) or methodologies have too many moving parts and take too much time to use (e.g. number of clicks to create a story, or number of meetings to attend for planning/pointing/etc.) that people are left with less time to even develop and become discouraged. Sometimes the simplicity of Kanban can be greater than the cost of Scrum
