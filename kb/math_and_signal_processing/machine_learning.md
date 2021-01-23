@@ -33,6 +33,12 @@ Follow instructions at [python-lib/tensorflow](https://github.com/JohnnyGOX17/py
 
 [Caffe 2](https://caffe2.ai/)
 
+### Jupyter Notebooks
+
+For more info, see [SciPy distribution in Python](/kb/programming_languages/python.html#scipy) about installing Jupyter notebook support.
+
+Another great tool which comes with most all dependencies/libraries ready to go is [Google Colab](https://colab.research.google.com/), which allows you to store (in Google Drive), edit and run (even on GPU & TPU servers in some instances) Jupyter notebooks in the Google cloud environment.
+
 ### Other Tools
 
 * **[Horovod](https://github.com/horovod/horovod):** Horovod is a distributed deep learning training framework for TensorFlow, Keras, PyTorch, and Apache MXNet
