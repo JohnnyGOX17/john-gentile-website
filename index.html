@@ -23,7 +23,12 @@ permalink: /index.html
   <a href="{{ post.url }}" class="project-href">
     <div>
       <h2 style="font-weight: bolder">{{ post.title }}</h2>
-      {{ post.excerpt }}
+      <!--
+           <object></object> wrapper useful when 1st paragraph of post (excerpt)
+           contains any hyperlinks, so that the overall text links to the post
+           but specific hyperlinks are retained
+      -->
+      <object>{{ post.excerpt }}</object>
       <p style="color:#6c757d; font-weight: light"><em>Posted by {{ post.author }} on {{ post.date | date: "%B %d, %Y" }}</em></p>
     </div>
   </a>
