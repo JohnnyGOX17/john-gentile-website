@@ -333,22 +333,16 @@ Another primary factor in the high-frequency BW limit of BJTs in large, invertin
 <center><img src="miller_effect.png" height="150"></center>
 Given an ideal amplifier, the amplifier input draws no current ($$\infty$$ input impedance) so all the current goes through $$Z$$ leading to an input impedance inversely related to gain:
 \$\$ I_{i}=\frac{V_{i}-V_{o}}{Z}=\frac{V_{i}(1+A_{v})}{Z} \rightarrow Z_{in}=\frac{V_{i}}{I_{i}}=\frac{Z}{1+A_{v}} \$\$
-With $$Z=X_{C}=\frac{1}{j\omega C_{in}}$$, we can see where the multiplicative effect of gain on input capacitance $$C_{in}$$ comes from and the effective miller capacitance $$C_{m}$$ is derived by $$\eqref{eq:c_miller}$$:
+With $$Z=X_{C}=\frac{1}{j\omega C_{in}}$$, we can see where the multiplicative effect of gain on input capacitance $$C_{in}$$ comes from and the effective miller capacitance $$C_{m}$$ is derived by the below Miller equation:
 \$\$
-\begin{equation}
   Z_{in} = \frac{1}{j\omega C_{in}(1+A_{v})} \rightarrow \boxed { \therefore C_{m}=(1+A_{v})C_{in} }
-  \label{eq:c_miller}
-\end{equation}
 \$\$
 
 For a BJT there exists two main stray capacitances: input capacitance (between base and emitter) and output capacitance (between collector and base). The miller capacitance $$C_{m}$$ (which is a product of voltage gain $$A_{v}$$ and $$C_{cb}$$) is added to the input stray capacitance
 <center><img src="BJT_miller.png" height="500"></center>
-Thus, given an input impedance of the BJT circuit and the source impedance of an input voltage source, there exists a pole from the time constant $$\tau = RC$$ formed which gives the dominant high-frequency cutoff point $$f_{H,1} \eqref{eq:bjt_fh1}$$:
+Thus, given an input impedance of the BJT circuit and the source impedance of an input voltage source, there exists a pole from the time constant $$\tau = RC$$ formed which gives the dominant high-frequency cutoff point $$f_{H,1}$$:
 \$\$
-\begin{equation}
   f_{H,1} = \frac{1}{2\pi(Z_{source} \parallel Z_{in})(C_{be} + (1-A_{v})C_{cb})}
-  \label{eq:bjt_fh1}
-\end{equation}
 \$\$
 There also exists another HF pole $$f_{H,2}$$ given from the output capacitance & output impedance, however it's usually much higher frequency than the input capacitance (assuming no external load capacitance):
 \$\$ f_{H,2} = \frac{1}{2\pi Z_{out}C_{out}} \$\$

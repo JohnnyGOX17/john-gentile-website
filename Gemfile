@@ -16,6 +16,8 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   #gem "jekyll-seo-tag"
   #gem "jekyll-toc"
+  gem "kramdown"
+  gem "kramdown-math-katex"
   gem "jekyll-youtube"
   gem "liquid_reading_time"
   gem "liquid_pluralize"
