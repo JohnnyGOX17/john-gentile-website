@@ -24,11 +24,14 @@ What's great is, once its installed, you can simply embed a Jupyter Notebook int
 
 The result is a perfectly formatted, rendered output of your notebook, directly within your post:
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/kb/math_and_signal_processing/notebooks/tf_basics.ipynb)
+
 {::nomarkdown}
 {% jupyter_notebook "/kb/math_and_signal_processing/notebooks/tf_basics.ipynb" %}
 {:/nomarkdown}
 
-For documentation and website purposes, the non-interactive, static presentation should be fine; any necessary support for actual code edits or dynamic response should simply be handled with a link to the Notebook in a full environment with execution support, such as [Google Colab](https://colab.research.google.com/).
+For documentation and website purposes, the non-interactive, static presentation should be fine; any necessary support for actual code edits or dynamic response should simply be handled with a link to the Notebook in a full environment with execution support, such as [Google Colab](https://colab.research.google.com/). What's also great about Google Colab is that [you can directly run and edit notebooks on GitHub](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb#scrollTo=8QAWNjizy_3O), similar to the "Open in Colab" badge in the above example.
 
 Another great plugin for technical research blogging is [inukshuk/jekyll-scholar](https://github.com/inukshuk/jekyll-scholar); this plugin inserts and formats bibliographies for Jekyll posts and makes citing sources very easy, similar to the process used in LaTeX documents. You can set the citation style to a variety of publication standards, as well as reference standard `*.bib` and `*.bibtex` bibliography files.
 

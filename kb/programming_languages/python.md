@@ -25,6 +25,8 @@ Cons:
 
 Example of integration of Jupyter notebook in Jekyll:
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/kb/programming_languages/notebooks/example.ipynb)
+
 {::nomarkdown}
 {% jupyter_notebook "/kb/programming_languages/notebooks/example.ipynb" %}
 {:/nomarkdown}

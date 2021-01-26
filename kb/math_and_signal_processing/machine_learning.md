@@ -25,6 +25,8 @@ Follow instructions at [python-lib/tensorflow](https://github.com/JohnnyGOX17/py
 
 #### TensorFlow Development
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/kb/math_and_signal_processing/notebooks/tf_basics.ipynb)
+
 {::nomarkdown}
 {% jupyter_notebook "/kb/math_and_signal_processing/notebooks/tf_basics.ipynb" %}
 {:/nomarkdown}
