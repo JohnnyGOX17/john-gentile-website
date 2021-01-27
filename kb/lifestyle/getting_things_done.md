@@ -9,8 +9,8 @@ comments: true
 ## General Advice
 
 * Control your controllables, and don't worry about things out of your control.
-* [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace, and laugh, at the suck. Those who dare, win.
-* The best way to complete a marathon is to take the first step. Activity defeats doubt.
+* [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win.
+* The best way to complete a marathon is to show up and take the first step. Activity defeats doubt, discipline over motivation.
 * Happiness is a mindset, not an achievement or place.
 * Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
 * Your tribe is your vibe. Growing a tribe is never bad but don't neglect your inner circle.
@@ -39,4 +39,16 @@ Before everyone else is up with distractions, set your day up for success and gi
 * Keep clothes for the morning close by (e.x. workout clothes) and organized so it's that much easier to pop out of bed and be ready to go.
 * Before going to bed, keep a full, cold glass of water by your alarm. If you aim to drink the whole glass as soon as you wake up, it serves as another boost to waking out of the groggy-ness of bed.
 * If you're really having an issue with trying to wake up, try moving your alarm out of arms reach from where you sleep. If you have to actually get out of bed to stop your alarm, it not only will be much harder to inadvertently hit the "snooze" button, but you've already made the biggest step to waking up, getting your ass out of bed.
+
+
+## Goal Setting
+
+Just [writing down your goals statistically improves your chances of completing them](https://scholar.dominican.edu/cgi/viewcontent.cgi?article=1265&context=news-releases), and any extra steps to keep yourself accountable (like making weekly reviews of your progress) increases that probability even more.
+
+Create **SMART** goals, like how [novelist Anthony Trollope published 47 novels with a day job by committing to writing every morning](https://blog.doit.io/the-15-minute-anthony-trollope-routine/):
+* **Specific:** make sure your goal has a defined criteria for success.
+* **Measurable:** make sure your goal is quantifiable, and its progress can be tracked along the way to completion.
+* **Attainable:** make sure your goal is lofty, but at the same time, realistic. If it's too big, [like a BHAG](https://www.jimcollins.com/concepts/bhag.html), consider splitting the goal into smaller goals or milestones that lead to the bigger goal. Breaking large goals into consumable, relatively easy, chunks also keeps you motivated as you create positive momentum when you start completing milestones to your overall goal.
+* **Relevant:** make sure your goal is aligned to your values and mindset. If you don't truly believe, or want, your goal, your much less likely to achieve it.
+* **Time Bound:** make sure your goal has a defined deadline that is also realistic.
 
