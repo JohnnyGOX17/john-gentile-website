@@ -39,6 +39,14 @@ Follow instructions at [python-lib/tensorflow](https://github.com/JohnnyGOX17/py
 {% jupyter_notebook "/kb/math_and_signal_processing/notebooks/tf_basics.ipynb" %}
 {:/nomarkdown}
 
+#### Other TensorFlow Resources
+
+- **[instillai/TensorFlow-Course](https://github.com/instillai/TensorFlow-Course):** some simple tutorials and Jupyter notebooks on getting started with TensorFlow.
+- **[TensorFlow Hub](https://tfhub.dev/):** repository of hundreds of trained, ready-to-deploy machine learning models.
+
+
+
+
 ### Caffe
 
 [Caffe 2](https://caffe2.ai/)
