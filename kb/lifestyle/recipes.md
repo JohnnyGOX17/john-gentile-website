@@ -133,6 +133,39 @@ Makes **16** servings:
 
 ## Soups, Stews & Chilis
 
+### Korean Cabbage Soup
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 8 servings:
+* [ ] 1 whole head of Napa Cabbage, chopped into 1" square pieces
+* [ ] 2 leeks, chopped into 1" square pieces
+* [ ] 1 yellow onion, cut into large chunks
+* [ ] 8 cloves of garlic, minced
+* [ ] 4 green onions, diced into 1" length pieces
+* [ ] 4 tbs Better Than Bouillon Beef Base
+* [ ] 4 tbs fish sauce
+* [ ] 2 tbs sesame oil
+* [ ] 2 tbs soy sauce
+* [ ] 4 tbs gochujang
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 81       | 16.8g |  3.4g   | 0.5g  |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Add all cut vegetables to a large stock pot and add enough water to cover vegetables 1".
+2. Bring to a boil and then add the rest of the ingredients.
+3. Turn heat down to a simmer and cook for 30 more min or until cabbage is soft.
+</details>
+
+
 ### One Pot Texas Chili
 
 <details markdown="1">
