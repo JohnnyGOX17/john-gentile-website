@@ -10,6 +10,9 @@ comments: true
 
 {% youtube "https://www.youtube.com/watch?v=5qap5aO4i9A" %}
 <br />
+{% youtube "https://www.youtube.com/watch?v=6yUzLHl13gg&list=PLXtrDTLKuo4W7RWfq5VRm9WnXGMhixT9G" %}
+[Playlist](https://www.youtube.com/playlist?list=PLXtrDTLKuo4W7RWfq5VRm9WnXGMhixT9G)
+<br />
 {% youtube "https://www.youtube.com/watch?v=mPZkdNFkNps" %}
 <br />
 {% youtube "https://www.youtube.com/watch?v=UIVDI2ytYno&list=PLlkZE8RimE_6IVhMioamxRp_R0FcS2Pgn" %}
