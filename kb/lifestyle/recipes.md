@@ -10,9 +10,54 @@ comments: true
 
 ### Sauces
 
-### Best Grocery Store Sauces & Condiments
+#### Best Grocery Store Sauces & Condiments
 
 * Marie's Super Blue Cheese Dressing (in the refrigerated/veggie section)
+
+
+## Sandwiches
+
+### Italian Hoagie
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 1 serving/sandwich:
+* [ ] 1 hoagie roll (~8-10 in)
+* [ ] 2 tbs mayo
+* [ ] 3 slices provolone cheese
+* [ ] 3 slices each of pepperoni, salami & capocollo (can sub any other 3 italian meats as well)
+* [ ] 1/2 cup thinly sliced iceberg lettuce
+* [ ] 1/2 cup thinly sliced red onion
+* [ ] 2 thin tomato slices
+* [ ] 5 pickle chips
+* [ ] 7 pickled banana pepper slices
+* [ ] 1 tbs dried oregano
+* [ ] 1 tbs olive oil
+* [ ] 3 tbs vinegar
+* [ ] Pinch of salt & pepper
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 1121     | 57.5g | 51.6g   | 75.3g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Slice the roll in the middle, lengthwise, but not all the way through. Take some of the soft, inner bread out to make more room for the ingredients.
+2. Spread mayo on one side of the bread, and then layer cheese, and then all meats evenly across the inside of the bread. At this point if you wanted a hot sub, you could bake in a 350 °F oven for 10-15 min (until cheese is melted and bread is toasted).
+3. Add tomato & onion slices, pickles and pepper slices in even layers in the sub.
+4. In a separate bowl, mix together the lettuce, oregano, olive oil, vinegar, salt and pepper. Then layer inside of sub.
+</details>
+
+
+
+
 
 ## Chicken
 
