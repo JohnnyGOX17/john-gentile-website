@@ -47,9 +47,9 @@ Follow instructions at [python-lib/tensorflow](https://github.com/JohnnyGOX17/py
 
 
 
-### Caffe
+### PyTorch
 
-[Caffe 2](https://caffe2.ai/)
+
 
 ### Jupyter Notebooks
 
@@ -61,6 +61,7 @@ Another great tool which comes with most all dependencies/libraries ready to go 
 
 * **[Horovod](https://github.com/horovod/horovod):** Horovod is a distributed deep learning training framework for TensorFlow, Keras, PyTorch, and Apache MXNet
 * **[MLPerf](https://mlcommons.org/en/):** ML benchmark results for various computing platforms.
+* [Caffe 2](https://caffe2.ai/) is now a part of [PyTorch](#pytorch)
 
 ## References
 {% bibliography --cited_in_order --file machine_learning %}
