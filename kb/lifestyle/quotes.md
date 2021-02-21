@@ -42,6 +42,10 @@ comments: true
 
 -George S. Patton
 
+> It does not do to dwell on dreams and forget to live.
+
+- J.K. Rowling, _Harry Potter and the Sorcerer's Stone_
+
 ### Perseverance
 
 > I don't count my sit-ups; I only start counting when it starts hurting because they’re the only ones that count.
