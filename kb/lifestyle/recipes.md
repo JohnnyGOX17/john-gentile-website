@@ -15,6 +15,39 @@ comments: true
 * Marie's Super Blue Cheese Dressing (in the refrigerated/veggie section)
 
 
+## Breakfast
+
+### Breakfast Casserole
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 5 servings:
+* [ ] 2 cup shredded cheese (e.g. cheddar, colby jack, etc.)
+* [ ] 12 large eggs
+* [ ] 1 lb ground sausage
+* [ ] 1/2 cup heavy cream
+* [ ] Salt & pepper for seasoning
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 592      | 6.4g  | 32.4g   | 50.3g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Preheat oven to 375 °F. Cook breakfast sausage for about 10 min, breaking apart while cooking.
+2. In large bowl, whisk together eggs, heavy cream, 1/4 cup of cheese, sausage and seasoning.
+3. Add mixture to greased casserole dish and bake for 30 minutes, or until eggs are set and cheese is melted.
+</details>
+
+
+
 ## Sandwiches
 
 ### Italian Hoagie
