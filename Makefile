@@ -10,8 +10,8 @@ build:
 	# First generate pending TODO.md list then display to stdout
 	gulp todo
 	cat ./TODO.md
-	# Generate intermediate files from Jekyll
-	bundle exec jekyll build
+	# Generate intermediate files from Jekyll (use additional publish configs)
+	bundle exec jekyll build --config _config.yml,_config-publish.yml
 	# Run PostCSS to optimize and minimize CSS
 	gulp css
 	# Minify final image, JavaScript & HTML files
@@ -54,17 +54,17 @@ serve:
 	rm -rf ./_site
 	# Funky workaround to get web browser to launch page after we build and
 	# start the server since `jekyll serve` blocks till Ctrl+C. If building
-	# takes longer than 5 seconds, adjust accordingly
+	# takes longer than 7 seconds, adjust accordingly
 ifeq ($(UNAME_S),Linux)
-	sleep 5 && xdg-open http://localhost:4000/ &
+	sleep 7 && xdg-open http://localhost:4000/ &
 endif
 ifeq ($(UNAME_S),Darwin)
-	sleep 5 && open "http://localhost:4000/" &
+	sleep 7 && open "http://localhost:4000/" &
 endif
 	bundle exec jekyll serve --livereload
 
 test:
-	# Running simple HTTP Webserver to manually verify distribution
+	# Running simple HTTP Webserver to manually verify built distribution
 ifeq ($(UNAME_S),Linux)
 	sleep 1 && xdg-open http://localhost:8080/ &
 endif

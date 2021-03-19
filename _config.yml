@@ -7,8 +7,6 @@ collections:
 # Build settings & gem packages
 markdown: kramdown
 kramdown:
-  # KaTeX in Jekyll, inspired by https://gendignoux.com/blog/2020/05/23/katex.html
-  math_engine: katex
   syntax_highlighter: rouge
 highlighter: rouge
 plugins:

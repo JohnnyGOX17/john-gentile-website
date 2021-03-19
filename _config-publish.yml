@@ -1,0 +1,7 @@
+# KaTeX in Jekyll, inspired by https://gendignoux.com/blog/2020/05/23/katex.html
+# as opposed to default MathJax rendering, which is client side, KaTeX is
+# server-side HTML (or pre-compiled here before pushing up as final HTML)
+# which renders & loads much faster at the small expense of slightly larger HTML
+# page source size
+kramdown:
+  math_engine: katex
