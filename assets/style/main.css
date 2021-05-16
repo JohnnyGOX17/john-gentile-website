@@ -195,7 +195,7 @@ body,
 .doc-sidebar .section-name,
 .searchbar input {
   color: #333;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.3
 }
 
@@ -1165,22 +1165,6 @@ amp-vimeo {
     flex-direction: column;
     margin-left: 0
   }
-  .main h1 {
-    font-size: 26px;
-    line-height: 40px;
-    font-weight: 300
-  }
-  .main h2 {
-    font-size: 20px;
-    line-height: 28px
-  }
-  .main h3 {
-    font-size: 18px;
-    line-height: 26px
-  }
-  .main a {
-    font-size: 14px
-  }
   .rtl .main {
     margin-right: 0
   }
@@ -1769,7 +1753,7 @@ pre>code td {
 
 .highlight .ow {
   /* Operator.Word */
-  color: #000000;
+  color: #f92672;
   font-weight: bold
 }
 
@@ -2637,6 +2621,10 @@ footer .footer-privacy {
   .main {
     background-color: #2d2d2d;
     color: #e4e4e4;
+  }
+
+  .mdl-tabs__tab {
+    color: #e4e4e4 !important;
   }
 
   tr:nth-child(even) {

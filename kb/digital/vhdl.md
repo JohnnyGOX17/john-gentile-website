@@ -1,5 +1,5 @@
 ---
-title: VHDL
+title: Hardware Description Langauges (HDL)
 layout: default
 kb: true
 top-category: Digital Electronics
@@ -8,12 +8,24 @@ comments: true
 
 ## Overview
 
+### VHDL Overview
+
 VHDL is a hardware description language (HDL) used to model and describe digital systems and their behavior. Like computer programming languages, to successfully design complex digital components or systems in VHDL, one should take advantage of abstraction and hierarchical methods. For digital systems, we can typically break a design down into three main domain models:
 + _Functional:_ Describes the operation and implementation of a design
     * E.x. Boolean equations, register-transfer language, algorithm, etc.
 + _Structural:_ Describes the interconnection of subsystems and components
     * E.x. Transistor, gate, ALU, etc.
-+ 
+
+VHDL is case insensitive.
+
+### Verilog Overview
+
+Verilog is case sensitive.
+
+
+
+
+
 
 ## Types
 
@@ -88,49 +100,15 @@ E'path_name         -- is a string containing the design hierarchy of E to desig
 ```
 
 
+
+
+
+
+
+
+
 ## VHDL Structure
 
-### Packages
-
-Packages can contain type definitions, functions, constants, etc. that are useful for reuse between components (similar to header files in other programming languages). Common headers can be grouped by _library_ in the VHDL synthesis tool; standard VHDL packages are under the `ieee` library, and the default library for user made packages is often under the `work` library.
-
-#### Package Definition
-
-Packages are defined in a `package` definition, which can include constants, type/record definitions, and procedure/function prototypes; definitions of declared items in the `package` definition (such as setting constant values or the actual procedure/function code) are made in the `package body` (and a `package` can only have **one** `package body`).
-
-```vhdl
-package my_pkg is
-  constant K_val : integer;
-  -- Only function/procedure prototypes in `package` section
-  function F_parity( X : std_logic_vector ) return std_logic;
-end my_pkg;
-
-package body my_pkg is
-  constant K_val : integer := 4; -- constant can be set here or in `package` declaration
-  -- Functions/Procedures defined in `package` can now be elaborated
-  function F_parity( X : std_logic_vector ) return std_logic is
-    variable V_tmp : std_logic := '0';
-  begin
-    for i in X'range loop
-      V_tmp := V_tmp xor X(i);
-    end loop;
-    return V_tmp;
-  end F_parity;
-end my_pkg;
-```
-
-
-#### Package Usage
-
-Package usage declarations are declared at the head of VHDL files, before the entity declaration:
-
-```vhdl
-library ieee;
-  use ieee.std_logic_1164.all; -- base package for `std_logic` types
-  use ieee.numeric_std.all;    -- used for signed & unsigned representations
-library work;
-  use work.my_package.all;     -- example of user-made package in codebase
-```
 
 
 ### Concurrent Statements
@@ -199,4 +177,79 @@ begin
 
 end rtl;
 ```
+
+
+
+
+
+
+### Packages
+
+Packages can contain type definitions, functions, constants, etc. that are useful for reuse between components (similar to header files in other programming languages). Common headers can be grouped by _library_ in the VHDL synthesis tool; standard VHDL packages are under the `ieee` library, and the default library for user made packages is often under the `work` library.
+
+#### Package Definition
+
+Packages are defined in a `package` definition, which can include constants, type/record definitions, and procedure/function prototypes; definitions of declared items in the `package` definition (such as setting constant values or the actual procedure/function code) are made in the `package body` (and a `package` can only have **one** `package body`).
+
+```vhdl
+package my_pkg is
+  constant K_val : integer;
+  -- Only function/procedure prototypes in `package` section
+  function F_parity( X : std_logic_vector ) return std_logic;
+end my_pkg;
+
+package body my_pkg is
+  constant K_val : integer := 4; -- constant can be set here or in `package` declaration
+  -- Functions/Procedures defined in `package` can now be elaborated
+  function F_parity( X : std_logic_vector ) return std_logic is
+    variable V_tmp : std_logic := '0';
+  begin
+    for i in X'range loop
+      V_tmp := V_tmp xor X(i);
+    end loop;
+    return V_tmp;
+  end F_parity;
+end my_pkg;
+```
+
+
+#### Package Usage
+
+Packages are useful to define commonly reused functions, constants, types, etc.
+
+<div class = "mdl-tabs mdl-js-tabs mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events">
+  <div class = "mdl-tabs__tab-bar" style="justify-content:left;">
+    <a href = "#VHDL" class = "mdl-tabs__tab is-active">VHDL</a>
+    <a href = "#Verilog" class = "mdl-tabs__tab">Verilog</a>
+  </div>
+
+  <div class = "mdl-tabs__panel is-active" id = "VHDL" markdown="1">
+```vhdl
+-- top of file my_comp
+library ieee;
+  use ieee.std_logic_1164.all; -- base package for `std_logic` types
+  use ieee.numeric_std.all;    -- used for signed & unsigned representations
+library work;
+  use work.my_package.all;     -- example of user-made package in codebase
+-- ...
+
+entity my_comp is
+-- ...
+```
+  </div>
+  <div class = "mdl-tabs__panel" id = "Verilog" markdown="1">
+```verilog
+`include "my_package.sv"
+```
+  </div>
+</div>
+
+
+
+
+
+
+## References
+
+* [Verilog Tutorial: ASIC-World](http://www.asic-world.com/verilog/veritut.html)
 
