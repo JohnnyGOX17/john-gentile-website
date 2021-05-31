@@ -8,8 +8,9 @@ comments: true
 
 ## General Advice
 
-* Control your controllables, and don't worry about things out of your control.
+* Control your control-ables, and don't worry about things out of your control.
 * [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win.
+* When motivation gets tired, discipline gets in the drivers seat.
 * The best way to complete a marathon is to show up and take the first step. Activity defeats doubt, discipline over motivation.
 * Happiness is a mindset, not an achievement or place.
 * Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
@@ -26,7 +27,7 @@ comments: true
 * Praise in public, correct in private
 * You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
 * Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results.
-  + [It can take anwhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
+  + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
 * ["Be ashamed to die until you have scored some victory for humanity."- Neil deGrasse Tyson](https://www.youtube.com/watch?v=JtahB1-MNvk&feature=youtu.be)
 
 ### Waking Up Early
