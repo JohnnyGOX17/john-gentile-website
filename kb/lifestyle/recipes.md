@@ -17,7 +17,7 @@ comments: true
 
 ## Breakfast
 
-### Breakfast Casserole
+### Simple Egg, Cheese & Sausage Breakfast Casserole
 
 <br />
 
@@ -26,9 +26,8 @@ comments: true
 
 Makes 5 servings:
 * [ ] 2 cup shredded cheese (e.g. cheddar, colby jack, etc.)
-* [ ] 12 large eggs
-* [ ] 1 lb ground sausage
-* [ ] 1/2 cup heavy cream
+* [ ] 18 large eggs
+* [ ] 1 lb ground breakfast/pork sausage
 * [ ] Salt & pepper for seasoning
 </details>
 
@@ -36,7 +35,7 @@ Makes 5 servings:
 
 | Calories | Carbs | Protein | Fat   |
 |----------|-------|---------|-------|
-| 592      | 6.4g  | 32.4g   | 50.3g |
+| 770      | 7.8g  | 46.6g   | 62.7g |
 
 <details markdown="1">
   <summary><b>Instructions</b></summary>
@@ -287,20 +286,20 @@ Greek Seasoning:
 
 ## Fish & Shellfish
 
-### Tuna Salad
+### Italian Tuna Salad
 
 <details markdown="1">
   <summary><b>Ingredients</b></summary>
 
-Makes 4 servings:
-* [ ] 4 (5 oz) Tuna cans in water, drained
-* [ ] 1 cup [avocado mayo](https://www.youtube.com/watch?v=r8Kixk74bwo) (regular mayo can be substituted)
-* [ ] 1 rib of chopped celery
-* [ ] 2 tbs red onion, minced
-* [ ] 2 tbs diced pickles
-* [ ] 4 tbs fresh lemon juice
-* [ ] 4 tbs olive oil
-* [ ] 1 garlic clove, minced
+Makes 5 servings:
+* [ ] 5 (5 oz) Tuna cans in water, drained (skipjack preferred over albacore due to mercury content)
+* [ ] 1.5 cup [avocado mayo](https://www.youtube.com/watch?v=r8Kixk74bwo) (regular mayo can be substituted)
+* [ ] 1 small red onion, minced
+* [ ] 6 pickle spears, diced
+* [ ] 1 lemon, juiced
+* [ ] 5 tbs extra virgin olive oil
+* [ ] 2 tbs balsamic (or red wine) vinegar
+* [ ] 2 garlic cloves, minced
 * [ ] Salt, pepper and oregano to taste
 </details>
 
@@ -308,7 +307,7 @@ Makes 4 servings:
 
 | Calories | Carbs | Protein | Fat   |
 |----------|-------|---------|-------|
-| 693      | 2.6g  | 36.4g   | 58.7g |
+| 780      | 4.0g  | 36.4g   | 67.5g |
 
 <details markdown="1">
   <summary><b>Instructions</b></summary>

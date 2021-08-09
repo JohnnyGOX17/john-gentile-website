@@ -1,0 +1,18 @@
+{ signal: [
+  { name: 'aclk',     wave: 'p.......'},
+  ['Master',
+    {name: 'awvalid', wave: '01.0|...'},
+    {name: 'awaddr',  wave: 'x2.x|...', data: 'Address'},
+    {name: 'wvalid',  wave: '01.0|...'},
+    {name: 'wdata',   wave: 'x2.x|...', data: 'Data'   },
+    {name: 'wstrb',   wave: 'x2.x|...', data: 'Strobe'   },
+    {name: 'bready',  wave: '0..1|.x.'},
+  ],
+  {},
+  ['Slave',
+    {name: 'awready', wave: 'x01x|...'},
+    {name: 'wready',  wave: 'x01x|...'},
+    {name: 'bresp',   wave: 'x...|2x.', data: 'RESP'},
+    {name: 'bvalid',  wave: 'x...|1x.'},
+  ]
+]}

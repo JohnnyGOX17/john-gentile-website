@@ -664,6 +664,10 @@ entity my_comp is
 
 
 
+## 3rd Party / Open-Source HDL Repos
+
+Here are some repositories of Verilog and VHDL code for common IP cores:
+* [Avnet HDL](https://github.com/Avnet/hdl)
 
 
 ## References
