@@ -296,11 +296,13 @@ Makes 5 servings:
 * [ ] 1.5 cup [avocado mayo](https://www.youtube.com/watch?v=r8Kixk74bwo) (regular mayo can be substituted)
 * [ ] 1 small red onion, minced
 * [ ] 6 pickle spears, diced
+* [ ] 1 cup pickled banana pepper rings, diced
 * [ ] 1 lemon, juiced
 * [ ] 5 tbs extra virgin olive oil
 * [ ] 2 tbs balsamic (or red wine) vinegar
-* [ ] 2 garlic cloves, minced
-* [ ] Salt, pepper and oregano to taste
+* [ ] 2 tbs garlic powder
+* [ ] 2 tbs dried oregano
+* [ ] Salt and pepper to taste
 </details>
 
 **Nutrition (Per Serving)**
