@@ -1193,6 +1193,7 @@ amp-vimeo {
   text-transform: none
 }
 
+/*
 .post-content a[href*="//"]:not([href*="ni.com/"]):not([href*="github.com/"]):not([href*="facebook.com/"]):not([href*="twitter.com/"]):not([href*="linkedin.com/"]):not([href*="creativecommons.org/"])::after {
   content: "";
   display: inline-block;
@@ -1203,6 +1204,7 @@ amp-vimeo {
   margin-left: 4px;
   vertical-align: text-bottom
 }
+*/
 
 .post-content .button:before {
   display: none
