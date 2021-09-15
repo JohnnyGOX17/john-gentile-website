@@ -8,7 +8,20 @@ comments: true
 
 ## Overview
 
-For digital implementation languages, see [VHDL](vhdl.html) or [Verilog](verilog.html) pages. Also for background/theory on following DSP implementations see the [DSP Page](/kb/signals-systems-comms/digital_signal_processing.html). Most of this page has references and example code for VHDL, though the underlying concepts apply to all HDL languages.
+For digital implementation languages, see [VHDL and Verilog](hdl.html) page. Also for background/theory on following DSP implementations see the [DSP Page](/kb/signals-systems-comms/digital_signal_processing.html). Most of this page has references and example code for VHDL, though the underlying concepts apply to all Hardware Description Languages (HDL) as the concepts essentially focus on the underlying digital hardware implementations.
+
+### Why Learn Low-Level DSP Design for FPGAs?
+
+Knowing low-level design & implementation of Digital Signal Processing (DSP) in FPGAs can be valuable for a number of applications. For instance high-level synthesis (HLS) has made great progress in recent years, and can lead to very quick implementations, however it is not universally applicable to every scenario. HLS may not be as performant/resource-efficient as HDL crafted "by-hand" either.
+
+Similarly, it's important to realize from the beginning that there are scenarios where just directly porting an algorithm to an FPGA is **not faster** than the same algorithm running in software (SW) on a CPU. For one, FPGAs are generally clocked much slower than CPUs (e.x. FPGA fabric runs in the 100's of MHz vs modern CPUs in the GHz range). Second, SW compilers- and processing libraries with optimized code- have become great at creating applications that efficiently use modern computer architecture features such as [cache memory](https://en.wikipedia.org/wiki/Cache_(computing)), parallel-processing/threading and [SIMD vector extensions](https://en.wikipedia.org/wiki/SIMD).
+
+Put simply, **FPGAs are a different processing & design paradigm than SW** so there are some basic tenets to keep in mind when designing for processing performance:
+- **Design for data and process parallelism over a single-threaded-execution model:** FPGA implementations should aim to process multiple samples of data per clock cycle in parallel, rather than a single sample per cycle.
+- **Know the strengths & weaknesses of data movement to, from and within FPGAs/SoCs:** moving data to/from a processor (e.g. DMA) can be costly but in certain applications, FPGAs are valuable in that they can directly interface with sensors and other system I/O.
+- **Think in data flow rather than sequential processing:** as an extension to the point on data parallelism, FPGAs algorithms can easily implement processing pipelines which can perform different stages of processing at the same time- rather than waiting for the current processing chain to finish before starting the next processing chain. So keep the execution pipeline full to achieve maximum throughput of your algorithms.
+- **Understand the entire system to apply the right tool at the right time:** Similar to the point on data movement- and the strengths of CPUs and other processors like GPUs- there may be scenarios where parts of your algorithm should be done in software, while other parts are accelerated by FPGA fabric in tandem. FPGAs are not the answer for every application, so the wise Digital Engineer should recognize, and understand, processing software to determine an overall processing architecture given system constraints (e.x. Size, Weight and Power, plus Cost (SWaP-C)).
+
 
 ## Basic Operations
 
