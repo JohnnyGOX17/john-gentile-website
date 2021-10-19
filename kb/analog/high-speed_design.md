@@ -56,9 +56,19 @@ Given that High-Speed Digital Design deals with very fast signals (sometimes wit
 | Information Encoding | Modulation of carrier (AM, FM, PSK, etc.) | Voltage level transitions |
 | Figures of Merit for Designs | Power transfer and small-signal behavior | Voltage transfer and large-signal behavior |
 
-## SI Budgeting
+
+## Signal Integrity (PI)
 
 
+
+## Power Integrity (PI)
+
+### Stackup
+
+#### Plane Capacitance
+
+The use of plane capacitance as part of your stackup can reduce the number of needed decoupling capacitors, and provide an overall decrease in power plane inductances (and an increase in plane capacitance, thereby a total reduction of impedance). For instance, this can be achieved with the [Buried Capacitance®](https://www.sanmina.com/pdf/solutions/pcbres/buried_capacitance_technical_0106.pdf) fabrication available from Sanmina:
+![plane_cap](plane_cap.png)
 
 
 ## References
