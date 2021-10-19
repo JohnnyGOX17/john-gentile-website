@@ -108,6 +108,14 @@ _For find & replace, see **Substitution** under the Command section_
 | Pipe Command to Shell and Pipe Output into Current File | <kbd>!</kbd>,<kbd>!</kbd> | i.e. `!!ls` pipes the listing of files in your current directory into your current file |
 
 
+### Folding
+
+Folding is useful to visually compress files based on their structure, syntax or indentation (depending on the `set foldmethod` setting). Some useful default key combinations for folding are:
+* `za`: toggle open/close a fold under the current cursor.
+  - `zc`/`zo`: close/open a fold, respectively.
+* `zR`/`zM`: open/close _all_ folds in a buffer, respectively.
+
+
 ## Command Mode
 
 All commands are assumed to start with <kbd>:</kbd> while in Normal mode
