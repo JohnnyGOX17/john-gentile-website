@@ -93,3 +93,5 @@ It's important to keep a clear head in this investment strategy; it's pretty muc
 
 * TD Ameritrade Education Resources
 * [CS 007: Personal Finance for Engineers- Stanford](https://cs007.blog/)
+* [Investing STILL Won't Make You Rich (Probably)](https://www.youtube.com/watch?v=H5jPJQ5cVGU)
+
