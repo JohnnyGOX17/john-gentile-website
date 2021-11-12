@@ -135,7 +135,7 @@ In HDL, types range from defining single binary values, to numeric representatio
 | ---- | ----- | -------------- |
 | `std_ulogic` | `U`,`X`,`0`,`1`,`Z`,`W`,`L`,`H`,`-` | `std_logic_1164` |
 | `std_ulogic_vector` | Array of `std_ulogic` | `std_logic_1164` |
-| `std_logic` | Resolved `std_ulogic` | `std_logic_1164` |
+| `std_logic` | [Resolved `std_ulogic`](https://vhdlwhiz.com/std_logic-vs-std_ulogic/) | `std_logic_1164` |
 | `std_logic_vector` | Array of `std_logic` | `std_logic_1164` |
 | `unsigned` | Array of `std_logic` | `numeric_std` |
 | `signed` | Array of `std_logic` | `numeric_std` |
@@ -672,5 +672,15 @@ Here are some repositories of Verilog and VHDL code for common IP cores:
 
 ## References
 
+### Verilog
+
 * [Verilog Tutorial: ASIC-World](http://www.asic-world.com/verilog/veritut.html)
+
+### VHDL
+
+* [VHDL Reference Guide - ICS at UCI](https://www.ics.uci.edu/~jmoorkan/vhdlref/)
+  + [VHDL Mini Reference](https://www.ics.uci.edu/~jmoorkan/vhdlref/vhdl.html)
+* [Compact Summary of VHDL - UMBC](https://www.csee.umbc.edu/portal/help/VHDL/summary.html)
+* [comp.lang.vhdl - Google Groups](https://groups.google.com/g/comp.lang.vhdl/?pli=1)
+* [VHDLwhiz Blog](https://vhdlwhiz.com/)
 
