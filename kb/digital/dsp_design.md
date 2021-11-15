@@ -8,19 +8,22 @@ comments: true
 
 ## Overview
 
-For digital implementation languages, see [VHDL and Verilog](hdl.html) page. Also for background/theory on following DSP implementations see the [DSP Page](/kb/signals-systems-comms/digital_signal_processing.html). Most of this page has references and example code for VHDL, though the underlying concepts apply to all Hardware Description Languages (HDL) as the concepts essentially focus on the underlying digital hardware implementations.
+For digital implementation languages, see [VHDL and Verilog](hdl.html) page. Also for background/theory on following DSP implementations see the [DSP Page](/kb/signals-systems-comms/digital_signal_processing.html). Most of this page has references and example code for VHDL, though the underlying concepts apply to all Hardware Description Languages (HDL), as the architectures are applicable to many digital processing & [hardware accelerated systems](https://en.wikipedia.org/wiki/Hardware_acceleration), like [FPGAs](fpga.html), ASICs, and even SW-programmable [DSP processors](https://en.wikipedia.org/wiki/Digital_signal_processor).
 
-### Why Learn Low-Level DSP Design for FPGAs?
+### Why Learn Low-Level DSP Design for Digital Systems? 
 
-Knowing low-level design & implementation of Digital Signal Processing (DSP) in FPGAs can be valuable for a number of applications. For instance high-level synthesis (HLS) has made great progress in recent years, and can lead to very quick implementations, however it is not universally applicable to every scenario. HLS may not be as performant/resource-efficient as HDL crafted "by-hand" either.
+Knowing low-level design & implementation of Digital Signal Processing (DSP) for Digital Systems can be valuable for a number of applications. For instance high-level synthesis (HLS) has made great progress in recent years, and can lead to very quick implementations, however it is not universally applicable to every scenario. HLS may not be as performant/resource-efficient as HDL crafted "by-hand" either.
 
 Similarly, it's important to realize from the beginning that there are scenarios where just directly porting an algorithm to an FPGA is **not faster** than the same algorithm running in software (SW) on a CPU. For one, FPGAs are generally clocked much slower than CPUs (e.x. FPGA fabric runs in the 100's of MHz vs modern CPUs in the GHz range). Second, SW compilers- and processing libraries with optimized code- have become great at creating applications that efficiently use modern computer architecture features such as [cache memory](https://en.wikipedia.org/wiki/Cache_(computing)), parallel-processing/threading and [SIMD vector extensions](https://en.wikipedia.org/wiki/SIMD).
 
-Put simply, **FPGAs are a different processing & design paradigm than SW** so there are some basic tenets to keep in mind when designing for processing performance:
-- **Design for data and process parallelism over a single-threaded-execution model:** FPGA implementations should aim to process multiple samples of data per clock cycle in parallel, rather than a single sample per cycle.
-- **Know the strengths & weaknesses of data movement to, from and within FPGAs/SoCs:** moving data to/from a processor (e.g. DMA) can be costly but in certain applications, FPGAs are valuable in that they can directly interface with sensors and other system I/O.
-- **Think in data flow rather than sequential processing:** as an extension to the point on data parallelism, FPGAs algorithms can easily implement processing pipelines which can perform different stages of processing at the same time- rather than waiting for the current processing chain to finish before starting the next processing chain. So keep the execution pipeline full to achieve maximum throughput of your algorithms.
-- **Understand the entire system to apply the right tool at the right time:** Similar to the point on data movement- and the strengths of CPUs and other processors like GPUs- there may be scenarios where parts of your algorithm should be done in software, while other parts are accelerated by FPGA fabric in tandem. FPGAs are not the answer for every application, so the wise Digital Engineer should recognize, and understand, processing software to determine an overall processing architecture given system constraints (e.x. Size, Weight and Power, plus Cost (SWaP-C)).
+Put simply, **FPGAs and Digital Hardware offer a different processing & design paradigm than SW** so there are some basic tenets to keep in mind when designing for high-throughput processing performance:
+- **Design for data and process parallelism over a single-threaded-execution model:** due to completely distinct logic blocks, digital implementations should aim to process multiple samples of data per clock cycle in parallel, rather than a single sample per cycle.
+- **Know the strengths & weaknesses of data movement to, from and within Digital Systems/SoCs:** moving data to/from an accelerator (e.g. FPGA) from/to a main processor (e.g. over DMA) can be costly in terms of latency for some applications. However in other applications, Digital Systems like FPGAs are valuable in that they can directly interface with sensors and other system I/O; here, processing can be brought to the data, rather than moving data to the processing.
+- **Think in data flow rather than sequential processing:** as an extension to data parallelism, digital HW algorithms can easily implement [processing pipelines](https://en.wikipedia.org/wiki/Instruction_pipelining) which can perform different stages of processing concurrently (e.g. at the same time- rather than waiting for the current processing chain to finish before starting the next processing chain). Keep the execution pipeline full to achieve maximum throughput of your algorithms. [Dataflow](https://en.wikipedia.org/wiki/Dataflow), or [Stream Processing](https://en.wikipedia.org/wiki/Stream_processing), can be applied to systems which exhibit:
+  + _Compute Intensity:_ where there is a large ratio of the number of arithmetic operations per I/O or global memory reference.
+  + _Data Parallelism:_ which exists in a kernel if the same function is applied to all records of an input stream and a number of records can be processed simultaneously without waiting for results from previous records (e.x. digitized RF samples in a wireless processing system).
+  + _Data Locality:_ a specific type of temporal locality where data is produced in a stream, with intermediate streams passed between kernels.
+- **Understand the entire system to apply the right tool at the right time:** Similar to the applicability of data movement, there may be scenarios where parts of your algorithm should be done in software, while other parts are accelerated by FPGA fabric in tandem. FPGAs are not the answer for every application, so the wise Digital Engineer should recognize, and understand, processing software to determine an overall processing architecture given system constraints (e.x. Size, Weight and Power, plus Cost (SWaP-C)).
 
 
 ## Basic Operations
@@ -139,6 +142,17 @@ Three pre-combining adders are necessary (which in Xilinx DSP48 slices are built
 * Can also compute hyperbolic, linear and logarithmic functions as well
 * CORDIC algorithms generally produce one additional bit of accuracy for each **iteration** taken
 
+
+
+## Processing Architectures
+
+### Kahn Network Descriptions
+
+https://en.wikipedia.org/wiki/Kahn_process_networks
+
+### Systolic Arrays
+
+https://en.wikipedia.org/wiki/Systolic_array
 
 
 ## References
