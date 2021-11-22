@@ -220,7 +220,7 @@ Here are some useful tips when working with Vim for code development:
 * Use plugins to help aid in quicker, more effecient development (see .vimrc linked above for an example) but not those that add bloat and distraction to your development flow
     - For example, [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) is an intelligent code-completion engine for Vim that can accelerate development and makes Vim more IDE-like
 * You can easily remove trailing whitespace with `:%s/\s\+$//` (or macro to a keyboard shortcut for easier use)
-* `vim -d [file1] [file2]` is an easy way to diff two files
+* `vim -d [file1] [file2]` (or `vim diff`) is an easy way to diff two files
 * `:sort` is a powerful sort feature within Vim, use often
 * Open the last edited file with <kbd>Ctrl</kbd>+<kbd>o</kbd>+<kbd>o</kbd>
 * Interactive command history window `q:`
