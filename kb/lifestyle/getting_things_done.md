@@ -29,6 +29,7 @@ comments: true
 * Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results.
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
 * ["Be ashamed to die until you have scored some victory for humanity."- Neil deGrasse Tyson](https://www.youtube.com/watch?v=JtahB1-MNvk&feature=youtu.be)
+* Kindness is rooted in empathy for others' experiences
 
 ### Waking Up Early
 
