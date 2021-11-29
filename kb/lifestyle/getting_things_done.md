@@ -21,7 +21,7 @@ comments: true
 * Create your own luck; take lots of thoughtful shots over time, and keep working to improve.
 * You can't do everything yourself; 10x'ers can be multipliers when they inspire and mentor others.
 * What others see as impossible is possible with the right folks who believe in the mission.
-* If it doesn't make you better, happier or richer, don't make time for it.
+* Only make time for things that make you happier, healthier or wealthier.
 * Money can be used to buy back time, as time is often more valuable than money.
 * Things that get measured get improved
 * Praise in public, correct in private
