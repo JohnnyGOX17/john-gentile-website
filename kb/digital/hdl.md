@@ -668,6 +668,8 @@ entity my_comp is
 
 Here are some repositories of Verilog and VHDL code for common IP cores:
 * [Avnet HDL](https://github.com/Avnet/hdl)
+* [asicguy - GitHub](https://github.com/asicguy)
+  + [His website - asicsolutions.com](https://asicsolutions.com/)
 
 
 ## References
