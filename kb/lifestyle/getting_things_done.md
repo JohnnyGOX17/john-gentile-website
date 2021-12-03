@@ -10,6 +10,7 @@ comments: true
 
 * Control your control-ables, and don't worry about things out of your control.
 * [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win.
+* Live the life now that your older self would fondly look back on.
 * When motivation gets tired, discipline gets in the drivers seat.
 * The best way to complete a marathon is to show up and take the first step. Activity defeats doubt, discipline over motivation.
 * Happiness is a mindset, not an achievement or place.
@@ -23,13 +24,14 @@ comments: true
 * What others see as impossible is possible with the right folks who believe in the mission.
 * Only make time for things that make you happier, healthier or wealthier.
 * Money can be used to buy back time, as time is often more valuable than money.
-* Things that get measured get improved
+* Things that get measured get improved, and things that get scheduled get done.
 * Praise in public, correct in private
 * You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
 * Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results.
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
 * ["Be ashamed to die until you have scored some victory for humanity."- Neil deGrasse Tyson](https://www.youtube.com/watch?v=JtahB1-MNvk&feature=youtu.be)
 * Kindness is rooted in empathy for others' experiences
+* Focus on positivity, life is a self-fulfilling prophecy so be confident and happy that things will get good and goals will be achieved.
 
 ### Waking Up Early
 

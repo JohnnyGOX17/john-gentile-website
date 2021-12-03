@@ -6,7 +6,13 @@ top-category: Business
 comments: true
 ---
 
-you don't have to create something completely new but you should be the best and most differentiated company in that space
+## Start-Up Tenets 
+
+1. It's OK to fail.
+2. Be first, be better, or be cheaper.
+3. Instead of discounting ideas early, simply answer "what would it take?". Never say "that's always how its been done"
+4. Innovators are not smarter, no more courageous than the rest of us - they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
+
 
 ## Business Types
 
