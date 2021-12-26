@@ -30,6 +30,16 @@ Setup & Hold Times
 
 ## Tools
 
+### Xilinx Vivado
+
+#### Version Control
+
+Vivado generates a lot of intermediate files, [only some of which are required for version control](https://www.xilinx.com/video/hardware/vivado-design-suite-revision-control.html). Some of these files have machine/instance specific metadata, which can cause problems when directly running on another machine. In general, the easiest and most robust method is to [write TCL files describing the overall project settings and dependencies](https://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html/). In recent Vivado versions, this is simply done in the Vivado TCL console:
+* To save project/changes to TCL, `> write_project_tcl <create_prj_name>.tcl`
+* To create project from TCL, `> source <create_prj_name>.tcl`
+
+For more info, see [Xilinx AR 56421](https://support.xilinx.com/s/article/56421?language=en_US).
+
 ### Simulation
 
 - [EDA Playground](https://www.edaplayground.com/home) online simulator (similar to online compiler/assemblers) that can simulate designs & testbenches in Verilog, VHDL, SystemVerilog and others.
