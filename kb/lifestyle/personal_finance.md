@@ -20,6 +20,7 @@ comments: true
 * [Manage Risk](#manage-risk)
 * [Go Long](#go-long)
 * [Remove Emotions From Investing](#remove-emotions-from-investing)
+* [Debt is Not Always Bad](#debt-is-not-always-bad)
 
 ### Set a Goal and Measure It Continuously
 
@@ -87,6 +88,11 @@ Besides minimizing fees- as discussed above- holding onto investments for a long
 > “(Be) fearful when others are greedy and greedy when others are fearful”- Warren Buffett
 
 It's important to keep a clear head in this investment strategy; it's pretty much guaranteed that, at some point, some stocks- or even your entire portfolio- will see a large decline. In those scenarios do not let emotions or fears take precedence over sound financial decisions. The folly of many investors is in [prematurely reacting to market dips and leaving markets/investments in a lower state than if they just waited out whatever event was happening](https://www.fool.com/investing/2018/03/28/this-is-precisely-why-timing-the-market-isnt-worth.aspx). Again, don't try and time the market but [just give your investments time to grow](https://www.putnam.com/literature/pdf/II508-ac37f7ad02b2d8889f7e5361f0e8ac86.pdf)! There will always seem like there's some doomsday recession coming around the corner, yet [time and again the market shows returns that counteract](https://books.google.com/books?id=wAblMinB3UMC&pg=PA77&lpg=PA77&dq=stock+market+performance+watergate+cuban+missile&source=bl&ots=lXZmz3h8HB&sig=ACfU3U3VBwAdXbACZVpE23FKsbV58xBNyg&hl=en&sa=X&ved=2ahUKEwiNrY3lxP7jAhWKLHwKHbhAD2U4ChDoATAAegQICRAB#v=onepage&q&f=false) so don't react to market volatility.
+
+
+### Debt is Not Always Bad
+
+Often in life- and even business- there are times when you need to make a purchase that is larger than the amount of cash on hand. If you have a good amount saved up in investments, your first thought is likely to liquidate some (or all!) to cover, or contribute to, the aforementioned large purchase. This is usually because there is a negative connotation to debt, and its common for people to try and avoid it. _However_, you have to analyze each situation independently as it can be the case where the debt actually costs less in the long term than liquidating investments! A good example is a mortgage for a house; with low interest rates, its fairly common to find a loan offering 2-4% rates. Compared to a market-average portfolio (e.g. S&P 500 ETFs) which returns roughly 8-10% each year, it's actually more expensive (from a future value perspective) to liquidate positions in the portfolio, rather than take on debt to cover the large purchase cost! Not only that, but [mortgages in particular garner tax advantages](https://www.investopedia.com/articles/mortgages-real-estate/11/calculate-the-mortgage-interest-math.asp) for the individual. If you further break down debt payment term options, you can start to weigh the time-value of money, and see why shorter term loans (e.g. 10 year vs 30 year) have lower interest rates accordingly. The _bad debt_ to avoid (or to pay off before any investing if you have them!) is high-interest loans (e.g. credit card debt which can often be greater than 15%), which can compound into being extremely expensive in the long run. Of course, avoid any debt that you can't reasonably pay off either.
 
 
 ## References
