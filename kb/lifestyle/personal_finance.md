@@ -7,7 +7,7 @@ comments: true
 ---
 
 
-## Major Tenants of Savings and Investment
+## Major Tenets of Savings and Investment
 
 ### tl;dr
 
