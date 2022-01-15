@@ -180,6 +180,11 @@ Aliases can be used to use shorthand commands to represent longer or more comple
 
 Used to tell Git to not automatically add/track certain files. This is useful for files that come up during builds you do not wish to include in your repo (like log files or intermediate files). You can use regular expressions to specifiy certain groups of files as well. GitHub has a [very comprehensive list](https://github.com/github/gitignore) of `.gitignore` files you can use or start from.
 
+#### .gitattributes
+
+When dealing with cross-platform development teams (e.g. devs with both Windows & Unix editors), non-standard line endings can often occur. To mitigate this, simply [use a `.gitattributes` file](https://www.edwardthomson.com/blog/git_for_windows_line_endings.html) with the following contents:
+`* text=auto`
+
 ### Bash/Shell Completion
 
 Git also has a script to allow autocompletion of its entire command set (in the same fashion as traditional <kbd>Tab</kbd> command line completion). Simply put the [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) script somewhere and add a reference to it somewhere in your `.bashrc` script:
