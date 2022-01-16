@@ -32,6 +32,50 @@ Example of integration of Jupyter notebook in Jekyll:
 {:/nomarkdown}
 
 
+## Testing
+
+### pytest
+
+[`pytest`](https://docs.pytest.org/en/latest/) is a testing framework with easy usage; you need only write test functions that match `def test_*` and use the standard `assert` Python operator. For example, a simple Python file `test_sample.py` can contain the following:
+```python
+# content of test_sample.py
+def inc(x):
+    return x + 1
+
+def test_answer():
+    assert inc(3) == 5
+```
+
+And the expected unit test failure can be found with `pytest` as:
+```sh
+$ pytest
+=========================== test session starts ============================
+platform linux -- Python 3.x.y, pytest-7.x.y, pluggy-1.x.y
+rootdir: /home/sweet/project
+collected 1 item
+
+test_sample.py F                                                     [100%]
+
+================================= FAILURES =================================
+_______________________________ test_answer ________________________________
+
+    def test_answer():
+>       assert inc(3) == 5
+E       assert 4 == 5
+E        +  where 4 = inc(3)
+
+test_sample.py:6: AssertionError
+========================= short test summary info ==========================
+FAILED test_sample.py::test_answer - assert 4 == 5
+============================ 1 failed in 0.12s =============================
+```
+
+### Other 
+
+* [`psf/black`](https://github.com/psf/black) uncompromising Python code formatter.
+* [`mypy`](https://github.com/python/mypy) Static Type checker
+
+
 ## Libraries and Distributions
 
 ### SciPy
