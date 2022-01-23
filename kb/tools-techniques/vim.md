@@ -41,6 +41,8 @@ Typing a number before a motion repeats the motion that many times (i.e typing <
 _Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movement-shortcuts-wallpaper.html)_
 
 
+Other common movement commands:
+
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
 | Left/Down/Up/Right | <kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> | Move cursor left, down, up or right respectively |
@@ -65,22 +67,22 @@ _Credit for picture to [Ted Naleid](http://www.naleid.com/2010/10/04/vim-movemen
 | Move to line number | `line_number`,<kbd>Shift</kbd>+<kbd>g</kbd> | Move to line number `line_number` |
 | Exit & Write | <kbd>Shift</kbd>+<kbd>z</kbd>,<kbd>Shift</kbd>+<kbd>z</kbd> | Write file, if modified, and quit Vim |
 
-### Copy/Paste, Search, Find & Replace
+### Copy/Paste
+
+Copy commands start with <kbd>y</kbd>, and keys typed after designate what to copy, similar to navigation commands; for example, use <kbd>y</kbd>,<kbd>w</kbd> to yank a word. One can also enter Visual Mode (<kbd>v</kbd>) to select desired text to copy before hitting <kbd>y</kbd>. After which, text can be pasted using the put (<kbd>p</kbd>) command.
+
+Other copy & paste examples:
 
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
-| Copy (yank) Text | <kbd>y</kbd> | Use <kbd>y</kbd>,<kbd>w</kbd> to yank a word or use Visual Mode to select desired text before hitting <kbd>y</kbd>. After which, text can be pasted using the put (<kbd>p</kbd>) command |
 | Copy (yank) Current Line | <kbd>y</kbd>,<kbd>y</kbd> | Copies current line |
-| Find Character | <kbd>f</kbd>,<kbd>character</kbd> | Finds and positions cursor at _character_ |
-| Search in File | <kbd>/</kbd> or <kbd>?</kbd> to search backwards| This opens a command line at the bottom of Vim where you can enter text, or regular expressions, to search for. Hit <kbd>n</kbd> to go to next find and <kbd>Shift</kbd>+<kbd>n</kbd> to search in the opposite direction. <kbd>Ctrl</kbd>+<kbd>o</kbd> goes back to original cursor position and <kbd>Ctrl</kbd>+<kbd>i</kbd> goes forward |
-| See Search History | <kbd>q</kbd>,<kbd>/</kbd> | Shows past searches that you can select through and search again |
-| _Search Commands_ | `:set ic hls is` | These commands allow for search to ignore exact case matching, to highlight matching values and to increment search respectively. Use `:set noic nohlsearch` to disable ignoring case and highlighting of matches respectively |
-| Find Matching Bracket | <kbd>%</kbd> | Place cursor at any bracket and hit key to find matching bracket for types (), [], or {} |
-| Replace Mode | <kbd>Shift</kbd>+<kbd>r</kbd> | Acts like Insert mode in other text editors in that every typed character is inserted and delets an existing character |
-
-_For find & replace, see **Substitution** under the Command section_
+| Put/Paste Text from Register | <kbd>p</kbd> | Put text in Vim's register (such as previously deleted or yanked text) after the cursor |
 
 ### Deletion
+
+Delete commands start with <kbd>d</kbd>, and operate similar to other basic operations where keys after designate what to delete.
+
+Other delete examples:
 
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
@@ -91,7 +93,34 @@ _For find & replace, see **Substitution** under the Command section_
 | Delete Line | <kbd>d</kbd>,<kbd>d</kbd> | Delete entire line at cursor |
 | Delete to End of Line | <kbd>d</kbd>,<kbd>$</kbd> | Delete to end of line after cursor |
 
-### Put, Changes and Reversals
+### Changes and Reversals
+
+Change commands start with <kbd>c</kbd>, and operate similar to other basic operations where keys after designate what to delete.
+
+Other change examples:
+
+| Operation | Key(s) | Description |
+|-----------|--------|-------------|
+| Change Word | <kbd>c</kbd>,<kbd>w</kbd> | Change rest of word after cursor and place in Insert mode |
+| Change Inner Word | <kbd>c</kbd>,<kbd>i</kbd>,<kbd>w</kbd> | Change whole word (regardless of cursor position in word) and place in Insert mode |
+| Change to End of Line | <kbd>Shift</kbd>+<kbd>c</kbd> | Same as <kbd>c</kbd>,<kbd>$</kbd> |
+| Change Case | <kbd>~</kbd> | If in normal mode, changes the case of character at cursor but in visual mode with multiple selections changes the case of selected characters |
+
+
+### Search, Find & Replace
+
+| Operation | Key(s) | Description |
+|-----------|--------|-------------|
+| Find Character | <kbd>f</kbd>,<kbd>character</kbd> | Finds and positions cursor at _character_ |
+| Search in File | <kbd>/</kbd> or <kbd>?</kbd> to search backwards| This opens a command line at the bottom of Vim where you can enter text, or regular expressions, to search for. Hit <kbd>n</kbd> to go to next find and <kbd>Shift</kbd>+<kbd>n</kbd> to search in the opposite direction. <kbd>Ctrl</kbd>+<kbd>o</kbd> goes back to original cursor position and <kbd>Ctrl</kbd>+<kbd>i</kbd> goes forward |
+| See Search History | <kbd>q</kbd>,<kbd>/</kbd> | Shows past searches that you can select through and search again |
+| _Search Commands_ | `:set ic hls is` | These commands allow for search to ignore exact case matching, to highlight matching values and to increment search respectively. Use `:set noic nohlsearch` to disable ignoring case and highlighting of matches respectively |
+| Find Matching Bracket | <kbd>%</kbd> | Place cursor at any bracket and hit key to find matching bracket for types (), [], or {} |
+| Replace Mode | <kbd>Shift</kbd>+<kbd>r</kbd> | Acts like Insert mode in other text editors in that every typed character is inserted and delets an existing character |
+
+_For find & replace, see **Substitution** under the Command section_
+
+### Undo, Reverse and Recording Commands
 
 | Operation | Key(s) | Description |
 |-----------|--------|-------------|
@@ -99,10 +128,7 @@ _For find & replace, see **Substitution** under the Command section_
 | Undo Edits on Line | <kbd>Shift</kbd>+<kbd>u</kbd> | Undoes all changes made on the last line that was edited |
 | Reverse Preceding Command | <kbd>Ctrl</kbd>+<kbd>r</kbd> | Reverses actions taken until reaching most recent edit |
 | Repeat Last Change | <kbd>.</kbd> | Repeat last command that made a change to the text |
-| Put/Paste Text from Register | <kbd>p</kbd> | Put text in Vim's register (such as previously deleted or yanked text) after the cursor |
 | Replace Character | <kbd>r</kbd>,<kbd>character</kbd> | Replace character after cursor with `character` |
-| Change Word | <kbd>c</kbd>,<kbd>e</kbd> | Delete rest of word after cursor and place in Insert mode |
-| Change Case | <kbd>~</kbd> | If in normal mode, changes the case of character at cursor but in visual mode with multiple selections changes the case of selected characters |
 | Record Commands to Register | <kbd>q</kbd>,<kbd>character</kbd> | Records a set of commands to register `character` and stops recording after hitting <kbd>q</kbd> again |
 | Play command held in register | <kbd>@</kbd>,<kbd>character</kbd> | Repeats recorded command(s) held in that registers `character` |
 | Pipe Command to Shell and Pipe Output into Current File | <kbd>!</kbd>,<kbd>!</kbd> | i.e. `!!ls` pipes the listing of files in your current directory into your current file |
