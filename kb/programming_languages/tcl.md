@@ -41,5 +41,6 @@ puts "\$X" ;# outputs the string literal "$X" instead of the value in the variab
 
 ## References
 
-* [Tcl Tutorial](http://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
+* [Tcl Tutorial](https://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
 * [Tclers Wiki](https://wiki.tcl.tk/)
+

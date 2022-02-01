@@ -12,9 +12,20 @@ comments: true
 
 ### Xilinx Vivado
 
+#### Tcl 
+
+All Vivado actions are really [Tcl language](../programming_languages/tcl.html) commands, and can even be seen in the Tcl console window within the Vivado GUI; this is useful for creating Tcl scripts which can automate/replicate the associated Vivado actions.
+
+For further reference, see [UG835 Vivado Tcl Command Reference Guide](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2021_2/ug835-vivado-tcl-commands.pdf).
+
 #### Vivado Tips & Tricks
 
 * Quickly find the correct Vivado version of a project file by doing `$ cat project.xpr | grep 'Vivado v'`
+* Certain Vivado messages can have their severity level (e.g. Info, Warnings, Critical Warnings, Errors) [changed to another severity level](https://support.xilinx.com/s/article/65179?language=en_US); for instance, to promote the "no clocks found" timing constraint Warning to an Error (to catch timing constraints that aren't hitting):
+```tcl
+set_msg_config -id {Vivado 12-1008} -new_severity {ERROR}
+```
+
 
 ##### Synthesis
 
