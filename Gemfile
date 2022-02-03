@@ -9,6 +9,7 @@ gem "jekyll", "~> 4.0.1"
 # Jekyll plugins
 group :jekyll_plugins do
   gem "json"
+  gem "therubyracer"
   gem "jekyll-feed"
   gem "jekyll-jupyter-notebook"
   gem "jekyll-last-modified-at"
