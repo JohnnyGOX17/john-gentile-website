@@ -4,8 +4,11 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 
 ## Todo
 
-* [ ] implement Travis CI to automate building process and checking of status. Integrate hooks to auto-build when merging into `master`?
-* [ ] add `recipes/` to separate section of site
+* [ ] complete GitHub action to automate building process and pushing to AWS S3 bucket:
+  - [X] Use [GitHub repo secrets](https://dev.to/johnkevinlosito/deploy-static-website-to-s3-using-github-actions-4a0e) to push to S3 bucket [using AWS CLI action](https://github.com/aws-actions/configure-aws-credentials)
+  - [ ] Figure out [Jekyll GitHub action to build static site](https://jekyllrb.com/docs/continuous-integration/github-actions/)
+    + Currently running into dependency issues in Docker container it pulls down, maybe just make install script or custom docker container?
+  - [ ] Figure out Gulp post-processing
 
 ## To Build
 
@@ -26,3 +29,4 @@ _Note:_ AWS CLI is used to sync local built files to the Amazon S3 bucket used f
 ## References
 
 * [Jekyll Docs](https://jekyllrb.com/docs/)
+
