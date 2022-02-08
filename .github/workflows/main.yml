@@ -20,10 +20,10 @@ jobs:
 #         restore-keys: |
 #           ${{ runner.os }}-gems-
 
-#     - name: Install dependencies
-#       run: |
-#         sudo apt-get install ruby-full build-essential zlib1g-dev
-#         gem install jekyll bundler
+      - name: Install dependencies
+        run: |
+          sudo apt-get install ruby-full build-essential zlib1g-dev
+          gem install jekyll bundler
 
       - name: Bundle install
         run: |
