@@ -44,7 +44,6 @@ jobs:
           cache: 'npm'
       - run: |
           npm install
-          gulp todo
 
       - name: Jekyll Build
         run: |
