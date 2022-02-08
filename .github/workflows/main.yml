@@ -37,23 +37,11 @@ jobs:
           # runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
 
-      - name: npm setup
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - run: |
-          npm install
-
       - name: Jekyll Build
         run: |
           # Generate intermediate files from Jekyll (use additional publish configs)
           bundle exec jekyll build --config _config.yml,_config-publish.yml
-
-      - name: Gulp post-processing
-        run: |
-          gulp css
-
+          ls -a _site/
 
 #     - name: Configure AWS Credentials
 #       uses: aws-actions/configure-aws-credentials@v1

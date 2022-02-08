@@ -8,26 +8,14 @@ UNAME_S := $(shell uname -s)
 build:
 	# Clean stale data
 	rm -rf ./_site
-	rm -rf ./dist
 	# Generate intermediate files from Jekyll (use additional publish configs)
 	bundle exec jekyll build --config _config.yml,_config-publish.yml
-	# Run PostCSS to optimize and minimize CSS
-	gulp css
-	# Minify final image, JavaScript & HTML files
-	gulp minify-img
-	gulp minify-js
-	gulp minify-html
-	# Move over all other files
-	gulp move-files
 	# Write current git revision to file for tracking
-	git rev-parse HEAD > ./dist/revision
+	git rev-parse HEAD > ./_site/revision
 
 clean:
 	# Deleting generated files...
-	rm -f Gemfile.lock
 	rm -rf ./_site
-	rm -rf ./dist
-	rm -rf ./node_modules
 	rm -f TODO.md
 	rm -f .sass-cache
 	rm -f .jekyll-metadata
@@ -46,7 +34,6 @@ ifeq ($(UNAME_S),Darwin)
 	gem install --user-install bundler jekyll
 endif
 	bundle install --jobs 4
-	npm install
 	pip3 install awscli --upgrade --user
 
 serve:
@@ -74,10 +61,8 @@ ifeq ($(UNAME_S),Darwin)
 endif
 	# If Python ver >3.x use `python -m http.server`
 	# Change port from 8080 to other if necessary. Use Ctrl+C to stop...
-	cd ./dist && python -m SimpleHTTPServer 8080
+	cd ./_site && python -m SimpleHTTPServer 8080
 
 update:
 	bundle update --all
-	# updates locally used pkgs, use '# npm update -g' to update system wide pkgs
-	npm update
-	npm outdated
+

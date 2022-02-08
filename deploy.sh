@@ -11,7 +11,7 @@ currGitRev="$(git rev-parse HEAD)"
 pubGitRev="$(curl -s https://john-gentile.com/revision)"
 
 syncAWS() {
-  aws s3 sync ./dist s3://john-gentile.com --delete
+  aws s3 sync ./_site s3://john-gentile.com --delete
   echo "AWS Sync Successful!"
 }
 
@@ -33,7 +33,7 @@ else
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     make && syncAWS
   else
-    read -p "Do you want to deploy current dist/ build to AWS anyways? [y/n]: " -n 1 -r
+    read -p "Do you want to deploy current _site/ build to AWS anyways? [y/n]: " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
       syncAWS
