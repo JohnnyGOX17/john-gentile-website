@@ -49,7 +49,10 @@ jobs:
         run: |
           # Generate intermediate files from Jekyll (use additional publish configs)
           bundle exec jekyll build --config _config.yml,_config-publish.yml
-          ls -a
+
+      - name: Gulp post-processing
+        run: |
+          gulp css
 
 
 #     - name: Configure AWS Credentials

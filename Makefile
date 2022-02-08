@@ -9,9 +9,6 @@ build:
 	# Clean stale data
 	rm -rf ./_site
 	rm -rf ./dist
-	# First generate pending TODO.md list then display to stdout
-	gulp todo
-	cat ./TODO.md
 	# Generate intermediate files from Jekyll (use additional publish configs)
 	bundle exec jekyll build --config _config.yml,_config-publish.yml
 	# Run PostCSS to optimize and minimize CSS
