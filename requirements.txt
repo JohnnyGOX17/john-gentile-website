@@ -1,0 +1,10 @@
+awscli
+jupyter
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
+sympy
+tqdm

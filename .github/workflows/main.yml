@@ -10,29 +10,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
 
         # Cache to shorten build times and decrease load on servers
         # Don't have to install/fetch Gems on every build
-#     - uses: actions/cache@v2
-#       with:
-#         path: vendor/bundle
-#         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-#         restore-keys: |
-#           ${{ runner.os }}-gems-
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          sudo apt-get install ruby-full build-essential zlib1g-dev
-          sudo gem install jekyll bundler
+          python -m pip install --upgrade pip setuptools six wheel
+          python -m pip install -r requirements.txt
 
-      - name: Bundle install
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+      # Use ruby/setup-ruby to cache Gems instead of manual process
+      # https://docs.knapsackpro.com/2021/how-to-load-ruby-gems-from-cache-on-github-actions
+      # https://www.jessesquires.com/blog/2021/08/23/caching-bundler-on-github-actions/
+      - name: Ruby setup
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true
 
       - name: Jekyll Build
         run: |
           bundle exec jekyll build
+
+#     - name: Install dependencies
+#       run: |
+#         sudo apt-get install ruby-full build-essential zlib1g-dev
+#         sudo gem install jekyll bundler
+#     - name: Bundle install
+#       run: |
+#         bundle config path vendor/bundle
+#         bundle install --jobs 4 --retry 3
 
 #     - name: Configure AWS Credentials
 #       uses: aws-actions/configure-aws-credentials@v1
