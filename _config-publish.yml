@@ -1,3 +1,6 @@
+# These settings are only applied for "release" Jekyll builds, increasing
+# the speed of local testing with live file watching.
+#
 # KaTeX in Jekyll, inspired by https://gendignoux.com/blog/2020/05/23/katex.html
 # as opposed to default MathJax rendering, which is client side, KaTeX is
 # server-side HTML (or pre-compiled here before pushing up as final HTML)

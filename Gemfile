@@ -9,14 +9,11 @@ gem "jekyll", "~> 4.0.1"
 # Jekyll plugins
 group :jekyll_plugins do
   gem "json"
-  gem "therubyracer"
   gem "jekyll-feed"
   gem "jekyll-jupyter-notebook"
   gem "jekyll-last-modified-at"
   gem "jekyll-scholar"
   gem "jekyll-sitemap"
-  #gem "jekyll-seo-tag"
-  #gem "jekyll-toc"
   gem "kramdown"
   gem "kramdown-math-katex"
   gem "jekyll-youtube"
@@ -25,5 +22,6 @@ group :jekyll_plugins do
   gem "rouge"
 end
 
-# needed for Ruby 3.0+
-gem "webrick", "~> 1.7"
+# needed for Ruby 3.0+ & live reload jekyll serve
+gem 'webrick'
+

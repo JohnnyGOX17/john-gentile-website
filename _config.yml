@@ -10,14 +10,11 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 plugins:
-  - jekyll-feed
   - jekyll-jupyter-notebook
+  - jekyll-feed
   - jekyll-last-modified-at
-  #- jekyll-picture-tag
   - jekyll-scholar
   - jekyll-sitemap
-  #- jekyll-seo-tag
-  #- jekyll-toc
   - jekyll-youtube
   - liquid_pluralize
   - liquid_reading_time
@@ -32,7 +29,7 @@ exclude:
   - package.json
   - node_modules/
   - gulpfile.js
-  - John_Gentile_Resume.docx
+  - tags
 # config for https://github.com/inukshuk/jekyll-scholar
 scholar:
   bibliography_template: bib

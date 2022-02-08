@@ -3,6 +3,8 @@
 
 UNAME_S := $(shell uname -s)
 
+.SILENT: clean serve test
+
 build:
 	# Clean stale data
 	rm -rf ./_site
@@ -25,13 +27,13 @@ build:
 
 clean:
 	# Deleting generated files...
-	rm Gemfile.lock
+	rm -f Gemfile.lock
 	rm -rf ./_site
 	rm -rf ./dist
 	rm -rf ./node_modules
-	rm TODO.md
-	rm .sass-cache
-	rm .jekyll-metadata
+	rm -f TODO.md
+	rm -f .sass-cache
+	rm -f .jekyll-metadata
 
 deploy:
 	# Deploying distribution to Amazon S3...
@@ -61,7 +63,9 @@ endif
 ifeq ($(UNAME_S),Darwin)
 	sleep 7 && open "http://localhost:4000/" &
 endif
-	bundle exec jekyll serve --livereload
+  # Build static site and serve up locally, but automatically rebuild and
+	# reload if a tracked file is changed
+	bundle exec jekyll serve --livereload --incremental
 
 test:
 	# Running simple HTTP Webserver to manually verify built distribution

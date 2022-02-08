@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get install ruby-full build-essential zlib1g-dev
+          sudo gem install jekyll bundler
+          sudo bundle install
+          bundle exec jekyll build
         # Cache to shorten build times and decrease load on servers
         # Don't have to install/fetch Gems on every build
 #     - uses: actions/cache@v2
