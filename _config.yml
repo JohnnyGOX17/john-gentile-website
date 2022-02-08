@@ -29,6 +29,7 @@ exclude:
   - package.json
   - node_modules/
   - gulpfile.js
+  - requirements.txt
   - tags
 # config for https://github.com/inukshuk/jekyll-scholar
 scholar:
