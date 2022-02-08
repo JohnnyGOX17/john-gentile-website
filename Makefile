@@ -48,7 +48,7 @@ endif
 ifeq ($(UNAME_S),Darwin)
 	gem install --user-install bundler jekyll
 endif
-	bundle install
+	bundle install --jobs 4
 	npm install
 	pip3 install awscli --upgrade --user
 

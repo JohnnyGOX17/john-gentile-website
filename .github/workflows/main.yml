@@ -10,24 +10,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: |
-          sudo apt-get install ruby-full build-essential zlib1g-dev
-          sudo gem install jekyll bundler
-          sudo bundle install
-          bundle exec jekyll build
+
         # Cache to shorten build times and decrease load on servers
         # Don't have to install/fetch Gems on every build
 #     - uses: actions/cache@v2
 #       with:
 #         path: vendor/bundle
-#         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+#         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 #         restore-keys: |
 #           ${{ runner.os }}-gems-
 
-#     - uses: helaili/jekyll-action@v2
-#       with:
-#         token: ${{ secrets.GITHUB_TOKEN }}
+#     - name: Install dependencies
+#       run: |
+#         sudo apt-get install ruby-full build-essential zlib1g-dev
+#         gem install jekyll bundler
+
+      - name: Bundle install
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+
+      - name: Jekyll Build
+          bundle exec jekyll build
 
 #     - name: Configure AWS Credentials
 #       uses: aws-actions/configure-aws-credentials@v1
