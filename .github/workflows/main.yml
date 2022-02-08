@@ -1,4 +1,4 @@
-name: Build Site and Push to AWS
+name: Build
 
 on:
   push:
@@ -15,7 +15,8 @@ jobs:
           python-version: "3.9"
 
         # Cache to shorten build times and decrease load on servers
-        # Don't have to install/fetch Gems on every build
+        # Don't have to install/fetch Gems/pips on every build
+        #  https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
@@ -39,15 +40,8 @@ jobs:
       - name: Jekyll Build
         run: |
           bundle exec jekyll build
+          ls -a
 
-#     - name: Install dependencies
-#       run: |
-#         sudo apt-get install ruby-full build-essential zlib1g-dev
-#         sudo gem install jekyll bundler
-#     - name: Bundle install
-#       run: |
-#         bundle config path vendor/bundle
-#         bundle install --jobs 4 --retry 3
 
 #     - name: Configure AWS Credentials
 #       uses: aws-actions/configure-aws-credentials@v1
