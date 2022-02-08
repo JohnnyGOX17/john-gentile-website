@@ -34,7 +34,7 @@ ifeq ($(UNAME_S),Darwin)
 	gem install --user-install bundler jekyll
 endif
 	bundle install --jobs 4
-	pip3 install awscli --upgrade --user
+	pip3 install -r requirements.txt
 
 serve:
 	rm -rf ./_site

@@ -41,15 +41,16 @@ jobs:
         run: |
           # Generate intermediate files from Jekyll (use additional publish configs)
           bundle exec jekyll build --config _config.yml,_config-publish.yml
-          ls -a _site/
+          # Write current git revision to file for tracking
+          git rev-parse HEAD > ./_site/revision
 
-#     - name: Configure AWS Credentials
-#       uses: aws-actions/configure-aws-credentials@v1
-#       with:
-#         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#         aws-region: us-east-1
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
 
-#     - name: Deploy release web files to S3 bucket for static hosting
-#       run: aws s3 sync ./dist s3://john-gentile.com --delete
+      - name: Deploy release web files to S3 bucket for static hosting
+        run: aws s3 sync ./_site s3://john-gentile.com --delete
 
