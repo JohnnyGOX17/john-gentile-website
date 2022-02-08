@@ -38,7 +38,6 @@ jobs:
           bundler-cache: true
 
       - name: Jekyll Build
-	      # Generate intermediate files from Jekyll (use additional publish configs)
         run: |
 	        bundle exec jekyll build --config _config.yml,_config-publish.yml
           ls -a
