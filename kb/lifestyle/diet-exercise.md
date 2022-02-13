@@ -80,7 +80,7 @@ _Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
 <br />
 
 * `30 mL` of Olive Oil (no trans fats)
-* High Omega-3's from fish (non-predatory fish like swordfish)
+* High Omega-3's from non-predatory fish (e.g. avoiding fish like swordfish)
   + On non-fish days, supplement w/9G of salmon oil, 3x per day
 * Unlimited calorie diet as long as carbs `< 30g` to simulate "free-living condition"
 
@@ -104,7 +104,7 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 
 * Fast at least 16 hours a day- 16 hours is the minimum to be in a fasted state and get benefits-, and work your way up to a 20 hour fast for exponential benefits
   + A common time-frame is to fast from when you wake up until dinner time, that way your feeding window ends around when you expect to go to bed
-  + Prolonged fasting (24-48 hours) can have increased mental benefits but decreased physical benefits. These may be beneficial to do every other month or so for cellular rejuvenation purposes.
+  + [Prolonged fasting](#long-term-fasting) (24+ hours) can have increased mental benefits but decreased physical benefits. These may be beneficial to do every other month or so for cellular rejuvenation purposes.
   + Dry fasting, where not drinking or eating during your fast, is extreme (don't do more often than every 3 or 6 months) but is where your body burns extra fat to create molecular water from the stored cells
 * Work out in a fasted state rather than during your feeding window to burn a significant amount of fat
   + For instance, working out when you wake up in the morning when you're in the middle of your fast
@@ -121,6 +121,14 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 
 ### Long Term Fasting
 
+* Fasting 48-72 hours at a frequency of once per month can be useful for long term health benefits _and_ weight loss
+  + IF is mainly a caloric restriction mechanism
+* Before fasting it will be helpful to hydrate, sodium load, and do 4-5 days of keto/low-carb
+* During long term fasting you can consume: water (+ salt to help revive electrolytes), black coffee, unsweetened tea, and apple cider vinegar.
+  + Low intensity workouts during a long term fast are OK, but high intensity may negate some of the positive fasting effects
+* To break a long fast, eat non-inflamatory things like lean meat
+
+<br />
 {% youtube "https://www.youtube.com/watch?v=S5W1XBf8d-I&feature=youtu.be" %}
 <br />
 
