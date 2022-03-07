@@ -123,6 +123,7 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 
 * Fasting 48-72 hours at a frequency of once per month can be useful for long term health benefits _and_ weight loss
   + IF is mainly a caloric restriction mechanism
+  + Long term fasting (> 48 hours) increases cell autophagy and other longevity effects. It even helps [with stretch marks when losing weight](https://youtu.be/xvxo77kSsjM).
 * Before fasting it will be helpful to hydrate, sodium load, and do 4-5 days of keto/low-carb
 * During long term fasting you can consume: water (+ salt to help revive electrolytes), black coffee, unsweetened tea, and apple cider vinegar.
   + Low intensity workouts during a long term fast are OK, but high intensity may negate some of the positive fasting effects

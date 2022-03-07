@@ -92,6 +92,12 @@ This is known as the **Nyquist Sampling Criterion**.
 Similarly to continuous time, a signal is of **Continuous Value** if it can have any value, whether in a finite or infinite range; for instance, a certain voltage may realistically fall within the finite range of 0V to 5V but would be continuous value signal if it can take the value of _any_ real voltage within that range (e.g. 2.31256...V). Conversely, a **Discrete Value** signal can only be within a finite set of values within a finite range (e.g. 1V integer levels within a 10V range). The process in an ADC of converting a continuous value, discrete time signal (output from the sampler) into a discrete value, discrete time signal is called **quantization**. A signal that is discrete in both time and value is considered a **digital signal**.
 
 
+## Linear Convolution
+
+### Continuous-Time Convolution 
+
+$$ y(t) = s(t) \circledast h(t) $$
+
 
 ## Transforms
 
