@@ -287,6 +287,13 @@ Makes **5** servings:
 * [ ] 6 cloves garlic 
 * [ ] 4 tbs tomato paste
 * [ ] 4 cups beef stock (or water with bouillon)
+* [ ] 2 tbs cumin 
+* [ ] 2 tbs red pepper flakes
+* [ ] 2 tbs chili powder
+* [ ] 1 tbs ground chipotle chili
+* [ ] 1 tsp ground coriander
+* [ ] 1 packet Goya Sazon
+* [ ] 2 tbs hot sauce
 * [ ] Salt and pepper to taste
 </details>
 
@@ -302,7 +309,7 @@ Makes **5** servings:
 1. Add beans to a large bowl, cover with at least an inch of water, and soak overnight.
 2. Dice onion and thinly slice garlic.
 3. Add olive oil to a large stock pot and heat on medium-high heat. Once hot, add turkey to pot. Break up the ground turkey into golf-ball sized chunks.
-4. Once turkey is browned, add vegetables, salt & pepper, and tomato paste to pot and cook until vegetables have softened.
+4. Once turkey is browned, add vegetables, seasonings, hot sauce, and tomato paste to pot and cook until vegetables have softened.
 5. Add beef stock and beans to pot, and bring to a boil, then lower heat to maintain a simmer.
 6. Simmer for one hour, or until beans are cooked through.
 </details>
