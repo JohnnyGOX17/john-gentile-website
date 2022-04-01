@@ -17,6 +17,35 @@ comments: true
 
 ## Breakfast
 
+### Hard Boiled Eggs & Turkey Bacon
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 1 serving:
+* [ ] 4 large eggs
+* [ ] 4 slices of thick Turkey Bacon
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 400      | 0.0g  | 48.0g   | 24.0g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Add eggs to a pot and cover with 1-2" of cold water (use more water if boiling more eggs at once).
+2. Bring water to rolling boil, then turn off the heat.
+3. Let the pot sit for 10-12 minutes, then remove eggs and cool (run cold water or add to ice bath).
+4. Pan fry (or even microwave) turkey bacon slices.
+</details>
+
+
+
 ### Simple Egg, Cheese & Sausage Breakfast Casserole
 
 <br />
@@ -163,7 +192,171 @@ Makes **16** servings:
 
 
 
+## Beef 
+
+### Beef & Broccoli 
+
+{% youtube "https://www.youtube.com/watch?v=_0Mq_rKzC70" %}
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **4** servings:
+* [ ] 2 lbs flank steak
+* [ ] 1/2 cup beef stock 
+* [ ] 4 cups chopped broccoli 
+* [ ] 1 tsp baking soda
+* [ ] 2 tsp cornstarch 
+* [ ] 3 cloves garlic 
+* [ ] 2 tbs vegetable oil
+* [ ] 1/4 cup Oyster sauce 
+* [ ] 2 oz rice wine 
+* [ ] 2 tbs sesame oil 
+* [ ] 2 tbs soy sauce 
+* [ ] 4 cups cooked white rice
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 747.9    | 58.4g | 56.1g   | 28.4g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Microwave broccoli for 1-2 min 
+2. In a small bowl, whisk together soy sauce, sesame oil, 1 tsp of cornstarch, and baking soda.
+3. Slice beef into strips, against the grain. Add to bowl with marinade from previous step, and let sit for at least 20 min.
+4. In another bowl, stir together the beef stock, rice wine, oyster sauce and the remaining teaspoon of cornstarch, until dissolved to create the sauce.
+5. Heat a wok or large skillet on high heat and add vegetable oil. Once hot, add marinated beef and garlic to pan. Stir fry for 1 min.
+6. Add broccoli and stir fry for another minute.
+7. Add the sauce and cook for one more minute, then serve.
+</details>
+
+
+
+
 ## Soups, Stews & Chilis
+
+### Chicken & Rice Soup 
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **5** servings:
+* [ ] 2 tbs butter 
+* [ ] 1 yellow onion
+* [ ] 4 carrots 
+* [ ] 1 celery bunch 
+* [ ] 6 cloves garlic 
+* [ ] 3.5 lbs chicken breast 
+* [ ] 4 cups chicken stock (or water with bouillon)
+* [ ] 2 cups dry long grain brown rice
+* [ ] 2 Bay leaves
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 710.8    | 68.1g | 80.1g   | 10.9g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Dice onion, carrots and celery in large chunks. Slice garlic thinly.
+2. Add butter to a large stock pot and heat on medium-high heat. Once melted, add chicken.
+3. Once chicken is slightly browned, add vegetables to pot, add salt & pepper, and mix.
+4. After sweating vegetables, add stock to pot. Add the rice, bay leaves and turn the heat up to high.
+5. Once the pot reaches a boil, turn the heat to low and simmer for 40 min, or until rice is fully cooked.
+</details>
+
+
+### Turkey Chili with Beans
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **5** servings:
+* [ ] 2 tbs extra virgin olive oil
+* [ ] 1.5 cups dry Red Kidney Beans
+* [ ] 2 lbs 99% lean ground turkey 
+* [ ] 1 yellow onion
+* [ ] 6 cloves garlic 
+* [ ] 4 tbs tomato paste
+* [ ] 4 cups beef stock (or water with bouillon)
+* [ ] 2 tbs cumin 
+* [ ] 2 tbs red pepper flakes
+* [ ] 2 tbs chili powder
+* [ ] 1 tbs ground chipotle chili
+* [ ] 1 tsp ground coriander
+* [ ] 1 packet Goya Sazon
+* [ ] 2 tbs hot sauce
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 426.8    | 41.2g | 57.6g   |  7.9g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Add beans to a large bowl, cover with at least an inch of water, and soak overnight.
+2. Dice onion and thinly slice garlic.
+3. Add olive oil to a large stock pot and heat on medium-high heat. Once hot, add turkey to pot. Break up the ground turkey into golf-ball sized chunks.
+4. Once turkey is browned, add vegetables, seasonings, hot sauce, and tomato paste to pot and cook until vegetables have softened.
+5. Add beef stock and beans to pot, and bring to a boil, then lower heat to maintain a simmer.
+6. Simmer for one hour, or until beans are cooked through.
+</details>
+
+
+
+### Egg Drop Soup
+
+{% youtube "https://www.youtube.com/watch?v=oT-34Q9eb5k" %}
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **4** servings:
+* [ ] 12 large eggs
+* [ ] 4 cloves garlic, peeled and smashed
+* [ ] 1 knob ginger, thick sliced
+* [ ] 1 cup green onions, finely chopped
+* [ ] 2 stalks green onion, chopped in a couple inch pieces
+* [ ] 4 cups chicken stock (or water with bouillon)
+* [ ] 2 tbs fish sauce 
+* [ ] 4 tbs soy sauce
+* [ ] 2 tbs cornstarch
+* [ ] 1 tsp MSG
+* [ ] Salt and white pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 260.1    |  7.6g | 22.7g   | 15.8g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Crack eggs into a bowl, and beat well.
+2. Add stock, garlic, ginger and the large cut green onion to a stock pot. Heat on medium-high.
+3. While stock is heating, add cornstarch to a small bowl, with some water. Mix well to create a slurry.
+4. Once stock is heated, add slurry mixture and mix well.
+5. Season stock to taste with salt and white pepper. Add MSG.
+6. Remove garlic, ginger and green onion from stock.
+7. Once stock is almost boiling, slowly whisk in beaten eggs. Stir constantly for finer egg whisps.
+8. Turn off heat and add finely chopped green onions.
+</details>
+
+
 
 ### Korean Cabbage Soup
 
@@ -285,6 +478,32 @@ Greek Seasoning:
 
 
 ## Fish & Shellfish
+
+### Salmon, Rice & Broccoli
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **1** serving:
+* [ ] 1 cup broccoli florets 
+* [ ] 1 cup cooked brown rice
+* [ ] 6.5 oz wild caught Sockeye Salmon fillet
+* [ ] Seasoning of choice (e.g. Old Bay, salt & pepper, curry powder, etc.)
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 489.8    | 50.5g | 48.2g   | 10.2g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Season salmon and cook in a 350 °F oven or air fryer for 12-15 minutes, or until salmon is cooked through.
+2. Plate with brown rice and broccoli.
+</details>
+
 
 ### Italian Tuna Salad
 
