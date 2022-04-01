@@ -81,7 +81,7 @@ In general, risk is directly related to return; the higher the risk, the higher 
 
 > “By periodically investing in an index fund…the know-nothing investor can actually outperform most investment professionals.”- Warren Buffett
 
-Besides minimizing fees- as discussed above- holding onto investments for a long time (>1 year) is generally advisable as, statistically speaking, there is [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean) with investment vehicles; this is the phenomenon where over time, the rate of return will come closer to the expected average, rather than an extreme high or low.
+Besides minimizing fees- as discussed above- holding onto investments for a long time (>1 year) is generally advisable as, statistically speaking, there is [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean) with investment vehicles; this is the phenomenon where over time, the rate of return will come closer to the expected average, rather than an extreme high or low. Compounding interest is also a huge factor in long term success; for instance of Warren Buffett's $84.5 billion net worth, $84.2 billion was achieved after his 50th birthday, and $81.5 billion after his 60th. Consitency over time plays much more of a factor than short term decisions.
 
 ### Remove Emotions From Investing
 
