@@ -10,8 +10,9 @@ comments: true
 
 1. It's OK to fail.
 2. Be first, be better, or be cheaper.
-3. Instead of discounting ideas early, simply answer "what would it take?". Never say "that's always how its been done"
-4. Innovators are not smarter, no more courageous than the rest of us - they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
+3. [Aim to be a monopoly, not a competitor](https://www.youtube.com/watch?v=3Fx5Q8xGU8k)
+4. Instead of discounting ideas early, simply answer "what would it take?". Never say "that's always how its been done"
+5. Innovators are not smarter, no more courageous than the rest of us - they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
 
 
 ## Business Types
