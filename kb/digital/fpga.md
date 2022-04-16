@@ -1,5 +1,5 @@
 ---
-title: FPGA
+title: FPGA Tools & Design
 layout: default
 kb: true
 top-category: Digital Electronics
@@ -18,9 +18,18 @@ All Vivado actions are really [Tcl language](../programming_languages/tcl.html) 
 
 For further reference, see [UG835 Vivado Tcl Command Reference Guide](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2021_2/ug835-vivado-tcl-commands.pdf).
 
+#### Version Control
+
+Vivado generates a lot of intermediate files, [only some of which are required for version control](https://www.xilinx.com/video/hardware/vivado-design-suite-revision-control.html). Some of these files have machine/instance specific metadata, which can cause problems when directly running on another machine. In general, the easiest and most robust method is to [write TCL files describing the overall project settings and dependencies](https://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html/). In recent Vivado versions, this is simply done in the Vivado TCL console:
+* To save project/changes to TCL, `> write_project_tcl <create_prj_name>.tcl`
+* To create project from TCL, `> source <create_prj_name>.tcl`
+
+For more info, see [Xilinx AR 56421](https://support.xilinx.com/s/article/56421?language=en_US).
+
+
 #### Vivado Tips & Tricks
 
-* Quickly find the correct Vivado version of a project file by doing `$ cat project.xpr | grep 'Vivado v'`
+* Quickly find the expected Vivado version of a project file by doing `$ cat project.xpr | grep 'Vivado v'`
 * Certain Vivado messages can have their severity level (e.g. Info, Warnings, Critical Warnings, Errors) [changed to another severity level](https://support.xilinx.com/s/article/65179?language=en_US); for instance, to promote the "no clocks found" timing constraint Warning to an Error (to catch timing constraints that aren't hitting):
 ```tcl
 set_msg_config -id {Vivado 12-1008} -new_severity {ERROR}

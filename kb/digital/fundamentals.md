@@ -20,30 +20,32 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 
 ## Timing
 
-Setup & Hold Times
+* Setup & Hold Times
+* Routing vs logic delay
+  - High routing delay indicative of high design congestion (e.g. an FPGA design > 80% utilization)
+* Minimizing Levels of Logic (LoL) and fanout
+* Place-and-Route (PaR) tools optimize the hardest ("critical") paths first. So even highly registered logic in other places in a design can fail (e.g. due to high routing delay) when other paths with high LoL are prioritized first.
+  - Different synthesis & PaR strategies to help
 
 
 ## Design Tips
 
-+ **Pipeline early & often:** in modern FPGAs, flip-flops are likely the cheapest resource in the programmable fabric, so airing on the side of more inferred registers, the better as you are more likely to meet static timing the first time. Worst case, further optimization can remove unnecessary FFs.
++ **Pipeline early & often:** in modern digital targets (like FPGAs), flip-flops are likely the cheapest resource in the programmable fabric. Thus while designing, err on the side of more inferred registers; this increases your chances on meeting static timing the first time. Worst case, further optimization can remove unnecessary FFs. Remember that  premature optimization is a folly in engineering design.
+  - When working with large RAM primitives that span multiple blocks (e.x. multiple block RAMs (BRAM) chained together to create large FIFOs/tables), registering between RAM blocks can help meet timing if the read/write latency can tolerate it.
 
 
-## Tools
+## Digital Design Process & Tools
 
-### Xilinx Vivado
+### FPGA Prototyping
 
-#### Version Control
+See [this page on FPGA tools & design](./fpga.html).
 
-Vivado generates a lot of intermediate files, [only some of which are required for version control](https://www.xilinx.com/video/hardware/vivado-design-suite-revision-control.html). Some of these files have machine/instance specific metadata, which can cause problems when directly running on another machine. In general, the easiest and most robust method is to [write TCL files describing the overall project settings and dependencies](https://www.fpgadeveloper.com/2014/08/version-control-for-vivado-projects.html/). In recent Vivado versions, this is simply done in the Vivado TCL console:
-* To save project/changes to TCL, `> write_project_tcl <create_prj_name>.tcl`
-* To create project from TCL, `> source <create_prj_name>.tcl`
-
-For more info, see [Xilinx AR 56421](https://support.xilinx.com/s/article/56421?language=en_US).
 
 ### Simulation
 
-- [EDA Playground](https://www.edaplayground.com/home) online simulator (similar to online compiler/assemblers) that can simulate designs & testbenches in Verilog, VHDL, SystemVerilog and others.
+See [this page on verification & testing of HDL/RTL designs](./rtl_verif.html).
 
 ### Documentation/Modeling
 
 - [WaveDrom](https://wavedrom.com/editor.html) online digital waveform diagraming tool with an easy to use syntax.
+
