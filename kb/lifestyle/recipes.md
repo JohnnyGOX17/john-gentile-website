@@ -15,6 +15,43 @@ comments: true
 * Marie's Super Blue Cheese Dressing (in the refrigerated/veggie section)
 
 
+
+## Snacks
+
+### Salt and Vinegar Nuts
+
+![salt and vinegar nuts pic](./salt_and_vin_nuts.jpeg)
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 4 servings:
+* [ ] 1 cup raw almonds (or other nuts like cashews)
+* [ ] 1/2 cup distilled vinegar
+* [ ] Salt
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 170      | 6.0g  |  6.0g   | 15.0g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Combine nuts and vinegar in a bowl, and soak for 3-4 hours.
+2. Remove nuts from bowl and dry with paper towel (save soaking vinegar for later). Place on a baking sheet.
+3. Roast nuts in a 350 °F oven for 20-25 minutes (or until golden brown), stirring half way through.
+4. Let nuts cool for 5 minutes then quickly place nuts in soaking vinegar, and drain once more.
+5. Pat nuts dry with paper towel. Sprinkle nuts with salt to taste.
+</details>
+
+
+
+
 ## Breakfast
 
 ### Hard Boiled Eggs & Turkey Bacon
@@ -534,5 +571,47 @@ Makes 5 servings:
   <summary><b>Instructions</b></summary>
 
 1. Combine all ingredients in bowl.
+</details>
+
+
+
+## Vegetables
+
+### Greek Salad
+
+{% youtube "https://www.youtube.com/watch?v=5ysExIzN9fQ" %}
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **4** servings:
+* [ ] 4 cups lettuce, chopped
+* [ ] 2 large English cucumbers
+* [ ] 4 Roma tomatoes, cut into eighths
+* [ ] 2 cups halved cherry tomatoes
+* [ ] 1 red onion, thinly sliced
+* [ ] 1 cup banana peppers
+* [ ] 1 cup sliced olives
+* [ ] 1/4 cup capers
+* [ ] 6 oz crumbled feta cheese
+* [ ] 1/4 cup extra virgin olive oil
+* [ ] 3 tbs red wine vinegar
+* [ ] 2 garlic clove, minced
+* [ ] 1 teaspoon Dijon mustard
+* [ ] 2 tbs oregano
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 260.1    |  7.6g | 22.7g   | 15.8g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Combine olive oil, vinegar, garlic, mustard, oregano, salt and pepper in a small bowl to form the dressing.
+2. Combine all other ingredients in a large bowl and top with dressing.
 </details>
 
