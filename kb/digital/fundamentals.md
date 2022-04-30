@@ -18,14 +18,31 @@ In general, digital design can take a lot of cues from SW: code reviews, tooling
 
 I/O resets are asynchronous (for safety in case no clocks), but everything internal should be synchronous, especially since how FPGAs define FFs now
 
+
+
+
+
 ## Timing
 
 Setup & Hold Times
 
 
-## Design Tips
+
+
+
+
+## Designing for Performance
 
 + **Pipeline early & often:** in modern FPGAs, flip-flops are likely the cheapest resource in the programmable fabric, so airing on the side of more inferred registers, the better as you are more likely to meet static timing the first time. Worst case, further optimization can remove unnecessary FFs.
+
+
+
+## Designing for Power
+
+![CMOS Power Dissipation](./cmos_power.png)
+
+CMOS digital circuits dissipate power in three main ways: dynamic, short circuit, and leakage power. Of note to the digital designer, dynamic power consumption.
+
 
 
 ## Tools
@@ -47,3 +64,9 @@ For more info, see [Xilinx AR 56421](https://support.xilinx.com/s/article/56421?
 ### Documentation/Modeling
 
 - [WaveDrom](https://wavedrom.com/editor.html) online digital waveform diagraming tool with an easy to use syntax.
+
+
+## References
+
+* [Low-Power Design (LPD) - Eduardo Boemo](https://www.eurasip.org/Seminars/EURASIPLowPowerSeminar_talk1.pdf)
+
