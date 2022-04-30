@@ -14,6 +14,76 @@ comments: true
 
 * Marie's Super Blue Cheese Dressing (in the refrigerated/veggie section)
 
+### Sides
+
+#### Guacamole
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 4 servings:
+* [ ] 3 avocados
+* [ ] 1/4 cup red onion, minced
+* [ ] Juice of 2 limes
+* [ ] 2 Jalapeno (or serrano) peppers, minced
+* [ ] 1 large Roma tomato, diced
+* [ ] 1/2 cup cilantro, chopped
+* [ ] 1 tsp ground cumin
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 199.5    | 14.7g |  0.6g   | 19.8g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Combine all ingredients in a bowl.
+</details>
+
+
+
+
+## Snacks
+
+### Salt and Vinegar Nuts
+
+![salt and vinegar nuts pic](./salt_and_vin_nuts.jpeg)
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 4 servings:
+* [ ] 1 cup raw almonds (or other nuts like cashews)
+* [ ] 1/2 cup distilled vinegar
+* [ ] Salt
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 170      | 6.0g  |  6.0g   | 15.0g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Combine nuts and vinegar in a bowl, and soak for 3-4 hours.
+2. Remove nuts from bowl and dry with paper towel (save soaking vinegar for later). Place on a baking sheet.
+3. Roast nuts in a 350 °F oven for 20-25 minutes (or until golden brown), stirring half way through.
+4. Let nuts cool for 5 minutes then quickly place nuts in soaking vinegar, and drain once more.
+5. Pat nuts dry with paper towel. Sprinkle nuts with salt to taste.
+</details>
+
+
+
 
 ## Breakfast
 
@@ -76,7 +146,66 @@ Makes 5 servings:
 
 
 
-## Sandwiches
+### Simple Breakfast Tacos
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 1 serving:
+* [ ] 2 small corn tortillas (33g each)
+* [ ] 4 large eggs
+* [ ] 4 tbs salsa
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+|  440.0   | 34.0g | 28.0g   | 22.0g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Assemble all ingredients in the tortilla, then wrap.
+</details>
+
+
+
+
+## Wraps & Sandwiches
+
+### Chicken Caesar Wrap 
+
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 1 serving/wrap:
+* [ ] 1 Medium Low-Carb Tortilla (like [these](https://www.missionfoods.com/products/carb-balance-soft-taco-flour-tortillas/))
+* [ ] 2 slices provolone cheese
+* [ ] 3 tbs Caesar dressing
+* [ ] 1/4 red onion, thinly sliced
+* [ ] 1 cup lettuce, chopped or in slices
+* [ ] 1 grilled chicken breast
+* [ ] 1/2 Roma tomato, sliced
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+|  664.5   | 25.4g | 72.8g   | 31.4g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Assemble all ingredients in the tortilla, then wrap.
+</details>
+
+
 
 ### Italian Hoagie
 
@@ -261,7 +390,7 @@ Makes **5** servings:
 
 | Calories | Carbs | Protein | Fat   |
 |----------|-------|---------|-------|
-| 710.8    | 68.1g | 80.1g   | 10.9g |
+| 671.6    | 68.1g | 72.0g   | 14.0g |
 
 <details markdown="1">
   <summary><b>Instructions</b></summary>
@@ -313,6 +442,51 @@ Makes **5** servings:
 5. Add beef stock and beans to pot, and bring to a boil, then lower heat to maintain a simmer.
 6. Simmer for one hour, or until beans are cooked through.
 </details>
+
+
+
+### Pork Chili Verde
+
+{% youtube "https://www.youtube.com/watch?v=yV-JLcOrXc4" %}
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **5** servings:
+* [ ] 2 tbs vegetable oil
+* [ ] 2.5 lbs pork shoulder, cut into 2-inch cubes
+* [ ] 1 yellow onion, diced
+* [ ] 2 tsp oregano
+* [ ] 2 tsp ground cumin
+* [ ] 1 tsp ground coriander
+* [ ] 1 tsp cayenne pepper
+* [ ] 10-12 tomatillos
+* [ ] 3 jalapeno peppers
+* [ ] 1 poblano pepper (and/or others like habaneros)
+* [ ] 6 cloves garlic
+* [ ] 1/2 cup cilantro leaves
+* [ ] 2 1/2 cups chicken stock (or more as needed)
+* [ ] 1 bay leaf
+* [ ] 3 Yukon gold potatoes, diced into large chunks
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 695.3    | 23.9g | 42.7g   | 47.3g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. In a large pot, brown pork in oil, about 4-5 minutes each side.
+2. Once browned, add onions and dry spices, including salt to sweat the onions.
+3. Add peppers, tomatillos, garlic, cilantro, and chicken stock to a blender. Blend until smooth.
+4. Add blended mixture to pot and cook for 1 hour. If stock reduces, can add more chicken stock to keep meat covered.
+5. Add potatoes and cook for one more hour, or until potatoes are tender.
+</details>
+
 
 
 
@@ -534,5 +708,47 @@ Makes 5 servings:
   <summary><b>Instructions</b></summary>
 
 1. Combine all ingredients in bowl.
+</details>
+
+
+
+## Vegetables
+
+### Greek Salad
+
+{% youtube "https://www.youtube.com/watch?v=5ysExIzN9fQ" %}
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes **4** servings:
+* [ ] 4 cups lettuce, chopped
+* [ ] 2 large English cucumbers
+* [ ] 4 Roma tomatoes, cut into eighths
+* [ ] 2 cups halved cherry tomatoes
+* [ ] 1 red onion, thinly sliced
+* [ ] 1 cup banana peppers
+* [ ] 1 cup sliced olives
+* [ ] 1/4 cup capers
+* [ ] 6 oz crumbled feta cheese
+* [ ] 1/4 cup extra virgin olive oil
+* [ ] 3 tbs red wine vinegar
+* [ ] 2 garlic clove, minced
+* [ ] 1 teaspoon Dijon mustard
+* [ ] 2 tbs oregano
+* [ ] Salt and pepper to taste
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 391.8    | 17.8g | 10.7g   | 29.6g |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Combine olive oil, vinegar, garlic, mustard, oregano, salt and pepper in a small bowl to form the dressing.
+2. Combine all other ingredients in a large bowl and top with dressing.
 </details>
 
