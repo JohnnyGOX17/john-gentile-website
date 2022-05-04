@@ -30,6 +30,7 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 * Minimizing Levels of Logic (LoL) and fanout
 * Place-and-Route (PaR) tools optimize the hardest ("critical") paths first. So even highly registered logic in other places in a design can fail (e.g. due to high routing delay) when other paths with high LoL are prioritized first.
   - Different synthesis & PaR strategies to help
+* For very large devices (e.g. Stacked Silicon Interconnect (SSI)), register across Super Logic Regions (SLR) boundaries with [custom directives/constraints](https://www.xilinx.com/publications/events/developer-forum/2018-frankfurt/timing-closure-tips-and-tricks.pdf)
 
 
 
