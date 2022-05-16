@@ -32,6 +32,7 @@ comments: true
 * ["Be ashamed to die until you have scored some victory for humanity."- Neil deGrasse Tyson](https://www.youtube.com/watch?v=JtahB1-MNvk&feature=youtu.be)
 * Kindness is rooted in empathy for others' experiences
 * Focus on positivity, life is a self-fulfilling prophecy so be confident and happy that things will get good and goals will be achieved.
+* At every job you should either learn or earn. Either is fine, but both is best. If it's neither, quit.
 
 ### Waking Up Early
 
