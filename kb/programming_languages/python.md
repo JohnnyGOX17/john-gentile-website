@@ -1,5 +1,5 @@
 ---
-title: Python Language
+title: Python
 layout: default
 kb: true
 top-category: Programming Languages

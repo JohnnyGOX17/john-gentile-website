@@ -1,8 +1,8 @@
 ---
-title: KiCad
+title: KiCad Schematic & Layout
 layout: default
 kb: true
-top-category: Tools and Techniques
+top-category: Analog Electronics
 comments: true
 ---
 

@@ -37,6 +37,20 @@ A valuable cheatsheet for this mode can be found [here](http://www.catonmat.net/
 * `rm -r dir/` removes the directory (and all files and subdirectories within) `dir`
 * `rm -r dir/*` removes all files and subdirectories in `dir`
 
+
 ## Command Line Text Processing
 
 * [learnbyexample\Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
+
+
+## Virtualization
+
+## Virtual Machines (VM)
+
+* [Qemu](http://wiki.qemu-project.org/Main_Page)
+* [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox)
+
+### Containers
+
+* [Docker](https://www.docker.com/)
+

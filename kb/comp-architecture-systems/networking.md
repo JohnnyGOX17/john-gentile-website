@@ -1,6 +1,6 @@
 ---
+title: Networking
 layout: default
-title: Linux Networking
 kb: true
 top-category: Computer Architecture and Systems
 comments: true

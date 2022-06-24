@@ -1,5 +1,5 @@
 ---
-title: Code Construction
+title: Code Architecture
 layout: default
 kb: true
 top-category: Software Engineering

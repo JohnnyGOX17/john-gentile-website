@@ -1,5 +1,5 @@
 ---
-title: Go Language
+title: Go
 layout: default
 kb: true
 top-category: Programming Languages

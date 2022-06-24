@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Reverse Engineering
+layout: default
 kb: true
 top-category: Cyber and Security
 comments: true

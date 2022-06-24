@@ -30,6 +30,7 @@ For more info, see [Xilinx AR 56421](https://support.xilinx.com/s/article/56421?
 #### Vivado Tips & Tricks
 
 * Quickly find the expected Vivado version of a project file by doing `$ cat project.xpr | grep 'Vivado v'`
+* When packaging custom IP for usage in Block Design flow, you can add a custom logo picture to your block by [adding it in the 'Utility XIT/TTCL' file group (UG1118 Vivado Creating and Packaging Custom IP)](https://docs.xilinx.com/v/u/en-US/ug1118-vivado-creating-packaging-custom-ip).
 * Certain Vivado messages can have their severity level (e.g. Info, Warnings, Critical Warnings, Errors) [changed to another severity level](https://support.xilinx.com/s/article/65179?language=en_US); for instance, to promote the "no clocks found" timing constraint Warning to an Error (to catch timing constraints that aren't hitting):
 ```tcl
 set_msg_config -id {Vivado 12-1008} -new_severity {ERROR}

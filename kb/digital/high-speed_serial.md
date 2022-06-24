@@ -1,5 +1,5 @@
 ---
-title: High-Speed Serial Signaling
+title: High-Speed Serial
 layout: default
 kb: true
 top-category: Digital Electronics

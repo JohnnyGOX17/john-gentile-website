@@ -1,5 +1,5 @@
 ---
-title: Regular Expressions
+title: Regular Expressions (RegEx)
 layout: default
 kb: true
 top-category: Programming Languages

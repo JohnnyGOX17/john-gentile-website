@@ -9,7 +9,7 @@ comments: true
 
 ## Major Tenets of Savings and Investment
 
-### tl;dr
+**tl;dr**
 
 * [Set a Goal and Measure It Continuously](#set-a-goal-and-measure-it-continuously)
 * [Save More, Spend Less](#save-more-spend-less)
