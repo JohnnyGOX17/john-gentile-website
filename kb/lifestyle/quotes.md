@@ -44,7 +44,7 @@ comments: true
 
 > It does not do to dwell on dreams and forget to live.
 
-- J.K. Rowling, _Harry Potter and the Sorcerer's Stone_
+-J.K. Rowling, _Harry Potter and the Sorcerer's Stone_
 
 ### Perseverance
 
@@ -166,7 +166,7 @@ comments: true
 
 > The best way to predict the future is to invent it.
 
-- Alan Kay
+-Alan Kay
 
 > A satisfied customer is the best business strategy of all.
 
