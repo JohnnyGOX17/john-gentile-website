@@ -155,6 +155,13 @@ https://en.wikipedia.org/wiki/Kahn_process_networks
 https://en.wikipedia.org/wiki/Systolic_array
 
 
+## Tools
+
+### RFNoC
+
+* [Getting Started with RFNoC - Ettus Research](https://kb.ettus.com/Getting_Started_with_RFNoC_in_UHD_4.0)
+
+
 ## References
 
 * [VHDL Math Tricks of the Trade- SynthWorks](https://www.synthworks.com/papers/vhdl_math_tricks_mapld_2003.pdf)
