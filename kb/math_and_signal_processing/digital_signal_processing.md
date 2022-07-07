@@ -69,10 +69,49 @@ Similarly to continuous time, a signal is of **Continuous Value** if it can have
 
 ## Linear Convolution
 
+<center><img src="Comparison_convolution_correlation.png"></center>
+
+> Visual comparison of convolution, cross-correlation and autocorrelation. From [Wikipedia](https://en.wikipedia.org/wiki/Convolution#Properties)
+
 ### Continuous-Time Convolution 
 
-$$ y(t) = s(t) \circledast h(t) $$
+A fundamental operation in signal processing is [**convolution**](https://en.wikipedia.org/wiki/Convolution). When a function $$f$$ is convolved with another function $$g$$, a third output function $$f*g$$ expresses how the shape of one is modified by the other. Convolution is defined as the integral of the product of both functions, after one function is reversed and shifted; for example, in continuous time this is written as:
 
+$$ (f * g)(t) = \int_{-\infty}^{\infty} f(\tau)g(t - \tau) \, d\tau $$
+
+Convolution is also [_commutative_](https://en.wikipedia.org/wiki/Commutative_property), thus the above equation can also be expressed as:
+
+$$ (f * g)(t) = \int_{-\infty}^{\infty} f(t - \tau)g(\tau) \, d\tau $$
+
+A common convolution is that of a signal, $$f(t)$$, with a filter $$g(t)$$, to form a filtered output signal $$y(t)$$. 
+
+$$ y(t) = f(t) * g(t) $$
+
+<center><img src="convolution.gif"></center>
+
+Geometrically, the convolution process can be seen as:
+1. Forming a time-reversed image $$g(-\tau)$$ of the filter function $$g(\tau)$$, where $$\tau$$ is a dummy variable.
+2. Sliding $$g(-\tau)$$ across the signal function $$f(\tau)$$ with a specific delay $$t$$.
+3. At each delay position $$t$$, the integral of the product of $$g(t - \tau)$$ and the part of the signal $$f(\tau)$$ covered by the filter. This integral is also called the _inner-product_ (or dot product).
+
+Another property of convolution is that it is a _linear_ operation; the _superposition principle_ means that the convolution of the sum of input signals is equal to the sum of the individual convolutions. For instance, the equivalence can be shown with two input signals $$s_{1}(t)$$ and $$s_{2}(t)$$ to be convolved with a filter $$h(t)$$, where $$\alpha$$ and $$\beta$$ are arbitrary constants:
+
+$$\left[ \alpha s_{1}(t) + \beta s_{2}(t) \right] * h(t) = \alpha s_{1}(t) * h(t) + \beta s_{2}(t) * h(t) $$
+
+
+### Continuous-Time Correlation
+
+[**Correlation**](https://en.wikipedia.org/wiki/Cross-correlation) (or sometimes noted as **cross-correlation**) is similar to convolution; it has the same geometrical property of a sliding inner-product, however the sliding function is not time reversed but instead, complex conjugated ($$^{*}$$).
+
+$$ (f * g)(t) = \int_{-\infty}^{\infty} f^{*}(t)g(t + \tau) \, dt $$
+
+Correlation is _not commutative_, however the equivalent of the above is:
+
+$$ (f * g)(t) = \int_{-\infty}^{\infty} \overline{f(t - \tau)}g(t) \, dt $$
+
+**NOTE:** the second equation shows another way to denote the complex conjugate operation, thus $$f^{*}(t)$$ and $$\overline{f(t)}$$ are equivalent.
+
+Cross-correlation is commonly used for searching a long signal for a shorter, known feature.
 
 ## Transforms
 
