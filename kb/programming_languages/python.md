@@ -8,6 +8,8 @@ comments: true
 
 ## Language
 
+Python is one of the most popular interpreted programming languages. An _interpreted language_ is not directly compiled to a target machine code (e.x. x86 assembly), but rather a different program- the interpreter- reads and executes the code. This leads to use of Python- and other interpreted languages- as _scripting languages_, since they can be used to quickly cobble together commands in scripted fashion. However, unlike pure scripting languages (e.x. [Shell scripting](./shell.md)), Python has had some serious improvements to speed and scalability, which makes it perfectly viable for "production code"; one of the canonical examples is where [YouTube was able to outpace Google Video in implementing features due to simply having only Python codebase](https://books.google.com/books?id=eulODwAAQBAJ&lpg=PA136&dq=google%20video%20vs%20youtube%20python%20story&pg=PA136#v=onepage&q=google%20video%20vs%20youtube%20python%20story&f=false).
+
 Python is mainly split between the 2.X (older, now somewhat 'de facto' standard due to no more planned changes) and 3.X (the newer, forced Unicode generation of Python) and it's important to note where compatibility breaks between the two.
 
 Pros of the language:
@@ -96,5 +98,11 @@ It's recommended to install SciPy, and all of the associated packages, with `pip
 
 ## References
 
-* [Learning Python, 5th Edition by Mark Lutz](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730)
-* [Programming Python, 4th Edition by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do)
+### To Read
+
+* [ ] [Transforming Code into Beautiful, Idiomatic Python - Pycon US 2013 YouTube](https://www.youtube.com/watch?v=OSGv2VnC0go)
+* [Python for Data Analysis, 3rd Edition](https://www.amazon.com/Python-Data-Analysis-Wrangling-Jupyter-dp-109810403X/dp/109810403X?&linkCode=sl1&tag=quantpytho-20&linkId=2d1788b1f52212848d18095cf9972e07&language=en_US&ref_=as_li_ss_tl)
+  [ ] [Pre-release site from author](https://wesmckinney.com/book/)
+* [ ] [Learning Python, 5th Edition by Mark Lutz](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730)
+* [ ] [Programming Python, 4th Edition by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do)
+
