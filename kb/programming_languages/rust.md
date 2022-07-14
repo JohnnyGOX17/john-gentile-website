@@ -39,7 +39,10 @@ comments: true
 
 **NOTE:** offline documentation is locally installed with `rustup` and can be opened in your browser by simply running `rustup doc`.
 
-* [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
-* [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/)
-* [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
+### To Read
+
+* [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
+* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/)
+* [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
+* [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings)
 

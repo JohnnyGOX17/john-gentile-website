@@ -95,6 +95,14 @@ It's important to keep a clear head in this investment strategy; it's pretty muc
 Often in life- and even business- there are times when you need to make a purchase that is larger than the amount of cash on hand. If you have a good amount saved up in investments, your first thought is likely to liquidate some (or all!) to cover, or contribute to, the aforementioned large purchase. This is usually because there is a negative connotation to debt, and its common for people to try and avoid it. _However_, you have to analyze each situation independently as it can be the case where the debt actually costs less in the long term than liquidating investments! A good example is a mortgage for a house; with low interest rates, its fairly common to find a loan offering 2-4% rates. Compared to a market-average portfolio (e.g. S&P 500 ETFs) which returns roughly 8-10% each year, it's actually more expensive (from a future value perspective) to liquidate positions in the portfolio, rather than take on debt to cover the large purchase cost! Not only that, but [mortgages in particular garner tax advantages](https://www.investopedia.com/articles/mortgages-real-estate/11/calculate-the-mortgage-interest-math.asp) for the individual. If you further break down debt payment term options, you can start to weigh the time-value of money, and see why shorter term loans (e.g. 10 year vs 30 year) have lower interest rates accordingly. The _bad debt_ to avoid (or to pay off before any investing if you have them!) is high-interest loans (e.g. credit card debt which can often be greater than 15%), which can compound into being extremely expensive in the long run. Of course, avoid any debt that you can't reasonably pay off either.
 
 
+
+## Tools
+
+* [Investment Calculator - calculator.net](https://www.calculator.net/investment-calculator.html)
+* [Salary Paycheck Calculator - ADP](https://www.adp.com/resources/tools/calculators/salary-paycheck-calculator.aspx)
+* [Early Retirement Calculator - Networthify](https://networthify.com/calculator/earlyretirement)
+
+
 ## References
 
 * TD Ameritrade Education Resources
