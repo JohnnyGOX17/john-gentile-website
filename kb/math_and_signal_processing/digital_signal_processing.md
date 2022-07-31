@@ -16,13 +16,17 @@ A **signal** is a pretty general term; it can describe a set of data pertaining 
 
 $$ E_{x} = \int_{-\infty}^{\infty} \left | x(t) \right | ^{2} dt $$
 
-Fundamentally a **signal** is any quantity that varies with one or more independent variables- like voltage changing over time. A signal may or may not be able to be mathematically or functionally defined; for example, the natural waveform from recorded music. In the rest of the discussion time is used for discussion of common signals but can be replaced with any other independent variable. **Frequency** is inversely related to the period of a signal ($$f=1/T$$). Common periodic signals that vary with time ($$t$$) can be described with three time-varying attributes: amplitude ($$A$$), frequency ($$f$$) and phase ($$\theta$$). For example a basic sinusoid: \$\$x(t)=A\cos(\Omega t + \theta ),  -\infty < t < \infty $$
+Fundamentally a **signal** is any quantity that varies with one or more independent variables- like voltage changing over time. A signal may or may not be able to be mathematically or functionally defined; for example, the natural waveform from recorded music. In the rest of the discussion time is used for discussion of common signals but can be replaced with any other independent variable. **Frequency** is inversely related to the period of a signal ($$f=1/T$$). Common periodic signals that vary with time ($$t$$) can be described with three time-varying attributes: amplitude ($$A$$), frequency ($$f$$) and phase ($$\theta$$). For example a basic sinusoid: 
 
-Where $$\Omega$$ is the frequency in (radians/sec) and related to Hz frequency, $$f$$, (cycles/sec) by the simple conversion $$\Omega=2\pi f$$. Note a periodic signal satisfies the criteria $$x(t)=x(t \pm nT)$$ where $$n$$ is any integer number. It's also important to describe sinusoids in complex exponential form, also known as a **phasor**: \$\$x(t)=Ae^{j(\Omega t + \theta)} $$ 
+$$x(t)=A\cos(\Omega t + \theta ),  -\infty < t < \infty $$
 
-Which given the Euler identity \$\$ e^{\pm j \phi}=\cos \phi \pm j\sin \phi$$
+Where $$\Omega$$ is the frequency in (radians/sec) and related to Hz frequency, $$f$$, (cycles/sec) by the simple conversion $$\Omega=2\pi f$$. Note a periodic signal satisfies the criteria $$x(t)=x(t \pm nT)$$ where $$n$$ is any integer number. It's also important to describe sinusoids in complex exponential form, also known as a **phasor**: 
 
-Gives \$\$ x(t)=A\cos (\Omega t + \theta) = \frac{A}{2}e^{j(\Omega t + \theta)} + \frac{A}{2}e^{-j(\Omega t + \theta)} $$
+$$x(t)=Ae^{j(\Omega t + \theta)} $$ 
+
+Which given the Euler identity, $$ e^{\pm j \phi}=\cos \phi \pm j\sin \phi$$, gives: 
+
+$$ x(t)=A\cos (\Omega t + \theta) = \frac{A}{2}e^{j(\Omega t + \theta)} + \frac{A}{2}e^{-j(\Omega t + \theta)} $$
 
 Since the goal of DSP is to operate on signals within the digital domain, to deal with real/natural, analog signals we must digitize them; the common component that accomplishes this is unsurprisingly called an **Analog to Digital Converter** (ADC or A/D Converter). Most ADCs operate on electrical signals which come from a transducer or other electrical source. The inverse of an ADC is a **Digital to Analog Converter** (DAC or D/A Converter) which takes digital signals and produces an analog signal as an output. The conversion chain from analog to digital also provides an opportunity to explain further signal classifications, starting with continuous time vs discrete time signals.
 
@@ -31,36 +35,47 @@ Since the goal of DSP is to operate on signals within the digital domain, to dea
 
 **Continuous Time** signals are synonymous with real analog signals. They take on defined values for the continuous interval $$-\infty < t < \infty$$ such as the signal $$x(t)=\cos(\pi t)$$. **Discrete Time** signals have value only in certain instances of time, usually as a finite set of equidistant time intervals for easier calculations. For example the previous continuous time signal can be represented as a discrete time signal $$x(n)=\cos(\pi n)$$ where $$n = 0, \pm 1, \pm 2,...$$
 
-Similarly to the periodic definition of continuous time signals, a discrete time signal is periodic when $$x(n)=x(n + N)$$ where the smallest value of $$N$$ that holds true is the fundamental period. A sinusoidal signal with frequency $$f_{0}$$ is periodic when: \$\$ \cos \left [ 2\pi f_{0}(N+n) + \theta \right ] = \cos ( 2\pi f_{0} n + \theta ) $$
+Similarly to the periodic definition of continuous time signals, a discrete time signal is periodic when $$x(n)=x(n + N)$$ where the smallest value of $$N$$ that holds true is the fundamental period. A sinusoidal signal with frequency $$f_{0}$$ is periodic when:
 
-Since there's the trigonetric identity that any sinusoid shifted by an integer multiple of $$2\pi$$ is equal to itself (e.g. $$\cos(x)=cos(x \pm 2\pi N)$$, we can reduce the discrete time sinusoid relation to having some integer $$k$$ such that: \$\$2\pi f_{0} N = 2\pi k \therefore f_{0}=\frac{k}{N}$$
+$$ \cos \left [ 2\pi f_{0}(N+n) + \theta \right ] = \cos ( 2\pi f_{0} n + \theta ) $$
+
+Since there's the trigonetric identity that any sinusoid shifted by an integer multiple of $$2\pi$$ is equal to itself (e.g. $$\cos(x)=cos(x \pm 2\pi N)$$, we can reduce the discrete time sinusoid relation to having some integer $$k$$ such that: 
+
+$$2\pi f_{0} N = 2\pi k \therefore f_{0}=\frac{k}{N}$$
 
 The same identity (sinusoids seperated by an integer multiple of $$2\pi$$ are identical) expressed $$\cos(\omega_{0}n + \theta)=\cos(\omega_{0}n + 2\pi n + \theta)$$ means that when frequency
 $$ \left | \omega  \right | > \pi $$ 
 (or $$ \left | f \right | > \frac{1}{2} $$) the sequence is indistinguishable- called an **alias**- from a sinusoid with frequency $$ \left | \omega \right | < \pi $$. Thus discrete time sinusoids have the finite fundamental range of a single cycle $$1f$$ or $$2\pi$$ radians; usually this is given as a range $$ -\pi \leq \omega \leq \pi $$, $$ 0 \leq \omega \leq 2\pi $$, $$ -\frac{1}{2} \leq f \leq \frac{1}{2}$$, or $$ 0 \leq f \leq 1$$.
 
 In an ADC, the process of converting a signal from continuous time to discrete time is **sampling** and is commonly done at some regular sampling interval $$T$$ which is inverse of the sampling frequency $$ f_{s}=1/T $$. Continuous and discrete time are related in ideal, uniform sampling via $$ t = nT = \frac{n}{f_{s}} $$
-Thus, sampling a sinusoidal signal gives: \$\$ x(t) = A\cos(2\pi f_{0}t + \theta) \overset{sampled}{\rightarrow} x(nT) \equiv x(n) = A\cos(\frac{2\pi f_{0}n}{f_{s}} + \theta) $$
+Thus, sampling a sinusoidal signal gives: 
 
-Given the expression for this discrete time sampled sinusoid, the frequency $$f = \frac{f_{0}}{f_{s}}$$; substituting this frequency into the aforementioned fundamental range $$-\frac{1}{2} \leq f \leq \frac{1}{2}$$ yields: \$\$ -\frac{f_{s}}{2} \leq f_{0} \leq \frac{f_{s}}{2}$$.
+$$ x(t) = A\cos(2\pi f_{0}t + \theta) \overset{sampled}{\rightarrow} x(nT) \equiv x(n) = A\cos(\frac{2\pi f_{0}n}{f_{s}} + \theta) $$
+
+Given the expression for this discrete time sampled sinusoid, the frequency $$f = \frac{f_{0}}{f_{s}}$$; substituting this frequency into the aforementioned fundamental range $$-\frac{1}{2} \leq f \leq \frac{1}{2}$$ yields: 
+
+$$ -\frac{f_{s}}{2} \leq f_{0} \leq \frac{f_{s}}{2} $$
 
 This is an important assertion that means the frequency of a continuous time analog signal must be $$\leq$$ half the sampling frequency to be uniquely distinguished (and not aliased). Furthermore, the highest frequency discernible $$f_{max}=\frac{f_{s}}{2}$$.
 
 The problem with alias signals can be demonstrated with the sinusoids:
 
-\$\$ x_{1}(t) = \cos(10\pi t) $$
+$$ x_{1}(t) = \cos(10\pi t) $$
 
-\$\$ x_{2}(t) = \cos(50\pi t) $$
+$$ x_{2}(t) = \cos(50\pi t) $$
 
 Sampled at $$f_{s}=20 Hz$$, the discrete time output signals are:
 
-\$\$ x_{1}(n) = \cos(\frac{10}{20}\pi n) = \cos(\frac{\pi}{2}n)$$
+$$ x_{1}(n) = \cos(\frac{10}{20}\pi n) = \cos(\frac{\pi}{2}n)$$
 
-\$\$ x_{2}(n) = \cos(\frac{50}{20}\pi n) = \cos(\frac{5\pi}{2}n)$$
+$$ x_{2}(n) = \cos(\frac{50}{20}\pi n) = \cos(\frac{5\pi}{2}n)$$
 
-Given $$ \cos(5\pi n /2) = \cos(2\pi n + \pi n/2) $$, and again, integer multiples of $$2\pi n$$ can be reduced out, $$x_{1}(n) \equiv x_{2}(n)$$ and thus $$x_{2}(n)$$ is aliased as an indistinguishable signal from $$x_{1}(n)$$. Therefore, to prevent the problem of aliasing, a proper sampling frequency must be chosen to satisfy the highest frequency content found in a signal: \$\$ f_{s} > 2f_{max} $$
+Given $$ \cos(5\pi n /2) = \cos(2\pi n + \pi n/2) $$, and again, integer multiples of $$2\pi n$$ can be reduced out, $$x_{1}(n) \equiv x_{2}(n)$$ and thus $$x_{2}(n)$$ is aliased as an indistinguishable signal from $$x_{1}(n)$$. Therefore, to prevent the problem of aliasing, a proper sampling frequency must be chosen to satisfy the highest frequency content found in a signal: 
+
+$$ f_{s} > 2f_{max} $$
 
 This is known as the **Nyquist Sampling Criterion**.
+
 
 ### Continuous Value vs Discrete Value
 
