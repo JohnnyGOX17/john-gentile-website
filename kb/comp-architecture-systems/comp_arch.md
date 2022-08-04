@@ -11,4 +11,13 @@ In the beginning, software was run as hard coded instructions targeting a comput
 * Applications: programs that run on top of an operating system and interact with the user to run a variety of tasks
 
 
+## Memory
+
+### Memory Mapped I/O (MMIO)
+
+Normal memory- used for code, data, heap and stack- is usually treated as executable and can be cached, reordered, and speculatively loaded. Unaligned access can be supported.
+
+[Device Memory](https://developer.arm.com/documentation/ka004708/latest), which is used for MMIO, are never cached, not executable, no instruction fetch, no speculative data access, and all accesses must be aligned.
+
+
 ## References

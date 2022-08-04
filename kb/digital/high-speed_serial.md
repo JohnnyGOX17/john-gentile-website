@@ -33,6 +33,12 @@ There are several physical signaling standards at the PMD layer with high-speed 
 * **25G NRZ:** 26.5625 GBaud (25Gb/s post-encoding) [NRZ Modulation](https://en.wikipedia.org/wiki/Non-return-to-zero)
 
 
+### Low Latency Transceiver
+
+[In some devices](https://www.xilinx.com/developer/articles/low-latency-transceiver-designs-for-fintech.html), RX and TX buffers can be bypassed, and a DPLL can be used to lock the receive clock to the transmit clock to remove clock domain crossing (CDC) latency.
+
+
 ### Cabling
 
 [Everything You Always Wanted to Know About Optical Networking- But Were Afraid to Ask](https://www.nanog.org/sites/default/files/2_Steenbergen_Tutorial_New_And_v2.pdf)
+
