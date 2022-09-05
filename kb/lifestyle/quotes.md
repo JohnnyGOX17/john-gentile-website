@@ -144,6 +144,10 @@ comments: true
 
 -Lord Kelvin
 
+> Never attribute to malice that which is adequately explained by stupidity.
+
+-Hanlon's Razor
+
 ### Starting Up
 
 > If you are not embarrassed by the first version of your product, you've launched too late.
@@ -198,4 +202,5 @@ comments: true
 
 > Make everything as simple as possible, but not simpler.
 
--Albert Einstein
+-Albert Einstein [Occam's Razor]
+

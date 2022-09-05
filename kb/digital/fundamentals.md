@@ -25,10 +25,13 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 ## Timing
 
 * Setup & Hold Times
-* Routing vs logic delay
-  - High routing delay indicative of high design congestion (e.g. an FPGA design > 80% utilization)
-* Minimizing Levels of Logic (LoL) and fanout
-* Place-and-Route (PaR) tools optimize the hardest ("critical") paths first. So even highly registered logic in other places in a design can fail (e.g. due to high routing delay) when other paths with high LoL are prioritized first.
+* Minimize routing and logic delay
+  - High routing delay is indicative of high design congestion (e.g. an FPGA design > 80% utilization) or high signal fanout
+    + Fanout is when one registered signal drives some number of "loads" (e.g. receiving registers). The most common high fanout signal is resets which drive many circuits. Pipelining, or adding registers, to these signals can help reduce high fanout; and specifically for resets, only resetting logic that needs to be reset (e.x. some components with buses that have valid/ready handshaking, need only reset those handshake/control signals).
+  - High logic delay is indicative of many Levels of Logic (LoL)
+    + Levels of Logic (LoL) is how many gates a signal path must propagate through between register (e.g. flip-flop) stages. The more levels of logic, the longer the logic delay, and the harder it is to meet timing. Similar to above, adding pipelining/registers- or reducing the amount/complexity of combinatorial logic- reduces LoL.
+    + Note that the true LoL measure comes after Synthesis, as the tool maps combinatorial logic into device specific resources (e.g. LUT, RAM, MUX, etc.). Reading synthesis reports (such as Vivado's `report_design_analysis`) is thus critical to measure LoL, and to see which paths have the highest levels of logic (focus on these paths first if timing not met).
+* Place-and-Route (PaR) tools optimize the hardest ("critical") paths first. So even highly registered logic in other places in a design can fail (e.g. due to high routing delay) when other paths with high LoL are prioritized first (the synth tool assumes you know what you're doing, and that high LoL is on purpose).
   - Different synthesis & PaR strategies to help
 * For very large devices (e.g. Stacked Silicon Interconnect (SSI)), register across Super Logic Regions (SLR) boundaries with [custom directives/constraints](https://www.xilinx.com/publications/events/developer-forum/2018-frankfurt/timing-closure-tips-and-tricks.pdf)
 

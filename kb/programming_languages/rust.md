@@ -21,6 +21,10 @@ comments: true
   + A [TOML](https://toml.io/) config file `Cargo.toml` that describes the metadata and dependencies of the Rust project.
   + A `src/` directory in which Rust source should live.
 
+#### rustdoc
+
+Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
+
 ### Compilation
 
 - If using a Cargo project, `$ cargo build` can be used
