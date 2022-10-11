@@ -9,30 +9,38 @@ comments: true
 ## General Advice
 
 * Control your control-ables, and don't worry about things out of your control.
-* [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win.
-* Live the life now that your older self would fondly look back on.
-* When motivation gets tired, discipline gets in the drivers seat.
+* You can achieve anything with discipline (habits, reinforcing systems) and time.
+  + Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results. Habits are the compound interest of self-improvement; they don't seem like much on a given day, but over long periods of time, their effects can be massive. Your habits therefore set the trajectory of your life.
+  + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
+  + Things that get measured get improved, and things that get scheduled get done.
+  + Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.
+    - Checklists, scheduled reminders, etc. are parts of a successful system.
+  + When motivation gets tired, discipline gets in the drivers seat.
+  + "Who are you?" versus "who do you want to be?". Act like you've been there.
+    - "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.
+    - Live the life now that your older self would fondly look back on.
+    - Your identity can hold you back ("I'm bad at math") or build you up ("I'm the type of person who doesn't give up, and reads everyday").
 * The best way to complete a marathon is to show up and take the first step. Activity defeats doubt, discipline over motivation.
+  + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
+  + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
 * Happiness is a mindset, not an achievement or place.
+  + Don't put-off happiness till a future goal or milestone is reached. Live in the now. [Enjoy the journey, not just the end state](https://www.cs.utexas.edu/users/dahlin/bookshelf/hamming.html).
+  + Sometimes having a dream is more important than achieving one; it can give you something to look forward to, a reason to get out of bed and work to be better.
 * Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
 * Your tribe is your vibe. Growing a tribe is never bad but don't neglect your inner circle.
 * Work on what you love and the money will come. Actually, if you really love it, the money won't matter as much anyways.
-* Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
 * Nothing's guaranteed in life and no one deserves anything, no matter how unfair things seem.
 * Create your own luck; take lots of thoughtful shots over time, and keep working to improve.
 * You can't do everything yourself; 10x'ers can be multipliers when they inspire and mentor others.
-* What others see as impossible is possible with the right folks who believe in the mission.
+  + What others see as impossible is possible with the right folks who believe in the mission.
 * Only make time for things that make you happier, healthier or wealthier.
-* Money can be used to buy back time, as time is often more valuable than money.
-* Things that get measured get improved, and things that get scheduled get done.
+  + At every job you should either learn or earn. Either is fine, but both is best. If it's neither, quit.
+  + Money can be used to buy back time, as time is often more valuable than money.
 * Praise in public, correct in private
-* You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
-* Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results.
-  + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
 * ["Be ashamed to die until you have scored some victory for humanity."- Neil deGrasse Tyson](https://www.youtube.com/watch?v=JtahB1-MNvk&feature=youtu.be)
+* [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win. Change of mindset from "I have to" -> "I get to".
 * Kindness is rooted in empathy for others' experiences
 * Focus on positivity, life is a self-fulfilling prophecy so be confident and happy that things will get good and goals will be achieved.
-* At every job you should either learn or earn. Either is fine, but both is best. If it's neither, quit.
 
 ### Waking Up Early
 
