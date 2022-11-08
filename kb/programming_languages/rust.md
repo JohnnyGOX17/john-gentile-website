@@ -49,4 +49,6 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/)
 * [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings)
+* [ ] [Zero to Production In Rust](https://www.zero2prod.com/)
+  + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
 

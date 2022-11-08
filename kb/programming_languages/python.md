@@ -37,8 +37,27 @@ for i in my_list:
 
 Everything is an object in Python. 
 
+#### Identifiers and Assignments
 
+An _assignment statement_ looks like:
+```python
+temperature = 98.6
+```
+Where the _identifier_ `temperature` is associated with the floating-point _object_, with value of `98.6`. The semantics of Python identifiers is similar to a reference variable in Java or pointer in C/C++; an identifier is associated with the _memory address_ of the object it refers to. Similarly to null references/pointers, a Python identifier can be assigned the special object `None`.
 
+Python is a _dynamically typed_ language; there is no type declaration associating an identifier/variable to a particular data type. An identifier can be associated with any object and can be later reassigned to another object of the same- or different- type. Objects have definite types, so in the above assignment statement, `temperature` is associated with an instance of the `float` class with the value `98.6`.
+
+An _alias_ can be established when a second identifier is assigned to an existing object/identifier. In this case, either name can be used to access the underlying object, and if it supports behaviors that affect its state, changes enacted through one alias will be apparent when using the other alias. However, if one of the names is reassigned to a new value using an assignment statement, this does _not affect_ the aliased object, but rather breaks the alias. For example:
+
+```python
+>>> temperature = 98.6
+>>> new_temp = temperature
+>>> temperature += 5
+>>> temperature
+103.6
+>>> new_temp
+98.6
+```
 
 ### Conventions
 
