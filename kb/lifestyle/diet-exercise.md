@@ -8,11 +8,12 @@ comments: true
 
 ## General Tips
 
-* Stress is the source of so many bad physiological factors, including weight gain. Try to reduce stress and be happy. Focus on your mental health before focusing on your physical health.
-* Get 7-8 hours of sleep per night
 * Caloric restriction is the fundamental piece of weight loss
   + For instance, though not necessarily healthy, a [professor lost 27 pounds on a purely Twinkie diet](https://www.cnn.com/2010/HEALTH/11/08/twinkie.diet.professor/) to prove this point
+  + [The average American diet](https://www.youtube.com/watch?v=Phq3xkZOchE) doesn't leave much room for calorie deficit, and to no one's surprise, [it's harder to burn calories than to eat them](https://www.youtube.com/watch?v=cQuh6ppyoew).
+* Stress is the source of so many bad physiological factors, including weight gain. Try to reduce stress and be happy. Focus on your mental health before focusing on your physical health.
 * Having a plan, and planning ahead, makes you more likely to be successful. Meal prepping, counting calories and logging progress are all keys to success.
+* Get 7-8 hours of sleep per night
 * Exercise is part of a healthy lifestyle. It's not only great for weight loss, general health or as a fun hobby, it can also help in unexpected ways like [treating depression](https://discover.dc.nihr.ac.uk/content/signal-000711/aerobic-exercise-is-an-effective-treatment-for-depression)
   + [General advice for adults](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20057916) is to try and fit in 150 minutes of exercise per week (e.x. 3x days of 50 minutes of exercise). If aiming for weight loss, or muscle/performance increases, this should be increased to 300 minutes per week, or even more.
 * Drink lots of water (between 1/2 - 1 gallon, or roughly 2 - 4 liters) for health & weight loss benefits
