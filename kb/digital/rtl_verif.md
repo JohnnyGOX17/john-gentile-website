@@ -20,6 +20,15 @@ For instance, in complex components like those used for [DSP](./dsp_design.html)
 
 [VUnit](https://vunit.github.io/index.html) is a FOSS unit testing framework for VHDL & SystemVerilog. It is mainly a Python test runner for HDL testbenches with many supporting libraries for logging & checking/assertions.
 
+### Questa / ModelSim
+
+Proprietary simulator with most all language & simulation construct support.
+
+#### Questa Tips & Tricks
+
+- Common simulator, setup and waveform commands can be bundled in a `*.do` file to be scripted by Questa
+- Adding `log -r *` will log _all_ design signals, even those not currently in the waveform view, so that they can be added later without restarting the simulation. Note that this can drastically increase the waveform log file (`*.wlf`) size though.
+
 ### Other
 
 - **[EDA Playground](https://www.edaplayground.com/home):** online simulator (similar to online compiler/assemblers) that can simulate designs & testbenches in Verilog, VHDL, SystemVerilog and others.
