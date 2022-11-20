@@ -1,5 +1,5 @@
 ---
-title: Information Theory & Communications
+title: Information Theory
 layout: default
 kb: true
 top-category: Math & Signal Processing
@@ -9,6 +9,9 @@ wip: true
 
 ## Overview
 
+## Error Detection & Correction
+
+## Compression
 
 ## References
 
