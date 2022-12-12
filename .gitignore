@@ -77,3 +77,5 @@ typings/
 # Jupyter (Lab) Notebooks
 .ipynb_checkpoints/
 
+# Gem bundle configs
+.bundle

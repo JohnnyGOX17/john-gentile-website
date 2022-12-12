@@ -59,6 +59,62 @@ An _alias_ can be established when a second identifier is assigned to an existin
 98.6
 ```
 
+### Built-In Classes
+
+
+| **Class** | **Description** | **Immutable?** |
+| ----- | ----------- | ---------- |
+| `bool` | Boolean value, `True` and `False`. Numbers evaluate to `False` if zero (`True` if non-zero), and container types (strings, lists, etc.) evaluate to `False` if empty, `True` otherwise. | ✓ |
+| `int` | Integer numeric type with arbitrary internal size (e.g. not 32-bit limited, Python chooses internal representation based on magnitude). Literals for binary, octal, decimal and hexadecimal representations are `0b1011`, `0o56`, `-23`, `0x5f` respectively. Converting a floating-point value to `int` truncates similar to other languages (e.g. `int(3.14)` gives `3`). Conversion to `int` from an invalid type (e.g. string) returns a `ValueError` | ✓ |
+| `float` | Floating-point type, similar to `double` precision type in Java/C++. Literals can be expressed as `2.0`, `3.`, or `5.123e22` (for value of $$ 5.123 \times 10^{22} $$). Python can convert floating-point strings to `float` with constructors like `float('3.14')` | ✓ |
+| `list` | Stores a sequence of objects, similar to an "array" in other languages using `[]` delimiters. A list stores a sequence of _references_ to its elements. Lists are mutable and can dynamically expand and contract their capacities. A list containing three strings can be shown as `['red', 'green', 'blue']` | |
+| `tuple` | An immutable sequence class using `()` delimiters. Note a one-element tuple should be expressed as `(12,)` to not be confused with general parenthesis usage. | ✓ |
+| `str` | Python string class to efficiently represent an immutable sequence of Unicode characters. Sting literals can use single or double quotes (e.g. `'hello'` or `"hello"`) | ✓ |
+| `set` | A collection of elements without duplicates and without order, similar to the mathematical notion of a set, delimited with curly braces `{}`. Compared to a list, the major advantage is the internal representation of a _hash table_ which efficiently can check if a specific element is contained in the `set`. A `set` does maintain elements in any order, and only immutable types can be added to a set. | |
+| `frozenset` | Immutable form of the `set` type, thus its legal to have a `set` of `frozensets` | ✓ |
+| `dict` | A _dictionary_ class or _mapping_, from a set of distinct _keys_ to associated _values_. Python implements a `dict` similar to a `set` but with storage of associated values. Key:Value pairs are expressed with comma-separated pairs like `{'ga' : 'Irish', 'de' : 'German'}` to map `'ga'` to `'Irish'` and `'de'` to `'German'`. | |
+
+
+### Exception Handling
+
+Exceptions are unexpected events that happen during program execution. Exceptions (or errors) are objects _raised_ (or _thrown_) by code that encounters an unexpected circumstance. A raised error may be _caught_ by a surrounding context that "handles" the exception. If uncaught, an exception causes the interpreter to stop program execution.
+
+| **Class** | **Description** |
+| ------- | ------------- |
+| `Exception` | A base class for most error types |
+| `AttributeError` | Raised by syntax obj.foo, if obj has no member named foo |
+| `EOFError` | Raised if “end of file” reached for console or file input |
+| `IOError` | Raised upon failure of I/O operation (e.g., opening file) |
+| `IndexError` | Raised if index to sequence is out of bounds |
+| `KeyError` | Raised if nonexistent key requested for set or dictionary |
+| `KeyboardInterrupt` | Raised if user types ctrl-C while program is executing |
+| `NameError` | Raised if nonexistent identifier used |
+| `StopIteration` | Raised by next(iterator) if no element; see Section 1.8 |
+| `TypeError` | Raised when wrong type of parameter is sent to a function |
+| `ValueError` | Raised when parameter has invalid value (e.g., sqrt(−5)) |
+| `ZeroDivisionError` | Raised when any division operator used with 0 as divisor |
+
+An exception is thrown with a `raise` statement. For instance, the `sqrt` (square root) function in Python's math library performs the following error-checking before executing the square root math:
+
+```python
+def sqrt(x):
+    if not instance(x, (int, float)):
+        raise TypeError('x must be numeric')
+    elif x < 0:
+        raise ValueError('x cannot be negative')
+    # start doing sqrt() math now...
+```
+
+To catch an exception, there is the `try-except` control structure. For instance to handle a potential- however not highly likely path that would otherwise be handled with a more direct control structure- divide-by-zero error:
+
+```python
+try:
+    ratio = x / y
+except ZeroDivisionError:
+    # handle issue
+```
+
+
 ### Conventions
 
 #### Common Import Naming
