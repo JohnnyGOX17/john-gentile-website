@@ -299,6 +299,13 @@ Using the `bufdo` command applies a command across all open buffers. For example
 :bufdo %s/pattern/replace
 ```
 
+#### Fix Long Line Lengths
+
+In normal mode, you can format a long commented line to fit within your set textwidth with:
+```
+gqip
+```
+
 
 ## References
 
