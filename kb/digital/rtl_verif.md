@@ -28,6 +28,36 @@ Proprietary simulator with most all language & simulation construct support.
 
 - Common simulator, setup and waveform commands can be bundled in a `*.do` file to be scripted by Questa
 - Adding `log -r *` will log _all_ design signals, even those not currently in the waveform view, so that they can be added later without restarting the simulation. Note that this can drastically increase the waveform log file (`*.wlf`) size though.
+- Questa can be run in batch mode (headlessly without GUI) to facilitate CLI tests and/or automated regression. Questa will then output how many warnings and errors occurred for easy parsing by report generators. An example `Makefile` which runs a top-level testbench design:
+```make
+#
+# Makefile for Questa
+#
+# DUT file/entity name (assumed to be directory name by default):
+CUR_DIR=$(shell pwd)
+TARGET=$(shell basename -z $(CUR_DIR))
+SIM_TARGET=tb_$(TARGET)
+# other HDL files to compile before the DUT (in listed order)
+INCLUDE=../my_pkg.vhd
+# Path to Questa binaries (if not in system path)
+VLIB=vlib
+VMAP=vmap
+VCOM=vcom
+VLOG=vlog
+VSIM=vsim
+# Questa compile/sim options
+VCOM_OPTS=-2008
+VLOG_OPTS=
+# Preserve visibility of objects/signals, launch headless, and "do" these commands:
+VSIM_OPTS=-voptargs=+acc -c -do "run 10us; quit"
+
+vsim:
+	$(VLIB) work
+	$(VMAP) work work
+	$(VCOM) $(VCOM_OPTS) $(INCLUDE) $(TARGET).vhd $(SIM_TARGET).vhd -work work
+	# Launch Questa simulation GUI
+	$(VSIM) $(VSIM_OPTS) $(SIM_TARGET)
+```
 
 ### Other
 
