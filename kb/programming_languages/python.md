@@ -202,6 +202,15 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 
 It's recommended to install SciPy, and all of the associated packages, with `pip` since some distros still point to Python 2 repos. Or you could install [Anaconda](https://www.anaconda.com/products/individual) which can be installed on Mac, Windows or Linux and easily installs Python and all required libraries.
 
+#### Running Jupyter Notebook/Lab Remotely
+
+Sometimes it's advantageous to have Jupyter run on a remote machine that you can SSH into from a local machine. This can be accomplished- with only forwarding over SSH port- by:
+1. SSH'ing into the remote box and launching Jupyter lab headlessly on a specific port, like `$ jupyter lab --no-browser --port=8889`
+2. In another terminal window on the local machine, forward a local port to the above Jupyter port with `$ ssh -NfL localhost:8888:localhost:8889 <remote IP address or hostname>`
+3. Open a browser window to `http://localhost:8888/lab?token=<token URL string from Jupyter launch in SSH session>`
+  + Besides running notebooks remotely, this method allows opening & viewing of other remote files.
+
+
 ### Data Analysis
 
 * **[scikit-learn](https://scikit-learn.org/):** general-purpose machine learning toolkit for Python.
