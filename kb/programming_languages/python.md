@@ -205,8 +205,9 @@ It's recommended to install SciPy, and all of the associated packages, with `pip
 #### Running Jupyter Notebook/Lab Remotely
 
 Sometimes it's advantageous to have Jupyter run on a remote machine that you can SSH into from a local machine. This can be accomplished- with only forwarding over SSH port- by:
-1. SSH'ing into the remote box and launching Jupyter lab headlessly on a specific port, like `$ jupyter lab --no-browser --port=8889`
-2. In another terminal window on the local machine, forward a local port to the above Jupyter port with `$ ssh -NfL localhost:8888:localhost:8889 <remote IP address or hostname>`
+1. SSH into the remote box with port forwarding with `$ ssh -L localhost:8888:localhost:8889 <remote IP address or hostname>`
+  + Add `-Nf` too `ssh` command if wanting to launch in another terminal window and immediately return.
+2. In SSH session, launch Jupyter lab headlessly on a specific port, like `$ jupyter lab --no-browser --port=8889`
 3. Open a browser window to `http://localhost:8888/lab?token=<token URL string from Jupyter launch in SSH session>`
   + Besides running notebooks remotely, this method allows opening & viewing of other remote files.
 
