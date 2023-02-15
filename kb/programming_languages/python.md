@@ -177,10 +177,14 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 ============================ 1 failed in 0.12s =============================
 ```
 
-### Other 
 
-* [`psf/black`](https://github.com/psf/black) uncompromising Python code formatter.
-* [`mypy`](https://github.com/python/mypy) Static Type checker
+## Other Useful Tools
+
+* [psf/black](https://github.com/psf/black): uncompromising Python code formatter.
+* [mypy](https://github.com/python/mypy): Static Type checker
+  + See also [Advanced Static Typing with mypy (part1)](https://dev.to/chadrik/the-missing-guide-to-python-static-typing-532i)
+* [flake8](https://github.com/PyCQA/flake8): a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.
+
 
 
 ## Libraries and Distributions
