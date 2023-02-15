@@ -196,6 +196,8 @@ FAILED test_sample.py::test_answer - assert 4 == 5
   - [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/index.html) is the next-generation web-based UI for Jupyter notebooks.
     + Vim keybindings are currently best supported with plugins like [axelfahy/jupyterlab-vim](https://github.com/axelfahy/jupyterlab-vim) & [ianhi/jupyterlab-vimrc](https://github.com/ianhi/jupyterlab-vimrc), but also seems to [soon be in the mainline](https://github.com/jupyterlab/jupyterlab/pull/9068).
     + Spell checking of Markdown cells can be achieved with the [jupyterlab-spellchecker](https://github.com/jupyterlab-contrib/spellchecker) plugin
+  - Since plaintext diffs of Jupyter notebooks are sometimes not very insightful, tools like [nbdime](https://nbdime.readthedocs.io/en/latest/) are useful to better diff & merge notebooks within a Git repo.
+    + [ReviewNB](https://www.reviewnb.com/) is a service that can similarly help with reviews on public repos like GitHub
 * **[SymPy](http://sympy.org/):** performs symbolic math manipulations and computations. It can solve algebraic and differential equations, simplify expresions, apply trigonometric identities, differentiate, integrate, etc.
   - [SageMath](https://www.sagemath.org/) is a mathematics software system which integrates SymPy and other SciPy libraries in a complete system.
 * **[pandas](http://pandas.pydata.org/):** a library for data structures & analysis. `pandas` blends the array processing ideas of `NumPy` with the common data manipulation ideas found in spreadsheets and relational databases (e.g. SQL).

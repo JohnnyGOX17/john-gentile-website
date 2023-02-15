@@ -39,6 +39,14 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ## Language
 
 
+### Low-Level / Embedded
+
+* [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
+* [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
+* [Rust Embedded GitHub](https://github.com/rust-embedded)
+  + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
+
+
 ## References
 
 **NOTE:** offline documentation is locally installed with `rustup` and can be opened in your browser by simply running `rustup doc`.
@@ -49,6 +57,16 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/)
 * [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings)
+
+#### Books
+
 * [ ] [Zero to Production In Rust](https://www.zero2prod.com/)
   + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
+* [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
+* [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)
+
+### Repos
+
+* [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
+* [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
 

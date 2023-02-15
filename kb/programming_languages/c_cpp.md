@@ -88,6 +88,7 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 
 * [Valgrind](http://valgrind.org/): instrumentation framework to detect memory management and threading bugs.
 * [Facebook Infer](http://fbinfer.com/): static analysis of C/C++/Objective-C and Java code.
+* [clangd Language Server](https://clangd.llvm.org/): adds code completion, compile errors, go-to-definition and other features to tools that use the Language Server Protocol (LSP).
 
 
 

@@ -77,6 +77,7 @@ Other copy & paste examples:
 |-----------|--------|-------------|
 | Copy (yank) Current Line | <kbd>y</kbd>,<kbd>y</kbd> | Copies current line |
 | Put/Paste Text from Register | <kbd>p</kbd> | Put text in Vim's register (such as previously deleted or yanked text) after the cursor |
+|  | <kbd>g</kbd>,<kbd>p</kbd> | Just like "p", but leave the cursor just after the new text. |
 
 ### Deletion
 
@@ -311,3 +312,5 @@ gqip
 
 * [Learning the vi and Vim Editors, 7th Edition by Arnold Robbins, Elbert Hannah, Linda Lamb](http://shop.oreilly.com/product/9780596529833.do)
 * [VIM Book by Steve Oualline](http://www.oualline.com/vim-book.html)
+* [Neovim from Scratch - chris@machine YouTube Series](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+
