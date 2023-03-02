@@ -89,6 +89,12 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 * [Valgrind](http://valgrind.org/): instrumentation framework to detect memory management and threading bugs.
 * [Facebook Infer](http://fbinfer.com/): static analysis of C/C++/Objective-C and Java code.
 * [clangd Language Server](https://clangd.llvm.org/): adds code completion, compile errors, go-to-definition and other features to tools that use the Language Server Protocol (LSP).
+  * [clang-tidy](https://clang.llvm.org/extra/clang-tidy/): linting tool for style violations, interface misuse or bugs that can be deduced via static analysis.
+    * [cpplint](https://github.com/cpplint/cpplint): similar to `clang-tidy`, but specifically for [Google's C/C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
+  * [clang-format](https://clang.llvm.org/docs/ClangFormat.html): a tool to format C/C++ (and other similar language) code.
+    * [Uncrustify](https://uncrustify.sourceforge.net/): similar tool for reformatting.
+  * [oclint](https://github.com/oclint/oclint): static source code analysis tool for C/C++ and Objective-C.
+    * [cppcheck](https://cppcheck.sourceforge.io/): another static analysis tool for C/C++ code.
 
 
 
@@ -118,4 +124,5 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 
 * [The Standard](https://isocpp.org/std/the-standard): website for the current and draft ISO C++ standards
 * [The C++ Annotations by Frank B. Brokken](http://www.icce.rug.nl/documents/cplusplus/)
+* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 

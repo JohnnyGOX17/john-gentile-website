@@ -9,6 +9,10 @@
 
 Repo for website [john-gentile.com](https://john-gentile.com/)
 
+## Searching
+
+A useful strategy to find references, or possible duplicates, is to run `$ ag --markdown <search term>` from the repo toplevel.
+
 ## References
 
 * [Jekyll Docs](https://jekyllrb.com/docs/)

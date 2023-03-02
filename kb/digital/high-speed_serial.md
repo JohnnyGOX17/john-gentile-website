@@ -42,3 +42,10 @@ There are several physical signaling standards at the PMD layer with high-speed 
 
 [Everything You Always Wanted to Know About Optical Networking- But Were Afraid to Ask](https://www.nanog.org/sites/default/files/2_Steenbergen_Tutorial_New_And_v2.pdf)
 
+## References
+
+### To Read
+
+- [ ] [Sam Palermo Courses - Texas A&M](https://people.engr.tamu.edu/spalermo/teaching.html)
+  - [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
+

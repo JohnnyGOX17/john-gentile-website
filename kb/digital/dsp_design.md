@@ -52,6 +52,7 @@ There are a few different integer number representations when working with digit
 | 11111110     | -1        | -2          | 254        |
 | 11111111     | -0        | -1          | 255        |
 
+* [Online Binary-Decimal Converter](https://www.binaryconvert.com/index.html)
 
 ##### VHDL Integer Type
 
