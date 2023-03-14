@@ -181,9 +181,12 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 ## Other Useful Tools
 
 * [psf/black](https://github.com/psf/black): uncompromising Python code formatter.
+* [pyright](https://github.com/microsoft/pyright): static type checker and linter for Python
 * [mypy](https://github.com/python/mypy): Static Type checker
   + See also [Advanced Static Typing with mypy (part1)](https://dev.to/chadrik/the-missing-guide-to-python-static-typing-532i)
 * [flake8](https://github.com/PyCQA/flake8): a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.
+* [pylint](https://github.com/PyCQA/pylint): static code analyzer and linter.
+* [ruff](https://github.com/charliermarsh/ruff): extremely fast Python linter written in Rust
 
 
 

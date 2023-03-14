@@ -663,6 +663,21 @@ entity my_comp is
 
 
 
+## Development Tools
+
+### Linters & LSPs
+
+* [Verible](https://github.com/chipsalliance/verible): suite of SystemVerilog developer tools including a parser, style-linter, formatter and language sever (LSP). Maintained by Chips Alliance, and formerly Google.
+  * Some other tools like [Veridian](https://github.com/vivekmalneedi/veridian) utilize Verible under-the-hood.
+* [svlint](https://github.com/dalance/svlint): SystemVerilog linter written in Rust
+  * Can be integrated into IDEs with [svls LSP](https://github.com/dalance/svls)
+  * Configured by [TOML settings in `.svlint.toml`](https://github.com/dalance/svlint/blob/master/MANUAL.md)
+* [imc-trading/svlangserver](https://github.com/imc-trading/svlangserver)
+
+#### Formatters
+
+* [verilog-format](https://github.com/ericsonj/verilog-format)
+* [istyle-verilog-formatter](https://github.com/thomasrussellmurphy/istyle-verilog-formatter)
 
 ## 3rd Party / Open-Source HDL Repos
 
