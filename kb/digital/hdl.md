@@ -673,6 +673,7 @@ entity my_comp is
   * Can be integrated into IDEs with [svls LSP](https://github.com/dalance/svls)
   * Configured by [TOML settings in `.svlint.toml`](https://github.com/dalance/svlint/blob/master/MANUAL.md)
 * [imc-trading/svlangserver](https://github.com/imc-trading/svlangserver)
+* [suoto/hdl_checker](https://github.com/suoto/hdl_checker): provides linting and HDL analysis using 3rd party tools like [Questa/ModelSim](http://www.mentor.com/products/fv/modelsim/), [GHDL](https://github.com/ghdl/ghdl-language-server), and [Vivado xsim](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 #### Formatters
 

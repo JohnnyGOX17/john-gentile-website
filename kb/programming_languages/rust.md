@@ -33,6 +33,10 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
   + `$ cargo run` can be used to build and then execute in one command.
 - Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
 
+### Cross-Compile & FFI
+
+* [dtolnay/cxx](cxx.rs): safe interop between Rust and C++.
+
 ### Other Tools
 
 * [rust-analyzer](https://rust-analyzer.github.io/): implements Language Server Protocol (LSP) for Rust (allows IDEs/editors to have completion, definition, goto, etc. features).
@@ -43,7 +47,6 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 ### Low-Level / Embedded
 
-* [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
 * [Rust Embedded GitHub](https://github.com/rust-embedded)
   + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
@@ -56,9 +59,11 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### To Read
 
 * [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
-* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/)
-* [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/)
-* [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings)
+  * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
+* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/) 
+* [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/) 
+* [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
+* [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
 
 #### Books
 
@@ -71,4 +76,6 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
 * [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
+* [clap](https://github.com/clap-rs/clap): command line argument parser
+* [tui-rs](https://github.com/fdehau/tui-rs): Terminal User Interface (TUI) and dashboard crate
 
