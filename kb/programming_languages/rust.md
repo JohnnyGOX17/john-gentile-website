@@ -23,6 +23,10 @@ comments: true
 
 For more info, [see The Cargo Book](https://doc.rust-lang.org/cargo/index.html).
 
+As part of `cargo` there's also:
+- [clippy](https://doc.rust-lang.org/clippy/): a collection of lints to catch common mistakes and improve Rust code
+- [rustfmt](https://rust-lang.github.io/rustfmt/?version=master&search=): a Rust code formatter, can also be run with `cargo fmt`.
+
 #### rustdoc
 
 Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
