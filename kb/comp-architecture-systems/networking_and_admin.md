@@ -13,6 +13,15 @@ comments: true
 * [How to Configure SSH Key-based authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 * [How to Protect SSH with `fail2ban` on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-22-04)
 
+#### SSH Tunneling
+
+[SSH Tunneling](https://www.ssh.com/academy/ssh/tunneling) can be used to forward certain ports or services over a secure SSH connection. It's also useful if a local system wants to expose non-SSH services but only has an SSH port open externally through a router. For example, to tunnel Remote Desktop (RDP) to a remote server `<remote>`:
+```sh 
+$ ssh -L 8888:localhost:3389 <username>@<remote>
+```
+
+You can then connect to the RDP session with `localhost:8888`.
+
 
 ## References
 
