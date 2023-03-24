@@ -11,6 +11,12 @@ comments: true
 - [Installing Rust is fairly simple](https://www.rust-lang.org/tools/install) using the rustup script: `$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
   + On macOS, make sure C compiler is installed with `$ xcode-select --install`
 - Rust can be updated at any time with `$ rustup update`
+- 
+#### Compilation
+
+- If using a Cargo project, `$ cargo build` can be used
+  + `$ cargo run` can be used to build and then execute in one command.
+- Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
 
 ### Cargo
 
@@ -31,12 +37,6 @@ As part of `cargo` there's also:
 
 Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
 
-### Compilation
-
-- If using a Cargo project, `$ cargo build` can be used
-  + `$ cargo run` can be used to build and then execute in one command.
-- Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
-
 ### Cross-Compile & FFI
 
 * [dtolnay/cxx](cxx.rs): safe interop between Rust and C++.
@@ -44,6 +44,11 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### Other Tools
 
 * [rust-analyzer](https://rust-analyzer.github.io/): implements Language Server Protocol (LSP) for Rust (allows IDEs/editors to have completion, definition, goto, etc. features).
+* [cargo-audit](https://github.com/RustSec/rustsec/tree/main/cargo-audit): audits dependencies for crates with known security vulnerabilities, maintained by [RustSec Advisory Database](https://rustsec.org/).
+  * [cargo-deny](https://github.com/EmbarkStudios/cargo-deny): plugin for linting dependencies.
+* [grcov](https://github.com/mozilla/grcov): collect & aggregate code coverage data for source files (also supports C/C++ projects, or files that can be processed by llvm/clang/gcc).
+* [loom](https://github.com/tokio-rs/loom): concurrency permutation testing for parallel Rust code.
+* [Miri](https://github.com/rust-lang/miri): interpreter for Rust's mid-level interpreter (MIR) and detect classes of undefined behavior.
 
 
 ## Language

@@ -58,7 +58,7 @@ Before everyone else is up with distractions, set your day up for success and gi
 
 Just [writing down your goals statistically improves your chances of completing them](https://scholar.dominican.edu/cgi/viewcontent.cgi?article=1265&context=news-releases), and any extra steps to keep yourself accountable (like making weekly reviews of your progress) increases that probability even more.
 
-Create **SMART** goals, like how [novelist Anthony Trollope published 47 novels with a day job by committing to writing every morning](https://blog.doit.io/the-15-minute-anthony-trollope-routine/):
+Create [**SMART** goals](https://www.atlassian.com/blog/productivity/how-to-write-smart-goals), like how [novelist Anthony Trollope published 47 novels with a day job by committing to writing every morning](https://blog.doit.io/the-15-minute-anthony-trollope-routine/):
 * **Specific:** make sure your goal has a defined criteria for success.
 * **Measurable:** make sure your goal is quantifiable, and its progress can be tracked along the way to completion.
 * **Attainable:** make sure your goal is lofty, but at the same time, realistic. If it's too big, [like a BHAG](https://www.jimcollins.com/concepts/bhag.html), consider splitting the goal into smaller goals or milestones that lead to the bigger goal. Breaking large goals into consumable, relatively easy, chunks also keeps you motivated as you create positive momentum when you start completing milestones to your overall goal.
