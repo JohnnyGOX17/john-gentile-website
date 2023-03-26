@@ -665,6 +665,12 @@ entity my_comp is
 
 ## Development Tools
 
+### Build Tools
+
+* [AMD-Xilinx Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
+* [Intel-Altera Quartus](https://www.intel.com/content/www/us/en/products/details/fpga/development-tools/quartus-prime.html)
+* [LLVM CIRCT - Circuit IR Compilers and Tools](https://circt.llvm.org/)
+
 ### Linters & LSPs
 
 * [Verible](https://github.com/chipsalliance/verible): suite of SystemVerilog developer tools including a parser, style-linter, formatter and language sever (LSP). Maintained by Chips Alliance, and formerly Google.
@@ -693,6 +699,7 @@ Here are some repositories of Verilog and VHDL code for common IP cores:
 ### Verilog
 
 * [Verilog Tutorial: ASIC-World](http://www.asic-world.com/verilog/veritut.html)
+* [chipdev.io Interview Verilog Question List](https://chipdev.io/question-list)
 
 ### VHDL
 
