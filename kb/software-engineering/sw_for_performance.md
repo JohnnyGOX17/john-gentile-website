@@ -17,3 +17,6 @@ comments: true
 
 ## References
 
+* [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
+* [Cache Prefetching](https://en.wikipedia.org/wiki/Cache_prefetching)
+

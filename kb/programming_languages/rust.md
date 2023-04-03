@@ -37,6 +37,8 @@ As part of `cargo` there's also:
 
 Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
 
+`rustdoc` can also perform [documentation tests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html) within comments.
+
 ### Cross-Compile & FFI
 
 * [dtolnay/cxx](cxx.rs): safe interop between Rust and C++.
@@ -70,9 +72,10 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/) 
+* [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
 * [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/) 
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
-* [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+* [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 
 #### Books
 

@@ -238,8 +238,9 @@ Sometimes it's advantageous to have Jupyter run on a remote machine that you can
 
 * [ ] [Transforming Code into Beautiful, Idiomatic Python - Pycon US 2013 YouTube](https://www.youtube.com/watch?v=OSGv2VnC0go)
 * [Python for Data Analysis, 3rd Edition](https://www.amazon.com/Python-Data-Analysis-Wrangling-Jupyter-dp-109810403X/dp/109810403X?&linkCode=sl1&tag=quantpytho-20&linkId=2d1788b1f52212848d18095cf9972e07&language=en_US&ref_=as_li_ss_tl)
-  - [ ] [Pre-release site from author](https://wesmckinney.com/book/)
+  - [ ] [Open-access site from author](https://wesmckinney.com/book/)
   - [GitHub repo for Python for Data Analysis](https://github.com/wesm/pydata-book)
-* [ ] [Learning Python, 5th Edition by Mark Lutz](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) (on Page 67)
-* [ ] [Programming Python, 4th Edition by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do)
+* [ ] [Full-Speed Python](https://github.com/joaoventura/full-speed-python)
+* [ ] [Learning Python, 5th Edition by Mark Lutz](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) (on Page 67) 
+* [ ] [Programming Python, 4th Edition by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do) 
 
