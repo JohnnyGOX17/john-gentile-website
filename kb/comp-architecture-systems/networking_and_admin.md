@@ -12,6 +12,7 @@ comments: true
 
 * [How to Configure SSH Key-based authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 * [How to Protect SSH with `fail2ban` on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-22-04)
+  * [Configure Fail2Ban for permanent and persistent bans](https://arno0x0x.wordpress.com/2015/12/30/fail2ban-permanent-persistent-bans/)
 
 #### SSH Tunneling
 
