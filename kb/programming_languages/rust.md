@@ -11,7 +11,7 @@ comments: true
 - [Installing Rust is fairly simple](https://www.rust-lang.org/tools/install) using the rustup script: `$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
   + On macOS, make sure C compiler is installed with `$ xcode-select --install`
 - Rust can be updated at any time with `$ rustup update`
-- 
+ 
 #### Compilation
 
 - If using a Cargo project, `$ cargo build` can be used
@@ -61,11 +61,31 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
 * [Rust Embedded GitHub](https://github.com/rust-embedded)
   + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
+* [The embedonomicon](https://japaric.github.io/embedonomicon/preface.html)
+  + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
+* [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
 
 ## References
 
 **NOTE:** offline documentation is locally installed with `rustup` and can be opened in your browser by simply running `rustup doc`.
+
+
+### Rust Core Docs
+
+* [The Standard Library](https://doc.rust-lang.org/std/index.html): Comprehensive guide to the Rust standard library APIs.
+* [Edition Guide](https://doc.rust-lang.org/edition-guide/): Guide to the Rust editions.
+* [Cargo Book](https://doc.rust-lang.org/cargo/index.html): A book on Rust’s package manager and build system.
+* [Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html): Learn how to make awesome documentation for your crate.
+* [Rustc Book](https://doc.rust-lang.org/rustc/index.html): Familiarize yourself with the knobs available in the Rust compiler.
+* [Compiler Error Index](https://doc.rust-lang.org/error-index.html): In-depth explanations of the errors you may see from the Rust compiler.
+
+### Application Domain Docs
+
+* [Command Line Book](https://rust-cli.github.io/book/index.html)
+* [Webassembly Book](https://rustwasm.github.io/docs/book/)
+* [Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/)
+
 
 ### To Read
 
@@ -73,7 +93,6 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/) 
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
-* [ ] [The Embedded Rust Book - rust-lang.org](https://doc.rust-lang.org/stable/embedded-book/) 
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 
