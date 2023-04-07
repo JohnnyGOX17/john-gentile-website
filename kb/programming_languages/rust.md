@@ -92,9 +92,11 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-example/) 
-* [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
+* [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
+* [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
+* [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
 
 #### Books
 
