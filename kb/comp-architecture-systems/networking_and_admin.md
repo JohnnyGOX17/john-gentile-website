@@ -23,6 +23,12 @@ $ ssh -L 8888:localhost:3389 <username>@<remote>
 
 You can then connect to the RDP session with `localhost:8888`.
 
+### Basic Python Web Server
+
+If you have some static web resources (e.g. HTML pages, etc.), you can quickly spin-up a web server in that directory to display them using Python(3):
+
+`$ python -m http.server <port_number>`
+
 
 ## References
 
