@@ -6,6 +6,10 @@ top-category: Lifestyle
 comments: true
 ---
 
+## Blogs
+
+* [Voltage|Divide](https://voltagedivide.com/): FPGA/embedded/DSP
+
 ## Study Music
 
 {% youtube "https://www.youtube.com/watch?v=5qap5aO4i9A" %}
