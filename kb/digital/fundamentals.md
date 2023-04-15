@@ -57,6 +57,9 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
 
 CMOS digital circuits dissipate power in three main ways: dynamic, short circuit, and leakage power. Of note to the digital designer, dynamic power consumption.
 
+### References
+
+* [Low-Power Design (LPD)- Euroform Technical Training](https://www.eurasip.org/Seminars/EURASIPLowPowerSeminar_talk1.pdf)
 
 
 ## Digital Design Process & Tools
