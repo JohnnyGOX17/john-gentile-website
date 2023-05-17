@@ -20,7 +20,7 @@ comments: true
     - "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.
     - Live the life now that your older self would fondly look back on.
     - Your identity can hold you back ("I'm bad at math") or build you up ("I'm the type of person who doesn't give up, and reads everyday").
-* The best way to complete a marathon is to show up and take the first step. Activity defeats doubt, discipline over motivation.
+* The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation.
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
   + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
 * Happiness is a mindset, not an achievement or place.
@@ -29,6 +29,7 @@ comments: true
 * Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
 * Your tribe is your vibe. Growing a tribe is never bad but don't neglect your inner circle.
 * Work on what you love and the money will come. Actually, if you really love it, the money won't matter as much anyways.
+  + Also balance career with life; maximize compensation while minimizing time and stress for work.
 * Nothing's guaranteed in life and no one deserves anything, no matter how unfair things seem.
 * Create your own luck; take lots of thoughtful shots over time, and keep working to improve.
 * You can't do everything yourself; 10x'ers can be multipliers when they inspire and mentor others.
