@@ -33,3 +33,6 @@ Normal memory- used for code, data, heap and stack- is usually treated as execut
 * [Chipyard](https://github.com/ucb-bar/chipyard): RISC-V SoC design framework
 
 ## References
+
+* [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+* [RTL Engineering - YouTube Channel](https://www.youtube.com/c/RTLEngineering)
