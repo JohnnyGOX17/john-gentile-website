@@ -29,6 +29,7 @@ Proprietary simulator with most all language & simulation construct support.
 - Common simulator, setup and waveform commands can be bundled in a `*.do` file to be scripted by Questa
 - Adding `log -r *` will log _all_ design signals, even those not currently in the waveform view, so that they can be added later without restarting the simulation. Note that this can drastically increase the waveform log file (`*.wlf`) size though.
 - Questa can be run in batch mode (headlessly without GUI) to facilitate CLI tests and/or automated regression. Questa will then output how many warnings and errors occurred for easy parsing by report generators. An example `Makefile` which runs a top-level testbench design:
+
 ```make
 #
 # Makefile for Questa
