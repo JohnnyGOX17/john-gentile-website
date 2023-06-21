@@ -46,6 +46,7 @@ comments: true
 
 -J.K. Rowling, _Harry Potter and the Sorcerer's Stone_
 
+
 ### Perseverance
 
 > We suffer more in our imagination more often than in reality.
@@ -104,6 +105,12 @@ comments: true
 
 -Ayn Rand
 
+> Comparison is the thief of joy.
+
+-Theodore Roosevelt
+
+
+
 ## Business & Leadership
 
 ### Leadership
@@ -152,6 +159,7 @@ comments: true
 
 -Hanlon's Razor
 
+
 ### Starting Up
 
 > If you are not embarrassed by the first version of your product, you've launched too late.
@@ -169,6 +177,7 @@ comments: true
 > You need three things to create a successful startup: 1. Hire exceptionally great people. 2. Make something customers actually want. 3. Spend only on the priorities and maximize profitability.
 
 -Paul Graham
+
 
 ### Strategy
 
@@ -208,13 +217,14 @@ comments: true
 
 -Albert Einstein [Occam's Razor]
 
+
 ## Life
 
 > The young man, who does not know the future, sees life as a kind of epic adventure, an Odyssey through strange seas and unknown islands, where he will test and prove his powers, and thereby discover his immortality. The man of middle years, who has lived the future that he onced dreamed, sees life as a tragedy; for he has learned that his power, however great, will not prevail against those forces of accident and nature to which he gives the names of gods, and has learned that he is mortal. But the man of age, if he plays his assigned role properly, must see life as a comedy. For his triumphs and his failures merge, and one is no more the occasion for pride or shame than the other; and he is neither the hero who proves himself against those forces, nor the protagonist who is destroyed by them. Like any poor, pitiable shell of an actor, he comes to see that he has played so many parts that there no longer is himself.
 
-- John Williams, Augustus
+-John Williams, Augustus
 
 > Creating a life that reflects your values and satisfies your soul is a rare achievement. In a culture that relentlessly promotes avarice and excess as the good life, a person happy doing his own work is usually considered an eccentric, if not a subversive. Ambition is only understood if it's to rise to the top of some imaginary ladder of success. Someone who takes an undemanding job because it affords him the time to pursue other interests and activities is considered a flake. A person who abandons a career in order to stay home and raise children is considered not to be living up to his potential-as if a job title and salary are the sole measure of human worth. You'll be told in a hundred ways, some subtle and some not, to keep climbing, and never be satisfied with where you are, who you are, and what you're doing. There are a million ways to sell yourself out, and I guarantee you'll hear about them. To invent your own life's meaning is not easy, but it's still allowed, and I think you'll be happier for the trouble.
 
-- Bill Watterson's commencement speech at Kenyon College, 1990
+-Bill Watterson's commencement speech at Kenyon College, 1990
 

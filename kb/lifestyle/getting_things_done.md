@@ -42,6 +42,7 @@ comments: true
 * [Always the hard way](https://www.youtube.com/watch?v=XGR0jtA6NXg). Embrace & laugh at the suck. Those who dare, win. Change of mindset from "I have to" -> "I get to".
 * Kindness is rooted in empathy for others' experiences
 * Focus on positivity, life is a self-fulfilling prophecy so be confident and happy that things will get good and goals will be achieved.
+  + "Comparison is the thief of joy"; focus on if you're better today than you were yesterday, not how you compare to others.
 
 ### Waking Up Early
 
