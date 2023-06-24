@@ -211,7 +211,9 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 
 It's recommended to install SciPy, and all of the associated packages, with `pip` since some distros still point to Python 2 repos. Or you could install [Anaconda](https://www.anaconda.com/products/individual) which can be installed on Mac, Windows or Linux and easily installs Python and all required libraries.
 
-#### Running Jupyter Notebook/Lab Remotely
+#### Jupyter Notebook Tips
+
+#####  Running Jupyter Notebook/Lab Remotely
 
 Sometimes it's advantageous to have Jupyter run on a remote machine that you can SSH into from a local machine. This can be accomplished- with only forwarding over SSH port- by:
 1. SSH into the remote box with port forwarding with `$ ssh -L localhost:8889:localhost:8889 <remote IP address or hostname>`
@@ -219,6 +221,10 @@ Sometimes it's advantageous to have Jupyter run on a remote machine that you can
 2. In SSH session, launch Jupyter lab headlessly on a specific port, like `$ jupyter lab --no-browser --port=8889`
 3. Open a browser window to `http://localhost:8889/lab?token=<token URL string from Jupyter launch in SSH session>` (or just click the link it outputs in the terminal)
   + Besides running notebooks remotely, this method allows opening & viewing of other remote files.
+
+#####  Exporting Jupyter Notebooks
+
+Jupyter notebooks can be exported to many formats, like HTML, LaTeX and PDF. However, if you run into weird font errors in `nbconvert`, note that it [may be due to leading and/or trailing spaces in inline math text](https://stackoverflow.com/a/72291257); for instance `$ \epsilon  \gt 0 $` within a text block may cause an error and should be changed to `$\epsilon  \gt 0$`.
 
 
 ### Data Analysis
