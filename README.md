@@ -13,6 +13,10 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 
 A useful strategy to find references, or possible duplicates, is to run `$ ag --markdown <search term>` from the repo toplevel.
 
+## TODO:
+
+* [ ] Use [nbconvert](https://nbconvert.readthedocs.io/en/latest/customizing.html) to export Jupyter notebooks to HTML and use the consistent CSS/styling of other Markdown webpages, rather than Jupyter Jeykyll plugin.
+
 ## References
 
 * [Jekyll Docs](https://jekyllrb.com/docs/)
