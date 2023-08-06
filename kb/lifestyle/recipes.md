@@ -251,6 +251,50 @@ Makes 1 serving/sandwich:
 
 ## Chicken
 
+### Chicken/Veal Piccata & Pasta
+
+{% youtube "https://www.youtube.com/watch?v=e0CoVPJz2H8" %}
+<br />
+
+<details markdown="1">
+  <summary><b>Ingredients</b></summary>
+
+Makes 4 servings:
+* [ ] 2 boneless skinless chicken breasts (can substitute for veal)
+* [ ] 1-2 cups of All-Purpose flour for dredging
+* [ ] Salt and pepper
+* [ ] 2 tbs olive oil
+* [ ] 4-6 tbs butter
+* [ ] 3 cloves garlic, smashed
+* [ ] 1/2 cup dry white wine, like Sauvignon Blanc
+* [ ] 1/2 cup chicken stock
+* [ ] 2 tbs capers
+* [ ] 2x lemons, juiced
+* [ ] 1/4 cup fresh parsley, finely chopped
+* [ ] 16oz pasta/spaghetti
+</details>
+
+**Nutrition (Per Serving)**
+
+| Calories | Carbs | Protein | Fat   |
+|----------|-------|---------|-------|
+| 1385     | 72g   | 42g     | 48g   |
+
+<details markdown="1">
+  <summary><b>Instructions</b></summary>
+
+1. Butterfly and pound chicken breasts into 4x thin cutlets
+2. Add enough flour to a plate to coat the chicken pieces. Add salt and fresh pepper to taste and mix.
+3. Add 2 tbs of butter and 2 tbs of olive oil to a large saute pan. Add garlic cloves and bring pan to medium-high heat. Cook garlic until it becomes golden brown and aromatic, then remove and discard.
+4. Working in batches, dredge chicken pieces in flour mix and add to pan. Brown each side, about 2 to 3 minutes per side. After, remove to a platter and keep warm in oven.
+5. After removing chicken, deglaze the pan with wine, reduce heat to medium and reduce by half. Start boiling water in large pot for pasta.
+6. Add chicken stock, capers and 2 tbs of butter. Add lemon juice to taste. Note that more butter can be added for a "richer" sauce and/or to balance a sauce that is "too lemony". Add pasta to boiling water (follow directions on package) and reduce sauce slightly.
+7. Add parsley and chicken back to pan. Mix in with sauce and reduce to medium-low heat to rewarm chicken.
+8. Add chicken and sauce on-top of pasta and serve.
+</details>
+
+
+
 ### Greek Lemon Chicken & Potatoes
 
 {% youtube "https://www.youtube.com/watch?v=h6OSMbfhIao" %}
