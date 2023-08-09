@@ -200,11 +200,6 @@ FAILED test_sample.py::test_answer - assert 4 == 5
   - [seaborn](https://seaborn.pydata.org/) is a data visualization library, and high-level interface, based on `matplotlib`.
 * **[IPython](https://ipython.org/):** an interactive console approach to Python development, which also coincides with the [Jupyter](https://jupyter.org/) Project, which provides interactive computing notebooks.
   - Jupyter is a very powerful resource for data analysis, engineering, math and other disciplines. A wide variety of tools and plugins exist to make Jupyter notebooks similar to a full IDE (or similar to other full-fledged processing and graphing tools like MATLAB), and tools like [nbconvert](https://nbconvert.readthedocs.io/en/latest/) can be used to export Jupyter notebooks to other formats, such as LaTeX and PDF.
-  - [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/index.html) is the next-generation web-based UI for Jupyter notebooks.
-    + Vim keybindings are currently best supported with plugins like [axelfahy/jupyterlab-vim](https://github.com/axelfahy/jupyterlab-vim) & [ianhi/jupyterlab-vimrc](https://github.com/ianhi/jupyterlab-vimrc), but also seems to [soon be in the mainline](https://github.com/jupyterlab/jupyterlab/pull/9068).
-    + Spell checking of Markdown cells can be achieved with the [jupyterlab-spellchecker](https://github.com/jupyterlab-contrib/spellchecker) plugin
-  - Since plaintext diffs of Jupyter notebooks are sometimes not very insightful, tools like [nbdime](https://nbdime.readthedocs.io/en/latest/) are useful to better diff & merge notebooks within a Git repo.
-    + [ReviewNB](https://www.reviewnb.com/) is a service that can similarly help with reviews on public repos like GitHub
 * **[SymPy](http://sympy.org/):** performs symbolic math manipulations and computations. It can solve algebraic and differential equations, simplify expresions, apply trigonometric identities, differentiate, integrate, etc.
   - [SageMath](https://www.sagemath.org/) is a mathematics software system which integrates SymPy and other SciPy libraries in a complete system.
 * **[pandas](http://pandas.pydata.org/):** a library for data structures & analysis. `pandas` blends the array processing ideas of `NumPy` with the common data manipulation ideas found in spreadsheets and relational databases (e.g. SQL).
@@ -221,6 +216,17 @@ Sometimes it's advantageous to have Jupyter run on a remote machine that you can
 2. In SSH session, launch Jupyter lab headlessly on a specific port, like `$ jupyter lab --no-browser --port=8889`
 3. Open a browser window to `http://localhost:8889/lab?token=<token URL string from Jupyter launch in SSH session>` (or just click the link it outputs in the terminal)
   + Besides running notebooks remotely, this method allows opening & viewing of other remote files.
+
+
+#####  Jupyter Lab Plugins
+
+- [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/index.html) is the next-generation web-based UI for Jupyter notebooks.
+  + Vim keybindings are currently best supported with the plugin [jupyterlab-contrib/jupyterlab-vim](https://github.com/jupyterlab-contrib/jupyterlab-vim).
+    * [Keybindings can also be modified](https://github.com/jupyterlab-contrib/jupyterlab-vim/blob/master/modify-keybinds.md) similar to a `.vimrc` settings file
+  + Spell checking of Markdown cells can be achieved with the [jupyterlab-spellchecker](https://github.com/jupyterlab-contrib/spellchecker) plugin
+- Since plaintext diffs of Jupyter notebooks are sometimes not very insightful, tools like [nbdime](https://nbdime.readthedocs.io/en/latest/) are useful to better diff & merge notebooks within a Git repo.
+  + [ReviewNB](https://www.reviewnb.com/) is a service that can similarly help with reviews on public repos like GitHub
+
 
 #####  Exporting Jupyter Notebooks
 
