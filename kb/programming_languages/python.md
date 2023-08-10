@@ -226,6 +226,7 @@ Sometimes it's advantageous to have Jupyter run on a remote machine that you can
   + Spell checking of Markdown cells can be achieved with the [jupyterlab-spellchecker](https://github.com/jupyterlab-contrib/spellchecker) plugin
 - Since plaintext diffs of Jupyter notebooks are sometimes not very insightful, tools like [nbdime](https://nbdime.readthedocs.io/en/latest/) are useful to better diff & merge notebooks within a Git repo.
   + [ReviewNB](https://www.reviewnb.com/) is a service that can similarly help with reviews on public repos like GitHub
+- Use `%matplotlib widget` to [render animated matplotlib plots](https://stackoverflow.com/a/56416229)
 
 
 #####  Exporting Jupyter Notebooks
