@@ -94,6 +94,7 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
+* [ ] [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
