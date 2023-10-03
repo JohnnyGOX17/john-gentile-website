@@ -22,6 +22,6 @@ comments: true
 
 ### To Read
 
-* [ ] [Cryptopals Crypto Challenges](http://cryptopals.com/)
+* [ ] [Cryptopals Crypto Challenges](https://cryptopals.com/)
   - [akalin/cryptopals-python3 - GitHub](https://github.com/akalin/cryptopals-python3)
 
