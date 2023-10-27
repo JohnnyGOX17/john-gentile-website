@@ -35,4 +35,5 @@ Normal memory- used for code, data, heap and stack- is usually treated as execut
 ## References
 
 * [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+* [What Every Systems Programmer Should Know About Concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
 * [RTL Engineering - YouTube Channel](https://www.youtube.com/c/RTLEngineering)

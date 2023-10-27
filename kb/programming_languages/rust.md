@@ -93,12 +93,16 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
+* [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
 * [ ] [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
+  + [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
+  + [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
 * [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
+* [ ] [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
 
 #### Books
 
