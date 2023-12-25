@@ -16,6 +16,10 @@ comments: true
 
 For instance, in complex components like those used for [DSP](./dsp_design.html), the input test data signal(s) and output numerical analysis can all be performed in the same Python testbench, and even be plotted with tools like `matplotlib`. Compare this to older methods such as manually generating test vectors to an input file, and consuming test outputs from a testbench output file, in an external tool like MATLAB.
 
+### Verilator
+
+[Verilator](https://www.veripool.org/verilator/) is a FOSS- yet very fast and flexible- simulator for (System)Verilog.
+
 ### VUnit
 
 [VUnit](https://vunit.github.io/index.html) is a FOSS unit testing framework for VHDL & SystemVerilog. It is mainly a Python test runner for HDL testbenches with many supporting libraries for logging & checking/assertions.

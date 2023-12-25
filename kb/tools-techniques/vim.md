@@ -217,7 +217,7 @@ Also tools like [EditorConfig](http://editorconfig.org/) can be used to keep con
 
 Vim can also be further extended with plugins and plugin managers such as [vim-plug](https://github.com/junegunn/vim-plug) that execute Vimscript (scripting language within Vim) to execute unique features. [Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com/) is a useful site for learning more about customizing Vim as well as developing custom Vim plugins.
 
-Browse for Vim plugins using GitHub or [Vim Awesome](https://vimawesome.com/).
+Browse for Vim plugins using GitHub or sites like [Vim Awesome](https://vimawesome.com/) and [awesome-neovim](https://github.com/rockerBOO/awesome-neovim).
 
 ### Techniques for Development
 
