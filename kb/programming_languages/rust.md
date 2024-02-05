@@ -65,6 +65,14 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
+### Rust for Linux Kernel Development
+
+* [Rust for Linux](https://rust-for-linux.com/)
+* [rust-sysfs-gpio](https://github.com/rust-embedded/rust-sysfs-gpio)
+* [Rust Kernel Module: Getting Started](https://wusyong.github.io/posts/rust-kernel-module-00/)
+* [linux-kernel-module-rust](https://github.com/fishinabarrel/linux-kernel-module-rust)
+  - https://github.com/lizhuohua/linux-kernel-module-rust
+
 
 ## References
 

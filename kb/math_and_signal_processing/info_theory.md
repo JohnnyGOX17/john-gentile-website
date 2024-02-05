@@ -11,6 +11,8 @@ wip: true
 
 ## Error Detection & Correction
 
+[Error detection and correction](https://en.wikipedia.org/wiki/Error_detection_and_correction)
+
 - [ ] [Viterbi Decoder](https://en.wikipedia.org/wiki/Viterbi_decoder)
 
 ## Compression
@@ -21,4 +23,8 @@ wip: true
   * [libfec](https://github.com/quiet/libfec)
 
 ## References
+
+- [Error correction code - Wikipedia](https://en.wikipedia.org/wiki/Error_correction_code)
+  + [Erasure code - Wikipedia](https://en.wikipedia.org/wiki/Erasure_code)
+    * [Rust reed-solomon-erasure crate](https://github.com/rust-rse/reed-solomon-erasure)
 
