@@ -31,6 +31,7 @@ ifeq ($(UNAME_S),Linux)
 	gem install jekyll bundler
 endif
 ifeq ($(UNAME_S),Darwin)
+	# NOTE: for macOS on Apple Silicon https://github.com/BillRaymond/install-jekyll-apple-silicon/blob/main/README.md
 	gem install --user-install bundler jekyll
 endif
 	bundle install --jobs 4
