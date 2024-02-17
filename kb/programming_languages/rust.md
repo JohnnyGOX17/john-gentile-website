@@ -57,6 +57,8 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 ### Async
 
+See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
+
 * [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
   + [tokio Tutorial](https://tokio.rs/tokio/tutorial)
 
