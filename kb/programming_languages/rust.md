@@ -55,6 +55,10 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 ## Language
 
+### Async
+
+* [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
+  + [tokio Tutorial](https://tokio.rs/tokio/tutorial)
 
 ### Low-Level / Embedded
 
@@ -122,7 +126,6 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### Repos
 
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
-* [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
 * [clap](https://github.com/clap-rs/clap): command line argument parser
 * [tui-rs](https://github.com/fdehau/tui-rs): Terminal User Interface (TUI) and dashboard crate
 
