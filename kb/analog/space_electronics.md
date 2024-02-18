@@ -14,6 +14,7 @@ comments: true
 ## References
 
 * [Challenges for Electronic Circuits in Space Applications- ADI](https://www.analog.com/en/thought-leadership/challenges-for-electronic-circuits-in-space-applications.html)
+* [NASA State-of-the-Art of Small Spacecraft Technology](https://www.nasa.gov/smallsat-institute/sst-soa/)
 * [Mission Assurance Guidelines for A-D Mission Risk Classes](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/TOR-2011(8591)-21.pdf)
 * [EEVblog #896 - Space Electronics](https://www.youtube.com/watch?v=nJLOZDPTp3I)
 * [How To Design Boards And Electronics for Space (with Cedric Corpa)- Robert Feranec](https://www.youtube.com/watch?v=-q1WWh5CwwU)
