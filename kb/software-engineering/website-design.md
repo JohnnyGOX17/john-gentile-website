@@ -10,6 +10,12 @@ comments: true
 
 A good starting point might be to check out the tutorials and reference over at [w3schools.com](https://www.w3schools.com/) or the [Grab Front End Guide](https://github.com/grab/front-end-guide) or [Google Web Fundamentals](https://developers.google.com/web/fundamentals/).
 
+### User Experience (UX)
+
+- [Laws of UX](https://lawsofux.com/)
+- [Visual design rules you can safely follow every time](https://anthonyhobday.com/sideprojects/saferules/)
+
+
 ## Page Layout
 
 ### Examples
@@ -67,6 +73,7 @@ Note that a custom/unique syntax stylesheet might need to be used to color the a
 * [Web Style Guide](http://www.webstyleguide.com/)
 * [Learn Web Development- MDN](https://developer.mozilla.org/en-US/docs/Learn)
 * [Sass](http://sass-lang.com/) CSS extension language and generator
+* [Free broken link tool - dead link checker](https://www.deadlinkchecker.com/website-dead-link-checker.asp)
 
 ### npm Packages
 
@@ -85,6 +92,7 @@ Note that a custom/unique syntax stylesheet might need to be used to color the a
 
 * [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 engine that is light and efficient.
 * [Django](https://www.djangoproject.com/) is a high-level Python web framework that promotes rapid development and design.
+* [Vue.js](https://vuejs.org/) JavaScript framework for building web user interfaces.
 * [Mobirise](https://mobirise.com/) generates static website content (HTML + CSS) in a quick and easy interface
 * [Electron](https://electronjs.org/) cross-platform JavaScript framework for building desktop and web applications with JS, HTML and CSS.
 
@@ -92,6 +100,8 @@ Note that a custom/unique syntax stylesheet might need to be used to color the a
 
 [Jekyll](https://jekyllrb.com/) is a static site generator that can easily create scalable websites using a combination of pages with [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/) and [Liquid tags/expressions](https://github.com/Shopify/liquid/wiki/liquid-for-designers) for dynamic generation.
 * [Jekyll & Liquid Cheatsheet](https://gist.github.com/smutnyleszek/9803727)
+
+An alternative- and faster- framework is [Hugo](https://gohugo.io/)
 
 ## SEO (Search Engine Optimization)
 
@@ -111,3 +121,12 @@ The goal for many websites is to attract the most amount of viewers (and the rig
 ### Hosting
 
 There are many, many options for website hosting, especially depending on your website needs (e.x. performance, static vs. dynamic websites, cost, etc.). This site is benefitting from hosting on an Amazon Web Service S3 bucket and content distribution with [Amazon Cloudfront](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-cloudfront-walkthrough.html). This allows for super fast and cheap static website delivery as well as a simple solution for [HTTPS website hosting](https://medium.com/@sbuckpesch/setup-aws-s3-static-website-hosting-using-ssl-acm-34d41d32e394).
+
+## References
+
+- [web.dev](https://web.dev/)
+- [microsoft/Web-Dev-For-Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
+- [HTML Tips - Marko](https://markodenic.com/html-tips/)
+- [CSS Tips - Marko](https://markodenic.com/css-tips/)
+- [Web Browser Engineering](https://browser.engineering/)
+

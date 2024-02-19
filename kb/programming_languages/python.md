@@ -246,6 +246,9 @@ Jupyter notebooks can be exported to many formats, like HTML, LaTeX and PDF. How
 
 * [Official Documentation for Python 3](https://docs.python.org/3/)
   - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+* [Think Python, 3rd Ed - Allen Downey](https://greenteapress.com/wp/think-python-3rd-edition/)
+  - [Other Free eBooks from Allen Downey & Green Tea Press](https://greenteapress.com/wp/)
+* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 ### To Read
 
@@ -256,4 +259,7 @@ Jupyter notebooks can be exported to many formats, like HTML, LaTeX and PDF. How
 * [ ] [Full-Speed Python](https://github.com/joaoventura/full-speed-python)
 * [ ] [Learning Python, 5th Edition by Mark Lutz](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) (on Page 67) 
 * [ ] [Programming Python, 4th Edition by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do) 
+* [ ] [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
+* [ ] [Design Patterns in Python - Refactoring.guru](https://refactoring.guru/design-patterns/python)
+* [ ] [Python Design Patterns](https://python-patterns.guide/)
 

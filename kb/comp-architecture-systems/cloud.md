@@ -10,6 +10,7 @@ comments: true
 
 ### References
 
+- [ ] [open-guides/og-aws](https://github.com/open-guides/og-aws)
 - [ ] [AWS Samples & Projects - GitHub](https://github.com/aws-samples)
     + [Build a Serverless Web Application - Getting Started with AWS](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
     + [Build a WordPress Website - Getting Started with AWS](https://aws.amazon.com/getting-started/hands-on/build-wordpress-website/)
