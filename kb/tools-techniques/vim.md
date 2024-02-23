@@ -181,6 +181,8 @@ All commands are assumed to start with <kbd>:</kbd> while in Normal mode
 | Switch between open Windows | <kbd>Ctrl</kbd>+<kbd>ww</kbd> | |
 | Quit a Window | <kbd>Ctrl</kbd>+<kbd>wq</kbd> | |
 
+You can also use `:b[uffer]` with tab-completion to show and navigate all currently open buffers (for instance if you have a lot openend).
+
 
 ## Visual Mode
 

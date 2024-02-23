@@ -1,9 +1,10 @@
 ---
-title: Software Defined Radio (SDR)
+title: Wireless Communication Systems
 layout: default
 kb: true
-top-category: Digital Electronics
+top-category: Math & Signal Processing
 comments: true
+wip: true
 ---
 
 ## Overview
@@ -34,7 +35,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 <center><i><a href="https://en.wikipedia.org/wiki/Constellation_diagram">Source: Constellation Diagram- Wikipedia</a></i></center>
 
 
-## SDR Hardware
+## Software Defined Radio (SDR)
 
 ### RTL-SDR
 
@@ -44,4 +45,9 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 - **[RTL-SDR for Linux Quick Start Guide](https://ranous.wordpress.com/rtl-sdr4linux/):** installation instructions for necessary drivers and libraries to get up and running.
 
 ## References
+
+- [ ] [Learn SDR with Prof Jason - YouTube Playlist](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
+- [ ] [veeresht/CommPy](https://github.com/veeresht/CommPy)
+- [Wireless Pi](https://wirelesspi.com/)
+- MathWorks [Communications](https://www.mathworks.com/help/comm/index.html?s_tid=CRUX_lftnav), [SATCOM](https://www.mathworks.com/help/satcom/index.html?s_tid=CRUX_lftnav) and [Wireless HDL](https://www.mathworks.com/help/wireless-hdl/index.html?s_tid=CRUX_lftnav) Toolboxes
 

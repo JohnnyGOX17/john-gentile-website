@@ -1,6 +1,7 @@
 awscli
 jupyter
 matplotlib
+nbconvert
 numpy
 pandas
 scikit-learn

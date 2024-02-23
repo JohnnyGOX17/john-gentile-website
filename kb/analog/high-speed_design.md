@@ -73,3 +73,5 @@ The use of plane capacitance as part of your stackup can reduce the number of ne
 
 ## References
 
+- [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
+

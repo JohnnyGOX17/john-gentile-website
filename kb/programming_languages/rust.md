@@ -59,8 +59,13 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 
+#### References
+
 * [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
-  + [tokio Tutorial](https://tokio.rs/tokio/tutorial)
+  + [ ] [tokio Tutorial](https://tokio.rs/tokio/tutorial)
+* [ ] [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
+  + [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
+  + [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 
 ### Low-Level / Embedded
 
@@ -70,6 +75,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [The embedonomicon](https://japaric.github.io/embedonomicon/preface.html)
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
+* [Learn Rust the Dangerous Way](https://cliffle.com/p/dangerust/)
 
 ### Rust for Linux Kernel Development
 
@@ -82,7 +88,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 
 ## References
 
-**NOTE:** offline documentation is locally installed with `rustup` and can be opened in your browser by simply running `rustup doc`.
+**NOTE:** offline documentation is locally installed with `rustup` and can be opened in your browser by simply running `rustup doc`. For public/open-source crates, documentation is also often found in [Docs.rs](https://docs.rs/).
 
 
 ### Rust Core Docs
@@ -109,9 +115,6 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
 * [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
-* [ ] [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
-  + [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
-  + [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
@@ -128,6 +131,4 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 ### Repos
 
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
-* [clap](https://github.com/clap-rs/clap): command line argument parser
-* [tui-rs](https://github.com/fdehau/tui-rs): Terminal User Interface (TUI) and dashboard crate
 
