@@ -44,6 +44,7 @@ Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other 
 ## References
 
 * [Linux Device Drivers, Third Edition](https://lwn.net/Kernel/LDD3/)
+* [Bootlin RT/embedded Linux training materials](https://bootlin.com/docs/)
 * [Getting Kernel Sources- CentOS 7](https://wiki.centos.org/HowTos/I_need_the_Kernel_Source)
 * [Building Kernel Module- CentOS 7](https://wiki.centos.org/HowTos/BuildingKernelModules)
 * [The Linux Kernel's Documentation](https://www.kernel.org/doc/html/latest/)

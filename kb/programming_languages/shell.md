@@ -18,7 +18,8 @@ In UNIX systems, there's a variety of shells to choose from; from the original B
 
 ## Best Practices
 
-* [Minimal safe Bash script template](https://betterdev.blog/minimal-safe-bash-script-template/)
+* [bash-template](https://github.com/JohnnyGOX17/bash-template)
+  + [Minimal safe Bash script template](https://betterdev.blog/minimal-safe-bash-script-template/)
   + [set -e, -u, -x, -o pipefail Strict Mode](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
   + [Writing Safe Shell scripts - MIT SIPB](https://sipb.mit.edu/doc/safe-shell/)
 

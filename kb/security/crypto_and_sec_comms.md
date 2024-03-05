@@ -9,9 +9,16 @@ comments: true
 ## Fundamentals
 
 
-## RF Communications
+## Application Specific 
 
-### Spreading Sequences
+### Surreptitious Software
+
+* [Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection](https://www.amazon.com/Surreptitious-Software-Obfuscation-Watermarking-Tamperproofing/dp/0321549252)
+* [droberson/ELFcrypt](https://github.com/droberson/ELFcrypt)
+
+### RF Communications
+
+#### Spreading Sequences
 
 - [ ] [A chaotic direct-sequence spread-spectrum communication system - IEEE](https://ieeexplore.ieee.org/document/582834)
 - [ ] [Chaotic sequences for spread spectrum: an alternative to PN-sequences - IEEE](https://ieeexplore.ieee.org/document/200803)

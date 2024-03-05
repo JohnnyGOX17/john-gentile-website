@@ -63,6 +63,14 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 
 ## Real-Time
 
+### Real-Time Operating Systems (RTOS)
+
+* [FreeRTOS](https://www.freertos.org/)
+  + [FreeRTOS Kernel Book](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book)
+* [The Power of Ten - Rules for Developing Safety Critical Code, NASA/JPL](https://spinroot.com/gerard/pdf/P10.pdf)
+* [GN&C Fault Protection Fundamentals, JPL & CalTech](https://trs.jpl.nasa.gov/bitstream/handle/2014/41696/08-0125.pdf)
+
+
 ## Intrinsics
 
 ### ISA Guides & Reference

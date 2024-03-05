@@ -71,6 +71,22 @@ The use of plane capacitance as part of your stackup can reduce the number of ne
 ![plane_cap](plane_cap.png)
 
 
+## Checklists
+
+### Schematic
+
+### Layout
+
+### Board Bring-Up
+
+1. Visual inspection
+2. Check for shorts with DMM
+3. Connect bench DC power supply and check for proper voltages (and load steps/responses/ripple).
+4. Measure oscillators.
+5. Start digital bringup (JTAG, FW loading, etc.).
+
+For more, see [9 Steps to bring up a freescale board](https://fedevel.com/blog/9-steps-to-bring-up-a-freescale-i-mx6-board-to-life).
+
 ## References
 
 - [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
