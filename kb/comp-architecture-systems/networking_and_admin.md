@@ -6,7 +6,14 @@ top-category: Computer Architecture and Systems
 comments: true
 ---
 
-## Common Tasks
+## Common Network Admin Tasks
+
+### Routing
+
+* Manually map an alias/hostname to an IP address by adding to `/etc/hosts` file, like:
+```
+192.168.56.4    mylinuxbox
+```
 
 ### SSH
 

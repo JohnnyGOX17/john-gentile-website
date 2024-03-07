@@ -77,11 +77,23 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 #### CMake
 
 * [CMake](https://cmake.org/)
-* [CMake Tutorial](https://cmake.org/cmake-tutorial/)
+  + [CMake Getting Started](https://cmake.org/getting-started/)
+  + [CMake Tutorial](https://cmake.org/cmake-tutorial/)
+  + [Professional CMake; A Practical Guide](https://crascit.com/professional-cmake/)
+
+#### Bazel
+
+* [Bazel](https://bazel.build/)
 
 #### LLVM/Clang
 
 * [Clang Compiler](http://clang.llvm.org/docs/UsersManual.html)
+
+
+### Testing
+
+* [GoogleTest](https://github.com/google/googletest): C++ test and mocking framework.
+  + [GoogleTest User Guide](https://google.github.io/googletest/)
 
 
 ### Code Analysis Tools

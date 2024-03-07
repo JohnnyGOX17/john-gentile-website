@@ -24,8 +24,10 @@ comments: true
 
 - A new Rust project can be created by running `$ cargo new <project_name>` and, by default, creates a variety of helpful files:
   + Creates a `.gitignore` file and -if not already within a git repo- initializes a new Git repo
+    * To not have a Git repo instantiated, pass `--vcs none`.
   + A [TOML](https://toml.io/) config file `Cargo.toml` that describes the metadata and dependencies of the Rust project.
   + A `src/` directory in which Rust source should live.
+  + Add `--lib` to the end of `cargo new` to create a library (no binary compilation target).
 
 For more info, [see The Cargo Book](https://doc.rust-lang.org/cargo/index.html).
 
@@ -116,10 +118,12 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
 * [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
+  - [Main website for rustlings](https://rustlings.cool/)
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
 * [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
 * [ ] [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
+* [ ] [High Assurance Rust](https://highassurance.rs/)
 
 #### Books
 
@@ -131,4 +135,5 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 ### Repos
 
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
+* [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep): very fast grep replacement, with great reference Rust codebase.
 
