@@ -23,6 +23,7 @@ comments: true
 * The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation.
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
   + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
+  + At the same time, don't fall victim to starting things but never finishing them; "Stop starting and start finishing".
 * Happiness is a mindset, not an achievement or place.
   + Don't put-off happiness till a future goal or milestone is reached. Live in the now. [Enjoy the journey, not just the end state](https://www.cs.utexas.edu/users/dahlin/bookshelf/hamming.html).
   + Sometimes having a dream is more important than achieving one; it can give you something to look forward to, a reason to get out of bed and work to be better.

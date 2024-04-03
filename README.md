@@ -16,6 +16,7 @@ A useful strategy to find references, or possible duplicates, is to run `$ ag --
 ## TODO:
 
 * [ ] Use [nbconvert](https://nbconvert.readthedocs.io/en/latest/customizing.html) to export Jupyter notebooks to HTML and use the consistent CSS/styling of other Markdown webpages, rather than Jupyter Jeykyll plugin.
+* [ ] Use [jampack](https://github.com/divriots/jampack) to optimize static site generation, add to pipeline
 
 ## References
 
