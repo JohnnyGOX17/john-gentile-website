@@ -36,6 +36,11 @@ Linux device drivers are also modular (referred to commonly as kernel modules) i
 
 ## Compilation & Tools
 
+### Debugging
+
+* For JTAG (and ARM SWD, etc.) debugging, see [OpenOCD](https://openocd.org/)
+  + [OpenOCD User's Guide](https://openocd.org/doc-release/html/index.html)
+
 ### Vim YCM Completion
 
 Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other tools rely on the clang `compile_commands.json` that usually is fed by CMake, and we don't care about protablility or CMake since this is for the Linux kernel, we can generate the JSON file to aid in development of kernel code (e.g. parse kernel headers and have proper flags) by using [Bear](https://github.com/rizsotto/Bear): install `bear` and then run `$ bear make` to generate a `compile_commands.json` from the make process.
