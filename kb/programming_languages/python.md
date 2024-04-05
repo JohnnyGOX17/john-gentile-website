@@ -177,6 +177,17 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 ============================ 1 failed in 0.12s =============================
 ```
 
+## Packaging
+
+* [Python Packaging User Guide](https://packaging.python.org/en/latest/)
+
+### Virtual Environments `venv`
+
+Python virtual environments- named [venv](https://docs.python.org/3/library/venv.html)- are used to isolate packages and tool versions. It's suggested when working with a Python library that uses third party packages to [use pip in a venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/). Generally, the steps to create and activate a `venv` are:
+1. Create the environment (need only do once, usually at the root of a project repo): `$ python3 -m venv .venv`.
+2. Activate the `venv`: `$ source .venv/bin/activate`.
+3. Do Python things, like `pip` install required packages: `$ python3 -m pip install -r requirements.txt`.
+4. When done, deactivate the `venv` with simply: `$ deactivate`.
 
 ## Other Useful Tools
 
