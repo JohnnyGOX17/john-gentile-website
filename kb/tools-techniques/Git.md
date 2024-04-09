@@ -148,6 +148,7 @@ See more about detailed patches and messaging in the Linux Kernel documentation 
 ### Useful Tools
 
 * `git diff`: is a basic diff tool for showing changes on tracked files you haven't staged yet. Use the `--staged` option to compare your staged changes to your last commit.
+* [Improve Git Monorepo Performance with a file system monitor](https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/)
 
 ## Configuration & Customization
 
