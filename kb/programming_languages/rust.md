@@ -101,6 +101,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html): Learn how to make awesome documentation for your crate.
 * [Rustc Book](https://doc.rust-lang.org/rustc/index.html): Familiarize yourself with the knobs available in the Rust compiler.
 * [Compiler Error Index](https://doc.rust-lang.org/error-index.html): In-depth explanations of the errors you may see from the Rust compiler.
+* [Rust Conf](https://rustconf.com/)
 
 ### Application Domain Docs
 

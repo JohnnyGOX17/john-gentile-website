@@ -91,3 +91,8 @@ For more, see [9 Steps to bring up a freescale board](https://fedevel.com/blog/9
 
 - [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
 
+### Conferences
+
+* [DesignCon](https://www.designcon.com/en/home.html)
+
+

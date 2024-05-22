@@ -177,6 +177,12 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 ============================ 1 failed in 0.12s =============================
 ```
 
+
+### Other Testing Tools
+
+* [tox](https://tox.wiki/en/latest/) automates standardized testing across Python platforms and environments.
+
+
 ## Packaging
 
 * [Python Packaging User Guide](https://packaging.python.org/en/latest/)
@@ -188,6 +194,27 @@ Python virtual environments- named [venv](https://docs.python.org/3/library/venv
 2. Activate the `venv`: `$ source .venv/bin/activate`.
 3. Do Python things, like `pip` install required packages: `$ python3 -m pip install -r requirements.txt`.
 4. When done, deactivate the `venv` with simply: `$ deactivate`.
+
+
+### Packaging and Uploading Python Projects
+
+See the [tutorial on Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/) and register an account on [PyPI](https://pypi.org/) to publicly share your project. After setting up the repo structure and `pyproject.toml`, you can:
+* Build the distribution archive using:
+  + `$ python3 -m pip install --upgrade build`
+  + `$ python3 -m build`
+* Install locally and automatically track any edits to the underlying repo with:
+  + `$ python3 -m pip install --editable .` (from within the repo top-level).
+* Uninstall package with `$ python3 -m pip uninstall <package name> -y`
+
+If your `pyproject.toml` properly includes the package dependencies, calling `pip install` will also install the correct dependencies as well. You can also [install optional dependencies by specifying the list expicitly](https://stackoverflow.com/a/69977707/5416738), like `pip install .[docs]`.
+
+### Documenting Your Project
+
+A great way to document your Python project, as well as docstrings, in Markdown is using [MkDocs](https://www.mkdocs.org/). [This is an example on setting up a repo](https://realpython.com/python-project-documentation-with-mkdocs/) for MkDocs.
+
+Other documentation frameworks which use reStructuredText (`*.rst`) format are:
+* [Read the Docs](https://docs.readthedocs.io/en/stable/index.html)
+* [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
 
 ## Other Useful Tools
 

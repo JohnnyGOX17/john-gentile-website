@@ -43,6 +43,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 
 - **[RTL-SDR Quick Start Guide](https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/):** general guides to RTL-SDR features and dipole antenna usage.
 - **[RTL-SDR for Linux Quick Start Guide](https://ranous.wordpress.com/rtl-sdr4linux/):** installation instructions for necessary drivers and libraries to get up and running.
+- [osmocom rtl-sdr wiki](https://osmocom.org/projects/rtl-sdr/wiki)
 
 ## References
 

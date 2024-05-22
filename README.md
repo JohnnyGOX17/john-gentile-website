@@ -15,7 +15,9 @@ A useful strategy to find references, or possible duplicates, is to run `$ ag --
 
 ## TODO:
 
-* [ ] Use [nbconvert](https://nbconvert.readthedocs.io/en/latest/customizing.html) to export Jupyter notebooks to HTML and use the consistent CSS/styling of other Markdown webpages, rather than Jupyter Jeykyll plugin.
+* [ ] Use [nbconvert](https://nbconvert.readthedocs.io/en/latest/usage.html#convert-markdown) to export Jupyter notebooks to Markdown and PNG folders, rather than Jupyter Jeykyll plugin.
+  - Make Python script to insert common frontmatter across generated and handwritten markdown
+  - Figure out how to make code cell output (which is output as 4-space in markdown as opposed to Python codeblocks) look different than Python code blocks
 * [ ] Use [jampack](https://github.com/divriots/jampack) to optimize static site generation, add to pipeline
 
 ## References

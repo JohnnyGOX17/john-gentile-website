@@ -58,3 +58,15 @@ set_msg_config -id {Vivado 12-1008} -new_severity {ERROR}
 
 * PCS loopback can hide GT RefClk issues (wrong frequency causing non-standard line rates for instance)
 
+
+## References
+
+### Conferences
+
+* [ACM-FPGA](https://dl.acm.org/conference/fpga)
+* [ISFPGA](https://www.isfpga.org/program/)
+* [FPL](https://fpl.org/)
+* [International Symposium on Field-Programmable Custom Computing Machines (FCCM)](https://www.fccm.org/)
+* [Open Source Firmware Conference (OSFC)](https://www.osfc.io/)
+* [DVCon](https://dvcon.org/)
+
