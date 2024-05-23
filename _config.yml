@@ -10,7 +10,6 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 plugins:
-  - jekyll-jupyter-notebook
   - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-scholar
@@ -38,7 +37,7 @@ scholar:
 
 # Metadata for plugins like seo-tag and feed
 title: John-Gentile
-description: Engineering creatively. Learning and development through open-source.
+description: Engineering science into reality.
 url: https://john-gentile.com
 author: John Gentile
 logo: /assets/images/Gent-systems_icon_black.png

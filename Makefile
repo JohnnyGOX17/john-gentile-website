@@ -32,6 +32,7 @@ ifeq ($(UNAME_S),Linux)
 endif
 ifeq ($(UNAME_S),Darwin)
 	# NOTE: for macOS on Apple Silicon https://github.com/BillRaymond/install-jekyll-apple-silicon/blob/main/README.md
+	#  if you run into errors down the line, do uninstall step and reinstall here
 	gem install --user-install bundler jekyll
 endif
 	bundle install --jobs $(shell nproc)
@@ -43,10 +44,10 @@ serve:
 	# start the server since `jekyll serve` blocks till Ctrl+C. If building
 	# takes longer than 7 seconds, adjust accordingly
 ifeq ($(UNAME_S),Linux)
-	sleep 7 && xdg-open http://localhost:4000/ &
+	sleep 3 && xdg-open http://localhost:4000/ &
 endif
 ifeq ($(UNAME_S),Darwin)
-	sleep 7 && open "http://localhost:4000/" &
+	sleep 3 && open "http://localhost:4000/" &
 endif
   # Build static site and serve up locally, but automatically rebuild and
 	# reload if a tracked file is changed
@@ -66,4 +67,7 @@ endif
 
 update:
 	bundle update --all
+
+uninstall:
+	gem uninstall bundler jekyll
 

@@ -11,27 +11,11 @@ Building a technical blog or website of any kind poses many unique challenges, b
 
 [Jupyter Notebooks](https://jupyter.org/) are currently a very popular way for taking notes on research to prototyping Python code on a variety of frameworks. Jupyter Notebooks are great because the text and equations can be easily entered as Markdown, and the Python code blocks are interactive and executable. The challenge this presents is when you have valuable notes and/or code that you want to maintain as part of a Jupyter Notebook, but still want to have the ability to post the notebook as part of your website (or any HTML medium really).
 
-I've tried more intensive methods such as [embedding notebooks using binder](https://elc.github.io/posts/embed-interactive-notebooks/) or [embedding Google Colab notebooks in Medium posts](https://medium.com/@lzhou1110/how-to-embed-google-colaboratory-into-medium-in-3-steps-487b525b103c), however the easiest tool I've found is the convenient Jekyll plugin [red-data-tools/jekyll-jupyter-notebook](https://github.com/red-data-tools/jekyll-jupyter-notebook).
-
-What's great is, once its installed, you can simply embed a Jupyter Notebook into a static webpage using a simple code block within your Markdown page:
-{% raw %}
-```markdown
-{::nomarkdown}
-{% jupyter_notebook "/path/to/notebooks/my_notebook.ipynb" %}
-{:/nomarkdown}
-```
-{% endraw %}
-
-The result is a perfectly formatted, rendered output of your notebook, directly within your post:
+I've tried more intensive methods such as [embedding notebooks using binder](https://elc.github.io/posts/embed-interactive-notebooks/) or [embedding Google Colab notebooks in Medium posts](https://medium.com/@lzhou1110/how-to-embed-google-colaboratory-into-medium-in-3-steps-487b525b103c), however the most flexible tool is `nbconvert` that shops with Jupyter packages. It can convert notebooks into HTML, Markdown, PDF and a variety of other formats.
 
 
+For documentation and website purposes, the non-interactive, static presentation should be fine; any necessary support for actual code edits or dynamic response should simply be handled with a link to the Notebook in a full environment with execution support, such as [Google Colab](https://colab.research.google.com/). What's also great about Google Colab is that [you can directly run and edit notebooks on GitHub](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb#scrollTo=8QAWNjizy_3O), and create an easy "Open in Colab" badge like:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/kb/math_and_signal_processing/notebooks/tf_basics.ipynb)
-
-{::nomarkdown}
-{% jupyter_notebook "/kb/math_and_signal_processing/notebooks/tf_basics.ipynb" %}
-{:/nomarkdown}
-
-For documentation and website purposes, the non-interactive, static presentation should be fine; any necessary support for actual code edits or dynamic response should simply be handled with a link to the Notebook in a full environment with execution support, such as [Google Colab](https://colab.research.google.com/). What's also great about Google Colab is that [you can directly run and edit notebooks on GitHub](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb#scrollTo=8QAWNjizy_3O), similar to the "Open in Colab" badge in the above example.
 
 Another great plugin for technical research blogging is [inukshuk/jekyll-scholar](https://github.com/inukshuk/jekyll-scholar); this plugin inserts and formats bibliographies for Jekyll posts and makes citing sources very easy, similar to the process used in LaTeX documents. You can set the citation style to a variety of publication standards, as well as reference standard `*.bib` and `*.bibtex` bibliography files.
 

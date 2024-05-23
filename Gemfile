@@ -10,7 +10,6 @@ gem "jekyll", "~> 4.0.1"
 group :jekyll_plugins do
   gem "json"
   gem "jekyll-feed"
-  gem "jekyll-jupyter-notebook"
   gem "jekyll-last-modified-at"
   gem "jekyll-scholar"
   gem "jekyll-sitemap"

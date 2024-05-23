@@ -24,3 +24,8 @@ A useful strategy to find references, or possible duplicates, is to run `$ ag --
 
 * [Jekyll Docs](https://jekyllrb.com/docs/)
 
+```
+docker build -t jekyll .
+docker run -p 4000:4000 -v /Users/jgentile/src/john-gentile-website:/site jekyll
+```
+

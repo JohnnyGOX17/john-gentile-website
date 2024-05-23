@@ -7,20 +7,21 @@ on:
 
 jobs:
   deploy:
+    name: Build website and push to S3 bucket
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.9"
 
         # Cache to shorten build times and decrease load on servers
         # Don't have to install/fetch Gems/pips on every build
         #  https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('Gemfile.lock') }}
 
       - name: Install Python dependencies
         run: |
@@ -33,7 +34,7 @@ jobs:
       - name: Ruby setup
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.0
           # runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
 
