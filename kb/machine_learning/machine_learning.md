@@ -2,7 +2,7 @@
 title: Machine Learning
 layout: default
 kb: true
-top-category: Math & Signal Processing
+top-category: Machine Learning
 comments: true
 wip: true
 ---
@@ -11,7 +11,7 @@ wip: true
 
 It is useful to review [linear algebra concepts](linear_algebra.html) before continuing.
 
-blah blah blah {% cite Goodfellow --file machine_learning %}
+TBD reference {% cite Goodfellow --file machine_learning %}
 
 ### Intro ML
 

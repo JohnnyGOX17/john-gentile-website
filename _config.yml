@@ -19,6 +19,8 @@ plugins:
   - liquid_reading_time
   - rouge
 exclude:
+  - "*.ipynb"
+  - "*.py"
   - README.md
   - TODO.md
   - Gemfile
@@ -30,6 +32,9 @@ exclude:
   - gulpfile.js
   - requirements.txt
   - tags
+  - .venv/
+  - .ipynb_checkpoints/
+  - .DS_Store
 # config for https://github.com/inukshuk/jekyll-scholar
 scholar:
   bibliography_template: bib

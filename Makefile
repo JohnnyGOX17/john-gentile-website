@@ -8,6 +8,7 @@ UNAME_S := $(shell uname -s)
 build:
 	# Clean stale data
 	rm -rf ./_site
+	./notebook_to_markdown.py
 	# Generate intermediate files from Jekyll (use additional publish configs)
 	bundle exec jekyll build --config _config.yml,_config-publish.yml
 	# Write current git revision to file for tracking
@@ -36,10 +37,13 @@ ifeq ($(UNAME_S),Darwin)
 	gem install --user-install bundler jekyll
 endif
 	bundle install --jobs $(shell nproc)
-	pip3 install -r requirements.txt
+	python3 -m venv .venv
+	source .venv/bin/activate
+	python3 -m pip install -r requirements.txt
 
 serve:
 	rm -rf ./_site
+	./notebook_to_markdown.py
 	# Funky workaround to get web browser to launch page after we build and
 	# start the server since `jekyll serve` blocks till Ctrl+C. If building
 	# takes longer than 7 seconds, adjust accordingly

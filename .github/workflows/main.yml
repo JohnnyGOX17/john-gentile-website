@@ -40,6 +40,7 @@ jobs:
 
       - name: Jekyll Build
         run: |
+          python3 notebook_to_markdown.py
           # Generate intermediate files from Jekyll (use additional publish configs)
           bundle exec jekyll build --config _config.yml,_config-publish.yml
           # Write current git revision to file for tracking

@@ -74,8 +74,9 @@ typings/
 # macOS
 .DS_Store
 
-# Jupyter (Lab) Notebooks
+# Python & Jupyter (Lab) Notebooks
 .ipynb_checkpoints/
+.venv/
 
 # Gem bundle configs
 .bundle
