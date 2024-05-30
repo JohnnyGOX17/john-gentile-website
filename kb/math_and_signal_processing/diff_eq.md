@@ -17,11 +17,24 @@ Differential equations are important for fields such as engineering, physics, sc
 The simplest ODEs are first-order because they involve the first derivative of an unknown function and no higher derivatives; specific differential equations are generally described of order _n_ where the _nth_ derivative of the unknown function is the highest derivative present. These unknown functions represent $$ y(x) $$ or $$ y(t) $$ depending on the units in question.
 
 Thus, a _first-order ODE_ takes the explicit form
-\$\$ y{}'=f(x,y) $$
+
+$$ 
+\begin{equation}
+y{}'=f(x,y) 
+\end{equation}
+$$
+
+Equation $$(1)$$ is.
 
 ### Solutions
 
-A function \$\$ y=h(x) $$
+A function 
+
+$$
+\begin{equation}
+y=h(x) 
+\end{equation}
+$$
 
 is a solution to an ODE on some 
 

@@ -114,7 +114,11 @@ array([[0.110443  , 0.08511195, 0.11377702, 0.07295272, 0.0555098 ,
 
 `losses.SparseCategoricalCrossentropy` converts a vector of logits and returns a scalar loss for each example. The loss is equal to the negative log probability of the true class (zero if the model is sure of the correct class).
 
-Thus, the untrained model gives probabilities close to random (0.1 for each class), so initial loss should be close to $$-\log(0.1) \approx 2.3$$
+Thus, the untrained model gives probabilities close to random (0.1 for each class), so initial loss should be close to 
+$$
+-\log(0.1) \approx 2.3
+$$
+
 
 
 ```python

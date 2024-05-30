@@ -17,43 +17,63 @@ Since we are given _labeled_ training examples (accurate census sample data whic
 ### Performance Measure
 
 Typical for regression problems, we will use the Root Mean Square Error (RMSE) measurement to give an idea of how much error the system is making with predictions at any given time. RMSE is calculated by:
-$$ RMSE(\boldsymbol{X},h) = \sqrt{ \frac{1}{m} \sum^{m}_{i=1} \left (h(\boldsymbol{x}^{(i)}) - y^{(i)} \right )^{2} } $$
+
+$$
+ RMSE(\boldsymbol{X},h) = \sqrt{ \frac{1}{m} \sum^{m}_{i=1} \left (h(\boldsymbol{x}^{(i)}) - y^{(i)} \right )^{2} } 
+$$
+
 
 Where: 
-* $m$ is the number of samples in the dataset being currently measured
-* $\boldsymbol{x^{(i)}}$ is a vector of all feature values (excluding label, $y^{(i)}$) of the i-th instance in the dataset
-  + For instance, if a district in the dataset has a longitude location of -118.29deg, latitude of 33.91deg, population of 1416, and a median income of \\$38,372 - with the label/median house value of \\$156,400- then the vector and label would look like:
-  $$ \boldsymbol{x^{(i)}} = \begin{pmatrix}
+* $$m$$ is the number of samples in the dataset being currently measured
+* $$\boldsymbol{x^{(i)}}$$ is a vector of all feature values (excluding label, $$y^{(i)}$$) of the i-th instance in the dataset
+  + For instance, if a district in the dataset has a longitude location of -118.29deg, latitude of 33.91deg, population of 1416, and a median income of \$38,372 - with the label/median house value of \$156,400- then the vector and label would look like:
+  
+$$
+ \boldsymbol{x^{(i)}} = \begin{pmatrix}
   -118.29 \\
   33.91 \\
   1416 \\
   38372
-  \end{pmatrix} $$
-  $$ y^{(1)} = 156400 $$
-* $\boldsymbol{X}$ is the matrix containing all feature values (excluding labels) for all instances in the dataset, which with the above example values, looks like:
-$$ \boldsymbol{X} = \begin{bmatrix}
-<p style="font-family:monospace; white-space:pre-wrap">
- \left ( \boldsymbol{x^{(1)}} \right )^{T} \\
- \left ( \boldsymbol{x^{(2)}} \right )^{T} \\
- \vdots \\
- \left ( \boldsymbol{x^{(N)}} \right )^{T} \\
-</p>
+  \end{pmatrix} 
+$$
+
+  
+$$
+ y^{(1)} = 156400 
+$$
+
+* $$\boldsymbol{X}$$ is the matrix containing all feature values (excluding labels) for all instances in the dataset, which with the above example values, looks like:
+
+$$
+ \boldsymbol{X} = \begin{bmatrix}
+     \left ( \boldsymbol{x^{(1)}} \right )^{T} \\
+     \left ( \boldsymbol{x^{(2)}} \right )^{T} \\
+     \vdots \\
+     \left ( \boldsymbol{x^{(N)}} \right )^{T} \\
    \end{bmatrix}
    = \begin{pmatrix} -118.29 & 33.91 & 1416 & 38372 \\
-<p style="font-family:monospace; white-space:pre-wrap">
-                  \vdots & \vdots & \vdots & \vdots \end{pmatrix} $$
-</p>
-* $h$ is the system's prediction function (aka _hypothesis_); it's the system's output given a feature vector $\boldsymbol{x}^{(i)}$, $\hat{y}^{(i)}=h(\boldsymbol{x}^{(i)})$
+                      \vdots & \vdots & \vdots & \vdots \end{pmatrix} 
+$$
+
+* $$h$$ is the system's prediction function (aka _hypothesis_); it's the system's output given a feature vector $$\boldsymbol{x}^{(i)}$$, $$\hat{y}^{(i)}=h(\boldsymbol{x}^{(i)})$$
 
 Once could use another performance function which measures deltas between the prediction vectors and target value vectors, called Mean Absolute Error (MAE):
-$$ MAE(\boldsymbol{X},h) = \frac{1}{m}\sum^{m}_{i=1}\left | h(\boldsymbol{x}^{(i)} - y^{(i)}  \right | $$
+
+$$
+ MAE(\boldsymbol{X},h) = \frac{1}{m}\sum^{m}_{i=1}\left | h(\boldsymbol{x}^{(i)} - y^{(i)}  \right | 
+$$
+
 
 These various distance measures are also called _norms_:
-* Computing RMSE corresponds to the _Euclidean norm_, or the $\ell_{2}$ norm, denoted colloquially as $\begin{Vmatrix} \cdot \end{Vmatrix}$ (or $\begin{Vmatrix} \cdot \end{Vmatrix}_{2}$ more specifically)
-* Computing MAE correspongs to the _Manhattan norm_ (because it can measure the distance between two city points where you can only travel in orthogonal blocks), or the $\ell_{1}$ norm, denoted $\begin{Vmatrix} \cdot \end{Vmatrix}_{1}$
+* Computing RMSE corresponds to the _Euclidean norm_, or the $$\ell_{2}$$ norm, denoted colloquially as $$\begin{Vmatrix} \cdot \end{Vmatrix}$$ (or $$\begin{Vmatrix} \cdot \end{Vmatrix}_{2}$$ more specifically)
+* Computing MAE correspongs to the _Manhattan norm_ (because it can measure the distance between two city points where you can only travel in orthogonal blocks), or the $$\ell_{1}$$ norm, denoted $$\begin{Vmatrix} \cdot \end{Vmatrix}_{1}$$
 
-In general, the $\ell_{k}$ norm of a vector $\boldsymbol{v}$ containing $n$ elements is defined as:
-$$ \begin{Vmatrix} v \end{Vmatrix}_{k} = \left ( |v_{0}|^{k} + |v_{1}|^{k} + \dotsb + |v_{n}|^{k} \right )^{1/k} $$
+In general, the $$\ell_{k}$$ norm of a vector $$\boldsymbol{v}$$ containing $$n$$ elements is defined as:
+
+$$
+ \begin{Vmatrix} v \end{Vmatrix}_{k} = \left ( |v_{0}|^{k} + |v_{1}|^{k} + \dotsb + |v_{n}|^{k} \right )^{1/k} 
+$$
+
 The higher the norm index, the more it focuses on large values and neglects small ones, hence why RMSE is more sensitive to outliers than MAE, however when outliers are exponentially rare, RMSE performs very well and is preferred.
 
 
@@ -255,7 +275,7 @@ plt.show()
 
 
 Note that in the above histogram plots, there are a couple important points:
-* `median_income` values were normalized to values between 0.5 and 15 (e.g. a value of 3 is equivalent to about \\$30k). This preprocessing is fine, and common in ML tasks.
+* `median_income` values were normalized to values between 0.5 and 15 (e.g. a value of 3 is equivalent to about \$30k). This preprocessing is fine, and common in ML tasks.
 * `housing_median_age` and `median_house_value` values are capped, which may cause an issue since the house value is our target attribute (label), and you don't want the ML model to learn that prices never go above that limit.
 * Attributes have very different scales, which we'll need to tackle with feature scaling.
 * Many of the plots are _tail-heavy_ (the distribution of values is not symmetrical about the mean) which can be difficult for some ML algorithms to detect patterns.
