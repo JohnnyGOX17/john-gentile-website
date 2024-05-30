@@ -7,6 +7,8 @@ comments: true
 wip: false
 ---
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/./kb/machine_learning/02_CA_Housing_Prices_example.ipynb)
+
 
 Here we'll use housing price dataset from the 1990 CA census from StatLib repository which contains metric such as population, income, and housing price for each block group (the smallest geographical unit for which the census publishes sample data, typically 600 to 3,000 people). Our goal is for our ML model to accurately predict the median housing price in any district, given all other metrics.
 

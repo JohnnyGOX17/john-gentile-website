@@ -7,6 +7,8 @@ comments: true
 wip: false
 ---
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/./kb/machine_learning/MNIST_intro.ipynb)
+
 
 _Copied from [TensorFlow Tutorials](https://www.tensorflow.org/tutorials/quickstart/beginner)_
 

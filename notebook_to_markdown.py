@@ -6,6 +6,8 @@ import subprocess
 
 STYLE_HEADER="<p style=\"font-family:monospace; white-space:pre-wrap\">\n"
 STYLE_TRAILER="</p>\n"
+#GOOGLE_COLAB_URL="[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/kb/math_and_signal_processing/notebooks/tf_basics.ipynb)"
+GOOGLE_COLAB_URL="[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/"
 
 def match_subdir_to_category(subdir: str) -> str:
     match subdir:
@@ -18,13 +20,14 @@ def match_subdir_to_category(subdir: str) -> str:
 def convert_jupyter_to_markdown(file_path: str):
     print(subprocess.run(["jupyter", "nbconvert", "--to", "markdown", file_path]))
 
-def convert_jupyter_md_output(file_path: str, category: str):
+def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
     in_code_block = False
     in_output_block = False
     in_math_block = False
     header_found = False
     output_lines = []
 
+    # Add YAML header for Jekyll metadata and site generation
     output_lines.append("---\n")
     output_lines.append("title: TBD\n")
     output_lines.append("layout: default\n")
@@ -33,6 +36,9 @@ def convert_jupyter_md_output(file_path: str, category: str):
     output_lines.append("comments: true\n")
     output_lines.append("wip: false\n")
     output_lines.append("---\n\n")
+
+    # Add Google colab badge to also run notebook source interactively
+    output_lines.append(GOOGLE_COLAB_URL + jupyter_path + ")\n\n")
 
     with open(file_path, "r") as f:
         for line in f:
@@ -95,4 +101,4 @@ if __name__ == "__main__":
                 markdown_file = os.path.join(subdir, file[:-6] + ".md")
 
                 convert_jupyter_to_markdown(jupyter_file)
-                convert_jupyter_md_output(markdown_file, top_category)
+                convert_jupyter_md_output(jupyter_file, markdown_file, top_category)
