@@ -9,8 +9,9 @@ comments: true
 ## General Advice
 
 * Control your control-ables, and don't worry about things out of your control.
-* You can achieve anything with discipline (habits, reinforcing systems) and time.
+* You can achieve anything with discipline (habits, reinforcing systems), confidence, and time.
   + Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results. Habits are the compound interest of self-improvement; they don't seem like much on a given day, but over long periods of time, their effects can be massive. Your habits therefore set the trajectory of your life.
+  + Confidence guides your mind, and then your actions, into doing. ["The Man who says he can, and the man who says he can not.. Are both correct"](./quotes.html)
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
   + Things that get measured get improved, and things that get scheduled get done.
   + Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.

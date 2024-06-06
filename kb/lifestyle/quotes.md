@@ -49,6 +49,10 @@ comments: true
 
 ### Perseverance
 
+> The Man who says he can, and the man who says he can not.. Are both correct
+
+- Confucius
+
 > We suffer more in our imagination more often than in reality.
 
 - Seneca
