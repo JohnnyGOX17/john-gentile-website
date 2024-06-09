@@ -37,6 +37,34 @@ If you have some static web resources (e.g. HTML pages, etc.), you can quickly s
 `$ python -m http.server <port_number>`
 
 
+## Virtualization and Distributed Systems
+
+### Virtual Machines (VM)
+
+* [Qemu](http://wiki.qemu-project.org/Main_Page)
+* [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox)
+
+### Containers
+
+* [Docker](https://www.docker.com/)
+* [wsargent/docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
+
+#### Other Docker commands
+
+* Restart last container created: `docker start $(docker ps -q -l)`
+  + Reattach terminal & stdin to last: `docker attach $(docker ps -q -l)`
+* List currently running Docker instances: `docker ps -a`
+* Stop all containers: `docker kill $(docker ps -q)`
+* Remove all containers: `docker rm $(docker ps -a -q)`
+* Remove all docker images: `docker rmi $(docker images -q)`
+
+### References
+
+* [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns)
+* [Docker in Practice](https://www.manning.com/books/docker-in-practice)
+* [Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action)
+
+
 ## References
 
 * [Red Hat Enterprise Linux 7 System Administrator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/index.html)
