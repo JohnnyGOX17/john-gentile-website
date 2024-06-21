@@ -45,6 +45,11 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 - **[RTL-SDR for Linux Quick Start Guide](https://ranous.wordpress.com/rtl-sdr4linux/):** installation instructions for necessary drivers and libraries to get up and running.
 - [osmocom rtl-sdr wiki](https://osmocom.org/projects/rtl-sdr/wiki)
 
+### Other SDR Hardware
+
+* [LimeSDR Mini 2.0](https://www.crowdsupply.com/lime-micro/limesdr-mini-2): open-source, small form factor USB 3.0 SDR, utilizing the [Lime LMS7002M RF ASIC](https://limemicro.com/technology/lms7002m/).
+  + There's also the original, slightly larger [LimeSDR](https://limemicro.com/products/boards/limesdr/)
+
 ## References
 
 - [ ] [Learn SDR with Prof Jason - YouTube Playlist](https://www.youtube.com/playlist?list=PLywxmTaHNUNyKmgF70q8q3QHYIw_LFbrX)
