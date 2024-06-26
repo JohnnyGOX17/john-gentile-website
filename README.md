@@ -13,7 +13,18 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 
 A useful strategy to find references, or possible duplicates, is to run `$ ag --markdown <search term>` from the repo toplevel.
 
-## TODO:
+## Other Tools
+
+* Launch notebooks with `$ jupyter lab`
+
+### Docker Dev Setup
+
+```
+docker build -t jekyll .
+docker run -p 4000:4000 -v /Users/jgentile/src/john-gentile-website:/site jekyll
+```
+
+## TODO
 
 * [ ] Use [jampack](https://github.com/divriots/jampack) to optimize static site generation, add to pipeline
 
@@ -21,8 +32,4 @@ A useful strategy to find references, or possible duplicates, is to run `$ ag --
 
 * [Jekyll Docs](https://jekyllrb.com/docs/)
 
-```
-docker build -t jekyll .
-docker run -p 4000:4000 -v /Users/jgentile/src/john-gentile-website:/site jekyll
-```
 

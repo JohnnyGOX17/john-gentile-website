@@ -1,5 +1,8 @@
 awscli
 jupyter
+jupyterlab
+jupyterlab-vim
+jupyterlab-spellchecker
 matplotlib
 nbconvert
 numpy
