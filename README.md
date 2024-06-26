@@ -26,6 +26,8 @@ docker run -p 4000:4000 -v /Users/jgentile/src/john-gentile-website:/site jekyll
 
 ## TODO
 
+* [ ] hash each jupyter notebook file, keep local copy (gitignore and ignore from site build), so notebook->markdown process only happens when changes happen.
+  + [ ] finish moving over and organizing dsp notebooks
 * [ ] Use [jampack](https://github.com/divriots/jampack) to optimize static site generation, add to pipeline
 
 ## References

@@ -28,14 +28,12 @@ deploy:
 install:
 	# Run before building on new system to install dependent packages or to
 	# update local packages
-ifeq ($(UNAME_S),Linux)
-	gem install jekyll bundler
-endif
-ifeq ($(UNAME_S),Darwin)
+	# NOTE: for Linux, don't install gems as root/sudo. As well, bundle install will
+	# try to install to $GEM_HOME, however you may need to manually set a location like:
+	#  $ bundle config set --local path ~/.gem/ruby/3.0.0/gems/
 	# NOTE: for macOS on Apple Silicon https://github.com/BillRaymond/install-jekyll-apple-silicon/blob/main/README.md
 	#  if you run into errors down the line, do uninstall step and reinstall here
 	gem install --user-install bundler jekyll
-endif
 	bundle install --jobs $(shell nproc)
 	python3 -m venv .venv
 	source .venv/bin/activate
@@ -44,17 +42,7 @@ endif
 serve:
 	rm -rf ./_site
 	./notebook_to_markdown.py
-	# Funky workaround to get web browser to launch page after we build and
-	# start the server since `jekyll serve` blocks till Ctrl+C. If building
-	# takes longer than 7 seconds, adjust accordingly
-ifeq ($(UNAME_S),Linux)
-	sleep 3 && xdg-open http://localhost:4000/ &
-endif
-ifeq ($(UNAME_S),Darwin)
-	sleep 3 && open "http://localhost:4000/" &
-endif
-  # Build static site and serve up locally, but automatically rebuild and
-	# reload if a tracked file is changed
+	# Build static site and serve up locally, but automatically rebuild and reload if a tracked file is changed
 	bundle exec jekyll serve --livereload --incremental
 
 test:
