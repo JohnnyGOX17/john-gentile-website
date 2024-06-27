@@ -2,25 +2,28 @@
 
 # Tell Linux vs macOS
 UNAME_S := $(shell uname -s)
+SITE_DIR := $(SITE_DIR)
 
-# Ports to use for local servers
-SERVE_PORT := 8888
-JUPYTER_PORT := 8889
+# Ports to use for local servers (user/env overrideable)
+SERVE_PORT ?= 8888
+JUPYTER_PORT ?= 8889
+
+PY_EXE ?= python3
 
 .SILENT: clean serve test
 
 build:
 	# Clean stale data
-	rm -rf ./_site
+	rm -rf $(SITE_DIR)
 	./notebook_to_markdown.py
 	# Generate intermediate files from Jekyll (use additional publish configs)
 	bundle exec jekyll build --config _config.yml,_config-publish.yml
 	# Write current git revision to file for tracking
-	git rev-parse HEAD > ./_site/revision
+	git rev-parse HEAD > $(SITE_DIR)/revision
 
 clean:
 	# Deleting generated files...
-	rm -rf ./_site
+	rm -rf $(SITE_DIR)
 	rm -f TODO.md
 	rm -f .sass-cache
 	rm -f .jekyll-metadata
@@ -38,12 +41,12 @@ install:
 	#  if you run into errors down the line, do uninstall step and reinstall here
 	gem install --user-install bundler jekyll
 	bundle install --jobs $(shell nproc)
-	python3 -m venv .venv
+	$(PY_EXE) -m venv .venv
 	source .venv/bin/activate
-	python3 -m pip install -r requirements.txt
+	$(PY_EXE) -m pip install -r requirements.txt
 
 serve:
-	rm -rf ./_site
+	rm -rf $(SITE_DIR)
 	./notebook_to_markdown.py
 	# Build static site and serve up locally, but automatically rebuild and reload if a tracked file is changed
 	bundle exec jekyll serve --livereload --incremental --port $(SERVE_PORT)
@@ -56,7 +59,7 @@ endif
 ifeq ($(UNAME_S),Darwin)
 	sleep 1 && open "http://localhost:$(SERVE_PORT)/" &
 endif
-	cd ./_site && python3 -m http.server $(SERVE_PORT)
+	cd $(SITE_DIR) && $(PY_EXE) -m http.server $(SERVE_PORT)
 
 update:
 	bundle update --all
