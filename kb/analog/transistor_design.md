@@ -10,19 +10,19 @@ comments: true
 
 ### $$r_{e}$$ / 'T' Model
 
-<center><img src="bjt_re_model.png"></center>
+<center><img src="images/bjt_re_model.png"></center>
 
 The _T_ or $$ r_{e} $$ model is a simple model for a BJT which is great for quickly characterizing a BJT circuit's behavior for low to mid frequencies. It is modeled as a three-terminal device, with a dynamic resistance $$r_{e}$$ and a simple, linear current-dependent current-source with gain $$\beta$$ (given from the BJT's datasheet) on base current $$i_{b}$$; by KCL, this simply means the total emitter current is $$ i_{e} = (\beta + 1)i_{b} \approx \beta i_{b} $$. _NOTE:_ the simplification of $$ i_{c} \equiv i_{e} $$ is valid for most analog analysis since the gain $$\beta$$ is large- between 100 and 300- such that removing the one extra base current $$i_{b}$$ term is $$< 1\%$$ error. The NPN model is explained here but the PNP is the same with only a difference in polarity.
 
 The collector terminal in the model is an ideal current source since a BJT operating in it's active region has nearly similar characteristics; the collector current $$i_{c}$$ is nearly independent of the collector voltage $$v_{ce}$$ (assuming $$v_{ce}$$ is high enough that BJT is not in saturation).
-<center><img src="bjt_saturation.png"></center>
+<center><img src="images/bjt_saturation.png"></center>
 This also follows the ideal current source characteristic of having nearly infinite output impedance:
 \$\$ \frac{v}{i}=r \rightarrow  \frac{\Delta v_{ce} \to \infty}{\Delta i_{c} \to 0} \approx \boxed{ r_{o} = \infty \Omega } \$\$
 
 #### BJT Output Impedance: Early Effect
 
 As shown above though, a real transistor does not exhibit perfectly constant (zero slope) output impedance in the curve above. Instead, there is a property called the **Early Effect** which describes the increase of depletion regions within the transistor with a correlation to increased bias voltage across the collector-emitter junction:
-<center><img src="Early_effect.png"></center>
+<center><img src="images/Early_effect.png"></center>
 This Early Voltage is denoted by the device parameter $$V_{A}$$ which is an imaginary intercept along the negative voltage axis which is shown to follow the slopes of resulting active region plots. The Early voltage of a device is usually around 100V, with higher values indicating higher output impedance numbers. The Early Effect and subsequent changes in depletion regions can more accurately model the collector current and output impedances knowing the Early Voltage of the device and the collector-emitter bias voltage:
 \$\$ I_{C} = I_{B} \beta (1 + \frac{ V_{CE} }{ V_{A} } ) \$\$
 \$\$ r_{o} = \frac{ V_{A} + V_{CE} }{ I_{C} } \$\$
@@ -32,13 +32,13 @@ Output impedance of a BJT can also be specified by the BJT's datasheet as output
 #### Emitter Impedance $$r_{e}$$
 
 The base emitter junction has a dynamic impedance $$r_{e}$$ that is given from the relationship of $$ \frac{v_{be}}{i_{e}} $$. Given the BJT can be seen as a forward biased diode from base to emitter, the Shockley diode equation can show the relationship between $$v_{be}$$ and $$i_{e}$$.
-<center><img src="bjt_diodes.png"></center>
+<center><img src="images/bjt_diodes.png"></center>
 \$\$ i_{e} = I_{s}(e^{\frac{v_{be}}{V_{T}}} - 1) \$\$
 
 Where $$ V_{T} = \frac{nKT}{q} $$ and $$n$$ is device parameter (~1), $$K$$ is Boltzmann constant, $$T$$ is absolute temp and $$q$$ is electron charge; at 25°C, $$ V_{T} \approx 26 mV $$. $$I_{s}$$ is saturation current ($$\approx 10^{-12}$$). So since $$\frac{v_{be}}{i_{e}}$$ is not linear, and a fixed $$r_{e}$$ is ideal for our simple model, we can pick a value of $$i_{e}$$ on the curve that is nominal for the application at hand and make linear by taking the derivative of the Shockley diode equation w.r.t. $$v_{be}$$:
 \$\$ \frac{\partial }{\partial v_{be}} \left [ I_{s}(e^{\frac{v_{be}}{V_{T}}} - 1) \right ] \Rightarrow \frac{I_{s}}{V_{T}}e^{\frac{v_{be}}{V_{T}}} \approx \frac{i_{e}}{V_{T}} \$\$
 \$\$ \frac{i_{e}}{V_{T}} = \frac{1}{r_{e}} \therefore \boxed{ r_{e} = \frac{V_{T}}{i_{e}} }\$\$
-<center><img src="shockley_derivative.png"></center>
+<center><img src="images/shockley_derivative.png"></center>
 With this equation, quick estimates of emitter impedance can be made; for instance, at room temperature and with a design specification of $$i_{e}=1mA$$, the emitter resistance is $$ \frac{26 mV}{1 mA} = 26 \Omega $$.
 
 ### Input Impedance
@@ -53,7 +53,7 @@ This same calculation follows for input impedance when resistance is added to th
 \$\$ Z_{in} = (\beta + 1)(r_{e} + R_{E}) \$\$
 
 Furthermore, the bias resistors $$R1$$ and $$R2$$ in an amplifier stage (explained more below) can be factored into the input impedance as being in parallel with this adjusted BJT impedance:
-<center><img src="CE_Zin.png" width="500"></center>
+<center><img src="images/CE_Zin.png" width="500"></center>
 \$\$ Z_{in_{amp}} = R1 \parallel R2 \parallel Z_{in_{BJT}} \$\$
 
 Again, input impedance of the BJT is directly related to $$\beta$$ but overall input impedance, due to the parallel nature of the bias resistors, is dominated by the least resistance, commonly the $$R2$$ bottom leg resistor.
@@ -63,7 +63,7 @@ Again, input impedance of the BJT is directly related to $$\beta$$ but overall i
 #### Common Emitter
 
 For a simple common emitter configuration where the output voltage comes from the collector node- note, the DC bias circuit is not present but for instructional sake, ignore for now- the voltage gain can be found using similar parameters above (given specified $$i_{c}$$, $$\beta$$ and $$r_{e}$$) using small-signal analysis (note also setting DC voltage sources like $$V_{CC} \rightarrow 0V$$):
-<center><img src="bjt_common_emitter.png"></center>
+<center><img src="images/bjt_common_emitter.png"></center>
 Voltage gain is given by: 
 \$\$ A_{v} = \frac{v_{out}}{v_{in}} = \frac{v_{c}}{v_{b}} \$\$
 
@@ -89,7 +89,7 @@ However, since in this model we are using an ideal current source, the impedance
 \$\$ Z_{out} = R_{c} \parallel \infty \Rightarrow \boxed { Z_{out} = R_{c} } \$\$
 
 However, the current source in our model may not _always_ be able to be treated as having infinite output impedance due to the contribution of $$r_{o}$$ depending on collector current (or more accurately the [Early Effect](#bjt-output-impedance-early-effect)):
-<center><img src="CE_Zout.png" height="500"></center>
+<center><img src="images/CE_Zout.png" height="500"></center>
 This value is highly dependent on base current (see varying $$I_{C}$$ vs $$V_{CE}$$ slopes [discussed previously](#r_e--t-model)) but is sometimes large enough to be a factor in computing output impedance such that:
 \$\$ \boxed{ Z_{out} \approx r_{o} \parallel R_{C} } \$\$
 
@@ -101,7 +101,7 @@ This inclusion of $$r_{o}$$ can affect voltage gain as well if it's in the same 
 #### Common Collector
 
 For a common collector configuration, the output voltage comes from the emitter node.
-<center><img src="bjt_common_collector.png"></center>
+<center><img src="images/bjt_common_collector.png"></center>
 Thus $$v_{out}$$ is produced from the current through external resistor $$R_{e}$$ such that:
 \$\$ v_{out} = i_{e}R_{e} \$\$
 
@@ -114,7 +114,7 @@ The common collector's near unity gain is why this configuration is also called 
 
 The output impedance for a common collector is a little less apparent though; since it's known that the ideal current source has $$\infty$$ impedance, the whole collector node looks like an open circuit and thus one would reason that $$ Z_{out} = R_{e} \parallel (r_{e} + R_{b}) $$ (note an added base resistance to illustrate the point). However, this is not true as the **current through $$r_{e}$$ and $$R_{b}$$ are not the same!** To solve this, we know that the emitter current $$ i_{e} = i_{b}(\beta + 1)$$ thus we treat the current as a ratio of $$ i_{b} : i_{b}(\beta + 1) $$ through $$R_{b}$$ and $$r_{e}$$ respectively. This means the current through $$R_{b}$$ is $$\beta + 1$$ times less than through the emitter so we can treat the base resistance as effectively equalling $$R_{b}'=\frac{R_{b}}{\beta + 1}$$.
 
-<center><img src="bjt_common_collector_zout.png"></center>
+<center><img src="images/bjt_common_collector_zout.png"></center>
 \$\$ \therefore Z_{out} = R_{e} \parallel (r_{e} + R_{b}') \Rightarrow \boxed { Z_{out} = R_{e} \parallel (r_{e} + \frac{R_{b}}{\beta + 1}) } \$\$
 
 This effective scaling of the base-emitter impedances through the BJT is known as the **base-emitter reflection rule** and means that impedances at the emitter appear $$\beta + 1$$ times _larger_ when looking in through the base and, inversely, base impedances appear $$\beta + 1$$ times _smaller_ when looking through the emitter.
@@ -160,7 +160,7 @@ For example, DC bias of an NPN BJT should generally achieve the following to ope
 
 #### Standard Voltage-Divider Bias Circuit
 
-<center><img src="std_bjt_bias.png"></center>
+<center><img src="images/std_bjt_bias.png"></center>
 
 To specify a standard voltage-divider bias network for an NPN BJT, there are some general steps one can take:
 1. **Set $$V_{C} = \frac{V_{cc} - V_{ee}}{2}$$:** this allows the most voltage swing at the collector, equally in both directions. If the rail voltages are fairly low, the drop across $$R_{E}$$ can be accounted for by setting:
@@ -202,13 +202,13 @@ As noted earlier in [standard bias circuit design](#standard-voltage-divider-bia
 _Full Bypass_
 
 With a capacitor $$C_{E}$$ directly in parallel with $$R_{E}$$, the external emitter resistance is completely shorted at high frequencies (or large enough for a given range of frequency operation) which leads to maximum gain due to being only limited by the BJT's internal emitter resistance:
-<center><img src="CE_cap_full_bypass.png" height="500"></center>
+<center><img src="images/CE_cap_full_bypass.png" height="500"></center>
 \$\$ A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e} + R_{E}} \overset{R_{E}=0}{\rightarrow} A_{v} = -\frac{R_{C} \parallel r_{o}}{r_{e}} \approx \boxed{ -\frac{R_{C}}{r_{e}}, (r_{o} \gg R_{C}) } \$\$
 
 _Partial Bypass_
 
 However, in most systems we want to control the actual amount of gain in a given CE amplifier which means we only want to short _some_ of the emitter resistance, but not all. This leads to a common configuration where the DC emitter resistance found from standard bias calculations is split into two resistors, with the bottom leg being shorted at high-frequencies (there is another configuration where the second resistor follows the capacitor but involves heavier math- parallel resistance with $$R_{E}$$- with little benefit):
-<center><img src="CE_cap_partial_bypass.png" height="500"></center>
+<center><img src="images/CE_cap_partial_bypass.png" height="500"></center>
 Where the top resistor $$\hat{R_{E}}$$ that is always present is simply the calculated DC Bias emitter resistor $$R_{E}$$ subtracted by the series resistor $$R_{es}$$ which is shorted at high frequencies:
 \$\$ \hat{R_{E}} = R_{E} - R_{es} \$\$
 
@@ -229,10 +229,10 @@ As mentioned before, current gain $$A_{i}$$ is mainly dependent on device $$\bet
 #### Isolating Output Load
 
 Since we don't want the DC bias circuit to be affected by a load connected at the output, it's common to add a series, DC-blocking, output capacitor $$C_{out}$$ to isolate the CE circuit from the load.
-<center><img src="CE_Cap_out.png" height="500"></center>
+<center><img src="images/CE_Cap_out.png" height="500"></center>
 
 However, this has consequences on the AC circuit response as the load is in parallel with the $$r_{e}$$ small signal BJT model (shown w/o emitter capacitor):
-<center><img src="CE_load_gain.png" height="500"></center>
+<center><img src="images/CE_load_gain.png" height="500"></center>
 
 This leads to the collector voltage being $$v_{c} = -i_{c}(r_{o} \parallel R_{C} \parallel Z_{load})$$. Therefore, the voltage gain equation, with an emitter capacitor from above, can be expanded with a load attached as:
 \$\$ A_{v} = -\frac{R_{C}}{r_{e} + \hat{R_{E}}} \overset{w/load}{\rightarrow} \boxed{ A_{v} = -\frac{(r_{o} \parallel R_{C} \parallel Z_{load})}{r_{e} + \hat{R_{E}}} } \$\$
@@ -287,7 +287,7 @@ In general, the computed capacitor values can be rounded up to the next largest 
 
 Common Collector (CC) amplifiers are useful circuit building blocks in that they provide high input impedance (which presents less of a load to a previous stage/input) and low output impedance (less voltage divider error to following stage, assuming it has high input impedance) while having a voltage gain $$A_{v} \approx 1$$; this unity gain is useful in seperating stages and using a CC amplifier as a buffer (or impedance transformer) as well as the fact that they [have very large current gain](#common-collector-1) usually with $$A_{i} \approx \beta^{2}$$.
 
-<center><img src="CC_amp.png" height="500"></center>
+<center><img src="images/CC_amp.png" height="500"></center>
 
 The biasing design [is similar to a CE stage](#standard-voltage-divider-bias-circuit) however:
 * The Collector is tied directly to $$V_{cc}$$ (no collector resistor needed).
@@ -295,7 +295,7 @@ The biasing design [is similar to a CE stage](#standard-voltage-divider-bias-cir
 
 ### Common Base Amplifier Design
 
-<center><img src="CB_Amp.png"></center>
+<center><img src="images/CB_Amp.png"></center>
 In a common base (CB) BJT amplifier, the output is taken at the collector and the input is applied to the emitter through an AC coupling capacitor $$C_{in}$$ to protect the DC bias. The DC bias is similar to the CE circuit, however the emitter resistor can be replaced with a generic current source and $$V_{E}$$ is highly application dependent.
 
 The input impedance (ignoring the source impedance connected in the diagram) looking into the emitter is simply the parallel combination of $$r_{e}$$ and $$Z_{E}$$, where $$Z_{E}$$ can be either a standard emitter resistor $$R_{E}$$ or the impedance of a current source (e.g. $$r_{o}$$):
@@ -321,16 +321,16 @@ This makes sense that current gain is about unity since $$I_{C} \approx I_{E}$$.
 #### Gain-Bandwidth Product
 
 The main figure of merit for high-frequency response of a BJT is it's current [gain-bandwidth product](https://en.wikipedia.org/wiki/Gain%E2%80%93bandwidth_product) (GBW) which is usually given in datasheets as $$f_{T}$$ or it's transition frequency.
-<center><img src="BJT_FT.gif"></center>
+<center><img src="images/BJT_FT.gif"></center>
 This transition frequency is the extrapolated product of the low frequency current gain and the high cutoff frequency (-3dB point) as it is representative of the frequency at which the current gain would drop to unity (gain of 1, or 0dB). This also means that there is a direct tradeoff between gain and bandwith; the higher the magnitude of the gain $$|A_{v}|$$, the lower the high-frequency 3dB cutoff point $$f_{B}$$ occurs:
 \$\$ f_{B} = \frac{f_{T}}{|A_{v}|} \$\$
-<center><img src="BJT_GBW.png" height="300"></center>
+<center><img src="images/BJT_GBW.png" height="300"></center>
 $$f_{T}$$ also increases with collector current $$I_{C}$$ so running a BJT hotter can increase its effective BW (up to a certain point).
 
 #### Miller Effect
 
 Another primary factor in the high-frequency BW limit of BJTs in large, inverting gain configurations (e.g. CE amplifiers) is due to the [Miller effect](https://en.wikipedia.org/wiki/Miller_effect) which effectively multiplies the stray input capacitance of the BJT by the voltage gain. The miller capacitance can be shown with an ideal inverting voltage amplifier with gain $$A_{v}$$ ($$\therefore V_{o}=-A_{v}V_{i}$$) and reactive impedance $$Z=X_{Cm}$$:
-<center><img src="miller_effect.png" height="150"></center>
+<center><img src="images/miller_effect.png" height="150"></center>
 Given an ideal amplifier, the amplifier input draws no current ($$\infty$$ input impedance) so all the current goes through $$Z$$ leading to an input impedance inversely related to gain:
 \$\$ I_{i}=\frac{V_{i}-V_{o}}{Z}=\frac{V_{i}(1+A_{v})}{Z} \rightarrow Z_{in}=\frac{V_{i}}{I_{i}}=\frac{Z}{1+A_{v}} \$\$
 With $$Z=X_{C}=\frac{1}{j\omega C_{in}}$$, we can see where the multiplicative effect of gain on input capacitance $$C_{in}$$ comes from and the effective miller capacitance $$C_{m}$$ is derived by the below Miller equation:
@@ -339,7 +339,7 @@ With $$Z=X_{C}=\frac{1}{j\omega C_{in}}$$, we can see where the multiplicative e
 \$\$
 
 For a BJT there exists two main stray capacitances: input capacitance (between base and emitter) and output capacitance (between collector and base). The miller capacitance $$C_{m}$$ (which is a product of voltage gain $$A_{v}$$ and $$C_{cb}$$) is added to the input stray capacitance
-<center><img src="BJT_miller.png" height="500"></center>
+<center><img src="images/BJT_miller.png" height="500"></center>
 Thus, given an input impedance of the BJT circuit and the source impedance of an input voltage source, there exists a pole from the time constant $$\tau = RC$$ formed which gives the dominant high-frequency cutoff point $$f_{H,1}$$:
 \$\$
   f_{H,1} = \frac{1}{2\pi(Z_{source} \parallel Z_{in})(C_{be} + (1-A_{v})C_{cb})}
@@ -357,7 +357,7 @@ There are two main methods to calculate system gain of a cascaded CE that produc
 2. Compute the loaded gain of each stage by including the load resistance in the gain calculation. Then cascade transfer functions.
 
 For example, with the following cascaded CE circuit, method #1 can be used to find the system gain:
-<center><img src="Cascade_CE.png"></center>
+<center><img src="images/Cascade_CE.png"></center>
 - **Stage 1 Properties**
   + Base voltage: $$V_{B}=V_{cc}(\frac{R_{12}}{R_{11}+R_{12}}) \approx 1.7V$$
   + Emitter voltage: $$V_{E}=V_{B}-v_{be} \approx 1.0V$$
@@ -380,7 +380,7 @@ For example, with the following cascaded CE circuit, method #1 can be used to fi
   + Output Impedance: $$Z_{out2} = r_{o} \parallel R_{c2} \approx 1k\Omega$$
 
 Given these properties of each stage, we can build a representative circuit of voltage dependent voltage sources (voltage gain of each stage) to compute the effects of the input voltage dividers and output load on the effective system gain:
-<center><img src="Cascade_Vdiv.png"></center>
+<center><img src="images/Cascade_Vdiv.png"></center>
 \$\$ v_{in1}=v_{i}\frac{2.7k\Omega}{50\Omega + 2.7k\Omega} = 0.98v_{i} \$\$
 
 \$\$ v_{in2}=-230*v_{in1}\frac{680\Omega}{680\Omega + 6k\Omega} = -23v_{i} \$\$
@@ -392,7 +392,7 @@ Given these properties of each stage, we can build a representative circuit of v
 ### BJT Noise Model
 
 BJTs inherent noise can be modeled by both current and voltage noise sources coinciding as separate sources.
-<center><img src="BJT_noise.png" height="300"></center>
+<center><img src="images/BJT_noise.png" height="300"></center>
 From both noise sources, there exists a resistive noise parameter $$R_{N}$$ that is developed from device theory (not a lumped component) equivalent to the square root of $$\beta$$ and internal emitter resistance:
 \$\$ R_{N} = \frac{v_{n}}{i_{n}} = \boxed{ \sqrt{\beta}*r_{e} } \$\$
 
@@ -407,7 +407,7 @@ Noise is often referred to the input of a device as Referenced To Input, or **RT
 #### BJT Circuit Noise Analysis
 
 The total noise of a BJT circuit can be found by analyzing the individual noise sources and combining them into a total noise contribution. Importantly, the analysis should be done for a given operational bandwidth (either theoretical or dictated by band-limiting filtering or other system effects) and a given operational temperature (assume room temp if not specified) as both directly contribute to the magnitude of noise seen (e.g. higher system bandwidth, higher noise voltage).
-<center><img src="BJT_noise_circuit.png" height="500"></center>
+<center><img src="images/BJT_noise_circuit.png" height="500"></center>
 
 1. First, the transistor noise resistance $$R_{N} = \sqrt{\beta}*r_{e}$$ should be found.
 2. The transistor voltage noise ($$v_{n,Q}$$) and current noise ($$i_{n,Q}$$) can be found by:
@@ -443,12 +443,12 @@ Since device $$\beta$$ is highly dependent on collector current (and $$I_{C} \ap
 #### Cascaded Noise
 
 For multi-stage noise analysis, each stage's noise is computed seperately and then combined in an RMS fashion to find total system noise:
-<center><img src="Cascade_Noise_1.png"></center>
+<center><img src="images/Cascade_Noise_1.png"></center>
 However, like we saw above, the output noise RTO is related back to the input (RTI) by dividing by the voltage gain $$A_{v}$$, thus in this two stage amplifier above, the total system noise would be:
 \$\$ v_{n,total} = \sqrt{ v_{n1}^{2} + (\frac{v_{n2}}{A_{v1}})^{2} } \$\$
 
 This same effect can be applied across multiple stages where:
-<center><img src="Cascade_Noise_2.png"></center>
+<center><img src="images/Cascade_Noise_2.png"></center>
 \$\$ v_{n3,stage} = \sqrt{ v_{n3}^{2} + (\frac{v_{n4}}{A_{v3}})^{2} } \$\$
 \$\$ v_{n2,stage} = \sqrt{ v_{n2}^{2} + (\frac{v_{n3}}{A_{v2}})^{2} } \$\$
 \$\$ v_{n1,total} = \sqrt{ v_{n1}^{2} + (\frac{v_{n2}}{A_{v1}})^{2} } \$\$
@@ -456,7 +456,7 @@ This same effect can be applied across multiple stages where:
 This divide-by-gain effect means that for low noise design, one really need only care about creating a high-gain & low-noise first stage; each stage after has less and less contribution to overall noise in the system compared to the first input stage.
 
 To help quanitify a system and the contribution of each of it's stages to overall noise, there is the figure-of-merit specifications of **Noise Figure** ($$NF$$) and **Noise Factor** ($$F$$); NF is the logarithmic noise power (dB) that is added to a system with respect to source impedance. Thus $$NF=0 dB$$ means a completely noiseless system or stage. Noise Factor $$F$$ is the linear equivalent of $$NF$$ and is thus the ratio of added noise to source noise. Noise Factor can then be used to describe cascaded noise within a system given each stage's Noise Factor $$F_{i}$$ and each stage's gain $$G_{i}$$ such that:
-<center><img src="Noise_Factor.png"></center>
+<center><img src="images/Noise_Factor.png"></center>
 \$\$ F_{system} = F_{1} + \frac{F_{2}-1}{G_{1}} + \frac{F_{3}-1}{G_{1}G_{2}} + \dotsb + \frac{F_{N}-1}{\displaystyle\prod_{i=1}^{n-1} G_{i}} \$\$
 
 Noise Figure $$NF$$ can be found from the system by:
@@ -474,7 +474,7 @@ Thus, circuits which can share components between stages in a "direct coupled" f
 
 #### CE-CC Amplifier
 
-<center><img src="CE-CC_DC.png" height="500"></center>
+<center><img src="images/CE-CC_DC.png" height="500"></center>
 
 The first stage is a standard CE amplifier configuration & bias design. However, the second stage CC/voltage-follower eliminates the need of $$R1$$ and $$R2$$ by sharing the first stage's collector resistor $$R_{C}$$ (as well as removing the interstage capacitor). This also has the advantage of maintaining the voltage gain of the first CE stage while also having the current gain of the second CC stage. The buffering action of the second CC stage also acts in providing enough current drive capacity to- in most systems- prevent negatively loading the CE stage, which would otherwise cause a reduction in overall voltage gain (since the voltage gain of an otherwise vanilla CE amplifier is $$A_{v} \approx -\frac{R_{C} \parallel R_{L}}{r_{e}}$$).
 
@@ -494,11 +494,11 @@ Where $$ R_{Q2} = (\beta_{2} + 1)(r_{e2} + R_{E2}) $$. The [voltage gain of a CC
 
 #### Cascode (CE-CB) Amplifier
 
-<center><img src="cascode.png" height="500"></center>
+<center><img src="images/cascode.png" height="500"></center>
 Since CE amplifiers suffer from bandwidth limitations due to [the Miller Effect](#miller-effect), the cascode amplifier increases the bandwidth of a stage by inserting a CB circuit into the collector of a CE circuit. The main reason this happens is the CB amplifier has [a very low input impedance of $$ \approx r_{e} $$](#common-base-amplifier-design) which reduces the gain seen at the collector of the CE stage (since the gain is directly related what would be the collector resistor $$R_{C}$$ but is now the CB $$Z_{in}$$), thereby negating the Miller Effect (which increases input capacitance linearly with inverting voltage gain). Like a standard CB circuit, the base of the upper stage is grounded at frequency via a coupling capacitor $$C_{b}$$.
 
 Even though this may seem like this negatively affects overall voltage gain, the small signal model of the Cascode configuration can show how the system voltage gain, though, is preserved since the current through the CB stage is about equal through the lower CE stage, thus producing a similar output voltage through the collector resistor in the CB stage. So given equivalent transistors ($$\beta$$ roughly equivalent in both) and similar base currents, we can see:
-<center><img src="cascode_small-signal.png" height="500"></center>
+<center><img src="images/cascode_small-signal.png" height="500"></center>
 \$\$ A_{v} = \frac{v_{out}}{v_{in}} = \frac{v_{c2}}{v_{b1}} \$\$
 \$\$ v_{c2} = -i_{c2}R_{C} = -\beta_{2}i_{b2}R_{C} \$\$
 \$\$ v_{b1} = i_{e1}r_{e1} = i_{b1}(\beta_{1} + 1)r_{e1} \$\$
@@ -508,7 +508,7 @@ Input and Output Impedance of the Cascode design is similar to CE calculations s
 
 ##### Cascode Bias Design
 
-<center><img src="cascode_bias.png" height="500"></center>
+<center><img src="images/cascode_bias.png" height="500"></center>
 1. Decide on the overall bias current $$I_{C} = I_{E}$$ as this will set the bias current of both transistors.
 2. Set the emitter voltage of the CE stage $$V_{E1} = 1V$$ similar to standard bias design, and set the emitter resistance in typical fashion as:
 \$\$ R_{E} = \frac{V_{E}}{I_{E}} \$\$
@@ -542,7 +542,7 @@ However, the cons of this approach is that:
 2. $$C_{E}$$ is usually a very large capacitor component in order to hit the low frequency operation for applications like audio amplifiers.
 
 An alternative configuration is the **Long Tailed Pair** (LTP) which acheives the same objectives of the emitter capacitor by replacing it with a PN junction. This also removes the negative side affects of the emitter capacitor- the PN junction can work at DC and takes up much less space/cost as a large capacitor- while necessating the use of a negative power supply rail, $$V_{ee}$$, in place of what would usually be ground:
-<center><img src="LTP_diode.png"></center>
+<center><img src="images/LTP_diode.png"></center>
 The PN junction- represented by diode $$D1$$ in the diagram- is forward biased by the negative supply rail $$V_{ee}$$ and has the familiar dynamic impedance of $$r_{d1} = \frac{V_{T}}{I_{D}}$$. Assuming the PN junction properties of this diode and $$Q1$$ are similar, and that the current through both is approximately the same, then we can say $$r_{eQ1} \approx r_{d1}$$ and the voltage gain will then be:
 \$\$ A_{v} = \frac{v_{out}}{v_{in}} = \frac{v_{c}}{v_{b}} = -\frac{i_{c}R_{C}}{i_{e}(r_{eQ1} + R_{E} \parallel r_{d1})} = -\frac{R_{C}}{r_{eQ1} + R_{E} \parallel r_{d1}} \$\$
 And if the dynamic PN junction resistances of the transistor and the diode are much smaller than the external emitter resistor $$R_{E}$$ (which is often the case), and both are similar in value to each other, voltage gain of the LTP can be simplified to:
@@ -550,28 +550,28 @@ And if the dynamic PN junction resistances of the transistor and the diode are m
 So the voltage gain is about half that of a CE configuration using a capacitor.
 
 Again, a fundamental assumption here is that the PN junction represented by a diode is matched to the PN junction in the transistor. However, an external discrete diode may not work as good as an actual similar BJT; remember that an NPN BJT is basically composed of two back-to-back diodes or PN junctions. Therefore, we can convert another BJT into an equivalent diode to match the properties of the first transistor by shorting the collector to the base, creating a **diode-connected transistor**:
-<center><img src="diode-connected_transistor.png" height="150"></center>
+<center><img src="images/diode-connected_transistor.png" height="150"></center>
 Note this only works well when shorting the BE junction, rather than the BC junction, as the BC junction is usually manufactured in a way that doesn't behave in the way we intend here- basically as a diode.
 
 The use of this second BJT is the motivation behind the final topology of the LTP Differential amplifier:
-<center><img src="LTP_top.png" height="500"></center>
+<center><img src="images/LTP_top.png" height="500"></center>
 The output can be taken from either collector, or the difference of both, and the inputs can be single-ended or differential. This is a fundamental building block for linear integrated circuits like opamps. Most all voltage feedback designs use an LTP topology at the input stage.
 
 **NOTE:** for designs which take output voltage at only one output, one need not have a collector resistor on the other leg; small signal current is still present but an output voltage across a collector resistor does not need to be developed.
 
 ##### LTP Small Signal Analysis: Single-Ended Input
 
-<center><img src="LTP_SE.png" height="300"></center>
+<center><img src="images/LTP_SE.png" height="300"></center>
 
 For explanation, we'll first consider the single-ended (SE) configuration when the first input has applied signal voltage and the second input is grounded. When $$v_{in}$$ is positive, the current flows through the emitter of the input transistor and into the emitter of the secondary transistor, through its base to ground.
-<center><img src="LTP_small_sig_pos.png" height="300"></center>
+<center><img src="images/LTP_small_sig_pos.png" height="300"></center>
 \$\$ v_{ r_{ e1 } } = -v_{ r_{ e2 } } \$\$
 \$\$ i_{ r_{ e1 } } = -i_{ r_{ e2 } } \$\$
 \$\$ v_{in} = v_{ r_{ e1 } } + v_{ r_{ e2 } } \$\$
 Almost no current flows through the tail resistor as usually $$R_{T} \gg r_{e}$$ thus current is shunted between transistors. This also shows that the transistors have equal and opposite AC small signal currents ($$i_{c1}$$ and $$i_{c2}$$ are equal in magnitude, opposite current flow direction), while maintaining equal DC bias currents ($$I_{C1}$$ and $$I_{C2}$$ are equal in both magnitude and direction of current flow). As such, the $$r_{e}$$ of each transistor is the same (given matched transistors) thus the voltage across each is equal in magnitude; this leads to each transistor seeing half of the total input voltage applied.
 
 When $$v_{in}$$ is negative, the same effects can be seen:
-<center><img src="LTP_small_sig_neg.png" height="300"></center>
+<center><img src="images/LTP_small_sig_neg.png" height="300"></center>
 
 Similar to the [proof above](#background), the voltage gain seen at the output (collector) on the same side of the input voltage is:
 \$\$ A_{v1} = \frac{ v_{c1} }{ v_{b1} } = \frac{ -i_{b1} \beta_{1} R_{C1} }{ i_{b1} (\beta_{1} + 1)(r_{e1} + r_{e2}) } \approx \boxed { -\frac{ R_{C1} }{ 2r_{e} } } \$\$
@@ -585,7 +585,7 @@ Note the polarity of the output voltage/gain depends on how the differential out
 
 ##### LTP Small Signal Analysis: Differential Mode Input
 
-<center><img src="LTP_Diff.png" height="300"></center>
+<center><img src="images/LTP_Diff.png" height="300"></center>
 
 When the inverting/negative terminal of the input voltage is connected directly to the opposite transistor (opposed to the transistor directly connected to the non-inverted/positive terminal of the input voltage), the configuration is defined as a Differential Mode (DM) Input. The voltage gain can be seen to be similar to the SE; if the input voltage has a peak-to-peak amplitude of $$1 V_{pk-pk}$$, then one transistor would, for instance, see an input rise $$1/2 V$$ while the opposite transistor would see a fall of an equal $$ 1/2 V$$. Thus the voltage gain at the output of the non-inverting side can be seen as:
 \$\$ v_{c1} = v_{ i_{Q1} } * A_{v1} + v_{ i_{Q2} } * A_{v1} = (+1/2)(-\frac{ R_{C} }{ 2 r_{e} }) + (-1/2)(-\frac{ R_{C} }{ 2 r_{e} }) = -\frac{ R_{C}} { 2 r_{e} } \$\$
@@ -601,10 +601,10 @@ The input impedance can be seen as:
 
 ##### LTP Small Signal Analysis: Common Mode Input
 
-<center><img src="LTP_CM.png" height="300"></center>
+<center><img src="images/LTP_CM.png" height="300"></center>
 
 Common Mode (CM) is defined as when both inputs (e.g. positive & negative, or inverting and non-inverting terminals) see the same signal/voltage simultaneously. In the case of an LTP configuration, this means that the input base voltages to the transistors increase/decrease by the same amount. Therefore, in a matched/ideal design, the emitter voltages of both transistors are always at equal potential, thus no small signal current flows between them like in previous configurations. This means, for analysis purposes, each side can be treated separately, but with $$1/2$$ the bias current (or equally twice the tail resistance seen) for each leg in a **Half-Pair Model**:
-<center><img src="LTP_half-pair.png" height="300"></center>
+<center><img src="images/LTP_half-pair.png" height="300"></center>
 Thus, similar to a standard CE configuration, the voltage gain of each leg can be seen as:
 \$\$ A_{ v_{CM} } = -\frac{ R_{C} }{ r_{e} + 2R_{T} } \$\$
 
@@ -622,7 +622,7 @@ And since the same input voltage is seen simultaneously to each leg, the total i
 A single-ended mode LTP is an effective means of cancelling out the [Miller Effect](#miller-effect) as it negates the two necessary contributors to the effect:
 * _Inverting Gain:_ we saw above we can achieve a non-inverting gain by taking the output voltage on the opposite side of the input voltage.
 * _Large Voltage Gain:_ Since we only need to have a collector resistor (or current mirror) on the opposite collector side to develop an output voltage, the collector of the input transistor can be tied directly to the positive supply rail, effectively creating a voltage gain of 0 at that collector, further negating the Miller Effect.
-<center><img src="LTP_High_BW.png" height="300"></center>
+<center><img src="images/LTP_High_BW.png" height="300"></center>
 
 #### Current Mirrors
 
@@ -630,16 +630,16 @@ In linear circuit design, a common circuit used is the **Current Mirror** and as
 
 The basic design is to take two matched transistors (nearly identical $$V_{be}$$) and make the first transistor as a "diode-connected transistor" and the reference current can be set with a programming resistor $$R_{prog}$$:
 
-<center><img src="current_mirror_basic.png" height="300"></center>
+<center><img src="images/current_mirror_basic.png" height="300"></center>
 \$\$ I_{ref} = \frac{ V_{cc} - V_{be1} }{ R_{prog} } \$\$
 
 $$Q_{2}$$ must be matched (matched-pair design on same piece of silicon where the base-emitter voltages track over temperature and have the same characteristics) so it senses $$V_{be1}$$ and generates an equal current in $$Q_{2}$$ since the device characteristics are near identical. If devices are not matched, the difference in base-emitter voltages $$\Delta V_{be}$$ can cause large base currents in $$Q_{2}$$ which can lead to even larger collector currents in $$Q_{2}$$. **Compliance** of a current source is the min/max range of voltages over which it will operate.
 
 For example, to replace the tail resistor in a LTP configuration, a current mirror can be placed in the emitter:
-<center><img src="LTP_current_mirror.png" height="500"></center>
+<center><img src="images/LTP_current_mirror.png" height="500"></center>
 
 Current mirrors can also be used to replace the collector resistors in CE & LTP configurations, which allows for large gain without the need for emitter bypass capacitors:
-<center><img src="LTP_active_load.png" height="500"></center>
+<center><img src="images/LTP_active_load.png" height="500"></center>
 For instance, total gain can be seen as:
 \$\$ A_{v} = -\frac{ R_{C} }{ 2r_{e} } = -\frac{ r_{o2} \parallel r_{o6} }{ 2r_{e} } \$\$
 
@@ -650,10 +650,10 @@ The choice of which transistor to short base-to-emitter (e.g. to create a diode-
 \$\$ Z_{out} = Z_{ 5 base } \parallel Z_{ 6 base } = ( \beta_{5} + 1) r_{e5} \parallel ( \beta_{6} + 1) r_{e6} \approx \frac{ (\beta + 1) r_{e} }{2} \$\$
 
 This usually means a much higher input impedance than desired so most designs take the output voltage on the opposite leg of the diode-connected transistor:
-<center><img src="LTP_CM_output.png" height="300"></center>
+<center><img src="images/LTP_CM_output.png" height="300"></center>
 
 Even higher output impedance (e.g. $$> 100 M\Omega$$) can be found using matched transistors such as the [MAT-14](https://www.analog.com/en/products/mat14.html#product-overview) (which also provide much more accurate operation) in a configuration such as:
-<center><img src="MAT-14_CM.png" height="300"></center>
+<center><img src="images/MAT-14_CM.png" height="300"></center>
 
 Again, as shown above, the replacement of collector resistors with a super high output impedance current mirros can lead to much larger voltage gain in a LTP design.
 
@@ -668,7 +668,7 @@ Thus the implication is that to increase CMRR, a designer has two options:
 It's often difficult to decrease $$r_{e}$$ as it requires an increase in bias current- which directly relates to increased power consumption- and there is often an upper limit to how low this resistance can go. Thus the second option is often more effective as the tail resistance can be increased much more by replacing the discrete tail resistor with a current mirror source; in the figure above, the output impedance of the transistor $$Q3$$, $$r_{o3} \gg R_{T}$$ for the same bias current setup. For example, for a bias setup of $$I_{bias}= 1 mA$$ , a tail resistor is calculated as:
 \$\$ R_{T} = \frac{ ( V_{b1} - V_{be1} ) - V_{ee} }{ 2 * I_{bias} } \approx 7.2 k\Omega \$\$
 
-<center><img src="LTP_active_load.png" height="500"></center>
+<center><img src="images/LTP_active_load.png" height="500"></center>
 
 Compare that value to the equivalent output resistance of $$Q_{3}$$ (e.g. a 2N3904 BJT) when programming the current mirror to 2 mA (1 mA bias current for each leg):
 \$\$ Z_{mirror} = r_{o3} = \frac{1}{ h_{OE @ 2mA} } \approx 83 k\Omega \$\$
@@ -678,7 +678,7 @@ Compared to the tail resistor, this results in around a 21 dB increase in CMRR.
 ##### Common Collector Distortion Improvement
 
 The [Common Collector](#common-collector-amplifier-design) can be improved by replacing the emitter degredation resistor with a current mirror. Since the goal of a CC amplifier stage is to provide unity gain and isolate a stage from a load (or other lower input impedance stage), we ideally want a CC's input impedance to be as high as possible. For example, for a 1 mA bias with a 6V emitter voltage, $$R_{E} = 6 k\Omega$$. Since $$Z_{in} = (\beta + 1)(r_{e} + R_{E})$$, $$Z_{in} \approx 720 k\Omega$$ for a typical Beta of around 120. Compare to the input impedance when replacing $$R_{E}$$ with a CM:
-<center><img src="CC_CM_RE.png"></center>
+<center><img src="images/CC_CM_RE.png"></center>
 The output impedance of the current mirror is $$ \approx 120k\Omega$$ for 1 mA bias, so multiplied by $$\beta = 120$$, the input impedance has increased 20x to $$\approx 14M\Omega$$!
 
 The other great improvement of using a CM instead of a discrete resistor in the emitter of a CC is a much improved distortion performance; since CC voltage gain is $$ A_{v} \triangleq \frac{ R_{E} }{ r_{e} + R_{E}} $$, and $$ r_{e} \triangleq \frac{V_{T}}{I_{C}} $$, it can be seen that changes in collector current- caused by changes in emitter/output voltage in large signal operation over the constant emitter resistor- can change the values of $$r_{e}$$ which can distort the output voltages in a non-linear fashion. For instance, over a 1V to 10V large signal output voltage range, the output voltage gain can vary by ~2%:
@@ -694,7 +694,7 @@ Compare this to the constant current source a current mirror provides; irregardl
 #### DC Level Shifting
 
 Since the basic principle of base voltage being a diode drop away from the emitter ($$V_{be} \approx 0.7 V$$), this property can be exploited to do a variety of things, for instance chaining diode-connected transistors together to create a larger voltage drop from some input voltage:
-<center><img src="diode_connected_chain.png" height="500"></center>
+<center><img src="images/diode_connected_chain.png" height="500"></center>
 \$\$ V_{out} = V_{in} - [ (n + 1)V_{be} ] \$\$
 
 
@@ -706,7 +706,7 @@ The Output Stage is designated as the final stage in an amplifier circuit or cha
 #### Class A
 
 The basic configuration that has mainly been shown is classified as **Class A**; in these circuits, the transistor is always biased to be on (in its active region, conducting and dissipating DC power) which means power is being dissipated whether an input signal is present or not. Because of this, Class A is the least power efficient. For instance, for a basic design below, the input power can be seen to be dominated by the magnitude of supply voltage:
-<center><img src="CE_Cap_out.png" height="500"></center>
+<center><img src="images/CE_Cap_out.png" height="500"></center>
 \$\$ P_{in} = V_{cc} I_{C} = V_{cc} \frac{ V_{cc} - V_{C} }{ R_{C} } \$\$
 Assuming $$ V_{C} = V_{CC} / 2$$:
 \$\$ P_{in} = \frac{ V_{cc}^{2} }{ 2 R_{C} } \$\$

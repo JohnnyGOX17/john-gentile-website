@@ -10,7 +10,7 @@ comments: true
 
 As time progresses, designers look to build devices that go faster, are more precise and further push the boundaries of what's been done before. However, in order to go faster, digital systems must have faster edge rates to keep up with growing bit rates; and because of this, higher and higher frequency content is contained in a digital signal and the properties of the digital systems cannot simply be thought of as 1's and 0's.
 
-![fourier-series-square-wave](fourier_series_for_square_wave.gif)
+![fourier-series-square-wave](images/fourier_series_for_square_wave.gif)
 
 _Fourier series showing summed, odd harmonics to build up a progressively faster edged square wave- by [Thenub314](https://commons.wikimedia.org/w/index.php?title=User:Thenub314&action=edit&redlink=1)_
 
@@ -42,7 +42,7 @@ Ignorance of these effects in high-speed designs can cause signal integrity issu
 * _False Switching:_ caused by reduced noise margins and level thresholds which can lead to data errors or even device failure.
 * _High EMI Radiation:_ caused by high-frequency energy escaping and causing failures in compliance or other emission standards.
 
-![Signal Integrity](SI_capture.png)
+![Signal Integrity](images/SI_capture.png)
 
 ### High-Speed Digital Design vs RF Design
 
@@ -68,7 +68,7 @@ Given that High-Speed Digital Design deals with very fast signals (sometimes wit
 #### Plane Capacitance
 
 The use of plane capacitance as part of your stackup can reduce the number of needed decoupling capacitors, and provide an overall decrease in power plane inductances (and an increase in plane capacitance, thereby a total reduction of impedance). For instance, this can be achieved with the [Buried Capacitance®](https://www.sanmina.com/pdf/solutions/pcbres/buried_capacitance_technical_0106.pdf) fabrication available from Sanmina:
-![plane_cap](plane_cap.png)
+![plane_cap](images/plane_cap.png)
 
 
 ## Checklists

@@ -10,7 +10,7 @@ comments: true
 
 Fundamentally, there is the property of matter _Charge_ which measured in Coulombs (C). Charge is directly related to one of the fundamental building blocks of matter, the electron; the charge of an electron (e) is negative and has a magnitude of $$~1.602 \times 10^{-19}$$.
 
-<center><img src="electron_flow.png"></center>
+<center><img src="images/electron_flow.png"></center>
 
 _From [Nuts & Volts Magazine](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjGm8OL3oHWAhWlx4MKHfokAV4QjhwIBQ&url=http%3A%2F%2Fwww.nutsvolts.com%2Fmagazine%2Farticle%2Fwhich-way-does-current-really-flow&psig=AFQjCNEM48przwI2nCUNyFzAsc-yPaqLLw&ust=1504277839609821)_
 
@@ -19,7 +19,7 @@ _From [Nuts & Volts Magazine](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&so
 The fundamental, omnipotent equation in Electrical Engineering is **Ohm's Law** which shows the relationship between the resistance ($$ R $$), voltage ($$ V $$) and current ($$ I $$) through an electrical path:
 \$\$ V = I*R \$\$
 There are many different relationships that form from this:
-<center><img src="resistor_101_ohms_table.png"></center>
+<center><img src="images/resistor_101_ohms_table.png"></center>
 
 _From [Resistors 101- Vishay](https://www.digikey.com/en/pdf/v/vishay/resistors-101)_
 
@@ -36,12 +36,12 @@ For reference when specifying an AC circuit, use lower case letters for voltage 
 ### Impedance
 
 For impedances connected in series, the current through each is the same so the total impedance is the sum of each:
-<center><img src="Impedances_in_series.png"></center>
+<center><img src="images/Impedances_in_series.png"></center>
 \$\$ Z_{eq} = Z_{1} + Z_{2} + \cdots + Z_{n} \$\$
 \$\$ R_{eq} + jX_{eq} = (R_{1} + R_{2} + \cdots + R_{n}) + j(X_{1} + X_{2} + \cdots + X_{n}) \$\$
 
 For impedances connected in parallel, the voltage across each is the same, thus the inverse equivalent impedance is the sum of the inverses of each impedance:
-<center><img src="Impedances_in_parallel.png"></center>
+<center><img src="images/Impedances_in_parallel.png"></center>
 \$\$ \frac{1}{Z_{eq}} = \frac{1}{Z_{1}} + \frac{1}{Z_{2}} + \cdots + \frac{1}{Z_{n}} \$\$
 A simplified version for the two element case is:
 \$\$ Z_{eq} = \frac{Z_{1}Z_{2}}{Z_{1}+Z_{2}} \$\$
@@ -52,7 +52,7 @@ Quality factor $$Q$$ is the ratio of energy stored to energy dissipated in a com
 \$\$ Q = \frac{E_{stored}}{E_{dissipated}} \$\$
 
 The less loss in a device the higher it's quality factor. $$Q$$ can also be determined by measuring the frequency response such that $$ Q = \frac{f_{center}}{\Delta f} $$ where $$ \Delta f $$ is the 3dB bandwidth of the response:
-<center><img src="3db_response.png"></center>
+<center><img src="images/3db_response.png"></center>
 
 ### Bode Plots
 
@@ -62,7 +62,7 @@ Bode plots are logarithmic graphs used to show magnitude (in dB) and phase respo
 
 For quick response analysis of a given circuit it's useful to be able to quickly draw the bode plot and transfer function. For example, given the following RC filter:
 
-<center><img src="rc_hpf.png"></center>
+<center><img src="images/rc_hpf.png"></center>
 
 ## EM
 Electromagnetic (EM) waves behave like all other waves:
@@ -87,7 +87,7 @@ Electromagnetic (EM) waves behave like all other waves:
 - **Absolute Maximums:** maximum DC or AC (rms) voltage or current that can be tolerated by the component, usually for a very short period of time. **Never design to absolute maximums, always reference the working specifications and leave margin**.
 -- **Dielectric Withstanding Voltage:** max voltage that can be applied to component before dielectric breakdown occurs (meaning the insulator is no longer effective and becomes electrically conductive, which can be a safety issue or general failure)
 - **Component Derating:** most parts will show one or more curves expressing the relationship between some independent variable (e.g. temperature, voltage, current, etc.) and the dependent variable as some suggested derating of an otherwise nominal specification (e.g. rated power handling, maximum input current, etc.). These are critical to pay attention to when designing a system that may be in an environment where these bounds change the specifications significantly; for example derating a certain capacitor could mean limiting the maximum input voltage to the part given an application need to operate in a hot ambient temperature:
-<center><img src="T525-derate-kocap.png"></center>
+<center><img src="images/T525-derate-kocap.png"></center>
 - **Reliability:** the probability that the component will fail, or not meet specifications, can be shown as the Mean Time Between Failures (MTBF), failure rate per hours of operation or other statistical measurements. Reliable electronics design is a deep subject and thus [has its own page](reliable_design.html).
 - **Temp Coefficient:** the "tempco" of a device is a measure of the variation of a given specification for a given change in temperature from where the specification was recorded. For example, a resistor with a temperature coefficient of resistance (sometimes shown as TCR) of 100 ppm/°C with a specified resistance of 10kΩ at +25°C will change 0.1% with a 10°C change in temperature. Generally, components with low tempco's are beneficial as a design varies less over temperature.
 - **Tolerance:** usually shown as a percentage of max deviation of a component from the nominal specification under nominal circumstances (e.g. same temperature and voltage as specification). For example a capacitor with 1% tolerance usually means that any capacitor used- when measured under nominal conditions- should fall within ±1% of the nominal capacitance. Component manufacturers can achieve a certain tolerance by careful material selection or by "binning" where components are tested and then bucketed into groups that meet a certain threshold. Generally, the tighter the tolerance of a component, the more expensive it will be (holding all other factors the same).
@@ -95,7 +95,7 @@ Electromagnetic (EM) waves behave like all other waves:
 \$\$ value = D * 10^{\frac{i}{N}} \$\$
 where $$D$$ is the decade multiplier (10, 100, 1k, etc.), $$N$$ is the tolerance series (e.x. 1%=96, 5%=24, 10%=12) and $$\{ i \mid 1..N-1\}$$. Thus for 10% resistor parts in the 1k decade, the standard values are: 1kΩ, 1.2kΩ, 1.5kΩ, 1.8kΩ, 2.2kΩ, 2.7kΩ, 3.3kΩ, 3.9kΩ, 4.7kΩ, 5.6kΩ, 6.8kΩ, and 8.2kΩ. It can also show that the higher the tolerance bin, the more value options available. Standard values are another factor in design decisions or part value selection since arbitrary values generally cannot be used; for instance, my calculation of a voltage divider calls for a 1.8725kΩ resistor but given standard values (and other factors like stock on hand, supplier/vendor availability, BOM cost, etc.) it's most likely OK to use the standard 1.8kΩ part.
 
-### Resistors ![resistor_symbol](Resistor_symbol_America.png)
+### Resistors ![resistor_symbol](images/Resistor_symbol_America.png)
 
 Resistors resist or limit the flow of electric current in a circuit. They are commonly used for:
 - Voltage dividing
@@ -111,21 +111,21 @@ Resistor come in three main types:
 
 Resistors come in a variety of composition types:
 - **Carbon:** older, low cost, terrible tempcos but can handle high peak power
-<center><img src="carbon_resistor.png"></center>
+<center><img src="images/carbon_resistor.png"></center>
 - **Thin/Thick/Metal Film:** modern, tighter tolerances, generally good noise and high-frequency performance, smaller package sizes
 - **Wire Wound:** made for very high power applications though drawback is in size and inductance (since wire wounds act like an inductor)
-<center><img src="wire_wound.png"></center>
+<center><img src="images/wire_wound.png"></center>
 
 Resistors also can come in surface mount (SMT) or through-hole (TH) form factors with these different compositions:
-![vishay_smt](vishay_smt_types.png)
-![vishay_th](vishay_th_types.png)
+![vishay_smt](images/vishay_smt_types.png)
+![vishay_th](images/vishay_th_types.png)
 
 _From [Resistors 101- Vishay](https://www.digikey.com/en/pdf/v/vishay/resistors-101)_
 
 #### Non-Idealities
 
 Ideally a resistor has a constant impedance from DC to daylight (frequency independent) however, due to package type and how the signal propagates through the internals of the resistor, a resistor will look capacitive at high-frequency (lowering effective impedance), and then at even higher frequencies, start to look inductive (higher effective impedance):
-<center><img src="resistor_f_response.png"></center>
+<center><img src="images/resistor_f_response.png"></center>
 
 These non-idealities need to be considered for high-frequency or precision designs.
 
@@ -152,7 +152,7 @@ Resistors follow similar tempco guidance as other components and generally incre
 
 Resistance of a part can change with applied voltage though this property is often not specified for general low/standard voltage work. High-voltage (HV) resistors, though, will show the VCR as it is a concern for HV work.
 
-### Inductors ![inductor_symbol](Inductor_symbol.png)
+### Inductors ![inductor_symbol](images/Inductor_symbol.png)
 
 Inductors are reactive devices that store energy in a magnetic field when current flows through and oppose changes in current through them. Commonly they are used in:
 - Power supplies
@@ -174,7 +174,7 @@ Manufacturers have worked to increase the inductance of parts by either:
 
 Ideally an inductor has an impedance which follows the equation $$ Z = j \omega L $$ however due to resistive losses and inter-winding capacitance (self-resonance) an inductor will start to behave as a capacitor past its self-resonant frequency and decrease in impedance.
 
-### Capacitors ![cap_symbol](Capacitor_Symbol.png)
+### Capacitors ![cap_symbol](images/Capacitor_Symbol.png)
 
 Capacitors are reactive devices used to hold charge in an electric circuit and are commonly used for:
 - Energy storage
@@ -186,7 +186,7 @@ Capacitors can be bi-directional (placed in either direction) or polarized (wher
 
 #### Construction
 
-<center><img src="cap_plate.png"></center>
+<center><img src="images/cap_plate.png"></center>
 Capacitors are still based on the parallel-plate model above where:
 \$\$ C = \frac{k \epsilon_{0} A}{d} \$\$ 
 so to reduce package size but increase capacitance, manufacturers have played with each variable:
@@ -197,9 +197,9 @@ so to reduce package size but increase capacitance, manufacturers have played wi
 #### Non-Idealities
 
 Ideally a capacitor acts as a purely reactive device and follows the well-known capacitor equation for it's impedance as $$ Z = \frac{1}{j \omega C} $$. However, mainly due to package inductance and resistance, at some higher-frequency of resonance, a capacitor will start having higher impedance as frequency increases as it becomes more inductive. A real capacitor acts like a notch filter.
-<center><img src="cap_model.png"></center>
+<center><img src="images/cap_model.png"></center>
 
-### Diodes ![diode_symbol](diode_symbol.png)
+### Diodes ![diode_symbol](images/diode_symbol.png)
 
 The basic operation of a diode is to conduct current in one direction while blocking current in the opposite direction (asymmetric conductance); the ideal diode has zero resistance in one direction and infinite resistance in the other. Semiconductor diodes are made with a p-n junction.
 
@@ -220,7 +220,7 @@ The _bipolar_ in the name is in regards to the two complimentary doped semicondu
 
 This also means signals like zero-offset sinusoids cannot just be plugged into the base of either (since sinusoids oscillate between positive and negative voltages); for this reason, most AC BJT circuits require a **bias** circuit to bring the DC offset/operating-point of the signal within the proper range required.
 
-<center><img src="bjt_npn_pnp.png"></center>
+<center><img src="images/bjt_npn_pnp.png"></center>
 
 A mnemonic key to remember the difference in symbology is NPN has the arrow **N**ot **P**ointing i**N** (where as PNP has the arrow pointing towards its base).
 
@@ -235,9 +235,9 @@ Transistors can operate in three main modes:
 
 There are a couple things to note when dealing with real (non-ideal) BJTs, for example for a `2N3904` device:
 - **Breakdown Voltages:** While BJTs can usually handle a fairly high potential at the collector terminal, the base terminal should not be reverse biased too far; for instance, in the `2N3904`, if the emitter is grounded, the voltage at the base should not go below $$-6 V$$ or one risks breaking the device:
-<center><img src="2n3904_base_voltage.png"></center>
+<center><img src="images/2n3904_base_voltage.png"></center>
 - **Beta:** the gain of the BJT is very variable (almost 3x between minimum and maximum values!) and depends on a lot of factors, one mainly being the collector current $$I_{C}$$ present (a higher collector current will often lead to a larger $$\beta$$), so don't rely too much on a single beta value without giving much room for margin:
-<center><img src="2n3904_beta.png"></center>
+<center><img src="images/2n3904_beta.png"></center>
 - **Thermal Performance:** besides the usual derating curves and operating points for given system temperatures, BJTs also can suffer from a phenomenon known as thermal runaway; when BJTs start to heat up, temperature dependent characteristics cause even more power to be dissipated, which in turn, cause even more heat. For instance with increased temperature, base-emitter voltage decreases ($$\Delta V_{be} \approx -2.2mV/^{\circ}C$$), $$\beta$$ increases, and emitter current increases (in aforementioned Shockley diode equation, saturation current $$I_{S}$$- though small- nearly doubles ever +10°C). **Thermal junction resistance $$R_{\theta J}$$** is usually given to show the increase in temperature of the device for a given power dissipation through the device; for instance, the `2N3904` has a $$R_{\theta JA}$$ (junction-to-Ambient, means no heatsink, just nominal air flow) of $$200^{\circ}C/W$$, which means for every Watt of power dissipated, the part will increase temperature by roughly 200°C.
 
 
