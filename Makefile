@@ -1,7 +1,11 @@
 # Makefile for john-gentile.com
-# To build, run `$ make` and to deploy to S3 run `$ make deploy`
 
+# Tell Linux vs macOS
 UNAME_S := $(shell uname -s)
+
+# Ports to use for local servers
+SERVE_PORT := 8888
+JUPYTER_PORT := 8889
 
 .SILENT: clean serve test
 
@@ -21,9 +25,8 @@ clean:
 	rm -f .sass-cache
 	rm -f .jekyll-metadata
 
-deploy:
-	# Deploying distribution to Amazon S3...
-	./deploy.sh
+jupyter:
+	jupyter lab --no-browser --port=$(JUPYTER_PORT)
 
 install:
 	# Run before building on new system to install dependent packages or to
@@ -43,19 +46,17 @@ serve:
 	rm -rf ./_site
 	./notebook_to_markdown.py
 	# Build static site and serve up locally, but automatically rebuild and reload if a tracked file is changed
-	bundle exec jekyll serve --livereload --incremental
+	bundle exec jekyll serve --livereload --incremental --port $(SERVE_PORT)
 
 test:
 	# Running simple HTTP Webserver to manually verify built distribution
 ifeq ($(UNAME_S),Linux)
-	sleep 1 && xdg-open http://localhost:8080/ &
+	sleep 1 && xdg-open http://localhost:$(SERVE_PORT)/ &
 endif
 ifeq ($(UNAME_S),Darwin)
-	sleep 1 && open "http://localhost:8080/" &
+	sleep 1 && open "http://localhost:$(SERVE_PORT)/" &
 endif
-	# If Python ver >3.x use `python -m http.server`
-	# Change port from 8080 to other if necessary. Use Ctrl+C to stop...
-	cd ./_site && python -m SimpleHTTPServer 8080
+	cd ./_site && python3 -m http.server $(SERVE_PORT)
 
 update:
 	bundle update --all

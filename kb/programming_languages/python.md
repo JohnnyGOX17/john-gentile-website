@@ -226,6 +226,11 @@ Other documentation frameworks which use reStructuredText (`*.rst`) format are:
 * [pylint](https://github.com/PyCQA/pylint): static code analyzer and linter.
 * [ruff](https://github.com/charliermarsh/ruff): extremely fast Python linter written in Rust
 
+### Basic Python Web Server
+
+If you have some static web resources (e.g. HTML pages, etc.), you can quickly spin-up a web server in that directory to display them using Python(3):
+
+`$ python -m http.server <port_number>`
 
 
 ## Libraries and Distributions

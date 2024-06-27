@@ -2,7 +2,7 @@
 title: Computer Architecture
 layout: default
 kb: true
-top-category: Computer Architecture and Systems
+top-category: Digital Electronics
 comments: true
 ---
 

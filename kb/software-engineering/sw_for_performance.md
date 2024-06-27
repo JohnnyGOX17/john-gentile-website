@@ -8,7 +8,7 @@ comments: true
 
 ## Overview
 
-To write high-performance software (SW), you should understand [computer architecture](../comp-architecture-systems/comp_arch.html).
+To write high-performance software (SW), you should understand [computer architecture](../digital/comp_arch.html).
 
 [Latency numbers everyone should know:](https://stackoverflow.com/a/4087315)
 ```

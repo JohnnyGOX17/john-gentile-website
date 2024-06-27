@@ -2,7 +2,7 @@
 title: Linux Kernel & Drivers
 layout: default
 kb: true
-top-category: Computer Architecture and Systems
+top-category: Software Engineering
 comments: true
 ---
 
@@ -57,3 +57,4 @@ Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other 
 * [The Linux Documentation Project](http://www.tldp.org/guides.html)
 * [Linux Kernel Newbies](https://kernelnewbies.org/)
 * [Red Hat Developer Program](https://developers.redhat.com/)
+
