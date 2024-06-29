@@ -80,3 +80,6 @@ typings/
 
 # Gem bundle configs
 .bundle
+
+# MD5 hashes of Jupyter notebooks
+*.ipynb.md5

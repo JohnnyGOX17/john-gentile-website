@@ -21,7 +21,10 @@ build:
 	# Write current git revision to file for tracking
 	git rev-parse HEAD > $(SITE_DIR)/revision
 
-clean:
+clean_hashes:
+	find . -type f -name '*.ipynb.md5' -delete
+
+clean: clean_hashes
 	# Deleting generated files...
 	rm -rf $(SITE_DIR)
 	rm -f TODO.md
