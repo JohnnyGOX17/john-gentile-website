@@ -2,7 +2,7 @@
 title: Vim
 layout: default
 kb: true
-top-category: Tools and Techniques
+top-category: Software Engineering
 comments: true
 ---
 

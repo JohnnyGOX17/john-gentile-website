@@ -63,8 +63,6 @@ def match_subdir_to_category(subdir: str) -> str:
             return "Cyber and Security"
         case "./kb/software-engineering":
             return "Software Engineering"
-        case "./kb/tools-techniques":
-            return "Tools and Techniques"
         case _:
             return "UNKNOWN CATEGORY"
 

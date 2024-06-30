@@ -2,7 +2,7 @@
 title: General Engineering Techniques
 layout: default
 kb: true
-top-category: Tools and Techniques
+top-category: Business
 comments: true
 ---
 
@@ -56,9 +56,8 @@ Put simply, make sure you understand the fundamentals of your technical field an
 <br />
 
 Documentation is important, but don't get too caught up on tools and automatic documentation practices, when simply documenting the code inline to begin with gets the job done:
-> ...I've personally never seen useful Doxygen/Javadoc style documents. In practice you just get an index of public function names, which is already in the source, so what's the point. If the function and argument names aren't obvious enough or there are caveats, add a comment to the declaration in the header.
+> ...I've personally never seen useful Doxygen/Javadoc style documents. In practice you just get an index of public function names, which is already in the source, so what's the point. If the function and argument names aren't obvious enough or there are caveats, add a comment to the declaration in the header. - Reddit User
 
-- [Reddit User](https://www.reddit.com/r/cpp/comments/8lwmkb/comment/dzj0vmg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-
+<br />
 * [The Documentation System- Divio](https://documentation.divio.com/)
 

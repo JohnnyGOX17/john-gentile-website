@@ -2,7 +2,7 @@
 title: Linux Development Tips
 layout: default
 kb: true
-top-category: Tools and Techniques
+top-category: Software Engineering
 comments: true
 ---
 
