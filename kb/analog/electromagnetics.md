@@ -13,8 +13,15 @@ comments: true
 The goal of the Telegrapher's Equations is to express complex electric and magnetic field behavior of transmission lines with simple equivalent circuits.
 
 
+## Maxwell's Equations
 
-## TBD
 
-* When an ideal driver transmits a voltage into a high-impedance (open) receiver
-    - Almost all signal is reflected back creating a 2x driven amplitude (i.e. a 2.5Vpp driver will see a 5Vpp signal amplitude into an open receiver) on the line and, in the ideal case, the signal oscillates back and forth indefinitely
+{% youtube "https://www.youtube.com/watch?v=rB83DpBJQsE" %}
+<br />
+
+* [An Intuitive Guide to Maxwell's Equations](https://photonlines.substack.com/p/an-intuitive-guide-to-maxwells-equations)
+
+## Tools
+
+* [Elmer FEM - open source multiphysical simulation software](https://www.elmerfem.org/blog/)
+

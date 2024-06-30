@@ -6,6 +6,10 @@ top-category: Tools and Techniques
 comments: true
 ---
 
+## Development Tools
+
+* [bytehound](https://github.com/koute/bytehound): memory profiler for Linux.
+
 ## Navigation & Searching
 
 * [sed](https://www.gnu.org/software/sed/manual/sed.html): a stream editor

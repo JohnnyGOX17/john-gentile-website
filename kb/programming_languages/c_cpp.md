@@ -13,6 +13,8 @@ C++ has language facilities similar to the C language such as being a procedural
 {% youtube "https://www.youtube.com/watch?v=86xWVb4XIyE" %}
 <br />
 {% youtube "https://www.youtube.com/watch?v=1OEu9C51K2A" %}
+<br />
+{% youtube "https://www.youtube.com/watch?v=ltCgzYcpFUI" %}
 *[CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg) has great talks on new C++ features as well.*
 
 ### The Basics
@@ -137,4 +139,13 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 * [The Standard](https://isocpp.org/std/the-standard): website for the current and draft ISO C++ standards
 * [The C++ Annotations by Frank B. Brokken](http://www.icce.rug.nl/documents/cplusplus/)
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+* [C++ Core Guildelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+* [C++ High Performance, Second Edition](https://www.packtpub.com/application-development/)
+  + [Repo for book](https://github.com/PacktPublishing/Cpp-High-Performance-Second-Edition)
+
+### Repos
+
+* [TheAlgorithms/C-Plus-Plus - GitHub](https://github.com/TheAlgorithms/C-Plus-Plus)
+* [actor-framework/actor-framework: An Open Source Implementation of the Actor Model in C++](https://github.com/actor-framework/actor-framework)
+* [nlohmann/json - JSON for Modern C++](https://github.com/nlohmann/json)
 

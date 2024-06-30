@@ -35,20 +35,88 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 <center><i><a href="https://en.wikipedia.org/wiki/Constellation_diagram">Source: Constellation Diagram- Wikipedia</a></i></center>
 
 
+## Waveforms
+
+### Wi-Fi (IEEE 802.11)
+
+* [How a Wifi chip works internally](https://media.ccc.de/v/gpn22-380-how-a-wifi-chip-works-internally)
+* [gr-ieee802-11 - IEEE 802.11 a/g/p Transceiver in GNU Radio](https://github.com/bastibl/gr-ieee802-11)
+* [open-sdr](https://github.com/open-sdr) manages open-source WiFI baseband stacks that use FPGAs and plug into Linux like [openwifi](https://github.com/open-sdr/openwifi)
+* [Nuand/bladeRF-wiphy: bladeRF-wiphy is an open-source IEEE 802.11 compatible software defined radio VHDL modem](https://github.com/Nuand/bladeRF-wiphy)
+* [Marsrocky/Awesome-WiFi-CSI-Sensing](https://github.com/Marsrocky/Awesome-WiFi-CSI-Sensing): a list of awesome papers and cool resources on WiFi CSI sensing.
+
+
+### Cellular (LTE/3GPP, 4G/5G)
+
+* [srsRAN - Open Source 4G/5G software](https://github.com/srsran)
+* [open5G_phy](https://github.com/catkira/open5G_phy): A resource efficient, customizable, synthesizable 5G NR lower PHY written in Verilog
+* [free5GRAN](https://github.com/free5G/free5GRAN): free5GRAN is an open-source 5G RAN stack. The current version includes a receiver which decodes MIB & SIB1 data. It also acts as a cell scanner. free5GRAN works in SA mode.
+* [LTE-Cell-Scanner](https://github.com/JiaoXianjun/LTE-Cell-Scanner): OpenCL, SDR, TDD/FDD LTE cell scanner, full stack from A/D samples to SIB ASN1 messages decoded in PDSCH, (optimized for RTL-SDR HACKRF and BladeRF board)
+* [Evrytania/Matlab-Library](https://github.com/Evrytania/Matlab-Library): Miscellaneous Matlab functions that are useful for wireless communications. Primarily focused on LTE / 3GPP.
+
+### Bluetooth
+
+* [DEF CON 30 RF Village - Mike Ryan - Building a Modern Bluetooth Sniffer for SDRs - YouTube](https://www.youtube.com/watch?v=lpM9rnMfy2w)
+* [JiaoXianjun/BTLE](https://github.com/JiaoXianjun/BTLE): Bluetooth Low Energy (BLE) packet sniffer and transmitter for both standard and non standard (raw bit) based on Software Defined Radio (SDR).
+* [OpenHaystack](https://github.com/seemoo-lab/openhaystack): track personal Bluetooth devices via Apple's Find My network.
+* [GitHub - newhouseb/onebitbt](https://github.com/newhouseb/onebitbt): A Bluetooth Low Energy Radio using FPGA SERDES: No ADC, AGC, filters, mixers, or amplifiers required.
+
+
+### LoRaWAN
+
+* [Meshtastic](https://meshtastic.org/): open source mesh network software running on low-power, affordable devices.
+* [LoRaWAN On Helium Network](https://docs.helium.com/iot/lorawan-on-helium/)
+
+### ZigBee
+
+* [gr-ieee802-15-4 ZigBee Transceiver GNU Radio block](https://github.com/bastibl/gr-ieee802-15-4)
+
+
 ## Software Defined Radio (SDR)
 
-### RTL-SDR
+### SDR Software/Frameworks
 
-#### RTL-SDR Installation
+#### GNU Radio
+
+[GNU Radio](https://www.gnuradio.org/) is an open-source SDR framework for prototyping communications systems.
+
+* [Comprehensive GNU Radio Archive Network (CGRAN)](https://www.cgran.org/): list of GNU Radio blocks and repos.
+* [gnuradio/volk: The Vector Optimized Library of Kernels](https://github.com/gnuradio/volk)
+[Tutorials - GNU Radio](https://wiki.gnuradio.org/index.php/Tutorials)
+        [SuggestedReading - GNU Radio](https://wiki.gnuradio.org/index.php/SuggestedReading)
+
+#### Other SDR Software
+
+* [SoapySDR](https://github.com/pothosware/SoapySDR): vendor and platform neutral SDR library.
+
+### SDR Hardware
+
+#### RTL-SDR
+
+RTL-SDRs are cheap and omnipresent, RX-only SDRs.
 
 - **[RTL-SDR Quick Start Guide](https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/):** general guides to RTL-SDR features and dipole antenna usage.
 - **[RTL-SDR for Linux Quick Start Guide](https://ranous.wordpress.com/rtl-sdr4linux/):** installation instructions for necessary drivers and libraries to get up and running.
 - [osmocom rtl-sdr wiki](https://osmocom.org/projects/rtl-sdr/wiki)
 
-### Other SDR Hardware
+#### Ettus Research SDRs
 
+[Ettus](https://www.ettus.com/) has been a long time maker of high-quality SDR HW. They also open-source nearly all schematics, software, and [FPGA firmware/HDL](https://github.com/EttusResearch/fpga). They also maintain the [USRP Hardware Driver (UHD)](https://github.com/EttusResearch/uhd/), an open-source driver library across their devices, and well supported by other open-source frameworks, like GNU Radio.
+
+#### Other SDR Hardware
+
+* [A comprehensive list of SDR hardware supported by GNU Radio](https://wiki.gnuradio.org/index.php/Hardware).
 * [LimeSDR Mini 2.0](https://www.crowdsupply.com/lime-micro/limesdr-mini-2): open-source, small form factor USB 3.0 SDR, utilizing the [Lime LMS7002M RF ASIC](https://limemicro.com/technology/lms7002m/).
   + There's also the original, slightly larger [LimeSDR](https://limemicro.com/products/boards/limesdr/)
+  + [LimeRFE RF Front End](https://www.crowdsupply.com/lime-micro/limerfe)
+* [AntSDR E200](https://www.crowdsupply.com/microphase-technology/antsdr-e200) small form factor with AD936x front end, similar to PlutoSDR and compatible with both UHD and ADI IIO driver stacks.
+* [ADI CN0417 2.4GHz small amplifier eval board](https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0417)
+* [greatscottgadgets/hackrf: low cost software radio platform](https://github.com/greatscottgadgets/hackrf)
+* [YARD Stick One - Great Scott Gadgets](https://www.greatscottgadgets.com/yardstickone/): half-duplex sub-1GHz SDR.
+* [rpitx - RF transmitter for Raspberry Pi](https://github.com/F5OEO/rpitx)
+* [osmo-fl2k VGA adapter transmitter](https://osmocom.org/projects/osmo-fl2k/wiki)
+* [RFNM](https://rfnm.io/)
+
 
 ## References
 

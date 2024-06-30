@@ -64,7 +64,17 @@ CMOS digital circuits dissipate power in three main ways: dynamic, short circuit
 
 ## Digital Design Process & Tools
 
-### FPGA Prototyping
+### Design Entry (Front End)
+
+The "front end" of digital systems are designed using [Hardware Description Languages](./hdl.html) like Verilog or VHDL. Though not always resource efficient, there has been many attempts at "High Level Synthesis" (HLS), where digital logic can be designed in a higher-level language, like C++ or Python. Some are vendor specific like [AMD-Xilinx HLS](https://www.xilinx.com/products/design-tools/vitis/vitis-hls.html), others are open-source projects like:
+* [JulianKemmerer/PipelineC: A C-like hardware description language (HDL) adding high level synthesis(HLS)-like automatic pipelining as a language construct/compiler feature.](https://github.com/JulianKemmerer/PipelineC)
+* [hls4ml](https://fastmachinelearning.org/hls4ml/): Python package to create firmware implementations of machine learning algorithms using HLS.
+  + [RFNoC HLS NeuralNet](https://github.com/Xilinx/RFNoC-HLS-NeuralNet)
+    - [GRCon 2017 paper](https://www.gnuradio.org/grcon/grcon17/presentations/rfnoc_neural_network_library_using_vivado_hls/EJ-Kreinar-RFNoC-Neural-Network-Library.pdf)
+
+#### FPGA Prototyping
+
+FPGAs allow for rapid prototyping (and deployment) of digital logic, as the ASIC is already complete and needs only have firmware updates to change behavior. This also means that some parts of the actual "back end" ASIC development process are not necessary (e.g. analog design, PDK, etc.) though timing constraints and other tool-specific workflows are still necessary.
 
 See [this page on FPGA tools & design](./fpga.html).
 

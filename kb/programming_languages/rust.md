@@ -6,6 +6,20 @@ top-category: Programming Languages
 comments: true
 ---
 
+## Why Rust?
+
+Rust is relatively young compared to other systems programming languages. However, it has taken many of the lessons learned from decades of other languages to form something that:
+* Puts memory safety at the forefront
+* Allows for similar speed and zero-cost abstractions as C++
+
+### Why Not Rust?
+
+Ignoring criticisms based on feelings and/or fanboy-isms, there has been some valid and well-researched opinions on where Rust may still fall short:
+- [Why Not Rust? - matklad](https://matklad.github.io/2020/09/20/why-not-rust.html)
+- [Frustrated? It's not you, it's Rust - fasterthanlime](https://fasterthanli.me/articles/frustrated-its-not-you-its-rust)
+- [Leaving Rust gamedev after 3 years - LogLog Games](https://loglog.games/blog/leaving-rust-gamedev/)
+
+
 ## Install and Tools
 
 - [Installing Rust is fairly simple](https://www.rust-lang.org/tools/install) using the rustup script: `$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
@@ -128,7 +142,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 
 #### Books
 
-* [ ] [Zero to Production In Rust](https://www.zero2prod.com/)
+* [X] [Zero to Production In Rust](https://www.zero2prod.com/)
   + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
 * [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
 * [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)

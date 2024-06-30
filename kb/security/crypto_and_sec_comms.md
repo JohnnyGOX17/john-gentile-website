@@ -16,7 +16,9 @@ comments: true
 * [Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection](https://www.amazon.com/Surreptitious-Software-Obfuscation-Watermarking-Tamperproofing/dp/0321549252)
 * [droberson/ELFcrypt](https://github.com/droberson/ELFcrypt)
 
-### RF Communications
+### RF Communications Security
+
+* [An Overview of Key Technologies in Physical Layer Security](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7711494/)
 
 #### Spreading Sequences
 

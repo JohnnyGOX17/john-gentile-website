@@ -78,6 +78,13 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 * [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 * [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)
 
+## GPU Processing
+
+### References
+
+* [NVIDIA MatX](https://github.com/NVIDIA/MatX): An efficient C++17 GPU numerical computing library with Python-like syntax
+
+
 ## References
 
 * [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
