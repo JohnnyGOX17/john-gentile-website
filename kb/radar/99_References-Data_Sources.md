@@ -16,6 +16,28 @@ wip: false
 * [Introduction to Synthetic Aperture Radar Using Python and MATLAB - GitHub](https://github.com/SARBook/software)
 * [SAR 101: An Introduction to Synthetic Aperture Radar - Capella Space](https://www.capellaspace.com/sar-101-an-introduction-to-synthetic-aperture-radar/)
   + [SAR 201: An Introduction to Synthetic Aperture Radar, Part 2](https://medium.com/the-downlinq/sar-201-an-introduction-to-synthetic-aperture-radar-part-2-895beb0b4c0a)
+* [OSTI.gov](https://www.osti.gov/search/semantic:synthetic%20aperture%20radar)
+  + [Basics of Polar-Format algorithm for processing Synthetic Aperture Radar images](https://www.osti.gov/biblio/1044949)
+  + [Bistatic Synthetic Aperture Radar - Issues Analysis and Design](https://www.osti.gov/biblio/1669735)
+  + [Generating nonlinear FM chirp waveforms for radar](https://www.osti.gov/biblio/894743)
+  + [SAR processing with non-linear FM chirp waveforms](https://www.osti.gov/biblio/902597)
+* [A Review of Synthetic-Aperture Radar Image Formation Algorithms and Implementations: A Computational Perspective](https://www.mdpi.com/2072-4292/14/5/1258)
+* [Squinted Spotlight Synthetic Aperture Radar (SAR) Image Formation - MATLAB](https://www.mathworks.com/help/radar/ug/squinted-spotlight-sar-image-formation.html)
+* [Stripmap Synthetic Aperture Radar (SAR) Image Formation - MATLAB](https://www.mathworks.com/help/radar/ug/stripmap-synthetic-aperture-radar-sar-image-formation.html)
+* [Radar for Space Observation: Systems, Methods and Applications](https://www.mdpi.com/journal/remotesensing/special_issues/7C43H2J2V2)
+* [Interference Mitigation for Synthetic Aperture Radar Based on Deep Residual Network](https://www.mdpi.com/2072-4292/11/14/1654)
+* [Synthetic Impulse and Aperture Radar (SIAR): A Novel Multi‐Frequency MIMO Radar](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118609576)
+
+
+## Open-Source SAR Repos
+
+* [ngageoint/sarypy](https://github.com/ngageoint/sarpy)
+* https://github.com/ron-kemker/sar
+* https://github.com/AlexeyPechnikov/pygmtsar
+  + https://insar.dev/
+* https://github.com/insarlab/MintPy
+* [Alaska Satellite Facility](https://asf.alaska.edu/)
+
 
 ## SAR Data Sources
 

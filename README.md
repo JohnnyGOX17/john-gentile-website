@@ -13,9 +13,6 @@ Repo for website [john-gentile.com](https://john-gentile.com/)
 
 A useful strategy to find references, or possible duplicates, is to run `$ ag --markdown <search term>` from the repo toplevel.
 
-## Other Tools
-
-* Launch notebooks with `$ jupyter lab`
 
 ### Docker Dev Setup
 
@@ -23,12 +20,6 @@ A useful strategy to find references, or possible duplicates, is to run `$ ag --
 docker build -t jekyll .
 docker run -p 4000:4000 -v /Users/jgentile/src/john-gentile-website:/site jekyll
 ```
-
-## TODO
-
-* [ ] hash each jupyter notebook file, keep local copy (gitignore and ignore from site build), so notebook->markdown process only happens when changes happen.
-  + [ ] finish moving over and organizing dsp notebooks
-* [ ] Use [jampack](https://github.com/divriots/jampack) to optimize static site generation, add to pipeline
 
 ## References
 
