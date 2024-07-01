@@ -2,7 +2,7 @@
 title: Digital Signal Processing
 layout: default
 kb: true
-top-category: Math & Signal Processing
+top-category: Digital Signal Processing (DSP)
 comments: true
 ---
 

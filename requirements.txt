@@ -7,6 +7,7 @@ matplotlib
 nbconvert
 numpy
 pandas
+rfproto
 scikit-learn
 scipy
 seaborn

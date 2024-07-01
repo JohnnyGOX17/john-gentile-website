@@ -68,3 +68,4 @@ $$\begin{bmatrix} 2 & 3 & 4 \end{bmatrix} \times \begin{bmatrix} 6 \\ 4 \\ 3 \\ 
 
 * [Deep Learning Book- Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html)
 * [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+* [Toeoplitz matrix for correlation](https://dsp.stackexchange.com/questions/52726/correlation-of-a-signal/52735#52735)

@@ -805,7 +805,6 @@ dsp-math-ml
         [Henrik's Blog - SAR, radar and FPGA blog](https://hforsten.com/)
         [Index — scikit-rf](https://scikit-rf-web.readthedocs.io/)
         [hahnpv/SoftGNSS: My working copy of SoftGNSS with sundry modifications](https://github.com/hahnpv/SoftGNSS)
-        [GRCon17 - GPS Beamforming with Low-Cost RTL-SDRs - Wil Myrick - YouTube](https://www.youtube.com/watch?v=IsmCQs5KVCs)
         [Interpreting Constellation Diagrams - YouTube](https://www.youtube.com/watch?v=aQd_zBytid8)
         [Understanding APSK and QAM - YouTube](https://www.youtube.com/watch?v=1xGncBvWv6U&t=460s)
         [Modulation - Wikipedia](https://en.wikipedia.org/wiki/Modulation)

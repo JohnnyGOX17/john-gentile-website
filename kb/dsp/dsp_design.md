@@ -2,7 +2,7 @@
 title: DSP Design
 layout: default
 kb: true
-top-category: Digital Electronics
+top-category: Digital Signal Processing (DSP)
 comments: true
 ---
 

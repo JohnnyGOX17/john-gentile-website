@@ -2,9 +2,9 @@
 title: Wireless Communication Systems
 layout: default
 kb: true
-top-category: Math & Signal Processing
+top-category: Wireless Communication Systems
 comments: true
-wip: true
+wip: false
 ---
 
 ## Overview

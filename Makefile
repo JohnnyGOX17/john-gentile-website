@@ -12,6 +12,12 @@ PY_EXE ?= python3
 
 .SILENT: clean serve test
 
+check-env:
+ifndef VIRTUAL_ENV
+	# Need to `source .venv/bin/activate`
+	$(error Not in a Python virtualenv!)
+endif
+
 build:
 	# Clean stale data
 	rm -rf $(SITE_DIR)
@@ -31,7 +37,7 @@ clean: clean_hashes
 	rm -f .sass-cache
 	rm -f .jekyll-metadata
 
-jupyter:
+jupyter: check-env
 	jupyter lab --no-browser --port=$(JUPYTER_PORT)
 
 install:
@@ -48,7 +54,7 @@ install:
 	source .venv/bin/activate
 	$(PY_EXE) -m pip install -r requirements.txt
 
-serve:
+serve: check-env
 	rm -rf $(SITE_DIR)
 	./notebook_to_markdown.py
 	# Build static site and serve up locally, but automatically rebuild and reload if a tracked file is changed
