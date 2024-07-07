@@ -83,6 +83,11 @@ When a makefile exists for a given directory/project (under the form `makefile`,
   + [CMake Tutorial](https://cmake.org/cmake-tutorial/)
   + [Professional CMake; A Practical Guide](https://crascit.com/professional-cmake/)
 
+Some other great CMake documentation and repos:
+* [Basic CMake usage](https://codingnest.com/basic-cmake/)
+* [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/)
+* [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
+
 #### Bazel
 
 * [Bazel](https://bazel.build/)
@@ -137,14 +142,18 @@ When a makefile exists for a given directory/project (under the form `makefile`,
 ### C++
 
 * [The Standard](https://isocpp.org/std/the-standard): website for the current and draft ISO C++ standards
+  + [C++ Core Guildelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+  + [C++ FAQ](https://isocpp.org/wiki/faq)
 * [The C++ Annotations by Frank B. Brokken](http://www.icce.rug.nl/documents/cplusplus/)
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-* [C++ Core Guildelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 * [C++ High Performance, Second Edition](https://www.packtpub.com/application-development/)
   + [Repo for book](https://github.com/PacktPublishing/Cpp-High-Performance-Second-Edition)
+* [Microsoft C/C++ Documentation](https://learn.microsoft.com/en-us/cpp/)
 
 ### Repos
 
+* [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
+* [abseil / abseil.io](https://abseil.io/)
 * [TheAlgorithms/C-Plus-Plus - GitHub](https://github.com/TheAlgorithms/C-Plus-Plus)
 * [actor-framework/actor-framework: An Open Source Implementation of the Actor Model in C++](https://github.com/actor-framework/actor-framework)
 * [nlohmann/json - JSON for Modern C++](https://github.com/nlohmann/json)
