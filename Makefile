@@ -2,7 +2,7 @@
 
 # Tell Linux vs macOS
 UNAME_S := $(shell uname -s)
-SITE_DIR := $(SITE_DIR)
+SITE_DIR := ./_site/
 
 # Ports to use for local servers (user/env overrideable)
 SERVE_PORT ?= 8888
@@ -14,8 +14,10 @@ PY_EXE ?= python3
 
 check-env:
 ifndef VIRTUAL_ENV
-	# Need to `source .venv/bin/activate`
+ifeq ($(UNAME_S),Darwin)
+	# On macOS, need to be in venv like `python3 -m venv .venv && source .venv/bin/activate`
 	$(error Not in a Python virtualenv!)
+endif
 endif
 
 build:
@@ -40,7 +42,15 @@ clean: clean_hashes
 jupyter: check-env
 	jupyter lab --no-browser --port=$(JUPYTER_PORT)
 
-install:
+install_python: check-env
+ifeq ($(UNAME_S),Darwin)
+	$(PY_EXE) -m pip install --upgrade -r requirements.txt
+endif
+ifeq ($(UNAME_S),Linux)
+	$(PY_EXE) -m pip install --upgrade --user -r requirements.txt
+endif
+
+install: install_python
 	# Run before building on new system to install dependent packages or to
 	# update local packages
 	# NOTE: for Linux, don't install gems as root/sudo. As well, bundle install will
@@ -50,9 +60,6 @@ install:
 	#  if you run into errors down the line, do uninstall step and reinstall here
 	gem install --user-install bundler jekyll
 	bundle install --jobs $(shell nproc)
-	$(PY_EXE) -m venv .venv
-	source .venv/bin/activate
-	$(PY_EXE) -m pip install -r requirements.txt
 
 serve: check-env
 	rm -rf $(SITE_DIR)
@@ -60,7 +67,7 @@ serve: check-env
 	# Build static site and serve up locally, but automatically rebuild and reload if a tracked file is changed
 	bundle exec jekyll serve --livereload --incremental --port $(SERVE_PORT)
 
-test:
+test: check-env
 	# Running simple HTTP Webserver to manually verify built distribution
 ifeq ($(UNAME_S),Linux)
 	sleep 1 && xdg-open http://localhost:$(SERVE_PORT)/ &
@@ -70,7 +77,7 @@ ifeq ($(UNAME_S),Darwin)
 endif
 	cd $(SITE_DIR) && $(PY_EXE) -m http.server $(SERVE_PORT)
 
-update:
+update: install_python
 	bundle update --all
 
 uninstall:

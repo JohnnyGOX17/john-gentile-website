@@ -206,7 +206,7 @@ See the [tutorial on Packaging Python Projects](https://packaging.python.org/en/
   + `$ python3 -m pip install --editable .` (from within the repo top-level).
 * Uninstall package with `$ python3 -m pip uninstall <package name> -y`
 
-If your `pyproject.toml` properly includes the package dependencies, calling `pip install` will also install the correct dependencies as well. You can also [install optional dependencies by specifying the list expicitly](https://stackoverflow.com/a/69977707/5416738), like `pip install .[docs]`.
+If your `pyproject.toml` properly includes the package dependencies, calling `pip install` will also install the correct dependencies as well. You can also [install optional dependencies by specifying the list expicitly](https://stackoverflow.com/a/69977707/5416738), like `pip install .[docs]` (note no space between `.` and `[key]` for optional install).
 
 ### Documenting Your Project
 
