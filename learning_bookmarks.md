@@ -320,6 +320,7 @@ c-c++
         [Algorithmica](https://en.algorithmica.org/)
         [Algorithms for Modern Hardware - Algorithmica](https://en.algorithmica.org/hpc/)
         [Intel® Intrinsics Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#)
+        [C++ Design Patterns for Low-latency Applications Including High-frequency Trading](https://arxiv.org/abs/2309.04259)
         [c++ - Coding for ARM NEON: How to start? - Stack Overflow](https://stackoverflow.com/questions/28547697/coding-for-arm-neon-how-to-start)
         [GitHub - projectNe10/Ne10: An open optimized software library project for the ARM® Architecture](https://github.com/projectNe10/Ne10)
         [SIMD ISAs | Neon – Arm Developer](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon)

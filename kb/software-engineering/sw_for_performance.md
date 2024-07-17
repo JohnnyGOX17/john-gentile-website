@@ -85,9 +85,20 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 * [NVIDIA MatX](https://github.com/NVIDIA/MatX): An efficient C++17 GPU numerical computing library with Python-like syntax
 
 
+## Profiling, Tracing and Benchmarking Tools
+
+* [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)
+  + [flamegraph-rs/flamegraph: easy flamegraphs for Rust projects and everything else](https://github.com/flamegraph-rs/flamegraph)
+* [KUtrace](https://github.com/dicksites/KUtrace): Low-overhead tracing of all Linux kernel-user transitions, for serious performance analysis. Includes kernel patches, loadable module, and post-processing software.
+
+
 ## References
 
 * [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
 * [Cache Prefetching](https://en.wikipedia.org/wiki/Cache_prefetching)
 * [Intel Tuning Guides and Performance Analysis Papers](https://www.intel.com/content/www/us/en/developer/articles/guide/processor-specific-performance-analysis-papers.html)
+* [Brendan Gregg's Website](https://www.brendangregg.com/overview.html)
+  + [perf Examples](https://www.brendangregg.com/perf.html)
+  + [Linux Performance](https://www.brendangregg.com/linuxperf.html)
+  + [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020)](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
 
