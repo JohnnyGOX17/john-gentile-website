@@ -68,13 +68,11 @@ IFrame('https://www.youtube.com/embed/WXuK6gekU1Y', width=560, height=315)
 
 
 <iframe
-<p style="font-family:monospace; white-space:pre-wrap">
-width="560"
-height="315"
-src="https://www.youtube.com/embed/WXuK6gekU1Y"
-frameborder="0"
-allowfullscreen
-</p>
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/WXuK6gekU1Y"
+    frameborder="0"
+    allowfullscreen
 ></iframe>
 
 

@@ -25,13 +25,11 @@ YouTubeVideo('1rpoUqx0360', width=800, height=300)
 
 
 <iframe
-<p style="font-family:monospace; white-space:pre-wrap">
-width="800"
-height="300"
-src="https://www.youtube.com/embed/1rpoUqx0360"
-frameborder="0"
-allowfullscreen
-</p>
+    width="800"
+    height="300"
+    src="https://www.youtube.com/embed/1rpoUqx0360"
+    frameborder="0"
+    allowfullscreen
 
 ></iframe>
 
@@ -48,13 +46,11 @@ YouTubeVideo('UCRildDdrX4', width=800, height=300)
 
 
 <iframe
-<p style="font-family:monospace; white-space:pre-wrap">
-width="800"
-height="300"
-src="https://www.youtube.com/embed/UCRildDdrX4"
-frameborder="0"
-allowfullscreen
-</p>
+    width="800"
+    height="300"
+    src="https://www.youtube.com/embed/UCRildDdrX4"
+    frameborder="0"
+    allowfullscreen
 
 ></iframe>
 

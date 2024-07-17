@@ -81,6 +81,7 @@ def convert_jupyter_to_markdown(file_path: str):
 def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
     """Take raw nbconvert Markdown and stylize correctly"""
     in_code_block = False
+    in_iframe_block = False
     in_output_block = False
     in_math_block = False
     header_found = False
@@ -105,7 +106,10 @@ def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
             if line.startswith("```"):  # code block toggle
                 in_code_block = not in_code_block
                 output_lines.append(line)
-            elif not in_code_block:
+            elif line.startswith("<iframe"):  # iframe start
+                in_iframe_block = True
+                output_lines.append(line)
+            elif not in_code_block and not in_iframe_block:
                 if not in_output_block:
                     if (
                         line.startswith("    ")
@@ -154,8 +158,10 @@ def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
                         output_lines.append("</p>\n")
                         output_lines.append(line)
                         in_output_block = False
-            else:  # in code block, just output
+            else:  # in code or iframe block, just output
                 output_lines.append(line)
+                if line.startswith("></iframe>"):
+                    in_iframe_block = False
 
     assert header_found, "An H1 Markdown header was not found!"
 
