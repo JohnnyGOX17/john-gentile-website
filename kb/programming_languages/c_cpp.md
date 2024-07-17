@@ -56,11 +56,22 @@ C++ is a statically typed language in that every entity (i.e. object, name, valu
 
 ### Compilers
 
+#### GCC/clang Compiler Flags
+
+Also see [gentoo linux's notes on GCC optimization](https://wiki.gentoo.org/wiki/GCC_optimization):
+* `-g`: compiler and linker should generate, and retain, source-level debugging/symbol information in the executable itself. Helpful in debugging builds.
+* `-O2/O3`: for optimization flags added. Note that you should profile both, as on sometimes [-O3 is slower code than -O2](https://stackoverflow.com/a/43941854/5416738).
+* `-march=native`: compiles machine-specific instructions for the host CPU running the compile. Can unlock a lot of performance on hosts with SIMD units.
+
 #### GNU cc (gcc)
 
 `gcc` is a common compiler for the C language (as well as C++ and Objective C). Debug information and optimizations can also be utilized.
 
 * [An Introduction to GCC by Brian Gough](http://www.network-theory.co.uk/docs/gccintro/)
+
+#### LLVM/Clang
+
+* [Clang Compiler](http://clang.llvm.org/docs/UsersManual.html)
 
 #### Online Compilers
 
@@ -91,10 +102,6 @@ Some other great CMake documentation and repos:
 #### Bazel
 
 * [Bazel](https://bazel.build/)
-
-#### LLVM/Clang
-
-* [Clang Compiler](http://clang.llvm.org/docs/UsersManual.html)
 
 
 ### Testing
