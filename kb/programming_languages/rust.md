@@ -129,6 +129,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
+* [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
 * [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
@@ -151,4 +152,5 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
 * [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep): very fast grep replacement, with great reference Rust codebase.
+* [awslabs/mountpoint-s3](https://github.com/awslabs/mountpoint-s3): A simple, high-throughput file client for mounting an Amazon S3 bucket as a local file system.
 

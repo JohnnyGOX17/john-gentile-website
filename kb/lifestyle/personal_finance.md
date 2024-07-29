@@ -115,6 +115,12 @@ You can also [withdraw- with penalty- or even take a loan out against your 401(k
 * [Early Retirement Calculator - Networthify](https://networthify.com/calculator/earlyretirement)
 
 
+## Other Thoughts
+
+* [Financial Independence, Retire Early (FIRE)](https://www.investopedia.com/terms/f/financial-independence-retire-early-fire.asp) can be good in principal (saving and investing), but [the best laid plans](https://livingafi.com/2021/03/17/the-2021-early-retirement-update/) may mean your 4% withdrawal rate can be much more when life happens.
+* [Stock options can be complicated](https://blog.alexmaccaw.com/an-engineers-guide-to-stock-options/) and working at a non-public company takes some thought when dealing with this compensation math. As well, the math behind [potential startup exit value has changed](https://news.ycombinator.com/item?id=21865065), and sometimes its just not worth it if you're not a founder.
+
+
 ## References
 
 * TD Ameritrade Education Resources
