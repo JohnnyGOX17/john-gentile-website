@@ -20,17 +20,38 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 - [Leaving Rust gamedev after 3 years - LogLog Games](https://loglog.games/blog/leaving-rust-gamedev/)
 
 
-## Install and Tools
+## Install and Getting Started
 
 - [Installing Rust is fairly simple](https://www.rust-lang.org/tools/install) using the rustup script: `$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
   + On macOS, make sure C compiler is installed with `$ xcode-select --install`
 - Rust can be updated at any time with `$ rustup update`
  
-#### Compilation
+### Getting Started Resources
 
-- If using a Cargo project, `$ cargo build` can be used
-  + `$ cargo run` can be used to build and then execute in one command.
-- Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
+* [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
+  - [Main website for rustlings](https://rustlings.cool/)
+* [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
+  * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
+* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
+* [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+* [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
+* [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
+* [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
+* [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
+* [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
+* [ ] [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
+  - https://github.com/fspoettel/advent-of-code-rust
+
+#### Books
+
+* [X] [Zero to Production In Rust](https://www.zero2prod.com/)
+  + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
+* [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
+* [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)
+
+
+
+## Tools
 
 ### Cargo
 
@@ -42,6 +63,9 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
   + A [TOML](https://toml.io/) config file `Cargo.toml` that describes the metadata and dependencies of the Rust project.
   + A `src/` directory in which Rust source should live.
   + Add `--lib` to the end of `cargo new` to create a library (no binary compilation target).
+- When using a Cargo project, `$ cargo build` can be used
+  + `$ cargo run` can be used to build and then execute in one command.
+  + Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
 
 For more info, [see The Cargo Book](https://doc.rust-lang.org/cargo/index.html).
 
@@ -49,7 +73,7 @@ As part of `cargo` there's also:
 - [clippy](https://doc.rust-lang.org/clippy/): a collection of lints to catch common mistakes and improve Rust code
 - [rustfmt](https://rust-lang.github.io/rustfmt/?version=master&search=): a Rust code formatter, can also be run with `cargo fmt`.
 
-#### rustdoc
+### rustdoc
 
 Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
 
@@ -83,6 +107,14 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
   + [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
   + [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 
+### Rust for Performance
+
+* Simply building with `--release` gives [sane optimization defaults for most applications](https://doc.rust-lang.org/cargo/reference/profiles.html#release)
+* [ ] [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
+* [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
+* [ ] [Rust SIMD Performance Guide](https://rust-lang.github.io/packed_simd/perf-guide/introduction.html)
+  + [arch - Dynamic CPU Feature Detection](https://doc.rust-lang.org/stable/core/arch/#dynamic-cpu-feature-detection)
+
 ### Low-Level / Embedded
 
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
@@ -92,6 +124,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 * [Learn Rust the Dangerous Way](https://cliffle.com/p/dangerust/)
+* [ ] [High Assurance Rust](https://highassurance.rs/)
 
 ### Rust for Linux Kernel Development
 
@@ -115,42 +148,25 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html): Learn how to make awesome documentation for your crate.
 * [Rustc Book](https://doc.rust-lang.org/rustc/index.html): Familiarize yourself with the knobs available in the Rust compiler.
 * [Compiler Error Index](https://doc.rust-lang.org/error-index.html): In-depth explanations of the errors you may see from the Rust compiler.
-* [Rust Conf](https://rustconf.com/)
+* [Rust Conf](https://rustconf.com/): Annual Rust conference.
 
-### Application Domain Docs
+### Application Domain Docs and Repos
 
 * [Command Line Book](https://rust-cli.github.io/book/index.html)
+  + [clap](https://github.com/clap-rs/clap): command line argument parser
+  + [console-rs/indicatif](https://github.com/console-rs/indicatif): CLI progress bar/reporting library.
+  + [tui-rs](https://github.com/fdehau/tui-rs): Terminal User Interface (TUI) and dashboard crate
 * [Webassembly Book](https://rustwasm.github.io/docs/book/)
 * [Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/)
 
 
-### To Read
+### General Repos
 
-* [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
-  * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
-* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
-* [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
-* [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
-* [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
-* [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/) 
-* [ ] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
-  - [Main website for rustlings](https://rustlings.cool/)
-* [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
-* [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
-* [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
-* [ ] [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
-* [ ] [High Assurance Rust](https://highassurance.rs/)
-
-#### Books
-
-* [X] [Zero to Production In Rust](https://www.zero2prod.com/)
-  + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
-* [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
-* [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)
-
-### Repos
-
+Some repos that are useful in general Rust programs, or as reference for good Rust practices:
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
 * [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep): very fast grep replacement, with great reference Rust codebase.
+* [alacritty](https://github.com/alacritty/alacritty): cross-platform, OpenGL terminal emulator.
 * [awslabs/mountpoint-s3](https://github.com/awslabs/mountpoint-s3): A simple, high-throughput file client for mounting an Amazon S3 bucket as a local file system.
+* [hashbrown](https://docs.rs/hashbrown/latest/hashbrown/): a Rust port of Google’s high-performance SwissTable hash map, adapted to make it a drop-in replacement for Rust’s standard HashMap and HashSet types.
+* [tracing](https://docs.rs/tracing/latest/tracing/): a framework for instrumenting Rust programs to collect structured, event-based diagnostic information.
 
