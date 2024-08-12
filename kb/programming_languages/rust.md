@@ -28,7 +28,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
  
 ### Getting Started Resources
 
-* [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
+* [X] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
   - [Main website for rustlings](https://rustlings.cool/)
 * [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
@@ -94,6 +94,11 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 
 ## Language
+
+### Macros
+
+* [ ] [tfpk/MacroKata](https://tfpk.github.io/macrokata/): Learn Macros in Rust
+* [ ] [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
 
 ### Async
 
