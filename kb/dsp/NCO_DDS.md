@@ -143,7 +143,7 @@ The DDS Output Spectrum can be shown as
 
 
 ```python
-plot.spec_an(y, fs, "DDS Output Spectrum", scale_noise=True, real=True, norm=True)
+plot.spec_an(y, fs, "DDS Output Spectrum", scale_noise=True, norm=True)
 plt.show()
 ```
 
@@ -205,7 +205,7 @@ plt.show()
 
 
 ```python
-plot.spec_an(y, fs, "1/4 Wave DDS Output Spectrum", scale_noise=True, real=True, norm=True)
+plot.spec_an(y, fs, "1/4 Wave DDS Output Spectrum", scale_noise=True, norm=True)
 plt.show()
 ```
 
@@ -231,7 +231,7 @@ for dither_bits in range(2, N - 4):
     dith_NCO.SetOutputFreq(f)
     for i in range (n):
         y_dith[i] = np.imag(dith_NCO.Step())
-    dSFDR = measurements.SFDR(y_dith, fs, real=True, norm=True)
+    dSFDR = measurements.SFDR(y_dith, fs, norm=True)
     meas_SFDR = dSFDR["SFDR"]
     dither_SFDR.append(meas_SFDR)
     if meas_SFDR > max_SFDR:
@@ -247,7 +247,7 @@ dith_NCO = nco.Nco(N, M, P, fs, quarter_wave=True, dither=True, dither_bits=max_
 dith_NCO.SetOutputFreq(f)
 for i in range (n):
     y_dith[i] = np.imag(dith_NCO.Step())
-plot.spec_an(y_dith, fs, "1/4 Wave DDS Output Spectrum (w/phase dithering)", scale_noise=True, real=True, norm=True)
+plot.spec_an(y_dith, fs, "1/4 Wave DDS Output Spectrum (w/phase dithering)", scale_noise=True, norm=True)
 plt.show()
 
 print(f"Best SFDR at {max_SFDR_bits} bits of added dither, given phase acc. length of {N} bits and {P} LUT address bits")
@@ -266,7 +266,7 @@ print(f"Best SFDR at {max_SFDR_bits} bits of added dither, given phase acc. leng
 
 
 <p style="font-family:monospace; white-space:pre-wrap">
-Best SFDR at 18 bits of added dither, given phase acc. length of 32 bits and 11 LUT address bits
+Best SFDR at 19 bits of added dither, given phase acc. length of 32 bits and 11 LUT address bits
 </p>
 
 
@@ -383,7 +383,7 @@ taylor_NCO.SetOutputFreq(12200)
 y_taylor = np.zeros(n) + 1j*np.zeros(n)
 for i in range (n):
     y_taylor[i] = taylor_NCO.Step()
-plot.spec_an(y_taylor, fs, "Taylor Series NCO", scale_noise=True, real=False, norm=True)
+plot.spec_an(y_taylor, fs, "Taylor Series NCO", scale_noise=True, norm=True)
 plt.show()
 ```
 

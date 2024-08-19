@@ -103,6 +103,7 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### Async
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
+* [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice](https://marabos.nl/atomics/)
 
 #### References
 

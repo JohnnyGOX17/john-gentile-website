@@ -24,7 +24,7 @@ from rfproto import filter, modulation, plot
 
 ```python
 # CCSDS OQPSK SRRC rolloff=0.5: https://public.ccsds.org/Pubs/413x0g3e1.pdf
-rrc_test = filter.RootRaisedCosine(17.225e6, 7.5e6, 0.5, 64)
+rrc_test = filter.RootRaisedCosine(17.225e6, 7.5e6, 0.5, 63)
 # The matched filter is a time-reversed and conjugated version of the signal
 # NOTE: this is moot for a uniform, real filter...
 rrc_mf = np.conj(rrc_test[::-1])
@@ -76,7 +76,7 @@ def pulse_shape(symbols: np.ndarray, OSR: int, h: np.ndarray):
     # truncate first samples due to prepend and apped to align output with input
     return conv_out[N * OSR:]
  
-rc_test = filter.RootRaisedCosine(L, 1, 0.25, 46)
+rc_test = filter.RootRaisedCosine(L, 1, 0.25, 45)
 qpsk_tx_filtered = pulse_shape(qpsk_symbols, L, rc_test)
 
 fig, ax = plt.subplots()
@@ -111,7 +111,7 @@ _,_ = plot.eye(qpsk_tx_filtered.real, L)
 
 
 ```python
-plot.spec_an(qpsk_tx_filtered, fs=L*1e6, fft_shift=True, show_SFDR=False)
+plot.spec_an(qpsk_tx_filtered, fs=L*1e6, fft_shift=True, show_SFDR=False, y_unit="dB")
 plt.show()
 ```
 
@@ -130,8 +130,9 @@ transient = (len(rc_test)//2 + 1) * L
 _,_ = plot.eye(rx_shaped.real[transient:], L )
 
 # adjust for best EVM, similar to slicer
-timing_offset = 3
-plot.IQ(qpsk_tx_filtered[transient + timing_offset::4])
+timing_offset = 4
+#plot.IQ(qpsk_tx_filtered[transient + timing_offset::4], alpha=0.3)
+plot.IQ(rx_shaped[transient + timing_offset::4], alpha=0.3)
 plt.show()
 ```
 

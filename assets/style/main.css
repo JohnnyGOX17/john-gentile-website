@@ -133,20 +133,17 @@ body,
 .doc-sidebar .section-name,
 .card,
 .searchbar input {
-  font-weight: 300;
   text-transform: none
 }
 
 body,
 .card {
-  font-size: 20px;
   line-height: 28px
 }
 
 @media only screen and (max-width: 956px) {
   body,
   .card {
-    font-size: 16px;
     line-height: 26px
   }
 }
@@ -158,7 +155,6 @@ body,
 .doc-sidebar .section-name,
 .searchbar input {
   color: #333;
-  font-size: 14px;
   line-height: 1.3
 }
 
@@ -289,6 +285,7 @@ body {
 body {
   color: #000;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   /*padding-top: 10px*/
@@ -312,14 +309,13 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-weight: 300;
+  font-weight: 100;
   margin: 0.25em 0
 }
 
 h1,
 h2.h1 {
   font-size: 50px;
-  font-weight: 100;
   line-height: 65px
 }
 
@@ -334,14 +330,12 @@ h2.h1 {
 h2 {
   font-size: 40px;
   line-height: 50px;
-  font-weight: 100
 }
 
 @media only screen and (max-width: 956px) {
   h2 {
     font-size: 26px;
     line-height: 20px;
-    font-weight: 300
   }
 }
 
@@ -2584,7 +2578,7 @@ footer .footer-privacy {
   html th,
   body th,
   .main {
-    background-color: #2d2d2d;
+    background-color: #151719;
     color: #e4e4e4;
   }
 
