@@ -77,6 +77,7 @@ typings/
 # Python & Jupyter (Lab) Notebooks
 .ipynb_checkpoints/
 .venv/
+.virtual_documents/
 
 # Gem bundle configs
 .bundle
