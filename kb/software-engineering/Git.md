@@ -198,6 +198,14 @@ There is also added scripts in `contrib/completion/` in the Git source code to e
 ### Git Hooks
 https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
+## Self-Hosting a Git Repo
+
+To simply host a git repo on a server, with git clients accessing over SSH (note users must be able to SSH in):
+1. `$ mkdir <git_repo> && cd <git_repo>`
+2. `$ git init --bare <git_repo>.git`
+
+Then on client machine, clone the bare repo with `$ git clone user@server_hostname:/path/to/git/git_repo.git`. Can then add, push, etc. files from there.
+
 ## References & Tutorials
 
 * [Pro Git, 2nd Edition- Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2): indispensable, free reference book on everything Git.

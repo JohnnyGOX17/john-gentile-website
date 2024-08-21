@@ -31,6 +31,7 @@ wip: false
 
 ## Open-Source SAR Repos
 
+* https://github.com/RadarCODE/awesome-sar
 * [ngageoint/sarypy](https://github.com/ngageoint/sarpy)
 * https://github.com/ron-kemker/sar
 * https://github.com/AlexeyPechnikov/pygmtsar

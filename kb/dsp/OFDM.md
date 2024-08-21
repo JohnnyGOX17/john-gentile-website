@@ -56,3 +56,7 @@ YouTubeVideo('UCRildDdrX4', width=800, height=300)
 
 
 
+
+## References
+
+* [The History of Orthogonal Frequency-Division Multiplexing (OFDM) - IEEE](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5307460)

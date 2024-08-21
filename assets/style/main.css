@@ -31,8 +31,9 @@ ol.bibliography { list-style-type: none; }
 
 .slideout-menu-section-title {
   text-transform: uppercase;
-  color: #85888D;
+  color: #fff;
   font-size: 14px;
+  font-style: italic;
   letter-spacing: 1px;
   padding: 0 20px;
   -webkit-margin-before: 1em;
@@ -42,7 +43,7 @@ ol.bibliography { list-style-type: none; }
 }
 
 .slideout-menu-li a {
-  color: #FFF;
+  color: #e4e4e4;
   display: block;
   padding: 10px 20px;
 }
@@ -654,7 +655,7 @@ amp-vimeo {
 
 /*.header .left-nav*/
 .header-title {
-  background: url("/assets/images/Gent-systems_icon_black.png") no-repeat center left/50%;
+  background: url("/assets/images/Gent-systems_icon_white.png") no-repeat center left/50%;
   color: #0379c4;
   margin: 0;
   padding: 40px 40px 40px 40px;
@@ -723,14 +724,14 @@ amp-vimeo {
 
 .header .tab.hamburger {
   align-self: center;
-  background: url("/assets/images/hamburger.svg") no-repeat center/30px 24px transparent;
+  background: url("/assets/images/hamburger.svg") no-repeat center/40px 40px transparent;
   border: 0;
   cursor: pointer;
   display: none;
   height: 40px;
   margin: 0;
   padding: 0;
-  width: 40px
+  width: 60px
 }
 
 .header div.tab {
@@ -2571,8 +2572,8 @@ footer .footer-privacy {
   text-align: center;
 }
 
-/* implement dark mode color scheme when host prefers */
-@media (prefers-color-scheme: dark) {
+/* implement dark mode color scheme when host prefers (now just stick to dark mode) */
+/* @media (prefers-color-scheme: dark) { */
   body,
   input,
   html th,
@@ -2648,4 +2649,4 @@ footer .footer-privacy {
   blockquote {
     border-left: 4px solid #aaa;
   }
-}
+/*}*/
