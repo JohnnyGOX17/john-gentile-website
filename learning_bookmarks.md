@@ -1688,8 +1688,6 @@ vhdl-digital
             [Understanding spectra in polyphase filter banks](https://dsp.stackexchange.com/questions/42998/understanding-spectra-in-polyphase-filter-banks)
             [Polyphase Decimation Filter parallel inputs](https://dsp.stackexchange.com/questions/83922/polyphase-decimation-filter-parallel-inputs)
             [pjvalla/pfb_channelizer_gen](https://github.com/pjvalla/pfb_channelizer_gen)
-            [Noise gate - Wikipedia](https://en.m.wikipedia.org/wiki/Noise_gate)
-            [Digital filter - Wikipedia](https://en.wikipedia.org/wiki/Digital_filter#Filter_realization)
             [Implementation of a Quadrature Mirror Filter Bank on an SRC reconfigurable computer for real-time signal processing](https://core.ac.uk/download/pdf/36696376.pdf)
             [Solved: Complex FIR in FIR Compiler 7.2 - Community Forums](https://forums.xilinx.com/t5/AI-Engine-DSP-IP-and-Tools/Complex-FIR-in-FIR-Compiler-7-2/td-p/771344)
             [FPGA and DSP ep. 3: Halfband FIR Filters - YouTube](https://www.youtube.com/watch?v=5M_iB79-aSI)
