@@ -159,17 +159,6 @@ body,
   line-height: 1.3
 }
 
-@media only screen and (max-width: 956px) {
-  .small,
-  .doc-sidebar li.sub-level>.section-name,
-  .header div.tab .list-container>ul li a,
-  .post-content,
-  .doc-sidebar .section-name,
-  .searchbar input {
-    font-size: 14px
-  }
-}
-
 .smaller {
   color: #333;
   font-size: 14px;
@@ -289,14 +278,7 @@ body {
   font-weight: 300;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
-  /*padding-top: 10px*/
 }
-
-/*@media only screen and (max-width: 956px) {
-  body {
-    padding-top: 10px
-  }
-}*/
 
 img {
   border: 0;
