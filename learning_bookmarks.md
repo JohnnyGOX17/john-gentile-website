@@ -795,6 +795,7 @@ dsp-math-ml
         [Research | Wireless Communication and Sensornets Laboratory](https://wcsl.ece.ucsb.edu/research)
         [RF Challenge | RF Challenge - AI Accelerator](https://rfchallenge.mit.edu/)
     Information Theory
+        [Erasure Coding for Distributed Systems - HN](https://news.ycombinator.com/item?id=41361281)
         [aff3ct/aff3ct: See our website: http://aff3ct.github.io](https://github.com/aff3ct/aff3ct)
         [facebook/zstd: Zstandard - Fast real-time compression algorithm](https://github.com/facebook/zstd)
         [Polar code (coding theory) - Wikipedia](https://en.wikipedia.org/wiki/Polar_code_(coding_theory))
