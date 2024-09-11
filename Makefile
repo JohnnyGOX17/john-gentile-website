@@ -77,7 +77,7 @@ ifeq ($(UNAME_S),Darwin)
 endif
 	cd $(SITE_DIR) && $(PY_EXE) -m http.server $(SERVE_PORT)
 
-update: install_python
+update: check-env
 	bundle update --all
 
 uninstall:
