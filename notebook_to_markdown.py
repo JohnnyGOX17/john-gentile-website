@@ -125,7 +125,9 @@ def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
                         output_lines.append(
                             '<p style="font-family:monospace; white-space:pre-wrap">\n'
                         )
-                        output_lines.append(line[4:])
+                        lbracket_rep = line.replace("<", "&lt;")
+                        rbracket_rep = lbracket_rep.replace(">", "&gt;")
+                        output_lines.append(rbracket_rep[4:])
                         in_output_block = True
                     else:  # not start of output block
                         if line.startswith(
@@ -157,7 +159,9 @@ def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
                             output_lines.append(line)
                 else:  # in output block
                     if line.startswith("    "):  # still in output block
-                        output_lines.append(line[4:])
+                        lbracket_rep = line.replace("<", "&lt;")
+                        rbracket_rep = lbracket_rep.replace(">", "&gt;")
+                        output_lines.append(rbracket_rep[4:])
                     else:  # finish out output block
                         # HTML trailer block
                         output_lines.append("</p>\n")
