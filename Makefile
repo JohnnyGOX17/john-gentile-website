@@ -32,7 +32,10 @@ build:
 clean_hashes:
 	find . -type f -name '*.ipynb.md5' -delete
 
-clean: clean_hashes
+clean_notebook_outputs: clean_hashes
+	git clean -fX
+
+clean: clean_notebook_outputs
 	# Deleting generated files...
 	rm -rf $(SITE_DIR)
 	rm -f TODO.md

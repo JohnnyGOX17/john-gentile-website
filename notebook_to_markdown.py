@@ -74,8 +74,13 @@ def match_subdir_to_category(subdir: str) -> str:
 
 
 def convert_jupyter_to_markdown(file_path: str):
-    """Use nbconvert to export notebook to raw Markdown"""
-    print(subprocess.run(["jupyter", "nbconvert", "--to", "markdown", file_path]))
+    """Use nbconvert to run the notebook (get cell outputs, as notebooks will be
+    cleared on CI builds) export notebook to raw Markdown, from: https://stackoverflow.com/a/35572827"""
+    print(
+        subprocess.run(
+            ["jupyter", "nbconvert", "--execute", "--to", "markdown", file_path]
+        )
+    )
 
 
 def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
