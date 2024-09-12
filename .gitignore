@@ -84,3 +84,4 @@ typings/
 
 # MD5 hashes of Jupyter notebooks
 *.ipynb.md5
+.jampack/

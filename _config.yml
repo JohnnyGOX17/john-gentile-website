@@ -21,6 +21,7 @@ plugins:
 exclude:
   - "*.ipynb"
   - "*.py"
+  - "*.sh"
   - README.md
   - TODO.md
   - Gemfile

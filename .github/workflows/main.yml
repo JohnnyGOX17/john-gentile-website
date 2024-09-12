@@ -43,6 +43,8 @@ jobs:
           python3 notebook_to_markdown.py
           # Generate intermediate files from Jekyll (use additional publish configs)
           bundle exec jekyll build --config _config.yml,_config-publish.yml
+          # Minify/compress resources using https://github.com/divriots/jampack
+          npx -y @divriots/jampack ./_site/ --onlycomp
           # Write current git revision to file for tracking
           git rev-parse HEAD > ./_site/revision
 
