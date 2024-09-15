@@ -147,6 +147,15 @@ Three pre-combining adders are necessary (which in Xilinx DSP48 slices are built
 
 ## Processing Architectures
 
+### Data Flow and Control in Digital Circuits
+
+Since digital systems, like FPGAs, flow data through DSP stages, and most DSP processes assume a synchronous, constant flow of sample data, there are a couple avenues to handle the control flow:
+1. Match the processing clock rate (e.g. FPGA synchronous clock) exactly to the input data stream, such that when globally enabled, each clock-tick of samples are guaranteed valid. This is useful in digital systems where the source/sink of samples external to the FPGA (e.x. ADC/DAC) can drive the clock directly ([source-synchronous clocking](https://en.wikipedia.org/wiki/Source-synchronous)).
+2. In systems where we can't be source-synchronous (e.g. the DSP stages are clocked much higher- or can process faster- than incoming data samples, or clock rates are slightly different/asynchronous between source and processing), there exists times where data is not valid but processing is ready for the next sample (in AXI parlance, `tvalid = 0` of sample source but `tready = 1` of processing stage). To deal with these gaps, it may be necessary to buffer incoming data (FIFO) and/or have global `enable` signals to start/stop the entire processing chain.
+  + In DSP processing, where there are feedback/feedforward stages that have tight sample-to-sample timing dependence, this model works better than each stage having independent `ready/valid` signaling (though global `enable` signal may have high fanout in digital logic). With individual `ready/valid` signaling, some paths of processing may continue to propagate while other parallel paths are stalled; in the case of a fedback signal, this could mean that the response is applied at the wrong time.
+  + In systems where the dataflow is independent/serial, you _could_ use `ready/valid` (or just `valid` in and out signals if you know that the processing will always keep up and never backpressure) between stages. For example in a modem receiver design, the major blocks, like `matched filter -> timing recovery -> carrier recovery`, could use interstage `ready/valid` signaling between them, while the internals of a given stage (e.g. timing recovery which encompasses feedback loop filters and other parallel, timing-dependent stages) could use a global `enable` signal to keep data processing coherent.
+    - Note another reason to skip `ready` signaling- if you know you won't ever backpressure and can keep up with the input data stream- is to avoid needing to use [skid buffers](/kb/digital/fundamentals.html#skid-buffers) to optimally handle the `ready/valid` interactions.
+
 ### Kahn Network Descriptions
 
 https://en.wikipedia.org/wiki/Kahn_process_networks

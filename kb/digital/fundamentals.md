@@ -50,6 +50,16 @@ I/O resets are asynchronous (for safety in case no clocks), but everything inter
     * Looking at synthesis reports/logs can help verify attributes or show potential for device-primitive mapping.
 
 
+### Skid Buffers
+
+One of the most important building blocks for high-throughput, pipelined, digital designs is the skid buffer (or register slice). When dealing with `ready/valid` handshaking between stages, you don't want to naively just register the `ready` signal when getting backpressure from a downstream stage, as this could bubble up delays in the processing, decreasing overall throughput. Instead, a skid buffer can be seen as a lightweight, 2-deep FIFO that can allow 10% throughput without incurring bubble cycles.
+
+For more information, see:
+* [AMD-Xilinx AXI Register Slice LogiCORE IP Product Guide (PG373)](https://docs.amd.com/r/en-US/pg373-axi-register-slice/Designing-with-the-Core)
+* [Pipeline Skid Buffer - fpgacpu.ca](http://fpgacpu.ca/fpga/Pipeline_Skid_Buffer.html)
+* [Building a Skid Buffer for AXI processing - zipcpu](https://zipcpu.com/blog/2019/05/22/skidbuffer.html)
+* [Designing Skid Buffers for Pipelines - Chipmunk Logic](https://chipmunklogic.com/digital-logic-design/designing-skid-buffers-for-pipelines/)
+
 
 ## Designing for Power
 
