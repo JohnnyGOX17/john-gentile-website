@@ -167,6 +167,46 @@ https://en.wikipedia.org/wiki/Systolic_array
 
 ## Tools
 
+### Device Primitives
+
+To hit performance, cost, power, etc. goals, it's critical to understand the processing architecture and hardware you're targeting. For instance in CPUs, understanding the specific [SIMD units](/kb/software-engineering/sw_for_performance.html) available. Or for FPGAs, understanding the primitive blocks available and how to correctly utilize them (e.g. inference vs direct instantiation). Beyond IP blocks for interfacing (e.g. Ethernet) or memory (block vs distributed RAM), for DSP, vendors such as [AMD-Xilinx provide DSP blocks in PL](https://www.xilinx.com/publications/archives/books/dsp.pdf) which are meant to handle common DSP tasks. It's critical to understand the different features available to best utilize them.
+
+For example, a common DSP operation is the [multiply-accumulate (MAC) operation](https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation), where a product is added to an accumulator, such as `c += a * b`. One way to target a DSP48 block is to either directly use the DSP48 macro and set the correct opcode, or to use inference (coding in a style that the synthesis tool will pick up the correct device primitive) which has the added benefit of being more portable than direct macro instantiation (similar to compilers with autovectorization capabilities vs directly coding intrinsics/assembly to target SIMD units). In this case, we can show two `16b` inputs multiplied together and accumulated in a `32b` accumulator, operating all in one clock cycle:
+
+```verilog
+module test_mac(
+    input  logic clk,
+    input  logic signed [15:0] a,
+    input  logic signed [15:0] b,
+    output logic signed [31:0] c
+);
+    
+  always_ff @(posedge clk) begin
+    c <= (a*b) + c;
+  end
+endmodule
+```
+
+We can see that the synthesis tool (in this case [Vivado 2022.2](https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html)) correctly infers the DSP48 in a multiply-accumulate mode by looking at the synthesis report:
+
+```
+DSP Report: Generating DSP c_reg, operation Mode is: (P+A*B)'.
+DSP Report: register c_reg is absorbed into DSP c_reg.
+DSP Report: operator c0 is absorbed into DSP c_reg.
+DSP Report: operator c1 is absorbed into DSP c_reg.
+...
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|test_mac    | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+```
+
+This is also seen by viewing the synthesized schematic showing the DSP48 block directly tied to the inputs and outputs:
+
+![dsp48_mac](./dsp48_mac.png)
+
 ### RFNoC
 
 * [Getting Started with RFNoC - Ettus Research](https://kb.ettus.com/Getting_Started_with_RFNoC_in_UHD_4.0)

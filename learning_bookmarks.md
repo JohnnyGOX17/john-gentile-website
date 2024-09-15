@@ -1557,7 +1557,6 @@ vhdl-digital
             [GitHub - catkira/complex_multiplier: HDL code for a complex multiplier with AXI stream Interface](https://github.com/catkira/complex_multiplier)
             [tomverbeure/math: SpinalHDL Hardware Math Library](https://github.com/tomverbeure/math)
             [Complex Multiplier v6.0 LogiCORE IP Product Guide (PG104)](https://www.xilinx.com/support/documentation/ip_documentation/cmpy/v6_0/pg104-cmpy.pdf)
-            [Multiply–accumulate operation - Wikipedia](https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation)
             [Methods of computing square roots - Wikipedia](https://en.m.wikipedia.org/wiki/Methods_of_computing_square_roots)
             [Fast Inverse Square Root](https://timmmm.github.io/fast-inverse-square-root/)
             [Xilinx WP277 Expanding Dedicated Multipliers white paper](https://www.xilinx.com/support/documentation/white_papers/wp277.pdf)
