@@ -214,5 +214,6 @@ This is also seen by viewing the synthesized schematic showing the DSP48 block d
 
 ## References
 
+* [DSP: Designing for Opitmal Results - Xilinx-AMD Book](https://www.xilinx.com/publications/archives/books/dsp.pdf)
 * [VHDL Math Tricks of the Trade- SynthWorks](https://www.synthworks.com/papers/vhdl_math_tricks_mapld_2003.pdf)
 
