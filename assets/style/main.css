@@ -842,7 +842,7 @@ amp-vimeo {
 }
 
 .header div.tab .list-container>ul .sublist li.active {
-  background: white;
+  background: #111111;
   border-left: 2px solid;
   border-left-color: #44aeff
 }
