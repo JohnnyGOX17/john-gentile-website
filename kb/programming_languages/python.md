@@ -292,6 +292,11 @@ Jupyter notebooks can be exported to many formats, like HTML, LaTeX and PDF. How
 * [Think Python, 3rd Ed - Allen Downey](https://greenteapress.com/wp/think-python-3rd-edition/)
   - [Other Free eBooks from Allen Downey & Green Tea Press](https://greenteapress.com/wp/)
 * [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+* [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)
+* [TheAlgorithms/Python: All Algorithms implemented in Python](https://github.com/TheAlgorithms/Python)
+* [markusschanta/awesome-jupyter: A curated list of awesome Jupyter projects, libraries and resources](https://github.com/markusschanta/awesome-jupyter)
+* [NumPy for MATLAB users — NumPy v1.20 Manual](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html)
+* [PythonSpeed/PerformanceTips - Python Wiki](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)
 
 ### To Read
 

@@ -48,14 +48,16 @@ Since [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) and some other 
 
 ## References
 
+* [Linux Kernel Newbies](https://kernelnewbies.org/)
 * [Linux Device Drivers, Third Edition](https://lwn.net/Kernel/LDD3/)
+  + [GitHub - sysprog21/lkmpg: The Linux Kernel Module Programming Guide (updated for 5.x kernels)](https://github.com/sysprog21/lkmpg/)
+  + [duxing2007/ldd3-examples-3.x: port ldd3 source code examples after linux 3.x](https://github.com/duxing2007/ldd3-examples-3.x)
 * [Bootlin RT/embedded Linux training materials](https://bootlin.com/training/) and [docs](https://bootlin.com/docs/)
   + Bootlin has a lot of up-to-date material on things from kernel driver development to Yocto and embedded Linux building.
-* [Getting Kernel Sources- CentOS 7](https://wiki.centos.org/HowTos/I_need_the_Kernel_Source)
-* [Building Kernel Module- CentOS 7](https://wiki.centos.org/HowTos/BuildingKernelModules)
 * [The Linux Kernel's Documentation](https://www.kernel.org/doc/html/latest/)
 * [The (unofficial) Linux Kernel Mailing List (LKML)](https://lkml.org/)
 * [The Linux Documentation Project](http://www.tldp.org/guides.html)
-* [Linux Kernel Newbies](https://kernelnewbies.org/)
 * [Red Hat Developer Program](https://developers.redhat.com/)
+* [Linux Performance Analysis in 60,000 Milliseconds | by Netflix Technology Blog | Netflix TechBlog](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)
+* [Netflix at Velocity 2015: Linux Performance Tools | by Netflix Technology Blog | Netflix TechBlog](https://netflixtechblog.com/netflix-at-velocity-2015-linux-performance-tools-51964ddb81cf)
 
