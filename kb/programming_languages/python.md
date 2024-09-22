@@ -269,6 +269,7 @@ Sometimes it's advantageous to have Jupyter run on a remote machine that you can
   + Spell checking of Markdown cells can be achieved with the [jupyterlab-spellchecker](https://github.com/jupyterlab-contrib/spellchecker) plugin
 - Since plaintext diffs of Jupyter notebooks are sometimes not very insightful, tools like [nbdime](https://nbdime.readthedocs.io/en/latest/) are useful to better diff & merge notebooks within a Git repo.
   + [ReviewNB](https://www.reviewnb.com/) is a service that can similarly help with reviews on public repos like GitHub
+  + You can also use a [git filter](https://github.com/JohnnyGOX17/configs/blob/master/configs/.gitconfig#L51) to remove Jupyter notebook cell output, and other unnecessary metadata (see https://stackoverflow.com/a/58004619 and https://stackoverflow.com/a/73218382). This allows git operations (e.g. when diff'ing or committing changes) to operate on the cleaned notebook (e.g. just code and Markdown cell changes) while allowing the local file copy to retain any current output cell state.
 - Use `%matplotlib widget` to [render animated matplotlib plots](https://stackoverflow.com/a/56416229)
 
 
