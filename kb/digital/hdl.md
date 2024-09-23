@@ -710,7 +710,7 @@ Here are some repositories of Verilog and VHDL code for common IP cores:
 * [VHDLwhiz Blog](https://vhdlwhiz.com/)
 * [Open Source VHDL Group](https://github.com/VHDL)
 * [Synthworks VHDL Papers](https://www.synthworks.com/papers/index.htm)
-* [The Art of FPGA Design | element14 | FPGA Group](https://www.element14.com/community/groups/fpga-group/blog/2018/07/11/the-art-of-fpga-design)
+* [The Art of FPGA Design - element14](https://www.element14.com/community/groups/fpga-group/blog/2018/07/11/the-art-of-fpga-design)
 * [Learning VHDL with GHDL · Issue #1291 · ghdl/ghdl](https://github.com/ghdl/ghdl/issues/1291)
 * [VHDL-LS/rust_hdl](https://github.com/VHDL-LS/rust_hdl)
 

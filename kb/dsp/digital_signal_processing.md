@@ -1,5 +1,5 @@
 ---
-title: Digital Signal Processing
+title: Intro to Digital Signal Processing (DSP)
 layout: default
 kb: true
 top-category: Digital Signal Processing (DSP)

@@ -478,7 +478,6 @@
 * [Table of Fourier Transform Pairs](https://ethz.ch/content/dam/ethz/special-interest/baug/ibk/structural-mechanics-dam/education/identmeth/fourier.pdf)
 * [Polynomial matrix spectral factorization - Wikipedia](https://en.wikipedia.org/wiki/Polynomial_matrix_spectral_factorization)
 * [Adaptive beamformer - Wikipedia](https://en.wikipedia.org/wiki/Adaptive_beamformer)
-* [SPECTRAL AUDIO SIGNAL PROCESSING](https://ccrma.stanford.edu/~jos/sasp/)
 * [Introduction to matched filters](https://crewes.org/ForOurSponsors/ResearchReports/2002/2002-46.pdf)
 * [GitHub - jgaeddert/liquid-dsp: digital signal processing library for software-defined radios](https://github.com/jgaeddert/liquid-dsp)
 * [What Every Computer Scientist Should Know about Floating-Point](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
@@ -566,7 +565,6 @@
 * [arduino-libraries/MadgwickAHRS: Arduino implementation of the MadgwickAHRS algorithm](https://github.com/arduino-libraries/MadgwickAHRS)
 * [filtering - Implementing Madgwick IMU algorithm - Stack Overflow](https://stackoverflow.com/questions/23599256/implementing-madgwick-imu-algorithm)
 * [Chip (CDMA) - Wikipedia](https://en.wikipedia.org/wiki/Chip_(CDMA))
-* [JOS Home Page](https://ccrma.stanford.edu/~jos/)
 * [Wave Walker DSP](https://www.wavewalkerdsp.com/)
 * [Xampling: Analog to Digital at Sub‐Nyquist Rates](https://arxiv.org/pdf/0912.2495.pdf)
 * [H.264 is magic: a technical walkthrough of a remarkable technology.](https://sidbala.com/h-264-is-magic/)
@@ -698,7 +696,6 @@
 * [Phased Array Antenna Patterns—Part 1: Linear Array Beam Characteristics and Array Factor | Analog Devices](https://www.analog.com/en/analog-dialogue/articles/phased-array-antenna-patterns-part1.html#)
 * [Phased Array Antenna Patterns—Part 2: Grating Lobes and Beam Squint | Analog Devices](https://www.analog.com/en/analog-dialogue/articles/phased-array-antenna-patterns-part2.html)
 * [Phased Array Antenna Patterns—Part 3: Sidelobes and Tapering | Analog Devices](https://www.analog.com/en/analog-dialogue/articles/phased-array-antenna-patterns-part3.html)
-* [Fast Convolution replacement for FIR Matched Filter](https://en.wikipedia.org/wiki/Convolution#:~:text=The%20most%20common%20fast%20convolution,then%20performing%20an%20inverse%20FFT.)
 * [MITHaystack/digital_rf: Read, write, and interact with data in the Digital RF and Digital Metadata formats](https://github.com/MITHaystack/digital_rf)
 * [10-Brian_Avenell-RF_Spurs.pdf](https://www.gnuradio.org/grcon/grcon18/presentations/Managing_RF_Spurs/10-Brian_Avenell-RF_Spurs.pdf)
 * [Matched_Filter.pdf](http://nrr.mit.edu/sites/default/files/documents/Matched_Filter.pdf)
@@ -1593,6 +1590,7 @@
 ## DSP-Algorithms
 
 * [The Art of FPGA Design Season 2 - Digital Signa... | element14 | FPGA Group](https://www.element14.com/community/groups/fpga-group/blog/2020/10/20/the-art-of-fpga-design-season-2-digital-signal-processing-from-algorithm-to-fpga-bitstream)
+* [Spectral Audio Signal Processing - JOS](https://ccrma.stanford.edu/~jos/sasp/)
 * [Digital Library - Arithmetic Cores](http://www.secs.oakland.edu/~llamocca/arithcores.html)
 * [theseus-cores: open source FPGA cores for DSP](https://github.com/theseus-cores/theseus-cores)
 * [Shameless self-promotion](http://www.secs.oakland.edu/~llamocca/Publications.html)
@@ -1627,7 +1625,6 @@
 * [Overview • Versal ACAP DSP Engine Architecture Manual (AM004) • Reader • Documentation Portal](https://docs.xilinx.com/r/en-US/Versal-ACAP-DSP-Engine-Architecture-Manual-AM004)
 * [EEC 281 - VLSI Digital Signal Processing](https://www.ece.ucdavis.edu/~bbaas/281/)
 * [Maia SDR – Daniel Estévez](https://destevez.net/2023/02/maia-sdr/)
-* [GitHub - talonmyburgh/casper_dspdevel: VHDL development of the CASPER FFT for use in the CASPER toolflow.](https://github.com/talonmyburgh/casper_dspdevel)
 * [GitHub - casper-astro/mlib_devel](https://github.com/casper-astro/mlib_devel)
 * [Lecture Notes | Communication System Design | Electrical Engineering and Computer Science | MIT OpenCourseWare](https://ocw.mit.edu/courses/6-973-communication-system-design-spring-2006/pages/lecture-notes/)
 * [&gt; I hoped that it would make sense to install certain instructions on your fpga ... | Hacker News](https://news.ycombinator.com/item?id=37768472)
@@ -1718,6 +1715,7 @@
 ### FFT-Transforms
 
 * [FFTW Home Page](http://www.fftw.org/)
+* [MATHEMATICS OF THE DISCRETE FOURIER TRANSFORM (DFT) WITH AUDIO APPLICATIONS SECOND EDITION](https://ccrma.stanford.edu/~jos/mdft/)
 * [mborgerding/kissfft - a Fast Fourier Transform (FFT) library that tries to Keep it Simple, Stupid](https://github.com/mborgerding/kissfft)
 * [DTolm/VkFFT: Vulkan Fast Fourier Transform library](https://github.com/DTolm/VkFFT)
 * [High Performance Discrete Fourier Transforms on Graphics Processors](https://mc.stanford.edu/cgi-bin/images/7/75/SC08_FFT_on_GPUs.pdf)
@@ -1736,6 +1734,8 @@
 * [Fast Fourier Transform on FPGA: Design Choices and Evaluation](https://users.ece.cmu.edu/~franzf/papers/fpga07poster-1.pdf)
 * [iFFT as fast as possible! : FPGA](https://www.reddit.com/r/FPGA/comments/piv75n/ifft_as_fast_as_possible/)
 * [Discrete Fourier Transform v4.1 LogiCORE IP Product Guide (PG106)](https://www.xilinx.com/support/documentation/ip_documentation/dft/v4_1/pg106-dft.pdf)
+* [GitHub - talonmyburgh/casper_dspdevel: VHDL development of the CASPER FFT for use in the CASPER toolflow.](https://github.com/talonmyburgh/casper_dspdevel)
+* [Fast Convolution replacement for FIR Matched Filter](https://en.wikipedia.org/wiki/Convolution#:~:text=The%20most%20common%20fast%20convolution,then%20performing%20an%20inverse%20FFT.)
 * [jhshi/openofdm: Sythesizable, modular Verilog implementation of 802.11 OFDM decoder.](https://github.com/jhshi/openofdm)
 * [Cheap Spectral Estimation](https://zipcpu.com/dsp/2020/03/17/cheap-spectra.html)
 * [An Open Source Pipelined FFT Generator](https://zipcpu.com/dsp/2018/10/02/fft.html)
@@ -1746,11 +1746,11 @@
 * [fourier transform - Fastest implementation of fft in C++? - Signal Processing Stack Exchange](https://dsp.stackexchange.com/questions/24375/fastest-implementation-of-fft-in-c/56626#56626)
 * [GitHub - owocomm-0/fpga-fft: A highly optimized streaming FFT core based on Bailey&#39;s 4-step large FFT algorithm](https://github.com/owocomm-0/fpga-fft)
 * [Fourier Transforms (scipy.fft) — SciPy v1.12.0 Manual](https://docs.scipy.org/doc/scipy/tutorial/fft.html)
+* [phip1611/spectrum-analyzer: An easy to use and fast no_std library (with alloc) to get the frequency spectrum of a digital signal (e.g. audio) using FFT.](https://github.com/phip1611/spectrum-analyzer)
 
 ### Filter-Conditioning
 
 * [Multirate Signal Processing for Communication Systems, Second Edition - MATLAB SW link](https://www.riverpublishers.com/book_details.php?book_id=788)
-* [FIR Compiler LogiCORE IP Product Guide • FIR Compiler (PG149) • Reader • AMD Adaptive Computing Documentation Portal](https://docs.xilinx.com/r/en-US/pg149-fir-compiler/FIR-Compiler-LogiCORE-IP-Product-Guide)
 * [GitHub - catkira/CIC: HDL code for a complex multiplier with AXI stream interface](https://github.com/catkira/CIC)
 * [Chisel/FIRRTL: Home](https://www.chisel-lang.org/)
 * [Xilinx WP330 Infinite Impulse Response Filter Structures in Xilinx FPGAs, White Paper](https://www.xilinx.com/support/documentation/white_papers/wp330.pdf)
@@ -1786,6 +1786,7 @@
 * [dsprelated.com/freebooks/filters/](https://www.dsprelated.com/freebooks/filters/)
 * [Why an FIR Filter Should Have an Odd Length](https://www.wavewalkerdsp.com/2021/12/29/why-an-fir-filter-should-have-an-odd-length/)
 * [Cascaded Integrator Comb (CIC) Filters - A Staircase of DSP | Wireless Pi](https://wirelesspi.com/cascaded-integrator-comb-cic-filters-a-staircase-of-dsp/)
+* [Introduction to Digital Filters with Audio Applications](https://ccrma.stanford.edu/~jos/filters/)
 
 ### FXP/floating-point
 
