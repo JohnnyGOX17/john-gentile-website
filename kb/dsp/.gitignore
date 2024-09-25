@@ -16,7 +16,7 @@ RF_impairments_and_corrections.md
 Sigma-Delta.md
 Time-Frequency_Analysis.md
 Timing_Sync-TEDs.md
-Multirate_Fundamentals.md
+Multirate_DSP.md
 AGC-Magnitude_Estimation_files/
 Adaptive_Filters_and_Equalization_files/
 Beamforming_files/
@@ -35,4 +35,4 @@ RF_impairments_and_corrections_files/
 Sigma-Delta_files/
 Time-Frequency_Analysis_files/
 Timing_Sync-TEDs_files/
-Multirate_Fundamentals_files/
+Multirate_DSP_files/
