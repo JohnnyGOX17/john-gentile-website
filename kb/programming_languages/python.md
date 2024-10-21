@@ -280,6 +280,7 @@ Jupyter notebooks can be exported to many formats, like HTML, LaTeX and PDF. How
 
 ### Data Analysis
 
+* [Scientific Visualization: Python + Matplotlib](https://github.com/rougier/scientific-visualization-book): an open access book on scientific visualization using python and matplotlib.
 * **[scikit-learn](https://scikit-learn.org/):** general-purpose machine learning toolkit for Python.
 * **[statsmodels](https://www.statsmodels.org/stable/index.html):** statistical analysis package which contains algorithms for classical statistics and econometrics.
 * **[TensorFlow](https://www.tensorflow.org/):** machine learning framework.
