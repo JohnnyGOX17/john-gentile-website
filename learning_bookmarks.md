@@ -1130,6 +1130,7 @@
 
 ### RF-SDR-SigInt
 
+* [nodonoughue/emitter-detection-book](https://github.com/nodonoughue/emitter-detection-book)
 * [git-artes/gr-tempest: An implementation of TEMPEST en GNU Radio](https://github.com/git-artes/gr-tempest)
 * [Modular Multi-Signal Tracking Pulse Descriptor Word (PDW) Generator with Field Programmable Gate Array (FPGA) Implementation](https://corescholar.libraries.wright.edu/etd_all/1561/)
 * [Airpwn](http://airpwn.sourceforge.net/Airpwn.html)
