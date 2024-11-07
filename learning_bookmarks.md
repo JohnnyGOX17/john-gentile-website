@@ -1197,8 +1197,6 @@
 * [Capture the Signal (CTS)](https://github.com/capturethesignal)
 * [General Mission Analysis Tool (GMAT) v.R2016a(GSC-17177-1) | NASA Software Catalog](https://software.nasa.gov/software/GSC-17177-1)
 * [Daniel Estévez – Scientific &amp; Technical Amateur Radio — Home of EA4GPZ / M0HXM](https://destevez.net/)
-* [New Space Opportunities Supplying the Future of Tip and Cue Strategies](https://www.planet.com/pulse/new-space-opportunities-supplying-the-future-of-tip-and-cue-strategies/)
-* [Tip and Cue Technique for Efficient Near Real-Time Satellite Monitoring of Moving Objects](https://www.iceye.com/satellite-data/blog/tip-and-cue-technique-for-efficient-near-real-time-satellite-monitoring-of-moving-objects)
 * [altillimity/SatDump: A generic satellite data processing software.](https://github.com/altillimity/SatDump)
 * [kscottz/PythonFromSpace: Python Examples for Remote Sensing](https://github.com/kscottz/PythonFromSpace)
 * [Satpy’s Documentation](https://satpy.readthedocs.io/en/latest/)

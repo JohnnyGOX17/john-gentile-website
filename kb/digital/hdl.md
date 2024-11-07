@@ -708,6 +708,7 @@ Here are some repositories of Verilog and VHDL code for common IP cores:
 * [Compact Summary of VHDL - UMBC](https://www.csee.umbc.edu/portal/help/VHDL/summary.html)
 * [comp.lang.vhdl - Google Groups](https://groups.google.com/g/comp.lang.vhdl/?pli=1)
 * [VHDLwhiz Blog](https://vhdlwhiz.com/)
+* [Understanding VHDL - Digilent](https://digilent.com/reference/programmable-logic/guides/getting-started-with-vhdl)
 * [Open Source VHDL Group](https://github.com/VHDL)
 * [Synthworks VHDL Papers](https://www.synthworks.com/papers/index.htm)
 * [The Art of FPGA Design - element14](https://www.element14.com/community/groups/fpga-group/blog/2018/07/11/the-art-of-fpga-design)

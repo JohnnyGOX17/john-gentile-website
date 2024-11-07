@@ -51,6 +51,8 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [srsRAN - Open Source 4G/5G software](https://github.com/srsran)
 * [open5G_phy](https://github.com/catkira/open5G_phy): A resource efficient, customizable, synthesizable 5G NR lower PHY written in Verilog
 * [free5GRAN](https://github.com/free5G/free5GRAN): free5GRAN is an open-source 5G RAN stack. The current version includes a receiver which decodes MIB & SIB1 data. It also acts as a cell scanner. free5GRAN works in SA mode.
+* [SysSec-KAIST/LTESniffer: An Open-source LTE Downlink/Uplink Eavesdropper](https://github.com/SysSec-KAIST/LTESniffer)
+* [Private LTE with Analog ADALM-PLUTO](https://www.quantulum.co.uk/blog/private-lte-with-analog-adalm-pluto/)
 * [LTE-Cell-Scanner](https://github.com/JiaoXianjun/LTE-Cell-Scanner): OpenCL, SDR, TDD/FDD LTE cell scanner, full stack from A/D samples to SIB ASN1 messages decoded in PDSCH, (optimized for RTL-SDR HACKRF and BladeRF board)
 * [Evrytania/Matlab-Library](https://github.com/Evrytania/Matlab-Library): Miscellaneous Matlab functions that are useful for wireless communications. Primarily focused on LTE / 3GPP.
 
@@ -65,6 +67,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 ### LoRaWAN
 
 * [Meshtastic](https://meshtastic.org/): open source mesh network software running on low-power, affordable devices.
+  + [Meshtastic SDR](https://gitlab.com/crankylinuxuser/meshtastic_sdr): This GnuRadio project aims at being a full transceiver stack (RX and TX) for a software defined radio to communicate with the Meshtastic LoRa network.
 * [LoRaWAN On Helium Network](https://docs.helium.com/iot/lorawan-on-helium/)
 
 ### ZigBee
