@@ -12,6 +12,7 @@ comments: true
 * [LeetCode](https://leetcode.com/)
   + [leetcode/README_EN.md at main · doocs/leetcode](https://github.com/doocs/leetcode/blob/main/README_EN.md)
   + [kamyu104/LeetCode-Solutions: 🏋️ Python / Modern C++ Solutions of All 2276 LeetCode Problems (Weekly Update)](https://github.com/kamyu104/LeetCode-Solutions)
+* [Competitive Programmer's Handbook- Antti Laaksonen](https://cses.fi/book/book.pdf)
 * [GitHub - jwasham/coding-interview-university: A complete computer science study plan to become a software engineer.](https://github.com/jwasham/coding-interview-university)
 * [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 * [Technical Interview Guide for Busy Engineers](https://www.techinterviewhandbook.org/)
