@@ -61,4 +61,5 @@ _Power analysis_ is a form of SCA [where an attacker studies the power consumpti
   + [CSAIL-Arch-Sec/SHD-StarterCode - GitHub](https://github.com/CSAIL-Arch-Sec/SHD-StarterCode)
 - [ ] [NewAE Education & Training](https://www.newae.com/education)
   + [NewAE Technology GitHub Org (Chipwhisperer, etc. designs)](https://github.com/newaetech)
+- [ ] [Security Engineering, 3rd Ed](https://www.cl.cam.ac.uk/archive/rja14/book.html)
 

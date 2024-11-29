@@ -129,6 +129,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 * [The embedonomicon](https://japaric.github.io/embedonomicon/preface.html)
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
+* [The Embedded Rustacean Newsletter](https://www.theembeddedrustacean.com/)
 * [Learn Rust the Dangerous Way](https://cliffle.com/p/dangerust/)
 * [ ] [High Assurance Rust](https://highassurance.rs/)
 

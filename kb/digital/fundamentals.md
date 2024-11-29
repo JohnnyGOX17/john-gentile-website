@@ -101,5 +101,6 @@ See [this page on verification & testing of HDL/RTL designs](./rtl_verif.html).
 
 ## References
 
+* [Embedded Systems Engineering Roadmap](https://github.com/m3y54m/Embedded-Engineering-Roadmap)
 * [Low-Power Design (LPD) - Eduardo Boemo](https://www.eurasip.org/Seminars/EURASIPLowPowerSeminar_talk1.pdf)
 

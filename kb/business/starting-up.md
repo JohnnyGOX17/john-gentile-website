@@ -30,3 +30,7 @@ Things that work well:
 * [Mail Chimp](https://mailchimp.com/): email and marketing automation platform.
 * [Intercom](https://www.intercom.com/): Live chat platform for also catching, and tracking, leads.
 
+## References
+
+* [Idea Generation - Sam Altman](https://blog.samaltman.com/idea-generation)
+

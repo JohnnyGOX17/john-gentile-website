@@ -56,6 +56,19 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [LTE-Cell-Scanner](https://github.com/JiaoXianjun/LTE-Cell-Scanner): OpenCL, SDR, TDD/FDD LTE cell scanner, full stack from A/D samples to SIB ASN1 messages decoded in PDSCH, (optimized for RTL-SDR HACKRF and BladeRF board)
 * [Evrytania/Matlab-Library](https://github.com/Evrytania/Matlab-Library): Miscellaneous Matlab functions that are useful for wireless communications. Primarily focused on LTE / 3GPP.
 
+
+### DVB-S2
+
+* [igorauad/gr-dvbs2rx: DVB-S2 receiver blocks for GNU Radio](https://github.com/igorauad/gr-dvbs2rx)
+* [csdvb/dvbs2_tx: Nexø DVB-S2 transmitter application](https://github.com/csdvb/dvbs2_tx)
+* [mattzgto/bladerf-dvbs2: 16-APSK DVB-S2 Transmitter for BladeRF](https://github.com/mattzgto/bladerf-dvbs2)
+* [OpenResearchInstitute/dvb_fpga: RTL implementation of components for DVB-S2](https://github.com/OpenResearchInstitute/dvb_fpga)
+* [freecores/dvb_s2_ldpc_decoder: DVB-S2 LDPC Decoder](https://github.com/freecores/dvb_s2_ldpc_decoder)
+* [phase4ground/dvb_fpga: RTL implementation of components for DVB-S2](https://github.com/phase4ground/dvb_fpga)
+* [CCSDS Protocols over DVB-S2—Summary of Definition, Implementation, and Performance](https://public.ccsds.org/Pubs/130x12g1.pdf)
+* [aff3ct/dvbs2: DVB-S2 SDR Transceiver.](https://github.com/aff3ct/dvbs2)
+* [A Flexible and Portable Real-time DVB-S2 Transceiver using Multicore and SIMD CPUs](https://hal.science/hal-03336450/file/article.pdf)
+
 ### Bluetooth
 
 * [DEF CON 30 RF Village - Mike Ryan - Building a Modern Bluetooth Sniffer for SDRs - YouTube](https://www.youtube.com/watch?v=lpM9rnMfy2w)
@@ -73,6 +86,11 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 ### ZigBee
 
 * [gr-ieee802-15-4 ZigBee Transceiver GNU Radio block](https://github.com/bastibl/gr-ieee802-15-4)
+
+### Orthogonal Time Frequency Space (OTFS) Modulation
+
+* [OTFS Modulation- Mathworks](https://www.mathworks.com/help/comm/ug/otfs-modulation.html)
+* [OTFS − A Mathematical Foundation for Communication and Radar Sensing in the Delay-Doppler Domain](https://ece.iisc.ac.in/~achockal/pdf_files/zak_otfs1.pdf)
 
 
 ## Software Defined Radio (SDR)

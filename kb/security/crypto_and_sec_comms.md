@@ -34,5 +34,5 @@ comments: true
 * [ ] [Cryptopals Crypto Challenges](https://cryptopals.com/)
   - [akalin/cryptopals-python3 - GitHub](https://github.com/akalin/cryptopals-python3)
 * [ ] [Crypto101](https://www.crypto101.io/)
-* [ ] https://blog.cryptographyengineering.com/useful-cryptography-resources/
+* [ ] [Useful Cryptography Resources](https://blog.cryptographyengineering.com/useful-cryptography-resources/)
 

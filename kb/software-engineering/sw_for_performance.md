@@ -57,26 +57,46 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 
 ## Concurrency & Asynchronous Programming
 
+You mainly use concurrency in an application to separate concerns and/or to gain performance. Approaches to concurrency:
+- **Multiple Processes:** separate processes can use OS Interprocess Communication (IPC) features- like signals, sockets, files, pipes, etc.- to pass messages/data. A downisde is IPC can be complicated to setup or slow, and there's overhead in running multiple processes (OS resources to manage and start). An advantage is IPC can be horizontally scalable, and processes can be run across machines on a network (e.x. when using socket IPC).
+- **Multiple Threads:** you can also run multiple threads within a single process, where all threads share the same address space, and most data can be accessed directly from all threads. This makes the overhead much smaller than sharing data across processes, but this also means software must be more aware of potential problems between threads operating on data concurrently. Threads can be launched much quicker than processes as well.
+  + We can further divide up parallelism constructs from here into _task parallelism_ (dividing tasks into multiple, concurrent parts) and _data parallelism_, where each thread can operate on different parts of data (also leading into SIMD hardware parallelism).
+
+### Tools
+
+* `lscpu -C` can show `COHERENCY-SIZE` as the "minimum amount of data in bytes transferred from memory to cache".
+* Can show thread names in htop by F2 → Display options → Show custom thread names
+
+### References
+
+* [C++ Concurrency in Action, Second Edition](https://a.co/d/5JJIIHQ)
 * [ ] [What Every Systems Programmer Should Know About Concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
-* [ ] [Rust bounded-spsc-queue crate](https://crates.io/crates/bounded-spsc-queue)
+* [ ] [crossbeam-rs Learning Resources](https://github.com/crossbeam-rs/rfcs/wiki)
+* [ ] [Is Parallel Programming Hard, And, If So, What Can You Do About It? (Release v2023.06.11a)](https://arxiv.org/abs/1701.00854)
+* [ ] [C++11 threads, affinity and hyperthreading](https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/)
 
 
-## Real-Time
+## Real-Time & Embedded
 
 ### Real-Time Operating Systems (RTOS)
 
-* [FreeRTOS](https://www.freertos.org/)
+* [FreeRTOS - Market leading RTOS (Real Time Operating System) for embedded systems with Internet of Things extensions](https://www.freertos.org/)
+  + [FreeRTOS Features - FreeRTOS](https://www.freertos.org/features.html)
   + [FreeRTOS Kernel Book](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book)
+  + [161204_Mastering_the_FreeRTOS_Real_Time_Kernel-A_Hands-On_Tutorial_Guide.pdf](https://www.freertos.org/fr-content-src/uploads/2018/07/161204_Mastering_the_FreeRTOS_Real_Time_Kernel-A_Hands-On_Tutorial_Guide.pdf)
+  + [FreeRTOS - Xilinx Wiki - Confluence](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842141/FreeRTOS)
 * [The Power of Ten - Rules for Developing Safety Critical Code, NASA/JPL](https://spinroot.com/gerard/pdf/P10.pdf)
 * [GN&C Fault Protection Fundamentals, JPL & CalTech](https://trs.jpl.nasa.gov/bitstream/handle/2014/41696/08-0125.pdf)
 
 
-## Intrinsics
+## SIMD & Intrinsics
 
 ### ISA Guides & Reference
 
 * [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 * [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)
+* [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
+* [Understanding SIMD: Infinite Complexity of Trivial Problems](https://www.modular.com/blog/understanding-simd-infinite-complexity-of-trivial-problems)
 
 ## GPU Processing
 
@@ -85,16 +105,26 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 * [NVIDIA MatX](https://github.com/NVIDIA/MatX): An efficient C++17 GPU numerical computing library with Python-like syntax
 
 
-## Profiling, Tracing and Benchmarking Tools
+## Performance Tuning
+
+### Profiling, Tracing and Benchmarking Tools
 
 * [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)
   + [flamegraph-rs/flamegraph: easy flamegraphs for Rust projects and everything else](https://github.com/flamegraph-rs/flamegraph)
 * [KUtrace](https://github.com/dicksites/KUtrace): Low-overhead tracing of all Linux kernel-user transitions, for serious performance analysis. Includes kernel patches, loadable module, and post-processing software.
 
+### Linux Performance Optimizations
+
+Besides the general/obvious things like stopping unnecessary applications, background services, etc. you can also look into:
+- Using [taskset](https://man7.org/linux/man-pages/man1/taskset.1.html) and [nice](https://www.man7.org/linux/man-pages/man1/nice.1.html) to set a process's CPU affinity (one or more specific core allocation(s)) and process scheduling priority, respectively.
+  + You can launch a command/process with both using `$ taskset -c 0,1 nice -20 <command>`, which will launch `<command>` on cores `0` and `1` with highest scheduling priority.
+- Use `cpuset` and some other kernel techniques to completely isolate CPU core(s) from the Linux scheduler and/or other interrupts- in this way, you could place processes on that CPU completely isolated from other processes, theoretically uninterrupted. For example, see [this SUSE labs tutorial on CPU Isolation](https://www.suse.com/c/cpu-isolation-practical-example-part-5/).
+  + **NOTE:** [`isolcpus`](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cpu-partitioning/isolcpus) is now deprecated in Linux kernel.
+- Use Hugepage (or [transparent hugepage support](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)) to bump up the size of pages from the default (nominally `4096` Bytes) to some larger size (popularly `2MB` all the way to GB+) to optimize the [Translation lookaside bufer (TLB)](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) cache to have less misses/entries for virtual-physical memory paging.
+
 
 ## References
 
-* [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
 * [Cache Prefetching](https://en.wikipedia.org/wiki/Cache_prefetching)
 * [Intel Tuning Guides and Performance Analysis Papers](https://www.intel.com/content/www/us/en/developer/articles/guide/processor-specific-performance-analysis-papers.html)
 * [Brendan Gregg's Website](https://www.brendangregg.com/overview.html)
