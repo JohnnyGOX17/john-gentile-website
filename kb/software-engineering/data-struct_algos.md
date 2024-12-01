@@ -21,6 +21,7 @@ comments: true
 * [Technical Interview Guide for Busy Engineers](https://www.techinterviewhandbook.org/)
 * [General Software Engineer Interview Guide](https://colacap.github.io/software-engineer-interview-guide.html)
 * [mtdvio/every-programmer-should-know](https://github.com/mtdvio/every-programmer-should-know)
+* [Advent of Code](https://adventofcode.com/)
 * [freeCodeCamp.org - YouTube](https://www.youtube.com/c/Freecodecamp/videos?view=0&sort=p&flow=grid)
 * [Data Structures and Algorithms in Python- Tamassia, Goldwasser and Goodrich](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
 * [MIT 6.006 Introduction to Algorithms, Spring 2020 - YouTube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)

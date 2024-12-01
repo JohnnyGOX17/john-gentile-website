@@ -39,8 +39,8 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
 * [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
-* [ ] [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
-  - https://github.com/fspoettel/advent-of-code-rust
+* [Advent of Rust](https://www.rustfinity.com/advent-of-rust): like [Advent of Code](https://adventofcode.com/) but for beginners looking to learn Rust.
+  + [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
 
 #### Books
 
