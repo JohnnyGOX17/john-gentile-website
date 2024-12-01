@@ -695,6 +695,7 @@
 * [ApolloAuto/apollo: An open autonomous driving platform](https://github.com/ApolloAuto/apollo)
 * [goruck/radar-ml: Detect (classify and localize) people, pets and objects using millimeter-wave radar.](https://github.com/goruck/radar-ml)
 * [davidsosa/radar-target-generation-and-detection: Configures the FMCW waveform based on the system requirements. Then defines the range and velocity of a target and simulates its displacement. For the same simulation loop process, the transmit and receive signals are computed to determine the *beat* signal. Then it performs a Range FFT on the received signal to determine the Range Towards the end, perform the CFAR processing on the output of 2nd FFT to display the target.](https://github.com/davidsosa/radar-target-generation-and-detection)
+* [FMCW Doppler Processing - Google Colab](https://colab.research.google.com/drive/1lmYojrI1X7sbctWFrS_61IRUMnzKjAsV)
 * [MajedMH/Radar_Digital_Signal_Processing](https://github.com/MajedMH/Radar_Digital_Signal_Processing)
 * [kit-cel/gr-radar: GNU Radio Radar Toolbox](https://github.com/kit-cel/gr-radar)
 * [Barker code - Wikipedia](https://en.wikipedia.org/wiki/Barker_code)
