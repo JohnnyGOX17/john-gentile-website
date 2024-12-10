@@ -42,17 +42,7 @@ To write high-performance software (SW), you should understand [computer archite
 - [ ] [Cache coherence](https://en.wikipedia.org/wiki/Cache_coherence)
 - [ ] [Why does the speed of memcpy() drop dramatically every 4KB? - StackOverflow](https://stackoverflow.com/questions/21038965/why-does-the-speed-of-memcpy-drop-dramatically-every-4kb)
 - [ ] [Rust zerocopy crate](https://docs.rs/zerocopy/latest/zerocopy/)
-
-## High-Performance Networking
-
-* [ ] [Data Plane Development Kit (DPDK)](https://www.dpdk.org/)
-* [ ] [How to receive a million packets per second](https://blog.cloudflare.com/how-to-receive-a-million-packets/)
-* [ ] [High Performance Browser Networking by Ilya Grigorik](https://hpbn.co/)
-* [ ] [A Cloud-Optimized Transport Protocol for Elastic and Scalable HPC - Paper on AWS Scalable Reliable Datagram (SRD)](https://assets.amazon.science/a6/34/41496f64421faafa1cbe301c007c/a-cloud-optimized-transport-protocol-for-elastic-and-scalable-hpc.pdf)
-
-### Packet FEC in lieu of Retransmission
-
-When latency is key (can't wait/block for packet loss) in lossy networks (e.x. WAN, intermittent links, etc.), Forward Error Correction (FEC) techniques (similar to those used at the physical layer) can be applied at the network layer. For instance in [SD-WAN FEC](https://live.paloaltonetworks.com/t5/prisma-sd-wan-articles/prisma-sd-wan-forward-error-correction/ta-p/554608), lost packets can be recovered on a link by sending extra "parity" packets for every $N$ packets. See [more details on Information Theory](../math_and_signal_processing/info_theory.html).
+- [ ] [The Mechanism behind Measuring Cache Access Latency](https://www.alibabacloud.com/blog/the-mechanism-behind-measuring-cache-access-latency_599384)
 
 
 ## Concurrency & Asynchronous Programming
@@ -61,6 +51,13 @@ You mainly use concurrency in an application to separate concerns and/or to gain
 - **Multiple Processes:** separate processes can use OS Interprocess Communication (IPC) features- like signals, sockets, files, pipes, etc.- to pass messages/data. A downisde is IPC can be complicated to setup or slow, and there's overhead in running multiple processes (OS resources to manage and start). An advantage is IPC can be horizontally scalable, and processes can be run across machines on a network (e.x. when using socket IPC).
 - **Multiple Threads:** you can also run multiple threads within a single process, where all threads share the same address space, and most data can be accessed directly from all threads. This makes the overhead much smaller than sharing data across processes, but this also means software must be more aware of potential problems between threads operating on data concurrently. Threads can be launched much quicker than processes as well.
   + We can further divide up parallelism constructs from here into _task parallelism_ (dividing tasks into multiple, concurrent parts) and _data parallelism_, where each thread can operate on different parts of data (also leading into SIMD hardware parallelism).
+
+
+### Architectures
+
+- [Staged Event-Driven Architecture - Wikipedia](https://en.wikipedia.org/wiki/Staged_event-driven_architecture)
+  * [Directed Acyclic Graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
+- [The LMAX Architecture - Martin Fowler](https://martinfowler.com/articles/lmax.html): ring buffer/queue model to allow concurrency without needing locks
 
 ### Tools
 

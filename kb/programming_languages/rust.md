@@ -104,6 +104,7 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice](https://marabos.nl/atomics/)
+* [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 
 #### References
 

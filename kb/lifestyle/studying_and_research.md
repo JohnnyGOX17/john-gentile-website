@@ -11,9 +11,9 @@ comments: true
 
 ### eBooks
 
-* [My Account | Arlington Public Library](https://libcat.arlingtonva.us/MyAccount/Home)
-* [Homepage | District of Columbia Public Library](https://www.dclibrary.org/)
-  + [O'Reilly for Public Libraries | District of Columbia Public Library](https://www.dclibrary.org/research-and-learn/oreilly-public-libraries)
+* [Arlington Public Library](https://libcat.arlingtonva.us/MyAccount/Home)
+* [District of Columbia Public Library](https://www.dclibrary.org/)
+  + [O'Reilly for Public Libraries - District of Columbia Public Library](https://www.dclibrary.org/research-and-learn/oreilly-public-libraries)
 * [Kindle Cloud Reader](https://read.amazon.com/)
 * [Gutenberg: free books!](http://www.gutenberg.org/)
 * [Electrical Engineering - Engineering LibreTexts](https://eng.libretexts.org/Bookshelves/Electrical_Engineering)
@@ -21,7 +21,7 @@ comments: true
 ### Papers
 
 * [arXiv.org e-Print archive](https://arxiv.org/)
-* [Connected Papers | Find and explore academic papers](https://www.connectedpapers.com/)
+* [Connected Papers- Find and explore academic papers](https://www.connectedpapers.com/)
 * [papers-we-love/papers-we-love: Papers from the computer science community to read and discuss.](https://github.com/papers-we-love/papers-we-love)
 * [Google Scholar](https://scholar.google.com/)
 * [Find Code for Research Papers - CatalyzeX - Chrome Web Store](https://chrome.google.com/webstore/detail/find-code-for-research-pa/aikkeehnlfpamidigaffhfmgbkdeheil?hl=en)

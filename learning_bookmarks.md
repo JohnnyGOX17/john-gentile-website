@@ -492,7 +492,6 @@
 * [Python for Signal Processing](https://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
 * [What Is SLAM (Simultaneous Localization and Mappi…](https://www.mathworks.com/discovery/slam.html)
 * [Think DSP: Digital Signal Processing in Python - Open Textbook Library](https://open.umn.edu/opentextbooks/textbooks/290)
-* [Quantum Fourier transform - Wikipedia](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)
 * [Ditherpunk — The article I wish I had about monochrome image dithering — surma.dev](https://surma.dev/things/ditherpunk/)
 * [websdr.org](http://www.websdr.org/)
 * [Wide-band WebSDR in Enschede, the Netherlands](http://websdr.ewi.utwente.nl:8901/)
@@ -813,14 +812,32 @@
 * [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/)
 * [GitHub - josephmisiti/awesome-machine-learning: A curated list of awesome Machine Learning frameworks, libraries and software.](https://github.com/josephmisiti/awesome-machine-learning)
 * [NVIDIA Deep Learning Examples](https://github.com/NVIDIA/DeepLearningExamples)
+* [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/)
+
+## Linear Algebra, Statistics and Other Math
+* [3Blue1Brown](https://www.3blue1brown.com/)
+* [Algebra, Topology, Differential Calculus, and Optimization Theory For Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf)
+* [Making sense of principal component analysis, eigenvectors & eigenvalues](https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues)
 * [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning | Mathematics | MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/)
 * [The matrix calculus you need for deep learning](http://explained.ai/matrix-calculus/index.html)
 * [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra)
 * [Linear Algebra Done Wrong - Sergei Treil](https://www.math.brown.edu/streil/papers/LADW/LADW_2017-09-04.pdf)
+* [kenjihiranabe/The-Art-of-Linear-Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra): Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"
 * [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 * [Linear Algebra Done Right](https://linear.axler.net/)
 * [Introduction to Modern Statistics](https://openintro.org/book/ims/)
-* [Probability, Statistics &amp; Random Processes | Free Textbook | Course](https://www.probabilitycourse.com/)
+* [Probability, Statistics and Random Processes - Free Course](https://www.probabilitycourse.com/)
+* [Taming math and physics using SymPy](https://minireference.com/static/tutorials/sympy_tutorial.pdf)
+
+## Quant Finance
+* [Alpaca Brokerage](https://alpaca.markets/)
+* [polygon Stock data feeds](https://polygon.io/)
+* [QuantEcon Lectures](https://quantecon.org/lectures/)
+* [Quantitative Finance - arXiv](https://arxiv.org/list/q-fin/recent)
+* [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance)
+* [ranaroussi/quantstats](https://github.com/ranaroussi/quantstats)
+* [AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL)
+* [backtesting.py](https://github.com/kernc/backtesting.py)
 
 # rust
 
@@ -949,7 +966,6 @@
 * [Samsung Phone AES-GCM Flaw](https://eprint.iacr.org/2022/208.pdf)
 * [GitHub - oconnor663/sha256_project: developed for…](https://github.com/oconnor663/sha256_project)
 * [cr.yp.to](https://cr.yp.to/)
-* [Post-quantum cryptography - Wikipedia](https://en.wikipedia.org/wiki/Post-quantum_cryptography)
 * [AES Encryption Algorithm - Sam Trenholme&#39;s webpage](https://www.samiam.org/rijndael.html)
 * [CRYSTALS - Cryptographic Suite for Algebraic Lattices](https://pq-crystals.org/)
 * [CRYSTALS – Kyber: a CCA-secure module-lattice-based KEM](https://eprint.iacr.org/2017/634.pdf)
@@ -1263,6 +1279,7 @@
 * [Kayzaks/HackingNeuralNetworks: A small course on exploiting and defending neural networks](https://github.com/Kayzaks/HackingNeuralNetworks)
 * [GitHub - zackelia/ghidra-dark: Dark theme installer for Ghidra](https://github.com/zackelia/ghidra-dark)
 * [GOT and PLT for pwning. · System Overlord](https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html)
+* [0x00 - Introduction to Windows Kernel Exploitation](https://wetw0rk.github.io/posts/0x00-introduction-to-windows-kernel-exploitation/)
 * [huettenhain/dhrake: The Delphi Hand Rake](https://github.com/huettenhain/dhrake)
 * [xoreaxeaxeax (domas)](https://github.com/xoreaxeaxeax)
 * [Introduction - Rust Fuzz Book](https://rust-fuzz.github.io/book/)
@@ -1728,7 +1745,6 @@
 * [Complex programmable logic device - Wikipedia](https://en.wikipedia.org/wiki/Complex_programmable_logic_device)
 * [EECS 150 Spring 2002: Design Techniques and Components for Digital Systems](http://www-inst.eecs.berkeley.edu/~cs150/sp02/)
 * [Quine–McCluskey algorithm - Wikipedia](https://en.m.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm)
-* [Mathematician Solves Computer Science Conjecture in Two Pages | Quanta Magazine](https://www.quantamagazine.org/mathematician-solves-computer-science-conjecture-in-two-pages-20190725/)
 * [Vivado 2019.1 - Logic Synthesis](https://www.xilinx.com/support/documentation-navigation/design-hubs/dh0018-vivado-synthesis-hub.html)
 * [How I Write FSMs in RTL | Electronics etc…](https://tomverbeure.github.io/2020/05/01/How-I-Write-FSMs-in-RTL.html)
 * [Flip-flop (electronics) - Wikipedia](https://en.wikipedia.org/wiki/Flip-flop_(electronics))

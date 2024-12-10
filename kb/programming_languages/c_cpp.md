@@ -148,6 +148,7 @@ Some other great CMake documentation and repos:
 
 ### C++
 
+* [LearnCpp.com](https://www.learncpp.com/): free website devoted to teaching modern C++.
 * [The Standard](https://isocpp.org/std/the-standard): website for the current and draft ISO C++ standards
   + [C++ Core Guildelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
   + [C++ FAQ](https://isocpp.org/wiki/faq)
@@ -159,6 +160,7 @@ Some other great CMake documentation and repos:
 
 ### Repos
 
+* [Awesome Modern C++](https://awesomecpp.com/): A collection of resources on modern C++
 * [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
 * [abseil / abseil.io](https://abseil.io/)
 * [TheAlgorithms/C-Plus-Plus - GitHub](https://github.com/TheAlgorithms/C-Plus-Plus)
