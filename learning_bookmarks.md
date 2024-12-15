@@ -977,6 +977,7 @@
 * [IACR Transactions on Cryptographic Hardware and Embedded Systems](https://tches.iacr.org/)
 
 ## Defense-netsec
+* [How NAT traversal works- Tailscale](https://tailscale.com/blog/how-nat-traversal-works)
 * [imthenachoman/How-To-Secure-A-Linux-Server: An evolving how-to guide for securing a Linux server.](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server)
 * [trimstray/the-practical-linux-hardening-guide: This guide details the planning and the tools involved in creating a secure Linux production systems - work in progress.](https://github.com/trimstray/the-practical-linux-hardening-guide)
 * [skeeto/endlessh: SSH tarpit that slowly sends an endless banner](https://github.com/skeeto/endlessh)
