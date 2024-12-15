@@ -1539,6 +1539,10 @@
 * [leoeltipo/rfsoc4x2_public: Example projects for RFSoC 4x2 board](https://github.com/leoeltipo/rfsoc4x2_public)
 
 ### Arithmetic
+* [Efficient Multiplication and Division Using MSP430 MCUs](https://www.ti.com/lit/an/slaa329a/slaa329a.pdf)
+* [Chapter 13: Bit Level Arithmetic Architectures](https://ece.umn.edu/users/parhi/SLIDES/chap13.pdf)
+* [Multiplierless Multiple Constant Multiplication](https://spiral.ece.cmu.edu/pub-spiral/pubfile/synth_28.pdf)
+* [Spiral Multiplier Block Generator](https://spiral.ece.cmu.edu/mcm/gen.html)
 * [GitHub - catkira/complex_multiplier: HDL code for a complex multiplier with AXI stream Interface](https://github.com/catkira/complex_multiplier)
 * [tomverbeure/math: SpinalHDL Hardware Math Library](https://github.com/tomverbeure/math)
 * [Complex Multiplier v6.0 LogiCORE IP Product Guide (PG104)](https://www.xilinx.com/support/documentation/ip_documentation/cmpy/v6_0/pg104-cmpy.pdf)
