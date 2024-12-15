@@ -34,6 +34,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
 * [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+* [ ] [Introduction - Learning Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
 * [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
@@ -47,7 +48,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 * [X] [Zero to Production In Rust](https://www.zero2prod.com/)
   + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
 * [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
-* [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans)
+* [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans): see also [the main website](https://rust-for-rustaceans.com/) for errata.
 
 
 
@@ -103,16 +104,16 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### Async
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
-* [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice](https://marabos.nl/atomics/)
-* [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 
 #### References
 
+* [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
+* [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 * [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
   + [ ] [tokio Tutorial](https://tokio.rs/tokio/tutorial)
-* [ ] [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
-  + [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
-  + [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
+* [ ] [Asynchronous Programming in Rust (Async-book)](https://rust-lang.github.io/async-book/)
+* [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
+* [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 
 ### Rust for Performance
 

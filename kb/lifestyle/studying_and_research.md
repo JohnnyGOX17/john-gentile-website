@@ -29,11 +29,14 @@ comments: true
 
 ### Online Courses
 
-* [MIT OpenCourseWare | Free Online Course Materials](https://ocw.mit.edu/)
+* [MIT OpenCourseWare- Free Online Course Materials](https://ocw.mit.edu/)
 * [ossu/computer-science: Path to a free self-taught education in Computer Science!](https://github.com/ossu/computer-science)
 
 ### Technical Blogs
 
+* [Chips and Cheese](https://chipsandcheese.com/): deep dives on CPU and silicon architecture with performance benchmarks.
+* [Irrational Analysis](https://irrationalanalysis.substack.com/): deep dives on CPU and silicon architecture with added investment analysis.
+* [Vik's Newsletter](https://www.viksnewsletter.com/): newsletter on silicon, EE and RF topics.
 * [Voltage/Divide](https://voltagedivide.com/): FPGA/embedded/DSP
 
 ### Search & LLMs
@@ -42,6 +45,11 @@ comments: true
 * [ChatGPT](https://chatgpt.com/)
 * [Claude](https://claude.ai/)
 * [Phind: AI search engine](https://www.phind.com/)
+
+
+## Tools
+
+* [microsoft/markitdown](https://github.com/microsoft/markitdown): Python tool for converting files and office documents to Markdown.
 
 
 ## Study Music
