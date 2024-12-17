@@ -34,7 +34,9 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
 * [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
 * [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+* [ ] [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
 * [ ] [Introduction - Learning Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
+* [ ] [idiomatic-rust](https://github.com/mre/idiomatic-rust): 🦀 A peer-reviewed collection of articles/talks/repos which teach concise, idiomatic Rust.
 * [ ] [Comprehensive Rust - Google Course](https://google.github.io/comprehensive-rust/)
 * [ ] [From JavaScript to Rust](https://github.com/jsoverson/node-to-rust)
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
@@ -47,8 +49,10 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 
 * [X] [Zero to Production In Rust](https://www.zero2prod.com/)
   + [LukeMathWalker/zero-to-production](https://github.com/LukeMathWalker/zero-to-production)
-* [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/ref=nodl_)
+* [ ] [Programming Rust: Fast, Safe Systems Development 2nd Ed](https://www.amazon.com/dp/1492052590/)
 * [ ] [Rust for Rustaceans](https://nostarch.com/rust-rustaceans): see also [the main website](https://rust-for-rustaceans.com/) for errata.
+* [ ] [Rust Essentials - Second Edition](https://github.com/PacktPublishing/Rust-Essentials-Second-Edition)
+* [ ] [Rust High Performance](https://github.com/PacktPublishing/Rust-High-Performance)
 
 
 

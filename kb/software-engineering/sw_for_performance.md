@@ -69,6 +69,7 @@ Problems with sharing data between threads comes down to consequences of _modify
 
 * `lscpu -C` can show `COHERENCY-SIZE` as the "minimum amount of data in bytes transferred from memory to cache".
 * Can show thread names in htop by F2 → Display options → Show custom thread names
+* [Tool to measure core-to-core latency](https://github.com/nviennot/core-to-core-latency)
 
 ### References
 
