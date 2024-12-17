@@ -1333,6 +1333,7 @@
 
 ## LaTeX/Writing
 
+* [Overleaf IEEE LaTeX Org and Templates](https://www.overleaf.com/org/ieee)
 * [What Is The Morning Writing Effect? - Gwern.net](https://www.gwern.net/Morning-writing)
 * [connorferster/handcalcs: Python library for converting Python calculations into rendered latex.](https://github.com/connorferster/handcalcs)
 * [Mathpix Snip](https://mathpix.com/)
