@@ -804,18 +804,6 @@
 * [rwnobrega/komm: An open-source library for Python 3 providing tools for analysis and simulation of analog and digital communication systems.](https://github.com/rwnobrega/komm)
 * [CCSDS - TM SYNCHRONIZATION AND CHANNEL CODING— SUMMARY OF CONCEPT AND RATIONALE](https://public.ccsds.org/Pubs/130x1g3.pdf)
 
-## Linear Algebra, Statistics and Other Math
-* [3Blue1Brown](https://www.3blue1brown.com/)
-* [Algebra, Topology, Differential Calculus, and Optimization Theory For Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf)
-* [Making sense of principal component analysis, eigenvectors & eigenvalues](https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues)
-* [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning | Mathematics | MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/)
-* [The matrix calculus you need for deep learning](http://explained.ai/matrix-calculus/index.html)
-* [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra)
-* [Linear Algebra Done Wrong - Sergei Treil](https://www.math.brown.edu/streil/papers/LADW/LADW_2017-09-04.pdf)
-* [kenjihiranabe/The-Art-of-Linear-Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra): Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"
-* [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
-* [Linear Algebra Done Right](https://linear.axler.net/)
-
 # rust
 
 * [Rust for professionals](https://overexact.com/rust-for-professionals/)
