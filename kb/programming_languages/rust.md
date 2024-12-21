@@ -112,6 +112,7 @@ See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) 
 #### References
 
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
+* [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
 * [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 * [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
   + [ ] [tokio Tutorial](https://tokio.rs/tokio/tutorial)

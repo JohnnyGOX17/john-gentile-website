@@ -804,16 +804,6 @@
 * [rwnobrega/komm: An open-source library for Python 3 providing tools for analysis and simulation of analog and digital communication systems.](https://github.com/rwnobrega/komm)
 * [CCSDS - TM SYNCHRONIZATION AND CHANNEL CODING— SUMMARY OF CONCEPT AND RATIONALE](https://public.ccsds.org/Pubs/130x1g3.pdf)
 
-## Machine Learning
-* [Dive into Deep Learning — Dive into Deep Learning 0.15.1 documentation](http://d2l.ai/)
-* [MIT Deep Learning 6.S191](http://introtodeeplearning.com/)
-* [Deep Learning](https://www.deeplearningbook.org/)
-* [Practical Deep Learning for Coders | Practical Deep Learning for Coders](https://course.fast.ai/)
-* [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/)
-* [GitHub - josephmisiti/awesome-machine-learning: A curated list of awesome Machine Learning frameworks, libraries and software.](https://github.com/josephmisiti/awesome-machine-learning)
-* [NVIDIA Deep Learning Examples](https://github.com/NVIDIA/DeepLearningExamples)
-* [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/)
-
 ## Linear Algebra, Statistics and Other Math
 * [3Blue1Brown](https://www.3blue1brown.com/)
 * [Algebra, Topology, Differential Calculus, and Optimization Theory For Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/math-deep.pdf)
@@ -829,16 +819,6 @@
 * [Probability, Statistics and Random Processes - Free Course](https://www.probabilitycourse.com/)
 * [Taming math and physics using SymPy](https://minireference.com/static/tutorials/sympy_tutorial.pdf)
 
-## Quant Finance
-* [Alpaca Brokerage](https://alpaca.markets/)
-* [polygon Stock data feeds](https://polygon.io/)
-* [QuantEcon Lectures](https://quantecon.org/lectures/)
-* [Quantitative Finance - arXiv](https://arxiv.org/list/q-fin/recent)
-* [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance)
-* [ranaroussi/quantstats](https://github.com/ranaroussi/quantstats)
-* [AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL)
-* [backtesting.py](https://github.com/kernc/backtesting.py)
-
 # rust
 
 * [Rust for professionals](https://overexact.com/rust-for-professionals/)
@@ -850,7 +830,6 @@
 * [picorv32 - Rust](https://docs.rs/picorv32/0.1.3/picorv32/)
 * [RTIC Masters Thesis Doc ](https://www.diva-portal.org/smash/get/diva2:1530134/FULLTEXT01.pdf)
 * [lizhuohua/linux-kernel-module-rust](https://github.com/lizhuohua/linux-kernel-module-rust)
-* [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
 * [Google Online Security Blog: Rust in the Linux kernel](https://security.googleblog.com/2021/04/rust-in-linux-kernel.html)
 * [Why Rust for safe systems programming – Microsoft Security Response Center](https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/)
 * [Memory Safety in Rust: A Case Study with C | Will Crichton](https://willcrichton.net/notes/rust-memory-safety/)

@@ -56,3 +56,12 @@ Another great tool which comes with most all dependencies/libraries ready to go 
 
 ## References
 {% bibliography --cited_in_order --file machine_learning %}
+
+* [Dive into Deep Learning — Dive into Deep Learning 0.15.1 documentation](http://d2l.ai/)
+* [MIT Deep Learning 6.S191](http://introtodeeplearning.com/)
+* [Deep Learning](https://www.deeplearningbook.org/)
+* [Practical Deep Learning for Coders | Practical Deep Learning for Coders](https://course.fast.ai/)
+* [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/)
+* [GitHub - josephmisiti/awesome-machine-learning: A curated list of awesome Machine Learning frameworks, libraries and software.](https://github.com/josephmisiti/awesome-machine-learning)
+* [NVIDIA Deep Learning Examples](https://github.com/NVIDIA/DeepLearningExamples)
+* [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/)
