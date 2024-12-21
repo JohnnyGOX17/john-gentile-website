@@ -815,9 +815,6 @@
 * [kenjihiranabe/The-Art-of-Linear-Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra): Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"
 * [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 * [Linear Algebra Done Right](https://linear.axler.net/)
-* [Introduction to Modern Statistics](https://openintro.org/book/ims/)
-* [Probability, Statistics and Random Processes - Free Course](https://www.probabilitycourse.com/)
-* [Taming math and physics using SymPy](https://minireference.com/static/tutorials/sympy_tutorial.pdf)
 
 # rust
 
