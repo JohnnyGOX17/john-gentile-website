@@ -28,12 +28,12 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
  
 ### Getting Started Resources
 
-* [X] [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
+* [rust-lang/rustlings - small exercises to get started with Rust](https://github.com/rust-lang/rustlings) 
   - [Main website for rustlings](https://rustlings.cool/)
-* [ ] [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
+* [The Rust Programming Language - rust-lang.org](https://doc.rust-lang.org/book/)
   * [Rust Book Experiment](https://rust-book.cs.brown.edu/): Rust book but w/interactive quizzes and highlighting.
-* [ ] [Rust By Example - rust-lang.org](https://doc.rust-lang.org/stable/rust-by-examle/)
-* [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+* [Rust By Example - rust-lang.org](https://doc.rust-lang.org/rust-by-example/)
+* [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 * [ ] [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
 * [ ] [Introduction - Learning Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
 * [ ] [idiomatic-rust](https://github.com/mre/idiomatic-rust): 🦀 A peer-reviewed collection of articles/talks/repos which teach concise, idiomatic Rust.
@@ -68,6 +68,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
   + A [TOML](https://toml.io/) config file `Cargo.toml` that describes the metadata and dependencies of the Rust project.
   + A `src/` directory in which Rust source should live.
   + Add `--lib` to the end of `cargo new` to create a library (no binary compilation target).
+- Use `$ cargo init --vcs none` if already in a directory (such as pulled from a fresh GitHub repo).
 - When using a Cargo project, `$ cargo build` can be used
   + `$ cargo run` can be used to build and then execute in one command.
   + Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
@@ -109,16 +110,33 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 
+#### Arc
+
+For unmutable, shared references to data across threads, [`std::sync::Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html) provides an "Atomically reference counted" wrapper- once all threads are done with the Arc, its reference counter will drop to zero and the underlying structure will be dropped/deallocated.
+
+```rust
+let a = Arc::new([1, 2, 3]);
+
+thread::spawn({
+    let a = a.clone();
+    move || {
+        dbg!(a);
+    }
+});
+```
+
+
 #### References
 
+* [tokio Tutorial](https://tokio.rs/tokio/tutorial) on the popular [tokio](https://github.com/tokio-rs/tokio) runtime for async Rust apps.
+  + [tokio-tutorial repo](https://github.com/JohnnyGOX17/tokio-tutorial)
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
 * [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
-* [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
-* [tokio-rs/tokio](https://github.com/tokio-rs/tokio): runtime for async Rust apps
-  + [ ] [tokio Tutorial](https://tokio.rs/tokio/tutorial)
 * [ ] [Asynchronous Programming in Rust (Async-book)](https://rust-lang.github.io/async-book/)
+* [ ] [Rust Projects - Write a Redis Clone](https://leanpub.com/rustprojects-redis): explore asynchronous programming with the actor model using Rust and Tokio
 * [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
 * [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
+* [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 
 ### Rust for Performance
 
