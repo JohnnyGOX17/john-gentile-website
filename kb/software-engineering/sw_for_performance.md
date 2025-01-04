@@ -38,7 +38,8 @@ To write high-performance software (SW), you should understand [computer archite
 
 ## Memory Hierarchy
 
-* [ ] [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+- [ ] [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+  * [Analysis of 'What Every Programmer Should Know About Memory'](https://samueleresca.net/analysis-of-what-every-programmer-should-know-about-memory/)
 - [ ] [Cache coherence](https://en.wikipedia.org/wiki/Cache_coherence)
 - [ ] [Why does the speed of memcpy() drop dramatically every 4KB? - StackOverflow](https://stackoverflow.com/questions/21038965/why-does-the-speed-of-memcpy-drop-dramatically-every-4kb)
 - [ ] [Rust zerocopy crate](https://docs.rs/zerocopy/latest/zerocopy/)

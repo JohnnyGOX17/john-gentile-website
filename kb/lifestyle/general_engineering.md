@@ -1,24 +1,39 @@
 ---
-title: General Engineering Techniques
+title: General Engineering & Business
 layout: default
 kb: true
-top-category: Business
+top-category: Lifestyle & Business
 comments: true
 ---
 
+## General Tenets
+
 * Simple, correct, fast; in that order.
+* Be first, be better, or be cheaper.
 * What gets measured gets improved. What gets scheduled gets done.
 * Follow the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle); 80% of something can be developed in 20% of time. However conversely, the hardest 20% of the design takes 80% of the time (e.g. driving to perfection/shipping quality).
+* [Aim to be a monopoly, not a competitor](https://www.youtube.com/watch?v=3Fx5Q8xGU8k)
+* Instead of discounting ideas early, simply answer "what would it take?". Never say "that's always how its been done"
+* Innovators are not smarter, no more courageous than the rest of us - they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
 * If your product is perfect, you've released too late. The first person to market can be twice the cost with half the capability, but the second person has to have twice the capability at half the cost to compete.
 * Automate & script everything. Leave time for the important stuff.
+* Beware of [the XY Problem](https://xyproblem.info/).
 * [Learning at work is work, and we must make space for it](https://sloanreview.mit.edu/article/learning-for-a-living/)
 * Coders can get writer's block too, try stream-of-conciousness style writing to code development.
-* Don't be afraid of failure.
+* Don't be afraid of failure. It's OK to fail, and failure is temporary. You can try again, try something else, or even go back to a previous job; you're never stuck.
 * Open standards & reuse allow you to iterate faster with relatively less NRE.
 * Marketing yourself and your product is extremely important, even more so within a large company to your peers & leaders; all the more reason to be a better speaker & writer. It often doesn't even matter if you're the best, think VHS vs Betamax.
 * Move processing to data rather than moving data to processing
 * Networking can come in the form of being apart of standards bodies (e.g. IEEE) or being a speaker at conferences.
 
+
+### References
+
+* [Effective_Engineer.md](https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f)
+* [Essays - Paul Graham](http://www.paulgraham.com/articles.html)
+* [Strategy Letter V – Joel on Software](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/)
+* [Rands in Repose](https://randsinrepose.com/)
+* [Toyota Kata: Managing People for Improvement, Adaptiveness and Superior Results](https://www.amazon.com/Toyota-Kata-Managing-Improvement-Adaptiveness/dp/0071635238)
 
 
 ## Debugging

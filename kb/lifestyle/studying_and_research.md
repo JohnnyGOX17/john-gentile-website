@@ -2,7 +2,7 @@
 title: Studying & Research
 layout: default
 kb: true
-top-category: Lifestyle
+top-category: Lifestyle & Business
 comments: true
 ---
 

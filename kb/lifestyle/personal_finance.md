@@ -2,7 +2,7 @@
 title: Personal Finance
 layout: default
 kb: true
-top-category: Lifestyle
+top-category: Lifestyle & Business
 comments: true
 ---
 

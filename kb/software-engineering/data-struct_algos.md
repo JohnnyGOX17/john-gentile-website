@@ -20,6 +20,7 @@ comments: true
 * [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 * [Technical Interview Guide for Busy Engineers](https://www.techinterviewhandbook.org/)
 * [General Software Engineer Interview Guide](https://colacap.github.io/software-engineer-interview-guide.html)
+* [Computer Science Roadmap: Curriculum for the self taught developer](https://roadmap.sh/computer-science)
 * [mtdvio/every-programmer-should-know](https://github.com/mtdvio/every-programmer-should-know)
 * [Advent of Code](https://adventofcode.com/)
 * [freeCodeCamp.org - YouTube](https://www.youtube.com/c/Freecodecamp/videos?view=0&sort=p&flow=grid)

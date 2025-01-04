@@ -316,4 +316,5 @@ gqip
 * [VIM Book by Steve Oualline](http://www.oualline.com/vim-book.html)
 * [Neovim from Scratch - chris@machine YouTube Series](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 * [How I Setup Neovim On My Mac To Make it AMAZING in 2024](https://www.josean.com/posts/how-to-setup-neovim-2024)
+* [Improving Vim Speed - YouTube](https://www.youtube.com/watch?v=OnUiHLYZgaA)
 

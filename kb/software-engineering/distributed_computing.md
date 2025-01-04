@@ -48,13 +48,6 @@ Architectures and design patterns for systems that are data intensive, as well a
     + [Build a Serverless Web Application - Getting Started with AWS](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
     + [Build a WordPress Website - Getting Started with AWS](https://aws.amazon.com/getting-started/hands-on/build-wordpress-website/)
 
-## References
-
-* [Designing Data-Intensive Applications](https://dataintensive.net/)
-  + [ept/ddia-references](https://github.com/ept/ddia-references)
-* [Code Complete: A Practical Handbook of Software Construction, 2nd Edition](https://www.amazon.com/code-complete-practical-handbook-construction/dp/0735619670)
-* [public-apis/public-apis](https://github.com/public-apis/public-apis)
-
 
 ## High-Performance Network Programming
 
@@ -68,3 +61,28 @@ Architectures and design patterns for systems that are data intensive, as well a
 When latency is key (can't wait/block for packet loss) in lossy networks (e.x. WAN, intermittent links, etc.), Forward Error Correction (FEC) techniques (similar to those used at the physical layer) can be applied at the network layer. For instance in [SD-WAN FEC](https://live.paloaltonetworks.com/t5/prisma-sd-wan-articles/prisma-sd-wan-forward-error-correction/ta-p/554608), lost packets can be recovered on a link by sending extra "parity" packets for every $N$ packets. See [more details on Information Theory](../math_and_signal_processing/info_theory.html).
 
 
+
+## References
+
+* [ ] [Designing Data-Intensive Applications](https://dataintensive.net/)
+  + [ept/ddia-references](https://github.com/ept/ddia-references)
+* [ ] [Fly.io Gossip Glomers](https://fly.io/dist-sys/): a series of distributed systems challenges
+  + [Solving distributed systems challenges in Rust - YouTube](https://www.youtube.com/watch?v=gboGyccRVXI)
+* [Readings in Database Systems, 5th Edition](http://www.redbook.io/)
+* [Mastering Chaos - A Netflix Guide to Microservices - YouTube](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
+* [Google - Site Reliability Engineering](https://sre.google/books/)
+* [The Amazon Builders Library](https://aws.amazon.com/builders-library/)
+* [Time, Clocks and the Ordering of Events in a Distributed System - Microsoft Research](https://www.microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/)
+* [Foundational distributed systems papers](http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html)
+* [MIT 6.824 Distributed Systems (Spring 2020) - YouTube](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB)
+* [JohnCrickett/SystemDesign: Useful resources on distributed system design.](https://github.com/JohnCrickett/SystemDesign)
+* [theanalyst/awesome-distributed-systems: A curated list to learn about distributed systems](https://github.com/theanalyst/awesome-distributed-systems)
+* [onurakpolat/awesome-bigdata: A curated list of awesome big data frameworks, ressources and other awesomeness.](https://github.com/onurakpolat/awesome-bigdata)
+* [Testing Distributed Systems- Curated list of resources on testing distributed systems](https://asatarin.github.io/testing-distributed-systems/)
+* [Fallacies of distributed computing - Wikipedia](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+* [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html)
+* [System Design Interview - YouTube](https://www.youtube.com/c/SystemDesignInterview)
+* [You Want Modules, Not Microservices](http://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html)
+* [Database Fundamentals](https://tontinton.com/posts/database-fundementals/)
+* [15-445/645 Intro to Database Systems (Fall 2019) - YouTube](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
+* [public-apis/public-apis](https://github.com/public-apis/public-apis)
