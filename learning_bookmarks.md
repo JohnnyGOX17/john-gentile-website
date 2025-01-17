@@ -984,6 +984,7 @@
 
 * [GitHub - axi0mX/ipwndfu: open-source jailbreaking tool for many iOS devices](https://github.com/axi0mX/ipwndfu)
 * [Intro to FW reversing ](https://m.youtube.com/watch?v=GIU4yJn2-2A&feature=youtu.be)
+* [xairy/linux-kernel-exploitation](https://github.com/xairy/linux-kernel-exploitation)
 * [Writing userspace USB drivers for abandoned devices](https://blog.benjojo.co.uk/post/userspace-usb-drivers)
 * [Intro to Hardware Reversing: Finding a UART and getting a shell - YouTube](https://m.youtube.com/watch?feature=youtu.be&v=ZmZuKA-Rst0)
 * [Pwn the ESP32 Forever: Flash Encryption and Sec. Boot Keys Extraction – LimitedResults](https://limitedresults.com/2019/11/pwn-the-esp32-forever-flash-encryption-and-sec-boot-keys-extraction/)
@@ -2221,6 +2222,7 @@
 ## SoC-Embedded_SW/Linux
 
 * [MicroZed Chronicles Archive | Adiuvo Engineering](https://www.adiuvoengineering.com/microzed-chronicles-archive)
+* [Operating System in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en)
 * [Home · Wiki · Projects / SoC Course with Reference Designs · Open Hardware Repository](https://ohwr.org/project/soc-course/wikis/home)
 * [Workshop: Getting Started with PYNQ - Session 1 | element14 | Webinars, Training and Events](https://www.element14.com/community/events/5504/l/pynq-z2-workshop-getting-started-with-pynq)
 * [Introduction to Using AXI DMA in Embedded Linux - Hackster.io](https://www.hackster.io/whitney-knitter/introduction-to-using-axi-dma-in-embedded-linux-5264ec)
