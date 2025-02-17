@@ -61,6 +61,8 @@ set_msg_config -id {Vivado 12-1008} -new_severity {ERROR}
 
 ## References
 
+* [Field-Programmable Gate Arrays Explained: A high-level introduction to FPGAs by Digilent](https://files.digilent.com/reference/Field_Programmable_Gate_Arrays_Explained.pdf)
+
 ### Conferences
 
 * [ACM-FPGA](https://dl.acm.org/conference/fpga)
