@@ -76,7 +76,6 @@ Also see [gentoo linux's notes on GCC optimization](https://wiki.gentoo.org/wiki
 #### Online Compilers
 
 * [ideone](https://ideone.com/): Online compiler and debugging tool that supports over 60 code languages
-* [godbolt](https://godbolt.org/): Compiler explorer to examine machine code output for various compile chains supporting a couple code languages (C++, D, Rust, and Go)
 
 
 ### Build Systems

@@ -57,13 +57,16 @@ Given that High-Speed Digital Design deals with very fast signals (sometimes wit
 | Figures of Merit for Designs | Power transfer and small-signal behavior | Voltage transfer and large-signal behavior |
 
 
-## Signal Integrity (PI)
+
+## Signal Integrity (SI) / Power Integrity (PI)
 
 
-
-## Power Integrity (PI)
+## Layout Considerations
 
 ### Stackup
+
+A [rule of thumb to estimate the number of signal routing layers required to fully break out a dense, BGA part](https://docs.amd.com/r/en-US/ug1099-bga-device-design-rules/Layer-Count-Estimation-and-Optimization) can be seen as:
+$$ \text{Layers} = \frac{\text{Signals}}{\text{Routing Channels} * \text{Routes per Channel}} $$
 
 #### Plane Capacitance
 
@@ -87,9 +90,14 @@ The use of plane capacitance as part of your stackup can reduce the number of ne
 
 For more, see [9 Steps to bring up a freescale board](https://fedevel.com/blog/9-steps-to-bring-up-a-freescale-i-mx6-board-to-life).
 
+
 ## References
 
-- [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
+* [PCB Design Guides - Sierra Circuits](https://www.protoexpress.com/pcb/resources/pcb-design-guides/)
+* [Isola PCB Selection for HS Digital Designs](http://www.isola-group.com/wp-content/uploads/PCB-Material-Selection-for-High-speed-Digital-Designs-1.pdf)
+* [Sam Palermo - ECEN 720: High-Speed Links Circuits and Systems](https://people.engr.tamu.edu/spalermo/ecen720.html)
+* [Recommended Design Rules and Strategies for BGA Devices User Guide (UG1099)](https://docs.amd.com/r/en-US/ug1099-bga-device-design-rules/)
+* [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
 
 ### Conferences
 

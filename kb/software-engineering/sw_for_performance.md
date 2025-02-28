@@ -94,7 +94,9 @@ Problems with sharing data between threads comes down to consequences of _modify
 * [GN&C Fault Protection Fundamentals, JPL & CalTech](https://trs.jpl.nasa.gov/bitstream/handle/2014/41696/08-0125.pdf)
 
 
-## SIMD & Intrinsics
+
+
+## Assembly, SIMD & Intrinsics
 
 ### ISA Guides & Reference
 
@@ -102,18 +104,27 @@ Problems with sharing data between threads comes down to consequences of _modify
 * [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)
 * [Numpy CPU/SIMD Optimizations](https://numpy.org/doc/stable/reference/simd/index.html)
 * [Understanding SIMD: Infinite Complexity of Trivial Problems](https://www.modular.com/blog/understanding-simd-infinite-complexity-of-trivial-problems)
+* [ARMv8 AArch64/ARM64 Full Beginner's Assembly Tutorial - MarioKartWii.com](https://mariokartwii.com/armv8/)
+* [FFmpeg School of Assembly Language](https://github.com/FFmpeg/asm-lessons/blob/main/lesson_01/index.md)
+
+
 
 ## GPU Processing
+
+
 
 ### References
 
 * [NVIDIA MatX](https://github.com/NVIDIA/MatX): An efficient C++17 GPU numerical computing library with Python-like syntax
 
 
-## Performance Tuning
+
+
+## Performance Tuning & Tools
 
 ### Profiling, Tracing and Benchmarking Tools
 
+* [godbolt](https://godbolt.org/): Compiler explorer to examine machine code output for various compile chains supporting a couple code languages (C++, D, Rust, and Go). Can also be used to compare the output of compiler autovectorization versus intrinsic usage.
 * [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)
   + [flamegraph-rs/flamegraph: easy flamegraphs for Rust projects and everything else](https://github.com/flamegraph-rs/flamegraph)
 * [KUtrace](https://github.com/dicksites/KUtrace): Low-overhead tracing of all Linux kernel-user transitions, for serious performance analysis. Includes kernel patches, loadable module, and post-processing software.
