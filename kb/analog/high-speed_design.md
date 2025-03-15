@@ -95,7 +95,6 @@ For more, see [9 Steps to bring up a freescale board](https://fedevel.com/blog/9
 
 * [PCB Design Guides - Sierra Circuits](https://www.protoexpress.com/pcb/resources/pcb-design-guides/)
 * [Isola PCB Selection for HS Digital Designs](http://www.isola-group.com/wp-content/uploads/PCB-Material-Selection-for-High-speed-Digital-Designs-1.pdf)
-* [Sam Palermo - ECEN 720: High-Speed Links Circuits and Systems](https://people.engr.tamu.edu/spalermo/ecen720.html)
 * [Recommended Design Rules and Strategies for BGA Devices User Guide (UG1099)](https://docs.amd.com/r/en-US/ug1099-bga-device-design-rules/)
 * [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
 

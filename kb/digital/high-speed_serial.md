@@ -48,5 +48,7 @@ There are several physical signaling standards at the PMD layer with high-speed 
 
 - [ ] [High-Speed Serial I/O Made Simple - AMD-Xilinx Book](https://www.xilinx.com/publications/archives/books/serialio.pdf)
 - [ ] [Sam Palermo Courses - Texas A&M](https://people.engr.tamu.edu/spalermo/teaching.html)
-  - [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
+  + [Sam Palermo - ECEN 720: High-Speed Links Circuits and Systems](https://people.engr.tamu.edu/spalermo/ecen720.html)
+    * [ECEN 689: Older Course](https://people.engr.tamu.edu/spalermo/ecen689_spring2010.html)
+  + [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
 
