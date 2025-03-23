@@ -9,6 +9,8 @@ comments: true
 ## General Tips
 
 * Caloric restriction is the fundamental piece of weight loss
+  + To simply find your calorie deficit, find your [Total Daily Energy Expenditure](https://tdeecalculator.net/) and subtract 500 calories to find your max daily caloric intake.
+    - Keep track of daily total calories and weight loss (measure same time of day like morning) and adjust if needed (lower max caloric intake if not losing weight).
   + For instance, though not necessarily healthy, a [professor lost 27 pounds on a purely Twinkie diet](https://www.cnn.com/2010/HEALTH/11/08/twinkie.diet.professor/) to prove this point
   + [The average American diet](https://www.youtube.com/watch?v=Phq3xkZOchE) doesn't leave much room for calorie deficit, and to no one's surprise, [it's harder to burn calories than to eat them](https://www.youtube.com/watch?v=cQuh6ppyoew).
 * Stress is the source of so many bad physiological factors, including weight gain. Try to reduce stress and be happy. Focus on your mental health before focusing on your physical health.

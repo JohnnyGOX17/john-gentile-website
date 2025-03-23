@@ -51,15 +51,19 @@ comments: true
 
 > The Man who says he can, and the man who says he can not.. Are both correct
 
-- Confucius
+-Confucius
 
 > We suffer more in our imagination more often than in reality.
 
-- Seneca
+-Seneca
 
 > I don't count my sit-ups; I only start counting when it starts hurting because they’re the only ones that count.
 
 -Muhammad Ali
+
+> Stress primarily comes from not taking action over something that you can have some control over.
+
+-Jeff Bezos
 
 > Adversity introduces a man to himself.
 
