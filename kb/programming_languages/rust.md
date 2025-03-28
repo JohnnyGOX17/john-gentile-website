@@ -42,6 +42,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 * [ ] [ferrous-systems/elements-of-rust](https://github.com/ferrous-systems/elements-of-rust/blob/master/README.md) 
 * [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
+* [ ] [Effective Rust](https://www.lurklurk.org/effective-rust/): 33 Specific Ways to Improve Your Rust Code
 * [Advent of Rust](https://www.rustfinity.com/advent-of-rust): like [Advent of Code](https://adventofcode.com/) but for beginners looking to learn Rust.
   + [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
 
@@ -148,10 +149,11 @@ thread::spawn({
 
 ### Low-Level / Embedded
 
+* [Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/)
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
 * [Rust Embedded GitHub](https://github.com/rust-embedded)
   + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
-* [The embedonomicon](https://japaric.github.io/embedonomicon/preface.html)
+* [The embedonomicon](https://docs.rust-embedded.org/embedonomicon/)
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 * [The Embedded Rustacean Newsletter](https://www.theembeddedrustacean.com/)
@@ -189,7 +191,6 @@ thread::spawn({
   + [console-rs/indicatif](https://github.com/console-rs/indicatif): CLI progress bar/reporting library.
   + [tui-rs](https://github.com/fdehau/tui-rs): Terminal User Interface (TUI) and dashboard crate
 * [Webassembly Book](https://rustwasm.github.io/docs/book/)
-* [Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/)
 
 
 ### General Repos

@@ -76,9 +76,9 @@ The use of plane capacitance as part of your stackup can reduce the number of ne
 
 ## Checklists
 
-### Schematic
+### Schematic & Layout
 
-### Layout
+* [azonenberg/pcb-checklist: Sign-off review checklist for PCB designs](https://github.com/azonenberg/pcb-checklist)
 
 ### Board Bring-Up
 
@@ -93,10 +93,18 @@ For more, see [9 Steps to bring up a freescale board](https://fedevel.com/blog/9
 
 ## References
 
+* [UltraScale Architecture PCB Design User Guide (UG583)](https://docs.amd.com/r/en-US/ug583-ultrascale-pcb-design/)
+* [PCB Design Considerations for FPGA Accelerator Cards Application Note (XAPP1316)](https://www.xilinx.com/support/documentation/application_notes/xapp1316-design-considerations-fpga-accelerator-cards.pdf)
+* [AN 672: Transceiver Link Design Guidelines for High-Gbps Data Rate Transmission](https://www.intel.com/content/www/us/en/docs/programmable/683624/current/an-672-transceiver-link-design-guidelines.html)
+* [AN 766: Intel® Stratix® 10 Devices, High Speed Signal Interface Layout Design Guideline](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/an/an766.pdf)
+* [AN 875: Intel® Stratix® 10 E-Tile PCB Design Guidelines](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/an/an875.pdf)
 * [PCB Design Guides - Sierra Circuits](https://www.protoexpress.com/pcb/resources/pcb-design-guides/)
 * [Isola PCB Selection for HS Digital Designs](http://www.isola-group.com/wp-content/uploads/PCB-Material-Selection-for-High-speed-Digital-Designs-1.pdf)
 * [Recommended Design Rules and Strategies for BGA Devices User Guide (UG1099)](https://docs.amd.com/r/en-US/ug1099-bga-device-design-rules/)
 * [Robert Feranec YouTube Channel](https://www.youtube.com/@RobertFeranec): YT creator with many videos on signal & power integrity.
+* [Home Page - Signal Integrity Journal](https://www.signalintegrityjournal.com/)
+* [FPGA + PCIe Hardware Accelerator Design Walkthrough (DDR3, M.2, ..) - Phil's Lab - YouTube](https://www.youtube.com/watch?v=8bw80LiCl7g)
+* [Ransom Stephens, PhD - Notes](https://ransomsnotes.com/resources.htm)
 
 ### Conferences
 

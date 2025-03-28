@@ -13,6 +13,7 @@ comments: true
 ### Voltage Fault Injection (Voltage Glitching)
 
 - [ ] [Shaping the Glitch: Optimizing Voltage Fault Injection Attacks - CHES](https://ches.iacr.org/2019/src/slides/Day3/Session12_NovelAttacks/Paper2_Session12_CHES2019Slides_Palmarini_Shaping%20the%20glitch.pdf)
+- [ ] [Who Watches the Watchers: Attacking Glitch Detection Circuits](https://eprint.iacr.org/2023/1647.pdf)
 
 ### Countermeasures & Mitigations
 

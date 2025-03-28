@@ -106,6 +106,7 @@ Problems with sharing data between threads comes down to consequences of _modify
 * [Understanding SIMD: Infinite Complexity of Trivial Problems](https://www.modular.com/blog/understanding-simd-infinite-complexity-of-trivial-problems)
 * [ARMv8 AArch64/ARM64 Full Beginner's Assembly Tutorial - MarioKartWii.com](https://mariokartwii.com/armv8/)
 * [FFmpeg School of Assembly Language](https://github.com/FFmpeg/asm-lessons/blob/main/lesson_01/index.md)
+* [AMD-Xilinx AI Engine Development Tutorials](https://github.com/Xilinx/Vitis-Tutorials/tree/2024.2/AI_Engine_Development/AIE)
 
 
 
@@ -147,4 +148,9 @@ Besides the general/obvious things like stopping unnecessary applications, backg
   + [perf Examples](https://www.brendangregg.com/perf.html)
   + [Linux Performance](https://www.brendangregg.com/linuxperf.html)
   + [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020)](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
+
+<br />
+{% youtube "https://www.youtube.com/watch?v=sX2nF1fW7kI" %}
+<br />
+{% youtube "https://www.youtube.com/watch?v=wGSSUSeaLgA" %}
 

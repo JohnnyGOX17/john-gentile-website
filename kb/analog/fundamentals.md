@@ -270,3 +270,8 @@ Further, if you want to step through a list of parameters to change, one could d
 .step param beta_step LIST 70 120 210
 .model my_step_2N3904 AKO: 2N3904 (Bf={beta_step})
 ```
+
+## References
+
+* [Razavi Electronics all lectures - YouTube](https://www.youtube.com/playlist?list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU)
+

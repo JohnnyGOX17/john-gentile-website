@@ -28,7 +28,9 @@ For Ethernet, these sublayers are described as (from lowest to highest layer):
 
 There are several physical signaling standards at the PMD layer with high-speed Ethernet for individual lanes:
 
-* **50G PAM-4:** 53.125 G[Baud](https://en.wikipedia.org/wiki/Baud) (100Gb/s post-encoding) [PAM-4 Modulation](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/an/an835.pdf)
+* **50G PAM-4:** 53.125 G[Baud](https://en.wikipedia.org/wiki/Baud) (100Gb/s post-encoding) [AN 835: PAM-4 Signaling Fundamentals](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/an/an835.pdf)
+  + [Brief Discussion: PAM4 vs. NRZ Signaling - YouTube](https://www.youtube.com/watch?v=KlF7qKCQ9Ps)
+  + [PAM4-Signaling-in-High-Speed-Serial-Technology_55W-60273.pdf](https://download.tek.com/document/PAM4-Signaling-in-High-Speed-Serial-Technology_55W-60273.pdf)
 * **25G PAM-4:** 26.5625 GBaud (50Gb/s post-encoding) PAM-4 Modulation
 * **25G NRZ:** 26.5625 GBaud (25Gb/s post-encoding) [NRZ Modulation](https://en.wikipedia.org/wiki/Non-return-to-zero)
 
@@ -42,13 +44,20 @@ There are several physical signaling standards at the PMD layer with high-speed 
 
 [Everything You Always Wanted to Know About Optical Networking- But Were Afraid to Ask](https://www.nanog.org/sites/default/files/2_Steenbergen_Tutorial_New_And_v2.pdf)
 
+## Eye Diagrams & Measurements
+
+### References
+
+* [Xilinx In-System IBERT for Eye Analysis (PG246)](https://www.xilinx.com/support/documents/ip_documentation/in_system_ibert/v1_0/pg246-in-system-ibert.pdf)
+* [AN687: A Primer on Jitter, Jitter Measurement, and Phase-Locked Loops - SkyWorks](https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/application-notes/AN687.pdf)
+
+
 ## References
 
-### To Read
-
-- [ ] [High-Speed Serial I/O Made Simple - AMD-Xilinx Book](https://www.xilinx.com/publications/archives/books/serialio.pdf)
-- [ ] [Sam Palermo Courses - Texas A&M](https://people.engr.tamu.edu/spalermo/teaching.html)
+* [ ] [High-Speed Serial I/O Made Simple - AMD-Xilinx Book](https://www.xilinx.com/publications/archives/books/serialio.pdf)
+* [ ] [Sam Palermo Courses - Texas A&M](https://people.engr.tamu.edu/spalermo/teaching.html)
   + [Sam Palermo - ECEN 720: High-Speed Links Circuits and Systems](https://people.engr.tamu.edu/spalermo/ecen720.html)
-    * [ECEN 689: Older Course](https://people.engr.tamu.edu/spalermo/ecen689_spring2010.html)
+    - [ECEN 689: Older Course](https://people.engr.tamu.edu/spalermo/ecen689_spring2010.html)
   + [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
+* [DC Blocking Capacitors](http://www.sigcon.com/Pubs/news/7_08.htm)
 
