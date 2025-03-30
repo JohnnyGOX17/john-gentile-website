@@ -35,4 +35,5 @@ Normal memory- used for code, data, heap and stack- is usually treated as execut
 ## References
 
 * [RTL Engineering - YouTube Channel](https://www.youtube.com/c/RTLEngineering)
+* [Cache Prefetching](https://en.wikipedia.org/wiki/Cache_prefetching)
 

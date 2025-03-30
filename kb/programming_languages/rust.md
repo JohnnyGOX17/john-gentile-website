@@ -43,6 +43,10 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 * [ ] [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html)
 * [ ] [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) 
 * [ ] [Effective Rust](https://www.lurklurk.org/effective-rust/): 33 Specific Ways to Improve Your Rust Code
+* [ ] [100 Exercises to Learn Rust](https://rust-exercises.com/100-exercises/)
+* [ ] [Advanced Rust testing](https://rust-exercises.com/advanced-testing/)
+* [ ] [Rust telemetry workshop](https://rust-exercises.com/telemetry/)
+  + [tracing](https://docs.rs/tracing/latest/tracing/): a framework for instrumenting Rust programs to collect structured, event-based diagnostic information.
 * [Advent of Rust](https://www.rustfinity.com/advent-of-rust): like [Advent of Code](https://adventofcode.com/) but for beginners looking to learn Rust.
   + [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
 
@@ -201,5 +205,4 @@ Some repos that are useful in general Rust programs, or as reference for good Ru
 * [alacritty](https://github.com/alacritty/alacritty): cross-platform, OpenGL terminal emulator.
 * [awslabs/mountpoint-s3](https://github.com/awslabs/mountpoint-s3): A simple, high-throughput file client for mounting an Amazon S3 bucket as a local file system.
 * [hashbrown](https://docs.rs/hashbrown/latest/hashbrown/): a Rust port of Google’s high-performance SwissTable hash map, adapted to make it a drop-in replacement for Rust’s standard HashMap and HashSet types.
-* [tracing](https://docs.rs/tracing/latest/tracing/): a framework for instrumenting Rust programs to collect structured, event-based diagnostic information.
 
