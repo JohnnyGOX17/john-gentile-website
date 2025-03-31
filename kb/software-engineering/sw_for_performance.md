@@ -51,6 +51,8 @@ To write high-performance software (SW), you should understand [computer archite
 * [Low Latency Optimization: Understanding Huge Pages (Part 1) - Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/low-latency-optimization-part-1/)
 * [Locality of reference - Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
 * [Cache coherence - Wikipedia](https://en.wikipedia.org/wiki/Cache_coherence)
+* [ ] [A Bounded SPSC queue for Rust](https://github.com/JohnnyGOX17/bounded-spsc-queue)
+- [ ] [Why is ringbuf crate so fast?- Reddit](https://www.reddit.com/r/rust/comments/1h3bqv0/why_is_ringbuf_crate_so_fast/)
 
 ### Branchless Programming
 
@@ -74,6 +76,7 @@ You mainly use concurrency in an application to separate concerns and/or to gain
 - **Multiple Processes:** separate processes can use OS Interprocess Communication (IPC) features- like signals, sockets, files, pipes, etc.- to pass messages/data. A downisde is IPC can be complicated to setup or slow, and there's overhead in running multiple processes (OS resources to manage and start). An advantage is IPC can be horizontally scalable, and processes can be run across machines on a network (e.x. when using socket IPC).
 - **Multiple Threads:** you can also run multiple threads within a single process, where all threads share the same address space, and most data can be accessed directly from all threads. This makes the overhead much smaller than sharing data across processes, but this also means software must be more aware of potential problems between threads operating on data concurrently. Threads can be launched much quicker than processes as well.
   + We can further divide up parallelism constructs from here into _task parallelism_ (dividing tasks into multiple, concurrent parts) and _data parallelism_, where each thread can operate on different parts of data (also leading into SIMD hardware parallelism).
+  + A thread can be pinned to a specific core (called _thread affinity_) to avoid latency induced by context switching.
 
 In many system languages, threads can be launched/spawned by pointing to a given function (or immediate work in lambda notation). When a thread is launched, it immediately starts doing work while program execution continues in the method that spawned it. We can use _joining_ to wait for a thread to finish execution, and care must be kept for the scope/lifetime of a thread.
 
@@ -89,6 +92,8 @@ Problems with sharing data between threads comes down to consequences of _modify
 * [taskflow/taskflow: A General-purpose Parallel and Heterogeneous Task Programming System](https://github.com/taskflow/taskflow)
 * [The LMAX Architecture - Martin Fowler](https://martinfowler.com/articles/lmax.html): ring buffer/queue model to allow concurrency without needing locks
   - [LMAX Disruptor](https://lmax-exchange.github.io/disruptor/disruptor.html)
+* [iceoryx2](https://github.com/eclipse-iceoryx/iceoryx2): Eclipse iceoryx2™ - true zero-copy inter-process-communication in pure Rust
+* [CoralRing](https://github.com/coralblocks/CoralRing): an ultra-low-latency, lock-free, garbage-free, batching and concurrent circular queue (ring) in off-heap shared memory for inter-process communication (IPC) in Java across different JVMs using memory-mapped files.
 
 ### Tools
 
@@ -102,6 +107,7 @@ Problems with sharing data between threads comes down to consequences of _modify
 * [ ] [crossbeam-rs Learning Resources](https://github.com/crossbeam-rs/rfcs/wiki)
 * [ ] [Is Parallel Programming Hard, And, If So, What Can You Do About It? (Release v2023.06.11a)](https://arxiv.org/abs/1701.00854)
 * [ ] [C++11 threads, affinity and hyperthreading](https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/)
+* [Thread pool - Wikipedia](https://en.wikipedia.org/wiki/Thread_pool)
 * [Communicating sequential processes - Hoare 1978](https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf): this classic paper on communicating with sequential processes as a fundamental structure for concurrent programs.
 
 

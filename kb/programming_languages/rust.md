@@ -111,7 +111,8 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [ ] [tfpk/MacroKata](https://tfpk.github.io/macrokata/): Learn Macros in Rust
 * [ ] [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
 
-### Async
+
+### Async / Concurrent Rust
 
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 
@@ -136,12 +137,16 @@ thread::spawn({
 * [tokio Tutorial](https://tokio.rs/tokio/tutorial) on the popular [tokio](https://github.com/tokio-rs/tokio) runtime for async Rust apps.
   + [tokio-tutorial repo](https://github.com/JohnnyGOX17/tokio-tutorial)
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
+* [ ] [Crust of Rust: Atomics and Memory Ordering](https://youtu.be/rMGWeSjctlY?si=p9_oZkq_Eo6B0bNV)
 * [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
 * [ ] [Asynchronous Programming in Rust (Async-book)](https://rust-lang.github.io/async-book/)
 * [ ] [Rust Projects - Write a Redis Clone](https://leanpub.com/rustprojects-redis): explore asynchronous programming with the actor model using Rust and Tokio
 * [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
 * [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
+* [ ] [crossbeam](https://github.com/crossbeam-rs/crossbeam)
+* [ ] [disruptor-rs](https://github.com/nicholassm/disruptor-rs)
 * [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
+
 
 ### Rust for Performance
 
@@ -150,6 +155,8 @@ thread::spawn({
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
 * [ ] [Rust SIMD Performance Guide](https://rust-lang.github.io/packed_simd/perf-guide/introduction.html)
   + [arch - Dynamic CPU Feature Detection](https://doc.rust-lang.org/stable/core/arch/#dynamic-cpu-feature-detection)
+* Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
+
 
 ### Low-Level / Embedded
 
@@ -164,6 +171,7 @@ thread::spawn({
 * [Learn Rust the Dangerous Way](https://cliffle.com/p/dangerust/)
 * [ ] [High Assurance Rust](https://highassurance.rs/)
 
+
 ### Rust for Linux Kernel Development
 
 * [Rust for Linux](https://rust-for-linux.com/)
@@ -171,6 +179,7 @@ thread::spawn({
 * [Rust Kernel Module: Getting Started](https://wusyong.github.io/posts/rust-kernel-module-00/)
 * [linux-kernel-module-rust](https://github.com/fishinabarrel/linux-kernel-module-rust)
   - https://github.com/lizhuohua/linux-kernel-module-rust
+
 
 
 ## References
@@ -202,7 +211,6 @@ thread::spawn({
 Some repos that are useful in general Rust programs, or as reference for good Rust practices:
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
 * [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep): very fast grep replacement, with great reference Rust codebase.
-* [alacritty](https://github.com/alacritty/alacritty): cross-platform, OpenGL terminal emulator.
 * [awslabs/mountpoint-s3](https://github.com/awslabs/mountpoint-s3): A simple, high-throughput file client for mounting an Amazon S3 bucket as a local file system.
 * [hashbrown](https://docs.rs/hashbrown/latest/hashbrown/): a Rust port of Google’s high-performance SwissTable hash map, adapted to make it a drop-in replacement for Rust’s standard HashMap and HashSet types.
 
