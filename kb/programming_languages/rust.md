@@ -164,6 +164,8 @@ thread::spawn({
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
 * [Rust Embedded GitHub](https://github.com/rust-embedded)
   + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
+* [The Rustonomicon](https://doc.rust-lang.org/nomicon/): the Dark Arts of Unsafe Rust
+* [Overview of embedded programming and debugging - Debugonomicon](https://docs.rust-embedded.org/debugonomicon/)
 * [The embedonomicon](https://docs.rust-embedded.org/embedonomicon/)
   + [japaric/ultrascale-plus](https://github.com/japaric/ultrascale-plus/)
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)

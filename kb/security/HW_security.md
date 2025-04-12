@@ -58,7 +58,8 @@ _Power analysis_ is a form of SCA [where an attacker studies the power consumpti
 
 ### To Read
 
-- [ ] [Secure Hardware Design - MIT CSAIL 6.888](http://csg.csail.mit.edu/6.888Yan/)
+- [ ] [Secure Hardware Design 6.595x](https://shd.mit.edu/home/): MIT’s Secure Hardware Design Class (6.5950/6.5951) is an open-source course that teaches students both how to attack modern CPUs and design architectures resilient to those attacks.
+  + [Secure Hardware Design - MIT CSAIL 6.888](http://csg.csail.mit.edu/6.888Yan/)
   + [CSAIL-Arch-Sec/SHD-StarterCode - GitHub](https://github.com/CSAIL-Arch-Sec/SHD-StarterCode)
 - [ ] [NewAE Education & Training](https://www.newae.com/education)
   + [NewAE Technology GitHub Org (Chipwhisperer, etc. designs)](https://github.com/newaetech)

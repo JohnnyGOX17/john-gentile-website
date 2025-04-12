@@ -34,6 +34,8 @@ Normal memory- used for code, data, heap and stack- is usually treated as execut
 
 ## References
 
+* [Computation Structures Group - MIT CSAIL](http://csg.csail.mit.edu/pubs/courses.html)
+* [Parallel & Distributed Operating Systems Group - MIT CSAIL](https://pdos.csail.mit.edu/)
 * [RTL Engineering - YouTube Channel](https://www.youtube.com/c/RTLEngineering)
 * [Cache Prefetching](https://en.wikipedia.org/wiki/Cache_prefetching)
 
