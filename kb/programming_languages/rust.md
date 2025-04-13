@@ -49,6 +49,9 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
   + [tracing](https://docs.rs/tracing/latest/tracing/): a framework for instrumenting Rust programs to collect structured, event-based diagnostic information.
 * [Advent of Rust](https://www.rustfinity.com/advent-of-rust): like [Advent of Code](https://adventofcode.com/) but for beginners looking to learn Rust.
   + [Advent of Code - 2022](https://fasterthanli.me/series/advent-of-code-2022)
+* [Crust of Rust - Jon Gjengset YouTube Channel](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
+* [EbTech/rust-algorithms: Common data structures and algorithms in Rust](https://github.com/EbTech/rust-algorithms)
+* [Rust for professionals](https://overexact.com/rust-for-professionals/)
 
 #### Books
 
@@ -77,6 +80,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 - When using a Cargo project, `$ cargo build` can be used
   + `$ cargo run` can be used to build and then execute in one command.
   + Or for a more straight forward approach, `$ rustc main.rs` compiles the Rust file `main.rs` into an executable file `main`.
+- [johnthagen/min-sized-rust: 🦀 How to minimize Rust binary size 📦](https://github.com/johnthagen/min-sized-rust)
 
 For more info, [see The Cargo Book](https://doc.rust-lang.org/cargo/index.html).
 
@@ -93,6 +97,7 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 ### Cross-Compile & FFI
 
 * [dtolnay/cxx](cxx.rs): safe interop between Rust and C++.
+* [google/autocxx: Tool for safe ergonomic Rust/C++ interop driven from existing C++ headers](https://github.com/google/autocxx)
 
 ### Other Tools
 
@@ -162,6 +167,11 @@ thread::spawn({
 
 * [Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/)
 * [Writing an OS in Rust - Philipp Oppermann](https://os.phil-opp.com/)
+* [Embassy](https://embassy.dev/)
+  + [embassy-rs/embassy: Modern embedded framework, using Rust and async.](https://github.com/embassy-rs/embassy)
+* [Tock Embedded Operating System](https://www.tockos.org/)
+* [Hubris - Oxide Computer](https://hubris.oxide.computer/)
+* [probe-rs](https://probe.rs/)
 * [Rust Embedded GitHub](https://github.com/rust-embedded)
   + [rust-embedded/rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials): learn to write an embedded OS in Rust
 * [The Rustonomicon](https://doc.rust-lang.org/nomicon/): the Dark Arts of Unsafe Rust
@@ -171,16 +181,19 @@ thread::spawn({
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 * [The Embedded Rustacean Newsletter](https://www.theembeddedrustacean.com/)
 * [Learn Rust the Dangerous Way](https://cliffle.com/p/dangerust/)
-* [ ] [High Assurance Rust](https://highassurance.rs/)
+* [RTIC Masters Thesis Doc ](https://www.diva-portal.org/smash/get/diva2:1530134/FULLTEXT01.pdf)
+* [High Assurance Rust](https://highassurance.rs/)
+* [Workbook for Embedded Workshops - Ferrous Systems](https://embedded-trainings.ferrous-systems.com/)
 
 
 ### Rust for Linux Kernel Development
 
 * [Rust for Linux](https://rust-for-linux.com/)
+* [Rust linux kernel development - JackOS](https://www.jackos.io/rust-kernel/rust-for-linux.html)
 * [rust-sysfs-gpio](https://github.com/rust-embedded/rust-sysfs-gpio)
 * [Rust Kernel Module: Getting Started](https://wusyong.github.io/posts/rust-kernel-module-00/)
 * [linux-kernel-module-rust](https://github.com/fishinabarrel/linux-kernel-module-rust)
-  - https://github.com/lizhuohua/linux-kernel-module-rust
+  + [lizhuohua/linux-kernel-module-rust](https://github.com/lizhuohua/linux-kernel-module-rust)
 
 
 
@@ -210,8 +223,11 @@ thread::spawn({
 
 ### General Repos
 
+Can search for other crates on [Lib.rs](https://lib.rs/), which organizes, ranks and filters crates for use. Or see [Blessed.rs](https://blessed.rs/crates) for other recommended crates by usage.
+
 Some repos that are useful in general Rust programs, or as reference for good Rust practices:
 * [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust): collection of neat Rust repos and material
+* [Serde](https://serde.rs/)
 * [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep): very fast grep replacement, with great reference Rust codebase.
 * [awslabs/mountpoint-s3](https://github.com/awslabs/mountpoint-s3): A simple, high-throughput file client for mounting an Amazon S3 bucket as a local file system.
 * [hashbrown](https://docs.rs/hashbrown/latest/hashbrown/): a Rust port of Google’s high-performance SwissTable hash map, adapted to make it a drop-in replacement for Rust’s standard HashMap and HashSet types.

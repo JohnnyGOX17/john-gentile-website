@@ -73,7 +73,7 @@ _Branchless Programming: Why "If" is Sloowww... and what we can do about it!_
 ## Concurrency & Asynchronous Programming
 
 You mainly use concurrency in an application to separate concerns and/or to gain performance. Approaches to concurrency:
-- **Multiple Processes:** separate processes can use OS Interprocess Communication (IPC) features- like signals, sockets, files, pipes, etc.- to pass messages/data. A downisde is IPC can be complicated to setup or slow, and there's overhead in running multiple processes (OS resources to manage and start). An advantage is IPC can be horizontally scalable, and processes can be run across machines on a network (e.x. when using socket IPC).
+- **Multiple Processes:** separate processes can use OS [Interprocess Communication (IPC)](https://en.wikipedia.org/wiki/Inter-process_communication) features- like signals, sockets, files, pipes, etc.- to pass messages/data. A downisde is IPC can be complicated to setup or slow, and there's overhead in running multiple processes (OS resources to manage and start). An advantage is IPC can be horizontally scalable, and processes can be run across machines on a network (e.x. when using socket IPC).
 - **Multiple Threads:** you can also run multiple threads within a single process, where all threads share the same address space, and most data can be accessed directly from all threads. This makes the overhead much smaller than sharing data across processes, but this also means software must be more aware of potential problems between threads operating on data concurrently. Threads can be launched much quicker than processes as well.
   + We can further divide up parallelism constructs from here into _task parallelism_ (dividing tasks into multiple, concurrent parts) and _data parallelism_, where each thread can operate on different parts of data (also leading into SIMD hardware parallelism).
   + A thread can be pinned to a specific core (called _thread affinity_) to avoid latency induced by context switching.
@@ -87,6 +87,7 @@ Problems with sharing data between threads comes down to consequences of _modify
 
 ### Architectures
 
+* [Channels](https://en.wikipedia.org/wiki/Channel_(programming))
 * [Staged Event-Driven Architecture - Wikipedia](https://en.wikipedia.org/wiki/Staged_event-driven_architecture)
   - [Directed Acyclic Graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 * [taskflow/taskflow: A General-purpose Parallel and Heterogeneous Task Programming System](https://github.com/taskflow/taskflow)
