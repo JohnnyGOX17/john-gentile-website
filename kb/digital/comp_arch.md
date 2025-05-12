@@ -32,6 +32,10 @@ Normal memory- used for code, data, heap and stack- is usually treated as execut
 * [XiangShan](https://github.com/OpenXiangShan/XiangShan): high-performance RISC-V processor
 * [Chipyard](https://github.com/ucb-bar/chipyard): RISC-V SoC design framework
 
+## GPU
+
+* [adam-maj/tiny-gpu](https://github.com/adam-maj/tiny-gpu): A minimal GPU design in Verilog to learn how GPUs work from the ground up.
+
 ## References
 
 * [Computation Structures Group - MIT CSAIL](http://csg.csail.mit.edu/pubs/courses.html)

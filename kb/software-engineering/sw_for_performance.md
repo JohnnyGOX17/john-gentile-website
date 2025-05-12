@@ -8,7 +8,7 @@ comments: true
 
 ## Overview
 
-To write high-performance software (SW), you should understand [computer architecture](../digital/comp_arch.html).
+To write high-performance software (SW), you should fundamentally understand [computer architecture](../digital/comp_arch.html) and that [layers of abstraction have major effects](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html).
 
 [Latency numbers everyone should know:](https://stackoverflow.com/a/4087315)
 ```
@@ -248,6 +248,7 @@ Besides the general/obvious things like stopping unnecessary applications, backg
   + [Linux Performance](https://www.brendangregg.com/linuxperf.html)
   + [Systems Performance: Enterprise and the Cloud, 2nd Edition (2020)](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
 * [ ] [Algorithms for Modern Hardware - Algorithmica](https://en.algorithmica.org/hpc/)
+* [ ] [CPU performance - Curiouscoding](https://curiouscoding.nl/posts/cpu-benchmarks/)
 * [ ] [dendibakh/perf-ninja: This is an online course where you can learn and master the skill of low-level performance analysis and tuning.](https://github.com/dendibakh/perf-ninja)
 * [ ] [C++ Design Patterns for Low-latency Applications Including High-frequency Trading](https://arxiv.org/abs/2309.04259)
 * [ ] [Performance Analysis and Tuning on Modern CPUs - Denis Bakhvalov](https://faculty.cs.niu.edu/~winans/notes/patmc.pdf)

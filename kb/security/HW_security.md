@@ -6,6 +6,10 @@ top-category: Cyber and Security
 comments: true
 ---
 
+## Random Number Generators (RNGs)
+
+* [stnolting/neoTRNG: 🎲 A Tiny and Platform-Independent True Random Number Generator for any FPGA.](https://github.com/stnolting/neoTRNG)
+
 ## Fault Injection
 
 - [ ] [An Introduction to Fault Injection - nccgroup](https://research.nccgroup.com/2021/07/07/an-introduction-to-fault-injection-part-1-3/)

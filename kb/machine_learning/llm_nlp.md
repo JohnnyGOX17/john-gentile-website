@@ -25,6 +25,7 @@ References:
 * [Prompt Engineering Guide](https://www.promptingguide.ai/)
 * [Prompt engineering - Hugging Face](https://huggingface.co/docs/transformers/en/tasks/prompting)
 * [Prompt engineering - OpenAI](https://platform.openai.com/docs/guides/prompt-engineering)
+* [OpenAI Cookbbok](https://cookbook.openai.com/)
 
 ### LLMs for Coding
 
@@ -50,4 +51,5 @@ References:
 * [Hugging Face](https://huggingface.co/): pre-trained NLP models & reference
 * [Training data-efficient image transformers & distillation through attention- Facebook AI](https://arxiv.org/pdf/2012.12877.pdf)
 * [The Illustrated Transform](http://jalammar.github.io/illustrated-transformer/): NLP walk-through
+* [Tiny LLM - LLM Serving in a Week](https://skyzh.github.io/tiny-llm/)
 

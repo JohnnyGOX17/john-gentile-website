@@ -9,6 +9,20 @@ comments: true
 Architectures and design patterns for systems that are data intensive, as well as distributed computing systems. For a great overview, and impetus for AWS, see [Amazon's Distributed Computing Manifesto](https://www.allthingsdistributed.com/2022/11/amazon-1998-distributed-computing-manifesto.html).
 ![amazon distributed computing Manifesto diagram](https://www.allthingsdistributed.com/images/dcm-workflow-hi-res.jpg)
 
+## Application Programming Interfaces (APIs)
+
+* [public-apis/public-apis](https://github.com/public-apis/public-apis)
+
+### Debug/Tools
+
+`curl` can be used to debug REST APIs like:
+* Displaying response and headers with `$ curl -v http://www.example.com/api/ping`
+* PUT method with `$ curl -X PUT -d 'name=Sugar&category_id=3' http://www.example.com/api/products`
+* Use authentication with a token like `$ curl -H "Authorization: Bearer b1094abc0-54a4-3eab-7213-877142c33fh3" http://example.com/api/resource`
+* Show the HTTP response code with `$ curl -I http://www.example.com/`
+* And much, much more like in [everything curl](https://everything.curl.dev/)
+
+
 ## Virtualization and Containers
 
 ### Virtual Machines (VM)
@@ -83,6 +97,6 @@ When latency is key (can't wait/block for packet loss) in lossy networks (e.x. W
 * [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html)
 * [System Design Interview - YouTube](https://www.youtube.com/c/SystemDesignInterview)
 * [You Want Modules, Not Microservices](http://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html)
+* [Death By a Thousand Microservices](https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices.html)
 * [Database Fundamentals](https://tontinton.com/posts/database-fundementals/)
 * [15-445/645 Intro to Database Systems (Fall 2019) - YouTube](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
-* [public-apis/public-apis](https://github.com/public-apis/public-apis)

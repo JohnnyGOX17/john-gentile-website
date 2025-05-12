@@ -319,9 +319,11 @@
 * [Crest Factor Reduction - NI](https://www.ni.com/docs/en-US/bundle/rfmx-specan/page/rfmxspecan/crest_factor_reduction.html)
 * [Co-location Deployment Considerations for Direct RF Sampling Transceivers](https://www.xilinx.com/content/dam/xilinx/support/documents/white_papers/wp541-coloc-direct-rf.pdf)
 * [Crest Factor Reduction (CFR) Concept](https://rfmw.em.keysight.com/wireless/helpfiles/n7614/Content/Main/Crest_Factor_Reduction_Concept.htm)
+
 ### Radar
 * [NASA ARSET: Basics of Synthetic Aperture Radar (SAR), Session 1/4 - YouTube](https://www.youtube.com/watch?v=Xemo2ZpduHA)
 * [Introduction to Radar Systems Online MIT LL - YouTube](https://www.youtube.com/playlist?list=PLUJAYadtuizA8RC2Qk8LfmiWA56HZsk9y)
+* [radarsimx/radarsimpy - GitHub](https://github.com/radarsimx/radarsimpy)
 * [Radar: Introduction to Radar Systems — Online Course | MIT Lincoln Laboratory](http://www.ll.mit.edu/outreach/radar-introduction-radar-systems-online-course)
 * [Adaptive Antennas and Phased Arrays — Online Course | MIT Lincoln Laboratory](http://www.ll.mit.edu/outreach/adaptive-antennas-and-phased-arrays-online-course)
 * [Over-the-horizon radar - Wikipedia](https://en.wikipedia.org/wiki/Over-the-horizon_radar)
@@ -481,6 +483,7 @@
 
 * [Project Zero](https://googleprojectzero.blogspot.com/)
 * [GitHub - Hack-with-Github/Awesome-Hacking: A collection of various awesome lists for hackers, pentesters and security researchers](https://github.com/Hack-with-Github/Awesome-Hacking)
+* [hacker101 Learn to Hack](https://www.hacker101.com/)
 
 ## Bounty-CTF
 * [Bug Bounty - Hacker Powered Security Testing | HackerOne](https://www.hackerone.com/)
@@ -1024,7 +1027,6 @@
 * [Lockless algorithms for mere mortals [LWN.net]](https://lwn.net/SubscriberLink/827180/a1c1305686bfea67/)
 * [AXI DMA v7.1 LogiCORE IP Product Guide](https://docs.xilinx.com/r/en-US/pg021_axi_dma/AXI-DMA-v7.1-LogiCORE-IP-Product-Guide)
 * [AXI Multichannel Direct Memory Access v1.1 LogiCORE IP Product Guide](https://www.xilinx.com/support/documentation/ip_documentation/axi_mcdma/v1_1/pg288-axi-mcdma.pdf)
-* [Streaming SIMD Extensions - Wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)
 * [ARM architecture - Wikipedia](https://en.wikipedia.org/wiki/ARM_architecture)
 * [Introduction to GPU architecture](http://haifux.org/lectures/267/Introduction-to-GPUs.pdf)
 * [virtual memory - What problem does cache coloring solve? - Computer Science Stack Exchange](https://cs.stackexchange.com/questions/32294/what-problem-does-cache-coloring-solve)
@@ -1574,7 +1576,6 @@
 * [ultraembedded/core_ddr3_controller: A DDR3 memory controller in Verilog for various FPGAs](https://github.com/ultraembedded/core_ddr3_controller)
 * [taichi-ishitani/tnoc: Network on Chip Implementation written in SytemVerilog](https://github.com/taichi-ishitani/tnoc)
 * [bespoke-silicon-group/basejump_stl: BaseJump STL: A Standard Template Library for SystemVerilog](https://github.com/bespoke-silicon-group/basejump_stl)
-* [stnolting/neoTRNG: 🎲 A Tiny and Platform-Independent True Random Number Generator for any FPGA.](https://github.com/stnolting/neoTRNG)
 * [GitHub - lawrie/fpga_pio: An attempt to recreate the RP2040 PIO in an FPGA](https://github.com/lawrie/fpga_pio)
 * [GitHub - fpgasystems/fpga-network-stack: Scalable Network Stack for FPGAs (TCP/IP, RoCEv2)](https://github.com/fpgasystems/fpga-network-stack)
 * [FPGA @ Systems Group, ETH Zurich](https://github.com/fpgasystems)
