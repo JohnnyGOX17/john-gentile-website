@@ -406,6 +406,7 @@
 * [Cyclostationarity Home Page and Website Overview](https://cyclostationarity.com/)
 * [What You Need to Know About Real Time Spectrum Analysis | Signal Hound](https://signalhound.com/news/what-you-need-to-know-about-real-time-spectrum-analysis/)
 * [Time-Frequency Gallery - MATLAB &amp; Simulink](https://www.mathworks.com/help/signal/ug/time-frequency-gallery.html#responsive_offcanvas)
+* [The Synchrosqueezing algorithm for time-varying spectral analysis: robustness properties and new paleoclimate applications](https://arxiv.org/pdf/1105.0010)
 * [Spectrum Painter](https://github.com/polygon/spectrum_painter)
 * [Reassignment method - Wikipedia](https://en.wikipedia.org/wiki/Reassignment_method)
 * [Reassigned Spectrogram](https://people.ece.cornell.edu/land/PROJECTS/ReassignFFT/index.html)
@@ -437,7 +438,8 @@
 * [Frequency-Domain Periodicity and the Discrete Fourier Transform - Eric Jacobsen](https://www.dsprelated.com/showarticle/175.php)
 * [Time-Domain Periodicity and the Discrete Fourier Transform - Eric Jacobsen](https://www.dsprelated.com/showarticle/174.php)
 * [Fast, Accurate Frequency Estimators - Eric Jacobsen](http://www.ericjacobsen.org/Files/FastFreqEstimators_SPTnT.pdf)
-* [Practical Introduction to Time-Frequency Analysis - MATLAB &amp; Simulink Example](https://www.mathworks.com/help/signal/ug/practical-introduction-to-time-frequency-analysis.html)
+* [Practical Introduction to Time-Frequency Analysis - MATLAB & Simulink Example](https://www.mathworks.com/help/signal/ug/practical-introduction-to-time-frequency-analysis.html)
+* [Wavelet Time-Frequency Analysis - MATLAB](https://www.mathworks.com/help/wavelet/time-frequency-analysis.html)
 
 ## Information Theory
 * [Erasure Coding for Distributed Systems - HN](https://news.ycombinator.com/item?id=41361281)

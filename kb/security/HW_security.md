@@ -34,6 +34,8 @@ _Power analysis_ is a form of SCA [where an attacker studies the power consumpti
 
 * [PACMAN - YouTube](https://www.youtube.com/watch?v=WRNZhP4CVgE): microarchitecture side channel attack to break ARM Pointer Authentication Code (PAC).
 * [Screaming Channels](https://www.s3.eurecom.fr/docs/ccs18_camurati_preprint.pdf): side-channel attack that leaks AES via analog disturbances in RF wireless signal for mixed-signal SoCs.
+* [AIR-GAP RESEARCH - covertchannels.com](https://www.covertchannels.com/): this website is dedicated to air-gap jumping academic research
+
 
 
 
