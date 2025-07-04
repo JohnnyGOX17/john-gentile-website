@@ -6,7 +6,14 @@ top-category: Cyber and Security
 comments: true
 ---
 
-## Network Protections
+## Networking
+
+### Routing
+
+* Manually map an alias/hostname to an IP address by adding to `/etc/hosts` file, like:
+```
+192.168.56.4    mylinuxbox
+```
 
 ### SSH
 
@@ -29,9 +36,21 @@ Also you can forward multiple ports in one connection, for example:
 $ ssh -L 8888:localhost:8888 -L 8889:localhost:8889 <username>@<remote>
 ```
 
-## Tools
+### Tools
 
 - [Wireshark](https://www.wireshark.org/): prolific network protocol analyzer, packet capture and traffic visualization tool.
+
+
+## System Hardware Security
+
+### Disk Encryption
+
+* Create a LUKS encryption layer on a selected disk (erasing everything on disk!) with `$ sudo cryptsetup luksFormat /dev/sdb`.
+* Open encrypted drive with `$ sudo cryptsetup luksOpen /dev/sdb encrypted_drive`.
+  + If the disk hasn't been formatted yet, do `$ sudo mkfs.ext4 /dev/mapper/encrypted_drive`.
+* Mount the resultant unlocked drive with `$ sudo mount /dev/mapper/encrypted_drive /media/encrypted_drive`.
+  + You might need to change permissions on the mount folder to your user with `$ sudo chown -R username:group directory`.
+
 
 ## References
 

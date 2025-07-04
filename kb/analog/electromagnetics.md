@@ -20,6 +20,7 @@ The goal of the Telegrapher's Equations is to express complex electric and magne
 <br />
 
 * [An Intuitive Guide to Maxwell's Equations](https://photonlines.substack.com/p/an-intuitive-guide-to-maxwells-equations)
+* [What is the physical meaning of Maxwell's equations](https://steemit.com/stemq/@irelandscape/a-what-is-the-physical-meaning-of-maxwell-s-equations)
 
 ## Tools
 

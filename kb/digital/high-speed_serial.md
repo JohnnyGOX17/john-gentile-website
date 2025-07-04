@@ -59,5 +59,6 @@ There are several physical signaling standards at the PMD layer with high-speed 
   + [Sam Palermo - ECEN 720: High-Speed Links Circuits and Systems](https://people.engr.tamu.edu/spalermo/ecen720.html)
     - [ECEN 689: Older Course](https://people.engr.tamu.edu/spalermo/ecen689_spring2010.html)
   + [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
+* [ ] [High Speed Communications - Alphawave Semi YouTube Playlist](https://www.youtube.com/playlist?list=PLXWdf7T6k6P38IYQHRfp-gYC0oOJSy_6m)
 * [DC Blocking Capacitors](http://www.sigcon.com/Pubs/news/7_08.htm)
 

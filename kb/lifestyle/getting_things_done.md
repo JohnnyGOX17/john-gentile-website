@@ -16,11 +16,12 @@ comments: true
   + Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.
     - Checklists, scheduled reminders, etc. are parts of a successful system.
   + When motivation gets tired, discipline gets in the drivers seat.
-* Match your self-identity with your desired end state.
+* [Match your self-identity with your desired end state](https://rescuetime.wpengine.com/james-clear/#identity).
   + "Who are you?" versus "who do you want to be?". Act like you've been there.
   + "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.
   + Live the life now that your older self would fondly look back on.
   + Your identity can hold you back ("I'm bad at math") or build you up ("I'm the type of person who doesn't give up, and reads everyday").
+  + [Do whatever you can't stop thinking about](https://shime.sh/do-whatever-you-can%27t-stop-thinking-about)
 * Stop admiring the problem and just do it.
   + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation.
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
@@ -28,6 +29,7 @@ comments: true
   + At the same time, don't fall victim to starting things but never finishing them; "Stop starting and start finishing".
   + Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
   + Those who dare, win.
+  + Sometimes you have to stop sharpening the saw and just start cutting shit.
 * Control your control-ables, and don't worry about things out of your control.
   + Happiness is a mindset, not an achievement or place.
   + Don't put-off happiness till a future goal or milestone is reached. Live in the now. [Enjoy the journey, not just the end state](https://www.cs.utexas.edu/users/dahlin/bookshelf/hamming.html).
@@ -46,7 +48,7 @@ comments: true
   + Money can be used to buy back time, as time is often more valuable than money.
   + Praise in public, correct in private
   + Kindness is rooted in empathy for others' experiences
-  + Focus on positivity, life is a self-fulfilling prophecy so be confident and happy that things will get good and goals will be achieved.
+  + Focus on positivity, life is a [self-fulfilling prophecy](https://www.simplypsychology.org/self-fulfilling-prophecy.html) so be confident and happy that things will get good and goals will be achieved.
     - "Comparison is the thief of joy"; focus on if you're better today than you were yesterday, not how you compare to others.
 
 ### Waking Up Early

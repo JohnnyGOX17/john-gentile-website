@@ -34,16 +34,6 @@ A valuable cheatsheet for this mode can be found [here](http://www.catonmat.net/
 * [asciinema](https://asciinema.org/) FOSS solution that provides a lightweight, text-based approach to recording and sharing terminal sessions.
 * [Floobits](https://floobits.com/) real-time collaborative editing for terminals and other IDEs that support the plugin. Also can integrate video chats with [Google+ Hangouts](https://hangouts.google.com/)
 
-## Networking
-
-### Routing
-
-* Manually map an alias/hostname to an IP address by adding to `/etc/hosts` file, like:
-```
-192.168.56.4    mylinuxbox
-```
-
-
 ## File Management
 
 ### File/Directory Removal
@@ -55,5 +45,4 @@ A valuable cheatsheet for this mode can be found [here](http://www.catonmat.net/
 ## Command Line Text Processing
 
 * [learnbyexample\Command-line-text-processing](https://github.com/learnbyexample/Command-line-text-processing)
-
 

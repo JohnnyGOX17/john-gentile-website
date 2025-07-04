@@ -66,4 +66,5 @@ References:
 * [The Illustrated Transform](http://jalammar.github.io/illustrated-transformer/): NLP walk-through
 * [Tiny LLM - LLM Serving in a Week](https://skyzh.github.io/tiny-llm/)
 * [DeepSeek v3 & R1 Model Architecture](https://fireworks.ai/blog/deepseek-model-architecture)
+* [How to Scale Your Model- A Systems View of LLMs on TPUs - Jax-ML](https://jax-ml.github.io/scaling-book/)
 

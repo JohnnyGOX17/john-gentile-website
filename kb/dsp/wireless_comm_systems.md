@@ -111,6 +111,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [LiquidSDR](https://liquidsdr.org/): home to _liquid-dsp_, a free and open-source signal processing library for software-defined radios written in C. Its purpose is to provide a set of extensible DSP modules that do not rely on external dependencies or cumbersome frameworks. The project is now hosted on [github](https://github.com/jgaeddert/liquid-dsp).
 * [SoapySDR](https://github.com/pothosware/SoapySDR): vendor and platform neutral SDR library.
 * [FutureSDR](https://www.futuresdr.org/): experimental asynchronous SDR runtime for heterogeneous architectures.
+* [Sionna - NVIDIA Labs](https://nvlabs.github.io/sionna/index.html#): Sionna is a hardware-accelerated differentiable open-source library for research on communication systems.
 
 ### SDR Hardware
 

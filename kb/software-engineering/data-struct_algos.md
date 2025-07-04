@@ -1,5 +1,5 @@
 ---
-title: Data Structures & Algorithms
+title: Data Structures & Algorithms (DSA)
 layout: default
 kb: true
 top-category: Software Engineering
@@ -26,6 +26,7 @@ comments: true
 * [freeCodeCamp.org - YouTube](https://www.youtube.com/c/Freecodecamp/videos?view=0&sort=p&flow=grid)
 * [Data Structures and Algorithms in Python- Tamassia, Goldwasser and Goodrich](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
 * [MIT 6.006 Introduction to Algorithms, Spring 2020 - YouTube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
+  + [MIT 6.006 Fall 2011 OCW](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/)
 * [Advanced Algorithms (COMPSCI 224), Lecture 1 - YouTube](https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf)
 * [Open Data Structures in C++](http://opendatastructures.org/ods-cpp/)
 * [Kattis, Kattis](https://open.kattis.com/)

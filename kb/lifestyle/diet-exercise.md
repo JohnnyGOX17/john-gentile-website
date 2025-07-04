@@ -9,7 +9,7 @@ comments: true
 ## General Tips
 
 * Caloric restriction is the fundamental piece of weight loss
-  + To simply find your calorie deficit, find your [Total Daily Energy Expenditure](https://tdeecalculator.net/) and subtract 500 calories to find your max daily caloric intake.
+  + To find your calorie deficit, find your [Total Daily Energy Expenditure](https://tdeecalculator.net/) and subtract 500 calories to find your max daily caloric intake.
     - Keep track of daily total calories and weight loss (measure same time of day like morning) and adjust if needed (lower max caloric intake if not losing weight).
   + For instance, though not necessarily healthy, a [professor lost 27 pounds on a purely Twinkie diet](https://www.cnn.com/2010/HEALTH/11/08/twinkie.diet.professor/) to prove this point
   + [The average American diet](https://www.youtube.com/watch?v=Phq3xkZOchE) doesn't leave much room for calorie deficit, and to no one's surprise, [it's harder to burn calories than to eat them](https://www.youtube.com/watch?v=cQuh6ppyoew).
@@ -19,6 +19,7 @@ comments: true
 * Exercise is part of a healthy lifestyle. It's not only great for weight loss, general health or as a fun hobby, it can also help in unexpected ways like [treating depression](https://discover.dc.nihr.ac.uk/content/signal-000711/aerobic-exercise-is-an-effective-treatment-for-depression)
   + [General advice for adults](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20057916) is to try and fit in 150 minutes of exercise per week (e.x. 3x days of 50 minutes of exercise). If aiming for weight loss, or muscle/performance increases, this should be increased to 300 minutes per week, or even more.
 * Drink lots of water (between 1/2 - 1 gallon, or roughly 2 - 4 liters) for health & weight loss benefits
+  + [Drink 1-2 glasses of water before meals to feel more full](https://www.health.harvard.edu/blog/does-drinking-water-before-meals-really-help-you-lose-weight-202402203018)
   + It was found that [drinking 17 oz (500 mL) of water at one time increased metabolism by 24-30%](https://www.healthline.com/nutrition/how-much-water-should-you-drink-per-day#section2)
   + Drinking cold water may be beneficial as your body needs to expend calories to heat it up
   + Drinking 17 oz (500 mL) of water before meals can also reduce the amount of calories you eat as you feel more satiated
@@ -38,6 +39,14 @@ comments: true
   - going out and walking more
   - getting a standing desk for work
   - fun outdoor activities
+
+### Supplements
+
+Generally, you don't _need_ supplements, but where it may help as a pre-workout:
+* [Caffeine + L-Theanine](https://misiahb.medium.com/how-l-theanine-will-change-your-morning-coffee-forever-9768a4f9ceea) for balanced energy.
+* [Creatine](https://my.clevelandclinic.org/health/treatments/17674-creatine) for muscle support and recovery (one of the most studied supplements ever in sports science).
+* [L-Citrulline](https://www.webmd.com/vitamins-and-supplements/l-citrulline-uses-and-risks) for increased blood flow (helps with the "pump" on heavy lift days).
+* A daily multi-vitamin if in a deep cut and worried about missing nutrients.
 
 ## Keto Diet
 
