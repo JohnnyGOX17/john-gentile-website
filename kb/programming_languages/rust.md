@@ -115,6 +115,10 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 * [ ] [tfpk/MacroKata](https://tfpk.github.io/macrokata/): Learn Macros in Rust
 * [ ] [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
+* [ ] [dtolnay/proc-macro-workshop](https://github.com/dtolnay/proc-macro-workshop): procedural macros workshop
+
+Tools:
+* [cargo-expand](https://github.com/dtolnay/cargo-expand): subcommand to show result of macro expansion.
 
 
 ### Async / Concurrent Rust
