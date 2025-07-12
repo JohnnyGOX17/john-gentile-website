@@ -14,18 +14,29 @@ wip: true
 ### Popular Cloud LLMs
 
 * [ChatGPT - OpenAI](https://chatgpt.com/)
-  + [Sora for Image Generation](https://sora.chatgpt.com/)
 * [Claude - Anthropic](https://claude.ai/)
-* [Gemini - Google](https://gemini.google.com/)
-* [Grok - X](https://grok.com/)
+* [Gemini - Google](https://gemini.google.com/), which also has other tools like [AI Studio](https://aistudio.google.com/prompts/new_chat) which also has a very large context window.
+* [Grok - xAI](https://grok.com/)
 
 #### LLMs for Coding
 
-* (3/27/2025) so far [Claude 3.7 Sonnet](https://www.reddit.com/r/ClaudeAI/comments/1izhsrx/i_tested_claude_37_sonnet_against_grok3_and/) has slightly better coding results.
+* LLMs have varied abilities when it comes to coding.
+  + (3/27/2025) so far [Claude 3.7 Sonnet](https://www.reddit.com/r/ClaudeAI/comments/1izhsrx/i_tested_claude_37_sonnet_against_grok3_and/) has slightly better coding results.
+* Various vendor and open-source tools exist like:
+  + [Claude Code](https://github.com/anthropics/claude-code)
+  + [yamadashy/repomix](https://github.com/yamadashy/repomix): packs an entire repository into a single, AI-friendly file, which can then be uploaded to most LLMs.
 
-#### LLMs for Research
+#### LLMs for Research and Knowledge
 
-[Claude](https://www.anthropic.com/news/web-search), [OpenAI/ChatGPT](https://openai.com/index/introducing-deep-research/) and [Grok](https://grok.com) have "research" modes where the model is open to searching the internet, and has multi-step reasoning to come up with deep assessments and recommendations.
+* [Claude](https://www.anthropic.com/news/web-search), [OpenAI/ChatGPT](https://openai.com/index/introducing-deep-research/) and [Grok](https://grok.com) have "research" modes where the model is open to searching the internet, and has multi-step reasoning to come up with deep assessments and recommendations.
+  + As of 7/12/2025, Grok 4 seems to be the SOTA model for knowledge and research.
+* [Google's NotebookLM](https://notebooklm.google.com/) is targeted at helping research in Jupyter-style notebooks.
+
+
+#### LLMs for Image Generation
+
+* [ChatGPT's Sora](https://sora.chatgpt.com/) is great for realistic and photo image generation.
+* Most general models can synthesize an image from a prompt if the result is a text-based image format such as SVG, [Mermaid](https://mermaid.js.org/), HTML/CSS, etc.
 
 ### Prompt Engineering
 
@@ -42,6 +53,7 @@ References:
 * [Prompt engineering - Hugging Face](https://huggingface.co/docs/transformers/en/tasks/prompting)
 * [Prompt engineering - OpenAI](https://platform.openai.com/docs/guides/prompt-engineering)
 * [OpenAI Cookbbok](https://cookbook.openai.com/)
+* [Anthropic's Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
 
 
 ### Self-Hosted

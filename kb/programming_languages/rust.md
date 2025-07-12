@@ -107,6 +107,7 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 * [grcov](https://github.com/mozilla/grcov): collect & aggregate code coverage data for source files (also supports C/C++ projects, or files that can be processed by llvm/clang/gcc).
 * [loom](https://github.com/tokio-rs/loom): concurrency permutation testing for parallel Rust code.
 * [Miri](https://github.com/rust-lang/miri): interpreter for Rust's mid-level interpreter (MIR) and detect classes of undefined behavior.
+* [cargo-show-asm](https://crates.io/crates/cargo-show-asm): a cargo subcommand that displays the Assembly, LLVM-IR, MIR and WASM generated for Rust source code.
 
 
 ## Language
@@ -145,6 +146,7 @@ thread::spawn({
 
 * [tokio Tutorial](https://tokio.rs/tokio/tutorial) on the popular [tokio](https://github.com/tokio-rs/tokio) runtime for async Rust apps.
   + [tokio-tutorial repo](https://github.com/JohnnyGOX17/tokio-tutorial)
+  + [Beginner's Guide to Concurrent Programming: Coding a Multithreaded Chat Server using Tokio - pretzelhammer/rust-blog](https://github.com/pretzelhammer/rust-blog/blob/master/posts/chat-server.md)
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
 * [ ] [Crust of Rust: Atomics and Memory Ordering](https://youtu.be/rMGWeSjctlY?si=p9_oZkq_Eo6B0bNV)
 * [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
