@@ -60,5 +60,6 @@ There are several physical signaling standards at the PMD layer with high-speed 
     - [ECEN 689: Older Course](https://people.engr.tamu.edu/spalermo/ecen689_spring2010.html)
   + [RX DFE Equalization](https://people.engr.tamu.edu/spalermo/ecen689/lecture19_ee689_rx_dfe_eq.pdf)
 * [ ] [High Speed Communications - Alphawave Semi YouTube Playlist](https://www.youtube.com/playlist?list=PLXWdf7T6k6P38IYQHRfp-gYC0oOJSy_6m)
+* [ ] [Equalization for High-Speed Serial Interfaces in Xilinx 7 Series FPGA Transceivers (WP419)](https://docs.amd.com/v/u/en-US/wp419-7Series-XCVR-Equalization)
 * [DC Blocking Capacitors](http://www.sigcon.com/Pubs/news/7_08.htm)
 

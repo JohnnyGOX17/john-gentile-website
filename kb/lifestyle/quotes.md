@@ -228,6 +228,10 @@ comments: true
 
 ## Life
 
+> The only solution for bad and violent people, are good people that are more skilled in violence.
+
+-Bushido
+
 > The young man, who does not know the future, sees life as a kind of epic adventure, an Odyssey through strange seas and unknown islands, where he will test and prove his powers, and thereby discover his immortality. The man of middle years, who has lived the future that he onced dreamed, sees life as a tragedy; for he has learned that his power, however great, will not prevail against those forces of accident and nature to which he gives the names of gods, and has learned that he is mortal. But the man of age, if he plays his assigned role properly, must see life as a comedy. For his triumphs and his failures merge, and one is no more the occasion for pride or shame than the other; and he is neither the hero who proves himself against those forces, nor the protagonist who is destroyed by them. Like any poor, pitiable shell of an actor, he comes to see that he has played so many parts that there no longer is himself.
 
 -John Williams, Augustus
