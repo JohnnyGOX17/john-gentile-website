@@ -1,5 +1,5 @@
 ---
-title: Reverse Engineering
+title: Software Reverse Engineering (SRE)
 layout: default
 kb: true
 top-category: Cyber and Security

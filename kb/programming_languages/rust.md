@@ -157,6 +157,7 @@ thread::spawn({
 * [ ] [crossbeam](https://github.com/crossbeam-rs/crossbeam)
 * [ ] [disruptor-rs](https://github.com/nicholassm/disruptor-rs)
 * [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
+* [rust-book-multithreaded-web-server](https://github.com/JohnnyGOX17/rust-book-multithreaded-web-server): final project from Rust book which shows a concurrent, multithreaded webserver with a basic Threadpool using just standard library primitives and constructs.
 
 
 ### Rust for Performance

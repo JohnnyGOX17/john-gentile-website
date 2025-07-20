@@ -12,6 +12,8 @@ Architectures and design patterns for systems that are data intensive, as well a
 ## Application Programming Interfaces (APIs)
 
 * [public-apis/public-apis](https://github.com/public-apis/public-apis)
+* [gRPC](https://grpc.io/)
+* [ØMQ (ZeroMQ) - The Guide](https://zguide.zeromq.org/)
 
 ### Debug/Tools
 

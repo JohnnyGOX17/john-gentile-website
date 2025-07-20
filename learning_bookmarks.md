@@ -683,7 +683,6 @@
 * [The Frequency Injection Attack on Ring-Oscillator-Based True Random Number Generators](https://www.cl.cam.ac.uk/~atm26/papers/markettos-ches2009-inject-trng.pdf)
 * [wp395-Mitigating-SEUs.pdf • Viewer • Documentation Portal](https://docs.xilinx.com/v/u/en-US/wp395-Mitigating-SEUs)
 * [Hardware Trojans Under a Microscope | by Ryan Cornateanu | Medium](https://ryancor.medium.com/hardware-trojans-under-a-microscope-bf542acbcc29)
-* [VoidStar Security LLC](https://voidstarsec.com/)
 
 ### RF-SDR-SigInt
 

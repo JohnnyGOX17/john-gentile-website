@@ -1,5 +1,5 @@
 ---
-title: Hardware Security
+title: Embedded & Hardware Security
 layout: default
 kb: true
 top-category: Cyber and Security
@@ -70,4 +70,6 @@ _Power analysis_ is a form of SCA [where an attacker studies the power consumpti
 - [ ] [NewAE Education & Training](https://www.newae.com/education)
   + [NewAE Technology GitHub Org (Chipwhisperer, etc. designs)](https://github.com/newaetech)
 - [ ] [Security Engineering, 3rd Ed](https://www.cl.cam.ac.uk/archive/rja14/book.html)
+- [ ] [VoidStar Security Wiki](https://voidstarsec.com/hw-hacking-lab/) and [Security Blog](https://voidstarsec.com/blog/)
+- [ ] [Practical Reverse Engineering Part 1 - Hunting for Debug Ports](https://jcjc-dev.com/2016/04/08/reversing-huawei-router-1-find-uart/)
 

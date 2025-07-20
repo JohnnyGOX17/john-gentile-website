@@ -1,5 +1,5 @@
 ---
-title: Defense and Network Security
+title: Application Software & Network Security
 layout: default
 kb: true
 top-category: Cyber and Security
@@ -36,10 +36,6 @@ Also you can forward multiple ports in one connection, for example:
 $ ssh -L 8888:localhost:8888 -L 8889:localhost:8889 <username>@<remote>
 ```
 
-### Tools
-
-- [Wireshark](https://www.wireshark.org/): prolific network protocol analyzer, packet capture and traffic visualization tool.
-
 
 ## System Hardware Security
 
@@ -51,6 +47,11 @@ $ ssh -L 8888:localhost:8888 -L 8889:localhost:8889 <username>@<remote>
 * Mount the resultant unlocked drive with `$ sudo mount /dev/mapper/encrypted_drive /media/encrypted_drive`.
   + You might need to change permissions on the mount folder to your user with `$ sudo chown -R username:group directory`.
 
+
+## Tools
+
+* [Wireshark](https://www.wireshark.org/): prolific network protocol analyzer, packet capture and traffic visualization tool.
+* [pwntools](https://docs.pwntools.com/en/stable/) is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible.
 
 ## References
 
