@@ -18,10 +18,6 @@ comments: true
 
 -Derek Jeter
 
-> Whether you think you can or think you can't, you're right.
-
--Henry Ford
-
 > If you can dream it, you can do it.
 
 -Walt Disney
@@ -52,6 +48,10 @@ comments: true
 > The Man who says he can, and the man who says he can not.. Are both correct
 
 -Confucius
+
+> Whether you think you can or think you can't, you're right.
+
+-Henry Ford
 
 > We suffer more in our imagination more often than in reality.
 
@@ -117,6 +117,9 @@ comments: true
 
 -Theodore Roosevelt
 
+> I don't believe in the no-win scenario.
+
+-Captain Kirk, _Kobayashi Maru_
 
 
 ## Business & Leadership
@@ -217,16 +220,20 @@ comments: true
 
 -Mark Twain
 
-> The society that separates its scholars from its warriors will have its thinking done by cowards and its fighting by fools.
-
--Thucydides
-
 > Make everything as simple as possible, but not simpler.
 
--Albert Einstein [Occam's Razor]
+-Albert Einstein, _Occam's Razor_
+
+> All warfare is based on deception.
+
+-Sun Tzu, _Art of War_
 
 
 ## Life
+
+> The society that separates its scholars from its warriors will have its thinking done by cowards and its fighting by fools.
+
+-Thucydides
 
 > The only solution for bad and violent people, are good people that are more skilled in violence.
 
