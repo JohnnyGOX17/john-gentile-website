@@ -57,8 +57,8 @@ def match_subdir_to_category(subdir: str) -> str:
             return "Lifestyle"
         case "./kb/machine_learning":
             return "Machine Learning"
-        case "./kb/math_and_signal_processing":
-            return "Math & Signal Processing"
+        case "./kb/math":
+            return "Math"
         case "./kb/programming_languages":
             return "Programming Languages"
         case "./kb/radar":

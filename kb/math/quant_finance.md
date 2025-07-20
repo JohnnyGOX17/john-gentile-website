@@ -2,7 +2,7 @@
 title: Quantitative Finance
 layout: default
 kb: true
-top-category: Math & Signal Processing
+top-category: Math
 comments: true
 wip: true
 ---

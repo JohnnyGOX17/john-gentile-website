@@ -2,7 +2,7 @@
 title: Information Theory
 layout: default
 kb: true
-top-category: Math & Signal Processing
+top-category: Digital Signal Processing (DSP)
 comments: true
 wip: true
 ---
@@ -19,7 +19,7 @@ wip: true
 ### Reed-Solomon Error Correction
 
 - [Reed–Solomon error correction - Wikipedia](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)
-- [Introduction to Reed-Solomon. We’ve open-sourced a high-performance… | by Jeff Wendling | Vivint Innovation Center](https://innovation.vivint.com/introduction-to-reed-solomon-bc264d0794f8)
+- [Introduction to Reed-Solomon by Jeff Wendling - Vivint Innovation Center](https://innovation.vivint.com/introduction-to-reed-solomon-bc264d0794f8)
 - [ ] [Reed-Solomon codes for coders](https://en.wikiversity.org/wiki/Reed%E2%80%93Solomon_codes_for_coders)
 - [Backblaze/JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon)
   + [Reed Solomon Tutorial: Backblaze Reed Solomon Encoding Example Case - YouTube](https://www.youtube.com/watch?v=jgO09opx56o)
