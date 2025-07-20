@@ -1,5 +1,5 @@
 ---
-title: Wireless Communication Systems
+title: Software Defined Radio (SDR)
 layout: default
 kb: true
 top-category: Digital Signal Processing (DSP)
@@ -7,37 +7,11 @@ comments: true
 wip: false
 ---
 
-## Overview
-
-### I & Q Data
-
-Given the [trigonometric identity](https://en.wikipedia.org/wiki/Trigonometry): \$\$ \cos(\alpha)\cos(\beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta) $$
-
-We can describe a sinusoidal signal in component parts as: \$\$ A\cos(2\pi f t + \phi) = A\cos(2\pi f t)\cos(\phi) - A\sin(2\pi f t)\sin(\phi) $$
-
-Setting **I** (the amplitude of the **I**n-Phase carrier) and **Q** (the amplitude of the **Q**uadrature-phase carrier) allows us to describe the magnitude and phase (polar coordinate) of a sinusoid by the simple amplitudes:
-\$\$ I = A\cos(\phi) \$\$
-\$\$ Q = A\sin(\phi) \$\$
-\$\$ A\cos(2\pi f t + \phi) = I\cos(2\pi ft) - Q\sin(2\pi ft)\$\$
-
-<center><img src="IQ.png" width="150"></center>
-
-From the Euler identity of a sinusoidal signal $$ e^{\pm j \phi}=\cos \phi \pm j\sin \phi$$, we can see the relationship between the polar coordinate phasor notation of a signal vector (e.g. a signal described by its amplitude and phase) and its cartesian coordinate equivalent when described in the complex 2D plane, which shows the I/Q data format is the real and imaginary parts, respectively, of a given sinusiod:
-<center><img src="iq_polarrep.gif" width="500"></center>
-<center><i><a href="https://web.archive.org/web/20200415113535/www.ni.com/tutorial/4805/en/">Source: What is I/Q Data?- NI</a></i></center>
-
-The benefit of I/Q data, and why its a popular data representation when working with RF systems (e.x. communications devices), is that it makes phase modulated signals easier to work with; because a sine wave with a -90 degree phase offset is equal to a cosine wave, the above I/Q relationships mean that the same carrier can be used for both I & Q (just simply phase shifted for Q) _and_ that phase modulation can be achieved by simply modulating the amplitude of I & Q. This is much simpler (e.g. cost effective & performant) in real, digital implementations than direct phase modulation of a signal. For instance, a simple and common way to transform I/Q to RF can be shown in the following block diagram:
-<center><img src="iq_modulator.jpeg" width="500"></center>
-<center><i><a href="https://web.archive.org/web/20200415113535/www.ni.com/tutorial/4805/en/">Source: What is I/Q Data?- NI</a></i></center>
-
-I/Q data can also be represented by a [Constellation Diagram](https://en.wikipedia.org/wiki/Constellation_diagram) which provides an intuitive mapping between a set of digital bits and I/Q symbols for a given modulation scheme, for example [16-ary Quadtrature Amplitude Modulation (QAM)](https://en.wikipedia.org/wiki/Quadrature_amplitude_modulation):
-<center><img src="16QAM.png" width="300"></center>
-<center><i><a href="https://en.wikipedia.org/wiki/Constellation_diagram">Source: Constellation Diagram- Wikipedia</a></i></center>
-
-
 ## Waveforms
 
-### Wi-Fi (IEEE 802.11)
+### Communications
+
+#### Wi-Fi (IEEE 802.11)
 
 * [How a Wifi chip works internally](https://media.ccc.de/v/gpn22-380-how-a-wifi-chip-works-internally)
 * [gr-ieee802-11 - IEEE 802.11 a/g/p Transceiver in GNU Radio](https://github.com/bastibl/gr-ieee802-11)
@@ -46,7 +20,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [Marsrocky/Awesome-WiFi-CSI-Sensing](https://github.com/Marsrocky/Awesome-WiFi-CSI-Sensing): a list of awesome papers and cool resources on WiFi CSI sensing.
 
 
-### Cellular (LTE/3GPP, 4G/5G)
+#### Cellular (LTE/3GPP, 4G/5G)
 
 * [srsRAN - Open Source 4G/5G software](https://github.com/srsran)
 * [open5G_phy](https://github.com/catkira/open5G_phy): A resource efficient, customizable, synthesizable 5G NR lower PHY written in Verilog
@@ -57,7 +31,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [Evrytania/Matlab-Library](https://github.com/Evrytania/Matlab-Library): Miscellaneous Matlab functions that are useful for wireless communications. Primarily focused on LTE / 3GPP.
 
 
-### DVB-S2
+#### DVB-S2
 
 * [igorauad/gr-dvbs2rx: DVB-S2 receiver blocks for GNU Radio](https://github.com/igorauad/gr-dvbs2rx)
 * [csdvb/dvbs2_tx: Nexø DVB-S2 transmitter application](https://github.com/csdvb/dvbs2_tx)
@@ -69,7 +43,7 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [aff3ct/dvbs2: DVB-S2 SDR Transceiver.](https://github.com/aff3ct/dvbs2)
 * [A Flexible and Portable Real-time DVB-S2 Transceiver using Multicore and SIMD CPUs](https://hal.science/hal-03336450/file/article.pdf)
 
-### Bluetooth
+#### Bluetooth
 
 * [DEF CON 30 RF Village - Mike Ryan - Building a Modern Bluetooth Sniffer for SDRs - YouTube](https://www.youtube.com/watch?v=lpM9rnMfy2w)
 * [JiaoXianjun/BTLE](https://github.com/JiaoXianjun/BTLE): Bluetooth Low Energy (BLE) packet sniffer and transmitter for both standard and non standard (raw bit) based on Software Defined Radio (SDR).
@@ -77,20 +51,25 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 * [GitHub - newhouseb/onebitbt](https://github.com/newhouseb/onebitbt): A Bluetooth Low Energy Radio using FPGA SERDES: No ADC, AGC, filters, mixers, or amplifiers required.
 
 
-### LoRaWAN
+#### LoRaWAN
 
 * [Meshtastic](https://meshtastic.org/): open source mesh network software running on low-power, affordable devices.
   + [Meshtastic SDR](https://gitlab.com/crankylinuxuser/meshtastic_sdr): This GnuRadio project aims at being a full transceiver stack (RX and TX) for a software defined radio to communicate with the Meshtastic LoRa network.
 * [LoRaWAN On Helium Network](https://docs.helium.com/iot/lorawan-on-helium/)
 
-### ZigBee
+#### ZigBee
 
 * [gr-ieee802-15-4 ZigBee Transceiver GNU Radio block](https://github.com/bastibl/gr-ieee802-15-4)
 
-### Orthogonal Time Frequency Space (OTFS) Modulation
+#### Orthogonal Time Frequency Space (OTFS) Modulation
 
 * [OTFS Modulation- Mathworks](https://www.mathworks.com/help/comm/ug/otfs-modulation.html)
 * [OTFS − A Mathematical Foundation for Communication and Radar Sensing in the Delay-Doppler Domain](https://ece.iisc.ac.in/~achockal/pdf_files/zak_otfs1.pdf)
+
+### Datasources & Recordings
+
+* [IQEngine](https://iqengine.org/)
+* [SDR Angel I/Q Files](https://www.sdrangel.org/iq-files/)
 
 
 ## Software Defined Radio (SDR)
@@ -106,12 +85,16 @@ I/Q data can also be represented by a [Constellation Diagram](https://en.wikiped
 [Tutorials - GNU Radio](https://wiki.gnuradio.org/index.php/Tutorials)
         [SuggestedReading - GNU Radio](https://wiki.gnuradio.org/index.php/SuggestedReading)
 
-#### Other SDR Software
+#### Other SDR Frameworks
 
 * [LiquidSDR](https://liquidsdr.org/): home to _liquid-dsp_, a free and open-source signal processing library for software-defined radios written in C. Its purpose is to provide a set of extensible DSP modules that do not rely on external dependencies or cumbersome frameworks. The project is now hosted on [github](https://github.com/jgaeddert/liquid-dsp).
 * [SoapySDR](https://github.com/pothosware/SoapySDR): vendor and platform neutral SDR library.
 * [FutureSDR](https://www.futuresdr.org/): experimental asynchronous SDR runtime for heterogeneous architectures.
 * [Sionna - NVIDIA Labs](https://nvlabs.github.io/sionna/index.html#): Sionna is a hardware-accelerated differentiable open-source library for research on communication systems.
+
+#### SDR Frontends
+
+* [sdrangel](https://github.com/f4exb/sdrangel)
 
 ### SDR Hardware
 
