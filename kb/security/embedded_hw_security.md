@@ -8,7 +8,15 @@ comments: true
 
 ## Random Number Generators (RNGs)
 
+There are a variety of [Hardware random number generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator):
+* [Ring oscillator - Wikipedia](https://en.wikipedia.org/wiki/Ring_oscillator)
+* [Fast Digital TRNG Based on Metastable Ring Oscillator](https://iacr.org/archive/ches2008/51540162/51540162.pdf)
 * [stnolting/neoTRNG: 🎲 A Tiny and Platform-Independent True Random Number Generator for any FPGA.](https://github.com/stnolting/neoTRNG)
+* [True random number generators based on FPGA - Controlpaths.com](https://controlpaths.com/2025/07/13/generating-true-random-numbers-with-fpga/)
+
+### Attacks on HW TRNGs
+
+* [The Frequency Injection Attack on Ring-Oscillator-Based True Random Number Generators](https://www.cl.cam.ac.uk/~atm26/papers/markettos-ches2009-inject-trng.pdf)
 
 ## Fault Injection
 
@@ -25,6 +33,9 @@ comments: true
 
 
 ## Side Channel Analysis (SCA)
+
+
+[Side-channel attacks](https://en.wikipedia.org/wiki/Side-channel_attack) can take many forms.
 
 ### Power Analysis 
 

@@ -589,8 +589,6 @@
 * [cisagov/Malcolm: Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files), Zeek logs and Suricata alerts.](https://github.com/cisagov/Malcolm)
 * [Supported Protocols | Malcolm](https://cisagov.github.io/Malcolm/docs/protocols.html)
 * [Security-Onion-Solutions/securityonion: Security Onion is a free and open platform for threat hunting, enterprise security monitoring, and log management. It includes our own interfaces for alerting, dashboards, hunting, PCAP, and case management. It also includes other tools such as Playbook, osquery, CyberChef, Elasticsearch, Logstash, Kibana, Suricata, and Zeek.](https://github.com/Security-Onion-Solutions/securityonion)
-* [facebook/watchman: Watches files and records, or triggers actions, when they change.](https://github.com/facebook/watchman)
-* [OWASP Annotated Application Security Verification Standard — OWASP Annotated Application Security Verification Standard 3.0.0 documentation](https://owasp-aasvs.readthedocs.io/en/latest/index.html)
 * [Snort - Network Intrusion Detection &amp; Prevention System](https://www.snort.org/)
 * [CS253 - Web Security](https://web.stanford.edu/class/cs253/)
 
@@ -602,7 +600,6 @@
 * [Writing userspace USB drivers for abandoned devices](https://blog.benjojo.co.uk/post/userspace-usb-drivers)
 * [Intro to Hardware Reversing: Finding a UART and getting a shell - YouTube](https://m.youtube.com/watch?feature=youtu.be&v=ZmZuKA-Rst0)
 * [Pwn the ESP32 Forever: Flash Encryption and Sec. Boot Keys Extraction – LimitedResults](https://limitedresults.com/2019/11/pwn-the-esp32-forever-flash-encryption-and-sec-boot-keys-extraction/)
-* [Side-channel attack - Wikipedia](https://en.wikipedia.org/wiki/Side-channel_attack)
 * [CacheOut](https://cacheoutattack.com/)
 * [Physical unclonable function - Wikipedia](https://en.wikipedia.org/wiki/Physical_unclonable_function)
 * [Reverse engineering my router&#39;s firmware with binwalk - \#embeddedbits](https://embeddedbits.org/reverse-engineering-router-firmware-with-binwalk/)
@@ -676,11 +673,6 @@
 * [KULeuven-COSIC/Starlink-FI](https://github.com/KULeuven-COSIC/Starlink-FI)
 * [USB Rubber Ducky - Hak5](https://hak5.org/products/usb-rubber-ducky)
 * [NSA Releases Series on Protecting DoD Microelectronics From Adversary Influence &gt; National Security Agency/Central Security Service &gt; Press Release View](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3239938/nsa-releases-series-on-protecting-dod-microelectronics-from-adversary-influence/)
-* [Hardware random number generator - Wikipedia](https://en.wikipedia.org/wiki/Hardware_random_number_generator)
-* [Ring oscillator - Wikipedia](https://en.wikipedia.org/wiki/Ring_oscillator)
-* [Fast Digital TRNG Based on Metastable Ring Oscillator](https://iacr.org/archive/ches2008/51540162/51540162.pdf)
-* [The Frequency Injection Attack on Ring-Oscillator-Based True Random Number Generators | SpringerLink](https://link.springer.com/chapter/10.1007/978-3-642-04138-9_23)
-* [The Frequency Injection Attack on Ring-Oscillator-Based True Random Number Generators](https://www.cl.cam.ac.uk/~atm26/papers/markettos-ches2009-inject-trng.pdf)
 * [wp395-Mitigating-SEUs.pdf • Viewer • Documentation Portal](https://docs.xilinx.com/v/u/en-US/wp395-Mitigating-SEUs)
 * [Hardware Trojans Under a Microscope | by Ryan Cornateanu | Medium](https://ryancor.medium.com/hardware-trojans-under-a-microscope-bf542acbcc29)
 
