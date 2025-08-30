@@ -8,7 +8,7 @@ comments: true
 
 ## General Advice
 
-* You can achieve anything with discipline (habits, reinforcing systems), confidence, and time.
+* You can achieve any goal with discipline (habits, reinforcing systems), confidence, and time.
   + Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results. Habits are the compound interest of self-improvement; they don't seem like much on a given day, but over long periods of time, their effects can be massive. Your habits therefore set the trajectory of your life.
   + Confidence guides your mind, and then your actions, into doing. ["The Man who says he can, and the man who says he can not.. Are both correct"](./quotes.html)
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
@@ -16,6 +16,7 @@ comments: true
   + Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.
     - Checklists, scheduled reminders, etc. are parts of a successful system.
   + When motivation gets tired, discipline gets in the drivers seat.
+  + Goals without plans are just dreams.
 * [Match your self-identity with your desired end state](https://rescuetime.wpengine.com/james-clear/#identity).
   + "Who are you?" versus "who do you want to be?". Act like you've been there.
   + "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.

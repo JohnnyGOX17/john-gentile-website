@@ -75,6 +75,7 @@ References:
 * [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)
 * [Transformer Math 101](https://blog.eleuther.ai/transformer-math/) with a focus on training cost.
 * [Training data-efficient image transformers & distillation through attention- Facebook AI](https://arxiv.org/pdf/2012.12877.pdf)
+* [LLM Embeddings Explained: A Visual and Intuitive Guide - Hugging Face](https://huggingface.co/spaces/hesamation/primer-llm-embedding)
 * [The Illustrated Transform](http://jalammar.github.io/illustrated-transformer/): NLP walk-through
 * [Tiny LLM - LLM Serving in a Week](https://skyzh.github.io/tiny-llm/)
 * [DeepSeek v3 & R1 Model Architecture](https://fireworks.ai/blog/deepseek-model-architecture)
