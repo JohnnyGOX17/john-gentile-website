@@ -94,6 +94,13 @@ Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-i
 
 `rustdoc` can also perform [documentation tests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html) within comments.
 
+### IDEs
+
+There's a bunch here, from VSCode to Rust Rover, but if using (Neo)vim like me, there's a couple useful dots:
+* [mrcjkb/rustaceanvim](https://github.com/mrcjkb/rustaceanvim) is a necessary plugin to integrate useful features and `rust-analyzer` LSP.
+* [ra-multiplex](https://github.com/pr2502/ra-multiplex) (also supported and discovered automatically by `rustaceanvim` plugin above) is very useful- it essentially starts a `rust-analyzer` server that one or more IDEs can connect to, but more usefully, it means for Neovim setups that `ra-multiplex` can be started and index an entire repo once, and then Neovim can connect/disconnect freely without having to re-index every time.
+* See [my other Neovim dotfiles here](https://github.com/JohnnyGOX17/configs/tree/master/configs/nvim).
+
 ### Cross-Compile & FFI
 
 * [dtolnay/cxx](cxx.rs): safe interop between Rust and C++.
@@ -149,6 +156,7 @@ thread::spawn({
   + [Beginner's Guide to Concurrent Programming: Coding a Multithreaded Chat Server using Tokio - pretzelhammer/rust-blog](https://github.com/pretzelhammer/rust-blog/blob/master/posts/chat-server.md)
 * [ ] [Rust Atomics and Locks: Low-Level Concurrency in Practice- Mara Bos](https://marabos.nl/atomics/)
 * [ ] [Crust of Rust: Atomics and Memory Ordering](https://youtu.be/rMGWeSjctlY?si=p9_oZkq_Eo6B0bNV)
+* [ ] [Crust of Rust: Channels](https://www.youtube.com/watch?v=b4mS5UPHh20)
 * [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
 * [ ] [Asynchronous Programming in Rust (Async-book)](https://rust-lang.github.io/async-book/)
 * [ ] [Rust Projects - Write a Redis Clone](https://leanpub.com/rustprojects-redis): explore asynchronous programming with the actor model using Rust and Tokio

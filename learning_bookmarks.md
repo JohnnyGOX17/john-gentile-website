@@ -832,7 +832,6 @@
 * [OpenSecurityTraining2 - Learning Paths](https://ost2.fyi/Learning%20Paths.html)
 * [CS6038/CS5138 Malware Analysis, UC by ckane](https://class.malware.re/)
 * [GitHub - 0xZ0F/Z0FCourse_ReverseEngineering: Reverse engineering course by Z0F. Focuses on x64 Windows.](https://github.com/0xZ0F/Z0FCourse_ReverseEngineering)
-* [crackmes.one](https://crackmes.one)
 * [Reverse engineering with \#Ghidra: Breaking an embedded firmware encryption scheme - YouTube](https://www.youtube.com/watch?v=4urMITJKQQs&feature=emb_logo)
 * [tmpout/awesome-elf](https://github.com/tmpout/awesome-elf)
 * [G-3PO: A Protocol Droid for Ghidra | by Olivia Lucca Fraser | Tenable TechBlog | Dec, 2022 | Medium](https://medium.com/tenable-techblog/g-3po-a-protocol-droid-for-ghidra-4b46fa72f1ff)
