@@ -83,7 +83,9 @@ def convert_jupyter_to_markdown(file_path: str):
     )
 
 
-def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
+def convert_jupyter_md_output(
+    jupyter_path: str, file_path: str, category: str, blog_post: bool
+):
     """Take raw nbconvert Markdown and stylize correctly"""
     in_code_block = False
     in_iframe_block = False
@@ -93,18 +95,28 @@ def convert_jupyter_md_output(jupyter_path: str, file_path: str, category: str):
     output_lines = []
 
     # Add YAML header for Jekyll metadata and site generation
-    output_lines.append("---\n")
-    output_lines.append("title: TBD\n")
-    output_lines.append("layout: default\n")
-    output_lines.append("kb: true\n")
-    output_lines.append("top-category: " + category + "\n")
-    output_lines.append("comments: true\n")
-    output_lines.append("wip: false\n")
-    output_lines.append("---\n\n")
+    if blog_post:
+        output_lines.append("---\n")
+        output_lines.append("title: TBD\n")
+        output_lines.append("author: John Gentile\n")
+        output_lines.append("layout: default\n")
+        output_lines.append("kb: false\n")
+        output_lines.append("blog_post: true\n")
+        output_lines.append("comments: true\n")
+        output_lines.append("---\n\n")
+    else:
+        output_lines.append("---\n")
+        output_lines.append("title: TBD\n")
+        output_lines.append("layout: default\n")
+        output_lines.append("kb: true\n")
+        output_lines.append("top-category: " + category + "\n")
+        output_lines.append("comments: true\n")
+        output_lines.append("wip: false\n")
+        output_lines.append("---\n\n")
 
-    # Add Google colab badge to also run notebook source interactively
-    google_colab_url = "[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/"
-    output_lines.append(google_colab_url + jupyter_path + ")\n\n")
+        # Add Google colab badge to also run notebook source interactively
+        google_colab_url = "[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnnyGOX17/john-gentile-website/blob/master/"
+        output_lines.append(google_colab_url + jupyter_path + ")\n\n")
 
     with open(file_path, "r") as f:
         for line in f:
@@ -188,4 +200,19 @@ if __name__ == "__main__":
                     markdown_file = os.path.join(subdir, file[:-6] + ".md")
 
                     convert_jupyter_to_markdown(jupyter_file)
-                    convert_jupyter_md_output(jupyter_file, markdown_file, top_category)
+                    convert_jupyter_md_output(
+                        jupyter_file, markdown_file, top_category, False
+                    )
+
+    for subdir, dirs, files in os.walk("./_posts/"):
+        for file in files:
+            if file.endswith(".ipynb") and ".ipynb_checkpoints" not in subdir:
+                if notebook_changed(subdir, file):
+                    top_category = match_subdir_to_category(subdir)
+                    jupyter_file = os.path.join(subdir, file)
+                    markdown_file = os.path.join(subdir, file[:-6] + ".md")
+
+                    convert_jupyter_to_markdown(jupyter_file)
+                    convert_jupyter_md_output(
+                        jupyter_file, markdown_file, top_category, True
+                    )
