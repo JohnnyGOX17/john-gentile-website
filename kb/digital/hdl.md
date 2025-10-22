@@ -686,12 +686,21 @@ entity my_comp is
 * [verilog-format](https://github.com/ericsonj/verilog-format)
 * [istyle-verilog-formatter](https://github.com/thomasrussellmurphy/istyle-verilog-formatter)
 
+### Other Useful HDL Tools
+
+* [PeakRDL](https://peakrdl.readthedocs.io/en/latest/): PeakRDL is a free and open-source control & status register (CSR) generator toolchain, generating Verilog RTL and C code, using [SystemRDL](https://github.com/SystemRDL) or IP-XACT specifications.
+
+
+
 ## 3rd Party / Open-Source HDL Repos
 
 Here are some repositories of Verilog and VHDL code for common IP cores:
 * [Avnet HDL](https://github.com/Avnet/hdl)
 * [asicguy - GitHub](https://github.com/asicguy)
   + [His website - asicsolutions.com](https://asicsolutions.com/)
+
+
+
 
 
 ## References

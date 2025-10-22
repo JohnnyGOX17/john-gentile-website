@@ -47,8 +47,6 @@ def match_subdir_to_category(subdir: str) -> str:
     match subdir:
         case "./kb/analog":
             return "Analog Electronics"
-        case "./kb/business":
-            return "Business"
         case "./kb/digital":
             return "Digital Electronics"
         case "./kb/dsp":
@@ -63,8 +61,6 @@ def match_subdir_to_category(subdir: str) -> str:
             return "Programming Languages"
         case "./kb/radar":
             return "Radar"
-        case "./kb/wireless_comms":
-            return "Wireless Communication Systems"
         case "./kb/security":
             return "Cyber and Security"
         case "./kb/software-engineering":

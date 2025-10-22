@@ -13,16 +13,12 @@ comments: true
 * [Lattice Crypto Primer - Cloudflare](https://blog.cloudflare.com/lattice-crypto-primer/)
 
 
-## Application Specific 
-
-### Surreptitious Software
-
-* [Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection](https://www.amazon.com/Surreptitious-Software-Obfuscation-Watermarking-Tamperproofing/dp/0321549252)
-* [droberson/ELFcrypt](https://github.com/droberson/ELFcrypt)
+## Application Specific
 
 ### RF Communications Security
 
 * [An Overview of Key Technologies in Physical Layer Security](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7711494/)
+* [ASSET Research Group](https://asset-group.github.io/)
 
 #### Spreading Sequences
 
@@ -44,5 +40,6 @@ comments: true
 * [ ] [Cryptopals Crypto Challenges](https://cryptopals.com/)
   - [workspace repo](https://github.com/JohnnyGOX17/cryptopals)
 * [ ] [Crypto101](https://www.crypto101.io/)
+* [ ] [Cryptohack Challenges](https://cryptohack.org/challenges/)
 * [ ] [Useful Cryptography Resources](https://blog.cryptographyengineering.com/useful-cryptography-resources/)
 

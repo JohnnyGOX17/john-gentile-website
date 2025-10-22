@@ -131,22 +131,34 @@ Tools:
 
 ### Async / Concurrent Rust
 
+Rust has several protections built into the compiler/language to prevent data races and other undefined behavior:
+* There may never be more than one _mutable_ reference to an object (except in `unsafe` code).
+  + Interior mutability in Rust though means more accurate terms are _shared references_, `$T`, which can be copied and shared with others, and _exclusive references_, `&mut T`, which guarantees it's the only _exclusive borrowing_ of that `T`.
+* The language defines two special traits to keep track of what types can be used safely across threads:
+  + `Send`: a type that can be sent to another thread, like `Arc<i32>` (but `Rc<i32>` is not `Send`).
+  + `Sync`: a type that can be shared with another tread (e.g. a shared reference to that type, `&T`, is `Send`).
+
 See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 
 #### Arc
 
-For unmutable, shared references to data across threads, [`std::sync::Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html) provides an "Atomically reference counted" wrapper- once all threads are done with the Arc, its reference counter will drop to zero and the underlying structure will be dropped/deallocated.
+For immutable, shared references to data across threads, [`std::sync::Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html) provides an "Atomically reference counted" wrapper- once all threads are done with the Arc, its reference counter will drop to zero and the underlying structure will be dropped/deallocated.
 
 ```rust
-let a = Arc::new([1, 2, 3]);
+use std::sync::Arc;
 
-thread::spawn({
-    let a = a.clone();
-    move || {
-        dbg!(a);
-    }
-});
+let a = Arc::new([1, 2, 3]); // array in new allocation w/ref cntr set to 1
+let b = a.clone(); // cloning Arc increments count to two and provides 
+                   // second Arc to the same allocation
+
+// Both threads get their own Arc to access shared array, both decrement
+// counter when they drop Arc / get out of scope. Last thread to have counter
+// drop to 0 will deallocate the array.
+thread::spawn(move || dbg!(a));
+thread::spawn(move || dbg!(b));
 ```
+
+A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 
 
 #### References

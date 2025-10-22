@@ -36,6 +36,23 @@ comments: true
 * [Toyota Kata: Managing People for Improvement, Adaptiveness and Superior Results](https://www.amazon.com/Toyota-Kata-Managing-Improvement-Adaptiveness/dp/0071635238)
 
 
+## Project Management
+
+The [Heilmeier Catechism](https://www.darpa.mil/about/heilmeier-catechism):
+1. What are you trying to do? Articulate your objectives using absolutely no jargon.
+2. How is it done today, and what are the limits of current practice?
+3. What is new in your approach and why do you think it will be successful?
+4. Who cares? If you are successful, what difference will it make?
+5. What are the risks?
+6. How much will it cost?
+7. How long will it take?
+8. What are the mid-term and final “exams” to check for success?
+
+
+## Business
+
+* [DoD Contracting for Startups 101 - a16z](https://a16z.com/dod-contracting-for-startups-101/)
+
 ## Debugging
 
 The goal is to find out what's wrong, and how to resolve the problem, as quickly and effortlessly as possible. With this, there are some fundamental tips and processes one can undergo to greatly aid in debugging:
