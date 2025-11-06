@@ -41,6 +41,8 @@ There are a variety of [Hardware random number generators](https://en.wikipedia.
 
 _Power analysis_ is a form of SCA [where an attacker studies the power consumption of a cryptographic hardware device](https://en.wikipedia.org/wiki/Power_analysis).
 
+* [ ] [Differential Power Analysis on AES - Hands On Multi Bit Attack](https://sites.google.com/site/janbeck/cybersecurity-and-reverse-engineering-fun/differential-power-analysis-on-aes-hands-on-multi-bit-attack?authuser=0)
+
 ### Attacks & Case Studies
 
 * [PACMAN - YouTube](https://www.youtube.com/watch?v=WRNZhP4CVgE): microarchitecture side channel attack to break ARM Pointer Authentication Code (PAC).

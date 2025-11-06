@@ -35,4 +35,5 @@ wip: true
 ## References
 
 * [Project Nayuki](https://www.nayuki.io/): blog on software and many information theory topics, along with open-source repos.
+* [Channel coding theory: An introduction and comparison of block, Convolutional, Turbo and low-density parity-check (LDPC) codes](https://www.wasyresearch.com/channel-coding-theory-an-introduction-and-comparison-of-block-convolutional-turbo-and-low-density-parity-check-ldpc-codes/)
 

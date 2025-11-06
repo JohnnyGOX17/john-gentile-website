@@ -185,7 +185,24 @@ FAILED test_sample.py::test_answer - assert 4 == 5
 
 ## Packaging
 
-* [Python Packaging User Guide](https://packaging.python.org/en/latest/)
+**NOTE:** nowadays, it's much easier to manage a Python project and it's dependencies via [uv](https://docs.astral.sh/uv/):
+- **Install:** `$ curl -LsSf https://astral.sh/uv/install.sh | sh`
+- **Make a new Python project:** `$ uv init` which creates a `pyproject.toml` like:
+```toml
+[project]
+name = "my_project"
+version = "1.0.0"
+requires-python = ">=3.9,<3.13"
+dependencies = [
+  "astropy>=5.0.0",
+  "pandas>=1.0.0,<2.0",
+]
+```
+- **Add dependencies:** `$ uv add numpy >= 2.0`
+- **Initialize/Update a project:** `$ uv sync` (installs valid Python version and dependencies in a Virtual Environment)
+- **Run Python script/program:** `$ uv run project.py`
+
+The following is based on the traditional [Python Packaging User Guide](https://packaging.python.org/en/latest/) and steps pre-`uv` days:
 
 ### Virtual Environments `venv`
 
@@ -218,13 +235,16 @@ Other documentation frameworks which use reStructuredText (`*.rst`) format are:
 
 ## Other Useful Tools
 
+Current favorites:
+* [ruff](https://github.com/astral-sh/ruff): extremely fast Python linter and checker written in Rust.
+* [mypy](https://github.com/python/mypy): Static Type checker.
+  + See also [Advanced Static Typing with mypy (part1)](https://dev.to/chadrik/the-missing-guide-to-python-static-typing-532i)
+
+Older/others:
 * [psf/black](https://github.com/psf/black): uncompromising Python code formatter.
 * [pyright](https://github.com/microsoft/pyright): static type checker and linter for Python
-* [mypy](https://github.com/python/mypy): Static Type checker
-  + See also [Advanced Static Typing with mypy (part1)](https://dev.to/chadrik/the-missing-guide-to-python-static-typing-532i)
 * [flake8](https://github.com/PyCQA/flake8): a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.
 * [pylint](https://github.com/PyCQA/pylint): static code analyzer and linter.
-* [ruff](https://github.com/charliermarsh/ruff): extremely fast Python linter written in Rust
 
 ### Basic Python Web Server
 

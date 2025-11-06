@@ -70,6 +70,7 @@ References:
 ### Architecture & References
 
 * [Attention Is All You Need- Arxiv](https://arxiv.org/pdf/1706.03762.pdf): introduces concepts of transformers and attention
+* [ ] [karpathy's GitHub](https://github.com/karpathy)
 * [LLaMA: Open and Efficient Foundation Language Models - arXiv](https://arxiv.org/abs/2302.13971): Meta AI open-source LLM model.
 * [llama3 implemented from scratch](https://github.com/naklecha/llama3-from-scratch)
 * [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)

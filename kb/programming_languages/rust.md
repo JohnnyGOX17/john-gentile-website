@@ -121,9 +121,14 @@ There's a bunch here, from VSCode to Rust Rover, but if using (Neo)vim like me, 
 
 ### Macros
 
-* [ ] [tfpk/MacroKata](https://tfpk.github.io/macrokata/): Learn Macros in Rust
+Rust's macros are a way of using code to generate code before compilation.
+
+* [X] [tfpk/MacroKata](https://tfpk.github.io/macrokata/): Learn Macros in Rust
 * [ ] [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
 * [ ] [dtolnay/proc-macro-workshop](https://github.com/dtolnay/proc-macro-workshop): procedural macros workshop
+
+{% youtube "https://www.youtube.com/watch?v=geovSK3wMB8" %}
+<br />
 
 Tools:
 * [cargo-expand](https://github.com/dtolnay/cargo-expand): subcommand to show result of macro expansion.
@@ -163,6 +168,7 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 
 #### References
 
+* [Why async Rust? - without.boats](https://without.boats/blog/why-async-rust/)
 * [tokio Tutorial](https://tokio.rs/tokio/tutorial) on the popular [tokio](https://github.com/tokio-rs/tokio) runtime for async Rust apps.
   + [tokio-tutorial repo](https://github.com/JohnnyGOX17/tokio-tutorial)
   + [Beginner's Guide to Concurrent Programming: Coding a Multithreaded Chat Server using Tokio - pretzelhammer/rust-blog](https://github.com/pretzelhammer/rust-blog/blob/master/posts/chat-server.md)
