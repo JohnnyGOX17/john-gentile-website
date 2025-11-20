@@ -90,7 +90,7 @@ As part of `cargo` there's also:
 
 ### rustdoc
 
-Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code.
+Rust ships with a tool called [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) which can generate documentation by parsing specially formatted comments in Rust source code. It can build documentation via cargo with `$ cargo doc`.
 
 `rustdoc` can also perform [documentation tests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html) within comments.
 
@@ -142,8 +142,6 @@ Rust has several protections built into the compiler/language to prevent data ra
 * The language defines two special traits to keep track of what types can be used safely across threads:
   + `Send`: a type that can be sent to another thread, like `Arc<i32>` (but `Rc<i32>` is not `Send`).
   + `Sync`: a type that can be shared with another tread (e.g. a shared reference to that type, `&T`, is `Send`).
-
-See [rust-async-framework](https://github.com/JohnnyGOX17/rust-async-framework) for more details and implementation examples.
 
 #### Arc
 
@@ -240,7 +238,6 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 * [The Standard Library](https://doc.rust-lang.org/std/index.html): Comprehensive guide to the Rust standard library APIs.
 * [Edition Guide](https://doc.rust-lang.org/edition-guide/): Guide to the Rust editions.
 * [Cargo Book](https://doc.rust-lang.org/cargo/index.html): A book on Rust’s package manager and build system.
-* [Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html): Learn how to make awesome documentation for your crate.
 * [Rustc Book](https://doc.rust-lang.org/rustc/index.html): Familiarize yourself with the knobs available in the Rust compiler.
 * [Compiler Error Index](https://doc.rust-lang.org/error-index.html): In-depth explanations of the errors you may see from the Rust compiler.
 * [Rust Conf](https://rustconf.com/): Annual Rust conference.

@@ -88,4 +88,5 @@ _Power analysis_ is a form of SCA [where an attacker studies the power consumpti
 - [ ] [Security Engineering, 3rd Ed](https://www.cl.cam.ac.uk/archive/rja14/book.html)
 - [ ] [VoidStar Security Wiki](https://voidstarsec.com/hw-hacking-lab/) and [Security Blog](https://voidstarsec.com/blog/)
 - [ ] [Practical Reverse Engineering Part 1 - Hunting for Debug Ports](https://jcjc-dev.com/2016/04/08/reversing-huawei-router-1-find-uart/)
+* [ ] [IACR Transactions on Cryptographic Hardware and Embedded Systems](https://tches.iacr.org/)
 
