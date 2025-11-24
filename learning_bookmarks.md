@@ -648,7 +648,6 @@
 
 * [deptofdefense/hack-a-sat-library: Public library of space documents and tutorials](https://github.com/deptofdefense/hack-a-sat-library)
 * [Learn – HAS3](https://hackasat.com/learn/)
-* [Players’ Corner – HAS3 – HAS3](https://hackasat.com/players-corner/)
 * [deptofdefense/HAS-Qualifier-Challenges: Hack A Sat 2020 Qualifier Challenges](https://github.com/deptofdefense/HAS-Qualifier-Challenges)
 * [GitHub - ADDVulcan/ADDVulcan: ADDVulcan satellite hacking solutions for for Hack-A-Sat 2020](https://github.com/ADDVulcan/ADDVulcan)
 * [GitHub - solar-wine/writeups: Hack-A-Sat Qualifiers Writeups](https://github.com/solar-wine/writeups)

@@ -175,11 +175,13 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 * [ ] [Crust of Rust: Channels](https://www.youtube.com/watch?v=b4mS5UPHh20)
 * [ ] [Async Rust Book](https://www.oreilly.com/library/view/async-rust/9781098149086/)
 * [ ] [Asynchronous Programming in Rust (Async-book)](https://rust-lang.github.io/async-book/)
+* [ ] [Actors with Tokio - Alice Ryhl](https://ryhl.io/blog/actors-with-tokio/)
 * [ ] [Rust Projects - Write a Redis Clone](https://leanpub.com/rustprojects-redis): explore asynchronous programming with the actor model using Rust and Tokio
 * [ ] [Pin and suffering - fasterthanlime](https://fasterthanli.me/articles/pin-and-suffering)
 * [ ] [The State of Async Rust: Runtimes](https://corrode.dev/blog/async/)
 * [ ] [crossbeam](https://github.com/crossbeam-rs/crossbeam)
 * [ ] [disruptor-rs](https://github.com/nicholassm/disruptor-rs)
+* [ ] [Monoio](https://github.com/bytedance/monoio): Monoio is a pure io_uring/epoll/kqueue Rust async runtime. Part of the design has been borrowed from Tokio and Tokio-uring. However, unlike Tokio-uring, Monoio does not run on top of another runtime, rendering it more efficient.
 * [Async Rust Is A Bad Language- Bit Bashing](https://bitbashing.io/async-rust.html)
 * [rust-book-multithreaded-web-server](https://github.com/JohnnyGOX17/rust-book-multithreaded-web-server): final project from Rust book which shows a concurrent, multithreaded webserver with a basic Threadpool using just standard library primitives and constructs.
 

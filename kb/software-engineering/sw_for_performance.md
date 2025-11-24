@@ -67,6 +67,7 @@ _Branchless Programming: Why "If" is Sloowww... and what we can do about it!_
 
 * [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
 * [numerical.recipes](http://numerical.recipes/)
+* [Fast Multidimensional Matrix Multiplication on CPU from Scratch](https://siboehm.com/articles/22/Fast-MMM-on-CPU)
 
 
 
@@ -104,6 +105,7 @@ Problems with sharing data between threads comes down to consequences of _modify
 ### References
 
 * [C++ Concurrency in Action, Second Edition](https://a.co/d/5JJIIHQ)
+* [The Art of Multiprocessor Programming](https://www.amazon.com/Art-Multiprocessor-Programming-Maurice-Herlihy/dp/0124159508)
 * [ ] [What Every Systems Programmer Should Know About Concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
 * [ ] [crossbeam-rs Learning Resources](https://github.com/crossbeam-rs/rfcs/wiki)
 * [ ] [Is Parallel Programming Hard, And, If So, What Can You Do About It? (Release v2023.06.11a)](https://arxiv.org/abs/1701.00854)
