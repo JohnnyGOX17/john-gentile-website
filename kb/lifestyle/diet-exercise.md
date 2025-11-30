@@ -15,6 +15,7 @@ comments: true
   + [The average American diet](https://www.youtube.com/watch?v=Phq3xkZOchE) doesn't leave much room for calorie deficit, and to no one's surprise, [it's harder to burn calories than to eat them](https://www.youtube.com/watch?v=cQuh6ppyoew).
 * Stress is the source of so many bad physiological factors, including weight gain. Try to reduce stress and be happy. Focus on your mental health before focusing on your physical health.
 * Having a plan, and planning ahead, makes you more likely to be successful. Meal prepping, counting calories and logging progress are all keys to success.
+  + This can also mean pre-planning what meals you'll have for the day, especially if going out to eat or in scenarios where it could be easy to go off track in the moment.
 * Get 7-8 hours of sleep per night
 * Exercise is part of a healthy lifestyle. It's not only great for weight loss, general health or as a fun hobby, it can also help in unexpected ways like [treating depression](https://discover.dc.nihr.ac.uk/content/signal-000711/aerobic-exercise-is-an-effective-treatment-for-depression)
   + [General advice for adults](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20057916) is to try and fit in 150 minutes of exercise per week (e.x. 3x days of 50 minutes of exercise). If aiming for weight loss, or muscle/performance increases, this should be increased to 300 minutes per week, or even more.
@@ -34,11 +35,11 @@ comments: true
   - Limiting rest between workouts/sets greatly helps here
   - Monitor your heart rate during cardio (long-duration and HIIT, or even weight lifting) to ensure you're within your goals
 * Increasing physical activity can be greatly improved by your everyday, non-exercise choices like:
-  - parking further away from work/shopping
-  - skipping the elevator and taking the stairs
-  - going out and walking more
-  - getting a standing desk for work
-  - fun outdoor activities
+  - Parking further away from work/shopping
+  - Skipping the elevator and taking the stairs
+  - Going out and walking more
+  - Getting a standing desk for work
+  - Fun outdoor activities
 
 ### Supplements
 
@@ -48,54 +49,6 @@ Generally, you don't _need_ supplements, but where it may help as a pre-workout:
 * [L-Citrulline](https://www.webmd.com/vitamins-and-supplements/l-citrulline-uses-and-risks) for increased blood flow (helps with the "pump" on heavy lift days).
 * A daily multi-vitamin if in a deep cut and worried about missing nutrients.
 
-## Keto Diet
-
-The Keto diet is essentially a diet where you severely reduce, or remove, carbohydrates from your diet to allow your body to start using fats as a fuel source; it's not just a low carb diet (where you're overall reducing your body's fuel source) its also a higher fat content to still have energy, but adapting your body to use fat as an energy source.
-
-The goal is to be on a keto diet long enough to be fat adapted where your body preferentially uses fat as a fuel source. To become fat adapted, it can be as short as 6 weeks of following a keto diet to switch your body into that state.
-
-### Keto Benefits
-
-* Increased cognitive function
-* Fat loss
-* Increased physical endurance
-* Lower insulin and stable blood sugar levels
-* Muscle and metabolism preservation
-
-### Macros
-
-Macros are the ratios of protein, fat and carbs in your diet that you try to maintain to get into, or maintain, ketosis. Note for fat loss, keeping to these macros are not enough, you still need to follow the caloric restriction necessary for your body and goals. Some example macro ranges are:
-- **Fat:** 70-80%
-- **Protein:** 20-40%
-- **Carbs:** 0-10%
-
-However, it's suggested to set your goals more precisely using a [Keto calculator](https://www.ruled.me/keto-calculator/) which has more knobs for your certain scenario.
-
-Also note that insoluble fiber is great for digestion, but soluble fiber can actually start to act like a carbohydrate, so don't go overboard with fiber and it's generally suggested to not count "Net Carbs" (where a food's fiber content can subtract the amount of carbohydrates it has) to keep a low carb count.
-
-### Good Foods/Drinks for Keto
-
-* Water, and lots of it. Since you usually store a lot of water with carbohydrates, you are likely losing a lot of water when on keto.
-  + As well, you often lose a lot of electrolytes (leading to things like the "keto flu") so make sure to add salt to a lot of your food.
-    - In fact, adding salt to the water you drink throughout the day can also help
-* Caffeine and coffee are great, not only for the energy, but can stimulate the ketosis process
-* Nuts are a healthy source of fat, but be careful on which kinds as some have lots of carbs:
-<center><img src="keto_nuts.jpg"></center>
-_Image from: https://www.dietdoctor.com/low-carb/keto/nuts_
-* **Vegetables:** Asparagus, bok choy, cabbage and broccoli
-
-#### Mediterranean Keto
-
-{% youtube "https://www.youtube.com/watch?v=L9XHTy1JnPA&feature=emb_logo" %}
-<br />
-{% youtube "https://www.youtube.com/watch?v=Q-3STVL9dDo&feature=emb_logo" %}
-<br />
-
-* `30 mL` of Olive Oil (no trans fats)
-* High Omega-3's from non-predatory fish (e.g. avoiding fish like swordfish)
-  + On non-fish days, supplement w/9G of salmon oil, 3x per day
-* Unlimited calorie diet as long as carbs `< 30g` to simulate "free-living condition"
-
 
 ## Intermittent Fasting
 
@@ -103,14 +56,13 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 
 ### Benefits
 
-{% youtube "https://www.youtube.com/watch?v=0ushMKdbb4k&feature=youtu.be" %}
-<br />
 
 * Weight loss while not losing muscle
 * [Less appetite](https://www.sciencedaily.com/releases/2019/07/190724103702.htm)
 * Mental sharpness/focusing due to fasting "survival mode" and ketone production which is brain fuel
 * Cellular rejuvenation and nutrient up-tick that can lead to healthier skin & nails
 * All-around long lasting health benefits, see [Effects of Intermittent Fasting on Health, Aging, and Disease](https://www.nejm.org/doi/full/10.1056/NEJMra1905136) _The New England Journal of Medicine_
+* [Intermittent Fasting - YouTube](https://www.youtube.com/watch?v=0ushMKdbb4k&feature=youtu.be)
 
 ### IF Tips
 
@@ -140,10 +92,7 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
 * During long term fasting you can consume: water (+ salt to help revive electrolytes), black coffee, unsweetened tea, and apple cider vinegar.
   + Low intensity workouts during a long term fast are OK, but high intensity may negate some of the positive fasting effects
 * To break a long fast, eat non-inflamatory things like lean meat
-
-<br />
-{% youtube "https://www.youtube.com/watch?v=S5W1XBf8d-I&feature=youtu.be" %}
-<br />
+* [Beginners Guide to Prolonged Fasting - YouTube](https://www.youtube.com/watch?v=S5W1XBf8d-I&feature=youtu.be)
 
 ### Things You Can Eat/Drink While Fasting
 
@@ -161,10 +110,3 @@ Intermittent Fasting (IF) is when you have a set, extended period of time when y
   + Sticking to the amount of required calories to your diet is also key to not slowing down your metabolism, which correlates directly with less calories eaten
   + In some cases, fasting actually increases metabolism, see [A controlled trial of reduced meal frequency without caloric restriction in healthy, normal-weight, middle-aged adults](https://academic.oup.com/ajcn/article/85/4/981/4648934), _The American Journal of Clinical Nutrition_
 
-
-## Videos
-
-{% youtube "https://youtu.be/LLVf3d0rqqY" %}
-<br />
-{% youtube "https://www.youtube.com/watch?v=h6P4JeTipYo&authuser=0" %}
-<br />
