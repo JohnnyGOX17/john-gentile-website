@@ -24,6 +24,7 @@ comments: true
   + Live the life now that your older self would fondly look back on.
   + Your identity can hold you back ("I'm bad at math") or build you up ("I'm the type of person who doesn't give up, and reads everyday").
   + [Do whatever you can't stop thinking about](https://shime.sh/do-whatever-you-can%27t-stop-thinking-about)
+  + Even if you don't like who you are now, be excited about who you're going to be, and work backwards from that.
 * Stop admiring the problem and just do it.
   + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation.
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
