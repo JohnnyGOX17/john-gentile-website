@@ -51,6 +51,7 @@ To write high-performance software (SW), you should fundamentally understand [co
 * [Low Latency Optimization: Understanding Huge Pages (Part 1) - Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/low-latency-optimization-part-1/)
 * [Locality of reference - Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
 * [Cache coherence - Wikipedia](https://en.wikipedia.org/wiki/Cache_coherence)
+* [ ] [Memory part 2: CPU caches - LWN](https://lwn.net/Articles/252125/)
 * [ ] [A Bounded SPSC queue for Rust](https://github.com/JohnnyGOX17/bounded-spsc-queue)
 - [ ] [Why is ringbuf crate so fast?- Reddit](https://www.reddit.com/r/rust/comments/1h3bqv0/why_is_ringbuf_crate_so_fast/)
 

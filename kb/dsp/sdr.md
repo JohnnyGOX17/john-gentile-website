@@ -53,6 +53,7 @@ wip: false
 
 #### LoRaWAN
 
+* [tapparelj/gr-lora_sdr](https://github.com/tapparelj/gr-lora_sdr): fully-functional GNU Radio software-defined radio (SDR) implementation of a LoRa transceiver with all the necessary receiver components to operate correctly even at very low SNRs.
 * [Meshtastic](https://meshtastic.org/): open source mesh network software running on low-power, affordable devices.
   + [Meshtastic SDR](https://gitlab.com/crankylinuxuser/meshtastic_sdr): This GnuRadio project aims at being a full transceiver stack (RX and TX) for a software defined radio to communicate with the Meshtastic LoRa network.
 * [LoRaWAN On Helium Network](https://docs.helium.com/iot/lorawan-on-helium/)

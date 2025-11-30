@@ -13,7 +13,8 @@ comments: true
   + Confidence guides your mind, and then your actions, into doing. ["The Man who says he can, and the man who says he can not.. Are both correct"](./quotes.html)
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
   + Things that get measured get improved, and things that get scheduled get done.
-  + Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.
+  + Focus on systems (daily processes), not goals/outcomes.
+    - Winners and losers have the same goals, but winners are often the ones with better systems to achieve them.
     - Checklists, scheduled reminders, etc. are parts of a successful system.
   + When motivation gets tired, discipline gets in the drivers seat.
   + Goals without plans are just dreams.
@@ -49,8 +50,29 @@ comments: true
   + Money can be used to buy back time, as time is often more valuable than money.
   + Praise in public, correct in private
   + Kindness is rooted in empathy for others' experiences
-  + Focus on positivity, life is a [self-fulfilling prophecy](https://www.simplypsychology.org/self-fulfilling-prophecy.html) so be confident and happy that things will get good and goals will be achieved.
-    - "Comparison is the thief of joy"; focus on if you're better today than you were yesterday, not how you compare to others.
+* Focus on positivity, life is a [self-fulfilling prophecy](https://www.simplypsychology.org/self-fulfilling-prophecy.html) so be confident and happy that things will get good and goals will be achieved.
+  + "Comparison is the thief of joy"; focus on if you're better today than you were yesterday, not how you compare to others.
+* Treat yourself like someone you are responsible for helping.
+  + People often care for others better than themselves. You should extend the same responsibility and compassion to your own well-being.
+
+
+### The Four Laws of Behavior Change
+
+From _[Atomic Habits](https://jamesclear.com/atomic-habits)_:
+1. **Make It Obvious**
+  + Design your environment to highlight good habits and hide bad ones.
+  + Use habit stacking: After I do X, I will do Y.
+2. **Make It Attractive**
+  + Pair habits with something you enjoy (temptation bundling).
+  + Our brain is driven by dopamine; motivation increases when a habit is appealing.
+3. **Make It Easy**
+  + Reduce friction: simplify habits so they require the least effort.
+  + Use the “two-minute rule”: scale habits down to a starting version that takes two minutes.
+4. **Make It Satisfying**
+  + Immediate rewards reinforce habits.
+  + Track habits; visual progress creates motivation.
+  + For stopping bad habits: invert the laws (make the cue invisible, the behavior unattractive, the action hard, and the result unsatisfying).
+
 
 ### Waking Up Early
 

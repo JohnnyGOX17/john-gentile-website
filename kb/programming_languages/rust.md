@@ -111,6 +111,7 @@ There's a bunch here, from VSCode to Rust Rover, but if using (Neo)vim like me, 
 * [rust-analyzer](https://rust-analyzer.github.io/): implements Language Server Protocol (LSP) for Rust (allows IDEs/editors to have completion, definition, goto, etc. features).
 * [cargo-audit](https://github.com/RustSec/rustsec/tree/main/cargo-audit): audits dependencies for crates with known security vulnerabilities, maintained by [RustSec Advisory Database](https://rustsec.org/).
   * [cargo-deny](https://github.com/EmbarkStudios/cargo-deny): plugin for linting dependencies.
+* [cargo-udeps](https://github.com/est31/cargo-udeps): find unused dependencies in `Cargo.toml`
 * [grcov](https://github.com/mozilla/grcov): collect & aggregate code coverage data for source files (also supports C/C++ projects, or files that can be processed by llvm/clang/gcc).
 * [loom](https://github.com/tokio-rs/loom): concurrency permutation testing for parallel Rust code.
 * [Miri](https://github.com/rust-lang/miri): interpreter for Rust's mid-level interpreter (MIR) and detect classes of undefined behavior.
@@ -194,6 +195,7 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 * [ ] [Rust SIMD Performance Guide](https://rust-lang.github.io/packed_simd/perf-guide/introduction.html)
   + [arch - Dynamic CPU Feature Detection](https://doc.rust-lang.org/stable/core/arch/#dynamic-cpu-feature-detection)
 * Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
+* [hotpath-rs](https://github.com/pawurb/hotpath-rs): Rust performance debug toolkit. Live profiling for allocations, timings, and channel/stream data flows.
 
 
 ### Low-Level / Embedded
