@@ -190,12 +190,15 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 ### Rust for Performance
 
 * Simply building with `--release` gives [sane optimization defaults for most applications](https://doc.rust-lang.org/cargo/reference/profiles.html#release)
-* [ ] [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
 * [ ] [Rust SIMD Performance Guide](https://rust-lang.github.io/packed_simd/perf-guide/introduction.html)
   + [arch - Dynamic CPU Feature Detection](https://doc.rust-lang.org/stable/core/arch/#dynamic-cpu-feature-detection)
+  + [Arm SIMD on Rust](https://learn.arm.com/learning-paths/cross-platform/simd-on-rust/simd-on-rust-part1/)
+* [ ] [Acheiving warp speed with Rust](http://troubles.md/posts/rust-optimization/)
+* [ ] [Profile-guided Optimization - rustc Book](https://doc.rust-lang.org/beta/rustc/profile-guided-optimization.html)
 * Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
 * [hotpath-rs](https://github.com/pawurb/hotpath-rs): Rust performance debug toolkit. Live profiling for allocations, timings, and channel/stream data flows.
+* [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 
 
 ### Low-Level / Embedded

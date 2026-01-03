@@ -147,6 +147,7 @@ Some other great CMake documentation and repos:
 
 ### C++
 
+* [The C++ Iceberg](https://victorpoughon.github.io/cppiceberg/)
 * [LearnCpp.com](https://www.learncpp.com/): free website devoted to teaching modern C++.
 * [The Standard](https://isocpp.org/std/the-standard): website for the current and draft ISO C++ standards
   + [C++ Core Guildelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)

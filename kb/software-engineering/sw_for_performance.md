@@ -8,6 +8,8 @@ comments: true
 
 ## Overview
 
+> "You should know your layer well, but you should also know one layer below it a little bit, and you definitely need to know the shape of the layer that’s beneath that." - [Matt Godbolt's Rule](https://corecursive.com/godbolt-rule-matt-godbolt/)
+
 To write high-performance software (SW), you should fundamentally understand [computer architecture](../digital/comp_arch.html) and that [layers of abstraction have major effects](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html).
 
 [Latency numbers everyone should know:](https://stackoverflow.com/a/4087315)
@@ -40,14 +42,10 @@ To write high-performance software (SW), you should fundamentally understand [co
 
 ### Memory & Caching
 
-`lscpu -C` can show `COHERENCY-SIZE` as the "minimum amount of data in bytes transferred from memory to cache".
 
 * [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
   - [Analysis of 'What Every Programmer Should Know About Memory'](https://samueleresca.net/analysis-of-what-every-programmer-should-know-about-memory/)
 * [Gallery of Processor Cache Effects](http://igoro.com/archive/gallery-of-processor-cache-effects/)
-* [Why does the speed of memcpy() drop dramatically every 4KB? - StackOverflow](https://stackoverflow.com/questions/21038965/why-does-the-speed-of-memcpy-drop-dramatically-every-4kb)
-* [Rust zerocopy crate](https://docs.rs/zerocopy/latest/zerocopy/)
-* [The Mechanism behind Measuring Cache Access Latency](https://www.alibabacloud.com/blog/the-mechanism-behind-measuring-cache-access-latency_599384)
 * [Low Latency Optimization: Understanding Huge Pages (Part 1) - Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/low-latency-optimization-part-1/)
 * [Locality of reference - Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
 * [Cache coherence - Wikipedia](https://en.wikipedia.org/wiki/Cache_coherence)
@@ -100,8 +98,6 @@ Problems with sharing data between threads comes down to consequences of _modify
 
 ### Tools
 
-* Can show thread names in htop by F2 → Display options → Show custom thread names
-* [Tool to measure core-to-core latency](https://github.com/nviennot/core-to-core-latency)
 
 ### References
 
@@ -146,6 +142,7 @@ _AVX512 (1 of 3): Introduction and Overview_
 
 ### ARM
 
+* [ARM Intrinsics Explorer](https://developer.arm.com/architectures/instruction-sets/intrinsics/)
 * [ARMv8 AArch64/ARM64 Full Beginner's Assembly Tutorial - MarioKartWii.com](https://mariokartwii.com/armv8/)
 * [ARM Neon](https://developer.arm.com/Architectures/Neon)
 * [SIMD ISAs - Neon – Arm Developer](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon)
@@ -210,6 +207,12 @@ _AVX512 (1 of 3): Introduction and Overview_
 
 ### Profiling, Tracing and Benchmarking Tools
 
+* LLVM profiling arguments:
+  + See where loops were vectorized in (Rust) code via `RUSTFLAGS="-C llvm-args=--pass-remarks=loop-vectorize" cargo build --release`
+* `lscpu -C` can show `COHERENCY-SIZE` as the "minimum amount of data in bytes transferred from memory to cache".
+* Can show thread names in htop by F2 → Display options → Show custom thread names
+* [cache_test.rs](https://github.com/JohnnyGOX17/tpc-graph-exec-rs/blob/main/src/bin/cache_test.rs): measure cache and memory latency via Pointer Chasing method.
+* [Tool to measure core-to-core latency](https://github.com/nviennot/core-to-core-latency)
 * [godbolt](https://godbolt.org/): Compiler explorer to examine machine code output for various compile chains supporting a couple code languages (C++, D, Rust, and Go). Can also be used to compare the output of compiler autovectorization versus intrinsic usage.
 * [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)
   + [flamegraph-rs/flamegraph: easy flamegraphs for Rust projects and everything else](https://github.com/flamegraph-rs/flamegraph)
@@ -219,11 +222,13 @@ _AVX512 (1 of 3): Introduction and Overview_
 * [KDAB/hotspot: The Linux perf GUI for performance analysis.](https://github.com/KDAB/hotspot)
 * [Fix Performance Bottlenecks with Intel® VTune™ Profiler](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.ud7m94)
 
-### Linux Performance Optimizations
+### Unix Performance Optimizations
 
 Besides the general/obvious things like stopping unnecessary applications, background services, etc. you can also look into:
+- Set [CPU Freq Governor](https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt) to maximum frequency with a command like `for F in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor; do echo performance >$F; done`
 - Using [taskset](https://man7.org/linux/man-pages/man1/taskset.1.html) and [nice](https://www.man7.org/linux/man-pages/man1/nice.1.html) to set a process's CPU affinity (one or more specific core allocation(s)) and process scheduling priority, respectively.
   + You can launch a command/process with both using `$ taskset -c 0,1 nice -20 <command>`, which will launch `<command>` on cores `0` and `1` with highest scheduling priority.
+  + In Rust, you can also do this programatically within an application using [core_affinity](https://docs.rs/core_affinity/latest/core_affinity/) and [thread_priority](https://docs.rs/thread-priority/latest/thread_priority/) crates.
 - Use `cpuset` and some other kernel techniques to completely isolate CPU core(s) from the Linux scheduler and/or other interrupts- in this way, you could place processes on that CPU completely isolated from other processes, theoretically uninterrupted. For example, see [this SUSE labs tutorial on CPU Isolation](https://www.suse.com/c/cpu-isolation-practical-example-part-5/).
   + **NOTE:** [`isolcpus`](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cpu-partitioning/isolcpus) is now deprecated in Linux kernel.
 - Use Hugepage (or [transparent hugepage support](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)) to bump up the size of pages from the default (nominally `4096` Bytes) to some larger size (popularly `2MB` all the way to GB+) to optimize the [Translation lookaside bufer (TLB)](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) cache to have less misses/entries for virtual-physical memory paging.
