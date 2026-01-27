@@ -199,6 +199,13 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 * Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
 * [hotpath-rs](https://github.com/pawurb/hotpath-rs): Rust performance debug toolkit. Live profiling for allocations, timings, and channel/stream data flows.
 * [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
+* You can cache align data structures (e.x. to 64 Byte cache lines) with:
+```rust
+#[repr(align(64))]
+struct CacheAlignedStruct {
+    data: [i8; 1024]
+}
+```
 
 
 ### Low-Level / Embedded

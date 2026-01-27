@@ -24,6 +24,7 @@ wip: true
   + (3/27/2025) so far [Claude 3.7 Sonnet](https://www.reddit.com/r/ClaudeAI/comments/1izhsrx/i_tested_claude_37_sonnet_against_grok3_and/) has slightly better coding results.
 * Various vendor and open-source tools exist like:
   + [Claude Code](https://github.com/anthropics/claude-code)
+    - [Dammyjay93/claude-design-engineer](https://github.com/Dammyjay93/claude-design-engineer): Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.
   + [yamadashy/repomix](https://github.com/yamadashy/repomix): packs an entire repository into a single, AI-friendly file, which can then be uploaded to most LLMs.
 
 #### LLMs for Research and Knowledge

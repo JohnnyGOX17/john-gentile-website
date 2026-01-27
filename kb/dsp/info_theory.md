@@ -29,8 +29,9 @@ wip: true
 
 ## Libraries & Repos
 
-* [libcorrect](https://github.com/quiet/libcorrect): C library for convolutional codes and Reed-Solomon
-  * [libfec](https://github.com/quiet/libfec)
+* [AFF3CT](https://aff3ct.github.io/): AFF3CT is an Open-source software (MIT license) dedicated to the Forward Error Correction (FEC or channel coding) simulations. It is written in C++11 and it supports a large range of codes: from the well-spread Turbo codes to the new Polar codes including the Low-Density Parity-Check (LDPC) codes. A particular emphasis is given to the simulation throughput performance (hundreds of Mb/s on today's CPUs) and the portability of the code.
+* [quiet/libcorrect - GitHub](https://github.com/quiet/libcorrect): C library for convolutional codes and Reed-Solomon
+* [quiet/libfec - GitHub](https://github.com/quiet/libfec)
 
 ## References
 

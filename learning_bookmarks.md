@@ -235,7 +235,6 @@
 * [bjohnsonfl/Madgwick_Filter: A quaternion based sensor fusion algorithm that fuses accelerometers and gyroscopes and optionally magnetometers](https://github.com/bjohnsonfl/Madgwick_Filter)
 * [arduino-libraries/MadgwickAHRS: Arduino implementation of the MadgwickAHRS algorithm](https://github.com/arduino-libraries/MadgwickAHRS)
 * [filtering - Implementing Madgwick IMU algorithm - Stack Overflow](https://stackoverflow.com/questions/23599256/implementing-madgwick-imu-algorithm)
-* [Chip (CDMA) - Wikipedia](https://en.wikipedia.org/wiki/Chip_(CDMA))
 * [Wave Walker DSP](https://www.wavewalkerdsp.com/)
 * [Xampling: Analog to Digital at Sub‐Nyquist Rates](https://arxiv.org/pdf/0912.2495.pdf)
 * [H.264 is magic: a technical walkthrough of a remarkable technology.](https://sidbala.com/h-264-is-magic/)
@@ -432,7 +431,6 @@
 
 ## Information Theory
 * [Erasure Coding for Distributed Systems - HN](https://news.ycombinator.com/item?id=41361281)
-* [aff3ct/aff3ct: See our website: http://aff3ct.github.io](https://github.com/aff3ct/aff3ct)
 * [facebook/zstd: Zstandard - Fast real-time compression algorithm](https://github.com/facebook/zstd)
 * [Polar code (coding theory) - Wikipedia](https://en.wikipedia.org/wiki/Polar_code_(coding_theory))
 * [Low-density parity-check code - Wikipedia](https://en.wikipedia.org/wiki/Low-density_parity-check_code)

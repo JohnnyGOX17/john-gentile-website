@@ -37,6 +37,7 @@ User/3rd party made symbol libraries & footprints can be easily added to a KiCad
 
 ### Other Tools for KiCad
 
+* [kicad-mcp](https://github.com/lamaalrajih/kicad-mcp): Model Context Provider for KiCAD
 * [KiCanvas is an interactive, browser-based viewer for KiCAD schematics and boards](https://kicanvas.org/)
 * [xesscorp/KiCost: Build cost spreadsheet for a KiCad project.](https://github.com/xesscorp/KiCost)
 

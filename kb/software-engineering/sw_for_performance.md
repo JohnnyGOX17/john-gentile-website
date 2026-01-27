@@ -47,6 +47,7 @@ To write high-performance software (SW), you should fundamentally understand [co
   - [Analysis of 'What Every Programmer Should Know About Memory'](https://samueleresca.net/analysis-of-what-every-programmer-should-know-about-memory/)
 * [Gallery of Processor Cache Effects](http://igoro.com/archive/gallery-of-processor-cache-effects/)
 * [Low Latency Optimization: Understanding Huge Pages (Part 1) - Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/low-latency-optimization-part-1/)
+* [Lock-Free Single-Producer Single Consumer Circular Queue - Codeproject](https://www.codeproject.com/articles/Lock-Free-Single-Producer-Single-Consumer-Circular#comments-section)
 * [Locality of reference - Wikipedia](https://en.wikipedia.org/wiki/Locality_of_reference)
 * [Cache coherence - Wikipedia](https://en.wikipedia.org/wiki/Cache_coherence)
 * [ ] [Memory part 2: CPU caches - LWN](https://lwn.net/Articles/252125/)
