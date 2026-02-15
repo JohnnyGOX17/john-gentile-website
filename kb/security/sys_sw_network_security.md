@@ -19,8 +19,10 @@ comments: true
 
 * Use [Key-based auth for SSH](https://www.redhat.com/en/blog/key-based-authentication-ssh) to aid in passwordless SSH login/commands- usually as simple as `$ ssh-copy-id <user>@<hostname/IP>`.
   + [How to Configure SSH Key-based authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
-* [How to Protect SSH with `fail2ban` on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-22-04)
-  * [Configure Fail2Ban for permanent and persistent bans](https://arno0x0x.wordpress.com/2015/12/30/fail2ban-permanent-persistent-bans/)
+* [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) to block connections that fail SSH after a set number of times.
+  + [How to Protect SSH with `fail2ban` on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-22-04)
+  + [Configure Fail2Ban for permanent and persistent bans](https://arno0x0x.wordpress.com/2015/12/30/fail2ban-permanent-persistent-bans/)
+* Disable `root` SSH login
 
 #### SSH Tunneling
 
