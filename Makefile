@@ -5,7 +5,7 @@ UNAME_S := $(shell uname -s)
 SITE_DIR := ./_site/
 
 # Ports to use for local servers (user/env overrideable)
-SERVE_PORT ?= 8888
+SERVE_PORT ?= 8890
 JUPYTER_PORT ?= 8889
 
 PY_EXE ?= python3

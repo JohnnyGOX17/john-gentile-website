@@ -59,8 +59,6 @@ def match_subdir_to_category(subdir: str) -> str:
             return "Math"
         case "./kb/programming_languages":
             return "Programming Languages"
-        case "./kb/radar":
-            return "Radar"
         case "./kb/security":
             return "Cyber and Security"
         case "./kb/software-engineering":

@@ -21,6 +21,7 @@ Digital Modulation.md
 Emitter Identification.md
 PNT.md
 ADS-B.md
+Radar.md
 AGC-Magnitude_Estimation_files/
 Adaptive_Filters_and_Equalization_files/
 Array_Processing_files/
@@ -43,4 +44,5 @@ Digital Modulation_files/
 Emitter Identification_files/
 PNT_files/
 ADS-B_files/
+Radar_files/
 iq_polyphase_timing.gif
