@@ -30,6 +30,12 @@ comments: true
 * [AFL++](https://github.com/AFLplusplus/AFLplusplus): The fuzzer afl++ is afl with community patches, qemu 5.1 upgrade, collision-free coverage, enhanced laf-intel & redqueen, AFLfast++ power schedules, MOpt mutators, unicorn_mode, and a lot more!
 * [skylot/jadx](https://github.com/skylot/jadx): Dex to Java decompiler.
 
+#### LLM Tools & Skills
+
+* [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP): ghidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.
+* [trailofbits/skills](https://github.com/trailofbits/skills): Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows.
+* [BrownFineSecurity/IoTHackBot](https://github.com/BrownFineSecurity/iothackbot): A collection of Claude Skills and custom tooling for hybrid IoT pentesting.
+
 ### Anti-SRE
 
 * [Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection](https://www.amazon.com/Surreptitious-Software-Obfuscation-Watermarking-Tamperproofing/dp/0321549252)
@@ -38,6 +44,7 @@ comments: true
 ### SRE Practice Sites
 
 * [ ] [crackmes.one](https://crackmes.one)
+* [ ] [Reverse Engineering and Malware Analysis Roadmap](https://github.com/x86byte/RE-MA-Roadmap)
 
 
 ## Web Security

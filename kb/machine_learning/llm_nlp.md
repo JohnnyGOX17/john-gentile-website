@@ -20,18 +20,11 @@ wip: true
 
 #### LLMs for Coding
 
-* LLMs have varied abilities when it comes to coding.
-  + (3/27/2025) so far [Claude 3.7 Sonnet](https://www.reddit.com/r/ClaudeAI/comments/1izhsrx/i_tested_claude_37_sonnet_against_grok3_and/) has slightly better coding results.
-* Various vendor and open-source tools exist like:
-  + [Claude Code](https://github.com/anthropics/claude-code)
-    - [Dammyjay93/claude-design-engineer](https://github.com/Dammyjay93/claude-design-engineer): Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.
-  + [yamadashy/repomix](https://github.com/yamadashy/repomix): packs an entire repository into a single, AI-friendly file, which can then be uploaded to most LLMs.
+LLMs have varied abilities when it comes to coding though [Claude Code](https://github.com/anthropics/claude-code) has been my favorite for awhile.
 
-#### LLMs for Research and Knowledge
-
-* [Claude](https://www.anthropic.com/news/web-search), [OpenAI/ChatGPT](https://openai.com/index/introducing-deep-research/) and [Grok](https://grok.com) have "research" modes where the model is open to searching the internet, and has multi-step reasoning to come up with deep assessments and recommendations.
-  + As of 7/12/2025, Grok 4 seems to be the SOTA model for knowledge and research.
-* [Google's NotebookLM](https://notebooklm.google.com/) is targeted at helping research in Jupyter-style notebooks.
++ [Claude Code Docs](https://code.claude.com/docs)
++ [Dammyjay93/claude-design-engineer](https://github.com/Dammyjay93/claude-design-engineer): Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.
++ [yamadashy/repomix](https://github.com/yamadashy/repomix): packs an entire repository into a single, AI-friendly file, which can then be uploaded to most LLMs.
 
 
 #### LLMs for Image Generation
@@ -64,9 +57,6 @@ References:
 * [Hugging Face](https://huggingface.co/): pre-trained NLP models & reference
 * [LangChain](https://python.langchain.com/docs/introduction/): LangChain is a Python framework for developing applications powered by large language models (LLMs).
 
-#### Other Uses/Automation
-
-* [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP): ghidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.
 
 ### Architecture & References
 

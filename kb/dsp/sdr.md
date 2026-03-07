@@ -82,10 +82,18 @@ wip: false
 
 [GNU Radio](https://www.gnuradio.org/) is an open-source SDR framework for prototyping communications systems.
 
+To install, it's suggested to:
+1. Install the [latest releast of Conda Miniforge](https://github.com/conda-forge/miniforge/releases)
+2. Source the environment via `$ source <path/to/miniforge3>/bin/activate`
+3. Install [radioconda bundle](https://github.com/radioconda/radioconda-installer) (which includes GNU Radio graphical install and many drivers) with `$ conda create -n radioconda -c conda-forge -c ryanvolz --only-deps radioconda`
+4. Activate SDR environment with `$ conda activate radioconda`
+5. Launch GNU Radio graphical IDE via `$ gnuradio-companion`
+
+Other GNU Radio links:
 * [Comprehensive GNU Radio Archive Network (CGRAN)](https://www.cgran.org/): list of GNU Radio blocks and repos.
 * [gnuradio/volk: The Vector Optimized Library of Kernels](https://github.com/gnuradio/volk)
-[Tutorials - GNU Radio](https://wiki.gnuradio.org/index.php/Tutorials)
-        [SuggestedReading - GNU Radio](https://wiki.gnuradio.org/index.php/SuggestedReading)
+* [Tutorials - GNU Radio](https://wiki.gnuradio.org/index.php/Tutorials)
+* [SuggestedReading - GNU Radio](https://wiki.gnuradio.org/index.php/SuggestedReading)
 
 #### Other SDR Frameworks
 

@@ -131,7 +131,7 @@ Use `ag --markdown <search term>` from repo root to find references or duplicate
 ## Port Configuration
 
 Environment variables can override default ports:
-- `SERVE_PORT` - Jekyll serve port (default: 8888)
+- `SERVE_PORT` - Jekyll serve port (default: 8890)
 - `JUPYTER_PORT` - Jupyter Lab port (default: 8889)
 
 ## Important Notes
