@@ -10,7 +10,7 @@ comments: true
 
 * You can achieve any goal with discipline (habits, reinforcing systems), confidence, and time.
   + Consistency is key; whether losing weight, managing finances, studying, etc. a consistent, disciplined work yields results. Habits are the compound interest of self-improvement; they don't seem like much on a given day, but over long periods of time, their effects can be massive. Your habits therefore set the trajectory of your life.
-  + Confidence guides your mind, and then your actions, into doing. ["The Man who says he can, and the man who says he can not.. Are both correct"](./quotes.html)
+  + Confidence is the mental evidence that you've already done it- it guides your mind, and then your actions, into doing, irregardless of feelings. ["The Man who says he can, and the man who says he can not.. Are both correct"](./quotes.html)
   + [It can take anywhere from 18 to 254 days to form a habit](https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#tips-and-tricks); point is, a great habit (like [waking up early](#waking-up-early) or fitness) is a product of discipline and consistency, not instant effort.
   + Things that get measured get improved, and things that get scheduled get done.
   + Focus on systems (daily processes), not goals/outcomes.
@@ -19,19 +19,19 @@ comments: true
   + When motivation gets tired, discipline gets in the drivers seat.
   + Goals without plans are just dreams.
 * [Match your self-identity with your desired end state](https://rescuetime.wpengine.com/james-clear/#identity).
-  + "Who are you?" versus "who do you want to be?". Act like you've been there.
+  + "Who are you?" thinking versus "who do you want to be?". Act like you've been there.
   + "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.
   + Live the life now that your older self would fondly look back on.
   + Your identity can hold you back ("I'm bad at math") or build you up ("I'm the type of person who doesn't give up, and reads everyday").
   + [Do whatever you can't stop thinking about](https://shime.sh/do-whatever-you-can%27t-stop-thinking-about)
   + Even if you don't like who you are now, be excited about who you're going to be, and work backwards from that.
 * Stop admiring the problem and just do it.
-  + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation.
+  + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation. (This also exploits the Zeigarnik effect where incomplete tasks create cognitive tension that drives completion).
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
   + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
   + At the same time, don't fall victim to starting things but never finishing them; "Stop starting and start finishing".
   + Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
-  + Those who dare, win.
+  + Those who dare, win. If it makes you happy, take the risk. Worst case, you learn. Best case, you change your whole life.
   + Sometimes you have to stop sharpening the saw and just start cutting shit.
 * Control your control-ables, and don't worry about things out of your control.
   + Happiness is a mindset, not an achievement or place.
