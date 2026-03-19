@@ -38,6 +38,17 @@ To write high-performance software (SW), you should fundamentally understand [co
 | ms|
 ```
 
+### Caution on Premature Optimization
+
+One of the best, succinct summarizations comes from [Rob Pike's 5 Rules of Programming](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html):
+1. You can't tell where a program is going to spend its time. Bottlenecks occur in surprising places, so don't try to second guess and put in a speed hack until you've proven that's where the bottleneck is.
+2. Measure. Don't tune for speed until you've measured, and even then don't unless one part of the code overwhelms the rest.
+3. Fancy algorithms are slow when n is small, and n is usually small. Fancy algorithms have big constants. Until you know that n is frequently going to be big, don't get fancy. (Even if n does get big, use Rule 2 first.)
+4. Fancy algorithms are buggier than simple ones, and they're much harder to implement. Use simple algorithms as well as simple data structures.
+5. Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.
+
+I also love this [added HN comment](https://news.ycombinator.com/item?id=47427730) about also avoiding "premature abstraction", and that "abstractions should be emergent, not speculative".
+
 ## Optimizations for Performant Software
 
 ### Memory & Caching
