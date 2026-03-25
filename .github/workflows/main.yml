@@ -49,6 +49,7 @@ jobs:
           git rev-parse HEAD > ./_site/revision
           cp -r _posts/2025-09-29-Unknown_BPSK_Decode_files/ _site/2025/09/29/
           cp -r _posts/2025-09-30-Unknown_Chirp_Msg_Decode_files/ _site/2025/09/30/
+          mkdir -p _site/2026/03/24/FPGA_NCO_files/
           cp _posts/FPGA_NCO_files/nco_spectrum.png _site/2026/03/24/FPGA_NCO_files/nco_spectrum.png
 
       - name: Configure AWS Credentials
