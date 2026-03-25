@@ -97,6 +97,7 @@ def convert_jupyter_md_output(
         output_lines.append("kb: false\n")
         output_lines.append("blog_post: true\n")
         output_lines.append("comments: true\n")
+        output_lines.append("render_with_liquid: false\n")
         output_lines.append("---\n\n")
     else:
         output_lines.append("---\n")
