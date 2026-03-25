@@ -1,0 +1,37 @@
+# cocotb Makefile for NCO spectrum test
+# Usage:
+#   make -f Makefile.cocotb          — run cocotb tests (produces nco_spectrum.png)
+#   make -f Makefile.cocotb clean    — remove generated files
+
+SIM        ?= verilator
+TOPLEVEL_LANG = verilog
+
+# Source files
+VERILOG_SOURCES = $(PWD)/nco.sv
+
+# Top-level module (DUT, not the SV testbench)
+TOPLEVEL = nco
+
+# cocotb test module (Python file without .py)
+MODULE = test_nco
+
+# Pass parameters to the simulator matching the cocotb test expectations
+ifeq ($(SIM),icarus)
+    COMPILE_ARGS += -g2012
+    COMPILE_ARGS += -PNCO.PHASE_ACC_W=16
+    COMPILE_ARGS += -PNCO.LUT_ADDR_W=8
+    COMPILE_ARGS += -PNCO.OUTPUT_W=12
+    COMPILE_ARGS += -PNCO.DITHER_EN=0
+else ifeq ($(SIM),verilator)
+    EXTRA_ARGS += -GPHASE_ACC_W=16
+    EXTRA_ARGS += -GLUT_ADDR_W=8
+    EXTRA_ARGS += -GOUTPUT_W=12
+    EXTRA_ARGS += -GDITHER_EN=0
+    EXTRA_ARGS += --timing
+    EXTRA_ARGS += -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC
+endif
+
+include $(shell cocotb-config --makefiles)/Makefile.sim
+
+clean::
+	rm -rf sim_build results.xml __pycache__ nco_spectrum.png

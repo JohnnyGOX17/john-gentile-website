@@ -16,3 +16,4 @@ sympy
 tqdm
 kaleido
 sarpy
+cocotb

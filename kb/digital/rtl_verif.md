@@ -66,7 +66,6 @@ vsim:
 
 ### Other
 
+- [Designing a SystemVerilog Language Server - Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/designing-a-systemverilog-language-server/)
 - **[EDA Playground](https://www.edaplayground.com/home):** online simulator (similar to online compiler/assemblers) that can simulate designs & testbenches in Verilog, VHDL, SystemVerilog and others.
-
 - **[GHDL + CMake](https://github.com/pjcuadra/ghdl_sample_project):** GitHub user `pjcuadra` has an interesting example project utilizing the popular C/C++ build tool `CMake` to identify & run GHDL tests in a repo.
-

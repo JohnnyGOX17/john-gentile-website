@@ -570,7 +570,6 @@
 * [An Inside Job: Remote Power Analysis Attacks on FPGAs](https://eprint.iacr.org/2018/012.pdf)
 * [KULeuven-COSIC/Starlink-FI](https://github.com/KULeuven-COSIC/Starlink-FI)
 * [USB Rubber Ducky - Hak5](https://hak5.org/products/usb-rubber-ducky)
-* [NSA Releases Series on Protecting DoD Microelectronics From Adversary Influence &gt; National Security Agency/Central Security Service &gt; Press Release View](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3239938/nsa-releases-series-on-protecting-dod-microelectronics-from-adversary-influence/)
 * [wp395-Mitigating-SEUs.pdf • Viewer • Documentation Portal](https://docs.xilinx.com/v/u/en-US/wp395-Mitigating-SEUs)
 * [Hardware Trojans Under a Microscope | by Ryan Cornateanu | Medium](https://ryancor.medium.com/hardware-trojans-under-a-microscope-bf542acbcc29)
 

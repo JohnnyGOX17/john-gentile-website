@@ -116,6 +116,11 @@ RTL-SDRs are cheap and omnipresent, RX-only SDRs.
 - **[RTL-SDR for Linux Quick Start Guide](https://ranous.wordpress.com/rtl-sdr4linux/):** installation instructions for necessary drivers and libraries to get up and running.
 - [osmocom rtl-sdr wiki](https://osmocom.org/projects/rtl-sdr/wiki)
 
+#### ADI ADALM PLUTO
+
+- [macOS interfacing](https://wiki.analog.com/university/tools/pluto/drivers/osx) and [FW upgrade](https://wiki.analog.com/university/tools/pluto/users/firmware) steps
+  + Need to [change USB ethernet mode to `ncm`](https://wiki.analog.com/university/tools/pluto/users/customizing#changing_the_usb_ethernet_compatibility_mode) and can then verify `ssh` to static `192.168.2.1` IP.
+
 #### Ettus Research SDRs
 
 [Ettus](https://www.ettus.com/) has been a long time maker of high-quality SDR HW. They also open-source nearly all schematics, software, and [FPGA firmware/HDL](https://github.com/EttusResearch/fpga). They also maintain the [USRP Hardware Driver (UHD)](https://github.com/EttusResearch/uhd/), an open-source driver library across their devices, and well supported by other open-source frameworks, like GNU Radio.
