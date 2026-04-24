@@ -577,7 +577,6 @@
 
 * [git-artes/gr-tempest: An implementation of TEMPEST en GNU Radio](https://github.com/git-artes/gr-tempest)
 * [Modular Multi-Signal Tracking Pulse Descriptor Word (PDW) Generator with Field Programmable Gate Array (FPGA) Implementation](https://corescholar.libraries.wright.edu/etd_all/1561/)
-* [Airpwn](http://airpwn.sourceforge.net/Airpwn.html)
 * [Open Source Mobile Communications](https://osmocom.org/)
 * [miek/inspectrum: Offline radio signal analyser](https://github.com/miek/inspectrum)
 * [jopohl/urh: Universal Radio Hacker: Investigate Wireless Protocols Like A Boss](https://github.com/jopohl/urh)

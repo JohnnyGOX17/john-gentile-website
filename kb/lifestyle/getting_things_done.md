@@ -18,7 +18,7 @@ comments: true
     - Checklists, scheduled reminders, etc. are parts of a successful system.
   + When motivation gets tired, discipline gets in the drivers seat.
   + Goals without plans are just dreams.
-* [Match your self-identity with your desired end state](https://rescuetime.wpengine.com/james-clear/#identity).
+* [Match your self-identity with your desired end state](https://rescuetime.wpengine.com/james-clear/#identity). You are what you think of most of the time.
   + "Who are you?" thinking versus "who do you want to be?". Act like you've been there.
   + "The ultimate form of intrinsic motivation is when a habit becomes part of our identity." - James Clear. When your behavior and your identity are fully aligned, you are no longer pursuing behavior change. You are simply acting like the type of person you already believe yourself to be.
   + Live the life now that your older self would fondly look back on.
@@ -30,9 +30,11 @@ comments: true
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
   + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
   + At the same time, don't fall victim to starting things but never finishing them; "Stop starting and start finishing".
+  + Once you make a choice, don't wallow in wondering if it was the right one, make it be the right decision.
   + Time flies; the longer you push something off, the time it will take to complete will grow exponentially.
   + Those who dare, win. If it makes you happy, take the risk. Worst case, you learn. Best case, you change your whole life.
   + Sometimes you have to stop sharpening the saw and just start cutting shit.
+  + Take responsibility and help yourself- no one is coming to save you and nobody cares about your excuses.
 * Control your control-ables, and don't worry about things out of your control.
   + Happiness is a mindset, not an achievement or place.
   + Don't put-off happiness till a future goal or milestone is reached. Live in the now. [Enjoy the journey, not just the end state](https://www.cs.utexas.edu/users/dahlin/bookshelf/hamming.html).
