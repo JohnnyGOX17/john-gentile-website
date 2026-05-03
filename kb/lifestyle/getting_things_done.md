@@ -26,7 +26,7 @@ comments: true
   + [Do whatever you can't stop thinking about](https://shime.sh/do-whatever-you-can%27t-stop-thinking-about)
   + Even if you don't like who you are now, be excited about who you're going to be, and work backwards from that.
 * Stop admiring the problem and just do it.
-  + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation. (This also exploits the Zeigarnik effect where incomplete tasks create cognitive tension that drives completion).
+  + The best way to complete a marathon is [to just show up](https://typesense.org/blog/the-unreasonable-effectiveness-of-just-showing-up-everyday/) and take the first step. Activity defeats doubt, discipline over motivation. (This also exploits the [Zeigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) where incomplete tasks create cognitive tension that drives completion).
   + Procrastination comes from not having a drive, which usually means you don't know why, or don't believe, in what you're doing. At the same time, motivation is temporary, dedication & discipline is the real test of lasting performance.
   + You can use anger to drive/motivate you in the short term, but be careful to not thrive on it as that turns you into a generally negative/angry person
   + At the same time, don't fall victim to starting things but never finishing them; "Stop starting and start finishing".
