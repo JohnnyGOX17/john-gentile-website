@@ -126,6 +126,10 @@ comments: true
 
 ### Leadership
 
+> Show me the incentive and I'll show you the outcome.
+
+-Charlie Munger
+
 > A leader is one who knows the way, goes the way, and shows the way.
 
 -John C. Maxwell

@@ -23,6 +23,7 @@ wip: true
 LLMs have varied abilities when it comes to coding though [Claude Code](https://github.com/anthropics/claude-code) has been my favorite for awhile.
 
 + [Claude Code Docs](https://code.claude.com/docs)
++ [Beyond the Prompt: Claude Code](https://arps18.github.io/posts/claude-code-mastery/): "give Claude a way to verify its own work".
 + [Dammyjay93/claude-design-engineer](https://github.com/Dammyjay93/claude-design-engineer): Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.
 + [yamadashy/repomix](https://github.com/yamadashy/repomix): packs an entire repository into a single, AI-friendly file, which can then be uploaded to most LLMs.
 
