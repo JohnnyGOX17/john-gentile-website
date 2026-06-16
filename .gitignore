@@ -84,6 +84,10 @@ typings/
 
 # MD5 hashes of Jupyter notebooks
 *.ipynb.md5
+# Exception: Radar.ipynb is pre-rendered locally because its CPHD-based SAR
+# pipeline OOMs the CI runner. Tracking its .md5 lets CI's MD5 skip fire so
+# nbconvert leaves the committed Radar.md alone.
+!kb/dsp/.Radar.ipynb.md5
 .jampack/
 
 # draw.io backup
