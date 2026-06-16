@@ -1,4 +1,5 @@
 awscli
+boto3
 jupyter
 jupyterlab
 jupyterlab-vim
