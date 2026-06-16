@@ -3,6 +3,18 @@
 import hashlib
 import os
 import subprocess
+import sys
+
+# Notebooks that must NEVER be re-executed in CI. Their rendered Markdown and
+# assets are pre-rendered locally and committed; CI uses those as-is. The
+# Radar SAR pipeline allocates >12 GB and OOMs the ubuntu-latest runner.
+CI_SKIP_NOTEBOOKS = {
+    "./kb/dsp/Radar.ipynb",
+}
+
+
+def in_ci() -> bool:
+    return os.environ.get("CI", "").lower() == "true"
 
 
 def md5_file_hash(file_path: str) -> str:
@@ -185,14 +197,32 @@ def convert_jupyter_md_output(
         f.writelines(output_lines)
 
 
+def should_skip_in_ci(jupyter_file: str, markdown_file: str) -> bool:
+    """In CI, refuse to execute notebooks on the skip list and require their
+    pre-rendered Markdown to already exist. Fail loudly otherwise so a missed
+    pre-render shows up as a CI failure instead of silently shipping stale or
+    blank content."""
+    if not in_ci() or jupyter_file not in CI_SKIP_NOTEBOOKS:
+        return False
+    if not os.path.exists(markdown_file):
+        sys.exit(
+            f"CI: {jupyter_file} is on the CI skip list but {markdown_file} "
+            "is missing. Re-render locally and commit it."
+        )
+    print(f"CI: skipping nbconvert for {jupyter_file} (using committed {markdown_file})")
+    return True
+
+
 if __name__ == "__main__":
     for subdir, dirs, files in os.walk("./kb/"):
         for file in files:
             if file.endswith(".ipynb") and ".ipynb_checkpoints" not in subdir:
+                jupyter_file = os.path.join(subdir, file)
+                markdown_file = os.path.join(subdir, file[:-6] + ".md")
+                if should_skip_in_ci(jupyter_file, markdown_file):
+                    continue
                 if notebook_changed(subdir, file):
                     top_category = match_subdir_to_category(subdir)
-                    jupyter_file = os.path.join(subdir, file)
-                    markdown_file = os.path.join(subdir, file[:-6] + ".md")
 
                     convert_jupyter_to_markdown(jupyter_file)
                     convert_jupyter_md_output(
@@ -202,10 +232,12 @@ if __name__ == "__main__":
     for subdir, dirs, files in os.walk("./_posts/"):
         for file in files:
             if file.endswith(".ipynb") and ".ipynb_checkpoints" not in subdir:
+                jupyter_file = os.path.join(subdir, file)
+                markdown_file = os.path.join(subdir, file[:-6] + ".md")
+                if should_skip_in_ci(jupyter_file, markdown_file):
+                    continue
                 if notebook_changed(subdir, file):
                     top_category = match_subdir_to_category(subdir)
-                    jupyter_file = os.path.join(subdir, file)
-                    markdown_file = os.path.join(subdir, file[:-6] + ".md")
 
                     convert_jupyter_to_markdown(jupyter_file)
                     convert_jupyter_md_output(
