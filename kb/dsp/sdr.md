@@ -16,7 +16,7 @@ wip: false
 * [How a Wifi chip works internally](https://media.ccc.de/v/gpn22-380-how-a-wifi-chip-works-internally)
 * [gr-ieee802-11 - IEEE 802.11 a/g/p Transceiver in GNU Radio](https://github.com/bastibl/gr-ieee802-11)
 * [open-sdr](https://github.com/open-sdr) manages open-source WiFI baseband stacks that use FPGAs and plug into Linux like [openwifi](https://github.com/open-sdr/openwifi)
-* [Nuand/bladeRF-wiphy: bladeRF-wiphy is an open-source IEEE 802.11 compatible software defined radio VHDL modem](https://github.com/Nuand/bladeRF-wiphy)
+* [Nuand/bladeRF-wiphy: bladeRF-wiphy is an open-source IEEE 802.11 compatible software defined radio VHDL modem](https://github.com/Nuand/bladeRF-wiphy) with more details [on their blog about the modem design](https://www.nuand.com/bladeRF-wiphy/)
 * [Marsrocky/Awesome-WiFi-CSI-Sensing](https://github.com/Marsrocky/Awesome-WiFi-CSI-Sensing): a list of awesome papers and cool resources on WiFi CSI sensing.
 
 

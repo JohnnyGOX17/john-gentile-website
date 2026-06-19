@@ -281,6 +281,7 @@
 * [ucsdsysnet/sparsdr](https://github.com/ucsdsysnet/sparsdr)
 * [GaussianWaves - Signal Processing for Communication Systems](https://www.gaussianwaves.com/)
 * [PySDR: A Guide to SDR and DSP using Python — PySDR: A Guide to SDR and DSP using Python](https://pysdr.org/)
+* [Daniel Estevez DSP Blog](https://destevez.net/)
 * [Daniel Estevez Repos](https://github.com/daniestevez)
 * [Software Defined Radio with HackRF - Great Scott Gadgets](https://greatscottgadgets.com/sdr/)
 * [CCSDS.org - Publications](https://public.ccsds.org/Publications/default.aspx)

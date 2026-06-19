@@ -189,16 +189,22 @@ A non-thread-safe reference counter version is provided by `std::rc::Rc` type.
 
 ### Rust for Performance
 
-* Simply building with `--release` gives [sane optimization defaults for most applications](https://doc.rust-lang.org/cargo/reference/profiles.html#release)
+See [here for general software/performance information](../software-engineering/sw_for_performance.html).
+
+References:
 * [ ] [The Rust Performance Book](https://nnethercote.github.io/perf-book/)
 * [ ] [Rust SIMD Performance Guide](https://rust-lang.github.io/packed_simd/perf-guide/introduction.html)
   + [arch - Dynamic CPU Feature Detection](https://doc.rust-lang.org/stable/core/arch/#dynamic-cpu-feature-detection)
   + [Arm SIMD on Rust](https://learn.arm.com/learning-paths/cross-platform/simd-on-rust/simd-on-rust-part1/)
 * [ ] [Acheiving warp speed with Rust](http://troubles.md/posts/rust-optimization/)
 * [ ] [Profile-guided Optimization - rustc Book](https://doc.rust-lang.org/beta/rustc/profile-guided-optimization.html)
-* Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
 * [hotpath-rs](https://github.com/pawurb/hotpath-rs): Rust performance debug toolkit. Live profiling for allocations, timings, and channel/stream data flows.
 * [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
+* [yugr/rust-slides](https://github.com/yugr/rust-slides)
+
+Tips:
+* Simply building with `--release` gives [sane optimization defaults for most applications](https://doc.rust-lang.org/cargo/reference/profiles.html#release)
+* Use [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) for [`cargo bench`](https://doc.rust-lang.org/cargo/commands/cargo-bench.html) to benchmark implementation performance. Mainly uses `gnuplot` to [generate benchmark plots](https://bheisler.github.io/criterion.rs/book/user_guide/plots_and_graphs.html).
 * You can cache align data structures (e.x. to 64 Byte cache lines) with:
 ```rust
 #[repr(align(64))]
@@ -206,6 +212,12 @@ struct CacheAlignedStruct {
     data: [i8; 1024]
 }
 ```
+* Use tricks to avoid unnecessary bounds checks of Rust code (see [How to avoid bounds checks in Rust (without unsafe!)](https://shnatsel.medium.com/how-to-avoid-bounds-checks-in-rust-without-unsafe-f65e618b4c1e))
+  + Use manual assertions (like `assert_eq!(data.len(), 64);`) to hint optimizer that further bounds checks on indices are unnecessary.
+  + Use slices or bounded types, rather than containers like `Vec`, in hot loops
+  + Avoid complex index computations
+  + Can use `unsafe` methods like `get_unchecked(idx)`
+* For certain math functions, besides SIMD/autovectorization, aim for fused operations like the fused multiply add `(self * a) + b` [trait MulAdd](https://docs.rs/num-traits/latest/num_traits/ops/mul_add/trait.MulAdd.html)
 
 
 ### Low-Level / Embedded

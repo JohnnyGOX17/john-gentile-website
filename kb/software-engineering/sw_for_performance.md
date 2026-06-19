@@ -272,6 +272,7 @@ Besides the general/obvious things like stopping unnecessary applications, backg
 * [ ] [dendibakh/perf-ninja: This is an online course where you can learn and master the skill of low-level performance analysis and tuning.](https://github.com/dendibakh/perf-ninja)
 * [ ] [C++ Design Patterns for Low-latency Applications Including High-frequency Trading](https://arxiv.org/abs/2309.04259)
 * [ ] [Performance Analysis and Tuning on Modern CPUs - Denis Bakhvalov](https://faculty.cs.niu.edu/~winans/notes/patmc.pdf)
+* [ ] [What it takes to transpose a matrix - gudok.xyz](https://gudok.xyz/transpose/)
 * [The Art of Writing Efficient Programs: An advanced programmer's guide to efficient hardware utilization and compiler optimizations using C++ examples: 9781800208117: Pikus, Fedor G.: Books](https://www.amazon.com/Art-Writing-Efficient-Programs-optimizations/dp/1800208111)
 * [Introduction to High Performance Scientific Computing](https://www.cs.umbc.edu/~tsimo1/CMSC483/EijkhoutIntroToHPC.pdf)
 
