@@ -18,6 +18,7 @@ SELECT name, population FROM world
 * [SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial): tutorials to learn SQL step by step.
 * [W3 Schools SQL Tutorial](https://www.w3schools.com/sql/)
 * [SQLBolt](https://sqlbolt.com/): learn SQL with simple, interactive exercises.
+* [SQLable](https://sqlable.com/): SQL toolbox for query formatting, validation, data generation, and database playgrounds.
 * [PostgreSQL Exercises](https://pgexercises.com/)
 * [PostgreSQL Tutorial - Learn PostgreSQL from Scratch](http://www.postgresqltutorial.com/)
 * [Use the Index, Luke!](https://use-the-index-luke.com/): a guide to database performance for developers.
