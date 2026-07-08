@@ -14,9 +14,10 @@ comments: true
 * Follow the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle); 80% of something can be developed in 20% of time. However conversely, the hardest 20% of the design takes 80% of the time (e.g. driving to perfection/shipping quality).
 * [Aim to be a monopoly, not a competitor](https://www.youtube.com/watch?v=3Fx5Q8xGU8k)
 * Instead of discounting ideas early, simply answer "what would it take?". Never say "that's always how its been done"
-* Innovators are not smarter, no more courageous than the rest of us - they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
+* Innovators are not smarter, no more courageous than the rest of us, they are simply better connected. They find ways to exploit the networked landscape. So they are able to innovate continuously by seeing and making connections between people, ideas, and objects from across the broader landscape.
 * If your product is perfect, you've released too late. The first person to market can be twice the cost with half the capability, but the second person has to have twice the capability at half the cost to compete.
 * Automate & script everything. Leave time for the important stuff.
+* Build something first before reaching out to a customer asking if you can help or "what problem do they need solved". The latter puts all of the creative onus on them, versus building something for them to react/respond to and edit.
 * Beware of [the XY Problem](https://xyproblem.info/).
 * [Learning at work is work, and we must make space for it](https://sloanreview.mit.edu/article/learning-for-a-living/)
 * Coders can get writer's block too, try stream-of-conciousness style writing to code development.

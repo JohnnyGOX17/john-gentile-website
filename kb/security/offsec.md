@@ -35,6 +35,7 @@ comments: true
 * [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP): ghidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.
 * [trailofbits/skills](https://github.com/trailofbits/skills): Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows.
 * [BrownFineSecurity/IoTHackBot](https://github.com/BrownFineSecurity/iothackbot): A collection of Claude Skills and custom tooling for hybrid IoT pentesting.
+* [strix](https://github.com/usestrix/strix): FOSS AI pentesting tool to find and fix vulnerabilities.
 
 ### Anti-SRE
 

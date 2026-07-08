@@ -9,6 +9,8 @@ wip: true
 
 ## Overview
 
+- [ ] Scrambling (e.x. PRBS LFSRs like in CCSDS) to prevent long runs of identical symbols that can cause synchronization or RF transmission issues.
+
 ## Error Detection & Correction
 
 - [Error detection and correction](https://en.wikipedia.org/wiki/Error_detection_and_correction)

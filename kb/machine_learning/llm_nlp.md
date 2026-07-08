@@ -57,6 +57,7 @@ References:
   + [llama.cpp](https://github.com/ggml-org/llama.cpp): fast, low overhead inference of LLMs in C/C++ that runs under-the-hood of Ollama.
 * [Hugging Face](https://huggingface.co/): pre-trained NLP models & reference
 * [LangChain](https://python.langchain.com/docs/introduction/): LangChain is a Python framework for developing applications powered by large language models (LLMs).
+* [heretic](https://github.com/p-e-w/heretic): a tool that removes censorship (aka "safety alignment") from transformer-based language models without expensive post-training.
 
 
 ### Architecture & References

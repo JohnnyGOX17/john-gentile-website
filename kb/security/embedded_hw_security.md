@@ -26,10 +26,14 @@ There are a variety of [Hardware random number generators](https://en.wikipedia.
 
 - [ ] [Shaping the Glitch: Optimizing Voltage Fault Injection Attacks - CHES](https://ches.iacr.org/2019/src/slides/Day3/Session12_NovelAttacks/Paper2_Session12_CHES2019Slides_Palmarini_Shaping%20the%20glitch.pdf)
 - [ ] [Who Watches the Watchers: Attacking Glitch Detection Circuits](https://eprint.iacr.org/2023/1647.pdf)
+- Nominally use FET which can short power rail to GND quickly under digital control
+  + See [this custom board used to perform voltage fault injection on the Starlink SoC](https://github.com/KULeuven-COSIC/Starlink-FI) for more bespoke hardware FI.
 
 ### Countermeasures & Mitigations
 
 - [ ] [Software Countermeasures for Fault Injection Attacks - nuvoTon](https://www.nuvoton.com/support/technical-support/technical-articles/TSNuvotonTechBlog-000154/)
+- Outputs that could be used to understand timing (such as boot) should be randomized
+  + For example, in [Markus Gaasedelen's RE//verse 2026 talk on hacking the Xbox One](https://youtu.be/FTFn4UZsA5U?si=BMGoLBIIjiPWdjK6), Microsoft had 37 random stalls throughout the SP0 bootrom, and no POST code outputs (eFUSED off) that would could usually be used to anchor glitch timing off of. However, in initial bootrom, the GPIO initialization from tri-state/Hi-Z to logic low _was deterministic_ which allowed for glitch timing.
 
 
 ## Side Channel Analysis (SCA)
