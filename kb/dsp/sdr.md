@@ -71,12 +71,15 @@ wip: false
 ### Datasources & Recordings
 
 * [IQEngine](https://iqengine.org/)
+* [Daniel Estevez RF recordings](https://destevez.net/rf-recordings/)
 * [SDR Angel I/Q Files](https://www.sdrangel.org/iq-files/)
 
 
 ## Software Defined Radio (SDR)
 
 ### SDR Software/Frameworks
+
+**NOTE:** almost all SDR frameworks trade abstraction/ease-of-prototyping with absolute performance; if you need to hit ultimate performance, it's almost always more performant to handcode kernels for a variety of [software performance reasons](../software-engineering/sw_for_performance.md), mostly to optimize (or remove unnecessary) data movement and exploit cache locality. For instance in [GNU Radio 4's fused execution pipelines](https://www.gnuradio.org/news/2026-03-22-gr4-release-candidate-1/) multiple stages (e.x. timing correction -> carrier recovery) can occur together, instead of separating every DSP stage into separate tasks/threads that perform batch processing between interconnected queues. Said another way, simple sample-by-sample, direct DSP chain implementation may yield more performance than all of these DAG abstraction layers.
 
 #### GNU Radio
 

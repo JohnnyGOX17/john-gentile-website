@@ -8,10 +8,25 @@ comments: true
 
 ## Fundamentals
 
+### Hashing
+
+* [Forcing a file's CRC to any value](https://www.nayuki.io/page/forcing-a-files-crc-to-any-value): why CRCs shouldn't be used for cryptographic verification
+
 ### Post Quantum Cryptography (PQC)
 
 * [Lattice Crypto Primer - Cloudflare](https://blog.cloudflare.com/lattice-crypto-primer/)
 
+
+## Cryptographic Attack/Defense
+
+### Time Analysis
+
+* [Constant time analysis tooling - Trail of Bits](https://appsec.guide/docs/crypto/constant_time_tool/)
+
+### Cryptanalysis
+
+* [Differential cryptanalysis](https://en.wikipedia.org/wiki/Differential_cryptanalysis): the study of how differences in information input can affect the resultant difference at the output.
+* [wycheproof](https://github.com/C2SP/wycheproof): vectors and tests for crypto libraries against known attacks.
 
 ## Application Specific
 
@@ -55,4 +70,5 @@ comments: true
 * [ ] [The Design of Rijndael AES — The Advanced Encryption Standard](https://cs.ru.nl/~joan/papers/JDA_VRI_Rijndael_2002.pdf)
 * [ ] [The Rijndael Block Cipher](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf)
 * [ ] [Rolling your own crypto: Everything you need to build AES from scratch (and then never use it for anything of consequence) · francisrstokes/githublog](https://github.com/francisrstokes/githublog/blob/main/2022/6/15/rolling-your-own-crypto-aes.md)
+* [ ] [Zero-knowledge protocols - ZKDocs](https://www.zkdocs.com/)
 

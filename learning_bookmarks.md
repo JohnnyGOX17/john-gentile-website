@@ -282,6 +282,7 @@
 * [PySDR: A Guide to SDR and DSP using Python — PySDR: A Guide to SDR and DSP using Python](https://pysdr.org/)
 * [Daniel Estevez DSP Blog](https://destevez.net/)
 * [Daniel Estevez Repos](https://github.com/daniestevez)
+* [Eduardo Fuentetaja Blog](https://edfuentetaja.github.io/)
 * [Software Defined Radio with HackRF - Great Scott Gadgets](https://greatscottgadgets.com/sdr/)
 * [CCSDS.org - Publications](https://public.ccsds.org/Publications/default.aspx)
 * [estimation - How does this FLL work? - Signal Processing Stack Exchange](https://dsp.stackexchange.com/questions/42239/how-does-this-fll-work/)

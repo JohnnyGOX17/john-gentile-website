@@ -10,8 +10,8 @@ comments: true
 
 ### Routing
 
-* Manually map an alias/hostname to an IP address by adding to `/etc/hosts` file, like:
-```
+Manually map an alias/hostname to an IP address by adding to `/etc/hosts` file, like:
+```sh
 192.168.56.4    mylinuxbox
 ```
 

@@ -25,6 +25,7 @@ Ignoring criticisms based on feelings and/or fanboy-isms, there has been some va
 - [Installing Rust is fairly simple](https://www.rust-lang.org/tools/install) using the rustup script: `$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
   + On macOS, make sure C compiler is installed with `$ xcode-select --install`
 - Rust can be updated at any time with `$ rustup update`
+- [crates.io](https://crates.io/) is the public registry for Rust projects, see [the docs on how to publish your project](https://doc.rust-lang.org/cargo/reference/publishing.html).
  
 ### Getting Started Resources
 

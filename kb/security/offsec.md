@@ -45,6 +45,7 @@ comments: true
 ### SRE Practice Sites
 
 * [ ] [crackmes.one](https://crackmes.one)
+* [ ] [The FLARE On Challenge](https://flare-on.com/)
 * [ ] [Reverse Engineering and Malware Analysis Roadmap](https://github.com/x86byte/RE-MA-Roadmap)
 
 
@@ -60,8 +61,10 @@ comments: true
 
 ## Kernel/OS Security
 
+* [ ] [Learning Linux Kernel Exploitation - Midas](https://lkmidas.github.io/posts/20210123-linux-kernel-pwn-part-1/)
 * [ ] [kernel-hack-drill](https://github.com/a13xp0p0v/kernel-hack-drill)
 * [ ] [xairy/linux-kernel-exploitation](https://github.com/xairy/linux-kernel-exploitation): a collection of links related to Linux kernel security and exploitation.
+* [ ] [pawnyable](https://pawnyable.cafe/)
 
 ## Capture The Flag (CTF) & General Practice Sites
 
@@ -71,6 +74,7 @@ comments: true
 * [ ] [Root Me](https://www.root-me.org/?lang=en)
 * [ ] [apsdehal/awesome-ctf: A curated list of CTF frameworks, libraries, resources and softwares](https://github.com/apsdehal/awesome-ctf)
 * [ ] [CTF Time](https://ctftime.org/): find upcoming CTF events
+* [Trail of Bits CTF Field Guide](https://trailofbits.github.io/ctf/)
 
 ### Tools
 
@@ -80,12 +84,16 @@ comments: true
 ## General References & Learnings
 
 * [ ] [pwn.college](https://pwn.college/)
-* [ ] [ROP Emporium](https://ropemporium.com/): Learn return-oriented programming through a series of challenges.
+* [ ] [hextree.io](https://www.hextree.io/)
+* [ ] [ROP Emporium](https://ropemporium.com/): learn return-oriented programming through a series of challenges.
+* [ ] [how2heap](https://github.com/shellphish/how2heap): a repo for learning various heap exploitation techniques.
 * [ ] [Guyinatuxedo- Nightmare](https://guyinatuxedo.github.io/): an intro to binary exploitation / reverse engineering course based around CTF challenges.
 * [ ] [OpenSecurityTraining2](https://ost2.fyi/)
 * [ ] [picoCTF](https://picoctf.org/)
 * [ ] [Binary Analysis Course - Max Kersten](https://maxkersten.nl/binary-analysis-course/)
 * [ ] [microcorruption](https://microcorruption.com/)
+* [ ] [Malware Analysis - CSCI 4976 RPISEC](https://github.com/RPISEC/Malware)
+* [ ] [Modern Binary Exploitation - CSCI 4968 RPISEC](https://github.com/RPISEC/MBE)
 
 ### Freemium
 
