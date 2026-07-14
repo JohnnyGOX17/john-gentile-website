@@ -207,7 +207,6 @@
 * [Intro to Digital Image Processing (ECSE-4540) Lectures, Spring 2015 - YouTube](https://www.youtube.com/playlist?list=PLuh62Q4Sv7BUf60vkjePfcOQc8sHxmnDX)
 * [GRCon17 - Symbol Clock Recovery and Improved Symbol Synchronization Blocks - Andy Walls - YouTube](https://www.youtube.com/watch?v=uMEfx_l5Oxk)
 * [GRCon16 - Why Doesn&#39;t My Signal Look Like the Textbook?, Matt Ettus - YouTube](https://www.youtube.com/watch?v=PNMOwhEHE6w&t=449s)
-* [Henrik's Blog - SAR, radar and FPGA blog](https://hforsten.com/)
 * [Index — scikit-rf](https://scikit-rf-web.readthedocs.io/)
 * [hahnpv/SoftGNSS: My working copy of SoftGNSS with sundry modifications](https://github.com/hahnpv/SoftGNSS)
 * [Interpreting Constellation Diagrams - YouTube](https://www.youtube.com/watch?v=aQd_zBytid8)
