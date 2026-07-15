@@ -199,6 +199,7 @@ References:
   + [Arm SIMD on Rust](https://learn.arm.com/learning-paths/cross-platform/simd-on-rust/simd-on-rust-part1/)
 * [ ] [Acheiving warp speed with Rust](http://troubles.md/posts/rust-optimization/)
 * [ ] [Profile-guided Optimization - rustc Book](https://doc.rust-lang.org/beta/rustc/profile-guided-optimization.html)
+* [std::hint](https://doc.rust-lang.org/std/hint/index.html) gives hints to compiler that affects how code should be emitted or optimized (such as whether a branch is [likely](https://doc.rust-lang.org/std/hint/fn.likely.html))
 * [hotpath-rs](https://github.com/pawurb/hotpath-rs): Rust performance debug toolkit. Live profiling for allocations, timings, and channel/stream data flows.
 * [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 * [yugr/rust-slides](https://github.com/yugr/rust-slides)

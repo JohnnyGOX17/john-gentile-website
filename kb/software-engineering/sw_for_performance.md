@@ -63,7 +63,8 @@ I also love this [added HN comment](https://news.ycombinator.com/item?id=4742773
 * [Cache coherence - Wikipedia](https://en.wikipedia.org/wiki/Cache_coherence)
 * [ ] [Memory part 2: CPU caches - LWN](https://lwn.net/Articles/252125/)
 * [ ] [A Bounded SPSC queue for Rust](https://github.com/JohnnyGOX17/bounded-spsc-queue)
-- [ ] [Why is ringbuf crate so fast?- Reddit](https://www.reddit.com/r/rust/comments/1h3bqv0/why_is_ringbuf_crate_so_fast/)
+* [ ] [Why is ringbuf crate so fast?- Reddit](https://www.reddit.com/r/rust/comments/1h3bqv0/why_is_ringbuf_crate_so_fast/)
+* [ ] [Optimizing a lock-free ring buffer](https://david.alvarezrosa.com/posts/optimizing-a-lock-free-ring-buffer/)
 
 ### Branchless Programming
 
@@ -225,6 +226,7 @@ _AVX512 (1 of 3): Introduction and Overview_
 * Can show thread names in htop by F2 → Display options → Show custom thread names
 * [cache_test.rs](https://github.com/JohnnyGOX17/tpc-graph-exec-rs/blob/main/src/bin/cache_test.rs): measure cache and memory latency via Pointer Chasing method.
 * [Tool to measure core-to-core latency](https://github.com/nviennot/core-to-core-latency)
+* [Low latency tuning guide - Erik Rigtorp](https://rigtorp.se/low-latency-guide/)
 * [godbolt](https://godbolt.org/): Compiler explorer to examine machine code output for various compile chains supporting a couple code languages (C++, D, Rust, and Go). Can also be used to compare the output of compiler autovectorization versus intrinsic usage.
 * [Flame Graphs](https://www.brendangregg.com/flamegraphs.html)
   + [flamegraph-rs/flamegraph: easy flamegraphs for Rust projects and everything else](https://github.com/flamegraph-rs/flamegraph)
