@@ -45,7 +45,7 @@ comments: true
     - Also balance career with life; maximize compensation while minimizing time and stress for work.
   + Nothing's guaranteed in life and no one deserves anything, no matter how unfair things seem.
     - Create your own luck; take lots of thoughtful shots over time, and keep working to improve.
-  + Embrace & laugh at the suck. Change of mindset from "I have to" -> "I get to".
+  + Embrace & laugh at the suck. Change of mindset from "I have to" -> "I get to", "I hate x" -> "I love x".
 * Delegate and influence, but be a good person.
   + You can't do everything yourself; 10x'ers can be multipliers when they inspire and mentor others.
   + What others see as impossible is possible with the right folks who believe in the mission.
