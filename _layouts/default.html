@@ -278,20 +278,21 @@
     });
   </script>
 
-  <!-- Script to hide/show TOC on button click -->
+  <!-- Script to hide/show TOC sidebar on button click. Toggling
+       .toc-collapsed on the body reclaims the sidebar space and lets the
+       article span the full width (see main.css), while the button stays
+       pinned to the left edge to re-open the sidebar. -->
   <script>
     function hideTOC() {
-      var elemToc  = document.getElementById("toc");
-      var elemCont = document.getElementById("containerMain");
-      var elemBtn  = document.getElementById("ShowHideButton");
-      if (elemToc.style.display === "none") {
-        elemToc.style.display     = "block";
-        elemCont.style.marginLeft = "0px";
-        elemBtn.innerHTML         = '<i class="fa fa-window-close" aria-hidden="true"></i><em> Close</em>'
+      var elemCont  = document.getElementById("containerMain");
+      var elemBtn   = document.getElementById("ShowHideButton");
+      var collapsed = elemCont.classList.toggle("toc-collapsed");
+      if (collapsed) {
+        elemBtn.innerHTML = '<i class="fa fa-window-restore" aria-hidden="true"></i><em> Open</em>';
+        elemBtn.title     = "Show Contents Sidebar";
       } else {
-        elemToc.style.display     = "none";
-        elemCont.style.marginLeft = "0px";
-        elemBtn.innerHTML         = '<i class="fa fa-window-restore" aria-hidden="true"></i>'
+        elemBtn.innerHTML = '<i class="fa fa-window-close" aria-hidden="true" style="color: #f44242;"></i><em> Close</em>';
+        elemBtn.title     = "Hide Contents Sidebar";
       }
     }
   </script>

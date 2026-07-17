@@ -104,6 +104,39 @@ a code,
   opacity: 1;
 }
 
+/* --- Collapsed TOC sidebar (toggled by the Close/Open button) ---
+   When #containerMain has .toc-collapsed we hide the contents list,
+   reclaim the sidebar's space and let the article fill the full width
+   (mirroring the narrow/mobile layout). The re-open button stays pinned
+   to the left edge as a small tab so the sidebar can be restored. */
+#containerMain.toc-collapsed #toc {
+  display: none;
+}
+
+#containerMain.toc-collapsed .main {
+  margin-left: 0;
+}
+
+#containerMain.toc-collapsed .container .content,
+#containerMain.toc-collapsed .main .content {
+  max-width: 100%;
+}
+
+#containerMain.toc-collapsed #toc-sidebar {
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 0;
+}
+
+#containerMain.toc-collapsed #ShowHideButton {
+  opacity: 1;
+  color: #fff;
+  background-color: #0389ff;
+  padding: 10px 8px;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
 .light,
 a,
 .text-label,
@@ -919,7 +952,8 @@ amp-vimeo {
   background-color: #FFF;
   display: flex;
   margin-left: 0px;
-  min-height: calc(100vh - 274px)
+  min-height: calc(100vh - 274px);
+  transition: margin-left .25s ease
 }
 
 @media only screen and (max-width: 1560px) {
